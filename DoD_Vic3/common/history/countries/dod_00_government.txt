@@ -1,0 +1,1787 @@
+﻿# 1836 governance law for every country, from its Vic2 history government.
+# (dod_laws.txt, loaded after this file, sets fuller law packages for the majors.)
+COUNTRIES = {
+	c:ABK ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:ABS ?= {  # Vic2: feudal_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:ABU ?= {  # Vic2: feudal_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:ADA ?= {  # Vic2: feudal_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:ADR ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:ADW ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:AFG ?= {  # Vic2: feudal_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:AFS ?= {  # Vic2: feudal_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:AGC ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:AIN ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:AJU ?= {  # Vic2: feudal_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:ALB ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:ALD ?= {  # Vic2: prussian_constitutionalism
+		activate_law = law_type:law_monarchy
+	}
+	c:ALH ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:ALS ?= {  # Vic2: democracy
+		activate_law = law_type:law_parliamentary_republic
+	}
+	c:AMA ?= {  # Vic2: democracy
+		activate_law = law_type:law_parliamentary_republic
+	}
+	c:AMT ?= {  # Vic2: prussian_constitutionalism
+		activate_law = law_type:law_monarchy
+	}
+	c:ANB ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:ANG ?= {  # Vic2: presidential_dictatorship
+		activate_law = law_type:law_presidential_republic
+		activate_law = law_type:law_autocracy
+	}
+	c:ANH ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:ANI ?= {  # Vic2: feudal_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:AOT ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:ARA ?= {  # Vic2: prussian_constitutionalism
+		activate_law = law_type:law_monarchy
+	}
+	c:ARE ?= {  # Vic2: presidential_dictatorship
+		activate_law = law_type:law_presidential_republic
+		activate_law = law_type:law_autocracy
+	}
+	c:ARI ?= {  # Vic2: hms_government
+		activate_law = law_type:law_monarchy
+	}
+	c:ARM ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:ARO ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:ARU ?= {  # Vic2: democracy
+		activate_law = law_type:law_parliamentary_republic
+	}
+	c:ARY ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:ASH ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:ASK ?= {  # Vic2: khanate
+		activate_law = law_type:law_monarchy
+	}
+	c:ASM ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:ASY ?= {  # Vic2: democracy
+		activate_law = law_type:law_parliamentary_republic
+	}
+	c:ATJ ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:ATL ?= {  # Vic2: democracy
+		activate_law = law_type:law_parliamentary_republic
+	}
+	c:ATS ?= {  # Vic2: democracy
+		activate_law = law_type:law_parliamentary_republic
+	}
+	c:AUS ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:AVA ?= {  # Vic2: feudal_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:AVR ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:AWA ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:AWS ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:AZA ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:AZB ?= {  # Vic2: khanate
+		activate_law = law_type:law_monarchy
+	}
+	c:AZL ?= {  # Vic2: democracy
+		activate_law = law_type:law_parliamentary_republic
+	}
+	c:AZT ?= {  # Vic2: democracy
+		activate_law = law_type:law_parliamentary_republic
+	}
+	c:AZW ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:BAD ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:BAL ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:BAS ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:BAV ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:BDK ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:BDN ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:BEG ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:BEN ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:BER ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:BHA ?= {  # Vic2: hms_government
+		activate_law = law_type:law_monarchy
+	}
+	c:BHO ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:BHP ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:BHT ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:BHU ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:BIH ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:BIK ?= {  # Vic2: feudal_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:BKF ?= {  # Vic2: democracy
+		activate_law = law_type:law_parliamentary_republic
+	}
+	c:BKV ?= {  # Vic2: democracy
+		activate_law = law_type:law_parliamentary_republic
+	}
+	c:BLC ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:BLR ?= {  # Vic2: democracy
+		activate_law = law_type:law_parliamentary_republic
+	}
+	c:BLT ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:BLZ ?= {  # Vic2: democracy
+		activate_law = law_type:law_parliamentary_republic
+	}
+	c:BMB ?= {  # Vic2: theocracy
+		activate_law = law_type:law_theocracy
+	}
+	c:BNB ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:BOH ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:BOR ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:BOS ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:BRA ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:BRD ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:BRE ?= {  # Vic2: hms_government
+		activate_law = law_type:law_monarchy
+	}
+	c:BRG ?= {  # Vic2: hms_government
+		activate_law = law_type:law_monarchy
+	}
+	c:BRN ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:BRT ?= {  # Vic2: hms_government
+		activate_law = law_type:law_monarchy
+	}
+	c:BRU ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:BRY ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:BSH ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:BSK ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:BSQ ?= {  # Vic2: democracy
+		activate_law = law_type:law_parliamentary_republic
+	}
+	c:BTL ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:BTV ?= {  # Vic2: presidential_dictatorship
+		activate_law = law_type:law_presidential_republic
+		activate_law = law_type:law_autocracy
+	}
+	c:BUG ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:BUK ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:BUL ?= {  # Vic2: hms_government
+		activate_law = law_type:law_monarchy
+	}
+	c:BUN ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:BUR ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:BYE ?= {  # Vic2: democracy
+		activate_law = law_type:law_parliamentary_republic
+	}
+	c:BYZ ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:CAE ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:CAM ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:CAR ?= {  # Vic2: democracy
+		activate_law = law_type:law_parliamentary_republic
+	}
+	c:CAS ?= {  # Vic2: hms_government
+		activate_law = law_type:law_monarchy
+	}
+	c:CAT ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:CGO ?= {  # Vic2: democracy
+		activate_law = law_type:law_parliamentary_republic
+	}
+	c:CHD ?= {  # Vic2: democracy
+		activate_law = law_type:law_parliamentary_republic
+	}
+	c:CHE ?= {  # Vic2: democracy
+		activate_law = law_type:law_parliamentary_republic
+	}
+	c:CHG ?= {  # Vic2: khanate
+		activate_law = law_type:law_monarchy
+	}
+	c:CHI ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:CHK ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:CHP ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:CHR ?= {  # Vic2: democracy
+		activate_law = law_type:law_parliamentary_republic
+	}
+	c:CHV ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:CHY ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:CIR ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:CLA ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:CLC ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:CLM ?= {  # Vic2: presidential_dictatorship
+		activate_law = law_type:law_presidential_republic
+		activate_law = law_type:law_autocracy
+	}
+	c:CMN ?= {  # Vic2: democracy
+		activate_law = law_type:law_parliamentary_republic
+	}
+	c:CMR ?= {  # Vic2: democracy
+		activate_law = law_type:law_parliamentary_republic
+	}
+	c:CMS ?= {  # Vic2: democracy
+		activate_law = law_type:law_parliamentary_republic
+	}
+	c:COB ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:COS ?= {  # Vic2: presidential_dictatorship
+		activate_law = law_type:law_presidential_republic
+		activate_law = law_type:law_autocracy
+	}
+	c:CRC ?= {  # Vic2: democracy
+		activate_law = law_type:law_parliamentary_republic
+	}
+	c:CRE ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:CRI ?= {  # Vic2: khanate
+		activate_law = law_type:law_monarchy
+	}
+	c:CRL ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:CRO ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:CRS ?= {  # Vic2: democracy
+		activate_law = law_type:law_parliamentary_republic
+	}
+	c:CUB ?= {  # Vic2: presidential_dictatorship
+		activate_law = law_type:law_presidential_republic
+		activate_law = law_type:law_autocracy
+	}
+	c:CYP ?= {  # Vic2: democracy
+		activate_law = law_type:law_parliamentary_republic
+	}
+	c:CYR ?= {  # Vic2: feudal_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:CZH ?= {  # Vic2: democracy
+		activate_law = law_type:law_parliamentary_republic
+	}
+	c:D01 ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:D02 ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:D03 ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:D04 ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:D05 ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:D24 ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:DAG ?= {  # Vic2: theocracy
+		activate_law = law_type:law_theocracy
+	}
+	c:DAH ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:DAI ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:DAM ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:DAR ?= {  # Vic2: feudal_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:DAX ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:DEN ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:DHY ?= {  # Vic2: feudal_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:DIN ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:DJA ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:DLM ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:DND ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:DNG ?= {  # Vic2: democracy
+		activate_law = law_type:law_parliamentary_republic
+	}
+	c:DOM ?= {  # Vic2: presidential_dictatorship
+		activate_law = law_type:law_presidential_republic
+		activate_law = law_type:law_autocracy
+	}
+	c:DON ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:DRA ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:DUA ?= {  # Vic2: prussian_constitutionalism
+		activate_law = law_type:law_monarchy
+	}
+	c:DUR ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:DZG ?= {  # Vic2: democracy
+		activate_law = law_type:law_parliamentary_republic
+	}
+	c:EGY ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:ELS ?= {  # Vic2: presidential_dictatorship
+		activate_law = law_type:law_presidential_republic
+		activate_law = law_type:law_autocracy
+	}
+	c:ENG ?= {  # Vic2: democracy
+		activate_law = law_type:law_parliamentary_republic
+	}
+	c:ENL ?= {  # Vic2: hms_government
+		activate_law = law_type:law_monarchy
+	}
+	c:EQG ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:EQN ?= {  # Vic2: democracy
+		activate_law = law_type:law_parliamentary_republic
+	}
+	c:EQT ?= {  # Vic2: democracy
+		activate_law = law_type:law_parliamentary_republic
+	}
+	c:ERF ?= {  # Vic2: democracy
+		activate_law = law_type:law_parliamentary_republic
+	}
+	c:ERI ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:ERZ ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:EST ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:ETH ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:EZO ?= {  # Vic2: democracy
+		activate_law = law_type:law_parliamentary_republic
+	}
+	c:FDL ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:FIJ ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:FIN ?= {  # Vic2: democracy
+		activate_law = law_type:law_parliamentary_republic
+	}
+	c:FIU ?= {  # Vic2: presidential_dictatorship
+		activate_law = law_type:law_presidential_republic
+		activate_law = law_type:law_autocracy
+	}
+	c:FJA ?= {  # Vic2: theocracy
+		activate_law = law_type:law_theocracy
+	}
+	c:FJN ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:FLA ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:FRA ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:FRB ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:FRI ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:FRM ?= {  # Vic2: democracy
+		activate_law = law_type:law_parliamentary_republic
+	}
+	c:FRR ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:FRT ?= {  # Vic2: prussian_constitutionalism
+		activate_law = law_type:law_monarchy
+	}
+	c:FTB ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:FUL ?= {  # Vic2: theocracy
+		activate_law = law_type:law_theocracy
+	}
+	c:FUN ?= {  # Vic2: feudal_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:GAB ?= {  # Vic2: democracy
+		activate_law = law_type:law_parliamentary_republic
+	}
+	c:GAL ?= {  # Vic2: hms_government
+		activate_law = law_type:law_monarchy
+	}
+	c:GAN ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:GAZ ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:GBU ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:GCR ?= {  # Vic2: presidential_dictatorship
+		activate_law = law_type:law_presidential_republic
+		activate_law = law_type:law_autocracy
+	}
+	c:GEL ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:GEN ?= {  # Vic2: merchant_republic
+		activate_law = law_type:law_parliamentary_republic
+	}
+	c:GEO ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:GER ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:GHN ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:GLS ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:GMB ?= {  # Vic2: democracy
+		activate_law = law_type:law_parliamentary_republic
+	}
+	c:GMJ ?= {  # Vic2: presidential_dictatorship
+		activate_law = law_type:law_presidential_republic
+		activate_law = law_type:law_autocracy
+	}
+	c:GNE ?= {  # Vic2: democracy
+		activate_law = law_type:law_parliamentary_republic
+	}
+	c:GNG ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:GNV ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:GON ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:GRA ?= {  # Vic2: democracy
+		activate_law = law_type:law_parliamentary_republic
+	}
+	c:GRE ?= {  # Vic2: democracy
+		activate_law = law_type:law_parliamentary_republic
+	}
+	c:GRN ?= {  # Vic2: democracy
+		activate_law = law_type:law_parliamentary_republic
+	}
+	c:GRQ ?= {  # Vic2: democracy
+		activate_law = law_type:law_parliamentary_republic
+	}
+	c:GUA ?= {  # Vic2: presidential_dictatorship
+		activate_law = law_type:law_presidential_republic
+		activate_law = law_type:law_autocracy
+	}
+	c:GUY ?= {  # Vic2: democracy
+		activate_law = law_type:law_parliamentary_republic
+	}
+	c:GWA ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:GXI ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:HAL ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:HAM ?= {  # Vic2: democracy
+		activate_law = law_type:law_parliamentary_republic
+	}
+	c:HAN ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:HAR ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:HAW ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:HBE ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:HBS ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:HBY ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:HDJ ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:HEK ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:HES ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:HHR ?= {  # Vic2: democracy
+		activate_law = law_type:law_parliamentary_republic
+	}
+	c:HIL ?= {  # Vic2: theocracy
+		activate_law = law_type:law_theocracy
+	}
+	c:HLR ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:HND ?= {  # Vic2: hms_government
+		activate_law = law_type:law_monarchy
+	}
+	c:HNN ?= {  # Vic2: presidential_dictatorship
+		activate_law = law_type:law_presidential_republic
+		activate_law = law_type:law_autocracy
+	}
+	c:HOL ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:HON ?= {  # Vic2: presidential_dictatorship
+		activate_law = law_type:law_presidential_republic
+		activate_law = law_type:law_autocracy
+	}
+	c:HSL ?= {  # Vic2: presidential_dictatorship
+		activate_law = law_type:law_presidential_republic
+		activate_law = law_type:law_autocracy
+	}
+	c:HUA ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:HUI ?= {  # Vic2: presidential_dictatorship
+		activate_law = law_type:law_presidential_republic
+		activate_law = law_type:law_autocracy
+	}
+	c:HUN ?= {  # Vic2: prussian_constitutionalism
+		activate_law = law_type:law_monarchy
+	}
+	c:HYD ?= {  # Vic2: feudal_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:IBR ?= {  # Vic2: hms_government
+		activate_law = law_type:law_monarchy
+	}
+	c:ICL ?= {  # Vic2: democracy
+		activate_law = law_type:law_parliamentary_republic
+	}
+	c:IFE ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:ILO ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:IME ?= {  # Vic2: feudal_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:INC ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:IND ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:ING ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:INO ?= {  # Vic2: democracy
+		activate_law = law_type:law_parliamentary_republic
+	}
+	c:ION ?= {  # Vic2: presidential_dictatorship
+		activate_law = law_type:law_presidential_republic
+		activate_law = law_type:law_autocracy
+	}
+	c:IRE ?= {  # Vic2: democracy
+		activate_law = law_type:law_parliamentary_republic
+	}
+	c:IRO ?= {  # Vic2: feudal_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:IRQ ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:ISR ?= {  # Vic2: democracy
+		activate_law = law_type:law_parliamentary_republic
+	}
+	c:ITA ?= {  # Vic2: hms_government
+		activate_law = law_type:law_monarchy
+	}
+	c:IVC ?= {  # Vic2: democracy
+		activate_law = law_type:law_parliamentary_republic
+	}
+	c:IZH ?= {  # Vic2: democracy
+		activate_law = law_type:law_parliamentary_republic
+	}
+	c:JAI ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:JAL ?= {  # Vic2: theocracy
+		activate_law = law_type:law_theocracy
+	}
+	c:JAM ?= {  # Vic2: hms_government
+		activate_law = law_type:law_monarchy
+	}
+	c:JAP ?= {  # Vic2: prussian_constitutionalism
+		activate_law = law_type:law_monarchy
+	}
+	c:JAS ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:JAV ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:JLS ?= {  # Vic2: prussian_constitutionalism
+		activate_law = law_type:law_monarchy
+	}
+	c:JOD ?= {  # Vic2: feudal_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:JOH ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:JOR ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:JPB ?= {  # Vic2: presidential_dictatorship
+		activate_law = law_type:law_presidential_republic
+		activate_law = law_type:law_autocracy
+	}
+	c:KAF ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:KAG ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:KAL ?= {  # Vic2: khanate
+		activate_law = law_type:law_monarchy
+	}
+	c:KAN ?= {  # Vic2: feudal_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:KAR ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:KAS ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:KCH ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:KDS ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:KHI ?= {  # Vic2: feudal_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:KHT ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:KKN ?= {  # Vic2: democracy
+		activate_law = law_type:law_parliamentary_republic
+	}
+	c:KLJ ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:KLM ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:KML ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:KMY ?= {  # Vic2: khanate
+		activate_law = law_type:law_monarchy
+	}
+	c:KNG ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:KNO ?= {  # Vic2: feudal_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:KNY ?= {  # Vic2: democracy
+		activate_law = law_type:law_parliamentary_republic
+	}
+	c:KOE ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:KOK ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:KOM ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:KON ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:KOR ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:KRI ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:KRL ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:KRN ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:KRS ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:KRT ?= {  # Vic2: feudal_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:KTH ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:KTI ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:KUB ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:KUN ?= {  # Vic2: democracy
+		activate_law = law_type:law_parliamentary_republic
+	}
+	c:KUR ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:KUT ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:KWT ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:KYR ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:KZB ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:KZC ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:KZH ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:LAD ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:LAK ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:LAT ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:LBA ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:LBN ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:LBY ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:LEZ ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:LFG ?= {  # Vic2: democracy
+		activate_law = law_type:law_parliamentary_republic
+	}
+	c:LHJ ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:LIB ?= {  # Vic2: theocracy
+		activate_law = law_type:law_theocracy
+	}
+	c:LIP ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:LIT ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:LOA ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:LOM ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:LOR ?= {  # Vic2: democracy
+		activate_law = law_type:law_parliamentary_republic
+	}
+	c:LOT ?= {  # Vic2: presidential_dictatorship
+		activate_law = law_type:law_presidential_republic
+		activate_law = law_type:law_autocracy
+	}
+	c:LRR ?= {  # Vic2: democracy
+		activate_law = law_type:law_parliamentary_republic
+	}
+	c:LST ?= {  # Vic2: democracy
+		activate_law = law_type:law_parliamentary_republic
+	}
+	c:LUA ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:LUB ?= {  # Vic2: democracy
+		activate_law = law_type:law_parliamentary_republic
+	}
+	c:LUC ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:LUN ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:LUR ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:LUX ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:LWE ?= {  # Vic2: presidential_dictatorship
+		activate_law = law_type:law_presidential_republic
+		activate_law = law_type:law_autocracy
+	}
+	c:LXA ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:MAC ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:MAD ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:MAH ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:MAJ ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:MAK ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:MAL ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:MAS ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:MAT ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:MCD ?= {  # Vic2: democracy
+		activate_law = law_type:law_parliamentary_republic
+	}
+	c:MCH ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:MCK ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:MDR ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:MEC ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:MEI ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:MEW ?= {  # Vic2: feudal_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:MEX ?= {  # Vic2: democracy
+		activate_law = law_type:law_parliamentary_republic
+	}
+	c:MFQ ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:MGH ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:MGL ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:MHR ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:MIG ?= {  # Vic2: presidential_dictatorship
+		activate_law = law_type:law_presidential_republic
+		activate_law = law_type:law_autocracy
+	}
+	c:MIX ?= {  # Vic2: hms_government
+		activate_law = law_type:law_monarchy
+	}
+	c:MKN ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:MKS ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:MLD ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:MLI ?= {  # Vic2: democracy
+		activate_law = law_type:law_parliamentary_republic
+	}
+	c:MLT ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:MLW ?= {  # Vic2: democracy
+		activate_law = law_type:law_parliamentary_republic
+	}
+	c:MLY ?= {  # Vic2: democracy
+		activate_law = law_type:law_parliamentary_republic
+	}
+	c:MNG ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:MNP ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:MNR ?= {  # Vic2: theocracy
+		activate_law = law_type:law_theocracy
+	}
+	c:MOD ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:MOL ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:MON ?= {  # Vic2: theocracy
+		activate_law = law_type:law_theocracy
+	}
+	c:MOR ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:MOS ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:MOZ ?= {  # Vic2: presidential_dictatorship
+		activate_law = law_type:law_presidential_republic
+		activate_law = law_type:law_autocracy
+	}
+	c:MRD ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:MRK ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:MRL ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:MTC ?= {  # Vic2: democracy
+		activate_law = law_type:law_parliamentary_republic
+	}
+	c:MUG ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:MUS ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:MYS ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:NAG ?= {  # Vic2: feudal_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:NAL ?= {  # Vic2: democracy
+		activate_law = law_type:law_parliamentary_republic
+	}
+	c:NAN ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:NAS ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:NAV ?= {  # Vic2: prussian_constitutionalism
+		activate_law = law_type:law_monarchy
+	}
+	c:NBG ?= {  # Vic2: democracy
+		activate_law = law_type:law_parliamentary_republic
+	}
+	c:NEJ ?= {  # Vic2: feudal_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:NEP ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:NET ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:NFL ?= {  # Vic2: democracy
+		activate_law = law_type:law_parliamentary_republic
+	}
+	c:NGF ?= {  # Vic2: democracy
+		activate_law = law_type:law_parliamentary_republic
+	}
+	c:NGR ?= {  # Vic2: democracy
+		activate_law = law_type:law_parliamentary_republic
+	}
+	c:NIC ?= {  # Vic2: democracy
+		activate_law = law_type:law_parliamentary_republic
+	}
+	c:NIG ?= {  # Vic2: democracy
+		activate_law = law_type:law_parliamentary_republic
+	}
+	c:NMB ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:NOG ?= {  # Vic2: khanate
+		activate_law = law_type:law_monarchy
+	}
+	c:NOR ?= {  # Vic2: hms_government
+		activate_law = law_type:law_monarchy
+	}
+	c:NOV ?= {  # Vic2: democracy
+		activate_law = law_type:law_parliamentary_republic
+	}
+	c:NRI ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:NUN ?= {  # Vic2: feudal_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:NUS ?= {  # Vic2: hms_government
+		activate_law = law_type:law_monarchy
+	}
+	c:NYE ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:NZL ?= {  # Vic2: hms_government
+		activate_law = law_type:law_monarchy
+	}
+	c:OAX ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:OCC ?= {  # Vic2: democracy
+		activate_law = law_type:law_parliamentary_republic
+	}
+	c:OCE ?= {  # Vic2: feudal_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:OLD ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:OMA ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:ORA ?= {  # Vic2: democracy
+		activate_law = law_type:law_parliamentary_republic
+	}
+	c:ORI ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:ORO ?= {  # Vic2: feudal_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:OSS ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:OTO ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:OYO ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:PAP ?= {  # Vic2: theocracy
+		activate_law = law_type:law_theocracy
+	}
+	c:PAR ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:PAT ?= {  # Vic2: feudal_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:PER ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:PGG ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:PHL ?= {  # Vic2: presidential_dictatorship
+		activate_law = law_type:law_presidential_republic
+		activate_law = law_type:law_autocracy
+	}
+	c:PLA ?= {  # Vic2: hms_government
+		activate_law = law_type:law_monarchy
+	}
+	c:PLC ?= {  # Vic2: hms_government
+		activate_law = law_type:law_monarchy
+	}
+	c:PLM ?= {  # Vic2: feudal_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:PLS ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:PLY ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:PNJ ?= {  # Vic2: feudal_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:PNM ?= {  # Vic2: presidential_dictatorship
+		activate_law = law_type:law_presidential_republic
+		activate_law = law_type:law_autocracy
+	}
+	c:PNT ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:POL ?= {  # Vic2: prussian_constitutionalism
+		activate_law = law_type:law_monarchy
+	}
+	c:POM ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:POR ?= {  # Vic2: hms_government
+		activate_law = law_type:law_monarchy
+	}
+	c:PPG ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:PPU ?= {  # Vic2: feudal_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:PRK ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:PRU ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:PRV ?= {  # Vic2: prussian_constitutionalism
+		activate_law = law_type:law_monarchy
+	}
+	c:PSV ?= {  # Vic2: presidential_dictatorship
+		activate_law = law_type:law_presidential_republic
+		activate_law = law_type:law_autocracy
+	}
+	c:PTG ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:PUR ?= {  # Vic2: democracy
+		activate_law = law_type:law_parliamentary_republic
+	}
+	c:PZN ?= {  # Vic2: hms_government
+		activate_law = law_type:law_monarchy
+	}
+	c:QAJ ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:QAT ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:QIC ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:QSQ ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:QUI ?= {  # Vic2: democracy
+		activate_law = law_type:law_parliamentary_republic
+	}
+	c:RAJ ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:RAP ?= {  # Vic2: feudal_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:RDL ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:RHI ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:RMG ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:ROM ?= {  # Vic2: hms_government
+		activate_law = law_type:law_monarchy
+	}
+	c:RUS ?= {  # Vic2: democracy
+		activate_law = law_type:law_parliamentary_republic
+	}
+	c:RUT ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:RWA ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:RYU ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:SAF ?= {  # Vic2: hms_government
+		activate_law = law_type:law_monarchy
+	}
+	c:SAK ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:SAL ?= {  # Vic2: theocracy
+		activate_law = law_type:law_theocracy
+	}
+	c:SAM ?= {  # Vic2: feudal_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:SAN ?= {  # Vic2: democracy
+		activate_law = law_type:law_parliamentary_republic
+	}
+	c:SAR ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:SAT ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:SAX ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:SCA ?= {  # Vic2: prussian_constitutionalism
+		activate_law = law_type:law_monarchy
+	}
+	c:SCH ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:SCO ?= {  # Vic2: hms_government
+		activate_law = law_type:law_monarchy
+	}
+	c:SEN ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:SER ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:SFJ ?= {  # Vic2: presidential_dictatorship
+		activate_law = law_type:law_presidential_republic
+		activate_law = law_type:law_autocracy
+	}
+	c:SGF ?= {  # Vic2: democracy
+		activate_law = law_type:law_parliamentary_republic
+	}
+	c:SHA ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:SHI ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:SHK ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:SHO ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:SHU ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:SHW ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:SIA ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:SIB ?= {  # Vic2: khanate
+		activate_law = law_type:law_monarchy
+	}
+	c:SIC ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:SID ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:SIE ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:SIK ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:SIL ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:SIN ?= {  # Vic2: feudal_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:SLA ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:SLE ?= {  # Vic2: democracy
+		activate_law = law_type:law_parliamentary_republic
+	}
+	c:SLG ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:SLO ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:SLS ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:SLV ?= {  # Vic2: hms_government
+		activate_law = law_type:law_monarchy
+	}
+	c:SLW ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:SMO ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:SNG ?= {  # Vic2: democracy
+		activate_law = law_type:law_parliamentary_republic
+	}
+	c:SOK ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:SOM ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:SPA ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:SPC ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:SRD ?= {  # Vic2: democracy
+		activate_law = law_type:law_parliamentary_republic
+	}
+	c:SRI ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:SRL ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:SRN ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:SUA ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:SUD ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:SUL ?= {  # Vic2: feudal_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:SVY ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:SWE ?= {  # Vic2: hms_government
+		activate_law = law_type:law_monarchy
+	}
+	c:SWH ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:SWI ?= {  # Vic2: democracy
+		activate_law = law_type:law_parliamentary_republic
+	}
+	c:SWK ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:SXI ?= {  # Vic2: presidential_dictatorship
+		activate_law = law_type:law_presidential_republic
+		activate_law = law_type:law_autocracy
+	}
+	c:SYC ?= {  # Vic2: democracy
+		activate_law = law_type:law_parliamentary_republic
+	}
+	c:SYR ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:SZC ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:TAI ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:TAP ?= {  # Vic2: feudal_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:TAR ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:TCA ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:TCP ?= {  # Vic2: democracy
+		activate_law = law_type:law_parliamentary_republic
+	}
+	c:TGA ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:THU ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:TIB ?= {  # Vic2: theocracy
+		activate_law = law_type:law_theocracy
+	}
+	c:TIG ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:TIR ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:TKG ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:TKM ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:TMR ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:TNG ?= {  # Vic2: prussian_constitutionalism
+		activate_law = law_type:law_monarchy
+	}
+	c:TNT ?= {  # Vic2: feudal_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:TNZ ?= {  # Vic2: democracy
+		activate_law = law_type:law_parliamentary_republic
+	}
+	c:TOG ?= {  # Vic2: democracy
+		activate_law = law_type:law_parliamentary_republic
+	}
+	c:TON ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:TOO ?= {  # Vic2: theocracy
+		activate_law = law_type:law_theocracy
+	}
+	c:TOS ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:TOT ?= {  # Vic2: democracy
+		activate_law = law_type:law_parliamentary_republic
+	}
+	c:TOU ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:TRA ?= {  # Vic2: prussian_constitutionalism
+		activate_law = law_type:law_monarchy
+	}
+	c:TRI ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:TRN ?= {  # Vic2: presidential_dictatorship
+		activate_law = law_type:law_presidential_republic
+		activate_law = law_type:law_autocracy
+	}
+	c:TRO ?= {  # Vic2: democracy
+		activate_law = law_type:law_parliamentary_republic
+	}
+	c:TRZ ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:TSS ?= {  # Vic2: democracy
+		activate_law = law_type:law_parliamentary_republic
+	}
+	c:TSW ?= {  # Vic2: democracy
+		activate_law = law_type:law_parliamentary_republic
+	}
+	c:TUI ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:TUN ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:TUR ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:TUS ?= {  # Vic2: democracy
+		activate_law = law_type:law_parliamentary_republic
+	}
+	c:U01 ?= {  # Vic2: presidential_dictatorship
+		activate_law = law_type:law_presidential_republic
+		activate_law = law_type:law_autocracy
+	}
+	c:UAR ?= {  # Vic2: hms_government
+		activate_law = law_type:law_monarchy
+	}
+	c:UBD ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:UCA ?= {  # Vic2: democracy
+		activate_law = law_type:law_parliamentary_republic
+	}
+	c:UDM ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:UGA ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:UGH ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:UKR ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:UNM ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:UTI ?= {  # Vic2: presidential_dictatorship
+		activate_law = law_type:law_presidential_republic
+		activate_law = law_type:law_autocracy
+	}
+	c:UYG ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:UZB ?= {  # Vic2: feudal_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:VCZ ?= {  # Vic2: democracy
+		activate_law = law_type:law_parliamentary_republic
+	}
+	c:VEN ?= {  # Vic2: merchant_republic
+		activate_law = law_type:law_parliamentary_republic
+	}
+	c:VIJ ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:VIN ?= {  # Vic2: democracy
+		activate_law = law_type:law_parliamentary_republic
+	}
+	c:VTU ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:WAD ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:WAL ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:WEI ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:WES ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:WIA ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:WLL ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:WLS ?= {  # Vic2: hms_government
+		activate_law = law_type:law_monarchy
+	}
+	c:WOL ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:WRI ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:WRL ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:WSH ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:WTT ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:WUR ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:WZB ?= {  # Vic2: theocracy
+		activate_law = law_type:law_theocracy
+	}
+	c:XBI ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:XHO ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:XIN ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:YCT ?= {  # Vic2: democracy
+		activate_law = law_type:law_parliamentary_republic
+	}
+	c:YEM ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:YKT ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:YNN ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:YUC ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:YUG ?= {  # Vic2: hms_government
+		activate_law = law_type:law_monarchy
+	}
+	c:YZW ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:ZAM ?= {  # Vic2: democracy
+		activate_law = law_type:law_parliamentary_republic
+	}
+	c:ZAN ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:ZAP ?= {  # Vic2: democracy
+		activate_law = law_type:law_parliamentary_republic
+	}
+	c:ZBW ?= {  # Vic2: presidential_dictatorship
+		activate_law = law_type:law_presidential_republic
+		activate_law = law_type:law_autocracy
+	}
+	c:ZIM ?= {  # Vic2: feudal_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:ZIR ?= {  # Vic2: democracy
+		activate_law = law_type:law_parliamentary_republic
+	}
+	c:ZNC ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:ZND ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+	c:ZUL ?= {  # Vic2: absolute_monarchy
+		activate_law = law_type:law_monarchy
+	}
+}
