@@ -59,7 +59,7 @@ This repository is a **Victoria 3 port** of the Victoria 2 mod. It isn't a line-
 
 <p align="center">
   <img src="images/flags.png" alt="Flags of Divergences of Darkness" width="100%">
-  <br><sub>A few of the 2,864 flags ported from the original mod, including government variants.</sub>
+  <br><sub>The flags each country flies in 1836. 2,864 flags were ported from the original mod, including every government variant.</sub>
 </p>
 
 | | |
