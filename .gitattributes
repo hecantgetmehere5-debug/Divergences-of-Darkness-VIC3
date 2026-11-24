@@ -1,2 +1,8 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+
+# Language statistics: count the mod's Paradox script (.txt) and localisation (.yml),
+# which GitHub ignores by default, so the language bar reflects the mod and not just the tools.
+DoD_Vic3/**/*.txt linguist-detectable=true linguist-language=Text
+DoD_Vic3/**/*.yml linguist-detectable=true linguist-language=YAML
+start_data/** linguist-generated=true
