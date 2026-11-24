@@ -1,0 +1,131 @@
+# Italy, Aragon-Italy & Venice-Greece: journal entries
+#
+#   je_dod_council_of_italy -> host invites the Italian states; results after a year (dod_ita.15)
+#   je_dod_greek_question   -> Venice keeps Greek unrest down, or faces the Council of Athens
+#   je_dod_greek_war        -> the Greek War of Independence
+
+je_dod_council_of_italy = {
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+	group = je_group_historical_content
+
+	immediate = {
+		set_variable = { name = dod_unification_support value = 0 }
+		set_global_variable = { name = dod_council_host value = root }
+		every_country = {
+			limit = { dod_is_council_guest = yes }
+			trigger_event = { id = dod_ita.10 days = { 14 120 } }
+		}
+	}
+
+	current_value = {
+		value = root.var:dod_unification_support
+	}
+	goal_add_value = {
+		add = 10
+	}
+	progressbar = yes
+
+	on_monthly_pulse = {
+		random_events = {
+			60 = 0
+			5 = dod_ita.2
+			5 = dod_ita.3
+			5 = dod_ita.4
+			5 = dod_ita.5
+			5 = dod_ita.6
+			5 = dod_ita.7
+			5 = dod_ita.8
+			5 = dod_ita.9
+		}
+	}
+
+	timeout = 365
+
+	on_timeout = {
+		trigger_event = { id = dod_ita.15 }
+	}
+
+	should_be_pinned_by_default = yes
+	weight = 1000
+}
+
+je_dod_greek_question = {
+	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+	group = je_group_historical_content
+
+	immediate = {
+		set_variable = { name = dod_greek_unrest value = 20 }
+	}
+
+	current_value = {
+		value = root.var:dod_greek_unrest
+	}
+	goal_add_value = {
+		add = 100
+	}
+	progressbar = yes
+
+	on_monthly_pulse = {
+		effect = {
+			if = {
+				limit = {
+					NOT = { has_law = law_type:law_multicultural }
+					NOT = { country_has_primary_culture = cu:greek }
+				}
+				change_variable = { name = dod_greek_unrest add = 1 }
+			}
+		}
+	}
+
+	complete = {
+		country_has_primary_culture = cu:greek
+	}
+
+	fail = {
+		var:dod_greek_unrest >= 100
+	}
+
+	on_fail = {
+		trigger_event = { id = dod_ita.60 }
+	}
+
+	invalid = {
+		NOT = {
+			any_scope_state = { dod_is_greek_state = yes }
+		}
+	}
+
+	should_be_pinned_by_default = yes
+	weight = 1000
+}
+
+je_dod_greek_war = {
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+	group = je_group_historical_content
+
+	immediate = {
+		set_variable = { name = dod_greek_war_grace days = 365 }
+	}
+
+	complete = {
+		is_at_war = no
+		NOT = { exists = c:GRE }
+	}
+
+	on_complete = {
+		trigger_event = { id = dod_ita.65 }
+	}
+
+	fail = {
+		exists = c:GRE
+		is_at_war = no
+		NOT = { has_variable = dod_greek_war_grace }
+	}
+
+	on_fail = {
+		trigger_event = { id = dod_ita.66 }
+	}
+
+	should_be_pinned_by_default = yes
+	weight = 1000
+}

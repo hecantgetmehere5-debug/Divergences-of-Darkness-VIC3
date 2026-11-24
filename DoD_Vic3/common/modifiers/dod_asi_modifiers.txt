@@ -1,0 +1,49 @@
+# East, Southeast & South Asia: modifiers
+
+dod_rising_sun = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
+	country_prestige_add = 40
+}
+
+dod_loyalist_kaigan = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_scroll_positive.dds"
+	country_legitimacy_base_add = 10
+}
+
+dod_unequal_treaty = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds"
+	country_prestige_add = -30
+	country_legitimacy_base_add = -5
+}
+
+dod_china_trade = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_scroll_positive.dds"
+	country_prestige_add = 15
+}
+
+dod_weisuo_abolished = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
+	unit_offense_mult = 0.1
+	unit_defense_mult = 0.1
+}
+
+dod_chinese_cotton = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_scroll_positive.dds"
+	country_prestige_add = 5
+}
+
+dod_dzungar_succession = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds"
+	country_legitimacy_base_add = -10
+}
+
+dod_urumqi_university = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_book_positive.dds"
+	country_prestige_add = 10
+	country_legitimacy_base_add = 5
+}
+
+dod_nusantara_ascendant = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
+	country_prestige_add = 30
+}

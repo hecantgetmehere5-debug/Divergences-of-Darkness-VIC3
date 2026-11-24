@@ -1,0 +1,538 @@
+namespace = dod_elb
+
+dod_elb.1 = {
+	type = country_event
+	placement = root
+	title = dod_elb.1.t
+	desc = dod_elb.1.d
+	flavor = dod_elb.1.f
+	event_image = { texture = "gfx/event_pictures/dod/wolta_gebeit.dds" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	duration = 3
+
+	trigger = {
+		this = c:CAE
+		game_date >= 1850.1.1
+		is_at_war = no
+		exists = c:ASH
+		c:ASH = {
+			is_country_type = unrecognized
+			is_at_war = no
+		}
+		NOT = { has_global_variable = dod_fredensborg }
+	}
+
+	immediate = {
+		set_global_variable = dod_fredensborg
+	}
+
+	option = {
+		name = dod_elb.1.a
+		default_option = yes
+		change_infamy = 5
+		c:ASH = { trigger_event = { id = dod_elb.2 days = 7 } }
+		ai_chance = { base = 75 }
+	}
+
+	option = {
+		name = dod_elb.1.b
+		add_modifier = { name = dod_colonial_humiliation months = 24 }
+		ai_chance = { base = 25 }
+	}
+}
+
+dod_elb.2 = {
+	type = country_event
+	placement = root
+	title = dod_elb.2.t
+	desc = dod_elb.2.d
+	flavor = dod_elb.2.f
+	event_image = { video = "unspecific_politicians_arguing" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	duration = 3
+
+	option = {
+		name = dod_elb.2.a
+		default_option = yes
+		c:CAE = { trigger_event = { id = dod_elb.3 days = 7 } }
+		ai_chance = { base = 90 }
+	}
+
+	option = {
+		name = dod_elb.2.b
+		c:CAE = {
+			create_diplomatic_pact = { country = root type = protectorate }
+		}
+		ai_chance = { base = 10 }
+	}
+}
+
+dod_elb.3 = {
+	type = country_event
+	placement = root
+	title = dod_elb.3.t
+	desc = dod_elb.3.d
+	flavor = dod_elb.3.f
+	event_image = { video = "unspecific_military_parade" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+	duration = 3
+
+	option = {
+		name = dod_elb.3.a
+		default_option = yes
+		create_diplomatic_play = {
+			target_country = c:ASH
+			type = dp_make_protectorate
+		}
+		ai_chance = { base = 100 }
+	}
+
+	option = {
+		name = dod_elb.3.b
+		add_modifier = { name = dod_colonial_humiliation months = 24 }
+		ai_chance = { base = 0 }
+	}
+}
+
+dod_elb.10 = {
+	type = country_event
+	placement = root
+	title = dod_elb.10.t
+	desc = dod_elb.10.d
+	flavor = dod_elb.10.f
+	event_image = { video = "unspecific_signed_contract" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	duration = 3
+
+	trigger = {
+		is_at_war = no
+		any_country = { dod_is_baltic_elbian_country = yes }
+	}
+
+	immediate = {
+		random_country = {
+			limit = { dod_is_baltic_elbian_country = yes }
+			save_scope_as = dod_baltic_target
+		}
+	}
+
+	option = {
+		name = dod_elb.10.a
+		default_option = yes
+		scope:dod_baltic_target = {
+			trigger_event = { id = dod_elb.11 days = 7 }
+		}
+		ai_chance = { base = 80 }
+	}
+
+	option = {
+		name = dod_elb.10.b
+		ai_chance = { base = 20 }
+	}
+}
+
+dod_elb.11 = {
+	type = country_event
+	placement = root
+	title = dod_elb.11.t
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				desc = dod_elb.11.d_courland
+				trigger = { this = c:KRL }
+			}
+			triggered_desc = {
+				desc = dod_elb.11.d_livonia
+				trigger = { this = c:LAT }
+			}
+			triggered_desc = {
+				desc = dod_elb.11.d_baltenland
+			}
+		}
+	}
+	flavor = dod_elb.11.f
+	event_image = { texture = "gfx/event_pictures/dod/mitau_schloss.dds" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	duration = 3
+
+	trigger = {
+		dod_is_baltic_elbian_country = yes
+	}
+
+	option = {
+		name = dod_elb.11.a
+		default_option = yes
+		c:CAE = { annex = root }
+		ai_chance = {
+			base = 60
+			modifier = {
+				trigger = { country_rank >= rank_value:major_power }
+				add = -30
+			}
+		}
+	}
+
+	option = {
+		name = dod_elb.11.b
+		c:CAE = {
+			set_variable = { name = dod_baltic_refuser value = root }
+			trigger_event = { id = dod_elb.12 days = 3 }
+		}
+		ai_chance = { base = 40 }
+	}
+}
+
+dod_elb.12 = {
+	type = country_event
+	placement = root
+	title = dod_elb.12.t
+	desc = dod_elb.12.d
+	flavor = dod_elb.12.f
+	event_image = { video = "unspecific_military_parade" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+	duration = 3
+
+	trigger = {
+		has_variable = dod_baltic_refuser
+		var:dod_baltic_refuser = { exists = this }
+	}
+
+	option = {
+		name = dod_elb.12.a
+		default_option = yes
+		create_diplomatic_play = {
+			target_country = var:dod_baltic_refuser
+			type = dp_annex_war
+		}
+		remove_variable = dod_baltic_refuser
+		ai_chance = { base = 75 }
+	}
+
+	option = {
+		name = dod_elb.12.b
+		add_modifier = { name = dod_brothers_spared months = 60 }
+		remove_variable = dod_baltic_refuser
+		ai_chance = { base = 25 }
+	}
+}
+
+dod_elb.15 = {
+	type = country_event
+	placement = root
+	title = dod_elb.15.t
+	desc = dod_elb.15.d
+	flavor = dod_elb.15.f
+	event_image = { video = "unspecific_signed_contract" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	duration = 3
+
+	option = {
+		name = dod_elb.15.a
+		default_option = yes
+	}
+}
+
+dod_elb.20 = {
+	type = country_event
+	placement = root
+	title = dod_elb.20.t
+	desc = dod_elb.20.d
+	flavor = dod_elb.20.f
+	event_image = { video = "europenorthamerica_political_extremism" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+	duration = 3
+
+	trigger = {
+		NOT = { this = c:CAE }
+		exists = c:CAE
+		c:CAE = { NOT = { dod_is_authoritarian = yes } }
+		any_scope_state = { dod_is_baltic_elbian_state = yes }
+		NOT = { country_has_primary_culture = cu:livlandian }
+		NOT = { country_has_primary_culture = cu:north_german }
+		NOT = { has_global_variable = dod_baltic_agitation }
+	}
+
+	immediate = {
+		set_global_variable = dod_baltic_agitation
+	}
+
+	option = {
+		name = dod_elb.20.a
+		default_option = yes
+		c:CAE = {
+			set_variable = { name = dod_baltic_oppressor value = root }
+			trigger_event = { id = dod_elb.21 days = 14 }
+		}
+	}
+}
+
+dod_elb.21 = {
+	type = country_event
+	placement = root
+	title = dod_elb.21.t
+	desc = dod_elb.21.d
+	flavor = dod_elb.21.f
+	event_image = { texture = "gfx/event_pictures/dod/riga_sunset.dds" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+	duration = 3
+
+	trigger = {
+		has_variable = dod_baltic_oppressor
+	}
+
+	# Liberate our brothers: claim the Baltic Elbian lands
+	option = {
+		name = dod_elb.21.a
+		default_option = yes
+		every_state = {
+			limit = {
+				dod_is_baltic_elbian_state = yes
+				owner = root.var:dod_baltic_oppressor
+			}
+			state_region = { add_claim = root }
+		}
+		set_variable = dod_baltic_claims
+		remove_variable = dod_baltic_oppressor
+		ai_chance = { base = 75 }
+	}
+
+	option = {
+		name = dod_elb.21.b
+		add_modifier = { name = dod_baltic_betrayal months = 60 }
+		remove_variable = dod_baltic_oppressor
+		ai_chance = { base = 25 }
+	}
+}
+
+dod_elb.22 = {
+	type = country_event
+	placement = root
+	title = dod_elb.22.t
+	desc = dod_elb.22.d
+	flavor = dod_elb.22.f
+	event_image = { texture = "gfx/event_pictures/dod/riga_landeswehr.dds" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	duration = 3
+
+	trigger = {
+		this = c:CAE
+		has_variable = dod_baltic_claims
+		NOT = { exists = c:BLT }
+		NOT = { dod_is_authoritarian = yes }
+		any_scope_state = { dod_is_baltic_elbian_state = yes }
+	}
+
+	immediate = {
+		remove_variable = dod_baltic_claims
+	}
+
+	# Compromise: a Baltic Elbian state under our protection
+	option = {
+		name = dod_elb.22.a
+		default_option = yes
+		dod_release_homeland = { TAG = BLT CULTURE = livlandian }
+		if = {
+			limit = { exists = c:BLT }
+			create_diplomatic_pact = { country = c:BLT type = puppet }
+		}
+		ai_chance = { base = 70 }
+	}
+
+	# Outright annexation
+	option = {
+		name = dod_elb.22.b
+		set_variable = dod_baltic_integrated
+		add_primary_culture = cu:livlandian
+		ai_chance = { base = 30 }
+	}
+}
+
+dod_elb.30 = {
+	type = country_event
+	placement = root
+	title = dod_elb.30.t
+	desc = dod_elb.30.d
+	flavor = dod_elb.30.f
+	event_image = { texture = "gfx/event_pictures/dod/barrikadenkaempfe_berlin.dds" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+	duration = 3
+
+	trigger = {
+		this = c:CAE
+		dod_is_authoritarian = yes
+		is_at_war = no
+		NOT = { exists = c:NGF }
+		NOT = { has_variable = dod_secession_handled }
+		any_scope_state = { dod_is_elbian_state = yes }
+	}
+
+	immediate = {
+		set_variable = dod_secession_handled
+	}
+
+	# By force if necessary
+	option = {
+		name = dod_elb.30.a
+		default_option = yes
+		dod_release_homeland = { TAG = NGF CULTURE = north_german }
+		if = {
+			limit = { exists = c:NGF }
+			create_diplomatic_play = {
+				target_country = c:NGF
+				type = dp_annex_war
+			}
+			add_journal_entry = { type = je_dod_elbian_secession_war }
+		}
+		ai_chance = { base = 80 }
+	}
+
+	# Let them go
+	option = {
+		name = dod_elb.30.b
+		dod_release_homeland = { TAG = NGF CULTURE = north_german }
+		trigger_event = { id = dod_elb.32 days = 30 }
+		ai_chance = { base = 20 }
+	}
+}
+
+dod_elb.31 = {
+	type = country_event
+	placement = root
+	title = dod_elb.31.t
+	desc = dod_elb.31.d
+	flavor = dod_elb.31.f
+	event_image = { video = "unspecific_military_parade" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+	duration = 3
+
+	option = {
+		name = dod_elb.31.a
+		default_option = yes
+		add_modifier = { name = dod_elbian_union_restored months = 120 }
+	}
+}
+
+dod_elb.32 = {
+	type = country_event
+	placement = root
+	title = dod_elb.32.t
+	desc = dod_elb.32.d
+	flavor = dod_elb.32.f
+	event_image = { video = "europenorthamerica_political_extremism" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	option = {
+		name = dod_elb.32.a
+		default_option = yes
+		add_modifier = { name = dod_grasp_all_lose_all months = 120 }
+		remove_primary_culture = cu:north_german
+		if = {
+			limit = { NOT = { exists = c:BOH } }
+			change_tag = BOH
+		}
+	}
+}
+
+dod_elb.40 = {
+	type = country_event
+	placement = root
+	title = dod_elb.40.t
+	desc = dod_elb.40.d
+	flavor = dod_elb.40.f
+	event_image = { texture = "gfx/event_pictures/dod/nussdorf_linie.dds" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+	duration = 3
+
+	trigger = {
+		this = c:CAE
+		has_variable = dod_baltic_integrated
+		is_at_war = no
+		NOT = { exists = c:BOH }
+		NOT = { has_variable = dod_prague_handled }
+		any_scope_state = { dod_is_bohemian_state = yes }
+	}
+
+	immediate = {
+		set_variable = dod_prague_handled
+	}
+
+	# Crush the upstarts
+	option = {
+		name = dod_elb.40.a
+		default_option = yes
+		dod_release_homeland = { TAG = BOH CULTURE = czech }
+		if = {
+			limit = { exists = c:BOH }
+			create_diplomatic_play = {
+				target_country = c:BOH
+				type = dp_annex_war
+			}
+			add_journal_entry = { type = je_dod_bohemian_secession_war }
+		}
+		ai_chance = { base = 80 }
+	}
+
+	# Let Bohemia go
+	option = {
+		name = dod_elb.40.b
+		dod_release_homeland = { TAG = BOH CULTURE = czech }
+		trigger_event = { id = dod_elb.42 days = 30 }
+		ai_chance = { base = 20 }
+	}
+}
+
+dod_elb.41 = {
+	type = country_event
+	placement = root
+	title = dod_elb.41.t
+	desc = dod_elb.41.d
+	flavor = dod_elb.41.f
+	event_image = { video = "unspecific_military_parade" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+	duration = 3
+
+	option = {
+		name = dod_elb.41.a
+		default_option = yes
+		add_modifier = { name = dod_elbian_union_restored months = 120 }
+	}
+}
+
+dod_elb.42 = {
+	type = country_event
+	placement = root
+	title = dod_elb.42.t
+	desc = dod_elb.42.d
+	flavor = dod_elb.42.f
+	event_image = { video = "europenorthamerica_political_extremism" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	option = {
+		name = dod_elb.42.a
+		default_option = yes
+		add_modifier = { name = dod_grasp_all_lose_all months = 120 }
+		remove_primary_culture = cu:czech
+		if = {
+			limit = { NOT = { exists = c:NGF } }
+			change_tag = NGF
+		}
+	}
+}

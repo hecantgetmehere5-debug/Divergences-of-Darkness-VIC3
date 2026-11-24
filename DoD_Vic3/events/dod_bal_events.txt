@@ -1,0 +1,965 @@
+namespace = dod_bal
+
+dod_bal.1 = {
+	type = country_event
+	placement = root
+	title = dod_bal.1.t
+	desc = dod_bal.1.d
+	flavor = dod_bal.1.f
+	event_image = { video = "unspecific_military_parade" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+	duration = 3
+
+	trigger = {
+		this = c:TUR
+		has_journal_entry = je_dod_ottoman_civil_war
+		NOT = { has_variable = dod_bal_seen_1 }
+	}
+
+	immediate = {
+		set_variable = dod_bal_seen_1
+	}
+
+	option = {
+		name = dod_bal.1.a
+		default_option = yes
+		add_modifier = { name = dod_janissaries_defeated months = 60 }
+	}
+}
+
+dod_bal.2 = {
+	type = country_event
+	placement = root
+	title = dod_bal.2.t
+	desc = dod_bal.2.d
+	flavor = dod_bal.2.f
+	event_image = { video = "europenorthamerica_political_extremism" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	duration = 3
+
+	trigger = {
+		this = c:TUR
+		is_at_war = no
+		exists = c:ALB
+		c:ALB = { NOT = { is_subject_of = root } }
+		NOT = { has_variable = dod_lost_alb }
+		NOT = { has_variable = dod_regained_alb }
+	}
+
+	option = {
+		name = dod_bal.2.a
+		default_option = yes
+		set_variable = dod_lost_alb
+		add_modifier = { name = dod_ottoman_province_lost months = 60 }
+	}
+}
+
+dod_bal.12 = {
+	type = country_event
+	placement = root
+	title = dod_bal.12.t
+	desc = dod_bal.12.d
+	flavor = dod_bal.12.f
+	event_image = { video = "unspecific_military_parade" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	duration = 3
+
+	trigger = {
+		this = c:TUR
+		NOT = { exists = c:ALB }
+		NOT = { has_variable = dod_regained_alb }
+	}
+
+	option = {
+		name = dod_bal.12.a
+		default_option = yes
+		set_variable = dod_regained_alb
+		add_modifier = { name = dod_ottoman_reconquest months = 60 }
+	}
+}
+
+dod_bal.3 = {
+	type = country_event
+	placement = root
+	title = dod_bal.3.t
+	desc = dod_bal.3.d
+	flavor = dod_bal.3.f
+	event_image = { video = "europenorthamerica_political_extremism" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	duration = 3
+
+	trigger = {
+		this = c:TUR
+		is_at_war = no
+		exists = c:MAC
+		c:MAC = { NOT = { is_subject_of = root } }
+		NOT = { has_variable = dod_lost_mac }
+		NOT = { has_variable = dod_regained_mac }
+	}
+
+	option = {
+		name = dod_bal.3.a
+		default_option = yes
+		set_variable = dod_lost_mac
+		add_modifier = { name = dod_ottoman_province_lost months = 60 }
+	}
+}
+
+dod_bal.13 = {
+	type = country_event
+	placement = root
+	title = dod_bal.13.t
+	desc = dod_bal.13.d
+	flavor = dod_bal.13.f
+	event_image = { video = "unspecific_military_parade" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	duration = 3
+
+	trigger = {
+		this = c:TUR
+		NOT = { exists = c:MAC }
+		NOT = { has_variable = dod_regained_mac }
+	}
+
+	option = {
+		name = dod_bal.13.a
+		default_option = yes
+		set_variable = dod_regained_mac
+		add_modifier = { name = dod_ottoman_reconquest months = 60 }
+	}
+}
+
+dod_bal.4 = {
+	type = country_event
+	placement = root
+	title = dod_bal.4.t
+	desc = dod_bal.4.d
+	flavor = dod_bal.4.f
+	event_image = { video = "europenorthamerica_political_extremism" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	duration = 3
+
+	trigger = {
+		this = c:TUR
+		is_at_war = no
+		exists = c:EGY
+		c:EGY = { NOT = { is_subject_of = root } }
+		NOT = { has_variable = dod_lost_egy }
+		NOT = { has_variable = dod_regained_egy }
+	}
+
+	option = {
+		name = dod_bal.4.a
+		default_option = yes
+		set_variable = dod_lost_egy
+		add_modifier = { name = dod_ottoman_province_lost months = 60 }
+	}
+}
+
+dod_bal.14 = {
+	type = country_event
+	placement = root
+	title = dod_bal.14.t
+	desc = dod_bal.14.d
+	flavor = dod_bal.14.f
+	event_image = { video = "unspecific_military_parade" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	duration = 3
+
+	trigger = {
+		this = c:TUR
+		NOT = { exists = c:EGY }
+		NOT = { has_variable = dod_regained_egy }
+	}
+
+	option = {
+		name = dod_bal.14.a
+		default_option = yes
+		set_variable = dod_regained_egy
+		add_modifier = { name = dod_ottoman_reconquest months = 60 }
+	}
+}
+
+dod_bal.5 = {
+	type = country_event
+	placement = root
+	title = dod_bal.5.t
+	desc = dod_bal.5.d
+	flavor = dod_bal.5.f
+	event_image = { video = "unspecific_politicians_arguing" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	duration = 3
+
+	trigger = {
+		this = c:CRO
+		is_at_war = no
+		exists = c:TUR
+		c:TUR = { has_journal_entry = je_dod_ottoman_civil_war }
+		any_state = {
+			state_region = { is_homeland = cu:serb }
+			owner = c:TUR
+		}
+		NOT = { has_variable = dod_bal_seen_5 }
+	}
+
+	immediate = {
+		set_variable = dod_bal_seen_5
+	}
+
+	option = {
+		name = dod_bal.5.a
+		default_option = yes
+		change_infamy = 5
+		every_state = {
+			limit = {
+				state_region = { is_homeland = cu:serb }
+				owner = c:TUR
+			}
+			state_region = { add_claim = root }
+		}
+		ai_chance = { base = 60 }
+	}
+
+	option = {
+		name = dod_bal.5.b
+		ai_chance = { base = 40 }
+	}
+}
+
+dod_bal.6 = {
+	type = country_event
+	placement = root
+	title = dod_bal.6.t
+	desc = dod_bal.6.d
+	flavor = dod_bal.6.f
+	event_image = { video = "unspecific_politicians_arguing" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	duration = 3
+
+	trigger = {
+		this = c:HUN
+		is_at_war = no
+		exists = c:TUR
+		c:TUR = { has_journal_entry = je_dod_ottoman_civil_war }
+		any_state = {
+			state_region = { is_homeland = cu:serb }
+			owner = c:TUR
+		}
+		NOT = { has_variable = dod_bal_seen_6 }
+	}
+
+	immediate = {
+		set_variable = dod_bal_seen_6
+	}
+
+	option = {
+		name = dod_bal.6.a
+		default_option = yes
+		change_infamy = 5
+		every_state = {
+			limit = {
+				state_region = { is_homeland = cu:serb }
+				owner = c:TUR
+			}
+			state_region = { add_claim = root }
+		}
+		ai_chance = { base = 60 }
+	}
+
+	option = {
+		name = dod_bal.6.b
+		ai_chance = { base = 40 }
+	}
+}
+
+dod_bal.7 = {
+	type = country_event
+	placement = root
+	title = dod_bal.7.t
+	desc = dod_bal.7.d
+	flavor = dod_bal.7.f
+	event_image = { video = "unspecific_politicians_arguing" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	duration = 3
+
+	trigger = {
+		this = c:MOL
+		is_at_war = no
+		exists = c:TUR
+		c:TUR = { has_journal_entry = je_dod_ottoman_civil_war }
+		any_state = {
+			state_region = { is_homeland = cu:romanian }
+			owner = c:TUR
+		}
+		NOT = { has_variable = dod_bal_seen_7 }
+	}
+
+	immediate = {
+		set_variable = dod_bal_seen_7
+	}
+
+	option = {
+		name = dod_bal.7.a
+		default_option = yes
+		change_infamy = 5
+		every_state = {
+			limit = {
+				state_region = { is_homeland = cu:romanian }
+				owner = c:TUR
+			}
+			state_region = { add_claim = root }
+		}
+		ai_chance = { base = 60 }
+	}
+
+	option = {
+		name = dod_bal.7.b
+		ai_chance = { base = 40 }
+	}
+}
+
+dod_bal.8 = {
+	type = country_event
+	placement = root
+	title = dod_bal.8.t
+	desc = dod_bal.8.d
+	flavor = dod_bal.8.f
+	event_image = { video = "unspecific_politicians_arguing" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	duration = 3
+
+	trigger = {
+		this = c:AZB
+		is_at_war = no
+		exists = c:TUR
+		c:TUR = { has_journal_entry = je_dod_ottoman_civil_war }
+		any_state = {
+			state_region = { is_homeland = cu:azerbaijani }
+			owner = c:TUR
+		}
+		NOT = { has_variable = dod_bal_seen_8 }
+	}
+
+	immediate = {
+		set_variable = dod_bal_seen_8
+	}
+
+	option = {
+		name = dod_bal.8.a
+		default_option = yes
+		change_infamy = 5
+		every_state = {
+			limit = {
+				state_region = { is_homeland = cu:azerbaijani }
+				owner = c:TUR
+			}
+			state_region = { add_claim = root }
+		}
+		ai_chance = { base = 60 }
+	}
+
+	option = {
+		name = dod_bal.8.b
+		ai_chance = { base = 40 }
+	}
+}
+
+dod_bal.20 = {
+	type = country_event
+	placement = root
+	title = dod_bal.20.t
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				desc = dod_bal.20.d_won
+				trigger = { NOT = { exists = c:MAC }
+NOT = { exists = c:ALB }
+NOT = { exists = c:EGY } }
+			}
+			triggered_desc = {
+				desc = dod_bal.20.d_lost
+			}
+		}
+	}
+	flavor = dod_bal.20.f
+	event_image = { video = "unspecific_signed_contract" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	option = {
+		name = dod_bal.20.a
+		default_option = yes
+		add_modifier = { name = dod_sunset_rebellions months = 120 }
+	}
+}
+
+dod_bal.21 = {
+	type = country_event
+	placement = root
+	title = dod_bal.21.t
+	desc = dod_bal.21.d
+	flavor = dod_bal.21.f
+	event_image = { video = "unspecific_military_parade" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+	duration = 3
+
+	trigger = {
+		this = c:EGY
+		is_at_war = no
+		NOT = { is_subject_of = c:TUR }
+		NOT = { has_variable = dod_bal_seen_21 }
+	}
+
+	immediate = {
+		set_variable = dod_bal_seen_21
+	}
+
+	option = {
+		name = dod_bal.21.a
+		default_option = yes
+		add_modifier = { name = dod_zahiri_victory months = 120 }
+	}
+}
+
+dod_bal.22 = {
+	type = country_event
+	placement = root
+	title = dod_bal.22.t
+	desc = dod_bal.22.d
+	flavor = dod_bal.22.f
+	event_image = { texture = "gfx/event_pictures/dod/muhammad_ali.dds" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	trigger = {
+		this = c:EGY
+		has_variable = dod_bal_seen_21
+		any_scope_state = { state_region = { is_homeland = cu:mashriqi } }
+		NOT = { has_variable = dod_bal_seen_22 }
+	}
+
+	immediate = {
+		set_variable = dod_bal_seen_22
+	}
+
+	option = {
+		name = dod_bal.22.a
+		default_option = yes
+		add_modifier = { name = dod_misri_nahda months = 120 }
+	}
+}
+
+dod_bal.30 = {
+	type = country_event
+	placement = root
+	title = dod_bal.30.t
+	desc = dod_bal.30.d
+	flavor = dod_bal.30.f
+	event_image = { video = "unspecific_politicians_arguing" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+	duration = 3
+
+	trigger = {
+		this = c:MOL
+		is_at_war = no
+		game_date >= 1857.1.1
+		exists = c:WAL
+		NOT = { has_variable = dod_bal_seen_30 }
+	}
+
+	immediate = {
+		set_variable = dod_bal_seen_30
+	}
+
+	option = {
+		name = dod_bal.30.a
+		default_option = yes
+		c:WAL = { trigger_event = { id = dod_bal.31 days = 14 } }
+		ai_chance = { base = 80 }
+	}
+
+	option = {
+		name = dod_bal.30.b
+		ai_chance = { base = 20 }
+	}
+}
+
+dod_bal.31 = {
+	type = country_event
+	placement = root
+	title = dod_bal.31.t
+	desc = dod_bal.31.d
+	flavor = dod_bal.31.f
+	event_image = { video = "unspecific_politicians_arguing" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+	duration = 3
+
+	option = {
+		name = dod_bal.31.a
+		default_option = yes
+		c:MOL = { annex = root }
+		ai_chance = { base = 60 }
+	}
+
+	option = {
+		name = dod_bal.31.b
+		ai_chance = { base = 40 }
+	}
+}
+
+dod_bal.35 = {
+	type = country_event
+	placement = root
+	title = dod_bal.35.t
+	desc = dod_bal.35.d
+	flavor = dod_bal.35.f
+	event_image = { texture = "gfx/event_pictures/dod/ottoman_sofia.dds" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+	duration = 3
+
+	trigger = {
+		this = c:TUR
+		is_at_war = no
+		NOT = { exists = c:HUN }
+		any_scope_state = { state_region = { is_homeland = cu:hungarian } }
+		NOT = { has_variable = dod_bal_seen_35 }
+	}
+
+	immediate = {
+		set_variable = dod_bal_seen_35
+	}
+
+	option = {
+		name = dod_bal.35.a
+		default_option = yes
+		dod_release_homeland = { TAG = HUN CULTURE = hungarian }
+		if = {
+			limit = { exists = c:HUN }
+			create_diplomatic_pact = { country = c:HUN type = tributary }
+		}
+		ai_chance = { base = 40 }
+	}
+
+	option = {
+		name = dod_bal.35.b
+		ig:ig_intelligentsia = { add_modifier = { name = dod_magyar_repression months = 60 } }
+		ai_chance = { base = 60 }
+	}
+}
+
+dod_bal.40 = {
+	type = country_event
+	placement = root
+	title = dod_bal.40.t
+	desc = dod_bal.40.d
+	flavor = dod_bal.40.f
+	event_image = { texture = "gfx/event_pictures/dod/SER_lib.dds" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	duration = 3
+
+	trigger = {
+		this = c:CRO
+		exists = c:TUR
+		any_state = {
+			state_region = { is_homeland = cu:serb }
+			owner = c:TUR
+		}
+		NOT = { has_variable = dod_bal_seen_40 }
+	}
+
+	immediate = {
+		set_variable = dod_bal_seen_40
+	}
+
+	option = {
+		name = dod_bal.40.a
+		default_option = yes
+		change_infamy = 5
+		every_state = {
+			limit = {
+				state_region = { is_homeland = cu:serb }
+				owner = c:TUR
+			}
+			state_region = { add_claim = root }
+		}
+		ai_chance = { base = 70 }
+	}
+
+	option = {
+		name = dod_bal.40.b
+		ai_chance = { base = 30 }
+	}
+}
+
+dod_bal.41 = {
+	type = country_event
+	placement = root
+	title = dod_bal.41.t
+	desc = dod_bal.41.d
+	flavor = dod_bal.41.f
+	event_image = { video = "unspecific_politicians_arguing" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	duration = 3
+
+	trigger = {
+		this = c:CRO
+		has_variable = dod_bal_seen_40
+		NOT = { exists = c:SER }
+		any_scope_state = { state_region = { is_homeland = cu:serb } }
+		NOT = { has_variable = dod_bal_seen_41 }
+	}
+
+	immediate = {
+		set_variable = dod_bal_seen_41
+	}
+
+	option = {
+		name = dod_bal.41.a
+		default_option = yes
+		dod_release_homeland = { TAG = SER CULTURE = serb }
+		if = {
+			limit = { exists = c:SER }
+			create_diplomatic_pact = { country = c:SER type = personal_union }
+		}
+		ai_chance = { base = 70 }
+	}
+
+	option = {
+		name = dod_bal.41.b
+		add_primary_culture = cu:serb
+		ai_chance = { base = 30 }
+	}
+}
+
+dod_bal.42 = {
+	type = country_event
+	placement = root
+	title = dod_bal.42.t
+	desc = dod_bal.42.d
+	flavor = dod_bal.42.f
+	event_image = { video = "unspecific_politicians_arguing" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+	duration = 3
+
+	trigger = {
+		this = c:CRO
+		game_date >= 1870.1.1
+		exists = c:SER
+		c:SER = { is_subject_of = root }
+		NOT = { has_variable = dod_bal_seen_42 }
+	}
+
+	immediate = {
+		set_variable = dod_bal_seen_42
+	}
+
+	option = {
+		name = dod_bal.42.a
+		default_option = yes
+		c:SER = { trigger_event = { id = dod_bal.43 days = 7 } }
+	}
+}
+
+dod_bal.43 = {
+	type = country_event
+	placement = root
+	title = dod_bal.43.t
+	desc = dod_bal.43.d
+	flavor = dod_bal.43.f
+	event_image = { video = "unspecific_politicians_arguing" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+	duration = 3
+
+	option = {
+		name = dod_bal.43.a
+		default_option = yes
+		c:CRO = {
+			annex = root
+			add_primary_culture = cu:serb
+			set_variable = dod_serbo_croat_union
+		}
+		ai_chance = { base = 50 }
+	}
+
+	option = {
+		name = dod_bal.43.b
+		random_country = {
+			limit = { root = { is_subject_of = prev } }
+			save_scope_as = dod_overlord
+		}
+		if = {
+			limit = { exists = scope:dod_overlord }
+			create_diplomatic_play = {
+				target_country = scope:dod_overlord
+				type = dp_independence
+			}
+		}
+		ai_chance = { base = 50 }
+	}
+}
+
+dod_bal.44 = {
+	type = country_event
+	placement = root
+	title = dod_bal.44.t
+	desc = dod_bal.44.d
+	flavor = dod_bal.44.f
+	event_image = { texture = "gfx/event_pictures/dod/Montenegro_duke.dds" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	trigger = {
+		this = c:CRO
+		has_variable = dod_serbo_croat_union
+		exists = c:MON
+		NOT = { has_variable = dod_bal_seen_44 }
+	}
+
+	immediate = {
+		set_variable = dod_bal_seen_44
+	}
+
+	option = {
+		name = dod_bal.44.a
+		default_option = yes
+		c:MON = { trigger_event = { id = dod_bal.45 days = 14 } }
+		ai_chance = { base = 70 }
+	}
+
+	option = {
+		name = dod_bal.44.b
+		ai_chance = { base = 30 }
+	}
+}
+
+dod_bal.45 = {
+	type = country_event
+	placement = root
+	title = dod_bal.45.t
+	desc = dod_bal.45.d
+	flavor = dod_bal.45.f
+	event_image = { texture = "gfx/event_pictures/dod/Montenegro_duke.dds" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	option = {
+		name = dod_bal.45.a
+		default_option = yes
+		c:CRO = { annex = root }
+		ai_chance = { base = 20 }
+	}
+
+	option = {
+		name = dod_bal.45.b
+		trigger = { exists = c:VEN }
+		c:VEN = { trigger_event = { id = dod_bal.46 days = 7 } }
+		ai_chance = { base = 30 }
+	}
+
+	option = {
+		name = dod_bal.45.c
+		trigger = { exists = c:ITA }
+		c:ITA = { trigger_event = { id = dod_bal.46 days = 7 } }
+		ai_chance = { base = 30 }
+	}
+
+	option = {
+		name = dod_bal.45.opt_d
+		random_country = {
+			limit = {
+				OR = {
+					this = c:ARA
+					this = c:ARI
+				}
+			}
+			trigger_event = { id = dod_bal.46 days = 7 }
+		}
+		ai_chance = { base = 20 }
+	}
+}
+
+dod_bal.46 = {
+	type = country_event
+	placement = root
+	title = dod_bal.46.t
+	desc = dod_bal.46.d
+	flavor = dod_bal.46.f
+	event_image = { video = "unspecific_politicians_arguing" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+	duration = 3
+
+	trigger = {
+		exists = c:MON
+	}
+
+	option = {
+		name = dod_bal.46.a
+		default_option = yes
+		create_diplomatic_pact = { country = c:MON type = alliance }
+		ai_chance = { base = 50 }
+	}
+
+	option = {
+		name = dod_bal.46.b
+		c:CRO = { trigger_event = { id = dod_bal.47 days = 7 } }
+		ai_chance = { base = 50 }
+	}
+}
+
+dod_bal.47 = {
+	type = country_event
+	placement = root
+	title = dod_bal.47.t
+	desc = dod_bal.47.d
+	flavor = dod_bal.47.f
+	event_image = { video = "unspecific_military_parade" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+	duration = 3
+
+	trigger = {
+		exists = c:MON
+	}
+
+	option = {
+		name = dod_bal.47.a
+		default_option = yes
+		create_diplomatic_play = {
+			target_country = c:MON
+			type = dp_annex_war
+		}
+		ai_chance = { base = 80 }
+	}
+
+	option = {
+		name = dod_bal.47.b
+		ai_chance = { base = 20 }
+	}
+}
+
+dod_bal.48 = {
+	type = country_event
+	placement = root
+	title = dod_bal.48.t
+	desc = dod_bal.48.d
+	flavor = dod_bal.48.f
+	event_image = { texture = "gfx/event_pictures/dod/belgrade.dds" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	duration = 3
+
+	trigger = {
+		this = c:CRO
+		game_date >= 1865.1.1
+		exists = c:SER
+		c:SER = { is_subject_of = root }
+		exists = c:HUN
+		any_state = {
+			state_region = { is_homeland = cu:serb }
+			owner = c:HUN
+		}
+		NOT = { has_variable = dod_bal_seen_48 }
+	}
+
+	immediate = {
+		set_variable = dod_bal_seen_48
+	}
+
+	option = {
+		name = dod_bal.48.a
+		default_option = yes
+		c:HUN = { trigger_event = { id = dod_bal.49 days = 7 } }
+		ai_chance = { base = 80 }
+	}
+
+	option = {
+		name = dod_bal.48.b
+		ai_chance = { base = 20 }
+	}
+}
+
+dod_bal.49 = {
+	type = country_event
+	placement = root
+	title = dod_bal.49.t
+	desc = dod_bal.49.d
+	flavor = dod_bal.49.f
+	event_image = { video = "unspecific_politicians_arguing" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	duration = 3
+
+	option = {
+		name = dod_bal.49.a
+		default_option = yes
+		every_scope_state = {
+			limit = { state_region = { is_homeland = cu:serb } }
+			set_state_owner = c:SER
+		}
+		ai_chance = { base = 40 }
+	}
+
+	option = {
+		name = dod_bal.49.b
+		c:CRO = { trigger_event = { id = dod_bal.50 days = 3 } }
+		ai_chance = { base = 60 }
+	}
+}
+
+dod_bal.50 = {
+	type = country_event
+	placement = root
+	title = dod_bal.50.t
+	desc = dod_bal.50.d
+	flavor = dod_bal.50.f
+	event_image = { video = "unspecific_military_parade" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+	duration = 3
+
+	option = {
+		name = dod_bal.50.a
+		default_option = yes
+		every_state = {
+			limit = {
+				state_region = { is_homeland = cu:serb }
+				owner = c:HUN
+			}
+			state_region = { add_claim = root }
+		}
+		create_diplomatic_play = {
+			target_country = c:HUN
+			type = dp_humiliation
+		}
+		ai_chance = { base = 80 }
+	}
+
+	option = {
+		name = dod_bal.50.b
+		ai_chance = { base = 20 }
+	}
+}

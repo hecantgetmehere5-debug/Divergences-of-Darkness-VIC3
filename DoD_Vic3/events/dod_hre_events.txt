@@ -1,0 +1,728 @@
+namespace = dod_hre
+
+# =====================================================================
+# Part 1: The Prague Proclamation
+# =====================================================================
+
+# The Emperor issues the Proclamation
+dod_hre.1 = {
+	type = country_event
+	placement = root
+	title = dod_hre.1.t
+	desc = dod_hre.1.d
+	flavor = dod_hre.1.f
+	event_image = { video = "unspecific_signed_contract" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+	duration = 3
+
+	option = {
+		name = dod_hre.1.a
+		default_option = yes
+		every_country = {
+			limit = { dod_is_free_prince = yes }
+			trigger_event = { id = dod_hre.10 days = { 14 120 } }
+		}
+		add_journal_entry = { type = je_dod_imperial_diets }
+		ai_chance = { base = 60 }
+	}
+
+	option = {
+		name = dod_hre.1.b
+		set_variable = dod_imperial_guarantees
+		add_modifier = { name = dod_imperial_guarantees months = 120 }
+		every_country = {
+			limit = { dod_is_free_prince = yes }
+			trigger_event = { id = dod_hre.10 days = { 14 120 } }
+		}
+		add_journal_entry = { type = je_dod_imperial_diets }
+		ai_chance = { base = 40 }
+	}
+}
+
+# A prince receives the Proclamation
+dod_hre.10 = {
+	type = country_event
+	placement = root
+	title = dod_hre.10.t
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				desc = dod_hre.10.d_elbe
+				trigger = { dod_is_elbian_prince = yes }
+			}
+			triggered_desc = {
+				desc = dod_hre.10.d_rhine
+				trigger = { dod_is_rhenish_prince = yes }
+			}
+			triggered_desc = {
+				desc = dod_hre.10.d_danube
+			}
+		}
+	}
+	flavor = dod_hre.10.f
+	event_image = { video = "unspecific_politicians_arguing" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+	duration = 3
+
+	trigger = {
+		dod_is_free_prince = yes
+	}
+
+	# Join the Reich
+	option = {
+		name = dod_hre.10.a
+		dod_hre_count_accept = yes
+		c:HLR = { annex = root }
+		ai_chance = {
+			base = 25
+			modifier = {
+				trigger = { has_law = law_type:law_monarchy }
+				add = 15
+			}
+			modifier = {
+				trigger = { c:HLR = { has_variable = dod_imperial_guarantees } }
+				add = 15
+			}
+			modifier = {
+				trigger = { is_at_war = yes }
+				add = 10
+			}
+		}
+	}
+
+	# Negotiate: keep our privileges as a subject of the Emperor
+	option = {
+		name = dod_hre.10.b
+		default_option = yes
+		c:HLR = {
+			change_variable = { name = dod_negotiated add = 1 }
+			create_diplomatic_pact = { country = root type = puppet }
+		}
+		ai_chance = {
+			base = 35
+			modifier = {
+				trigger = { c:HLR = { has_variable = dod_imperial_guarantees } }
+				add = 15
+			}
+		}
+	}
+
+	# Refuse
+	option = {
+		name = dod_hre.10.c
+		dod_hre_count_refuse = yes
+		ai_chance = {
+			base = 30
+			modifier = {
+				trigger = {
+					OR = {
+						has_law = law_type:law_parliamentary_republic
+						has_law = law_type:law_presidential_republic
+					}
+				}
+				add = 20
+			}
+			modifier = {
+				trigger = { country_rank >= rank_value:major_power }
+				add = 20
+			}
+		}
+	}
+}
+
+# The diets report back
+dod_hre.20 = {
+	type = country_event
+	placement = root
+	title = dod_hre.20.t
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				desc = dod_hre.20.d_failure
+				trigger = { var:dod_federations >= 3 }
+			}
+			triggered_desc = {
+				desc = dod_hre.20.d_success
+				trigger = { var:dod_federations = 0 }
+			}
+			triggered_desc = {
+				desc = dod_hre.20.d_mixed
+			}
+		}
+	}
+	flavor = dod_hre.20.f
+	event_image = { video = "europenorthamerica_political_extremism" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+	duration = 3
+
+	immediate = {
+		if = {
+			limit = {
+				var:dod_elbe_refuse >= 2
+				var:dod_elbe_refuse > var:dod_elbe_accept
+			}
+			dod_hre_form_federation = { REGION = elbian TAG = NGF }
+		}
+		if = {
+			limit = {
+				var:dod_rhine_refuse >= 2
+				var:dod_rhine_refuse > var:dod_rhine_accept
+			}
+			dod_hre_form_federation = { REGION = rhenish TAG = RHI }
+		}
+		if = {
+			limit = {
+				var:dod_danube_refuse >= 2
+				var:dod_danube_refuse > var:dod_danube_accept
+			}
+			dod_hre_form_federation = { REGION = danubian TAG = SGF }
+		}
+	}
+
+	# Submission or conquest
+	option = {
+		name = dod_hre.20.a
+		default_option = yes
+		every_country = {
+			limit = { has_variable = dod_rebel_federation }
+			save_scope_as = dod_federation
+			root = {
+				create_diplomatic_play = {
+					target_country = scope:dod_federation
+					type = dp_annex_war
+				}
+			}
+		}
+		add_journal_entry = { type = je_dod_submission_or_conquest }
+		ai_chance = { base = 70 }
+	}
+
+	# Give the rebels time
+	option = {
+		name = dod_hre.20.b
+		trigger = { var:dod_federations > 0 }
+		add_journal_entry = { type = je_dod_submission_or_conquest }
+		ai_chance = { base = 30 }
+	}
+}
+
+# Ultimatum to a remaining prince (from je_dod_submission_or_conquest)
+dod_hre.30 = {
+	type = country_event
+	placement = root
+	title = dod_hre.30.t
+	desc = dod_hre.30.d
+	flavor = dod_hre.30.f
+	event_image = { video = "unspecific_military_parade" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+	duration = 3
+
+	trigger = {
+		is_at_war = no
+		any_country = { dod_is_free_prince = yes }
+	}
+
+	immediate = {
+		random_country = {
+			limit = { dod_is_free_prince = yes }
+			save_scope_as = dod_prince
+		}
+	}
+
+	option = {
+		name = dod_hre.30.a
+		default_option = yes
+		scope:dod_prince = {
+			trigger_event = { id = dod_hre.31 days = 7 }
+		}
+		ai_chance = { base = 80 }
+	}
+
+	option = {
+		name = dod_hre.30.b
+		ai_chance = { base = 20 }
+	}
+}
+
+# The prince answers the ultimatum
+dod_hre.31 = {
+	type = country_event
+	placement = root
+	title = dod_hre.31.t
+	desc = dod_hre.31.d
+	flavor = dod_hre.31.f
+	event_image = { video = "unspecific_politicians_arguing" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+	duration = 3
+
+	trigger = {
+		dod_is_free_prince = yes
+	}
+
+	option = {
+		name = dod_hre.31.a
+		default_option = yes
+		c:HLR = {
+			create_diplomatic_pact = { country = root type = puppet }
+		}
+		ai_chance = {
+			base = 50
+			modifier = {
+				trigger = { has_variable = dod_rebel_federation }
+				add = -40
+			}
+		}
+	}
+
+	option = {
+		name = dod_hre.31.b
+		c:HLR = {
+			set_variable = { name = dod_defiant_prince value = root }
+			trigger_event = { id = dod_hre.32 days = 3 }
+		}
+		ai_chance = {
+			base = 50
+			modifier = {
+				trigger = { country_rank >= rank_value:major_power }
+				add = 30
+			}
+		}
+	}
+}
+
+# The prince refuses: war
+dod_hre.32 = {
+	type = country_event
+	placement = root
+	title = dod_hre.32.t
+	desc = dod_hre.32.d
+	flavor = dod_hre.32.f
+	event_image = { video = "unspecific_military_parade" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+	duration = 3
+
+	trigger = {
+		has_variable = dod_defiant_prince
+		var:dod_defiant_prince = { exists = this }
+	}
+
+	option = {
+		name = dod_hre.32.a
+		default_option = yes
+		create_diplomatic_play = {
+			target_country = var:dod_defiant_prince
+			type = dp_annex_war
+		}
+		remove_variable = dod_defiant_prince
+		ai_chance = { base = 80 }
+	}
+
+	option = {
+		name = dod_hre.32.b
+		remove_variable = dod_defiant_prince
+		ai_chance = { base = 20 }
+	}
+}
+
+# Every prince has submitted: what shape does the Reich take?
+dod_hre.40 = {
+	type = country_event
+	placement = root
+	title = dod_hre.40.t
+	desc = dod_hre.40.d
+	flavor = dod_hre.40.f
+	event_image = { video = "europenorthamerica_springtime_of_nations" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	# Ein Reich: one German state, ruled from Frankfurt
+	option = {
+		name = dod_hre.40.a
+		default_option = yes
+		every_country = {
+			limit = {
+				dod_is_imperial_prince = yes
+				is_subject_of = root
+			}
+			root = { annex = prev }
+		}
+		add_primary_culture = cu:north_german
+		add_primary_culture = cu:rheinish
+		add_primary_culture = cu:south_german
+		add_modifier = { name = dod_imperial_hegemony months = 120 }
+		if = {
+			limit = {
+				country_has_primary_culture = cu:czech
+				any_scope_state = { dod_is_bohemian_state = yes }
+			}
+			remove_primary_culture = cu:czech
+			trigger_event = { id = dod_hre.50 days = 30 }
+		}
+		ai_chance = { base = 50 }
+	}
+
+	# One Reich of two crowns: Bohemia keeps its place
+	option = {
+		name = dod_hre.40.b
+		every_country = {
+			limit = {
+				dod_is_imperial_prince = yes
+				is_subject_of = root
+			}
+			root = { annex = prev }
+		}
+		add_primary_culture = cu:north_german
+		add_primary_culture = cu:rheinish
+		add_primary_culture = cu:south_german
+		add_modifier = { name = dod_imperial_hegemony months = 60 }
+		ai_chance = { base = 30 }
+	}
+
+	# Keep the princes as vassals of a federal Reich
+	option = {
+		name = dod_hre.40.c
+		add_modifier = { name = dod_federal_reich months = 240 }
+		ai_chance = { base = 20 }
+	}
+}
+
+# =====================================================================
+# Part 2: The Bohemian Question
+# =====================================================================
+
+# Bohemian nationalism stirs
+dod_hre.50 = {
+	type = country_event
+	placement = root
+	title = dod_hre.50.t
+	desc = dod_hre.50.d
+	flavor = dod_hre.50.f
+	event_image = { texture = "gfx/event_pictures/dod/Bohemian_Nationalism.dds" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+	duration = 3
+
+	option = {
+		name = dod_hre.50.a
+		default_option = yes
+		add_journal_entry = { type = je_dod_bohemian_question }
+	}
+}
+
+# Riots in Prague
+dod_hre.51 = {
+	type = country_event
+	placement = root
+	title = dod_hre.51.t
+	desc = dod_hre.51.d
+	flavor = dod_hre.51.f
+	event_image = { texture = "gfx/event_pictures/dod/Barricades_BOH.dds" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+	duration = 3
+
+	trigger = {
+		NOT = { country_has_primary_culture = cu:czech }
+	}
+
+	# Crack down
+	option = {
+		name = dod_hre.51.a
+		default_option = yes
+		change_variable = { name = dod_bohemian_unrest add = -10 }
+		ig:ig_intelligentsia = {
+			add_modifier = { name = dod_bohemian_crackdown months = 24 }
+		}
+		ai_chance = { base = 50 }
+	}
+
+	# Restore the Bohemian crown's standing
+	option = {
+		name = dod_hre.51.b
+		add_primary_culture = cu:czech
+		ai_chance = { base = 20 }
+	}
+
+	# Let them shout
+	option = {
+		name = dod_hre.51.c
+		change_variable = { name = dod_bohemian_unrest add = 10 }
+		ai_chance = { base = 30 }
+	}
+}
+
+# Reconciliation with Bohemia
+dod_hre.52 = {
+	type = country_event
+	placement = root
+	title = dod_hre.52.t
+	desc = dod_hre.52.d
+	flavor = dod_hre.52.f
+	event_image = { video = "unspecific_signed_contract" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	option = {
+		name = dod_hre.52.a
+		default_option = yes
+		add_modifier = { name = dod_federal_reich months = 60 }
+	}
+}
+
+# The Bohemian Revolution
+dod_hre.54 = {
+	type = country_event
+	placement = root
+	title = dod_hre.54.t
+	desc = dod_hre.54.d
+	flavor = dod_hre.54.f
+	event_image = { video = "europenorthamerica_springtime_of_nations" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+	duration = 3
+
+	trigger = {
+		NOT = { exists = c:BOH }
+		any_scope_state = { dod_is_bohemian_state = yes }
+	}
+
+	immediate = {
+		random_scope_state = {
+			limit = { dod_is_bohemian_state = yes }
+			save_scope_as = dod_bohemian_heartland
+		}
+		create_country = {
+			tag = BOH
+			origin = root
+			state = scope:dod_bohemian_heartland
+		}
+		every_scope_state = {
+			limit = { dod_is_bohemian_state = yes }
+			set_state_owner = c:BOH
+		}
+	}
+
+	# The Empire strikes back
+	option = {
+		name = dod_hre.54.a
+		default_option = yes
+		create_diplomatic_play = {
+			target_country = c:BOH
+			type = dp_annex_war
+		}
+		add_journal_entry = { type = je_dod_war_for_bohemia }
+		c:BOH = { trigger_event = { id = dod_hre.57 } }
+		every_country = {
+			limit = {
+				OR = {
+					this = c:SCA
+					this = c:BRG
+				}
+				is_at_war = no
+			}
+			trigger_event = { id = dod_hre.55 days = 14 }
+		}
+		ai_chance = { base = 80 }
+	}
+
+	# Let Bohemia go
+	option = {
+		name = dod_hre.54.b
+		add_modifier = { name = dod_prague_lost months = 120 }
+		c:BOH = { trigger_event = { id = dod_hre.60 } }
+		ai_chance = { base = 20 }
+	}
+}
+
+# Scandinavia or Burgundy: intervene in Mitteleuropa?
+dod_hre.55 = {
+	type = country_event
+	placement = root
+	title = dod_hre.55.t
+	desc = dod_hre.55.d
+	flavor = dod_hre.55.f
+	event_image = { texture = "gfx/event_pictures/dod/Outsidepowers_BOH.dds" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+	duration = 3
+
+	trigger = {
+		exists = c:BOH
+	}
+
+	option = {
+		name = dod_hre.55.a
+		default_option = yes
+		create_diplomatic_pact = { country = c:BOH type = alliance }
+		ai_chance = { base = 60 }
+	}
+
+	option = {
+		name = dod_hre.55.b
+		ai_chance = { base = 40 }
+	}
+}
+
+# Bohemian mobilisation
+dod_hre.57 = {
+	type = country_event
+	placement = root
+	title = dod_hre.57.t
+	desc = dod_hre.57.d
+	flavor = dod_hre.57.f
+	event_image = { texture = "gfx/event_pictures/dod/BOH_mob.dds" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+	duration = 3
+
+	option = {
+		name = dod_hre.57.a
+		default_option = yes
+		add_modifier = { name = dod_bohemian_mobilisation months = 36 }
+	}
+}
+
+# Prague is lost
+dod_hre.58 = {
+	type = country_event
+	placement = root
+	title = dod_hre.58.t
+	desc = dod_hre.58.d
+	flavor = dod_hre.58.f
+	event_image = { video = "europenorthamerica_political_extremism" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+	duration = 3
+
+	option = {
+		name = dod_hre.58.a
+		default_option = yes
+		add_modifier = { name = dod_prague_lost months = 120 }
+	}
+}
+
+# The revolution is crushed
+dod_hre.59 = {
+	type = country_event
+	placement = root
+	title = dod_hre.59.t
+	desc = dod_hre.59.d
+	flavor = dod_hre.59.f
+	event_image = { video = "unspecific_military_parade" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+	duration = 3
+
+	option = {
+		name = dod_hre.59.a
+		default_option = yes
+		add_modifier = { name = dod_revolution_crushed months = 120 }
+	}
+}
+
+# Free Bohemia's new constitution
+dod_hre.60 = {
+	type = country_event
+	placement = root
+	title = dod_hre.60.t
+	desc = dod_hre.60.d
+	flavor = dod_hre.60.f
+	event_image = { video = "unspecific_signed_contract" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+	duration = 3
+
+	immediate = {
+		add_modifier = { name = dod_bohemian_victory months = 120 }
+	}
+
+	option = {
+		name = dod_hre.60.a
+		default_option = yes
+		activate_law = law_type:law_parliamentary_republic
+		activate_law = law_type:law_wealth_voting
+		ai_chance = { base = 50 }
+	}
+
+	option = {
+		name = dod_hre.60.b
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_landed_voting
+		ai_chance = { base = 50 }
+	}
+}
+
+# =====================================================================
+# Flavour
+# =====================================================================
+
+# Smetana's Bohemian Rhapsody
+dod_hre.70 = {
+	type = country_event
+	placement = root
+	title = dod_hre.70.t
+	desc = dod_hre.70.d
+	flavor = dod_hre.70.f
+	event_image = { texture = "gfx/event_pictures/dod/rhapsody.dds" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	trigger = {
+		OR = {
+			this = c:HLR
+			this = c:BOH
+		}
+		game_date >= 1860.1.1
+		any_scope_state = { dod_is_bohemian_state = yes }
+		NOT = { has_global_variable = dod_bohemian_rhapsody }
+	}
+
+	immediate = {
+		set_global_variable = dod_bohemian_rhapsody
+	}
+
+	option = {
+		name = dod_hre.70.a
+		default_option = yes
+		add_modifier = { name = dod_bohemian_rhapsody months = 120 }
+	}
+}
+
+# 1100 years since Charlemagne's coronation
+dod_hre.71 = {
+	type = country_event
+	placement = root
+	title = dod_hre.71.t
+	desc = dod_hre.71.d
+	flavor = dod_hre.71.f
+	event_image = { video = "unspecific_military_parade" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	trigger = {
+		this = c:HLR
+		game_date >= 1900.1.1
+		game_date < 1901.1.1
+		NOT = { has_global_variable = dod_imperial_jubilee }
+	}
+
+	immediate = {
+		set_global_variable = dod_imperial_jubilee
+	}
+
+	option = {
+		name = dod_hre.71.a
+		default_option = yes
+		add_modifier = { name = dod_imperial_jubilee months = 60 }
+	}
+}

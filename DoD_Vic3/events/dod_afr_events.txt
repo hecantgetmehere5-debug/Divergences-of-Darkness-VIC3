@@ -1,0 +1,464 @@
+namespace = dod_afr
+
+dod_afr.1 = {
+	type = country_event
+	placement = root
+	title = dod_afr.1.t
+	desc = dod_afr.1.d
+	flavor = dod_afr.1.f
+	event_image = { texture = "gfx/event_pictures/dod/boer_war.dds" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	duration = 3
+
+	trigger = {
+		this = c:BRG
+		is_at_war = no
+		any_country = {
+			country_has_primary_culture = cu:boer
+			NOT = { is_subject_of = c:BRG }
+		}
+		NOT = { has_variable = dod_afr_seen_1 }
+	}
+
+	immediate = {
+		set_variable = dod_afr_seen_1
+	}
+
+	option = {
+		name = dod_afr.1.a
+		default_option = yes
+		every_country = {
+			limit = {
+				country_has_primary_culture = cu:boer
+				NOT = { is_subject_of = root }
+				country_rank < rank_value:major_power
+			}
+			trigger_event = { id = dod_afr.2 days = 14 }
+		}
+		ai_chance = { base = 60 }
+	}
+
+	option = {
+		name = dod_afr.1.b
+		ai_chance = { base = 40 }
+	}
+}
+
+dod_afr.2 = {
+	type = country_event
+	placement = root
+	title = dod_afr.2.t
+	desc = dod_afr.2.d
+	flavor = dod_afr.2.f
+	event_image = { video = "unspecific_politicians_arguing" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	duration = 3
+
+	option = {
+		name = dod_afr.2.a
+		default_option = yes
+		c:BRG = {
+			set_variable = { name = dod_boer_defiant value = root }
+			trigger_event = { id = dod_afr.3 days = 3 }
+		}
+		ai_chance = { base = 70 }
+	}
+
+	option = {
+		name = dod_afr.2.b
+		c:BRG = { create_diplomatic_pact = { country = root type = protectorate } }
+		ai_chance = { base = 30 }
+	}
+}
+
+dod_afr.3 = {
+	type = country_event
+	placement = root
+	title = dod_afr.3.t
+	desc = dod_afr.3.d
+	flavor = dod_afr.3.f
+	event_image = { video = "unspecific_military_parade" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+	duration = 3
+
+	trigger = {
+		has_variable = dod_boer_defiant
+		var:dod_boer_defiant = { exists = this }
+	}
+
+	option = {
+		name = dod_afr.3.a
+		default_option = yes
+		create_diplomatic_play = {
+			target_country = var:dod_boer_defiant
+			type = dp_annex_war
+		}
+		remove_variable = dod_boer_defiant
+		ai_chance = { base = 70 }
+	}
+
+	option = {
+		name = dod_afr.3.b
+		remove_variable = dod_boer_defiant
+		ai_chance = { base = 30 }
+	}
+}
+
+dod_afr.4 = {
+	type = country_event
+	placement = root
+	title = dod_afr.4.t
+	desc = dod_afr.4.d
+	flavor = dod_afr.4.f
+	event_image = { video = "unspecific_politicians_arguing" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	duration = 3
+
+	trigger = {
+		country_has_primary_culture = cu:boer
+		is_at_war = no
+		NOT = { has_variable = dod_afr_seen_4 }
+	}
+
+	immediate = {
+		set_variable = dod_afr_seen_4
+	}
+
+	option = {
+		name = dod_afr.4.a
+		default_option = yes
+		change_infamy = 5
+		every_state = {
+			limit = {
+				state_region = {
+					OR = {
+					is_homeland = cu:xhosa
+					is_homeland = cu:zulu
+					}
+				}
+				NOT = { owner = root }
+			}
+			state_region = { add_claim = root }
+		}
+		ai_chance = { base = 60 }
+	}
+
+	option = {
+		name = dod_afr.4.b
+		ai_chance = { base = 40 }
+	}
+}
+
+dod_afr.5 = {
+	type = country_event
+	placement = root
+	title = dod_afr.5.t
+	desc = dod_afr.5.d
+	flavor = dod_afr.5.f
+	event_image = { video = "unspecific_signed_contract" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+	duration = 3
+
+	trigger = {
+		country_has_primary_culture = cu:boer
+		NOT = { is_subject_of = c:BRG }
+		is_at_war = no
+		has_variable = dod_afr_seen_4
+		game_date >= 1860.1.1
+		NOT = { has_variable = dod_afr_seen_5 }
+	}
+
+	immediate = {
+		set_variable = dod_afr_seen_5
+	}
+
+	option = {
+		name = dod_afr.5.a
+		default_option = yes
+		add_modifier = { name = dod_vereeniging months = 120 }
+	}
+}
+
+dod_afr.10 = {
+	type = country_event
+	placement = root
+	title = dod_afr.10.t
+	desc = dod_afr.10.d
+	flavor = dod_afr.10.f
+	event_image = { texture = "gfx/event_pictures/dod/zemene_mesafint.dds" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+	duration = 3
+
+	trigger = {
+		this = c:ETH
+		exists = c:ADA
+		is_at_war = no
+		NOT = { has_variable = dod_afr_seen_10 }
+	}
+
+	immediate = {
+		set_variable = dod_afr_seen_10
+	}
+
+	option = {
+		name = dod_afr.10.a
+		default_option = yes
+		c:ADA ?= {
+			root = {
+				create_diplomatic_play = {
+					target_country = c:ADA
+					type = dp_humiliation
+				}
+			}
+		}
+		ai_chance = { base = 60 }
+	}
+
+	option = {
+		name = dod_afr.10.b
+		add_modifier = { name = dod_highland_forts months = 60 }
+		ai_chance = { base = 40 }
+	}
+}
+
+dod_afr.11 = {
+	type = country_event
+	placement = root
+	title = dod_afr.11.t
+	desc = dod_afr.11.d
+	flavor = dod_afr.11.f
+	event_image = { video = "europenorthamerica_springtime_of_nations" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+	duration = 3
+
+	trigger = {
+		OR = {
+			this = c:ETH
+			this = c:ADA
+			this = c:ABS
+		}
+		any_scope_state = { state_region = { is_homeland = cu:oromo } }
+		NOT = { country_has_primary_culture = cu:oromo }
+		NOT = { has_variable = dod_afr_seen_11 }
+	}
+
+	immediate = {
+		set_variable = dod_afr_seen_11
+	}
+
+	option = {
+		name = dod_afr.11.a
+		default_option = yes
+		ig:ig_landowners = { add_modifier = { name = dod_oromo_war months = 36 } }
+		ai_chance = { base = 50 }
+	}
+
+	option = {
+		name = dod_afr.11.b
+		add_primary_culture = cu:oromo
+		ai_chance = { base = 50 }
+	}
+}
+
+dod_afr.12 = {
+	type = country_event
+	placement = root
+	title = dod_afr.12.t
+	desc = dod_afr.12.d
+	flavor = dod_afr.12.f
+	event_image = { video = "unspecific_military_parade" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	trigger = {
+		this = c:ETH
+		NOT = { exists = c:ADA }
+		has_variable = dod_afr_seen_10
+		NOT = { has_variable = dod_afr_seen_12 }
+	}
+
+	immediate = {
+		set_variable = dod_afr_seen_12
+	}
+
+	option = {
+		name = dod_afr.12.a
+		default_option = yes
+		add_modifier = { name = dod_adal_fallen months = 120 }
+	}
+}
+
+dod_afr.20 = {
+	type = country_event
+	placement = root
+	title = dod_afr.20.t
+	desc = dod_afr.20.d
+	flavor = dod_afr.20.f
+	event_image = { video = "unspecific_politicians_arguing" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	trigger = {
+		OR = {
+			this = c:TOU
+			country_has_primary_culture = cu:fulbe
+		}
+		game_date >= 1845.1.1
+		is_at_war = no
+		NOT = { has_variable = dod_afr_seen_20 }
+	}
+
+	immediate = {
+		set_variable = dod_afr_seen_20
+	}
+
+	option = {
+		name = dod_afr.20.a
+		default_option = yes
+		change_infamy = 5
+		every_state = {
+			limit = {
+				state_region = {
+					OR = {
+					is_homeland = cu:mande
+					is_homeland = cu:fulbe
+					is_homeland = cu:songhai
+					}
+				}
+				NOT = { owner = root }
+			}
+			state_region = { add_claim = root }
+		}
+		ai_chance = { base = 60 }
+	}
+
+	option = {
+		name = dod_afr.20.b
+		ai_chance = { base = 40 }
+	}
+}
+
+dod_afr.21 = {
+	type = country_event
+	placement = root
+	title = dod_afr.21.t
+	desc = dod_afr.21.d
+	flavor = dod_afr.21.f
+	event_image = { texture = "gfx/event_pictures/dod/congo_ship.dds" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	trigger = {
+		this = c:KON
+		NOT = { has_variable = dod_afr_seen_21 }
+	}
+
+	immediate = {
+		set_variable = dod_afr_seen_21
+	}
+
+	option = {
+		name = dod_afr.21.a
+		default_option = yes
+		add_modifier = { name = dod_kongo_revival months = 120 }
+	}
+}
+
+dod_afr.22 = {
+	type = country_event
+	placement = root
+	title = dod_afr.22.t
+	desc = dod_afr.22.d
+	flavor = dod_afr.22.f
+	event_image = { video = "unspecific_politicians_arguing" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	trigger = {
+		this = c:DHY
+		game_date >= 1850.1.1
+		NOT = { has_variable = dod_afr_seen_22 }
+	}
+
+	immediate = {
+		set_variable = dod_afr_seen_22
+	}
+
+	option = {
+		name = dod_afr.22.a
+		default_option = yes
+		set_state_religion = rel:sunni
+		ai_chance = { base = 30 }
+	}
+
+	option = {
+		name = dod_afr.22.b
+		set_state_religion = rel:catholic
+		ai_chance = { base = 30 }
+	}
+
+	option = {
+		name = dod_afr.22.c
+		set_state_religion = rel:protestant
+		ai_chance = { base = 20 }
+	}
+
+	option = {
+		name = dod_afr.22.opt_d
+		ai_chance = { base = 20 }
+	}
+}
+
+dod_afr.30 = {
+	type = country_event
+	placement = root
+	title = dod_afr.30.t
+	desc = dod_afr.30.d
+	flavor = dod_afr.30.f
+	event_image = { video = "unspecific_politicians_arguing" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+	duration = 3
+
+	trigger = {
+		country_has_primary_culture = cu:maori
+		any_country = {
+			NOT = { this = root }
+			any_scope_state = { state_region = { is_homeland = cu:maori } }
+		}
+		NOT = { has_variable = dod_afr_seen_30 }
+	}
+
+	immediate = {
+		set_variable = dod_afr_seen_30
+	}
+
+	option = {
+		name = dod_afr.30.a
+		default_option = yes
+		random_country = {
+			limit = {
+				any_scope_state = { state_region = { is_homeland = cu:maori } }
+				NOT = { this = root }
+			}
+			create_diplomatic_pact = { country = root type = protectorate }
+		}
+		ai_chance = { base = 50 }
+	}
+
+	option = {
+		name = dod_afr.30.b
+		ai_chance = { base = 50 }
+	}
+}

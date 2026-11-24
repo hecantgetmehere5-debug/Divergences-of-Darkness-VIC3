@@ -1,0 +1,36 @@
+# Persia & the Middle East: journal entries
+
+je_dod_timurtash_restoration = {
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	group = je_group_historical_content
+
+	complete = {
+		is_at_war = no
+		any_scope_state = {
+			count >= 8
+			state_region = { is_homeland = cu:persian }
+		}
+	}
+
+	on_complete = {
+		trigger_event = { id = dod_per.7 }
+	}
+
+	on_monthly_pulse = {
+		random_events = {
+			80 = 0
+			4 = dod_per.2
+			4 = dod_per.3
+			4 = dod_per.5
+			4 = dod_per.6
+			4 = dod_per.4
+		}
+	}
+
+	invalid = {
+		NOT = { this = c:AFS }
+	}
+
+	should_be_pinned_by_default = yes
+	weight = 1000
+}

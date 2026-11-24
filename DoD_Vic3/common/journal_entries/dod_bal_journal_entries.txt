@@ -1,0 +1,37 @@
+# Balkans & the Ottoman fall: journal entries
+
+je_dod_ottoman_civil_war = {
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+	group = je_group_historical_content
+
+	complete = {
+		is_at_war = no
+		NOT = { exists = c:MAC }
+		NOT = { exists = c:ALB }
+		NOT = { exists = c:EGY }
+	}
+
+	on_complete = {
+		trigger_event = { id = dod_bal.20 }
+	}
+
+	on_monthly_pulse = {
+		random_events = {
+			90 = 0
+			10 = dod_bal.1
+		}
+	}
+
+	timeout = 3650
+
+	on_timeout = {
+		trigger_event = { id = dod_bal.20 }
+	}
+
+	invalid = {
+		NOT = { this = c:TUR }
+	}
+
+	should_be_pinned_by_default = yes
+	weight = 1000
+}

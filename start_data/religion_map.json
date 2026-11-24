@@ -1,0 +1,17 @@
+{
+  "vic2_to_vic3_religion": {
+    "coptic": "oriental_orthodox",
+    "assyrian": "oriental_orthodox",
+    "fetishist": "animist",
+    "ismaili": "shiite",
+    "zaydi": "shiite",
+    "druze": "shiite",
+    "yazidi": "sunni",
+    "zoroastrian": "zoroastrian"
+  },
+  "custom_religions": [
+    "taiping",
+    "inti"
+  ],
+  "note": "Apply when generating Vic3 pops. zoroastrian kept as-is: verify it exists in vanilla, else define it."
+}

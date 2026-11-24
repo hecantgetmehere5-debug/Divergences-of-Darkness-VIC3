@@ -1,0 +1,5273 @@
+﻿HLR = {  # The Holy Roman Empire
+	color = { 255 250 205 }
+	country_type = recognized
+	tier = empire
+	cultures = { czech }  # TODO verify Vic3 culture name
+	religion = catholic  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Prague (province 625)
+}
+
+ARC = {  # Arcadia
+	color = { 0 130 255 }
+	country_type = recognized
+	tier = empire
+	cultures = { vinlander septiman plantagenian }  # TODO verify Vic3 culture name
+	religion = protestant  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital province ?
+}
+
+TRO = {  # Terra d'Oro
+	color = { 235 48 99 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { maures }  # TODO verify Vic3 culture name
+	religion = catholic  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Saint-Louis (province 1784)
+}
+
+AZL = {  # The Amerigan Federation
+	color = { 117 165 188 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { amazonian }  # TODO verify Vic3 culture name
+	religion = catholic  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Salvador de Bahia (province 2436)
+}
+
+NAV = {  # Navarra
+	color = { 225 22 22 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { basque }  # TODO verify Vic3 culture name
+	religion = catholic  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: BIlbao (province 492)
+}
+
+ARI = {  # Aragon-Italy
+	color = { 136 103 58 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { catalan }  # TODO verify Vic3 culture name
+	religion = catholic  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Rome (province 749)
+}
+
+FRR = {  # Ferrara
+	color = { 128 175 98 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { north_italian }  # TODO verify Vic3 culture name
+	religion = catholic  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Ferrara (province 742)
+}
+
+GEN = {  # Genoa
+	color = { 255 255 0 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { north_italian }  # TODO verify Vic3 culture name
+	religion = catholic  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Genoa (province 724)
+}
+
+FRT = {  # Transalpina
+	color = { 55 154 55 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { provencal }  # TODO verify Vic3 culture name
+	religion = catholic  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Toulon (province 470)
+}
+
+BRG = {  # Burgundy
+	color = { 128 0 32 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { burgundian }  # TODO verify Vic3 culture name
+	religion = protestant  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Antwerp (province 390)
+}
+
+PRV = {  # Provence
+	color = { 69 139 116 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { provencal }  # TODO verify Vic3 culture name
+	religion = catholic  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Toulon (province 470)
+}
+
+SLA = {  # Slavonia
+	color = { 147 82 173 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { serb }  # TODO verify Vic3 culture name
+	religion = catholic  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Novi Sad (province 2538)
+}
+
+GNV = {  # Geneva
+	color = { 27 73 157 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { burgundian }  # TODO verify Vic3 culture name
+	religion = protestant  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Geneva (province 607)
+}
+
+LRR = {  # Lorraine
+	color = { 190 50 40 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { burgundian }  # TODO verify Vic3 culture name
+	religion = protestant  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Nancy (province 411)
+}
+
+NOV = {  # Novgorod
+	color = { 200 200 200 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { russian }  # TODO verify Vic3 culture name
+	religion = orthodox  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Novgorod (province 1003)
+}
+
+MUS = {  # Muscovy
+	color = { 100 181 75 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { russian }  # TODO verify Vic3 culture name
+	religion = orthodox  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Moscow (province 1008)
+}
+
+BLR = {  # Byelorussia
+	color = { 215 130 130 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { ruthenian }  # TODO verify Vic3 culture name
+	religion = orthodox  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Minsk (province 718)
+}
+
+PSV = {  # Pskov
+	color = { 220 202 96 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { russian }  # TODO verify Vic3 culture name
+	religion = orthodox  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Pskov (province 1006)
+}
+
+KRL = {  # Courland
+	color = { 121 175 250 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { north_german }  # TODO verify Vic3 culture name
+	religion = protestant  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Jelgava (province 357)
+}
+
+BLT = {  # Baltenland
+	color = { 0 131 194 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { north_german }  # TODO verify Vic3 culture name
+	religion = protestant  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Jelgava (province 357)
+}
+
+ASK = {  # Xacitarxan
+	color = { 220 202 96 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { astrakhani }  # TODO verify Vic3 culture name
+	religion = sunni  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Astrakhan (province 1036)
+}
+
+BEG = {  # Berg
+	color = { 10 190 15 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { rheinish }  # TODO verify Vic3 culture name
+	religion = catholic  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Dusseldorf (province 578)
+}
+
+BRN = {  # Brandenburg
+	color = { 244 232 109 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { north_german }  # TODO verify Vic3 culture name
+	religion = protestant  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Berlin (province 549)
+}
+
+CAE = {  # The Elbian Confederation
+	color = { 237 41 57 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { czech }  # TODO verify Vic3 culture name
+	religion = catholic  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Prague (province 625)
+}
+
+FRI = {  # East Frisia
+	color = { 50 130 118 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { north_german }  # TODO verify Vic3 culture name
+	religion = protestant  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Emden (province 543)
+}
+
+MNR = {  # Munster
+	color = { 76 221 139 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { rheinish }  # TODO verify Vic3 culture name
+	religion = protestant  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Munster (province 581)
+}
+
+THU = {  # Thuringia
+	color = { 29 72 81 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { north_german }  # TODO verify Vic3 culture name
+	religion = catholic  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Weimar (province 561)
+}
+
+TIR = {  # Tyrol
+	color = { 237 0 0 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { south_german }  # TODO verify Vic3 culture name
+	religion = catholic  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Innsbruck (province 612)
+}
+
+POM = {  # Pomerania
+	color = { 207 111 64 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { north_german }  # TODO verify Vic3 culture name
+	religion = protestant  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Stettin (province 546)
+}
+
+SAL = {  # Salzburg
+	color = { 200 70 66 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { south_german }  # TODO verify Vic3 culture name
+	religion = catholic  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Salzburg (province 613)
+}
+
+SIB = {  # Sibir
+	color = { 104 177 234 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { tatar }  # TODO verify Vic3 culture name
+	religion = sunni  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Tobolsk (province 1066)
+}
+
+TSS = {  # Trans-Siberia
+	color = { 91 127 0 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { russian }  # TODO verify Vic3 culture name
+	religion = orthodox  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Nepa (province 2677)
+}
+
+YKT = {  # Yakutia
+	color = { 255 251 198 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { yakut }  # TODO verify Vic3 culture name
+	religion = animist  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Borogoncy (province 2672)
+}
+
+ALH = {  # Al Haasa
+	color = { 0 148 255 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { bedouin }  # TODO verify Vic3 culture name
+	religion = shiite  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Qatif (province 1163)
+}
+
+UAR = {  # The United Arab Republic
+	color = { 66 111 19 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { bedouin }  # TODO verify Vic3 culture name
+	religion = sunni  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Cairo (province 1745)
+}
+
+KZH = {  # Kazakhstan
+	color = { 0 175 202 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { kazak }  # TODO verify Vic3 culture name
+	religion = sunni  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Yasi (province 1185)
+}
+
+UGH = {  # Uyghuristan
+	color = { 170 206 162 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { uighur }  # TODO verify Vic3 culture name
+	religion = sunni  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Urumqi (province 1600)
+}
+
+ERI = {  # Eritrea
+	color = { 219 255 89 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { tigray }  # TODO verify Vic3 culture name
+	religion = sunni  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Asmara (province 1848)
+}
+
+KUR = {  # Kurdistan
+	color = { 31 200 200 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { kurdish }  # TODO verify Vic3 culture name
+	religion = sunni  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Diyarbakir (province 893)
+}
+
+CHG = {  # The Dzungar Khanate
+	color = { 230 179 0 }
+	country_type = recognized
+	tier = principality
+	cultures = { oirat }  # TODO verify Vic3 culture name
+	religion = sunni  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Urumqi (province 1600)
+}
+
+NOG = {  # Nogai
+	color = { 144 181 106 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { tatar }  # TODO verify Vic3 culture name
+	religion = sunni  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Guryev (province 1182)
+}
+
+QAJ = {  # Kar-Kiya
+	color = { 229 170 87 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { persian }  # TODO verify Vic3 culture name
+	religion = shiite  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Lahijan (province 3332)
+}
+
+ZND = {  # Shekhbizin Empire
+	color = { 135 104 85 }
+	country_type = recognized
+	tier = empire
+	cultures = { persian }  # TODO verify Vic3 culture name
+	religion = sunni  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Shiraz (province 1135)
+}
+
+AFS = {  # Iran
+	color = { 136 157 23 }
+	country_type = recognized
+	tier = empire
+	cultures = { persian }  # TODO verify Vic3 culture name
+	religion = sunni  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Herat (province 1212)
+}
+
+LUR = {  # Luristan
+	color = { 121 161 246 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { lurish }  # TODO verify Vic3 culture name
+	religion = shiite  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Kermanshah (province 1117)
+}
+
+QSQ = {  # Qashqai Confederation
+	color = { 215 46 43 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { qashqai }  # TODO verify Vic3 culture name
+	religion = sunni  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Shiraz (province 1135)
+}
+
+KRS = {  # Khorasan
+	color = { 116 73 54 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { persian }  # TODO verify Vic3 culture name
+	religion = sunni  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Nishapur (province 3339)
+}
+
+GLS = {  # Golestan
+	color = { 204 168 121 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { persian }  # TODO verify Vic3 culture name
+	religion = sunni  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Gorgan (province 1116)
+}
+
+KHT = {  # Kohestan
+	color = { 153 102 62 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { persian }  # TODO verify Vic3 culture name
+	religion = sunni  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Birjand (province 1148)
+}
+
+DRA = {  # Dravidistan
+	color = { 153 51 0 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { tamil }  # TODO verify Vic3 culture name
+	religion = hindu  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Madras (province 1304)
+}
+
+BHA = {  # Bharata
+	color = { 112 50 169 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { avadhi }  # TODO verify Vic3 culture name
+	religion = hindu  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Calcutta (province 1251)
+}
+
+SRL = {  # Sri Lanka
+	color = { 226 168 131 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { sinhala }  # TODO verify Vic3 culture name
+	religion = theravada  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Jaffna (province 1322)
+}
+
+ADR = {  # Andhra
+	color = { 10 110 40 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { telegu }  # TODO verify Vic3 culture name
+	religion = hindu  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Warangal (province 1287)
+}
+
+KKN = {  # Kita Kaigan
+	color = { 117 168 95 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { kaiganese }  # TODO verify Vic3 culture name
+	religion = mahayana  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Kenai (province 3)
+}
+
+AIN = {  # Ainu
+	color = { 157 167 194 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { ainu }  # TODO verify Vic3 culture name
+	religion = animist  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Gizhiga (province 1073)
+}
+
+MIG = {  # Nanjing
+	color = { 220 202 96 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { beifaren }  # TODO verify Vic3 culture name
+	religion = mahayana  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Nanjing (province 2221)
+}
+
+TNG = {  # Tungning
+	color = { 120 120 120 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { nanfaren }  # TODO verify Vic3 culture name
+	religion = mahayana  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Taibei (province 1485)
+}
+
+TAI = {  # The Taiping Heavenly Kingdom
+	color = { 250 110 40 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { nanfaren }  # TODO verify Vic3 culture name
+	religion = taiping  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Ganzhou (province 1550)
+}
+
+MDR = {  # Madurai
+	color = { 153 122 108 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { tamil }  # TODO verify Vic3 culture name
+	religion = hindu  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Madurai (province 1310)
+}
+
+VIJ = {  # Vijayanagar
+	color = { 229 110 40 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { kannada }  # TODO verify Vic3 culture name
+	religion = hindu  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Belgaum (province 1302)
+}
+
+NRI = {  # Nri
+	color = { 155 205 155 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { ibo }  # TODO verify Vic3 culture name
+	religion = animist  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Awka (province 1933)
+}
+
+ZIM = {  # Mutapa
+	color = { 211 184 200 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { shona }  # TODO verify Vic3 culture name
+	religion = animist  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Harare (province 2068)
+}
+
+ADW = {  # Nganha
+	color = { 145 200 91 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { fulbe }  # TODO verify Vic3 culture name
+	religion = animist  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Yola (province 1950)
+}
+
+KNO = {  # Kano
+	color = { 153 0 0 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { hausa }  # TODO verify Vic3 culture name
+	religion = sunni  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Kano (province 1945)
+}
+
+ILO = {  # Timbuktu Emirate
+	color = { 51 153 255 }
+	country_type = recognized
+	tier = principality
+	cultures = { fulbe }  # TODO verify Vic3 culture name
+	religion = sunni  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Ilorin (province 1927)
+}
+
+DHY = {  # Dahomey
+	color = { 50 130 118 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { fon }  # TODO verify Vic3 culture name
+	religion = animist  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Cotonou (province 1919)
+}
+
+WTT = {  # Wattara
+	color = { 26 134 58 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { mande }  # TODO verify Vic3 culture name
+	religion = sunni  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Odienne (province 1900)
+}
+
+AMT = {  # Amatsa
+	color = { 253 102 150 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { tigray }  # TODO verify Vic3 culture name
+	religion = oriental_orthodox  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Asmara (province 1848)
+}
+
+ADA = {  # Adal
+	color = { 91 127 0 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { somali }  # TODO verify Vic3 culture name
+	religion = sunni  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Werder (province 1867)
+}
+
+ABS = {  # Abyssinia
+	color = { 31 95 166 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { somali }  # TODO verify Vic3 culture name
+	religion = sunni  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Ankober (province 1859)
+}
+
+ORO = {  # Oromyia
+	color = { 248 196 91 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { oromo }  # TODO verify Vic3 culture name
+	religion = oriental_orthodox  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Gonder (province 1852)
+}
+
+DAR = {  # Darfur
+	color = { 180 170 87 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { fur }  # TODO verify Vic3 culture name
+	religion = sunni  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Fasher (province 1841)
+}
+
+AJU = {  # Ajuuraan State
+	color = { 153 217 234 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { somali }  # TODO verify Vic3 culture name
+	religion = sunni  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Mogadishu (province 1868)
+}
+
+ARY = {  # Iranshahr
+	color = { 0 103 165 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { persian }  # TODO verify Vic3 culture name
+	religion = sunni  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Tehran (province 1121)
+}
+
+MCH = {  # Manchukuo
+	color = { 200 190 126 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { manchu }  # TODO verify Vic3 culture name
+	religion = mahayana  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Jilin (province 1555)
+}
+
+DAX = {  # Sichuan
+	color = { 230 50 50 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { nanfaren }  # TODO verify Vic3 culture name
+	religion = mahayana  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Chengdu (province 1578)
+}
+
+SHU = {  # Shaanxi
+	color = { 110 90 70 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { beifaren }  # TODO verify Vic3 culture name
+	religion = mahayana  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Xian (province 1559)
+}
+
+LFG = {  # Lanfang
+	color = { 236 139 132 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { tionghoa }  # TODO verify Vic3 culture name
+	religion = mahayana  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Pontianak (province 1426)
+}
+
+MKS = {  # Makassar
+	color = { 197 92 106 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { moluccan }  # TODO verify Vic3 culture name
+	religion = sunni  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Makassar (province 1430)
+}
+
+TON = {  # Christianias
+	color = { 92 87 122 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { filipino }  # TODO verify Vic3 culture name
+	religion = mahayana  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Iloilo (province 1460)
+}
+
+PAT = {  # Pattani
+	color = { 162 134 164 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { malay }  # TODO verify Vic3 culture name
+	religion = sunni  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Pattani (province 1392)
+}
+
+PLM = {  # Palembang
+	color = { 190 79 111 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { malay }  # TODO verify Vic3 culture name
+	religion = sunni  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Palembang (province 1399)
+}
+
+CHR = {  # Christiania
+	color = { 255 251 198 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { filipino }  # TODO verify Vic3 culture name
+	religion = protestant  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Davao (province 1463)
+}
+
+IND = {  # Indonesia (colonial release; Vic2 file had the HPM India culture)
+	color = { 255 230 89 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { javan }  # TODO verify Vic3 culture name
+	religion = hindu  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Indore (province 1271)
+}
+
+NUS = {  # Nusantara
+	color = { 86 106 135 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { javan }  # TODO verify Vic3 culture name
+	religion = sunni  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Semarang (province 1417)
+}
+
+PLY = {  # Polynesia
+	color = { 250 100 50 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { polynesian }  # TODO verify Vic3 culture name
+	religion = animist  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Tonga (province 2540)
+}
+
+ANI = {  # Anishinabe
+	color = { 105 145 140 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { algonquin }  # TODO verify Vic3 culture name
+	religion = animist  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Thunder Bay (province 50)
+}
+
+ATS = {  # Athesia
+	color = { 166 72 57 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { athesian }  # TODO verify Vic3 culture name
+	religion = catholic  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: St Augustine (province 199)
+}
+
+DIN = {  # Dine Bikeyah
+	color = { 195 225 240 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { apache }  # TODO verify Vic3 culture name
+	religion = catholic  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Flagstaff (province 101)
+}
+
+DNG = {  # Qingqiu
+	color = { 121 175 235 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { qingqiuan }  # TODO verify Vic3 culture name
+	religion = mahayana  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: San Francisco (province 84)
+}
+
+HHR = {  # Rohnnst
+	color = { 121 226 63 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { rohnnst }  # TODO verify Vic3 culture name
+	religion = animist  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Regina (province 30)
+}
+
+IRO = {  # Haudenosaunee
+	color = { 45 165 40 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { iroquois }  # TODO verify Vic3 culture name
+	religion = protestant  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Toronto (province 46)
+}
+
+JLS = {  # Jalisco
+	color = { 111 148 188 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { mexican }  # TODO verify Vic3 culture name
+	religion = catholic  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Guadalajara (province 2166)
+}
+
+LST = {  # Lusitania
+	color = { 57 160 101 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { lusitanian }  # TODO verify Vic3 culture name
+	religion = catholic  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: San Antonio (province 137)
+}
+
+NBG = {  # The Belgian Confederacy
+	color = { 111 88 87 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { septiman }  # TODO verify Vic3 culture name
+	religion = protestant  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Long Island (province 233)
+}
+
+NUN = {  # Nunavut
+	color = { 255 125 155 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { inuit }  # TODO verify Vic3 culture name
+	religion = animist  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Baffin Island (province 45)
+}
+
+OCE = {  # Oceti Sakowin
+	color = { 205 195 240 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { sioux }  # TODO verify Vic3 culture name
+	religion = animist  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Sioux Falls (province 120)
+}
+
+PLA = {  # Plantagenia
+	color = { 194 140 86 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { plantagenian }  # TODO verify Vic3 culture name
+	religion = catholic  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: New Orleans (province 139)
+}
+
+PUR = {  # Purepecha
+	color = { 66 94 193 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { tarascan }  # TODO verify Vic3 culture name
+	religion = catholic  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Acapuilco (province 2179)
+}
+
+RAP = {  # Rapa Nui
+	color = { 255 234 120 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { polynesian }  # TODO verify Vic3 culture name
+	religion = animist  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Easter Island (province 2336)
+}
+
+VIN = {  # Vinland
+	color = { 220 70 66 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { vinlander }  # TODO verify Vic3 culture name
+	religion = protestant  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Quebec City (province 65)
+}
+
+ZAP = {  # Lulaa
+	color = { 220 202 96 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { zapotec }  # TODO verify Vic3 culture name
+	religion = catholic  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Oaxaca (province 2177)
+}
+
+ATL = {  # Atlantia
+	color = { 90 90 70 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { lotharian }  # TODO verify Vic3 culture name
+	religion = protestant  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Rio de Janeiro (province 2447)
+}
+
+AMA = {  # Amazonie
+	color = { 119 181 88 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { amazonian }  # TODO verify Vic3 culture name
+	religion = catholic  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Salvador de Bahia (province 2436)
+}
+
+ARE = {  # Arequipa
+	color = { 124 140 162 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { granadan }  # TODO verify Vic3 culture name
+	religion = catholic  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Arequipa (province 2304)
+}
+
+ARU = {  # Purumauca
+	color = { 205 25 20 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { patagonian }  # TODO verify Vic3 culture name
+	religion = inti  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Rawson (province 2396)
+}
+
+AVA = {  # Taragui
+	color = { 105 145 240 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { guarani }  # TODO verify Vic3 culture name
+	religion = animist  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Georgetown (province 2239)
+}
+
+CAS = {  # Castilla
+	color = { 255 176 140 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { granadan }  # TODO verify Vic3 culture name
+	religion = catholic  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Caracas (province 2264)
+}
+
+CRC = {  # Curacao
+	color = { 255 251 198 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { burgundian }  # TODO verify Vic3 culture name
+	religion = protestant  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Aruba (province 2235)
+}
+
+EQN = {  # Equinoxea
+	color = { 56 32 172 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { amazonian }  # TODO verify Vic3 culture name
+	religion = catholic  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Sao Luis (province 2424)
+}
+
+GRA = {  # Granada
+	color = { 174 227 95 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { granadan }  # TODO verify Vic3 culture name
+	religion = catholic  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Cartagena de Indias (province 2254)
+}
+
+INC = {  # Tawantinsuyu
+	color = { 236 159 89 }
+	country_type = recognized
+	tier = empire
+	cultures = { quechua }  # TODO verify Vic3 culture name
+	religion = inti  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Chuquisaca (province 2313)
+}
+
+LOT = {  # Lotharingia
+	color = { 121 175 235 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { lotharian }  # TODO verify Vic3 culture name
+	religion = protestant  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Porto Alegre (province 2463)
+}
+
+NAN = {  # Beornia
+	color = { 245 66 58 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { beornian }  # TODO verify Vic3 culture name
+	religion = protestant  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Buenos Aires (province 2348)
+}
+
+HBE = {  # The Holy Britannian Empire
+	color = { 185 108 202 }
+	country_type = recognized
+	tier = empire
+	cultures = { beornian }  # TODO verify Vic3 culture name
+	religion = protestant  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Buenos Aires (province 2348)
+}
+
+QUI = {  # Quito
+	color = { 43 141 172 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { granadan }  # TODO verify Vic3 culture name
+	religion = catholic  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Quito (province 2279)
+}
+
+SAN = {  # Santanderia
+	color = { 174 227 95 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { granadan }  # TODO verify Vic3 culture name
+	religion = catholic  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Cartagena de Indias (province 2254)
+}
+
+TAP = {  # Tapajos
+	color = { 205 145 240 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { amazonian_native }  # TODO verify Vic3 culture name
+	religion = animist  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Santarem (province 2411)
+}
+
+GAN = {  # Zhourao
+	color = { 116 97 70 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { ganguan }  # TODO verify Vic3 culture name
+	religion = mahayana  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Sydney (province 2468)
+}
+
+TUI = {  # The Tonga Federation
+	color = { 149 24 18 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { polynesian }  # TODO verify Vic3 culture name
+	religion = animist  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Tonga (province 2540)
+}
+
+PPU = {  # Papua
+	color = { 0 189 0 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { melanesian }  # TODO verify Vic3 culture name
+	religion = animist  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Port Moresby (province 2528)
+}
+
+MAC = {  # Macedonia
+	color = { 229 170 87 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { greek }  # TODO verify Vic3 culture name
+	religion = orthodox  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Salonika (province 805)
+}
+
+SIL = {  # Silesia
+	color = { 70 70 70 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { czech }  # TODO verify Vic3 culture name
+	religion = protestant  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Breslau (province 682)
+}
+
+PPG = {  # Papua New Guinea
+	color = { 244 119 66 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { melanesian }  # TODO verify Vic3 culture name
+	religion = protestant  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Port Moresby (province 2528)
+}
+
+VTU = {  # Vanuatu
+	color = { 66 244 75 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { melanesian }  # TODO verify Vic3 culture name
+	religion = protestant  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: New Hebrides (province 2535)
+}
+
+SMO = {  # Samoa
+	color = { 244 66 217 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { polynesian }  # TODO verify Vic3 culture name
+	religion = protestant  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Apia (province 2543)
+}
+
+MNP = {  # Manipur
+	color = { 190 144 0 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { manipuri }  # TODO verify Vic3 culture name
+	religion = hindu  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Imphal (province 1259)
+}
+
+BDK = {  # Badakhshan
+	color = { 68 219 102 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { uzbek }  # TODO verify Vic3 culture name
+	religion = sunni  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Faizabad (province 1210)
+}
+
+PGG = {  # Pingnan Guo
+	color = { 150 218 7 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { nanfaren }  # TODO verify Vic3 culture name
+	religion = sunni  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Dali (province 1602)
+}
+
+NMB = {  # Namibia
+	color = { 215 66 244 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { khoisan }  # TODO verify Vic3 culture name
+	religion = animist  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Windhoek (province 2078)
+}
+
+TMR = {  # Timor
+	color = { 147 82 173 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { melanesian }  # TODO verify Vic3 culture name
+	religion = catholic  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Dili (province 1446)
+}
+
+SLG = {  # Selangor
+	color = { 84 85 40 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { malay }  # TODO verify Vic3 culture name
+	religion = sunni  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Kuala Lumpur (province 1387)
+}
+
+PRK = {  # Perak
+	color = { 196 197 33 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { malay }  # TODO verify Vic3 culture name
+	religion = sunni  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Ipoh (province 2575)
+}
+
+HBY = {  # Hobyo
+	color = { 242 17 46 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { somali }  # TODO verify Vic3 culture name
+	religion = sunni  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Hobye (province 1871)
+}
+
+QAT = {  # Qatar
+	color = { 141 27 61 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { bedouin }  # TODO verify Vic3 culture name
+	religion = sunni  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Billings (province 116)
+}
+
+BRY = {  # Buryatia
+	color = { 74 89 170 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { mongol }  # TODO verify Vic3 culture name
+	religion = gelugpa  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Tiksi (province 2670)
+}
+
+MLD = {  # Maldives
+	color = { 121 229 215 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { asian_minor }  # TODO verify Vic3 culture name
+	religion = sunni  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Maldives (province 1325)
+}
+
+KAR = {  # Karen
+	color = { 204 132 224 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { karen }  # TODO verify Vic3 culture name
+	religion = theravada  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Moulmein (province 1343)
+}
+
+CRL = {  # Chitral
+	color = { 108 224 88 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { pashtun }  # TODO verify Vic3 culture name
+	religion = sunni  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Chitral (province 1223)
+}
+
+RDL = {  # Ardalan
+	color = { 255 245 140 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { kurdish }  # TODO verify Vic3 culture name
+	religion = shiite  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Sanandaj (province 1118)
+}
+
+BTL = {  # Bitlis
+	color = { 4 219 148 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { kurdish }  # TODO verify Vic3 culture name
+	religion = sunni  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Bitlis (province 891)
+}
+
+BDN = {  # Hakkari
+	color = { 84 204 4 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { kurdish }  # TODO verify Vic3 culture name
+	religion = sunni  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Hakkari (province 892)
+}
+
+BNB = {  # Baban
+	color = { 160 196 61 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { kurdish }  # TODO verify Vic3 culture name
+	religion = sunni  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Kirkuk (province 925)
+}
+
+MKN = {  # Mukriyan
+	color = { 173 169 104 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { kurdish }  # TODO verify Vic3 culture name
+	religion = sunni  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Mahabad (province 1111)
+}
+
+BHT = {  # Bohtan
+	color = { 247 255 99 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { kurdish }  # TODO verify Vic3 culture name
+	religion = sunni  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Amapa (province 2414)
+}
+
+SRN = {  # Soran
+	color = { 174 186 160 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { kurdish }  # TODO verify Vic3 culture name
+	religion = sunni  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Arbil (province 924)
+}
+
+FIU = {  # Fiume
+	color = { 0 107 173 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { north_italian }  # TODO verify Vic3 culture name
+	religion = catholic  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Fiume (province 778)
+}
+
+SYC = {  # Sicily
+	color = { 255 247 0 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { south_italian }  # TODO verify Vic3 culture name
+	religion = catholic  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Palermo (province 762)
+}
+
+ABK = {  # Abkhazia
+	color = { 136 170 0 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { circassian }  # TODO verify Vic3 culture name
+	religion = orthodox  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Sukhumi (province 1095)
+}
+
+LHJ = {  # Lahej
+	color = { 246 134 59 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { mashriqi }  # TODO verify Vic3 culture name
+	religion = sunni  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Aden (province 1412)
+}
+
+FDL = {  # Fadhli
+	color = { 15 128 103 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { bedouin }  # TODO verify Vic3 culture name
+	religion = sunni  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Bayda (province 1176)
+}
+
+KTH = {  # Kathiri
+	color = { 204 191 6 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { bedouin }  # TODO verify Vic3 culture name
+	religion = sunni  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Mukalla (province 1173)
+}
+
+MHR = {  # Mahra
+	color = { 47 140 0 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { bedouin }  # TODO verify Vic3 culture name
+	religion = sunni  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Ghayda (province 1175)
+}
+
+KML = {  # Kumul Khanate
+	color = { 255 201 116 }
+	country_type = recognized
+	tier = principality
+	cultures = { uighur }  # TODO verify Vic3 culture name
+	religion = sunni  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Kumul (province 1599)
+}
+
+SHK = {  # Shilluk
+	color = { 252 97 0 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { luo }  # TODO verify Vic3 culture name
+	religion = animist  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Fashoda (province 1832)
+}
+
+WRL = {  # Warsangali
+	color = { 24 214 97 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { somali }  # TODO verify Vic3 culture name
+	religion = sunni  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Berbera (province 1873)
+}
+
+BHP = {  # Bahawalpur
+	color = { 156 30 60 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { panjabi }  # TODO verify Vic3 culture name
+	religion = sunni  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Bahawalpur (province 1231)
+}
+
+EZO = {  # Ezo
+	color = { 44 44 95 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { japanese }  # TODO verify Vic3 culture name
+	religion = shinto  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Hakodate (province 1642)
+}
+
+CHY = {  # Chechnya
+	color = { 136 153 139 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { chechen }  # TODO verify Vic3 culture name
+	religion = sunni  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Grozny (province 1055)
+}
+
+CHK = {  # Champassak
+	color = { 139 131 162 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { lao }  # TODO verify Vic3 culture name
+	religion = theravada  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Satavan (province 1362)
+}
+
+MGH = {  # Maghreb
+	color = { 20 70 20 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { maghrebi }  # TODO verify Vic3 culture name
+	religion = sunni  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Fez (province 1680)
+}
+
+BKF = {  # Haut-Volta
+	color = { 230 14 213 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { mossi }  # TODO verify Vic3 culture name
+	religion = sunni  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Wagadugu (province 1901)
+}
+
+ZBW = {  # Monomotapa
+	color = { 211 184 200 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { shona }  # TODO verify Vic3 culture name
+	religion = animist  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Harare (province 2068)
+}
+
+CMS = {  # Comoros
+	color = { 66 244 101 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { kilombero }  # TODO verify Vic3 culture name
+	religion = sunni  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Comoros (province 2123)
+}
+
+EQG = {  # Equatorial Guinea
+	color = { 244 66 206 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { forest_bantu }  # TODO verify Vic3 culture name
+	religion = animist  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Fernando Po (province 1955)
+}
+
+SUD = {  # Sudan
+	color = { 120 77 119 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { sudanese }  # TODO verify Vic3 culture name
+	religion = sunni  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Khartoum (province 1827)
+}
+
+TNZ = {  # Tabora
+	color = { 86 143 114 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { swahili }  # TODO verify Vic3 culture name
+	religion = protestant  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Dar Es Salaam (province 2036)
+}
+
+MOZ = {  # Mosambik
+	color = { 57 130 101 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { shona }  # TODO verify Vic3 culture name
+	religion = catholic  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Maputo (province 2049)
+}
+
+KNY = {  # Kirenya
+	color = { 86 114 143 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { kikuyu }  # TODO verify Vic3 culture name
+	religion = protestant  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Nairobi (province 2024)
+}
+
+HBS = {  # Habesh
+	color = { 100 120 191 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { amhara }  # TODO verify Vic3 culture name
+	religion = oriental_orthodox  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Ankober (province 1859)
+}
+
+ZNC = {  # Zanzibar
+	color = { 200 189 199 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { swahili }  # TODO verify Vic3 culture name
+	religion = sunni  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Zanzibar (province 2048)
+}
+
+ANG = {  # Vestpost
+	color = { 57 190 101 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { bakongo }  # TODO verify Vic3 culture name
+	religion = protestant  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Luanda (province 1999)
+}
+
+CGO = {  # Congo
+	color = { 173 116 62 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { bakongo }  # TODO verify Vic3 culture name
+	religion = catholic  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Nkuna (province 1977)
+}
+
+ZAM = {  # Zambia
+	color = { 146 139 40 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { lunda }  # TODO verify Vic3 culture name
+	religion = protestant  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Lusaka (province 2012)
+}
+
+KZC = {  # Kazembe
+	color = { 100 191 231 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { lunda }  # TODO verify Vic3 culture name
+	religion = animist  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Kazembe (province 2016)
+}
+
+ZIR = {  # Zahir
+	color = { 50 116 62 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { bakongo }  # TODO verify Vic3 culture name
+	religion = catholic  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Mungbane (province 1997)
+}
+
+EQT = {  # Equatoria
+	color = { 150 60 50 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { azande }  # TODO verify Vic3 culture name
+	religion = catholic  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Yambio (province 1845)
+}
+
+UGA = {  # Uganda
+	color = { 23 114 143 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { baganda }  # TODO verify Vic3 culture name
+	religion = animist  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Entebbe (province 2019)
+}
+
+GAB = {  # Komo
+	color = { 50 50 153 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { fang }  # TODO verify Vic3 culture name
+	religion = catholic  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Libreville (province 1972)
+}
+
+CMR = {  # Cameron
+	color = { 153 25 25 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { forest_bantu }  # TODO verify Vic3 culture name
+	religion = protestant  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Yaounde (province 1959)
+}
+
+CAR = {  # Central African Republic
+	color = { 158 74 137 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { ubangian }  # TODO verify Vic3 culture name
+	religion = animist  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Bangui (province 1965)
+}
+
+CHD = {  # Chad
+	color = { 95 101 148 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { sara }  # TODO verify Vic3 culture name
+	religion = sunni  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Massenya (province 1818)
+}
+
+NGR = {  # Nigeria
+	color = { 66 207 66 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { yoruba }  # TODO verify Vic3 culture name
+	religion = protestant  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Lagos (province 1923)
+}
+
+HSL = {  # HSL
+	color = { 111 184 179 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { fulbe }  # TODO verify Vic3 culture name
+	religion = sunni  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Sokoto (province 1948)
+}
+
+NIG = {  # Agades
+	color = { 222 144 54 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { hausa }  # TODO verify Vic3 culture name
+	religion = sunni  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Agades (province 1812)
+}
+
+BOR = {  # BOR
+	color = { 189 142 177 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { kanuri }  # TODO verify Vic3 culture name
+	religion = sunni  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Kuka (province 1951)
+}
+
+IFE = {  # IFE
+	color = { 255 105 155 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { yoruba }  # TODO verify Vic3 culture name
+	religion = animist  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Ife (province 1926)
+}
+
+TOG = {  # Togo
+	color = { 74 47 152 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { ewe }  # TODO verify Vic3 culture name
+	religion = catholic  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Lome (province 1914)
+}
+
+GHN = {  # Ghana
+	color = { 204 153 0 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { akan }  # TODO verify Vic3 culture name
+	religion = animist  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Kintampo (province 1911)
+}
+
+AZW = {  # Azawad
+	color = { 50 60 191 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { tuareg }  # TODO verify Vic3 culture name
+	religion = sunni  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Ankober (province 1859)
+}
+
+MLI = {  # Mali
+	color = { 230 14 213 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { fulbe }  # TODO verify Vic3 culture name
+	religion = sunni  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Bamako (province 1794)
+}
+
+GMB = {  # Gambia
+	color = { 127 146 135 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { mande }  # TODO verify Vic3 culture name
+	religion = protestant  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Banjul (province 1785)
+}
+
+WSH = {  # West Sahara
+	color = { 50 120 70 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { tuareg }  # TODO verify Vic3 culture name
+	religion = sunni  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Tarfaya (province 1696)
+}
+
+CHP = {  # Champa
+	color = { 70 50 200 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { champa }  # TODO verify Vic3 culture name
+	religion = hindu  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Saigon (province 1380)
+}
+
+GUY = {  # Essequibo
+	color = { 36 132 247 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { guianan }  # TODO verify Vic3 culture name
+	religion = catholic  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Paramaribo (province 2240)
+}
+
+PTG = {  # Patagonia
+	color = { 219 182 182 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { patagonian }  # TODO verify Vic3 culture name
+	religion = animist  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Temuco (province 2329)
+}
+
+SFJ = {  # Sudurhafeyjar
+	color = { 139 179 207 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { ayitian }  # TODO verify Vic3 culture name
+	religion = protestant  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Port Au Prince (province 2213)
+}
+
+BLZ = {  # Belize
+	color = { 47 85 240 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { central_american }  # TODO verify Vic3 culture name
+	religion = protestant  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Belize (province 2190)
+}
+
+GRN = {  # Greenland
+	color = { 219 219 219 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { scandinavian }  # TODO verify Vic3 culture name
+	religion = protestant  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Nuuk (province 251)
+}
+
+JAM = {  # Eendrachtsland
+	color = { 240 167 130 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { burgundian }  # TODO verify Vic3 culture name
+	religion = protestant  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Jamaica (province 2217)
+}
+
+UNM = {  # The Pueblo Republic
+	color = { 255 205 155 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { pueblo }  # TODO verify Vic3 culture name
+	religion = animist  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Phoenix (province 100)
+}
+
+ALS = {  # Elsass
+	color = { 190 50 40 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { rheinish }  # TODO verify Vic3 culture name
+	religion = protestant  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Strasbourg (province 409)
+}
+
+BKV = {  # Bukovina
+	color = { 255 72 0 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { romanian }  # TODO verify Vic3 culture name
+	religion = orthodox  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Cernauti (province 662)
+}
+
+BRT = {  # Brittany
+	color = { 100 100 100 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { breton }  # TODO verify Vic3 culture name
+	religion = catholic  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Rennes (province 424)
+}
+
+BSQ = {  # Basque Country
+	color = { 50 110 10 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { basque }  # TODO verify Vic3 culture name
+	religion = catholic  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: BIlbao (province 492)
+}
+
+CRS = {  # Corsica
+	color = { 120 130 100 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { north_italian }  # TODO verify Vic3 culture name
+	religion = catholic  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Corsica (province 473)
+}
+
+DLM = {  # Dalmatia
+	color = { 123 141 186 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { croat }  # TODO verify Vic3 culture name
+	religion = catholic  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Zadar (province 781)
+}
+
+ENL = {  # England
+	color = { 239 96 88 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { english }  # TODO verify Vic3 culture name
+	religion = protestant  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: London (province 300)
+}
+
+GAL = {  # Galicia
+	color = { 160 170 190 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { portuguese }  # TODO verify Vic3 culture name
+	religion = catholic  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: La Coruna (province 474)
+}
+
+LOR = {  # Lorraine
+	color = { 190 50 40 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { french }  # TODO verify Vic3 culture name
+	religion = catholic  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Nancy (province 411)
+}
+
+MCD = {  # Macedonia
+	color = { 229 170 87 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { bulgarian }  # TODO verify Vic3 culture name
+	religion = orthodox  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Skopje (province 806)
+}
+
+MLT = {  # Malta
+	color = { 120 120 120 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { maltese }  # TODO verify Vic3 culture name
+	religion = catholic  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Malta (province 854)
+}
+
+OCC = {  # Occitania
+	color = { 250 100 30 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { provencal }  # TODO verify Vic3 culture name
+	religion = protestant  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Toulouse (province 455)
+}
+
+RMG = {  # Romagna
+	color = { 57 140 179 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { north_italian }  # TODO verify Vic3 culture name
+	religion = catholic  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Bologna (province 741)
+}
+
+SPC = {  # Hispanic Commonwealth
+	color = { 255 196 0 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { castilian }  # TODO verify Vic3 culture name
+	religion = catholic  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Madrid (province 487)
+}
+
+SRD = {  # Arborea
+	color = { 211 184 179 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { south_italian }  # TODO verify Vic3 culture name
+	religion = catholic  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Cagliari (province 765)
+}
+
+SVY = {  # Savoy
+	color = { 97 209 251 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { north_italian }  # TODO verify Vic3 culture name
+	religion = catholic  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Turin (province 720)
+}
+
+SWH = {  # Schleswig-Holstein
+	color = { 220 150 158 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { north_german }  # TODO verify Vic3 culture name
+	religion = protestant  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Kiel (province 369)
+}
+
+WLS = {  # Wales
+	color = { 117 161 67 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { welsh }  # TODO verify Vic3 culture name
+	religion = catholic  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Cardiff (province 273)
+}
+
+RHI = {  # Rhineland
+	color = { 20 50 150 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { rheinish }  # TODO verify Vic3 culture name
+	religion = protestant  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Aachen (province 576)
+}
+
+PZN = {  # Poznan
+	color = { 255 25 40 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { polish }  # TODO verify Vic3 culture name
+	religion = catholic  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Posen (province 699)
+}
+
+SLS = {  # Silesia
+	color = { 70 70 70 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { polish }  # TODO verify Vic3 culture name
+	religion = catholic  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Breslau (province 682)
+}
+
+WES = {  # Westfalen
+	color = { 147 130 118 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { north_german }  # TODO verify Vic3 culture name
+	religion = protestant  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Dortmund (province 580)
+}
+
+DON = {  # Cossack Republic
+	color = { 51 104 204 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { ukrainian }  # TODO verify Vic3 culture name
+	religion = orthodox  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Azov (province 1047)
+}
+
+IZH = {  # Ingria
+	color = { 250 241 19 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { finnish }  # TODO verify Vic3 culture name
+	religion = orthodox  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Luga (province 996)
+}
+
+TAR = {  # Tatarstan
+	color = { 255 234 168 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { crimean }  # TODO verify Vic3 culture name
+	religion = sunni  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Kazan (province 1030)
+}
+
+TNT = {  # Tannu Uriankhai
+	color = { 74 38 199 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { tatar }  # TODO verify Vic3 culture name
+	religion = gelugpa  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Kyzyl (province 1469)
+}
+
+MRL = {  # Mari El
+	color = { 107 156 168 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { mari }  # TODO verify Vic3 culture name
+	religion = orthodox  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Vyatkha (province 1028)
+}
+
+MRD = {  # Mordvinia
+	color = { 173 173 173 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { mordvin }  # TODO verify Vic3 culture name
+	religion = orthodox  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Simbirsk (province 1033)
+}
+
+CHV = {  # Chuvashia
+	color = { 150 85 42 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { chuvash }  # TODO verify Vic3 culture name
+	religion = orthodox  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Simbirsk (province 1033)
+}
+
+KOM = {  # Komia
+	color = { 159 216 230 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { komi }  # TODO verify Vic3 culture name
+	religion = orthodox  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Usogorsk (province 2700)
+}
+
+UDM = {  # Udmurtia
+	color = { 99 99 99 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { udmurt }  # TODO verify Vic3 culture name
+	religion = orthodox  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Sarapol (province 1031)
+}
+
+BSK = {  # Bashkiria
+	color = { 160 96 160 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { bashkir }  # TODO verify Vic3 culture name
+	religion = sunni  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Chelyabinsk (province 1059)
+}
+
+ASY = {  # Assyria
+	color = { 27 130 137 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { assyrian }  # TODO verify Vic3 culture name
+	religion = oriental_orthodox  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Beirut (province 913)
+}
+
+CIR = {  # Circassia
+	color = { 156 132 172 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { north_caucasian }  # TODO verify Vic3 culture name
+	religion = sunni  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Pyatigorsk (province 1056)
+}
+
+CLC = {  # Cilicia
+	color = { 81 107 40 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { armenian }  # TODO verify Vic3 culture name
+	religion = orthodox  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Adana (province 894)
+}
+
+DAG = {  # Dagestan
+	color = { 56 232 32 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { dagestani }  # TODO verify Vic3 culture name
+	religion = sunni  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Gunib (province 1053)
+}
+
+KMY = {  # Kumykia
+	color = { 0 101 148 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { kumyk }  # TODO verify Vic3 culture name
+	religion = sunni  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Tarki (province 3322)
+}
+
+KRI = {  # Karachay
+	color = { 122 24 44 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { karachai }  # TODO verify Vic3 culture name
+	religion = sunni  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Adygei (province 1051)
+}
+
+AVR = {  # Avaristan
+	color = { 192 150 190 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { avar }  # TODO verify Vic3 culture name
+	religion = sunni  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Gunib (province 1053)
+}
+
+ING = {  # Ingushetia
+	color = { 76 152 149 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { ingush }  # TODO verify Vic3 culture name
+	religion = sunni  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Grozny (province 1055)
+}
+
+LEZ = {  # Lekia
+	color = { 230 95 92 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { lezgin }  # TODO verify Vic3 culture name
+	religion = sunni  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Derbent (province 1052)
+}
+
+LAK = {  # Lakia
+	color = { 207 107 119 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { lak }  # TODO verify Vic3 culture name
+	religion = orthodox  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Derbent (province 1052)
+}
+
+OSS = {  # Ossetia
+	color = { 254 189 17 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { ossetian }  # TODO verify Vic3 culture name
+	religion = orthodox  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Vladikavkaz (province 1054)
+}
+
+IME = {  # Imereti
+	color = { 136 132 247 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { georgian }  # TODO verify Vic3 culture name
+	religion = orthodox  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Poti (province 1094)
+}
+
+SAM = {  # Samtskhe
+	color = { 136 132 147 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { georgian }  # TODO verify Vic3 culture name
+	religion = orthodox  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Ardahan (province 886)
+}
+
+KRT = {  # Kartli
+	color = { 27 145 104 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { georgian }  # TODO verify Vic3 culture name
+	religion = orthodox  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Tblisi (province 1090)
+}
+
+KLJ = {  # Khalajstan
+	color = { 113 135 186 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { khalaj }  # TODO verify Vic3 culture name
+	religion = shiite  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Arak (province 1128)
+}
+
+DUR = {  # Pashtunistan
+	color = { 92 148 152 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { pashtun }  # TODO verify Vic3 culture name
+	religion = sunni  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Kandahar (province 1215)
+}
+
+HAL = {  # Ha'il
+	color = { 153 148 87 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { bedouin }  # TODO verify Vic3 culture name
+	religion = sunni  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Hail (province 1160)
+}
+
+JOR = {  # Jordan
+	color = { 158 124 137 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { bedouin }  # TODO verify Vic3 culture name
+	religion = sunni  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Amman (province 908)
+}
+
+KDS = {  # Kurdistan
+	color = { 31 200 200 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { kurdish }  # TODO verify Vic3 culture name
+	religion = sunni  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Diyarbakir (province 893)
+}
+
+KWT = {  # Kuwait
+	color = { 129 81 124 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { bedouin }  # TODO verify Vic3 culture name
+	religion = sunni  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Kuwait (province 935)
+}
+
+KYR = {  # Kyrgyzstan
+	color = { 244 185 66 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { kirgiz }  # TODO verify Vic3 culture name
+	religion = sunni  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Bishkek (province 1189)
+}
+
+LBN = {  # Lebanon
+	color = { 22 32 110 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { mashriqi }  # TODO verify Vic3 culture name
+	religion = sunni  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Beirut (province 913)
+}
+
+NYE = {  # North Yemen
+	color = { 98 49 0 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { mashriqi }  # TODO verify Vic3 culture name
+	religion = shiite  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Sana (province 1178)
+}
+
+PLS = {  # Palestine
+	color = { 220 202 96 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { mashriqi }  # TODO verify Vic3 culture name
+	religion = sunni  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Jerusalem (province 917)
+}
+
+PNT = {  # Pontus
+	color = { 148 219 255 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { greek }  # TODO verify Vic3 culture name
+	religion = orthodox  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Trabzon (province 882)
+}
+
+SYR = {  # Syria
+	color = { 150 150 0 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { mashriqi }  # TODO verify Vic3 culture name
+	religion = sunni  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Damascus (province 902)
+}
+
+TCA = {  # Transcaucasia
+	color = { 100 113 211 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { georgian }  # TODO verify Vic3 culture name
+	religion = orthodox  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Tblisi (province 1090)
+}
+
+TKM = {  # Turkmenistan
+	color = { 136 157 23 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { turkmen }  # TODO verify Vic3 culture name
+	religion = sunni  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Ashkabad (province 1204)
+}
+
+TKS = {  # Turania
+	color = { 210 105 30 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { uzbek kazak turkmen }  # TODO verify Vic3 culture name
+	religion = sunni  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital province ?
+}
+
+UYG = {  # Uyghurstan
+	color = { 121 229 215 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { uighur }  # TODO verify Vic3 culture name
+	religion = sunni  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Kashgar (province 1594)
+}
+
+UZB = {  # Uzbekistan
+	color = { 188 123 103 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { uzbek }  # TODO verify Vic3 culture name
+	religion = sunni  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Samarkand (province 1199)
+}
+
+AZT = {  # Aztlan
+	color = { 155 45 40 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { nahua }  # TODO verify Vic3 culture name
+	religion = catholic  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Mexico City (province 2172)
+}
+
+CMN = {  # Cemanahuac
+	color = { 66 193 200 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { nahua }  # TODO verify Vic3 culture name
+	religion = catholic  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Orizaba (province 3429)
+}
+
+HUA = {  # Teenek
+	color = { 219 213 209 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { huastec }  # TODO verify Vic3 culture name
+	religion = catholic  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Tamiahua (province 3415)
+}
+
+MIX = {  # League of Kong'oy
+	color = { 153 0 0 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { mixe }  # TODO verify Vic3 culture name
+	religion = catholic  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Jaltepec (province 3436)
+}
+
+OAX = {  # Ñuu Savi
+	color = { 238 140 0 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { mixtec }  # TODO verify Vic3 culture name
+	religion = catholic  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Huajuapan (province 3432)
+}
+
+OTO = {  # Otomi Confederation
+	color = { 76 130 204 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { otomi }  # TODO verify Vic3 culture name
+	religion = catholic  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Queretaro (province 2173)
+}
+
+QIC = {  # Cuauhtemallan
+	color = { 205 170 109 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { quiche }  # TODO verify Vic3 culture name
+	religion = catholic  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Guatemala (province 2186)
+}
+
+TOT = {  # Totonacapan
+	color = { 213 198 141 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { totonac }  # TODO verify Vic3 culture name
+	religion = catholic  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Papantla (province 3420)
+}
+
+VCZ = {  # Veracruz
+	color = { 102 3 60 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { mexican }  # TODO verify Vic3 culture name
+	religion = catholic  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Veracruz (province 2162)
+}
+
+YCT = {  # Yucatan
+	color = { 59 68 75 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { mayan }  # TODO verify Vic3 culture name
+	religion = catholic  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Merida (province 2183)
+}
+
+YUC = {  # Mayapan
+	color = { 54 167 156 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { mayan }  # TODO verify Vic3 culture name
+	religion = catholic  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Campeche (province 2184)
+}
+
+ASM = {  # Assam
+	color = { 176 0 0 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { assamese }  # TODO verify Vic3 culture name
+	religion = hindu  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Gauhati (province 1258)
+}
+
+BIH = {  # Bihar
+	color = { 161 139 40 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { bihari }  # TODO verify Vic3 culture name
+	religion = hindu  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Hyderabad (province 1283)
+}
+
+BLC = {  # Baluchistan
+	color = { 74 166 134 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { baluchi }  # TODO verify Vic3 culture name
+	religion = sunni  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Bela (province 1222)
+}
+
+BEN = {  # Bengal
+	color = { 74 152 35 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { bengali }  # TODO verify Vic3 culture name
+	religion = sunni  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Calcutta (province 1251)
+}
+
+KRN = {  # Karnatak
+	color = { 226 22 48 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { tamil }  # TODO verify Vic3 culture name
+	religion = sunni  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Madras (province 1304)
+}
+
+MAH = {  # Maharashtra
+	color = { 160 30 154 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { marathi }  # TODO verify Vic3 culture name
+	religion = hindu  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Poona (province 1299)
+}
+
+RAJ = {  # Rajputana
+	color = { 173 174 57 }
+	country_type = recognized
+	tier = empire
+	cultures = { rajput }  # TODO verify Vic3 culture name
+	religion = hindu  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Jaipur (province 1268)
+}
+
+SRI = {  # Sri Lanka
+	color = { 133 94 25 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { sinhala }  # TODO verify Vic3 culture name
+	religion = theravada  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Colombo (province 1321)
+}
+
+AGC = {  # Angoche
+	color = { 84 96 204 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { swahili }  # TODO verify Vic3 culture name
+	religion = sunni  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Angoche (province 2061)
+}
+
+ARO = {  # Aro
+	color = { 88 27 192 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { ibo }  # TODO verify Vic3 culture name
+	religion = animist  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Aruchukwu (province 1935)
+}
+
+ASH = {  # Ashanti
+	color = { 255 213 0 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { akan }  # TODO verify Vic3 culture name
+	religion = animist  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Kintampo (province 1911)
+}
+
+AWS = {  # Aussa
+	color = { 28 255 164 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { afar }  # TODO verify Vic3 culture name
+	religion = sunni  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Assab (province 1851)
+}
+
+AZA = {  # Azande
+	color = { 131 50 50 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { azande }  # TODO verify Vic3 culture name
+	religion = animist  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Baramo (province 1998)
+}
+
+BRD = {  # Burundi
+	color = { 121 229 215 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { ruanda }  # TODO verify Vic3 culture name
+	religion = animist  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Usumbura (province 2035)
+}
+
+BSH = {  # Lesotho
+	color = { 147 82 173 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { sotho }  # TODO verify Vic3 culture name
+	religion = animist  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Thaba Bosiu (province 2104)
+}
+
+BUG = {  # Uganda
+	color = { 23 114 143 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { baganda }  # TODO verify Vic3 culture name
+	religion = animist  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Entebbe (province 2019)
+}
+
+CLA = {  # Calabar
+	color = { 136 157 23 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { ibibio }  # TODO verify Vic3 culture name
+	religion = animist  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Calabar (province 1934)
+}
+
+CYR = {  # Cyrenaica
+	color = { 121 175 250 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { maghrebi }  # TODO verify Vic3 culture name
+	religion = sunni  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Benghazi (province 1735)
+}
+
+DAH = {  # Benin
+	color = { 50 130 118 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { fon }  # TODO verify Vic3 culture name
+	religion = animist  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Abomey (province 1920)
+}
+
+DAM = {  # Damagaram
+	color = { 204 82 0 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { hausa }  # TODO verify Vic3 culture name
+	religion = sunni  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Zinder (province 1815)
+}
+
+DND = {  # Dendi
+	color = { 255 191 191 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { songhai }  # TODO verify Vic3 culture name
+	religion = sunni  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Niamey (province 1808)
+}
+
+GAZ = {  # Gaza
+	color = { 165 43 18 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { nguni }  # TODO verify Vic3 culture name
+	religion = animist  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Mossurize (province 2058)
+}
+
+GBU = {  # Guinea-Bissau
+	color = { 119 62 40 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { western_nigritic }  # TODO verify Vic3 culture name
+	religion = animist  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Gabu (province 1878)
+}
+
+GEL = {  # Geledi
+	color = { 153 217 234 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { somali }  # TODO verify Vic3 culture name
+	religion = sunni  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Mogadishu (province 1868)
+}
+
+GNE = {  # Guinea
+	color = { 96 137 102 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { mande }  # TODO verify Vic3 culture name
+	religion = sunni  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Boffa (province 1879)
+}
+
+GON = {  # Gonder
+	color = { 113 160 213 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { amhara }  # TODO verify Vic3 culture name
+	religion = oriental_orthodox  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Gonder (province 1852)
+}
+
+HAR = {  # Harar
+	color = { 235 232 222 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { harari }  # TODO verify Vic3 culture name
+	religion = sunni  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Harer (province 1865)
+}
+
+IVC = {  # Ivory Coast
+	color = { 0 213 255 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { dyula }  # TODO verify Vic3 culture name
+	religion = protestant  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Grand Lahou (province 1892)
+}
+
+JAL = {  # Futa Jallon
+	color = { 239 228 176 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { fulbe }  # TODO verify Vic3 culture name
+	religion = sunni  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Timbo (province 1880)
+}
+
+KAF = {  # Kaffa
+	color = { 100 0 15 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { kefficho }  # TODO verify Vic3 culture name
+	religion = animist  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Bonga (province 1862)
+}
+
+KAN = {  # Bornu Empire
+	color = { 117 150 120 }
+	country_type = recognized
+	tier = empire
+	cultures = { fulbe }  # TODO verify Vic3 culture name
+	religion = sunni  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Kufe (province 1816)
+}
+
+KNG = {  # Wattara
+	color = { 26 134 58 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { dyula }  # TODO verify Vic3 culture name
+	religion = sunni  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Odienne (province 1900)
+}
+
+KON = {  # Kongo
+	color = { 87 145 62 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { bakongo }  # TODO verify Vic3 culture name
+	religion = catholic  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Mbanza (province 2001)
+}
+
+KUB = {  # Kuba
+	color = { 166 72 57 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { kuba }  # TODO verify Vic3 culture name
+	religion = animist  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Kananga (province 1984)
+}
+
+KZB = {  # Kazembe
+	color = { 200 191 231 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { lunda }  # TODO verify Vic3 culture name
+	religion = animist  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Kazembe (province 2016)
+}
+
+LBA = {  # Luba
+	color = { 87 45 69 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { luba }  # TODO verify Vic3 culture name
+	religion = animist  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Lusambo (province 1986)
+}
+
+LBY = {  # Libya
+	color = { 0 75 0 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { maghrebi }  # TODO verify Vic3 culture name
+	religion = catholic  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Murzuk (province 1741)
+}
+
+LOA = {  # Loango
+	color = { 155 148 0 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { bakongo }  # TODO verify Vic3 culture name
+	religion = animist  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Loango (province 2624)
+}
+
+LUN = {  # Lunda
+	color = { 142 65 188 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { lunda }  # TODO verify Vic3 culture name
+	religion = animist  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Mussumba (province 1988)
+}
+
+MAJ = {  # Majeerteen
+	color = { 226 22 48 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { somali }  # TODO verify Vic3 culture name
+	religion = sunni  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Busaso (province 1872)
+}
+
+MAS = {  # Massina
+	color = { 0 0 198 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { fulbe }  # TODO verify Vic3 culture name
+	religion = sunni  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Bandiagara (province 1804)
+}
+
+MAT = {  # Matabele
+	color = { 220 202 96 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { nguni }  # TODO verify Vic3 culture name
+	religion = animist  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Mosega (province 2108)
+}
+
+MLW = {  # Malawi
+	color = { 165 157 168 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { chewa }  # TODO verify Vic3 culture name
+	religion = protestant  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Lilongwe (province 2067)
+}
+
+MNG = {  # Mongo
+	color = { 170 206 162 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { mongo }  # TODO verify Vic3 culture name
+	religion = animist  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Basoko (province 1992)
+}
+
+MOS = {  # Mossi
+	color = { 230 14 213 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { mossi }  # TODO verify Vic3 culture name
+	religion = animist  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Wagadugu (province 1901)
+}
+
+OYO = {  # Oyo
+	color = { 255 105 155 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { yoruba }  # TODO verify Vic3 culture name
+	religion = animist  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Ife (province 1926)
+}
+
+RWA = {  # Rwanda
+	color = { 219 83 106 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { ruanda }  # TODO verify Vic3 culture name
+	religion = animist  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Kigali (province 2034)
+}
+
+SHO = {  # Shonaland
+	color = { 160 220 30 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { shona }  # TODO verify Vic3 culture name
+	religion = animist  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Mutare (province 2070)
+}
+
+SHW = {  # Shewa
+	color = { 128 128 64 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { oromo }  # TODO verify Vic3 culture name
+	religion = oriental_orthodox  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Ankober (province 1859)
+}
+
+SID = {  # Sidama
+	color = { 60 60 60 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { cushitic }  # TODO verify Vic3 culture name
+	religion = animist  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Negele (province 1864)
+}
+
+SLE = {  # Leonia
+	color = { 226 22 48 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { anglois }  # TODO verify Vic3 culture name
+	religion = catholic  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Freetown (province 1884)
+}
+
+SNG = {  # Senegal
+	color = { 145 97 57 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { wolof }  # TODO verify Vic3 culture name
+	religion = sunni  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Dakar (province 1783)
+}
+
+SOM = {  # Somaliland
+	color = { 97 209 251 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { somali }  # TODO verify Vic3 culture name
+	religion = sunni  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Mogadishu (province 1868)
+}
+
+SUA = {  # Suazi
+	color = { 41 89 174 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { nguni }  # TODO verify Vic3 culture name
+	religion = animist  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Mbabane (province 2114)
+}
+
+TIG = {  # Tigray
+	color = { 108 49 108 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { tigray }  # TODO verify Vic3 culture name
+	religion = oriental_orthodox  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Antalo (province 1857)
+}
+
+TOO = {  # Futa Tooro
+	color = { 244 164 96 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { fulbe }  # TODO verify Vic3 culture name
+	religion = sunni  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Podor (province 1789)
+}
+
+TOU = {  # Tukulor Empire
+	color = { 0 152 212 }
+	country_type = recognized
+	tier = empire
+	cultures = { fulbe }  # TODO verify Vic3 culture name
+	religion = sunni  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Segu (province 1800)
+}
+
+TRZ = {  # Trarza
+	color = { 235 48 99 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { maures }  # TODO verify Vic3 culture name
+	religion = sunni  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Nouakchott (province 1775)
+}
+
+TSW = {  # Bechuanaland
+	color = { 89 141 140 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { tswana }  # TODO verify Vic3 culture name
+	religion = animist  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Gaborone (province 2074)
+}
+
+WAD = {  # Wadai
+	color = { 131 101 85 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { fur }  # TODO verify Vic3 culture name
+	religion = sunni  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Abeche (province 1821)
+}
+
+WRI = {  # Warri
+	color = { 209 251 255 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { itsekari }  # TODO verify Vic3 culture name
+	religion = animist  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Warri (province 1931)
+}
+
+WOL = {  # Wolof
+	color = { 91 146 180 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { wolof }  # TODO verify Vic3 culture name
+	religion = sunni  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Linguere (province 1786)
+}
+
+XHO = {  # Xhosa
+	color = { 49 58 156 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { xhosa }  # TODO verify Vic3 culture name
+	religion = animist  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Umtata (province 2100)
+}
+
+GRQ = {  # Vryland
+	color = { 139 179 207 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { afro_south_african }  # TODO verify Vic3 culture name
+	religion = protestant  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Mochudi (province 2574)
+}
+
+LWE = {  # Leeuwin
+	color = { 224 139 47 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { boer }  # TODO verify Vic3 culture name
+	religion = protestant  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Port Elizabeth (province 2096)
+}
+
+NFL = {  # Nuweflander
+	color = { 106 178 46 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { boer }  # TODO verify Vic3 culture name
+	religion = protestant  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Maputo (province 2049)
+}
+
+BTV = {  # Batavia
+	color = { 140 183 154 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { boer }  # TODO verify Vic3 culture name
+	religion = protestant  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Pretoria (province 2105)
+}
+
+FJA = {  # Fulbe Emirate
+	color = { 136 157 50 }
+	country_type = recognized
+	tier = principality
+	cultures = { fulbe }  # TODO verify Vic3 culture name
+	religion = sunni  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Ziguinchor (province 1792)
+}
+
+FUN = {  # Soudan
+	color = { 121 175 235 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { sudanese }  # TODO verify Vic3 culture name
+	religion = sunni  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Sennar (province 1830)
+}
+
+DJA = {  # Jambi
+	color = { 23 114 143 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { malay }  # TODO verify Vic3 culture name
+	religion = sunni  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Jambi (province 1398)
+}
+
+FJN = {  # Fujian
+	color = { 164 188 192 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { min }  # TODO verify Vic3 culture name
+	religion = mahayana  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Fuzhou (province 1482)
+}
+
+GMJ = {  # Guominjun
+	color = { 134 178 197 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { beifaren }  # TODO verify Vic3 culture name
+	religion = protestant  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Xian (province 1559)
+}
+
+GNG = {  # Guangdong
+	color = { 143 238 241 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { yue }  # TODO verify Vic3 culture name
+	religion = mahayana  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Canton (province 1493)
+}
+
+HNN = {  # Hunan
+	color = { 150 150 132 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { nanfaren }  # TODO verify Vic3 culture name
+	religion = mahayana  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Changsha (province 1524)
+}
+
+HUI = {  # Anhui
+	color = { 255 141 72 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { beifaren }  # TODO verify Vic3 culture name
+	religion = mahayana  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Luzhou (province 1474)
+}
+
+INO = {  # Indonesia
+	color = { 255 230 89 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { javan }  # TODO verify Vic3 culture name
+	religion = sunni  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Batavia (province 1413)
+}
+
+KCH = {  # Kachin
+	color = { 236 236 236 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { kachin }  # TODO verify Vic3 culture name
+	religion = animist  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Mysore (province 1314)
+}
+
+KLM = {  # Kalimantan
+	color = { 121 175 235 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { malay }  # TODO verify Vic3 culture name
+	religion = sunni  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Banjarmasin (province 1423)
+}
+
+KTI = {  # Kutai
+	color = { 21 75 135 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { malay }  # TODO verify Vic3 culture name
+	religion = sunni  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Samarinda (province 1429)
+}
+
+LXA = {  # Laos
+	color = { 210 46 28 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { lao }  # TODO verify Vic3 culture name
+	religion = theravada  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Luangprabang (province 1356)
+}
+
+MAL = {  # The Mossi Empire
+	color = { 230 14 213 }
+	country_type = recognized
+	tier = empire
+	cultures = { mossi }  # TODO verify Vic3 culture name
+	religion = sunni  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Wahiguya (province 1902)
+}
+
+MLY = {  # Malaysia
+	color = { 125 167 255 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { malay }  # TODO verify Vic3 culture name
+	religion = sunni  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Kuala Lumpur (province 1387)
+}
+
+SHA = {  # Shan
+	color = { 121 229 215 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { shan }  # TODO verify Vic3 culture name
+	religion = theravada  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Taunggyi (province 1338)
+}
+
+SLW = {  # Sulawesi
+	color = { 131 50 50 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { moluccan }  # TODO verify Vic3 culture name
+	religion = sunni  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Makassar (province 1430)
+}
+
+SAK = {  # Siak
+	color = { 255 255 100 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { malay }  # TODO verify Vic3 culture name
+	religion = sunni  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Siak (province 1401)
+}
+
+SUL = {  # Sulu
+	color = { 230 50 50 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { malay }  # TODO verify Vic3 culture name
+	religion = sunni  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Sulu (province 1464)
+}
+
+SWK = {  # Sarawak
+	color = { 219 182 182 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { malay }  # TODO verify Vic3 culture name
+	religion = sunni  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Kuching (province 1394)
+}
+
+SZC = {  # Sichuan
+	color = { 169 223 155 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { nanfaren }  # TODO verify Vic3 culture name
+	religion = mahayana  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Chengdu (province 1578)
+}
+
+KAG = {  # Ishikawa
+	color = { 214 183 67 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { japanese }  # TODO verify Vic3 culture name
+	religion = mahayana  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Kanazawa (province 1646)
+}
+
+RYU = {  # Ryukyu
+	color = { 84 96 136 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { japanese }  # TODO verify Vic3 culture name
+	religion = mahayana  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Okinawa (province 1678)
+}
+
+SAT = {  # Kyushu
+	color = { 184 133 77 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { japanese }  # TODO verify Vic3 culture name
+	religion = mahayana  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Kagoshima (province 1662)
+}
+
+SEN = {  # Tohoku
+	color = { 154 123 47 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { japanese }  # TODO verify Vic3 culture name
+	religion = mahayana  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Sendai (province 1668)
+}
+
+TKG = {  # Shogunate Japan
+	color = { 174 143 27 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { japanese }  # TODO verify Vic3 culture name
+	religion = mahayana  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Edo (province 1649)
+}
+
+TOS = {  # Shikoku
+	color = { 204 183 57 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { japanese }  # TODO verify Vic3 culture name
+	religion = mahayana  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Kochi (province 1665)
+}
+
+YZW = {  # Yonezawa
+	color = { 214 143 47 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { japanese }  # TODO verify Vic3 culture name
+	religion = mahayana  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Yamagata (province 1673)
+}
+
+AOT = {  # Aotearoa
+	color = { 50 50 50 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { maori }  # TODO verify Vic3 culture name
+	religion = animist  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Tauranga (province 2571)
+}
+
+FIJ = {  # Fiji
+	color = { 8 181 255 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { melanesian }  # TODO verify Vic3 culture name
+	religion = protestant  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Fiji (province 2454)
+}
+
+TGA = {  # Tonga
+	color = { 121 229 215 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { polynesian }  # TODO verify Vic3 culture name
+	religion = protestant  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Tonga (province 2540)
+}
+
+ARA = {  # Aragon
+	color = { 213 132 76 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { catalan }  # TODO verify Vic3 culture name
+	religion = catholic  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Barcelona (province 498)
+}
+
+BYE = {  # BYE
+	color = { 215 130 130 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { byelorussian }  # TODO verify Vic3 culture name
+	religion = orthodox  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Minsk (province 718)
+}
+
+PLC = {  # Polish-Lithuanian Commonwealth
+	color = { 255 4 127 }
+	country_type = recognized
+	tier = empire
+	cultures = { polish }  # TODO verify Vic3 culture name
+	religion = catholic  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Warsaw (province 706)
+}
+
+UBD = {  # New Courland
+	color = { 121 175 250 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { livlandian }  # TODO verify Vic3 culture name
+	religion = protestant  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Barbados (province 2229)
+}
+
+DEN = {  # DEN
+	color = { 172 70 66 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { danish }  # TODO verify Vic3 culture name
+	religion = protestant  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Copenhagen (province 372)
+}
+
+FIN = {  # Finland
+	color = { 150 150 150 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { finnish }  # TODO verify Vic3 culture name
+	religion = protestant  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Helsinki (province 343)
+}
+
+NOR = {  # NOR
+	color = { 117 165 188 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { norwegian }  # TODO verify Vic3 culture name
+	religion = protestant  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Christiania (province 313)
+}
+
+SCA = {  # Scandinavia
+	color = { 111 148 188 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { scandinavian }  # TODO verify Vic3 culture name
+	religion = protestant  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Copenhagen (province 372)
+}
+
+SWE = {  # SWE
+	color = { 87 130 199 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { swedish }  # TODO verify Vic3 culture name
+	religion = protestant  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Stockholm (province 322)
+}
+
+CAT = {  # Catalonia
+	color = { 213 132 76 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { catalan }  # TODO verify Vic3 culture name
+	religion = catholic  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Barcelona (province 498)
+}
+
+FLA = {  # Flanders
+	color = { 43 141 172 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { dutch }  # TODO verify Vic3 culture name
+	religion = catholic  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Brussels (province 387)
+}
+
+IRE = {  # Ireland
+	color = { 112 150 105 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { irish }  # TODO verify Vic3 culture name
+	religion = catholic  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Dublin (province 263)
+}
+
+NET = {  # Netherlands
+	color = { 220 138 57 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { dutch }  # TODO verify Vic3 culture name
+	religion = protestant  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Amsterdam (province 375)
+}
+
+POR = {  # Portugal
+	color = { 57 160 101 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { portuguese }  # TODO verify Vic3 culture name
+	religion = catholic  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Lisbon (province 521)
+}
+
+SCO = {  # Scotland
+	color = { 199 175 12 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { scottish }  # TODO verify Vic3 culture name
+	religion = protestant  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Edinburgh (province 269)
+}
+
+SPA = {  # Spain
+	color = { 231 181 12 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { castilian }  # TODO verify Vic3 culture name
+	religion = catholic  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Madrid (province 487)
+}
+
+WLL = {  # WLL
+	color = { 131 141 142 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { wallonian }  # TODO verify Vic3 culture name
+	religion = catholic  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Namur (province 392)
+}
+
+ANH = {  # ANH
+	color = { 203 93 124 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { north_german }  # TODO verify Vic3 culture name
+	religion = protestant  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Dessau (province 555)
+}
+
+BAD = {  # Baden
+	color = { 117 161 67 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { rheinish }  # TODO verify Vic3 culture name
+	religion = catholic  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Karlsruhe (province 586)
+}
+
+BAV = {  # Bavaria
+	color = { 0 152 212 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { south_german }  # TODO verify Vic3 culture name
+	religion = catholic  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Munich (province 599)
+}
+
+BRA = {  # Braunschweig
+	color = { 116 92 39 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { north_german }  # TODO verify Vic3 culture name
+	religion = protestant  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Brunswick (province 536)
+}
+
+BRE = {  # Bremen
+	color = { 33 101 137 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { north_german }  # TODO verify Vic3 culture name
+	religion = protestant  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Bremen (province 539)
+}
+
+COB = {  # COB
+	color = { 180 137 148 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { north_german }  # TODO verify Vic3 culture name
+	religion = protestant  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Gotha (province 562)
+}
+
+DZG = {  # DZG
+	color = { 78 129 151 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { north_german }  # TODO verify Vic3 culture name
+	religion = protestant  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Danzig (province 690)
+}
+
+FRM = {  # Frankfurt am Main
+	color = { 243 201 33 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { rheinish }  # TODO verify Vic3 culture name
+	religion = protestant  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Frankfurt (province 564)
+}
+
+HAM = {  # HAM
+	color = { 104 148 71 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { north_german }  # TODO verify Vic3 culture name
+	religion = protestant  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Hamburg (province 528)
+}
+
+HAN = {  # Lüneburg
+	color = { 230 179 0 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { north_german }  # TODO verify Vic3 culture name
+	religion = protestant  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Luneburg (province 532)
+}
+
+HES = {  # Hesse-Darmstadt
+	color = { 114 171 184 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { rheinish }  # TODO verify Vic3 culture name
+	religion = protestant  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Darmstadt (province 2560)
+}
+
+HEK = {  # Hesse-Kassel
+	color = { 243 64 98 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { rheinish }  # TODO verify Vic3 culture name
+	religion = protestant  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Kassel (province 566)
+}
+
+HOL = {  # Holstein
+	color = { 220 150 158 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { north_german }  # TODO verify Vic3 culture name
+	religion = protestant  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Kiel (province 369)
+}
+
+LIP = {  # Lippe-Detmold
+	color = { 103 62 185 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { north_german }  # TODO verify Vic3 culture name
+	religion = protestant  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Detmold (province 585)
+}
+
+LUB = {  # LUB
+	color = { 48 164 51 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { north_german }  # TODO verify Vic3 culture name
+	religion = protestant  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Lubeck (province 530)
+}
+
+LUX = {  # LUX
+	color = { 53 140 73 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { north_german }  # TODO verify Vic3 culture name
+	religion = catholic  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Luxembourg (province 397)
+}
+
+MEC = {  # MEC
+	color = { 207 111 64 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { north_german }  # TODO verify Vic3 culture name
+	religion = protestant  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Schwerin (province 544)
+}
+
+MEI = {  # MEI
+	color = { 144 181 106 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { north_german }  # TODO verify Vic3 culture name
+	religion = protestant  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Meiningen (province 563)
+}
+
+NAS = {  # Nassau
+	color = { 107 94 169 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { rheinish }  # TODO verify Vic3 culture name
+	religion = protestant  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Darmstadt (province 2560)
+}
+
+NGF = {  # The League of Berlin
+	color = { 143 168 154 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { north_german }  # TODO verify Vic3 culture name
+	religion = protestant  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Berlin (province 549)
+}
+
+OLD = {  # Oldenburg
+	color = { 133 94 25 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { north_german }  # TODO verify Vic3 culture name
+	religion = protestant  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Oldenburg (province 540)
+}
+
+SAX = {  # Saxony
+	color = { 155 147 180 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { north_german }  # TODO verify Vic3 culture name
+	religion = protestant  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Dresden (province 558)
+}
+
+SCH = {  # Schleswig
+	color = { 30 131 162 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { scandinavian }  # TODO verify Vic3 culture name
+	religion = protestant  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Kiel (province 369)
+}
+
+SGF = {  # The Danubian Confederation
+	color = { 142 201 208 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { south_german }  # TODO verify Vic3 culture name
+	religion = catholic  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Munich (province 599)
+}
+
+WEI = {  # Saxe-Weimar
+	color = { 209 212 126 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { north_german }  # TODO verify Vic3 culture name
+	religion = protestant  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Weimar (province 561)
+}
+
+WUR = {  # WUR
+	color = { 45 45 97 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { south_german }  # TODO verify Vic3 culture name
+	religion = catholic  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Stuttgart (province 589)
+}
+
+ANB = {  # Ansbach
+	color = { 121 0 255 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { south_german }  # TODO verify Vic3 culture name
+	religion = catholic  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Ansbach (province 3408)
+}
+
+BMB = {  # Bamberg
+	color = { 58 134 158 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { south_german }  # TODO verify Vic3 culture name
+	religion = catholic  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Bamberg (province 3407)
+}
+
+ERF = {  # Erfurt
+	color = { 53 71 58 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { north_german }  # TODO verify Vic3 culture name
+	religion = catholic  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Erfurt (province 554)
+}
+
+FRB = {  # Freiburg
+	color = { 230 164 22 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { rheinish }  # TODO verify Vic3 culture name
+	religion = catholic  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Freiburg (province 587)
+}
+
+FTB = {  # Fürstenberg
+	color = { 188 46 46 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { rheinish }  # TODO verify Vic3 culture name
+	religion = catholic  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Konstanz (province 588)
+}
+
+FUL = {  # Fulda
+	color = { 179 190 190 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { south_german }  # TODO verify Vic3 culture name
+	religion = protestant  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Fulda (province 568)
+}
+
+HIL = {  # Hildesheim
+	color = { 194 86 144 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { rheinish }  # TODO verify Vic3 culture name
+	religion = protestant  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Hidelsheim (province 3406)
+}
+
+MRK = {  # Mark
+	color = { 48 186 71 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { rheinish }  # TODO verify Vic3 culture name
+	religion = protestant  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Siegen (province 583)
+}
+
+WZB = {  # Würzburg
+	color = { 168 164 205 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { south_german }  # TODO verify Vic3 culture name
+	religion = catholic  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Wurzburg (province 597)
+}
+
+LOM = {  # Lombardia
+	color = { 146 108 146 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { north_italian }  # TODO verify Vic3 culture name
+	religion = catholic  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Milan (province 726)
+}
+
+LUC = {  # Lucca
+	color = { 146 108 146 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { north_italian }  # TODO verify Vic3 culture name
+	religion = catholic  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Lucca (province 746)
+}
+
+MOD = {  # Modena
+	color = { 241 252 151 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { north_italian }  # TODO verify Vic3 culture name
+	religion = catholic  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Modena (province 739)
+}
+
+PAP = {  # Papal States
+	color = { 211 220 178 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { south_italian }  # TODO verify Vic3 culture name
+	religion = catholic  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Rome (province 749)
+}
+
+PAR = {  # Parma
+	color = { 128 202 129 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { north_italian }  # TODO verify Vic3 culture name
+	religion = catholic  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Parma (province 738)
+}
+
+SAR = {  # Savoy
+	color = { 117 146 167 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { north_italian }  # TODO verify Vic3 culture name
+	religion = catholic  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Turin (province 720)
+}
+
+SIC = {  # Two Sicilies
+	color = { 73 152 76 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { south_italian }  # TODO verify Vic3 culture name
+	religion = catholic  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Naples (province 754)
+}
+
+TUS = {  # Etruria
+	color = { 84 96 136 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { north_italian }  # TODO verify Vic3 culture name
+	religion = catholic  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Florence (province 744)
+}
+
+VEN = {  # Venice
+	color = { 54 167 156 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { venetian }  # TODO verify Vic3 culture name
+	religion = catholic  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Venice (province 729)
+}
+
+BOH = {  # Bohemia
+	color = { 161 139 40 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { czech }  # TODO verify Vic3 culture name
+	religion = catholic  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Prague (province 625)
+}
+
+CRI = {  # Crimea
+	color = { 160 210 255 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { crimean }  # TODO verify Vic3 culture name
+	religion = sunni  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Sevastopol (province 967)
+}
+
+EST = {  # Estland
+	color = { 179 29 100 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { estonian }  # TODO verify Vic3 culture name
+	religion = protestant  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Reval (province 349)
+}
+
+HUN = {  # Hungary
+	color = { 152 85 92 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { hungarian }  # TODO verify Vic3 culture name
+	religion = catholic  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Budapest (province 641)
+}
+
+KUN = {  # Kunsag
+	color = { 204 199 34 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { kunok }  # TODO verify Vic3 culture name
+	religion = sunni  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Novi Sad (province 2538)
+}
+
+LIT = {  # Lithuania
+	color = { 154 69 116 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { lithuanian }  # TODO verify Vic3 culture name
+	religion = catholic  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Vilnius (province 360)
+}
+
+LAT = {  # Livonia
+	color = { 119 53 61 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { latvian }  # TODO verify Vic3 culture name
+	religion = catholic  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Riga (province 354)
+}
+
+POL = {  # Poland
+	color = { 197 92 106 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { polish }  # TODO verify Vic3 culture name
+	religion = catholic  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Warsaw (province 706)
+}
+
+SLV = {  # Slovakia
+	color = { 158 161 188 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { slovak }  # TODO verify Vic3 culture name
+	religion = catholic  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Bratislava (province 633)
+}
+
+SWI = {  # Switzerland
+	color = { 153 122 108 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { south_german }  # TODO verify Vic3 culture name
+	religion = protestant  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Bern (province 605)
+}
+
+RUT = {  # Ruthenia
+	color = { 139 107 255 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { ruthenian }  # TODO verify Vic3 culture name
+	religion = orthodox  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Kiev (province 958)
+}
+
+SIE = {  # Transylvania
+	color = { 211 207 173 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { siebenburger }  # TODO verify Vic3 culture name
+	religion = protestant  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Targu Mures (province 2533)
+}
+
+KOE = {  # Königsboden
+	color = { 90 65 65 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { siebenburger }  # TODO verify Vic3 culture name
+	religion = protestant  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Brasso (province 659)
+}
+
+TCP = {  # Transcarpathia
+	color = { 206 41 57 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { hungarian }  # TODO verify Vic3 culture name
+	religion = protestant  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Targu Mures (province 2533)
+}
+
+UKR = {  # Kiev
+	color = { 200 160 100 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { ruthenian }  # TODO verify Vic3 culture name
+	religion = orthodox  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Kiev (province 958)
+}
+
+CZH = {  # CZH
+	color = { 43 89 202 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { czech }  # TODO verify Vic3 culture name
+	religion = catholic  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Prague (province 625)
+}
+
+ALB = {  # Albania
+	color = { 181 72 106 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { albanian }  # TODO verify Vic3 culture name
+	religion = sunni  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Tirana (province 849)
+}
+
+BOS = {  # Bosnia-Herzegovina
+	color = { 240 167 130 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { bosniak }  # TODO verify Vic3 culture name
+	religion = sunni  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Sarajevo (province 783)
+}
+
+BUL = {  # Bulgaria
+	color = { 116 107 140 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { bulgarian }  # TODO verify Vic3 culture name
+	religion = orthodox  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Sofia (province 809)
+}
+
+CRE = {  # Crete
+	color = { 165 111 159 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { greek }  # TODO verify Vic3 culture name
+	religion = orthodox  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Iraklion (province 848)
+}
+
+CRO = {  # Illyria
+	color = { 174 227 95 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { croat }  # TODO verify Vic3 culture name
+	religion = catholic  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Zagreb (province 771)
+}
+
+CYP = {  # Cyprus
+	color = { 78 75 39 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { greek }  # TODO verify Vic3 culture name
+	religion = orthodox  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Nicosia (province 855)
+}
+
+GRE = {  # Greece
+	color = { 122 180 210 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { greek }  # TODO verify Vic3 culture name
+	religion = orthodox  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Athens (province 834)
+}
+
+ION = {  # ION
+	color = { 153 141 117 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { greek }  # TODO verify Vic3 culture name
+	religion = orthodox  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Corfu (province 826)
+}
+
+MOL = {  # Moldavia
+	color = { 136 157 23 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { romanian }  # TODO verify Vic3 culture name
+	religion = orthodox  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Iasi (province 670)
+}
+
+MON = {  # Montenegro
+	color = { 39 108 140 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { serb }  # TODO verify Vic3 culture name
+	religion = orthodox  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Cetinje (province 2583)
+}
+
+ROM = {  # Romania
+	color = { 200 190 126 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { romanian }  # TODO verify Vic3 culture name
+	religion = orthodox  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Bucharest (province 664)
+}
+
+SER = {  # Serbia
+	color = { 166 72 57 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { serb }  # TODO verify Vic3 culture name
+	religion = orthodox  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Belgrade (province 794)
+}
+
+SLO = {  # Slovenia
+	color = { 65 91 126 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { slovene }  # TODO verify Vic3 culture name
+	religion = catholic  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Ljubljana (province 768)
+}
+
+TUR = {  # Ottoman Empire
+	color = { 170 206 162 }
+	country_type = recognized
+	tier = empire
+	cultures = { turkish }  # TODO verify Vic3 culture name
+	religion = sunni  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Istanbul (province 860)
+}
+
+WAL = {  # Wallachia
+	color = { 161 126 128 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { romanian }  # TODO verify Vic3 culture name
+	religion = orthodox  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Bucharest (province 664)
+}
+
+YUG = {  # Yugoslavia
+	color = { 72 73 126 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { serb }  # TODO verify Vic3 culture name
+	religion = orthodox  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Prague (province 625)
+}
+
+ALD = {  # Numidia
+	color = { 220 202 96 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { catalan }  # TODO verify Vic3 culture name
+	religion = catholic  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Mascara (province 1707)
+}
+
+EGY = {  # Egypt
+	color = { 255 205 155 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { misri }  # TODO verify Vic3 culture name
+	religion = sunni  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Cairo (province 1745)
+}
+
+ETH = {  # Ethiopia
+	color = { 56 120 191 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { amhara }  # TODO verify Vic3 culture name
+	religion = oriental_orthodox  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Ankober (province 1859)
+}
+
+MAD = {  # Merina
+	color = { 117 150 120 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { malagasy }  # TODO verify Vic3 culture name
+	religion = animist  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Tananarive (province 2115)
+}
+
+MOR = {  # Mauretania
+	color = { 223 146 113 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { castilian }  # TODO verify Vic3 culture name
+	religion = sunni  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Fez (province 1680)
+}
+
+NAL = {  # NAL
+	color = { 106 178 46 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { boer }  # TODO verify Vic3 culture name
+	religion = protestant  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Durban (province 2111)
+}
+
+ORA = {  # ORA
+	color = { 224 139 47 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { boer }  # TODO verify Vic3 culture name
+	religion = protestant  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Bloemfontein (province 2101)
+}
+
+SAF = {  # The Cape Republic
+	color = { 180 158 127 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { burgundian }  # TODO verify Vic3 culture name
+	religion = protestant  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Cape Town (province 2087)
+}
+
+SOK = {  # Sokoto
+	color = { 211 184 179 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { fulbe }  # TODO verify Vic3 culture name
+	religion = sunni  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Sokoto (province 1948)
+}
+
+TRI = {  # Tripoli
+	color = { 180 137 148 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { maghrebi }  # TODO verify Vic3 culture name
+	religion = sunni  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Murzuk (province 1741)
+}
+
+TRN = {  # Opstalia
+	color = { 140 183 154 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { boer }  # TODO verify Vic3 culture name
+	religion = protestant  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Pretoria (province 2105)
+}
+
+TUN = {  # Tunisia
+	color = { 131 101 85 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { maghrebi }  # TODO verify Vic3 culture name
+	religion = sunni  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Gabes (province 1730)
+}
+
+ZAN = {  # Zanzibar
+	color = { 166 189 199 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { swahili }  # TODO verify Vic3 culture name
+	religion = sunni  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Zanzibar (province 2048)
+}
+
+ZUL = {  # Zulu
+	color = { 204 186 201 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { zulu }  # TODO verify Vic3 culture name
+	religion = animist  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Ulundi (province 2113)
+}
+
+ABU = {  # Abu Dhabi
+	color = { 150 112 50 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { bedouin }  # TODO verify Vic3 culture name
+	religion = sunni  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Abu Dhabi (province 1167)
+}
+
+AFG = {  # Afghanistan
+	color = { 92 170 152 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { pashtun }  # TODO verify Vic3 culture name
+	religion = sunni  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Kabul (province 1209)
+}
+
+ARM = {  # Armenia
+	color = { 128 170 63 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { armenian }  # TODO verify Vic3 culture name
+	religion = oriental_orthodox  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Erivan (province 1098)
+}
+
+AZB = {  # Azerbaijan
+	color = { 56 32 172 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { azerbaijani }  # TODO verify Vic3 culture name
+	religion = shiite  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Sheki (province 1104)
+}
+
+BUK = {  # BUK
+	color = { 147 82 173 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { uzbek }  # TODO verify Vic3 culture name
+	religion = sunni  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Bukhara (province 1198)
+}
+
+ERZ = {  # Erzurum
+	color = { 150 0 24 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { armenian }  # TODO verify Vic3 culture name
+	religion = oriental_orthodox  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Erzurum (province 887)
+}
+
+GEO = {  # Georgia
+	color = { 36 132 247 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { georgian }  # TODO verify Vic3 culture name
+	religion = orthodox  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Tblisi (province 1090)
+}
+
+HDJ = {  # Hedjaz
+	color = { 121 229 215 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { khaliji }  # TODO verify Vic3 culture name
+	religion = sunni  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Mecca (province 1151)
+}
+
+IRQ = {  # Iraq
+	color = { 122 132 110 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { mashriqi }  # TODO verify Vic3 culture name
+	religion = sunni  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Baghdad (province 926)
+}
+
+KHI = {  # Khiva
+	color = { 188 123 103 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { uzbek }  # TODO verify Vic3 culture name
+	religion = sunni  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Khiva (province 1191)
+}
+
+KOK = {  # Kokand
+	color = { 119 130 145 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { kirgiz }  # TODO verify Vic3 culture name
+	religion = sunni  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Kokand (province 1202)
+}
+
+MUG = {  # Mughal Empire
+	color = { 139 201 108 }
+	country_type = recognized
+	tier = empire
+	cultures = { avadhi }  # TODO verify Vic3 culture name
+	religion = sunni  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Delhi (province 1236)
+}
+
+MFQ = {  # Montafeq Emirate
+	color = { 172 82 56 }
+	country_type = recognized
+	tier = principality
+	cultures = { mashriqi }  # TODO verify Vic3 culture name
+	religion = sunni  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Basra (province 932)
+}
+
+NEJ = {  # Nejd
+	color = { 255 251 198 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { bedouin }  # TODO verify Vic3 culture name
+	religion = sunni  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Riyadh (province 1157)
+}
+
+OMA = {  # Oman
+	color = { 98 134 153 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { khaliji }  # TODO verify Vic3 culture name
+	religion = ibadi  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Muscat (province 1166)
+}
+
+PER = {  # Iran
+	color = { 0 166 147 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { persian }  # TODO verify Vic3 culture name
+	religion = sunni  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Tehran (province 1121)
+}
+
+YEM = {  # Yemen
+	color = { 255 191 191 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { khaliji }  # TODO verify Vic3 culture name
+	religion = sunni  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Sana (province 1178)
+}
+
+HND = {  # Hindustan
+	color = { 168 107 50 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { avadhi }  # TODO verify Vic3 culture name
+	religion = hindu  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Calcutta (province 1251)
+}
+
+AWA = {  # Awadh
+	color = { 119 130 145 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { avadhi }  # TODO verify Vic3 culture name
+	religion = shiite  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Fyzabad (province 1244)
+}
+
+BAS = {  # BAS
+	color = { 110 173 129 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { telegu }  # TODO verify Vic3 culture name
+	religion = hindu  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Jagdalpur (province 1279)
+}
+
+BER = {  # Beroda
+	color = { 120 77 119 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { gujarati }  # TODO verify Vic3 culture name
+	religion = hindu  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Baroda (province 1295)
+}
+
+BHO = {  # Maharashtra
+	color = { 154 129 35 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { marathi }  # TODO verify Vic3 culture name
+	religion = hindu  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Poona (province 1299)
+}
+
+BIK = {  # Bikaner
+	color = { 255 208 170 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { rajput }  # TODO verify Vic3 culture name
+	religion = hindu  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Bikaner (province 1267)
+}
+
+BUN = {  # Bundelkhand
+	color = { 23 114 143 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { kanauji }  # TODO verify Vic3 culture name
+	religion = hindu  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Rewa (province 1274)
+}
+
+GWA = {  # Gwalior
+	color = { 157 200 42 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { marathi }  # TODO verify Vic3 culture name
+	religion = hindu  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Gwalior (province 1270)
+}
+
+HYD = {  # Hyderabad
+	color = { 89 141 140 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { telegu }  # TODO verify Vic3 culture name
+	religion = sunni  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Hyderabad (province 1283)
+}
+
+JAI = {  # Jaipur
+	color = { 79 89 182 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { rajput }  # TODO verify Vic3 culture name
+	religion = hindu  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Jaipur (province 1268)
+}
+
+JAS = {  # Jaisalmer
+	color = { 99 137 153 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { rajput }  # TODO verify Vic3 culture name
+	religion = hindu  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Jaisalmer (province 1265)
+}
+
+JOD = {  # Jodhpur
+	color = { 104 207 140 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { rajput }  # TODO verify Vic3 culture name
+	religion = hindu  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Jodhpur (province 1266)
+}
+
+KAL = {  # Baluchistan
+	color = { 97 98 195 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { baluchi }  # TODO verify Vic3 culture name
+	religion = sunni  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Kalat (province 1221)
+}
+
+KAS = {  # Kashmir
+	color = { 63 150 30 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { kashmiri }  # TODO verify Vic3 culture name
+	religion = hindu  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Gilgit (province 1225)
+}
+
+KUT = {  # KUT
+	color = { 199 160 139 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { gujarati }  # TODO verify Vic3 culture name
+	religion = sunni  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Mandvi (province 1293)
+}
+
+LAD = {  # Ladakh
+	color = { 49 175 191 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { tibetan }  # TODO verify Vic3 culture name
+	religion = gelugpa  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Leh (province 1226)
+}
+
+MAK = {  # MAK
+	color = { 219 146 162 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { baluchi }  # TODO verify Vic3 culture name
+	religion = sunni  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Bela (province 1222)
+}
+
+MEW = {  # Mewar
+	color = { 209 251 255 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { rajput }  # TODO verify Vic3 culture name
+	religion = hindu  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Udaipur (province 1269)
+}
+
+MYS = {  # Mysore
+	color = { 184 193 89 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { kannada }  # TODO verify Vic3 culture name
+	religion = hindu  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Bangalore (province 1313)
+}
+
+NAG = {  # Nagpur
+	color = { 120 148 140 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { marathi }  # TODO verify Vic3 culture name
+	religion = hindu  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Nagpur (province 1277)
+}
+
+NEP = {  # Nepal
+	color = { 219 146 162 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { nepali }  # TODO verify Vic3 culture name
+	religion = mahayana  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Katmandu (province 1326)
+}
+
+ORI = {  # Orissa
+	color = { 229 170 87 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { oriya }  # TODO verify Vic3 culture name
+	religion = hindu  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Cuttack (province 1261)
+}
+
+PNJ = {  # Punjab
+	color = { 255 87 127 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { panjabi }  # TODO verify Vic3 culture name
+	religion = sikh  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Lahore (province 1227)
+}
+
+SHI = {  # Shimla
+	color = { 17 16 203 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { nepali }  # TODO verify Vic3 culture name
+	religion = hindu  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Simla (province 1235)
+}
+
+SIK = {  # Sikkim
+	color = { 139 138 160 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { tibetan }  # TODO verify Vic3 culture name
+	religion = gelugpa  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Tumlong (province 1328)
+}
+
+SIN = {  # Sindh
+	color = { 0 66 33 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { sindi }  # TODO verify Vic3 culture name
+	religion = sunni  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Karachi (province 1288)
+}
+
+TRA = {  # Travancore
+	color = { 200 200 200 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { malayalam }  # TODO verify Vic3 culture name
+	religion = hindu  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Trivandrum (province 1319)
+}
+
+ATJ = {  # Aceh
+	color = { 73 152 76 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { acehnese }  # TODO verify Vic3 culture name
+	religion = sunni  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Banda Aceh (province 1405)
+}
+
+BAL = {  # Bali
+	color = { 201 97 74 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { balinese }  # TODO verify Vic3 culture name
+	religion = hindu  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Bali (province 1438)
+}
+
+BHU = {  # Bhutan
+	color = { 89 141 140 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { tibetan }  # TODO verify Vic3 culture name
+	religion = gelugpa  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Thimpu (province 1329)
+}
+
+BRU = {  # Brunei
+	color = { 41 89 174 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { malay }  # TODO verify Vic3 culture name
+	religion = sunni  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Brunei (province 1393)
+}
+
+BUR = {  # Taungu
+	color = { 180 180 96 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { burmese }  # TODO verify Vic3 culture name
+	religion = theravada  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Ava (province 1334)
+}
+
+CAM = {  # The Khmer Empire
+	color = { 127 180 60 }
+	country_type = recognized
+	tier = empire
+	cultures = { khmer }  # TODO verify Vic3 culture name
+	religion = theravada  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Battambang (province 1366)
+}
+
+CHI = {  # China
+	color = { 255 234 154 }
+	country_type = recognized
+	tier = empire
+	cultures = { beifaren }  # TODO verify Vic3 culture name
+	religion = mahayana  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Beijing (province 1612)
+}
+
+DAI = {  # Vietnam
+	color = { 136 117 90 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { vietnamese }  # TODO verify Vic3 culture name
+	religion = mahayana  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Hanoi (province 1369)
+}
+
+JAV = {  # Java
+	color = { 164 217 127 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { javan }  # TODO verify Vic3 culture name
+	religion = sunni  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Yogyakarta (province 1416)
+}
+
+KOR = {  # Korea
+	color = { 122 132 110 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { korean }  # TODO verify Vic3 culture name
+	religion = mahayana  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Seoul (province 1624)
+}
+
+LUA = {  # Lan Xang
+	color = { 93 147 88 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { lao }  # TODO verify Vic3 culture name
+	religion = theravada  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Luangprabang (province 1356)
+}
+
+JOH = {  # Malacca
+	color = { 150 112 50 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { malay }  # TODO verify Vic3 culture name
+	religion = sunni  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Johor Bahru (province 1385)
+}
+
+SIA = {  # Thonburi
+	color = { 88 137 172 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { thai }  # TODO verify Vic3 culture name
+	religion = theravada  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Bangkok (province 1346)
+}
+
+TIB = {  # Tibet
+	color = { 65 127 186 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { tibetan }  # TODO verify Vic3 culture name
+	religion = gelugpa  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Lhasa (province 1587)
+}
+
+MGL = {  # Mongolia
+	color = { 220 87 127 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { mongol }  # TODO verify Vic3 culture name
+	religion = gelugpa  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Altai (province 1468)
+}
+
+WIA = {  # WIA
+	color = { 151 174 28 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { lao }  # TODO verify Vic3 culture name
+	religion = theravada  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Vientiane (province 1357)
+}
+
+PHL = {  # Philippines
+	color = { 92 87 122 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { filipino }  # TODO verify Vic3 culture name
+	religion = catholic  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Manila (province 1455)
+}
+
+MCK = {  # Manchuria
+	color = { 21 118 209 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { manchu }  # TODO verify Vic3 culture name
+	religion = mahayana  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Jilin (province 1555)
+}
+
+GXI = {  # GXI
+	color = { 215 234 154 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { zhuang }  # TODO verify Vic3 culture name
+	religion = mahayana  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Nanning (province 1502)
+}
+
+SXI = {  # Shanxi
+	color = { 235 254 174 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { beifaren }  # TODO verify Vic3 culture name
+	religion = mahayana  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Datong (province 1576)
+}
+
+YNN = {  # YNN
+	color = { 233 199 121 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { nanfaren }  # TODO verify Vic3 culture name
+	religion = mahayana  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Dali (province 1602)
+}
+
+XBI = {  # Tangut
+	color = { 80 30 20 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { hui }  # TODO verify Vic3 culture name
+	religion = sunni  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Lanzhou (province 1490)
+}
+
+XIN = {  # XIN
+	color = { 255 234 174 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { beifaren }  # TODO verify Vic3 culture name
+	religion = mahayana  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Urumqi (province 1600)
+}
+
+CHE = {  # Tsalagihi Ayeli
+	color = { 105 145 40 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { cherokee }  # TODO verify Vic3 culture name
+	religion = catholic  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Little Rock (province 143)
+}
+
+COS = {  # COS
+	color = { 183 129 124 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { central_american }  # TODO verify Vic3 culture name
+	religion = catholic  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: San Jose (province 2201)
+}
+
+CUB = {  # Kuba
+	color = { 87 92 104 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { caribeno }  # TODO verify Vic3 culture name
+	religion = catholic  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Havana (province 2209)
+}
+
+DOM = {  # DOM
+	color = { 93 194 122 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { caribeno }  # TODO verify Vic3 culture name
+	religion = catholic  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Santo Domingo (province 2214)
+}
+
+ELS = {  # San Salvador
+	color = { 228 229 221 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { central_american }  # TODO verify Vic3 culture name
+	religion = catholic  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: San Salvador (province 2191)
+}
+
+GUA = {  # GUA
+	color = { 174 206 203 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { central_american }  # TODO verify Vic3 culture name
+	religion = catholic  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Guatemala (province 2186)
+}
+
+HAW = {  # Hawaii
+	color = { 48 169 96 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { polynesian }  # TODO verify Vic3 culture name
+	religion = protestant  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Hawaii (province 658)
+}
+
+MEX = {  # Mexico
+	color = { 173 242 175 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { mexican }  # TODO verify Vic3 culture name
+	religion = catholic  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Mexico City (province 2172)
+}
+
+MTC = {  # MTC
+	color = { 221 186 163 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { metis }  # TODO verify Vic3 culture name
+	religion = catholic  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Churchill (province 37)
+}
+
+HON = {  # HON
+	color = { 166 72 57 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { central_american }  # TODO verify Vic3 culture name
+	religion = catholic  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Comayagua (province 2193)
+}
+
+NIC = {  # Matacalpa
+	color = { 113 138 183 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { central_american }  # TODO verify Vic3 culture name
+	religion = catholic  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: León (province 2199)
+}
+
+PNM = {  # Andagoya
+	color = { 150 85 61 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { central_american }  # TODO verify Vic3 culture name
+	religion = catholic  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Panama City (province 2204)
+}
+
+UCA = {  # The United Provinces of Salvador
+	color = { 90 175 255 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { central_american }  # TODO verify Vic3 culture name
+	religion = catholic  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: San Salvador (province 2191)
+}
+
+CLM = {  # Gran Colombia
+	color = { 230 210 158 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { mexican }  # TODO verify Vic3 culture name
+	religion = catholic  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Mexico City (province 2172)
+}
+
+GCR = {  # Junta Provisional Gubernativa
+	color = { 51 128 0 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { mexican }  # TODO verify Vic3 culture name
+	religion = catholic  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Laredo (province 138)
+}
+
+JPB = {  # Junta de Puebla
+	color = { 30 150 0 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { mexican }  # TODO verify Vic3 culture name
+	religion = catholic  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Puebla (province 3427)
+}
+
+LIB = {  # Liberia
+	color = { 60 19 33 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { afro_latino }  # TODO verify Vic3 culture name
+	religion = catholic  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Culiacan (province 2157)
+}
+
+NZL = {  # New Zealand
+	color = { 193 185 158 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { anglois }  # TODO verify Vic3 culture name
+	religion = protestant  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Wellington (province 2512)
+}
+
+ENG = {  # The British Commonwealth
+	color = { 209 66 58 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { english }  # TODO verify Vic3 culture name
+	religion = catholic  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: London (province 300)
+}
+
+RUS = {  # Russia
+	color = { 119 181 88 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { russian }  # TODO verify Vic3 culture name
+	religion = orthodox  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Moscow (province 1008)
+}
+
+FRA = {  # France
+	color = { 20 50 210 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { french }  # TODO verify Vic3 culture name
+	religion = catholic  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Paris (province 425)
+}
+
+PRU = {  # Prussia
+	color = { 0 49 83 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { north_german }  # TODO verify Vic3 culture name
+	religion = protestant  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Konigsburg (province 695)
+}
+
+GER = {  # Germany
+	color = { 150 177 161 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { north_german }  # TODO verify Vic3 culture name
+	religion = protestant  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Berlin (province 549)
+}
+
+AUS = {  # Austria
+	color = { 236 236 236 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { south_german }  # TODO verify Vic3 culture name
+	religion = catholic  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Vienna (province 619)
+}
+
+JAP = {  # Japan
+	color = { 180 60 60 }
+	country_type = recognized
+	tier = empire
+	cultures = { japanese }  # TODO verify Vic3 culture name
+	religion = shinto  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Kyoto (province 1657)
+}
+
+ITA = {  # Italy
+	color = { 125 171 84 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { north_italian }  # TODO verify Vic3 culture name
+	religion = catholic  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Rome (province 749)
+}
+
+DUA = {  # The Dual Monarchy
+	color = { 46 0 108 }
+	country_type = recognized
+	tier = empire
+	cultures = { anglois }  # TODO verify Vic3 culture name
+	religion = catholic  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Paris (province 425)
+}
+
+ISR = {  # ISR
+	color = { 150 212 214 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { ashkenazi }  # TODO verify Vic3 culture name
+	religion = jewish  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Jaffa (province 919)
+}
+
+ICL = {  # Iceland
+	color = { 62 129 155 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { icelandic }  # TODO verify Vic3 culture name
+	religion = protestant  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Iceland (province 252)
+}
+
+IBR = {  # Iberia
+	color = { 231 244 12 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { spanish }  # TODO verify Vic3 culture name
+	religion = catholic  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Madrid (province 487)
+}
+
+BYZ = {  # Greek Empire
+	color = { 147 82 173 }
+	country_type = recognized
+	tier = empire
+	cultures = { greek }  # TODO verify Vic3 culture name
+	religion = orthodox  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Athens (province 834)
+}
+
+UTI = {  # Territory Exchange
+	color = { 207 20 43 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { british }  # TODO verify Vic3 culture name
+	religion = protestant  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Calcutta (province 1251)
+}
+
+U01 = {  # Forced Assimilation
+	color = { 207 20 43 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { british }  # TODO verify Vic3 culture name
+	religion = protestant  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital: Calcutta (province 1251)
+}
+
+D01 = {  # $REGION$
+	color = { 187 79 86 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { british }  # TODO verify Vic3 culture name
+	religion = protestant  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital province ?
+}
+
+D02 = {  # The Confederation of $REGION$
+	color = { 69 157 208 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { british }  # TODO verify Vic3 culture name
+	religion = protestant  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital province ?
+}
+
+D03 = {  # Commonwealth of $REGION$
+	color = { 197 92 106 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { british }  # TODO verify Vic3 culture name
+	religion = protestant  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital province ?
+}
+
+D04 = {  # $REGION$
+	color = { 122 179 97 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { british }  # TODO verify Vic3 culture name
+	religion = protestant  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital province ?
+}
+
+D05 = {  # $REGION$ Free State
+	color = { 194 140 86 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { british }  # TODO verify Vic3 culture name
+	religion = protestant  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital province ?
+}
+
+D24 = {  # $REGION$
+	color = { 195 149 155 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { british }  # TODO verify Vic3 culture name
+	religion = protestant  # TODO verify Vic3 religion name
+	# capital = STATE_TODO  # Vic2 capital province ?
+}

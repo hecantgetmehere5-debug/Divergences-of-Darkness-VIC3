@@ -1,0 +1,14 @@
+{
+  "name": "Divergences of Darkness",
+  "id": "divergences_of_darkness",
+  "version": "0.1.0",
+  "supported_game_version": "",
+  "short_description": "Port of the Victoria 2 mod Divergences of Darkness.",
+  "tags": [
+    "Alternative History"
+  ],
+  "relationships": [],
+  "game_custom_data": {
+    "multiplayer_synchronized": true
+  }
+}

@@ -1,0 +1,27 @@
+# Dual Monarchy & Britain: scripted triggers
+
+dod_dua_french_path = { has_variable = dod_path_french }
+dod_dua_english_path = { has_variable = dod_path_english }
+dod_dua_anglois_path = { has_variable = dod_path_anglois }
+
+# The Anglois Dilemma is running and no revolution has broken out
+dod_dua_dilemma_active = {
+	this = c:DUA
+	has_journal_entry = je_dod_anglois_dilemma
+}
+
+dod_is_english_state = { state_region = { is_homeland = cu:english } }
+dod_is_provencal_state = { state_region = { is_homeland = cu:provencal } }
+dod_is_irish_state = { state_region = { is_homeland = cu:irish } }
+dod_is_scottish_state = { state_region = { is_homeland = cu:scottish } }
+dod_is_welsh_state = { state_region = { is_homeland = cu:welsh } }
+dod_is_dutch_state = { state_region = { is_homeland = cu:dutch } }
+
+dod_is_british_isles_state = {
+	OR = {
+		dod_is_english_state = yes
+		dod_is_irish_state = yes
+		dod_is_scottish_state = yes
+		dod_is_welsh_state = yes
+	}
+}

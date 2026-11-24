@@ -1,0 +1,208 @@
+# The Histories of the World: each nation can read its own history, as in the Vic2 mod
+
+dod_history_0 = {
+	is_shown = {
+		this = c:DUA
+	}
+	possible = {
+		always = yes
+	}
+	when_taken = {
+		trigger_event = { id = dod_lore.100 }
+	}
+	ai_chance = { base = 0 }
+}
+
+dod_history_1 = {
+	is_shown = {
+		OR = {
+			this = c:BRG
+			this = c:SAF
+		}
+	}
+	possible = {
+		always = yes
+	}
+	when_taken = {
+		trigger_event = { id = dod_lore.113 }
+	}
+	ai_chance = { base = 0 }
+}
+
+dod_history_2 = {
+	is_shown = {
+		this = c:CLM
+	}
+	possible = {
+		always = yes
+	}
+	when_taken = {
+		trigger_event = { id = dod_lore.124 }
+	}
+	ai_chance = { base = 0 }
+}
+
+dod_history_3 = {
+	is_shown = {
+		this = c:DNG
+	}
+	possible = {
+		always = yes
+	}
+	when_taken = {
+		trigger_event = { id = dod_lore.139 }
+	}
+	ai_chance = { base = 0 }
+}
+
+dod_history_4 = {
+	is_shown = {
+		OR = {
+			this = c:BOH
+			this = c:HLR
+			this = c:CAE
+		}
+	}
+	possible = {
+		always = yes
+	}
+	when_taken = {
+		trigger_event = { id = dod_lore.153 }
+	}
+	ai_chance = { base = 0 }
+}
+
+dod_history_5 = {
+	is_shown = {
+		OR = {
+			this = c:NBG
+			this = c:ARC
+		}
+	}
+	possible = {
+		always = yes
+	}
+	when_taken = {
+		trigger_event = { id = dod_lore.165 }
+	}
+	ai_chance = { base = 0 }
+}
+
+dod_history_6 = {
+	is_shown = {
+		this = c:SCA
+	}
+	possible = {
+		always = yes
+	}
+	when_taken = {
+		trigger_event = { id = dod_lore.177 }
+	}
+	ai_chance = { base = 0 }
+}
+
+dod_history_7 = {
+	is_shown = {
+		OR = {
+			this = c:NAN
+			this = c:HBE
+		}
+	}
+	possible = {
+		always = yes
+	}
+	when_taken = {
+		trigger_event = { id = dod_lore.192 }
+	}
+	ai_chance = { base = 0 }
+}
+
+dod_history_8 = {
+	is_shown = {
+		OR = {
+			this = c:ARA
+			this = c:ARI
+		}
+	}
+	possible = {
+		always = yes
+	}
+	when_taken = {
+		trigger_event = { id = dod_lore.207 }
+	}
+	ai_chance = { base = 0 }
+}
+
+dod_history_9 = {
+	is_shown = {
+		this = c:INC
+	}
+	possible = {
+		always = yes
+	}
+	when_taken = {
+		trigger_event = { id = dod_lore.222 }
+	}
+	ai_chance = { base = 0 }
+}
+
+dod_history_10 = {
+	is_shown = {
+		this = c:PRV
+	}
+	possible = {
+		always = yes
+	}
+	when_taken = {
+		trigger_event = { id = dod_lore.237 }
+	}
+	ai_chance = { base = 0 }
+}
+
+dod_history_11 = {
+	is_shown = {
+		OR = {
+			this = c:PLA
+			this = c:ARC
+		}
+	}
+	possible = {
+		always = yes
+	}
+	when_taken = {
+		trigger_event = { id = dod_lore.250 }
+	}
+	ai_chance = { base = 0 }
+}
+
+dod_history_12 = {
+	is_shown = {
+		OR = {
+			this = c:VIN
+			this = c:ARC
+		}
+	}
+	possible = {
+		always = yes
+	}
+	when_taken = {
+		trigger_event = { id = dod_lore.261 }
+	}
+	ai_chance = { base = 0 }
+}
+
+dod_history_13 = {
+	is_shown = {
+		OR = {
+			this = c:AMA
+			this = c:AZL
+		}
+	}
+	possible = {
+		always = yes
+	}
+	when_taken = {
+		trigger_event = { id = dod_lore.278 }
+	}
+	ai_chance = { base = 0 }
+}

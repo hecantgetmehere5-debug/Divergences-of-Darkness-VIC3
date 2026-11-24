@@ -1,0 +1,68 @@
+# Holy Roman Empire storyline: scripted triggers
+
+# A German prince the Emperor can bring into the Reich
+dod_is_imperial_prince = {
+	exists = c:HLR
+	NOT = { this = c:HLR }
+	country_rank < rank_value:great_power
+	OR = {
+		country_has_primary_culture = cu:north_german
+		country_has_primary_culture = cu:rheinish
+		country_has_primary_culture = cu:south_german
+	}
+}
+
+dod_is_elbian_prince = {
+	dod_is_imperial_prince = yes
+	country_has_primary_culture = cu:north_german
+}
+
+dod_is_rhenish_prince = {
+	dod_is_imperial_prince = yes
+	country_has_primary_culture = cu:rheinish
+}
+
+dod_is_danubian_prince = {
+	dod_is_imperial_prince = yes
+	country_has_primary_culture = cu:south_german
+}
+
+# Prince still outside the Emperor's control
+dod_is_free_prince = {
+	dod_is_imperial_prince = yes
+	NOT = { is_subject_of = c:HLR }
+}
+
+dod_is_bohemian_state = {
+	state_region = { is_homeland = cu:czech }
+}
+
+# ---------------------------------------------------------------------
+# Elbian Confederation
+# ---------------------------------------------------------------------
+
+dod_is_elbian_state = {
+	state_region = { is_homeland = cu:north_german }
+}
+
+dod_is_baltic_elbian_state = {
+	state_region = { is_homeland = cu:livlandian }
+}
+
+dod_is_authoritarian = {
+	OR = {
+		has_law = law_type:law_autocracy
+		has_law = law_type:law_single_party_state
+	}
+}
+
+# A Baltic Elbian country that can be invited into the Confederation
+dod_is_baltic_elbian_country = {
+	exists = c:CAE
+	OR = {
+		this = c:KRL
+		this = c:LAT
+		this = c:BLT
+	}
+	NOT = { is_subject_of = c:CAE }
+}

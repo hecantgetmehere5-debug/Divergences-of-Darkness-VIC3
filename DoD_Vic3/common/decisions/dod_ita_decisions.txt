@@ -1,0 +1,298 @@
+# Italy, Aragon-Italy, the Valois & Venice-Greece
+
+dod_call_council_of_italy = {
+	is_shown = {
+		OR = {
+			this = c:TUS
+			this = c:VEN
+		}
+		NOT = { exists = c:ITA }
+		NOT = { has_global_variable = dod_council_host }
+	}
+	possible = {
+		is_at_war = no
+		dod_is_republic = yes
+		NOT = { has_modifier = dod_council_failed }
+		trigger_if = {
+			limit = { this = c:VEN }
+			game_date >= 1860.1.1
+		}
+	}
+	when_taken = {
+		add_journal_entry = { type = je_dod_council_of_italy }
+	}
+	ai_chance = { base = 50 }
+}
+
+dod_form_italy = {
+	is_shown = {
+		dod_is_italian_country = yes
+		NOT = { exists = c:ITA }
+	}
+	possible = {
+		is_at_war = no
+		any_scope_state = {
+			count >= 8
+			dod_is_italian_state = yes
+		}
+	}
+	when_taken = {
+		change_tag = ITA
+	}
+	ai_chance = { base = 100 }
+}
+
+dod_italia_irredenta = {
+	is_shown = {
+		this = c:ITA
+		NOT = { has_variable = dod_irredenta_claimed }
+	}
+	possible = {
+		is_at_war = no
+		country_rank >= rank_value:major_power
+	}
+	when_taken = {
+		set_variable = dod_irredenta_claimed
+		change_infamy = 10
+		every_state = {
+			limit = {
+				dod_is_italian_state = yes
+				NOT = { owner = root }
+			}
+			state_region = { add_claim = root }
+		}
+	}
+	ai_chance = { base = 50 }
+}
+
+# ---------------------------------------------------------------------
+# Aragon-Italy
+# ---------------------------------------------------------------------
+
+dod_proclaim_aragon_italy = {
+	is_shown = {
+		this = c:ARA
+		NOT = { exists = c:ARI }
+		NOT = { exists = c:ITA }
+	}
+	possible = {
+		is_at_war = no
+		any_scope_state = {
+			count >= 2
+			dod_is_north_italian_state = yes
+		}
+		any_scope_state = {
+			count >= 2
+			dod_is_south_italian_state = yes
+		}
+	}
+	when_taken = {
+		add_primary_culture = cu:south_italian
+		change_tag = ARI
+		every_country = {
+			limit = {
+				country_rank >= rank_value:great_power
+				NOT = { this = root }
+			}
+			trigger_event = { id = dod_ita.40 days = 7 }
+		}
+	}
+	ai_chance = { base = 100 }
+}
+
+dod_end_north_italian_autonomy = {
+	is_shown = {
+		this = c:ARI
+		NOT = { country_has_primary_culture = cu:north_italian }
+		NOT = { has_variable = dod_war_over_italy }
+	}
+	possible = {
+		is_at_war = no
+		OR = {
+			any_scope_state = { dod_is_north_italian_state = yes }
+			AND = {
+				exists = c:LOM
+				c:LOM = { is_subject_of = root }
+			}
+		}
+	}
+	when_taken = {
+		trigger_event = { id = dod_ita.41 }
+	}
+	ai_chance = { base = 30 }
+}
+
+dod_provencal_catalan_brotherhood = {
+	is_shown = {
+		OR = {
+			this = c:ARA
+			this = c:ARI
+		}
+		NOT = { has_variable = dod_provencal_brotherhood }
+	}
+	possible = {
+		is_at_war = no
+		country_rank >= rank_value:great_power
+	}
+	when_taken = {
+		set_variable = dod_provencal_brotherhood
+		change_infamy = 10
+		every_state = {
+			limit = {
+				state_region = { is_homeland = cu:provencal }
+				NOT = { owner = root }
+			}
+			state_region = { add_claim = root }
+		}
+		c:PRV ?= { trigger_event = { id = dod_ita.44 days = 7 } }
+	}
+	ai_chance = { base = 30 }
+}
+
+# ---------------------------------------------------------------------
+# The Valois in Italy
+# ---------------------------------------------------------------------
+
+dod_valois_restore_italy = {
+	is_shown = {
+		this = c:PRV
+		NOT = { exists = c:ITA }
+		NOT = { exists = c:ARI }
+	}
+	possible = {
+		is_at_war = no
+		any_scope_state = {
+			count >= 3
+			dod_is_north_italian_state = yes
+		}
+	}
+	when_taken = {
+		set_global_variable = dod_valois_italy
+		add_primary_culture = cu:north_italian
+		add_primary_culture = cu:south_italian
+		change_tag = ITA
+	}
+	ai_chance = { base = 100 }
+}
+
+dod_valois_challenge_usurpers = {
+	is_shown = {
+		OR = {
+			this = c:PRV
+			AND = {
+				this = c:ITA
+				has_global_variable = dod_valois_italy
+			}
+		}
+		NOT = { has_variable = dod_valois_claims }
+	}
+	possible = {
+		is_at_war = no
+		has_law = law_type:law_monarchy
+		any_scope_state = { state_region = { is_homeland = cu:provencal } }
+	}
+	when_taken = {
+		set_variable = dod_valois_claims
+		change_infamy = 15
+		every_state = {
+			limit = {
+				OR = {
+					dod_is_french_state = yes
+					state_region = { is_homeland = cu:provencal }
+				}
+				NOT = { owner = root }
+			}
+			state_region = { add_claim = root }
+		}
+	}
+	ai_chance = { base = 50 }
+}
+
+dod_valois_transalpina = {
+	is_shown = {
+		this = c:ITA
+		has_global_variable = dod_valois_italy
+		has_variable = dod_valois_claims
+		NOT = { exists = c:FRT }
+	}
+	possible = {
+		is_at_war = no
+		has_law = law_type:law_monarchy
+		any_scope_state = {
+			count >= 2
+			dod_is_french_state = yes
+		}
+	}
+	when_taken = {
+		change_tag = FRT
+		add_modifier = { name = dod_transalpina months = 120 }
+		trigger_event = { id = dod_ita.56 }
+	}
+	ai_chance = { base = 100 }
+}
+
+# ---------------------------------------------------------------------
+# Greece
+# ---------------------------------------------------------------------
+
+dod_form_greece = {
+	is_shown = {
+		country_has_primary_culture = cu:greek
+		NOT = { exists = c:GRE }
+	}
+	possible = {
+		is_at_war = no
+		any_scope_state = {
+			count >= 4
+			dod_is_greek_state = yes
+		}
+	}
+	when_taken = {
+		change_tag = GRE
+	}
+	ai_chance = { base = 100 }
+}
+
+dod_megali_idea = {
+	is_shown = {
+		this = c:GRE
+		NOT = { has_variable = dod_megali_idea }
+	}
+	possible = {
+		is_at_war = no
+		country_rank >= rank_value:major_power
+	}
+	when_taken = {
+		set_variable = dod_megali_idea
+		change_infamy = 15
+		every_state = {
+			limit = {
+				dod_is_greek_state = yes
+				NOT = { owner = root }
+			}
+			state_region = { add_claim = root }
+		}
+	}
+	ai_chance = { base = 50 }
+}
+
+dod_enosis_complete = {
+	is_shown = {
+		this = c:GRE
+		has_variable = dod_megali_idea
+		NOT = { has_variable = dod_enosis_done }
+	}
+	possible = {
+		NOT = {
+			any_state = {
+				dod_is_greek_state = yes
+				NOT = { owner = root }
+			}
+		}
+	}
+	when_taken = {
+		set_variable = dod_enosis_done
+		trigger_event = { id = dod_ita.79 }
+	}
+	ai_chance = { base = 100 }
+}

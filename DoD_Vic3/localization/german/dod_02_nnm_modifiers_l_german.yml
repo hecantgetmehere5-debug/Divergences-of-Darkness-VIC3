@@ -1,0 +1,5 @@
+﻿l_german:
+ TRIGMOD_HEADER:0 "$head_of_government$ berichtet, dass"
+ TRIGMODLOST_HEADER:0 "$head_of_government$ berichtet, dass"
+ irish_potato_blight:0 "Kartoffelfäule"
+ irish_potato_blight_desc:0 "Hunger breitet sich aus, weil die Ernte tot und verfaulend auf unseren Feldern liegt."

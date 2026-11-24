@@ -1,0 +1,40 @@
+# Russia, the Steppe & the Caucasus: modifiers
+
+dod_russian_unity = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
+	country_prestige_add = 40
+	country_legitimacy_base_add = 10
+}
+
+dod_don_and_volga = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
+	country_prestige_add = 20
+}
+
+dod_steppe_mobilisation = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
+	unit_offense_mult = 0.1
+	unit_defense_mult = 0.1
+}
+
+dod_selim_rule = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_scroll_positive.dds"
+	country_authority_add = 50
+}
+
+dod_crimean_script = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_book_positive.dds"
+	country_prestige_add = 10
+	country_legitimacy_base_add = 5
+}
+
+dod_raids_banned = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_scroll_positive.dds"
+	country_legitimacy_base_add = 10
+}
+
+dod_sedentarisation = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_scroll_positive.dds"
+	country_legitimacy_base_add = 5
+	country_authority_add = 25
+}

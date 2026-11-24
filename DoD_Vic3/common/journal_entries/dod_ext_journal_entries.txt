@@ -1,0 +1,246 @@
+# Expanded content: Plantagenia, Arcadia, Beornia, Savoy
+
+je_dod_plantagenian_slavery = {
+	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+	group = je_group_historical_content
+
+	immediate = {
+		set_variable = { name = dod_abolition_support value = 10 }
+		set_variable = { name = dod_planter_resistance value = 20 }
+	}
+
+	current_value = {
+		value = root.var:dod_abolition_support
+	}
+	goal_add_value = {
+		add = 100
+	}
+	progressbar = yes
+
+	on_monthly_pulse = {
+		effect = {
+			if = {
+				limit = { game_date >= 1845.1.1 }
+				change_variable = { name = dod_abolition_support add = 1 }
+			}
+			if = {
+				limit = { ig:ig_landowners = { is_in_government = yes } }
+				change_variable = { name = dod_planter_resistance add = 1 }
+			}
+		}
+		random_events = {
+			80 = 0
+			5 = dod_ext.1
+			5 = dod_ext.2
+			5 = dod_ext.3
+			5 = dod_ext.4
+		}
+	}
+
+	complete = {
+		has_law = law_type:law_slavery_banned
+	}
+
+	on_complete = {
+		trigger_event = { id = dod_ext.5 }
+	}
+
+	fail = {
+		var:dod_planter_resistance >= 100
+	}
+
+	on_fail = {
+		trigger_event = { id = dod_ext.6 }
+	}
+
+	invalid = {
+		NOT = {
+			OR = {
+				this = c:PLA
+				this = c:ARC
+			}
+		}
+	}
+
+	should_be_pinned_by_default = yes
+	weight = 1000
+}
+
+je_dod_cowboy_king = {
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	group = je_group_historical_content
+
+	immediate = {
+		set_variable = { name = dod_crown_standing value = 0 }
+	}
+
+	on_monthly_pulse = {
+		random_events = {
+			85 = 0
+			3 = dod_ext.11
+			3 = dod_ext.12
+			3 = dod_ext.13
+			3 = dod_ext.14
+			3 = dod_ext.15
+		}
+	}
+
+	complete = {
+		var:dod_crown_standing >= 6
+	}
+
+	on_complete = {
+		trigger_event = { id = dod_ext.16 }
+	}
+
+	fail = {
+		var:dod_crown_standing <= -5
+	}
+
+	on_fail = {
+		trigger_event = { id = dod_ext.17 }
+	}
+
+	timeout = 3650
+
+	should_be_pinned_by_default = yes
+	weight = 500
+}
+
+je_dod_arcadian_hegemony = {
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	group = je_group_historical_content
+
+	complete = {
+		country_rank >= rank_value:great_power
+		NOT = {
+			any_state = {
+				state_region = {
+					OR = {
+						is_homeland = cu:vinlander
+						is_homeland = cu:septiman
+						is_homeland = cu:plantagenian
+						is_homeland = cu:lusitanian
+					}
+				}
+				NOT = { owner = root }
+			}
+		}
+	}
+
+	on_complete = {
+		trigger_event = { id = dod_ext.20 }
+	}
+
+	invalid = {
+		NOT = { this = c:ARC }
+	}
+
+	should_be_pinned_by_default = yes
+	weight = 1000
+}
+
+je_dod_beornian_communion = {
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	group = je_group_historical_content
+
+	immediate = {
+		set_variable = { name = dod_communion_unity value = 0 }
+	}
+
+	current_value = {
+		value = root.var:dod_communion_unity
+	}
+	goal_add_value = {
+		add = 8
+	}
+	progressbar = yes
+
+	on_monthly_pulse = {
+		random_events = {
+			80 = 0
+			5 = dod_ext.30
+			5 = dod_ext.31
+			5 = dod_ext.32
+			5 = dod_ext.33
+		}
+	}
+
+	complete = {
+		var:dod_communion_unity >= 8
+	}
+
+	on_complete = {
+		trigger_event = { id = dod_ext.34 }
+	}
+
+	fail = {
+		var:dod_communion_unity <= -8
+	}
+
+	on_fail = {
+		trigger_event = { id = dod_ext.35 }
+	}
+
+	invalid = {
+		NOT = {
+			OR = {
+				this = c:NAN
+				this = c:HBE
+			}
+		}
+	}
+
+	should_be_pinned_by_default = yes
+	weight = 1000
+}
+
+je_dod_savoyard_succession = {
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	group = je_group_historical_content
+
+	immediate = {
+		set_variable = { name = dod_vittorio_standing value = 0 }
+	}
+
+	current_value = {
+		value = root.var:dod_vittorio_standing
+	}
+	goal_add_value = {
+		add = 5
+	}
+	progressbar = yes
+
+	on_monthly_pulse = {
+		random_events = {
+			80 = 0
+			5 = dod_ext.40
+			5 = dod_ext.41
+			5 = dod_ext.42
+			5 = dod_ext.43
+		}
+	}
+
+	complete = {
+		var:dod_vittorio_standing >= 5
+	}
+
+	on_complete = {
+		trigger_event = { id = dod_ext.44 }
+	}
+
+	fail = {
+		var:dod_vittorio_standing <= -5
+	}
+
+	on_fail = {
+		trigger_event = { id = dod_ext.45 }
+	}
+
+	invalid = {
+		NOT = { this = c:SAR }
+	}
+
+	should_be_pinned_by_default = yes
+	weight = 1000
+}

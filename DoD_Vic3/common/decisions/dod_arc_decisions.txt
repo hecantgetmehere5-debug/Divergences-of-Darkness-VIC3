@@ -1,0 +1,163 @@
+# Archaeology
+
+dod_archaeological_society = {
+	is_shown = {
+		country_rank >= rank_value:major_power
+		NOT = { has_variable = dod_archaeology_society }
+	}
+	possible = {
+		is_at_war = no
+		game_date >= 1850.1.1
+	}
+	when_taken = {
+		set_variable = dod_archaeology_society
+		add_modifier = { name = dod_archaeology_society_mod months = 600 }
+	}
+	ai_chance = { base = 40 }
+}
+
+dod_dig_maya = {
+	is_shown = {
+		has_variable = dod_archaeology_society
+		NOT = { has_global_variable = dod_site_found_1 }
+	}
+	possible = {
+		is_at_war = no
+		NOT = { has_journal_entry = je_dod_excavation }
+		any_state = { state_region = { is_homeland = cu:mayan } }
+	}
+	when_taken = {
+		set_variable = { name = dod_dig_site value = 1 }
+		if = {
+			limit = { any_scope_state = { state_region = { is_homeland = cu:mayan } } }
+			add_journal_entry = { type = je_dod_excavation }
+		}
+		else = {
+			random_state = {
+				limit = { state_region = { is_homeland = cu:mayan } }
+				owner = {
+					set_variable = { name = dod_dig_requester value = root }
+					trigger_event = { id = dod_arc.1 days = 7 }
+				}
+			}
+		}
+	}
+	ai_chance = { base = 40 }
+}
+
+dod_dig_mesopotamia = {
+	is_shown = {
+		has_variable = dod_archaeology_society
+		NOT = { has_global_variable = dod_site_found_2 }
+	}
+	possible = {
+		is_at_war = no
+		NOT = { has_journal_entry = je_dod_excavation }
+		any_state = { state_region = { is_homeland = cu:assyrian } }
+	}
+	when_taken = {
+		set_variable = { name = dod_dig_site value = 2 }
+		if = {
+			limit = { any_scope_state = { state_region = { is_homeland = cu:assyrian } } }
+			add_journal_entry = { type = je_dod_excavation }
+		}
+		else = {
+			random_state = {
+				limit = { state_region = { is_homeland = cu:assyrian } }
+				owner = {
+					set_variable = { name = dod_dig_requester value = root }
+					trigger_event = { id = dod_arc.1 days = 7 }
+				}
+			}
+		}
+	}
+	ai_chance = { base = 40 }
+}
+
+dod_dig_mycenae = {
+	is_shown = {
+		has_variable = dod_archaeology_society
+		NOT = { has_global_variable = dod_site_found_3 }
+	}
+	possible = {
+		is_at_war = no
+		NOT = { has_journal_entry = je_dod_excavation }
+		any_state = { state_region = { is_homeland = cu:greek } }
+	}
+	when_taken = {
+		set_variable = { name = dod_dig_site value = 3 }
+		if = {
+			limit = { any_scope_state = { state_region = { is_homeland = cu:greek } } }
+			add_journal_entry = { type = je_dod_excavation }
+		}
+		else = {
+			random_state = {
+				limit = { state_region = { is_homeland = cu:greek } }
+				owner = {
+					set_variable = { name = dod_dig_requester value = root }
+					trigger_event = { id = dod_arc.1 days = 7 }
+				}
+			}
+		}
+	}
+	ai_chance = { base = 40 }
+}
+
+dod_dig_knossos = {
+	is_shown = {
+		has_variable = dod_archaeology_society
+		NOT = { has_global_variable = dod_site_found_4 }
+		has_global_variable = dod_site_found_3
+	}
+	possible = {
+		is_at_war = no
+		NOT = { has_journal_entry = je_dod_excavation }
+		any_state = { state_region = { is_homeland = cu:greek } }
+	}
+	when_taken = {
+		set_variable = { name = dod_dig_site value = 4 }
+		if = {
+			limit = { any_scope_state = { state_region = { is_homeland = cu:greek } } }
+			add_journal_entry = { type = je_dod_excavation }
+		}
+		else = {
+			random_state = {
+				limit = { state_region = { is_homeland = cu:greek } }
+				owner = {
+					set_variable = { name = dod_dig_requester value = root }
+					trigger_event = { id = dod_arc.1 days = 7 }
+				}
+			}
+		}
+	}
+	ai_chance = { base = 40 }
+}
+
+dod_dig_troy = {
+	is_shown = {
+		has_variable = dod_archaeology_society
+		NOT = { has_global_variable = dod_site_found_5 }
+	}
+	possible = {
+		is_at_war = no
+		NOT = { has_journal_entry = je_dod_excavation }
+		any_state = { state_region = { is_homeland = cu:turkish } }
+	}
+	when_taken = {
+		set_variable = { name = dod_dig_site value = 5 }
+		if = {
+			limit = { any_scope_state = { state_region = { is_homeland = cu:turkish } } }
+			add_journal_entry = { type = je_dod_excavation }
+		}
+		else = {
+			random_state = {
+				limit = { state_region = { is_homeland = cu:turkish } }
+				owner = {
+					set_variable = { name = dod_dig_requester value = root }
+					trigger_event = { id = dod_arc.1 days = 7 }
+				}
+			}
+		}
+	}
+	ai_chance = { base = 40 }
+}

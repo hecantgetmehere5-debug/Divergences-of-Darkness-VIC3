@@ -1,0 +1,590 @@
+namespace = dod_asi
+
+dod_asi.1 = {
+	type = country_event
+	placement = root
+	title = dod_asi.1.t
+	desc = dod_asi.1.d
+	flavor = dod_asi.1.f
+	event_image = { video = "unspecific_politicians_arguing" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+	duration = 3
+
+	option = {
+		name = dod_asi.1.a
+		default_option = yes
+		c:JAP = { create_diplomatic_pact = { country = root type = protectorate } }
+		ai_chance = { base = 40 }
+	}
+
+	option = {
+		name = dod_asi.1.b
+		c:JAP = { trigger_event = { id = dod_asi.2 days = 3 } }
+		ai_chance = { base = 60 }
+	}
+}
+
+dod_asi.2 = {
+	type = country_event
+	placement = root
+	title = dod_asi.2.t
+	desc = dod_asi.2.d
+	flavor = dod_asi.2.f
+	event_image = { video = "unspecific_military_parade" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+	duration = 3
+
+	option = {
+		name = dod_asi.2.a
+		default_option = yes
+		create_diplomatic_play = {
+			target_country = c:KOR
+			type = dp_make_protectorate
+		}
+		ai_chance = { base = 80 }
+	}
+
+	option = {
+		name = dod_asi.2.b
+		ai_chance = { base = 20 }
+	}
+}
+
+dod_asi.3 = {
+	type = country_event
+	placement = root
+	title = dod_asi.3.t
+	desc = dod_asi.3.d
+	flavor = dod_asi.3.f
+	event_image = { video = "unspecific_military_parade" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	trigger = {
+		this = c:JAP
+		country_rank >= rank_value:great_power
+		NOT = { has_variable = dod_asi_seen_3 }
+	}
+
+	immediate = {
+		set_variable = dod_asi_seen_3
+	}
+
+	option = {
+		name = dod_asi.3.a
+		default_option = yes
+		add_modifier = { name = dod_rising_sun months = 120 }
+	}
+}
+
+dod_asi.4 = {
+	type = country_event
+	placement = root
+	title = dod_asi.4.t
+	desc = dod_asi.4.d
+	flavor = dod_asi.4.f
+	event_image = { video = "unspecific_politicians_arguing" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+	duration = 3
+
+	option = {
+		name = dod_asi.4.a
+		default_option = yes
+		c:JAP = { create_diplomatic_pact = { country = root type = protectorate } }
+		ai_chance = { base = 40 }
+	}
+
+	option = {
+		name = dod_asi.4.b
+		ai_chance = { base = 60 }
+	}
+}
+
+dod_asi.5 = {
+	type = country_event
+	placement = root
+	title = dod_asi.5.t
+	desc = dod_asi.5.d
+	flavor = dod_asi.5.f
+	event_image = { video = "unspecific_politicians_arguing" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	duration = 3
+
+	trigger = {
+		this = c:JAP
+		NOT = { exists = c:MCH }
+		any_scope_state = {
+			count >= 2
+			state_region = { is_homeland = cu:manchu }
+		}
+		NOT = { has_variable = dod_asi_seen_5 }
+	}
+
+	immediate = {
+		set_variable = dod_asi_seen_5
+	}
+
+	option = {
+		name = dod_asi.5.a
+		default_option = yes
+		dod_release_homeland = { TAG = MCH CULTURE = manchu }
+		if = {
+			limit = { exists = c:MCH }
+			create_diplomatic_pact = { country = c:MCH type = puppet }
+		}
+		ai_chance = { base = 60 }
+	}
+
+	option = {
+		name = dod_asi.5.b
+		ai_chance = { base = 40 }
+	}
+}
+
+dod_asi.6 = {
+	type = country_event
+	placement = root
+	title = dod_asi.6.t
+	desc = dod_asi.6.d
+	flavor = dod_asi.6.f
+	event_image = { texture = "gfx/event_pictures/dod/Kaiganese.dds" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+	duration = 3
+
+	trigger = {
+		this = c:KKN
+		exists = c:JAP
+		is_subject_of = c:JAP
+		game_date >= 1850.1.1
+		NOT = { has_variable = dod_asi_seen_6 }
+	}
+
+	immediate = {
+		set_variable = dod_asi_seen_6
+	}
+
+	option = {
+		name = dod_asi.6.a
+		default_option = yes
+		create_diplomatic_play = {
+			target_country = c:JAP
+			type = dp_independence
+		}
+		ai_chance = { base = 50 }
+	}
+
+	option = {
+		name = dod_asi.6.b
+		add_modifier = { name = dod_loyalist_kaigan months = 120 }
+		ai_chance = { base = 50 }
+	}
+}
+
+dod_asi.7 = {
+	type = country_event
+	placement = root
+	title = dod_asi.7.t
+	desc = dod_asi.7.d
+	flavor = dod_asi.7.f
+	event_image = { texture = "gfx/event_pictures/dod/japanesefight_taiwan.dds" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	duration = 3
+
+	trigger = {
+		this = c:JAP
+		country_rank >= rank_value:major_power
+		is_at_war = no
+		game_date >= 1860.1.1
+		NOT = { has_variable = dod_asi_seen_7 }
+	}
+
+	immediate = {
+		set_variable = dod_asi_seen_7
+	}
+
+	option = {
+		name = dod_asi.7.a
+		default_option = yes
+		change_infamy = 10
+		every_state = {
+			limit = {
+				state_region = {
+					OR = {
+					is_homeland = cu:filipino
+					is_homeland = cu:moluccan
+					}
+				}
+				NOT = { owner = root }
+			}
+			state_region = { add_claim = root }
+		}
+		ai_chance = { base = 50 }
+	}
+
+	option = {
+		name = dod_asi.7.b
+		change_infamy = 5
+		every_state = {
+			limit = {
+				state_region = {
+					OR = {
+					is_homeland = cu:polynesian
+					is_homeland = cu:melanesian
+					}
+				}
+				NOT = { owner = root }
+			}
+			state_region = { add_claim = root }
+		}
+		ai_chance = { base = 30 }
+	}
+
+	option = {
+		name = dod_asi.7.c
+		ai_chance = { base = 20 }
+	}
+}
+
+dod_asi.10 = {
+	type = country_event
+	placement = root
+	title = dod_asi.10.t
+	desc = dod_asi.10.d
+	flavor = dod_asi.10.f
+	event_image = { video = "unspecific_politicians_arguing" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+	duration = 3
+
+	trigger = {
+		has_variable = dod_treaty_demander
+	}
+
+	option = {
+		name = dod_asi.10.a
+		default_option = yes
+		add_modifier = { name = dod_unequal_treaty months = 120 }
+		var:dod_treaty_demander = { add_modifier = { name = dod_china_trade months = 120 } }
+		remove_variable = dod_treaty_demander
+		ai_chance = { base = 40 }
+	}
+
+	option = {
+		name = dod_asi.10.b
+		var:dod_treaty_demander = { trigger_event = { id = dod_asi.11 days = 3 } }
+		remove_variable = dod_treaty_demander
+		ai_chance = { base = 60 }
+	}
+}
+
+dod_asi.11 = {
+	type = country_event
+	placement = root
+	title = dod_asi.11.t
+	desc = dod_asi.11.d
+	flavor = dod_asi.11.f
+	event_image = { video = "unspecific_military_parade" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+	duration = 3
+
+	option = {
+		name = dod_asi.11.a
+		default_option = yes
+		random_country = {
+			limit = { has_variable = dod_treaty_target }
+			save_scope_as = dod_china_target
+			remove_variable = dod_treaty_target
+		}
+		if = {
+			limit = { exists = scope:dod_china_target }
+			create_diplomatic_play = {
+				target_country = scope:dod_china_target
+				type = dp_open_market
+			}
+		}
+		ai_chance = { base = 80 }
+	}
+
+	option = {
+		name = dod_asi.11.b
+		every_country = {
+			limit = { has_variable = dod_treaty_target }
+			remove_variable = dod_treaty_target
+		}
+		ai_chance = { base = 20 }
+	}
+}
+
+dod_asi.12 = {
+	type = country_event
+	placement = root
+	title = dod_asi.12.t
+	desc = dod_asi.12.d
+	flavor = dod_asi.12.f
+	event_image = { texture = "gfx/event_pictures/dod/levee_breaks.dds" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+	duration = 3
+
+	trigger = {
+		OR = {
+			this = c:CHI
+			this = c:MIG
+			this = c:TNG
+		}
+		game_date >= 1850.1.1
+		NOT = { has_variable = dod_asi_seen_12 }
+	}
+
+	immediate = {
+		set_variable = dod_asi_seen_12
+	}
+
+	option = {
+		name = dod_asi.12.a
+		default_option = yes
+		add_modifier = { name = dod_weisuo_abolished months = 240 }
+		ai_chance = { base = 50 }
+	}
+
+	option = {
+		name = dod_asi.12.b
+		ai_chance = { base = 50 }
+	}
+}
+
+dod_asi.13 = {
+	type = country_event
+	placement = root
+	title = dod_asi.13.t
+	desc = dod_asi.13.d
+	flavor = dod_asi.13.f
+	event_image = { texture = "gfx/event_pictures/dod/ningbo_cotton.dds" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	duration = 3
+
+	trigger = {
+		OR = {
+			this = c:CHI
+			this = c:MIG
+			this = c:TNG
+		}
+		game_date >= 1860.1.1
+		NOT = { has_variable = dod_asi_seen_13 }
+	}
+
+	immediate = {
+		set_variable = dod_asi_seen_13
+	}
+
+	option = {
+		name = dod_asi.13.a
+		default_option = yes
+		add_modifier = { name = dod_chinese_cotton months = 120 }
+	}
+}
+
+dod_asi.20 = {
+	type = country_event
+	placement = root
+	title = dod_asi.20.t
+	desc = dod_asi.20.d
+	flavor = dod_asi.20.f
+	event_image = { texture = "gfx/event_pictures/dod/oirat_khanate.dds" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	trigger = {
+		this = c:CHG
+		game_date >= 1845.1.1
+		NOT = { has_variable = dod_asi_seen_20 }
+	}
+
+	immediate = {
+		set_variable = dod_asi_seen_20
+	}
+
+	option = {
+		name = dod_asi.20.a
+		default_option = yes
+		create_character = { first_name = "Tsewang" last_name = "Choros" ruler = yes age = 35 }
+		add_modifier = { name = dod_dzungar_succession months = 36 }
+	}
+}
+
+dod_asi.21 = {
+	type = country_event
+	placement = root
+	title = dod_asi.21.t
+	desc = dod_asi.21.d
+	flavor = dod_asi.21.f
+	event_image = { texture = "gfx/event_pictures/dod/oirat_khanate.dds" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	duration = 3
+
+	trigger = {
+		this = c:CHG
+		is_at_war = no
+		NOT = { has_variable = dod_asi_seen_21 }
+	}
+
+	immediate = {
+		set_variable = dod_asi_seen_21
+	}
+
+	option = {
+		name = dod_asi.21.a
+		default_option = yes
+		change_infamy = 5
+		every_state = {
+			limit = {
+				state_region = {
+					OR = {
+					is_homeland = cu:uighur
+					}
+				}
+				NOT = { owner = root }
+			}
+			state_region = { add_claim = root }
+		}
+		ai_chance = { base = 40 }
+	}
+
+	option = {
+		name = dod_asi.21.b
+		change_infamy = 5
+		every_state = {
+			limit = {
+				state_region = {
+					OR = {
+					is_homeland = cu:mongol
+					}
+				}
+				NOT = { owner = root }
+			}
+			state_region = { add_claim = root }
+		}
+		ai_chance = { base = 35 }
+	}
+
+	option = {
+		name = dod_asi.21.c
+		change_infamy = 5
+		every_state = {
+			limit = {
+				state_region = {
+					OR = {
+					is_homeland = cu:kazak
+					}
+				}
+				NOT = { owner = root }
+			}
+			state_region = { add_claim = root }
+		}
+		ai_chance = { base = 25 }
+	}
+}
+
+dod_asi.22 = {
+	type = country_event
+	placement = root
+	title = dod_asi.22.t
+	desc = dod_asi.22.d
+	flavor = dod_asi.22.f
+	event_image = { texture = "gfx/event_pictures/dod/tibet.dds" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	trigger = {
+		this = c:CHG
+		exists = c:TIB
+		c:TIB = { is_at_war = no }
+		NOT = { has_variable = dod_asi_seen_22 }
+	}
+
+	immediate = {
+		set_variable = dod_asi_seen_22
+	}
+
+	option = {
+		name = dod_asi.22.a
+		default_option = yes
+		c:TIB ?= { trigger_event = { id = dod_asi.23 days = 7 } }
+		ai_chance = { base = 70 }
+	}
+
+	option = {
+		name = dod_asi.22.b
+		ai_chance = { base = 30 }
+	}
+}
+
+dod_asi.23 = {
+	type = country_event
+	placement = root
+	title = dod_asi.23.t
+	desc = dod_asi.23.d
+	flavor = dod_asi.23.f
+	event_image = { texture = "gfx/event_pictures/dod/tibet.dds" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+	duration = 3
+
+	option = {
+		name = dod_asi.23.a
+		default_option = yes
+		c:CHG = { create_diplomatic_pact = { country = root type = protectorate } }
+		ai_chance = { base = 60 }
+	}
+
+	option = {
+		name = dod_asi.23.b
+		ai_chance = { base = 40 }
+	}
+}
+
+dod_asi.24 = {
+	type = country_event
+	placement = root
+	title = dod_asi.24.t
+	desc = dod_asi.24.d
+	flavor = dod_asi.24.f
+	event_image = { video = "unspecific_politicians_arguing" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	trigger = {
+		this = c:CHG
+		game_date >= 1860.1.1
+		NOT = { has_variable = dod_asi_seen_24 }
+	}
+
+	immediate = {
+		set_variable = dod_asi_seen_24
+	}
+
+	option = {
+		name = dod_asi.24.a
+		default_option = yes
+		add_modifier = { name = dod_urumqi_university months = 240 }
+		ai_chance = { base = 50 }
+	}
+
+	option = {
+		name = dod_asi.24.b
+		ai_chance = { base = 50 }
+	}
+}

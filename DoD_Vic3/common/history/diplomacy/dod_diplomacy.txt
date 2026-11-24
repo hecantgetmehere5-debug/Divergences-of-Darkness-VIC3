@@ -1,0 +1,225 @@
+﻿# Starting subjects and alliances, converted from the Vic2 mod's history/diplomacy
+DIPLOMACY = {
+	c:DNG ?= {
+		create_diplomatic_pact = {
+			country = c:INC
+			type = alliance
+		}
+	}
+	c:MCK ?= {
+		create_diplomatic_pact = {
+			country = c:MGL
+			type = alliance
+		}
+	}
+	c:JAI ?= {
+		create_diplomatic_pact = {
+			country = c:JAS
+			type = alliance
+		}
+	}
+	c:JAI ?= {
+		create_diplomatic_pact = {
+			country = c:JOD
+			type = alliance
+		}
+	}
+	c:JAI ?= {
+		create_diplomatic_pact = {
+			country = c:MEW
+			type = alliance
+		}
+	}
+	c:JAI ?= {
+		create_diplomatic_pact = {
+			country = c:BIK
+			type = alliance
+		}
+	}
+	c:ARA ?= {
+		create_diplomatic_pact = {
+			country = c:VEN
+			type = alliance
+		}
+	}
+	c:DUA ?= {
+		create_diplomatic_pact = {
+			country = c:SPA
+			type = alliance
+		}
+	}
+	c:SPA ?= {
+		create_diplomatic_pact = {
+			country = c:VIJ
+			type = alliance
+		}
+	}
+	c:HUN ?= {
+		create_diplomatic_pact = {
+			country = c:PLC
+			type = alliance
+		}
+	}
+	c:PLC ?= {
+		create_diplomatic_pact = {
+			country = c:MOL
+			type = alliance
+		}
+	}
+	c:SCA ?= {
+		create_diplomatic_pact = {
+			country = c:BRG
+			type = alliance
+		}
+	}
+	c:LOT ?= {
+		create_diplomatic_pact = {
+			country = c:NAN
+			type = alliance
+		}
+	}
+	c:TUR ?= {
+		create_diplomatic_pact = {
+			country = c:CRI
+			type = alliance
+		}
+	}
+	c:TUR ?= {
+		create_diplomatic_pact = {
+			country = c:ASK
+			type = alliance
+		}
+	}
+	c:OMA ?= {
+		create_diplomatic_pact = {
+			country = c:YEM
+			type = alliance
+		}
+	}
+	c:FUN ?= {
+		create_diplomatic_pact = {
+			country = c:YEM
+			type = alliance
+		}
+	}
+	c:TRN ?= {
+		create_diplomatic_pact = {
+			country = c:LWE
+			type = alliance
+		}
+	}
+	c:TRN ?= {
+		create_diplomatic_pact = {
+			country = c:NFL
+			type = alliance
+		}
+	}
+	c:LWE ?= {
+		create_diplomatic_pact = {
+			country = c:NFL
+			type = alliance
+		}
+	}
+	c:TUR ?= {
+		create_diplomatic_pact = {
+			country = c:HDJ
+			type = alliance
+		}
+	}
+	c:HUN ?= {
+		create_diplomatic_pact = {
+			country = c:WAL
+			type = alliance
+		}
+	}
+	c:MCK ?= {
+		create_diplomatic_pact = {
+			country = c:KOR
+			type = alliance
+		}
+	}
+	c:PLC ?= {
+		create_diplomatic_pact = {
+			country = c:LIT
+			type = puppet
+		}
+	}
+	c:PLC ?= {
+		create_diplomatic_pact = {
+			country = c:UKR
+			type = puppet
+		}
+	}
+	c:PLC ?= {
+		create_diplomatic_pact = {
+			country = c:BLR
+			type = puppet
+		}
+	}
+	c:PLC ?= {
+		create_diplomatic_pact = {
+			country = c:PRU
+			type = puppet
+		}
+	}
+	c:ARA ?= {
+		create_diplomatic_pact = {
+			country = c:NAV
+			type = puppet
+		}
+	}
+	c:SCA ?= {
+		create_diplomatic_pact = {
+			country = c:PSV
+			type = puppet
+		}
+	}
+	c:SCA ?= {
+		create_diplomatic_pact = {
+			country = c:OLD
+			type = puppet
+		}
+	}
+	c:JAP ?= {
+		create_diplomatic_pact = {
+			country = c:AIN
+			type = puppet
+		}
+	}
+	c:ASK ?= {
+		create_diplomatic_pact = {
+			country = c:CIR
+			type = puppet
+		}
+	}
+	c:AZB ?= {
+		create_diplomatic_pact = {
+			country = c:SAM
+			type = puppet
+		}
+	}
+	c:AZB ?= {
+		create_diplomatic_pact = {
+			country = c:IME
+			type = puppet
+		}
+	}
+	c:AZB ?= {
+		create_diplomatic_pact = {
+			country = c:KMY
+			type = puppet
+		}
+	}
+	c:SIN ?= {
+		create_diplomatic_pact = {
+			country = c:KAL
+			type = puppet
+		}
+	}
+	c:OYO ?= {
+		create_diplomatic_pact = {
+			country = c:DHY
+			type = puppet
+		}
+	}
+}

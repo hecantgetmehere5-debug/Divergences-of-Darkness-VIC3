@@ -1,0 +1,112 @@
+# Europe flavour: modifiers
+
+dod_occitan_seats = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_scroll_positive.dds"
+	country_legitimacy_base_add = 5
+}
+
+dod_channel_tunnel = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_scroll_positive.dds"
+	country_prestige_add = 15
+}
+
+dod_anvers_exchange = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_scroll_positive.dds"
+	country_prestige_add = 10
+}
+
+dod_protestant_unity = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_scroll_positive.dds"
+	country_legitimacy_base_add = 5
+}
+
+dod_sound_dues = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_scroll_positive.dds"
+	country_prestige_add = 5
+}
+
+dod_free_sound = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_scroll_positive.dds"
+	country_legitimacy_base_add = 5
+}
+
+dod_scottish_loyalty = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_scroll_positive.dds"
+	country_legitimacy_base_add = 5
+}
+
+dod_baltic_focus = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
+	country_prestige_add = 5
+}
+
+dod_german_watch = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
+	unit_defense_mult = 0.05
+}
+
+dod_reichstag_prestige = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
+	country_prestige_add = 10
+}
+
+dod_brandenburg_privileges = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_scroll_positive.dds"
+	country_legitimacy_base_add = 5
+}
+
+dod_religious_peace = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_scroll_positive.dds"
+	country_legitimacy_base_add = 5
+}
+
+dod_independence_day = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
+	country_legitimacy_base_add = 5
+}
+
+dod_veto_curbed = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_scroll_positive.dds"
+	country_authority_add = 25
+}
+
+dod_veche = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
+	country_legitimacy_base_add = 10
+}
+
+dod_mediterranean_trade = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_scroll_positive.dds"
+	country_prestige_add = 10
+}
+
+dod_reformist_return = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_scroll_positive.dds"
+	country_legitimacy_base_add = 5
+}
+
+dod_republican_festival = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
+	country_legitimacy_base_add = 5
+}
+
+dod_papal_authority = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
+	country_prestige_add = 10
+}
+
+dod_navarrese_pride = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
+	country_legitimacy_base_add = 5
+}
+
+dod_st_stephen = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
+	country_prestige_add = 15
+	country_legitimacy_base_add = 5
+}
+
+dod_swiss_neutrality = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
+	unit_defense_mult = 0.1
+}

@@ -1,0 +1,83 @@
+# Gran Colombia, Mexico & the Andes: journal entries
+
+je_dod_colombian_independence = {
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+	group = je_group_historical_content
+
+	# Gran Colombia starts the game at war with Spain (the 1835 Spanish
+	# counter-invasion). The war is won once Spain holds no mainland
+	# Colombian lands and peace has returned.
+	immediate = {
+		set_variable = { name = dod_colombian_war_grace days = 180 }
+	}
+
+	complete = {
+		is_at_war = no
+		NOT = { has_variable = dod_colombian_war_grace }
+		NOT = {
+			any_state = {
+				owner = {
+					OR = {
+						this = c:SPA
+						this = c:SPC
+					}
+				}
+				state_region = {
+					OR = {
+						is_homeland = cu:mexican
+						is_homeland = cu:central_american
+						is_homeland = cu:granadan
+					}
+				}
+			}
+		}
+	}
+
+	on_complete = {
+		trigger_event = { id = dod_clm.2 }
+	}
+
+	invalid = {
+		NOT = { this = c:CLM }
+	}
+
+	should_be_pinned_by_default = yes
+	weight = 1000
+}
+
+je_dod_congress_of_mexico = {
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+	group = je_group_historical_content
+
+	immediate = {
+		set_variable = { name = dod_colombian_unity value = 0 }
+	}
+
+	current_value = {
+		value = root.var:dod_colombian_unity
+	}
+	goal_add_value = {
+		add = 3
+	}
+	progressbar = yes
+
+	on_monthly_pulse = {
+		random_events = {
+			50 = 0
+			10 = dod_clm.10
+			10 = dod_clm.11
+			10 = dod_clm.12
+			10 = dod_clm.13
+			10 = dod_clm.14
+		}
+	}
+
+	timeout = 365
+
+	on_timeout = {
+		trigger_event = { id = dod_clm.15 }
+	}
+
+	should_be_pinned_by_default = yes
+	weight = 1000
+}

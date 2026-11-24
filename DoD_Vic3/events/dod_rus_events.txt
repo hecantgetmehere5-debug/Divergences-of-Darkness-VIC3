@@ -1,0 +1,589 @@
+namespace = dod_rus
+
+dod_rus.1 = {
+	type = country_event
+	placement = root
+	title = dod_rus.1.t
+	desc = dod_rus.1.d
+	flavor = dod_rus.1.f
+	event_image = { video = "unspecific_politicians_arguing" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+	duration = 3
+
+	trigger = {
+		exists = c:RUS
+		country_has_primary_culture = cu:russian
+		NOT = { this = c:RUS }
+	}
+
+	option = {
+		name = dod_rus.1.a
+		default_option = yes
+		c:RUS = { annex = root }
+		ai_chance = { base = 50 }
+	}
+
+	option = {
+		name = dod_rus.1.b
+		c:RUS = {
+			set_variable = { name = dod_russian_holdout value = root }
+			trigger_event = { id = dod_rus.6 days = 3 }
+		}
+		ai_chance = { base = 50 }
+	}
+}
+
+dod_rus.6 = {
+	type = country_event
+	placement = root
+	title = dod_rus.6.t
+	desc = dod_rus.6.d
+	flavor = dod_rus.6.f
+	event_image = { video = "unspecific_military_parade" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+	duration = 3
+
+	trigger = {
+		has_variable = dod_russian_holdout
+		var:dod_russian_holdout = { exists = this }
+	}
+
+	option = {
+		name = dod_rus.6.a
+		default_option = yes
+		change_infamy = 5
+		create_diplomatic_play = {
+			target_country = var:dod_russian_holdout
+			type = dp_annex_war
+		}
+		remove_variable = dod_russian_holdout
+		ai_chance = { base = 70 }
+	}
+
+	option = {
+		name = dod_rus.6.b
+		remove_variable = dod_russian_holdout
+		ai_chance = { base = 30 }
+	}
+}
+
+dod_rus.2 = {
+	type = country_event
+	placement = root
+	title = dod_rus.2.t
+	desc = dod_rus.2.d
+	flavor = dod_rus.2.f
+	event_image = { video = "unspecific_military_parade" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	trigger = {
+		this = c:RUS
+		is_at_war = no
+		NOT = { exists = c:MUS }
+		NOT = { exists = c:NOV }
+		NOT = { has_variable = dod_rus_seen_2 }
+	}
+
+	immediate = {
+		set_variable = dod_rus_seen_2
+	}
+
+	option = {
+		name = dod_rus.2.a
+		default_option = yes
+		add_modifier = { name = dod_russian_unity months = 120 }
+	}
+}
+
+dod_rus.3 = {
+	type = country_event
+	placement = root
+	title = dod_rus.3.t
+	desc = dod_rus.3.d
+	flavor = dod_rus.3.f
+	event_image = { video = "unspecific_politicians_arguing" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	duration = 3
+
+	trigger = {
+		this = c:RUS
+		is_at_war = no
+		country_rank >= rank_value:great_power
+		NOT = { exists = c:TAR }
+		NOT = { exists = c:ASK }
+		any_scope_state = { state_region = { is_homeland = cu:astrakhani } }
+		NOT = { has_variable = dod_rus_seen_3 }
+	}
+
+	immediate = {
+		set_variable = dod_rus_seen_3
+	}
+
+	option = {
+		name = dod_rus.3.a
+		default_option = yes
+		add_modifier = { name = dod_don_and_volga months = 120 }
+	}
+}
+
+dod_rus.4 = {
+	type = country_event
+	placement = root
+	title = dod_rus.4.t
+	desc = dod_rus.4.d
+	flavor = dod_rus.4.f
+	event_image = { texture = "gfx/event_pictures/dod/nizhny_novgorod.dds" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+	duration = 3
+
+	trigger = {
+		this = c:RUS
+		is_at_war = no
+		exists = c:NOV
+		c:NOV = { is_subject_of = root }
+	}
+
+	option = {
+		name = dod_rus.4.a
+		default_option = yes
+		annex = c:NOV
+	}
+}
+
+dod_rus.5 = {
+	type = country_event
+	placement = root
+	title = dod_rus.5.t
+	desc = dod_rus.5.d
+	flavor = dod_rus.5.f
+	event_image = { video = "unspecific_politicians_arguing" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	duration = 3
+
+	option = {
+		name = dod_rus.5.a
+		default_option = yes
+		every_state = {
+			limit = {
+				state_region = {
+					OR = {
+					is_homeland = cu:latvian
+					is_homeland = cu:estonian
+					is_homeland = cu:livlandian
+					}
+				}
+				NOT = { owner = root }
+			}
+			state_region = { add_claim = root }
+		}
+		ai_chance = { base = 35 }
+	}
+
+	option = {
+		name = dod_rus.5.b
+		every_state = {
+			limit = {
+				state_region = {
+					OR = {
+					is_homeland = cu:crimean
+					is_homeland = cu:astrakhani
+					is_homeland = cu:tatar
+					}
+				}
+				NOT = { owner = root }
+			}
+			state_region = { add_claim = root }
+		}
+		ai_chance = { base = 35 }
+	}
+
+	option = {
+		name = dod_rus.5.c
+		every_state = {
+			limit = {
+				state_region = {
+					OR = {
+					is_homeland = cu:ruthenian
+					is_homeland = cu:byelorussian
+					}
+				}
+				NOT = { owner = root }
+			}
+			state_region = { add_claim = root }
+		}
+		ai_chance = { base = 30 }
+	}
+}
+
+dod_rus.7 = {
+	type = country_event
+	placement = root
+	title = dod_rus.7.t
+	desc = dod_rus.7.d
+	flavor = dod_rus.7.f
+	event_image = { video = "unspecific_politicians_arguing" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+	duration = 3
+
+	option = {
+		name = dod_rus.7.a
+		default_option = yes
+		c:RUS = { create_diplomatic_pact = { country = root type = protectorate } }
+		ai_chance = { base = 40 }
+	}
+
+	option = {
+		name = dod_rus.7.b
+		c:RUS = { change_relations = { country = root value = -30 } }
+		ai_chance = { base = 60 }
+	}
+}
+
+dod_rus.8 = {
+	type = country_event
+	placement = root
+	title = dod_rus.8.t
+	desc = dod_rus.8.d
+	flavor = dod_rus.8.f
+	event_image = { texture = "gfx/event_pictures/dod/Novgorod_SCA.dds" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+	duration = 3
+
+	trigger = {
+		this = c:NOV
+		is_at_war = no
+		exists = c:MUS
+		exists = c:SCA
+		c:MUS = {
+			is_at_war = yes
+		}
+		NOT = { has_variable = dod_rus_seen_8 }
+	}
+
+	immediate = {
+		set_variable = dod_rus_seen_8
+	}
+
+	option = {
+		name = dod_rus.8.a
+		default_option = yes
+		c:SCA = { trigger_event = { id = dod_rus.9 days = 7 } }
+		ai_chance = { base = 80 }
+	}
+
+	option = {
+		name = dod_rus.8.b
+		ai_chance = { base = 20 }
+	}
+}
+
+dod_rus.9 = {
+	type = country_event
+	placement = root
+	title = dod_rus.9.t
+	desc = dod_rus.9.d
+	flavor = dod_rus.9.f
+	event_image = { video = "unspecific_politicians_arguing" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+	duration = 3
+
+	option = {
+		name = dod_rus.9.a
+		default_option = yes
+		create_diplomatic_pact = { country = c:NOV type = alliance }
+		c:NOV = { trigger_event = { id = dod_rus.10 days = 3 } }
+		ai_chance = { base = 80 }
+	}
+
+	option = {
+		name = dod_rus.9.b
+		c:NOV = { trigger_event = { id = dod_rus.11 days = 3 } }
+		ai_chance = { base = 20 }
+	}
+}
+
+dod_rus.10 = {
+	type = country_event
+	placement = root
+	title = dod_rus.10.t
+	desc = dod_rus.10.d
+	flavor = dod_rus.10.f
+	event_image = { texture = "gfx/event_pictures/dod/Novgorod_SCA.dds" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+	duration = 3
+
+	option = {
+		name = dod_rus.10.a
+		default_option = yes
+		create_diplomatic_play = {
+			target_country = c:MUS
+			type = dp_humiliation
+		}
+	}
+}
+
+dod_rus.11 = {
+	type = country_event
+	placement = root
+	title = dod_rus.11.t
+	desc = dod_rus.11.d
+	flavor = dod_rus.11.f
+	event_image = { texture = "gfx/event_pictures/dod/Novgorod_SCA.dds" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+	duration = 3
+
+	option = {
+		name = dod_rus.11.a
+		default_option = yes
+		ai_chance = { base = 60 }
+	}
+
+	option = {
+		name = dod_rus.11.b
+		create_diplomatic_play = {
+			target_country = c:MUS
+			type = dp_humiliation
+		}
+		ai_chance = { base = 40 }
+	}
+}
+
+dod_rus.12 = {
+	type = country_event
+	placement = root
+	title = dod_rus.12.t
+	desc = dod_rus.12.d
+	flavor = dod_rus.12.f
+	event_image = { video = "unspecific_military_parade" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+	duration = 3
+
+	trigger = {
+		OR = {
+			this = c:NOG
+			this = c:ASK
+			this = c:CRI
+			this = c:SIB
+		}
+		is_at_war = yes
+		any_country = {
+			OR = {
+				this = c:MUS
+				this = c:NOV
+				this = c:RUS
+			}
+			is_at_war = yes
+		}
+		NOT = { has_modifier = dod_steppe_mobilisation }
+	}
+
+	option = {
+		name = dod_rus.12.a
+		default_option = yes
+		add_modifier = { name = dod_steppe_mobilisation months = 24 }
+	}
+}
+
+dod_rus.13 = {
+	type = country_event
+	placement = root
+	title = dod_rus.13.t
+	desc = dod_rus.13.d
+	flavor = dod_rus.13.f
+	event_image = { texture = "gfx/event_pictures/dod/Crimea.dds" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	trigger = {
+		this = c:CRI
+		NOT = { has_variable = dod_rus_seen_13 }
+	}
+
+	immediate = {
+		set_variable = dod_rus_seen_13
+	}
+
+	option = {
+		name = dod_rus.13.a
+		default_option = yes
+		add_modifier = { name = dod_selim_rule months = 60 }
+		ai_chance = { base = 50 }
+	}
+
+	option = {
+		name = dod_rus.13.b
+		set_variable = dod_murad_heir
+		trigger_event = { id = dod_rus.14 days = 365 }
+		ai_chance = { base = 50 }
+	}
+}
+
+dod_rus.14 = {
+	type = country_event
+	placement = root
+	title = dod_rus.14.t
+	desc = dod_rus.14.d
+	flavor = dod_rus.14.f
+	event_image = { texture = "gfx/event_pictures/dod/Crimea.dds" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	trigger = {
+		has_variable = dod_murad_heir
+	}
+
+	option = {
+		name = dod_rus.14.a
+		default_option = yes
+		create_character = { first_name = "Murad" last_name = "Giray" ruler = yes age = 38 }
+		set_variable = dod_murad_khan
+	}
+}
+
+dod_rus.15 = {
+	type = country_event
+	placement = root
+	title = dod_rus.15.t
+	desc = dod_rus.15.d
+	flavor = dod_rus.15.f
+	event_image = { video = "unspecific_politicians_arguing" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	trigger = {
+		has_variable = dod_murad_khan
+		NOT = { has_variable = dod_rus_seen_15 }
+	}
+
+	immediate = {
+		set_variable = dod_rus_seen_15
+	}
+
+	option = {
+		name = dod_rus.15.a
+		default_option = yes
+		add_modifier = { name = dod_crimean_script months = 120 }
+	}
+}
+
+dod_rus.16 = {
+	type = country_event
+	placement = root
+	title = dod_rus.16.t
+	desc = dod_rus.16.d
+	flavor = dod_rus.16.f
+	event_image = { video = "unspecific_politicians_arguing" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+	duration = 3
+
+	trigger = {
+		has_variable = dod_murad_khan
+		NOT = { has_variable = dod_rus_seen_16 }
+	}
+
+	immediate = {
+		set_variable = dod_rus_seen_16
+	}
+
+	option = {
+		name = dod_rus.16.a
+		default_option = yes
+		add_modifier = { name = dod_raids_banned months = 120 }
+	}
+}
+
+dod_rus.17 = {
+	type = country_event
+	placement = root
+	title = dod_rus.17.t
+	desc = dod_rus.17.d
+	flavor = dod_rus.17.f
+	event_image = { video = "unspecific_military_parade" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+	duration = 3
+
+	trigger = {
+		has_variable = dod_murad_khan
+		is_at_war = no
+		exists = c:ASK
+		NOT = { has_variable = dod_rus_seen_17 }
+	}
+
+	immediate = {
+		set_variable = dod_rus_seen_17
+	}
+
+	option = {
+		name = dod_rus.17.a
+		default_option = yes
+		change_infamy = 10
+		create_diplomatic_play = {
+			target_country = c:ASK
+			type = dp_annex_war
+		}
+		ai_chance = { base = 60 }
+	}
+
+	option = {
+		name = dod_rus.17.b
+		ai_chance = { base = 40 }
+	}
+}
+
+dod_rus.18 = {
+	type = country_event
+	placement = root
+	title = dod_rus.18.t
+	desc = dod_rus.18.d
+	flavor = dod_rus.18.f
+	event_image = { video = "unspecific_military_parade" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+	duration = 3
+
+	trigger = {
+		has_variable = dod_murad_khan
+		is_at_war = no
+		NOT = { exists = c:ASK }
+		exists = c:NOG
+		NOT = { has_variable = dod_rus_seen_18 }
+	}
+
+	immediate = {
+		set_variable = dod_rus_seen_18
+	}
+
+	option = {
+		name = dod_rus.18.a
+		default_option = yes
+		change_infamy = 7
+		create_diplomatic_play = {
+			target_country = c:NOG
+			type = dp_annex_war
+		}
+		ai_chance = { base = 80 }
+	}
+
+	option = {
+		name = dod_rus.18.b
+		ai_chance = { base = 20 }
+	}
+}

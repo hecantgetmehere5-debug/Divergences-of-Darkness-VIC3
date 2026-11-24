@@ -1,0 +1,620 @@
+namespace = dod_ibr
+
+dod_ibr.2 = {
+	type = country_event
+	placement = root
+	title = dod_ibr.2.t
+	desc = dod_ibr.2.d
+	flavor = dod_ibr.2.f
+	event_image = { video = "unspecific_politicians_arguing" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	duration = 3
+
+	trigger = {
+		this = c:CAT
+	}
+
+	option = {
+		name = dod_ibr.2.a
+		default_option = yes
+		c:SPA = {
+			annex = root
+			add_primary_culture = cu:catalan
+		}
+		ai_chance = { base = 40 }
+	}
+
+	option = {
+		name = dod_ibr.2.b
+		c:SPA = { trigger_event = { id = dod_ibr.3 days = 7 } }
+		ai_chance = { base = 60 }
+	}
+}
+
+dod_ibr.3 = {
+	type = country_event
+	placement = root
+	title = dod_ibr.3.t
+	desc = dod_ibr.3.d
+	flavor = dod_ibr.3.f
+	event_image = { texture = "gfx/event_pictures/dod/treaty_of_petropolis.dds" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+	duration = 3
+
+	trigger = {
+		exists = c:CAT
+	}
+
+	option = {
+		name = dod_ibr.3.a
+		default_option = yes
+		create_diplomatic_play = {
+			target_country = c:CAT
+			type = dp_annex_war
+		}
+		ai_chance = { base = 70 }
+	}
+
+	option = {
+		name = dod_ibr.3.b
+		ai_chance = { base = 30 }
+	}
+}
+
+dod_ibr.4 = {
+	type = country_event
+	placement = root
+	title = dod_ibr.4.t
+	desc = dod_ibr.4.d
+	flavor = dod_ibr.4.f
+	event_image = { video = "unspecific_politicians_arguing" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	duration = 3
+
+	trigger = {
+		this = c:SPA
+		has_variable = dod_iberian_union
+		NOT = { exists = c:NAV }
+		any_state = {
+			state_region = { is_homeland = cu:basque }
+			NOT = { owner = root }
+		}
+		NOT = { has_variable = dod_ibr_seen_4 }
+	}
+
+	immediate = {
+		set_variable = dod_ibr_seen_4
+	}
+
+	option = {
+		name = dod_ibr.4.a
+		default_option = yes
+		change_infamy = 5
+		every_state = {
+			limit = {
+				state_region = { is_homeland = cu:basque }
+				NOT = { owner = root }
+			}
+			state_region = { add_claim = root }
+		}
+	}
+}
+
+dod_ibr.5 = {
+	type = country_event
+	placement = root
+	title = dod_ibr.5.t
+	desc = dod_ibr.5.d
+	flavor = dod_ibr.5.f
+	event_image = { video = "unspecific_signed_contract" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+	duration = 3
+
+	option = {
+		name = dod_ibr.5.a
+		default_option = yes
+		add_modifier = { name = dod_mancomunidad months = 240 }
+	}
+}
+
+dod_ibr.6 = {
+	type = country_event
+	placement = root
+	title = dod_ibr.6.t
+	desc = dod_ibr.6.d
+	flavor = dod_ibr.6.f
+	event_image = { video = "unspecific_politicians_arguing" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+	duration = 3
+
+	trigger = {
+		this = c:SPC
+		game_date >= 1910.1.1
+		is_at_war = no
+		NOT = { exists = c:CUB }
+		any_scope_state = { state_region = { is_homeland = cu:caribeno } }
+		NOT = { has_variable = dod_ibr_seen_6 }
+	}
+
+	immediate = {
+		set_variable = dod_ibr_seen_6
+	}
+
+	option = {
+		name = dod_ibr.6.a
+		default_option = yes
+		dod_release_homeland = { TAG = CUB CULTURE = caribeno }
+		if = {
+			limit = { exists = c:CUB }
+			create_diplomatic_pact = { country = c:CUB type = dominion }
+		}
+		ai_chance = { base = 50 }
+	}
+
+	option = {
+		name = dod_ibr.6.b
+		ai_chance = { base = 50 }
+	}
+}
+
+dod_ibr.7 = {
+	type = country_event
+	placement = root
+	title = dod_ibr.7.t
+	desc = dod_ibr.7.d
+	flavor = dod_ibr.7.f
+	event_image = { video = "unspecific_signed_contract" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+	duration = 3
+
+	trigger = {
+		exists = c:SPC
+	}
+
+	option = {
+		name = dod_ibr.7.a
+		default_option = yes
+		create_diplomatic_pact = { country = c:SPC type = alliance }
+		ai_chance = { base = 60 }
+	}
+
+	option = {
+		name = dod_ibr.7.b
+		ai_chance = { base = 30 }
+	}
+
+	option = {
+		name = dod_ibr.7.c
+		c:SPC = { trigger_event = { id = dod_ibr.8 days = 7 } }
+		ai_chance = { base = 10 }
+	}
+}
+
+dod_ibr.8 = {
+	type = country_event
+	placement = root
+	title = dod_ibr.8.t
+	desc = dod_ibr.8.d
+	flavor = dod_ibr.8.f
+	event_image = { video = "unspecific_military_parade" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+	duration = 3
+
+	option = {
+		name = dod_ibr.8.a
+		default_option = yes
+		random_country = {
+			limit = {
+				OR = {
+					this = c:ARA
+					this = c:ARI
+				}
+			}
+			save_scope_as = dod_aragon
+		}
+		if = {
+			limit = { exists = scope:dod_aragon }
+			create_diplomatic_play = {
+				target_country = scope:dod_aragon
+				type = dp_humiliation
+			}
+		}
+		ai_chance = { base = 80 }
+	}
+
+	option = {
+		name = dod_ibr.8.b
+		ai_chance = { base = 20 }
+	}
+}
+
+dod_ibr.10 = {
+	type = country_event
+	placement = root
+	title = dod_ibr.10.t
+	desc = dod_ibr.10.d
+	flavor = dod_ibr.10.f
+	event_image = { video = "unspecific_politicians_arguing" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	duration = 3
+
+	trigger = {
+		this = c:NAV
+		is_at_war = no
+		any_country = {
+			OR = {
+				this = c:ARA
+				this = c:ARI
+			}
+			root = { is_subject_of = prev }
+			country_rank < rank_value:great_power
+		}
+		NOT = { has_variable = dod_ibr_seen_10 }
+	}
+
+	immediate = {
+		set_variable = dod_ibr_seen_10
+	}
+
+	option = {
+		name = dod_ibr.10.a
+		trigger = { exists = c:DUA }
+		default_option = yes
+		c:DUA ?= { trigger_event = { id = dod_ibr.11 days = 14 } }
+		ai_chance = { base = 60 }
+	}
+
+	option = {
+		name = dod_ibr.10.b
+		trigger = { exists = c:SPA }
+		c:SPA ?= { trigger_event = { id = dod_ibr.13 days = 14 } }
+		ai_chance = { base = 30 }
+	}
+
+	option = {
+		name = dod_ibr.10.c
+		ai_chance = { base = 10 }
+	}
+}
+
+dod_ibr.11 = {
+	type = country_event
+	placement = root
+	title = dod_ibr.11.t
+	desc = dod_ibr.11.d
+	flavor = dod_ibr.11.f
+	event_image = { video = "unspecific_politicians_arguing" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	duration = 3
+
+	option = {
+		name = dod_ibr.11.a
+		default_option = yes
+		c:NAV = { trigger_event = { id = dod_ibr.12 days = 7 } }
+		ai_chance = { base = 70 }
+	}
+
+	option = {
+		name = dod_ibr.11.b
+		c:NAV = { trigger_event = { id = dod_ibr.14 days = 7 } }
+		ai_chance = { base = 30 }
+	}
+}
+
+dod_ibr.13 = {
+	type = country_event
+	placement = root
+	title = dod_ibr.13.t
+	desc = dod_ibr.13.d
+	flavor = dod_ibr.13.f
+	event_image = { video = "unspecific_politicians_arguing" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	duration = 3
+
+	option = {
+		name = dod_ibr.13.a
+		default_option = yes
+		c:NAV = { trigger_event = { id = dod_ibr.12 days = 7 } }
+		ai_chance = { base = 60 }
+	}
+
+	option = {
+		name = dod_ibr.13.b
+		ai_chance = { base = 40 }
+	}
+}
+
+dod_ibr.12 = {
+	type = country_event
+	placement = root
+	title = dod_ibr.12.t
+	desc = dod_ibr.12.d
+	flavor = dod_ibr.12.f
+	event_image = { video = "europenorthamerica_springtime_of_nations" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+	duration = 3
+
+	option = {
+		name = dod_ibr.12.a
+		default_option = yes
+		random_country = {
+			limit = {
+				OR = {
+					this = c:ARA
+					this = c:ARI
+				}
+				root = { is_subject_of = prev }
+			}
+			save_scope_as = dod_navarre_overlord
+		}
+		if = {
+			limit = { exists = scope:dod_navarre_overlord }
+			create_diplomatic_play = {
+				target_country = scope:dod_navarre_overlord
+				type = dp_independence
+			}
+		}
+	}
+}
+
+dod_ibr.14 = {
+	type = country_event
+	placement = root
+	title = dod_ibr.14.t
+	desc = dod_ibr.14.d
+	flavor = dod_ibr.14.f
+	event_image = { video = "unspecific_politicians_arguing" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	duration = 3
+
+	option = {
+		name = dod_ibr.14.a
+		trigger = { exists = c:SPA }
+		default_option = yes
+		c:SPA ?= { trigger_event = { id = dod_ibr.13 days = 14 } }
+		ai_chance = { base = 75 }
+	}
+
+	option = {
+		name = dod_ibr.14.b
+		ai_chance = { base = 25 }
+	}
+}
+
+dod_ibr.15 = {
+	type = country_event
+	placement = root
+	title = dod_ibr.15.t
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				desc = dod_ibr.15.d_main
+			}
+		}
+	}
+	flavor = dod_ibr.15.f
+	event_image = { video = "unspecific_politicians_arguing" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	trigger = {
+		this = c:NAV
+		is_at_war = no
+		game_date >= 1850.1.1
+		has_law = law_type:law_monarchy
+		NOT = { has_global_variable = dod_end_bourbon }
+	}
+
+	option = {
+		name = dod_ibr.15.a
+		trigger = { exists = c:DUA }
+		default_option = yes
+		set_global_variable = dod_end_bourbon
+		c:DUA = {
+			annex = root
+			trigger_event = { id = dod_ibr.16 days = 7 }
+		}
+		ai_chance = { base = 45 }
+	}
+
+	option = {
+		name = dod_ibr.15.b
+		trigger = { any_country = {
+	OR = {
+		this = c:ARA
+		this = c:ARI
+	}
+} }
+		set_global_variable = dod_end_bourbon
+		random_country = {
+			limit = {
+				OR = {
+					this = c:ARA
+					this = c:ARI
+				}
+			}
+			annex = root
+			trigger_event = { id = dod_ibr.17 days = 7 }
+		}
+		ai_chance = { base = 45 }
+	}
+
+	option = {
+		name = dod_ibr.15.c
+		set_global_variable = dod_end_bourbon
+		activate_law = law_type:law_parliamentary_republic
+		ai_chance = { base = 10 }
+	}
+}
+
+dod_ibr.16 = {
+	type = country_event
+	placement = root
+	title = dod_ibr.16.t
+	desc = dod_ibr.16.d
+	flavor = dod_ibr.16.f
+	event_image = { video = "unspecific_politicians_arguing" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	option = {
+		name = dod_ibr.16.a
+		default_option = yes
+		random_country = {
+			limit = {
+				OR = {
+					this = c:ARA
+					this = c:ARI
+				}
+			}
+			trigger_event = { id = dod_ibr.18 days = 14 }
+		}
+	}
+}
+
+dod_ibr.17 = {
+	type = country_event
+	placement = root
+	title = dod_ibr.17.t
+	desc = dod_ibr.17.d
+	flavor = dod_ibr.17.f
+	event_image = { video = "unspecific_politicians_arguing" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	option = {
+		name = dod_ibr.17.a
+		default_option = yes
+		c:DUA ?= { trigger_event = { id = dod_ibr.19 days = 14 } }
+	}
+}
+
+dod_ibr.18 = {
+	type = country_event
+	placement = root
+	title = dod_ibr.18.t
+	desc = dod_ibr.18.d
+	flavor = dod_ibr.18.f
+	event_image = { video = "unspecific_politicians_arguing" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	duration = 3
+
+	option = {
+		name = dod_ibr.18.a
+		default_option = yes
+		every_state = {
+			limit = {
+				state_region = { is_homeland = cu:basque }
+				NOT = { owner = root }
+			}
+			state_region = { add_claim = root }
+		}
+		c:DUA ?= { trigger_event = { id = dod_ibr.20 days = 14 } }
+		ai_chance = { base = 70 }
+	}
+
+	option = {
+		name = dod_ibr.18.b
+		ai_chance = { base = 30 }
+	}
+}
+
+dod_ibr.19 = {
+	type = country_event
+	placement = root
+	title = dod_ibr.19.t
+	desc = dod_ibr.19.d
+	flavor = dod_ibr.19.f
+	event_image = { video = "unspecific_politicians_arguing" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	duration = 3
+
+	option = {
+		name = dod_ibr.19.a
+		default_option = yes
+		every_state = {
+			limit = {
+				state_region = { is_homeland = cu:basque }
+				NOT = { owner = root }
+			}
+			state_region = { add_claim = root }
+		}
+		random_country = {
+			limit = {
+				OR = {
+					this = c:ARA
+					this = c:ARI
+				}
+			}
+			trigger_event = { id = dod_ibr.20 days = 14 }
+		}
+		ai_chance = { base = 70 }
+	}
+
+	option = {
+		name = dod_ibr.19.b
+		ai_chance = { base = 30 }
+	}
+}
+
+dod_ibr.20 = {
+	type = country_event
+	placement = root
+	title = dod_ibr.20.t
+	desc = dod_ibr.20.d
+	flavor = dod_ibr.20.f
+	event_image = { video = "unspecific_military_parade" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+	duration = 3
+
+	option = {
+		name = dod_ibr.20.a
+		default_option = yes
+		random_country = {
+			limit = {
+				OR = {
+					this = c:DUA
+					this = c:ARA
+					this = c:ARI
+				}
+				NOT = { this = root }
+				any_state = {
+					state_region = { is_homeland = cu:basque }
+					owner = root
+				}
+			}
+			save_scope_as = dod_navarre_rival
+		}
+		if = {
+			limit = { exists = scope:dod_navarre_rival }
+			create_diplomatic_play = {
+				target_country = scope:dod_navarre_rival
+				type = dp_humiliation
+			}
+		}
+		ai_chance = { base = 70 }
+	}
+
+	option = {
+		name = dod_ibr.20.b
+		ai_chance = { base = 30 }
+	}
+}

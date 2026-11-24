@@ -1,0 +1,23 @@
+# Baltic: modifiers
+
+dod_commonwealth_dissolved = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds"
+	country_prestige_add = -30
+}
+
+dod_lublin_renewed = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_scroll_positive.dds"
+	country_legitimacy_base_add = 10
+	country_authority_add = 50
+}
+
+dod_baltic_dominion = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
+	country_prestige_add = 30
+}
+
+dod_grand_duchy_reformed = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
+	country_prestige_add = 20
+	country_legitimacy_base_add = 10
+}

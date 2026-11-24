@@ -1,0 +1,90 @@
+# Holy Roman Empire storyline: scripted effects
+# All run in the scope of the answering prince.
+
+dod_hre_count_accept = {
+	if = {
+		limit = { dod_is_elbian_prince = yes }
+		c:HLR = { change_variable = { name = dod_elbe_accept add = 1 } }
+	}
+	else_if = {
+		limit = { dod_is_rhenish_prince = yes }
+		c:HLR = { change_variable = { name = dod_rhine_accept add = 1 } }
+	}
+	else = {
+		c:HLR = { change_variable = { name = dod_danube_accept add = 1 } }
+	}
+}
+
+dod_hre_count_refuse = {
+	set_variable = dod_refused_proclamation
+	if = {
+		limit = { dod_is_elbian_prince = yes }
+		c:HLR = { change_variable = { name = dod_elbe_refuse add = 1 } }
+	}
+	else_if = {
+		limit = { dod_is_rhenish_prince = yes }
+		c:HLR = { change_variable = { name = dod_rhine_refuse add = 1 } }
+	}
+	else = {
+		c:HLR = { change_variable = { name = dod_danube_refuse add = 1 } }
+	}
+}
+
+# Run in HLR scope. The refusing princes of one region unite under the
+# strongest of them, who takes the federation's tag.
+# Usage: dod_hre_form_federation = { REGION = elbian TAG = NGF }
+dod_hre_form_federation = {
+	ordered_country = {
+		limit = {
+			dod_is_$REGION$_prince = yes
+			has_variable = dod_refused_proclamation
+			NOT = { is_subject_of = c:HLR }
+		}
+		order_by = gdp
+		save_scope_as = dod_federation_leader
+	}
+	if = {
+		limit = { exists = scope:dod_federation_leader }
+		every_country = {
+			limit = {
+				dod_is_$REGION$_prince = yes
+				has_variable = dod_refused_proclamation
+				NOT = { is_subject_of = c:HLR }
+				NOT = { this = scope:dod_federation_leader }
+			}
+			scope:dod_federation_leader = { annex = prev }
+		}
+		scope:dod_federation_leader = {
+			if = {
+				limit = { NOT = { exists = c:$TAG$ } }
+				change_tag = $TAG$
+			}
+			set_variable = dod_rebel_federation
+		}
+		change_variable = { name = dod_federations add = 1 }
+	}
+	clear_saved_scope = dod_federation_leader
+}
+
+# Run in the scope of the country losing the land. Creates $TAG$ from every
+# state that is a homeland of $CULTURE$.
+# Usage: dod_release_homeland = { TAG = BOH CULTURE = czech }
+dod_release_homeland = {
+	random_scope_state = {
+		limit = { state_region = { is_homeland = cu:$CULTURE$ } }
+		save_scope_as = dod_release_seed
+	}
+	if = {
+		limit = { exists = scope:dod_release_seed }
+		create_country = {
+			tag = $TAG$
+			origin = root
+			state = scope:dod_release_seed
+		}
+		every_scope_state = {
+			limit = { state_region = { is_homeland = cu:$CULTURE$ } }
+			set_state_owner = c:$TAG$
+		}
+	}
+	clear_saved_scope = dod_release_seed
+}

@@ -1,0 +1,119 @@
+namespace = dod_brg
+
+dod_brg.1 = {
+	type = country_event
+	placement = root
+	title = dod_brg.1.t
+	desc = dod_brg.1.d
+	flavor = dod_brg.1.f
+	event_image = { video = "unspecific_politicians_arguing" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	duration = 3
+
+	trigger = {
+		this = c:BRG
+		is_at_war = no
+		exists = c:SAR
+		exists = c:DUA
+		c:DUA = { is_at_war = yes }
+		NOT = { has_variable = dod_savoy_handled }
+	}
+
+	immediate = {
+		set_variable = dod_savoy_handled
+	}
+
+	option = {
+		name = dod_brg.1.a
+		default_option = yes
+		change_infamy = 7
+		c:SAR = { trigger_event = { id = dod_brg.2 days = 7 } }
+		ai_chance = { base = 70 }
+	}
+
+	option = {
+		name = dod_brg.1.b
+		ai_chance = { base = 30 }
+	}
+}
+
+dod_brg.2 = {
+	type = country_event
+	placement = root
+	title = dod_brg.2.t
+	desc = dod_brg.2.d
+	flavor = dod_brg.2.f
+	event_image = { video = "unspecific_politicians_arguing" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	duration = 3
+
+	option = {
+		name = dod_brg.2.a
+		default_option = yes
+		c:BRG = { trigger_event = { id = dod_brg.3 days = 3 } }
+		ai_chance = { base = 70 }
+	}
+
+	option = {
+		name = dod_brg.2.b
+		c:BRG = { create_diplomatic_pact = { country = root type = protectorate } }
+		ai_chance = { base = 30 }
+	}
+}
+
+dod_brg.3 = {
+	type = country_event
+	placement = root
+	title = dod_brg.3.t
+	desc = dod_brg.3.d
+	flavor = dod_brg.3.f
+	event_image = { video = "unspecific_military_parade" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+	duration = 3
+
+	option = {
+		name = dod_brg.3.a
+		default_option = yes
+		create_diplomatic_play = {
+			target_country = c:SAR
+			type = dp_make_protectorate
+		}
+		ai_chance = { base = 90 }
+	}
+
+	option = {
+		name = dod_brg.3.b
+		ai_chance = { base = 10 }
+	}
+}
+
+dod_brg.5 = {
+	type = country_event
+	placement = root
+	title = dod_brg.5.t
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				desc = dod_brg.5.d_spain
+				trigger = { this = c:SPA }
+			}
+			triggered_desc = {
+				desc = dod_brg.5.d_other
+			}
+		}
+	}
+	flavor = dod_brg.5.f
+	event_image = { video = "unspecific_signed_contract" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	duration = 3
+
+	option = {
+		name = dod_brg.5.a
+		default_option = yes
+		add_modifier = { name = dod_selon_abolished months = 120 }
+	}
+}

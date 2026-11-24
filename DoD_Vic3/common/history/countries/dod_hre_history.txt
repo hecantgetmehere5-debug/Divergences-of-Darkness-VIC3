@@ -1,0 +1,35 @@
+COUNTRIES = {
+	c:HLR ?= {
+		add_journal_entry = { type = je_dod_prague_proclamation }
+	}
+	c:CAE ?= {
+		add_journal_entry = { type = je_dod_elbian_unity }
+	}
+	c:DUA ?= {
+		add_journal_entry = { type = je_dod_anglois_dilemma }
+	}
+	c:VEN ?= {
+		add_journal_entry = { type = je_dod_greek_question }
+	}
+	c:TUR ?= {
+		add_journal_entry = { type = je_dod_ottoman_civil_war }
+	}
+	c:AFS ?= {
+		add_journal_entry = { type = je_dod_timurtash_restoration }
+	}
+	c:CLM ?= {
+		add_journal_entry = { type = je_dod_colombian_independence }
+	}
+	c:PLA ?= {
+		if = {
+			limit = { NOT = { has_law = law_type:law_slavery_banned } }
+			add_journal_entry = { type = je_dod_plantagenian_slavery }
+		}
+	}
+	c:NAN ?= {
+		add_journal_entry = { type = je_dod_beornian_communion }
+	}
+	c:SAR ?= {
+		add_journal_entry = { type = je_dod_savoyard_succession }
+	}
+}

@@ -1,0 +1,270 @@
+namespace = dod_rail
+
+dod_rail.1 = {
+	type = country_event
+	placement = root
+	title = dod_rail.1.t
+	desc = dod_rail.1.d
+	flavor = dod_rail.1.f
+	event_image = { video = "unspecific_military_parade" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+	duration = 3
+
+	trigger = {
+		this = c:SPA
+		exists = c:CLM
+		game_date < 1837.1.1
+		is_at_war = no
+		NOT = { has_global_variable = dod_rail_spain }
+	}
+
+	immediate = {
+		set_global_variable = dod_rail_spain
+	}
+
+	option = {
+		name = dod_rail.1.a
+		default_option = yes
+		create_diplomatic_play = {
+			target_country = c:CLM
+			type = dp_annex_war
+		}
+		ai_chance = { base = 90 }
+	}
+
+	option = {
+		name = dod_rail.1.b
+		ai_chance = { base = 10 }
+	}
+}
+
+dod_rail.2 = {
+	type = country_event
+	placement = root
+	title = dod_rail.2.t
+	desc = dod_rail.2.d
+	flavor = dod_rail.2.f
+	event_image = { video = "unspecific_military_parade" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+	duration = 3
+
+	trigger = {
+		this = c:TUR
+		game_date < 1837.1.1
+		is_at_war = no
+		NOT = { has_global_variable = dod_rail_ottoman }
+	}
+
+	immediate = {
+		set_global_variable = dod_rail_ottoman
+	}
+
+	option = {
+		name = dod_rail.2.a
+		default_option = yes
+		if = {
+			limit = { exists = c:MAC }
+			create_diplomatic_play = {
+				target_country = c:MAC
+				type = dp_annex_war
+			}
+		}
+		set_variable = dod_rail_ottoman_next
+		ai_chance = { base = 90 }
+	}
+
+	option = {
+		name = dod_rail.2.b
+		set_variable = dod_rail_ottoman_next
+		ai_chance = { base = 10 }
+	}
+}
+
+dod_rail.3 = {
+	type = country_event
+	placement = root
+	title = dod_rail.3.t
+	desc = dod_rail.3.d
+	flavor = dod_rail.3.f
+	event_image = { video = "unspecific_military_parade" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+	duration = 3
+
+	trigger = {
+		this = c:TUR
+		has_variable = dod_rail_ottoman_next
+		is_at_war = no
+		exists = c:EGY
+		NOT = { has_variable = dod_rail_egypt }
+	}
+
+	immediate = {
+		set_variable = dod_rail_egypt
+	}
+
+	option = {
+		name = dod_rail.3.a
+		default_option = yes
+		create_diplomatic_play = {
+			target_country = c:EGY
+			type = dp_annex_war
+		}
+		ai_chance = { base = 80 }
+	}
+
+	option = {
+		name = dod_rail.3.b
+		ai_chance = { base = 20 }
+	}
+}
+
+dod_rail.4 = {
+	type = country_event
+	placement = root
+	title = dod_rail.4.t
+	desc = dod_rail.4.d
+	flavor = dod_rail.4.f
+	event_image = { video = "unspecific_military_parade" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+	duration = 3
+
+	trigger = {
+		this = c:TUR
+		has_variable = dod_rail_egypt
+		is_at_war = no
+		exists = c:ALB
+		NOT = { has_variable = dod_rail_albania }
+	}
+
+	immediate = {
+		set_variable = dod_rail_albania
+	}
+
+	option = {
+		name = dod_rail.4.a
+		default_option = yes
+		create_diplomatic_play = {
+			target_country = c:ALB
+			type = dp_annex_war
+		}
+		ai_chance = { base = 80 }
+	}
+
+	option = {
+		name = dod_rail.4.b
+		ai_chance = { base = 20 }
+	}
+}
+
+dod_rail.5 = {
+	type = country_event
+	placement = root
+	title = dod_rail.5.t
+	desc = dod_rail.5.d
+	flavor = dod_rail.5.f
+	event_image = { video = "unspecific_military_parade" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+	duration = 3
+
+	trigger = {
+		this = c:TUN
+		exists = c:EGY
+		game_date < 1837.1.1
+		is_at_war = no
+		NOT = { has_global_variable = dod_rail_hafsid }
+	}
+
+	immediate = {
+		set_global_variable = dod_rail_hafsid
+	}
+
+	option = {
+		name = dod_rail.5.a
+		default_option = yes
+		create_diplomatic_play = {
+			target_country = c:EGY
+			type = dp_humiliation
+		}
+		ai_chance = { base = 80 }
+	}
+
+	option = {
+		name = dod_rail.5.b
+		ai_chance = { base = 20 }
+	}
+}
+
+dod_rail.10 = {
+	type = country_event
+	placement = root
+	title = dod_rail.10.t
+	desc = dod_rail.10.d
+	flavor = dod_rail.10.f
+	event_image = { video = "unspecific_politicians_arguing" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	duration = 3
+
+	trigger = {
+		this = c:HLR
+		game_date >= 1837.1.1
+		has_journal_entry = je_dod_prague_proclamation
+		NOT = { has_variable = dod_rail_imperial_lands }
+	}
+
+	immediate = {
+		set_variable = dod_rail_imperial_lands
+	}
+
+	option = {
+		name = dod_rail.10.a
+		default_option = yes
+		change_infamy = 5
+		every_state = {
+			limit = {
+				state_region = {
+					OR = {
+						is_homeland = cu:north_german
+						is_homeland = cu:rheinish
+					}
+				}
+				owner = {
+					OR = {
+						this = c:SCA
+						this = c:BRG
+					}
+				}
+			}
+			state_region = { add_claim = root }
+		}
+		ai_chance = { base = 80 }
+	}
+
+	option = {
+		name = dod_rail.10.b
+		ai_chance = { base = 20 }
+	}
+}
+
+dod_rail.11 = {
+	type = country_event
+	placement = root
+	title = dod_rail.11.t
+	desc = dod_rail.11.d
+	flavor = dod_rail.11.f
+	event_image = { video = "unspecific_politicians_arguing" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	option = {
+		name = dod_rail.11.a
+		default_option = yes
+		add_modifier = { name = dod_princes_endure months = 120 }
+	}
+}

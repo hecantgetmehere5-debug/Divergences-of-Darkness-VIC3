@@ -1,0 +1,41 @@
+# The Elbian Confederation: a liberal union of Bohemians and Elbians,
+# founded by a Bohemian-led state that holds the North German lands.
+dod_form_elbian_confederation = {
+	is_shown = {
+		OR = {
+			this = c:HLR
+			this = c:BOH
+		}
+		country_has_primary_culture = cu:czech
+		NOT = { exists = c:CAE }
+		NOT = { has_global_variable = dod_cae_formed }
+	}
+
+	possible = {
+		is_at_war = no
+		NOT = { dod_is_authoritarian = yes }
+		any_scope_state = {
+			count >= 4
+			dod_is_elbian_state = yes
+		}
+	}
+
+	when_taken = {
+		set_global_variable = dod_cae_formed
+		every_country = {
+			limit = {
+				country_has_primary_culture = cu:north_german
+				is_subject_of = root
+			}
+			root = { annex = prev }
+		}
+		add_primary_culture = cu:north_german
+		change_tag = CAE
+		add_modifier = { name = dod_elbian_confederation_founded months = 120 }
+		add_journal_entry = { type = je_dod_elbian_unity }
+	}
+
+	ai_chance = {
+		base = 50
+	}
+}

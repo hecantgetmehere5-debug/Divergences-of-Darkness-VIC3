@@ -1,0 +1,497 @@
+# East, Southeast & South Asia
+
+dod_seoul_treaty = {
+	is_shown = {
+		this = c:JAP
+		exists = c:KOR
+		NOT = { has_variable = dod_seoul_treaty }
+	}
+	possible = {
+		is_at_war = no
+		country_rank >= rank_value:major_power
+		c:KOR = { NOT = { is_subject_of = root } }
+	}
+	when_taken = {
+		set_variable = dod_seoul_treaty
+		c:KOR = { trigger_event = { id = dod_asi.1 days = 7 } }
+	}
+	ai_chance = { base = 60 }
+}
+
+dod_hawaii_offer = {
+	is_shown = {
+		this = c:JAP
+		exists = c:HAW
+		NOT = { has_variable = dod_hawaii_offer }
+	}
+	possible = {
+		is_at_war = no
+		country_rank >= rank_value:major_power
+	}
+	when_taken = {
+		set_variable = dod_hawaii_offer
+		c:HAW = { trigger_event = { id = dod_asi.4 days = 7 } }
+	}
+	ai_chance = { base = 50 }
+}
+
+dod_ainu_protectorate = {
+	is_shown = {
+		this = c:JAP
+		any_country = {
+			country_has_primary_culture = cu:ainu
+			is_subject_of = root
+		}
+	}
+	possible = {
+		is_at_war = no
+	}
+	when_taken = {
+		every_country = {
+			limit = {
+				country_has_primary_culture = cu:ainu
+				is_subject_of = root
+			}
+			root = { annex = prev }
+		}
+	}
+	ai_chance = { base = 70 }
+}
+
+dod_integrate_kaiganese = {
+	is_shown = {
+		this = c:JAP
+		NOT = { country_has_primary_culture = cu:kaiganese }
+	}
+	possible = {
+		any_scope_state = { state_region = { is_homeland = cu:kaiganese } }
+	}
+	when_taken = {
+		add_primary_culture = cu:kaiganese
+	}
+	ai_chance = { base = 70 }
+}
+
+dod_unequal_treaty_decision = {
+	is_shown = {
+		country_rank >= rank_value:great_power
+		NOT = { OR = { 	this = c:CHI 	this = c:MIG 	this = c:TNG } }
+		NOT = { has_variable = dod_unequal_treaty_sent }
+	}
+	possible = {
+		is_at_war = no
+		any_country = {
+			OR = {
+				this = c:CHI
+				this = c:MIG
+				this = c:TNG
+			}
+			NOT = { has_variable = dod_treaty_demander }
+			NOT = { has_modifier = dod_unequal_treaty }
+		}
+	}
+	when_taken = {
+		set_variable = dod_unequal_treaty_sent
+		random_country = {
+			limit = {
+				OR = {
+					this = c:CHI
+					this = c:MIG
+					this = c:TNG
+				}
+				NOT = { has_variable = dod_treaty_demander }
+				NOT = { has_modifier = dod_unequal_treaty }
+			}
+			set_variable = { name = dod_treaty_demander value = root }
+			set_variable = dod_treaty_target
+			trigger_event = { id = dod_asi.10 days = 7 }
+		}
+	}
+	ai_chance = { base = 30 }
+}
+
+dod_zhourao_destiny = {
+	is_shown = {
+		this = c:GAN
+		NOT = { has_variable = dod_zhourao_destiny }
+	}
+	possible = {
+		is_at_war = no
+	}
+	when_taken = {
+		set_variable = dod_zhourao_destiny
+		every_state = {
+			limit = {
+				NOT = { owner = root }
+				any_neighbouring_state = { owner = root }
+				owner = { country_rank < rank_value:major_power }
+			}
+			state_region = { add_claim = root }
+		}
+	}
+	ai_chance = { base = 50 }
+}
+
+dod_zhourao_tributaries = {
+	is_shown = {
+		this = c:GAN
+		any_country = { is_subject_of = root }
+	}
+	possible = {
+		is_at_war = no
+	}
+	when_taken = {
+		every_country = {
+			limit = { is_subject_of = root }
+			root = { annex = prev }
+		}
+	}
+	ai_chance = { base = 40 }
+}
+
+dod_indochina_old_borders = {
+	is_shown = {
+		this = c:DAI
+		NOT = { has_variable = dod_dai_borders }
+	}
+	possible = {
+		is_at_war = no
+	}
+	when_taken = {
+		set_variable = dod_dai_borders
+		change_infamy = 10
+		every_state = {
+			limit = {
+				state_region = {
+					OR = {
+						is_homeland = cu:khmer
+						is_homeland = cu:lao
+						is_homeland = cu:champa
+					}
+				}
+				NOT = { owner = root }
+			}
+			state_region = { add_claim = root }
+		}
+	}
+	ai_chance = { base = 50 }
+}
+
+dod_khmer_peninsula = {
+	is_shown = {
+		this = c:SIA
+		NOT = { has_variable = dod_sia_peninsula }
+	}
+	possible = {
+		is_at_war = no
+	}
+	when_taken = {
+		set_variable = dod_sia_peninsula
+		change_infamy = 10
+		every_state = {
+			limit = {
+				state_region = {
+					OR = {
+						is_homeland = cu:khmer
+						is_homeland = cu:lao
+						is_homeland = cu:malay
+					}
+				}
+				NOT = { owner = root }
+			}
+			state_region = { add_claim = root }
+		}
+	}
+	ai_chance = { base = 50 }
+}
+
+dod_form_nusantara = {
+	is_shown = {
+		OR = {
+			country_has_primary_culture = cu:javan
+			country_has_primary_culture = cu:malay
+			country_has_primary_culture = cu:balinese
+		}
+		NOT = { exists = c:NUS }
+	}
+	possible = {
+		is_at_war = no
+		any_scope_state = {
+			count >= 4
+			state_region = {
+				OR = {
+					is_homeland = cu:javan
+					is_homeland = cu:malay
+					is_homeland = cu:balinese
+					is_homeland = cu:acehnese
+					is_homeland = cu:moluccan
+				}
+			}
+		}
+	}
+	when_taken = {
+		add_primary_culture = cu:javan
+		add_primary_culture = cu:malay
+		add_primary_culture = cu:balinese
+		change_tag = NUS
+	}
+	ai_chance = { base = 100 }
+}
+
+dod_greater_nusantara = {
+	is_shown = {
+		this = c:NUS
+		NOT = { has_variable = dod_greater_nusantara }
+	}
+	possible = {
+		is_at_war = no
+		country_rank >= rank_value:major_power
+	}
+	when_taken = {
+		set_variable = dod_greater_nusantara
+		change_infamy = 10
+		add_modifier = { name = dod_nusantara_ascendant months = 120 }
+		every_state = {
+			limit = {
+				state_region = {
+					OR = {
+						is_homeland = cu:javan
+						is_homeland = cu:malay
+						is_homeland = cu:balinese
+						is_homeland = cu:acehnese
+						is_homeland = cu:moluccan
+						is_homeland = cu:filipino
+					}
+				}
+				NOT = { owner = root }
+			}
+			state_region = { add_claim = root }
+		}
+	}
+	ai_chance = { base = 50 }
+}
+
+dod_form_dravida = {
+	is_shown = {
+		OR = {
+			country_has_primary_culture = cu:tamil
+			country_has_primary_culture = cu:telegu
+			country_has_primary_culture = cu:kannada
+			country_has_primary_culture = cu:malayalam
+		}
+		NOT = { exists = c:DRA }
+	}
+	possible = {
+		is_at_war = no
+		any_scope_state = {
+			count >= 4
+			state_region = {
+				OR = {
+					is_homeland = cu:tamil
+					is_homeland = cu:telegu
+					is_homeland = cu:kannada
+					is_homeland = cu:malayalam
+				}
+			}
+		}
+	}
+	when_taken = {
+		add_primary_culture = cu:tamil
+		add_primary_culture = cu:telegu
+		add_primary_culture = cu:kannada
+		add_primary_culture = cu:malayalam
+		change_tag = DRA
+	}
+	ai_chance = { base = 100 }
+}
+
+dod_form_bharata = {
+	is_shown = {
+		OR = {
+			country_has_primary_culture = cu:avadhi
+			country_has_primary_culture = cu:bihari
+			country_has_primary_culture = cu:bengali
+			country_has_primary_culture = cu:kanauji
+			country_has_primary_culture = cu:marathi
+			country_has_primary_culture = cu:gujarati
+			country_has_primary_culture = cu:oriya
+		}
+		NOT = { exists = c:BHA }
+	}
+	possible = {
+		is_at_war = no
+		any_scope_state = {
+			count >= 6
+			state_region = {
+				OR = {
+					is_homeland = cu:avadhi
+					is_homeland = cu:bihari
+					is_homeland = cu:bengali
+					is_homeland = cu:kanauji
+					is_homeland = cu:marathi
+					is_homeland = cu:gujarati
+					is_homeland = cu:oriya
+				}
+			}
+		}
+	}
+	when_taken = {
+		add_primary_culture = cu:avadhi
+		add_primary_culture = cu:bihari
+		add_primary_culture = cu:bengali
+		add_primary_culture = cu:kanauji
+		add_primary_culture = cu:marathi
+		add_primary_culture = cu:gujarati
+		add_primary_culture = cu:oriya
+		change_tag = BHA
+	}
+	ai_chance = { base = 100 }
+}
+
+dod_form_rajputana = {
+	is_shown = {
+		country_has_primary_culture = cu:rajput
+		NOT = { exists = c:RAJ }
+	}
+	possible = {
+		is_at_war = no
+		any_scope_state = {
+			count >= 2
+			state_region = {
+				is_homeland = cu:rajput
+			}
+		}
+	}
+	when_taken = {
+		change_tag = RAJ
+	}
+	ai_chance = { base = 100 }
+}
+
+dod_gate_of_india = {
+	is_shown = {
+		this = c:AFG
+		NOT = { has_variable = dod_gate_of_india }
+	}
+	possible = {
+		is_at_war = no
+		country_rank >= rank_value:major_power
+	}
+	when_taken = {
+		set_variable = dod_gate_of_india
+		change_infamy = 15
+		every_state = {
+			limit = {
+				state_region = {
+					OR = {
+						is_homeland = cu:panjabi
+						is_homeland = cu:sindi
+						is_homeland = cu:kashmiri
+					}
+				}
+				NOT = { owner = root }
+			}
+			state_region = { add_claim = root }
+		}
+	}
+	ai_chance = { base = 40 }
+}
+
+dod_organize_christiania = {
+	is_shown = {
+		NOT = { exists = c:CHR }
+		any_scope_state = { state_region = { is_homeland = cu:filipino } }
+		NOT = { country_has_primary_culture = cu:filipino }
+	}
+	possible = {
+		is_at_war = no
+		game_date >= 1870.1.1
+	}
+	when_taken = {
+		dod_release_homeland = { TAG = CHR CULTURE = filipino }
+		if = {
+			limit = { exists = c:CHR }
+			create_diplomatic_pact = { country = c:CHR type = dominion }
+		}
+	}
+	ai_chance = { base = 20 }
+}
+
+dod_form_india = {
+	is_shown = {
+		OR = {
+			country_has_primary_culture = cu:avadhi
+			country_has_primary_culture = cu:bihari
+			country_has_primary_culture = cu:bengali
+			country_has_primary_culture = cu:kanauji
+			country_has_primary_culture = cu:marathi
+			country_has_primary_culture = cu:gujarati
+			country_has_primary_culture = cu:oriya
+			country_has_primary_culture = cu:rajput
+			country_has_primary_culture = cu:panjabi
+			country_has_primary_culture = cu:sindi
+			country_has_primary_culture = cu:tamil
+			country_has_primary_culture = cu:telegu
+			country_has_primary_culture = cu:kannada
+			country_has_primary_culture = cu:malayalam
+			country_has_primary_culture = cu:assamese
+			country_has_primary_culture = cu:nepali
+		}
+		NOT = { exists = c:HND }
+	}
+	possible = {
+		is_at_war = no
+		country_rank >= rank_value:major_power
+		any_scope_state = {
+			count >= 10
+			state_region = {
+				OR = {
+					is_homeland = cu:avadhi
+					is_homeland = cu:bihari
+					is_homeland = cu:bengali
+					is_homeland = cu:kanauji
+					is_homeland = cu:marathi
+					is_homeland = cu:gujarati
+					is_homeland = cu:oriya
+					is_homeland = cu:rajput
+					is_homeland = cu:panjabi
+					is_homeland = cu:sindi
+					is_homeland = cu:tamil
+					is_homeland = cu:telegu
+					is_homeland = cu:kannada
+					is_homeland = cu:malayalam
+					is_homeland = cu:assamese
+					is_homeland = cu:nepali
+				}
+			}
+		}
+	}
+	when_taken = {
+		every_country = {
+			limit = {
+				is_subject_of = root
+				OR = {
+					country_has_primary_culture = cu:avadhi
+					country_has_primary_culture = cu:bihari
+					country_has_primary_culture = cu:bengali
+					country_has_primary_culture = cu:kanauji
+					country_has_primary_culture = cu:marathi
+					country_has_primary_culture = cu:gujarati
+					country_has_primary_culture = cu:oriya
+					country_has_primary_culture = cu:rajput
+					country_has_primary_culture = cu:panjabi
+					country_has_primary_culture = cu:sindi
+					country_has_primary_culture = cu:tamil
+					country_has_primary_culture = cu:telegu
+					country_has_primary_culture = cu:kannada
+					country_has_primary_culture = cu:malayalam
+					country_has_primary_culture = cu:assamese
+					country_has_primary_culture = cu:nepali
+				}
+			}
+			root = { annex = prev }
+		}
+		change_tag = HND
+	}
+	ai_chance = { base = 100 }
+}

@@ -1,0 +1,72 @@
+# Archaeology: exploration-style excavation journal entry
+# Works like vanilla exploration journal entries: a progress bar, monthly
+# setbacks and finds, and a great discovery at the end.
+
+je_dod_excavation = {
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	group = je_group_historical_content
+
+	immediate = {
+		set_variable = { name = dod_dig_progress value = 0 }
+	}
+
+	current_value = {
+		value = root.var:dod_dig_progress
+	}
+	goal_add_value = {
+		add = 12
+	}
+	progressbar = yes
+
+	on_monthly_pulse = {
+		effect = {
+			random_list = {
+				60 = { change_variable = { name = dod_dig_progress add = 1 } }
+				40 = { }
+			}
+		}
+		random_events = {
+			70 = 0
+			8 = dod_arc.10
+			6 = dod_arc.11
+			4 = dod_arc.12
+			4 = dod_arc.13
+			3 = dod_arc.14
+			5 = dod_arc.15
+			4 = dod_arc.16
+		}
+	}
+
+	complete = {
+		var:dod_dig_progress >= 12
+	}
+
+	on_complete = {
+		if = {
+			limit = { var:dod_dig_site = 1 }
+			set_global_variable = dod_site_found_1
+		}
+		if = {
+			limit = { var:dod_dig_site = 2 }
+			set_global_variable = dod_site_found_2
+		}
+		if = {
+			limit = { var:dod_dig_site = 3 }
+			set_global_variable = dod_site_found_3
+		}
+		if = {
+			limit = { var:dod_dig_site = 4 }
+			set_global_variable = dod_site_found_4
+		}
+		if = {
+			limit = { var:dod_dig_site = 5 }
+			set_global_variable = dod_site_found_5
+		}
+		trigger_event = { id = dod_arc.20 }
+	}
+
+	timeout = 3650
+
+	should_be_pinned_by_default = yes
+	weight = 500
+}

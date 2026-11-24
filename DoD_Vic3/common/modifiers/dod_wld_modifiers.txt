@@ -1,0 +1,183 @@
+# World flavour: modifiers
+
+dod_ig_pleased = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_scroll_positive.dds"
+	interest_group_approval_add = 2
+}
+
+dod_ig_angered = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_scroll_negative.dds"
+	interest_group_approval_add = -2
+}
+
+dod_nobel_prize = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_book_positive.dds"
+	country_prestige_add = 15
+}
+
+dod_olympic_host = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
+	country_prestige_add = 25
+}
+
+dod_olympic_glory = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
+	country_prestige_add = 10
+}
+
+dod_world_fair = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
+	country_prestige_add = 30
+}
+
+dod_sporting_craze = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
+	country_legitimacy_base_add = 3
+}
+
+dod_royal_wedding = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_scroll_positive.dds"
+	country_prestige_add = 10
+}
+
+dod_popular_wedding = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_scroll_positive.dds"
+	country_legitimacy_base_add = 5
+}
+
+dod_heir_born = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_scroll_positive.dds"
+	country_legitimacy_base_add = 5
+}
+
+dod_monarchy_questioned = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_scroll_negative.dds"
+	country_legitimacy_base_add = -5
+}
+
+dod_suffrage_sympathy = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_scroll_positive.dds"
+	country_legitimacy_base_add = 3
+}
+
+dod_women_education = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_book_positive.dds"
+	country_prestige_add = 5
+}
+
+dod_drunken_riots = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_fist_negative.dds"
+	country_legitimacy_base_add = -3
+}
+
+dod_prohibition = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_scroll_negative.dds"
+	country_legitimacy_base_add = -5
+	country_authority_add = 25
+}
+
+dod_bootleggers = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_fist_negative.dds"
+	country_legitimacy_base_add = -3
+}
+
+dod_springtime_concessions = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_scroll_positive.dds"
+	country_legitimacy_base_add = 10
+	country_authority_add = -25
+}
+
+dod_famine_relief = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_scroll_positive.dds"
+	state_mortality_mult = 0.1
+}
+
+dod_famine = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_scroll_negative.dds"
+	state_mortality_mult = 0.3
+}
+
+dod_minority_concessions = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_scroll_positive.dds"
+	country_legitimacy_base_add = 3
+}
+
+dod_minority_unrest = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_fist_negative.dds"
+	country_legitimacy_base_add = -5
+}
+
+dod_police_expanded = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_scroll_positive.dds"
+	country_authority_add = 25
+}
+
+dod_medical_breakthrough = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_book_positive.dds"
+	country_prestige_add = 10
+}
+
+dod_immigrant_friendly = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_scroll_positive.dds"
+	country_legitimacy_base_add = 3
+}
+
+dod_immigrant_hostile = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_scroll_negative.dds"
+	country_prestige_add = -5
+}
+
+dod_foreign_cuisine = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_scroll_positive.dds"
+	country_prestige_add = 3
+}
+
+dod_cholera = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_scroll_negative.dds"
+	state_mortality_mult = 0.2
+}
+
+dod_tuberculosis = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_scroll_negative.dds"
+	state_mortality_mult = 0.1
+}
+
+dod_flu = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_scroll_negative.dds"
+	state_mortality_mult = 0.25
+}
+
+dod_natural_disaster = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_scroll_negative.dds"
+	state_mortality_mult = 0.2
+}
+
+dod_tunguska = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_book_positive.dds"
+	country_prestige_add = 5
+}
+
+dod_air_disaster = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds"
+	country_prestige_add = -5
+}
+
+dod_market_crash = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_scroll_negative.dds"
+	country_legitimacy_base_add = -10
+}
+
+dod_economic_boom = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_scroll_positive.dds"
+	country_legitimacy_base_add = 5
+}
+
+dod_corruption_scandal = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_scroll_negative.dds"
+	country_legitimacy_base_add = -5
+}
+
+dod_monument_lost = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds"
+	country_prestige_add = -10
+}

@@ -1,0 +1,41 @@
+# Dual Monarchy & Britain: modifiers
+
+dod_anglois_censorship = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_fist_negative.dds"
+	interest_group_approval_add = -2
+}
+
+dod_anglois_dream_broken = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds"
+	country_prestige_add = -50
+	country_legitimacy_base_add = -10
+}
+
+dod_angevin_legacy_ends = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds"
+	country_prestige_add = -100
+	country_legitimacy_base_add = -20
+}
+
+dod_realm_pacified = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
+	country_prestige_add = 30
+	country_authority_add = 50
+}
+
+dod_crown_prevails = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
+	country_prestige_add = 100
+	country_legitimacy_base_add = 15
+}
+
+dod_selon_abolished = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_scroll_positive.dds"
+	country_prestige_add = 25
+}
+
+dod_act_of_union_mod = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
+	country_prestige_add = 30
+	country_legitimacy_base_add = 10
+}

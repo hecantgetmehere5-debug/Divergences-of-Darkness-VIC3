@@ -1,0 +1,390 @@
+# Dual Monarchy, Britain, Beornia, Batavia, Burgundy & the Treaty of Selon
+
+# ---------------------------------------------------------------------
+# Dual Monarchy: integrating minorities once the Anglois ideal is accepted
+# ---------------------------------------------------------------------
+
+dod_integrate_provencal = {
+	is_shown = {
+		this = c:DUA
+		has_variable = dod_anglois_accepted
+		NOT = { country_has_primary_culture = cu:provencal }
+	}
+	possible = {
+		NOT = { exists = c:PRV }
+		NOT = { exists = c:OCC }
+		any_scope_state = { dod_is_provencal_state = yes }
+	}
+	when_taken = {
+		add_primary_culture = cu:provencal
+	}
+	ai_chance = { base = 50 }
+}
+
+dod_integrate_irish = {
+	is_shown = {
+		this = c:DUA
+		has_variable = dod_anglois_accepted
+		NOT = { country_has_primary_culture = cu:irish }
+	}
+	possible = {
+		NOT = { exists = c:IRE }
+		any_scope_state = { dod_is_irish_state = yes }
+	}
+	when_taken = {
+		add_primary_culture = cu:irish
+	}
+	ai_chance = { base = 50 }
+}
+
+dod_integrate_scottish = {
+	is_shown = {
+		this = c:DUA
+		has_variable = dod_anglois_accepted
+		NOT = { country_has_primary_culture = cu:scottish }
+	}
+	possible = {
+		NOT = {
+			any_state = {
+				dod_is_scottish_state = yes
+				NOT = { owner = root }
+			}
+		}
+		any_scope_state = { dod_is_scottish_state = yes }
+	}
+	when_taken = {
+		add_primary_culture = cu:scottish
+	}
+	ai_chance = { base = 50 }
+}
+
+dod_integrate_basque = {
+	is_shown = {
+		this = c:DUA
+		has_variable = dod_anglois_accepted
+		NOT = { country_has_primary_culture = cu:basque }
+	}
+	possible = {
+		any_scope_state = { state_region = { is_homeland = cu:basque } }
+	}
+	when_taken = {
+		add_primary_culture = cu:basque
+	}
+	ai_chance = { base = 50 }
+}
+
+# ---------------------------------------------------------------------
+# Dual Monarchy: reclaiming lost lands
+# ---------------------------------------------------------------------
+
+dod_reclaim_england = {
+	is_shown = {
+		this = c:DUA
+		exists = c:ENL
+		NOT = { has_variable = dod_reclaimed_england }
+	}
+	possible = {
+		is_at_war = no
+		country_rank >= rank_value:great_power
+		c:ENL = { country_rank < rank_value:great_power }
+	}
+	when_taken = {
+		set_variable = dod_reclaimed_england
+		change_infamy = 20
+		every_state = {
+			limit = {
+				owner = c:ENL
+				dod_is_english_state = yes
+			}
+			state_region = { add_claim = root }
+		}
+	}
+	ai_chance = { base = 50 }
+}
+
+dod_reclaim_occitania = {
+	is_shown = {
+		this = c:DUA
+		exists = c:OCC
+		NOT = { has_variable = dod_reclaimed_occitania }
+	}
+	possible = {
+		is_at_war = no
+		country_rank >= rank_value:great_power
+		c:OCC = { country_rank < rank_value:great_power }
+	}
+	when_taken = {
+		set_variable = dod_reclaimed_occitania
+		change_infamy = 20
+		every_state = {
+			limit = {
+				owner = c:OCC
+				dod_is_provencal_state = yes
+			}
+			state_region = { add_claim = root }
+		}
+	}
+	ai_chance = { base = 50 }
+}
+
+dod_reclaim_ireland = {
+	is_shown = {
+		this = c:DUA
+		exists = c:IRE
+		NOT = { has_variable = dod_reclaimed_ireland }
+	}
+	possible = {
+		is_at_war = no
+		country_rank >= rank_value:great_power
+		c:IRE = { NOT = { is_subject_of = root } }
+	}
+	when_taken = {
+		set_variable = dod_reclaimed_ireland
+		change_infamy = 20
+		every_state = {
+			limit = {
+				owner = c:IRE
+				dod_is_irish_state = yes
+			}
+			state_region = { add_claim = root }
+		}
+	}
+	ai_chance = { base = 50 }
+}
+
+# ---------------------------------------------------------------------
+# Britain: the Act of Union
+# ---------------------------------------------------------------------
+
+dod_act_of_union = {
+	is_shown = {
+		OR = {
+			this = c:ENL
+			this = c:SCO
+			this = c:IRE
+			this = c:WLS
+		}
+		NOT = { exists = c:ENG }
+	}
+	possible = {
+		is_at_war = no
+		country_rank >= rank_value:great_power
+		NOT = {
+			any_state = {
+				dod_is_british_isles_state = yes
+				NOT = { owner = root }
+			}
+		}
+	}
+	when_taken = {
+		add_primary_culture = cu:english
+		add_primary_culture = cu:scottish
+		add_primary_culture = cu:irish
+		add_primary_culture = cu:welsh
+		change_tag = ENG
+		add_modifier = { name = dod_act_of_union_mod months = 120 }
+	}
+	ai_chance = { base = 100 }
+}
+
+# ---------------------------------------------------------------------
+# Beornia: the English in exile
+# ---------------------------------------------------------------------
+
+dod_beornia_claim_england = {
+	is_shown = {
+		this = c:NAN
+		NOT = { has_variable = dod_claimed_old_england }
+		NOT = { has_variable = dod_holy_britannia }
+	}
+	possible = {
+		is_at_war = no
+		country_rank >= rank_value:great_power
+	}
+	when_taken = {
+		set_variable = dod_claimed_old_england
+		every_state = {
+			limit = {
+				dod_is_english_state = yes
+				NOT = { owner = root }
+			}
+			state_region = { add_claim = root }
+		}
+	}
+	ai_chance = { base = 50 }
+}
+
+dod_beornia_eternal_england = {
+	is_shown = {
+		this = c:NAN
+		has_variable = dod_claimed_old_england
+	}
+	possible = {
+		is_at_war = no
+		NOT = { exists = c:ENL }
+		NOT = {
+			any_state = {
+				dod_is_english_state = yes
+				NOT = { owner = root }
+			}
+		}
+	}
+	when_taken = {
+		add_primary_culture = cu:english
+		change_tag = ENL
+	}
+	ai_chance = { base = 100 }
+}
+
+dod_beornia_holy_britannia = {
+	is_shown = {
+		this = c:NAN
+		NOT = { has_variable = dod_claimed_old_england }
+		NOT = { has_variable = dod_holy_britannia }
+	}
+	possible = {
+		is_at_war = no
+		NOT = { exists = c:HBE }
+		country_rank >= rank_value:great_power
+		has_law = law_type:law_monarchy
+	}
+	when_taken = {
+		set_variable = dod_holy_britannia
+		change_tag = HBE
+	}
+	ai_chance = { base = 30 }
+}
+
+# ---------------------------------------------------------------------
+# Batavia: the Dutch in exile
+# ---------------------------------------------------------------------
+
+dod_batavia_claim_netherlands = {
+	is_shown = {
+		this = c:BTV
+		NOT = { has_variable = dod_claimed_netherlands }
+	}
+	possible = {
+		is_at_war = no
+		NOT = { exists = c:NET }
+		country_rank >= rank_value:great_power
+	}
+	when_taken = {
+		set_variable = dod_claimed_netherlands
+		every_state = {
+			limit = {
+				dod_is_dutch_state = yes
+				NOT = { owner = root }
+			}
+			state_region = { add_claim = root }
+		}
+	}
+	ai_chance = { base = 50 }
+}
+
+dod_batavia_free_state = {
+	is_shown = {
+		this = c:BTV
+		has_variable = dod_claimed_netherlands
+	}
+	possible = {
+		is_at_war = no
+		NOT = { exists = c:NET }
+		NOT = {
+			any_state = {
+				dod_is_dutch_state = yes
+				NOT = { owner = root }
+			}
+		}
+	}
+	when_taken = {
+		add_primary_culture = cu:dutch
+		change_tag = NET
+	}
+	ai_chance = { base = 100 }
+}
+
+# ---------------------------------------------------------------------
+# Burgundy
+# ---------------------------------------------------------------------
+
+dod_burgundy_rhineland = {
+	is_shown = {
+		this = c:BRG
+		NOT = { country_has_primary_culture = cu:rheinish }
+	}
+	possible = {
+		country_rank >= rank_value:great_power
+		any_scope_state = {
+			count >= 3
+			state_region = { is_homeland = cu:rheinish }
+		}
+	}
+	when_taken = {
+		add_primary_culture = cu:rheinish
+	}
+	ai_chance = { base = 100 }
+}
+
+dod_fall_of_burgundy = {
+	is_shown = {
+		this = c:BRG
+		NOT = { exists = c:SAF }
+	}
+	possible = {
+		is_at_war = no
+		country_rank < rank_value:great_power
+		NOT = {
+			any_scope_state = {
+				OR = {
+					dod_is_dutch_state = yes
+					state_region = { is_homeland = cu:burgundian }
+				}
+			}
+		}
+	}
+	when_taken = {
+		add_primary_culture = cu:boer
+		change_tag = SAF
+	}
+	ai_chance = { base = 100 }
+}
+
+# ---------------------------------------------------------------------
+# The Treaty of Selon
+# ---------------------------------------------------------------------
+
+dod_abolish_selon = {
+	is_shown = {
+		OR = {
+			this = c:SPA
+			this = c:BRG
+			this = c:DUA
+		}
+		NOT = { has_global_variable = dod_selon_abolished }
+	}
+	possible = {
+		is_at_war = no
+		country_rank >= rank_value:great_power
+		OR = {
+			this = c:SPA
+			NOT = { exists = c:SPA }
+			c:SPA = { country_rank < rank_value:great_power }
+		}
+	}
+	when_taken = {
+		set_global_variable = dod_selon_abolished
+		every_country = {
+			limit = {
+				OR = {
+					this = c:SPA
+					this = c:BRG
+					this = c:DUA
+					this = c:SCA
+				}
+			}
+			trigger_event = { id = dod_brg.5 }
+		}
+	}
+	ai_chance = { base = 30 }
+}

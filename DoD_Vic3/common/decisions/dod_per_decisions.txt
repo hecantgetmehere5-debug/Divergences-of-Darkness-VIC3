@@ -1,0 +1,439 @@
+# Persia & the Middle East
+
+dod_unite_iran = {
+	is_shown = {
+		country_has_primary_culture = cu:persian
+		NOT = { exists = c:PER }
+	}
+	possible = {
+		is_at_war = no
+		any_scope_state = {
+			count >= 6
+			state_region = {
+				is_homeland = cu:persian
+			}
+		}
+	}
+	when_taken = {
+		every_country = {
+			limit = {
+				is_subject_of = root
+				country_has_primary_culture = cu:persian
+			}
+			root = { annex = prev }
+		}
+		change_tag = PER
+	}
+	ai_chance = { base = 100 }
+}
+
+dod_iranshahr = {
+	is_shown = {
+		this = c:PER
+		NOT = { has_variable = dod_iranshahr }
+	}
+	possible = {
+		is_at_war = no
+		country_rank >= rank_value:major_power
+	}
+	when_taken = {
+		set_variable = dod_iranshahr
+		change_infamy = 15
+		every_state = {
+			limit = {
+				state_region = {
+					OR = {
+						is_homeland = cu:persian
+						is_homeland = cu:lurish
+						is_homeland = cu:baluchi
+						is_homeland = cu:azerbaijani
+						is_homeland = cu:kurdish
+					}
+				}
+				NOT = { owner = root }
+			}
+			state_region = { add_claim = root }
+		}
+	}
+	ai_chance = { base = 50 }
+}
+
+dod_reclaim_mawarannahr = {
+	is_shown = {
+		this = c:AFS
+		NOT = { has_variable = dod_mawarannahr }
+	}
+	possible = {
+		is_at_war = no
+		NOT = { has_journal_entry = je_dod_timurtash_restoration }
+	}
+	when_taken = {
+		set_variable = dod_mawarannahr
+		change_infamy = 10
+		every_state = {
+			limit = {
+				state_region = {
+					OR = {
+						is_homeland = cu:uzbek
+						is_homeland = cu:turkmen
+					}
+				}
+				NOT = { owner = root }
+			}
+			state_region = { add_claim = root }
+		}
+	}
+	ai_chance = { base = 50 }
+}
+
+dod_revoke_karabakh = {
+	is_shown = {
+		OR = {
+			this = c:AFS
+			this = c:PER
+		}
+		NOT = { has_variable = dod_karabakh }
+	}
+	possible = {
+		is_at_war = no
+		country_rank >= rank_value:major_power
+	}
+	when_taken = {
+		set_variable = dod_karabakh
+		change_infamy = 10
+		every_state = {
+			limit = {
+				state_region = {
+					OR = {
+						is_homeland = cu:azerbaijani
+						is_homeland = cu:armenian
+					}
+				}
+				NOT = { owner = root }
+			}
+			state_region = { add_claim = root }
+		}
+	}
+	ai_chance = { base = 50 }
+}
+
+dod_iran_armenians = {
+	is_shown = {
+		OR = {
+			this = c:AFS
+			this = c:PER
+			this = c:QAJ
+		}
+		NOT = { country_has_primary_culture = cu:armenian }
+	}
+	possible = {
+		any_scope_state = { state_region = { is_homeland = cu:armenian } }
+	}
+	when_taken = {
+		add_primary_culture = cu:armenian
+	}
+	ai_chance = { base = 60 }
+}
+
+dod_settle_nomads = {
+	is_shown = {
+		this = c:ZND
+		NOT = { has_variable = dod_settled }
+	}
+	possible = {
+		is_at_war = no
+		has_variable = dod_per_seen_32
+	}
+	when_taken = {
+		set_variable = dod_settled
+		add_modifier = { name = dod_settled_tribes months = 240 }
+	}
+	ai_chance = { base = 70 }
+}
+
+dod_avenge_karbala = {
+	is_shown = {
+		OR = {
+			this = c:ZND
+			this = c:PER
+		}
+		NOT = { has_variable = dod_karbala }
+	}
+	possible = {
+		is_at_war = no
+	}
+	when_taken = {
+		set_variable = dod_karbala
+		change_infamy = 10
+		every_state = {
+			limit = {
+				state_region = {
+					is_homeland = cu:mashriqi
+				}
+				NOT = { owner = root }
+			}
+			state_region = { add_claim = root }
+		}
+	}
+	ai_chance = { base = 40 }
+}
+
+dod_lahijan_tea = {
+	is_shown = {
+		this = c:QAJ
+		NOT = { has_variable = dod_tea }
+	}
+	possible = {
+		is_at_war = no
+		game_date >= 1845.1.1
+	}
+	when_taken = {
+		set_variable = dod_tea
+		add_modifier = { name = dod_tea_plantations months = 240 }
+	}
+	ai_chance = { base = 70 }
+}
+
+dod_kk_modern_army = {
+	is_shown = {
+		this = c:QAJ
+		NOT = { has_variable = dod_kk_army }
+	}
+	possible = {
+		is_at_war = no
+		game_date >= 1850.1.1
+	}
+	when_taken = {
+		set_variable = dod_kk_army
+		add_modifier = { name = dod_western_army months = 240 }
+	}
+	ai_chance = { base = 70 }
+}
+
+dod_irq_shield = {
+	is_shown = {
+		this = c:IRQ
+		NOT = { has_variable = dod_irq_shield }
+	}
+	possible = {
+		is_at_war = no
+	}
+	when_taken = {
+		set_variable = dod_irq_shield
+		change_infamy = 10
+		add_primary_culture = cu:mashriqi
+		every_state = {
+			limit = {
+				state_region = {
+					is_homeland = cu:mashriqi
+				}
+				NOT = { owner = root }
+			}
+			state_region = { add_claim = root }
+		}
+	}
+	ai_chance = { base = 50 }
+}
+
+dod_irq_persian_dream = {
+	is_shown = {
+		this = c:IRQ
+		NOT = { has_variable = dod_irq_persia }
+	}
+	possible = {
+		is_at_war = no
+		country_rank >= rank_value:major_power
+		NOT = { exists = c:PER }
+	}
+	when_taken = {
+		set_variable = dod_irq_persia
+		change_infamy = 15
+		every_state = {
+			limit = {
+				state_region = {
+					OR = {
+						is_homeland = cu:persian
+						is_homeland = cu:lurish
+					}
+				}
+				NOT = { owner = root }
+			}
+			state_region = { add_claim = root }
+		}
+	}
+	ai_chance = { base = 30 }
+}
+
+dod_arab_sharia = {
+	is_shown = {
+		OR = {
+			country_has_primary_culture = cu:bedouin
+			country_has_primary_culture = cu:khaliji
+			country_has_primary_culture = cu:mashriqi
+			country_has_primary_culture = cu:misri
+		}
+		NOT = { has_variable = dod_arab_religion }
+	}
+	possible = {
+		is_at_war = no
+	}
+	when_taken = {
+		set_variable = dod_arab_religion
+		add_modifier = { name = dod_sharia_law months = 240 }
+	}
+	ai_chance = { base = 50 }
+}
+
+dod_arab_secular = {
+	is_shown = {
+		OR = {
+			country_has_primary_culture = cu:bedouin
+			country_has_primary_culture = cu:khaliji
+			country_has_primary_culture = cu:mashriqi
+			country_has_primary_culture = cu:misri
+		}
+		NOT = { has_variable = dod_arab_religion }
+	}
+	possible = {
+		is_at_war = no
+		game_date >= 1870.1.1
+	}
+	when_taken = {
+		set_variable = dod_arab_religion
+		add_modifier = { name = dod_secular_society months = 240 }
+	}
+	ai_chance = { base = 20 }
+}
+
+dod_arab_nationalism = {
+	is_shown = {
+		OR = {
+			country_has_primary_culture = cu:bedouin
+			country_has_primary_culture = cu:khaliji
+			country_has_primary_culture = cu:mashriqi
+			country_has_primary_culture = cu:misri
+		}
+		NOT = { has_variable = dod_arab_nationalism }
+	}
+	possible = {
+		is_at_war = no
+		game_date >= 1860.1.1
+	}
+	when_taken = {
+		set_variable = dod_arab_nationalism
+		add_primary_culture = cu:bedouin
+		add_primary_culture = cu:khaliji
+		add_primary_culture = cu:mashriqi
+	}
+	ai_chance = { base = 50 }
+}
+
+dod_restore_rashids = {
+	is_shown = {
+		this = c:ALH
+		NOT = { exists = c:NEJ }
+	}
+	possible = {
+		is_at_war = no
+		any_scope_state = { state_region = { is_homeland = cu:bedouin } }
+	}
+	when_taken = {
+		change_tag = NEJ
+	}
+	ai_chance = { base = 100 }
+}
+
+dod_claim_caliphate = {
+	is_shown = {
+		this = c:NEJ
+		NOT = { has_variable = dod_caliph }
+	}
+	possible = {
+		is_at_war = no
+		any_scope_state = { state_region = { is_homeland = cu:khaliji } }
+	}
+	when_taken = {
+		set_variable = dod_caliph
+		add_modifier = { name = dod_caliph months = 240 }
+		c:TUR ?= { trigger_event = { id = dod_per.54 days = 14 } }
+	}
+	ai_chance = { base = 60 }
+}
+
+dod_form_uar = {
+	is_shown = {
+		OR = {
+			country_has_primary_culture = cu:bedouin
+			country_has_primary_culture = cu:khaliji
+			country_has_primary_culture = cu:mashriqi
+			country_has_primary_culture = cu:misri
+		}
+		NOT = { exists = c:UAR }
+	}
+	possible = {
+		is_at_war = no
+		country_rank >= rank_value:major_power
+		any_scope_state = {
+			count >= 8
+			state_region = {
+				OR = {
+					is_homeland = cu:bedouin
+					is_homeland = cu:khaliji
+					is_homeland = cu:mashriqi
+					is_homeland = cu:misri
+				}
+			}
+		}
+	}
+	when_taken = {
+		add_primary_culture = cu:bedouin
+		add_primary_culture = cu:khaliji
+		add_primary_culture = cu:mashriqi
+		add_primary_culture = cu:misri
+		change_tag = UAR
+		change_infamy = 15
+		every_state = {
+			limit = {
+				state_region = {
+					OR = {
+						is_homeland = cu:bedouin
+						is_homeland = cu:khaliji
+						is_homeland = cu:mashriqi
+						is_homeland = cu:misri
+						is_homeland = cu:maghrebi
+					}
+				}
+				NOT = { owner = root }
+			}
+			state_region = { add_claim = root }
+		}
+	}
+	ai_chance = { base = 100 }
+}
+
+dod_form_kurdistan = {
+	is_shown = {
+		country_has_primary_culture = cu:kurdish
+		NOT = { exists = c:KUR }
+	}
+	possible = {
+		is_at_war = no
+		any_scope_state = {
+			count >= 3
+			state_region = {
+				is_homeland = cu:kurdish
+			}
+		}
+	}
+	when_taken = {
+		every_country = {
+			limit = {
+				is_subject_of = root
+				country_has_primary_culture = cu:kurdish
+			}
+			root = { annex = prev }
+		}
+		change_tag = KUR
+	}
+	ai_chance = { base = 100 }
+}

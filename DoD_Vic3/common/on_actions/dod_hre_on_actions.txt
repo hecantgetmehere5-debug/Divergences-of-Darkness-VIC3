@@ -1,0 +1,155 @@
+on_yearly_pulse_country = {
+	events = {
+		dod_hre.70	# Bohemian Rhapsody
+		dod_hre.71	# 1100th anniversary of the Empire
+		dod_elb.1	# The Fredensborg Incident
+		dod_elb.20	# Elbian agitation in the Baltic
+		dod_elb.22	# The new regime in Riga
+		dod_elb.30	# Secession crisis in the Confederation
+		dod_elb.40	# Uprising in Prague
+		dod_dua.10	# Death of King Henri X
+		dod_dua.41	# The Irish question
+		dod_dua.42	# The Irish rising
+		dod_dua.45	# Young Scotland
+		dod_dua.46	# The Scottish revolution
+		dod_dua.50	# The end of the Valois
+		dod_brg.1	# A Savoyard opportunity
+		dod_ita.20	# The Carbonari
+		dod_ita.22	# Andrea Doria
+		dod_ita.24	# Francesco Pepe
+		dod_ita.26	# Renewing the Etrurian Wars
+		dod_ita.30	# Risorgimento
+		dod_ita.31	# The Southern Question
+		dod_ita.32	# The Arborean Islands
+		dod_ita.33	# Venetian complaints
+		dod_ita.34	# The Greek problem
+		dod_ita.35	# Albania investment
+		dod_ita.42	# Fall of the House of Rome
+		dod_ita.43	# Aragon ascendant
+		dod_ita.45	# The Hafsid protectorate
+		dod_ita.48	# The Navarrans in Aragon
+		dod_ita.49	# Flight to Sicily
+		dod_ita.50	# The Lucca question
+		dod_ita.54	# Order in Etruria
+		dod_ita.55	# The Italian crown
+		dod_ita.73	# Flight to Greece
+		dod_ita.74	# San Marco's Republic
+		dod_ita.75	# Death of the Doge
+		dod_ita.76	# The Venice Biennale
+		dod_ita.77	# 1500 years of Venice
+		dod_ita.78	# Scuola di Commercio
+		dod_ibr.4	# The plight of the Basques
+		dod_ibr.6	# The Cuban dominion
+		dod_ibr.10	# Basque independence
+		dod_ibr.15	# Death of Henry IV of Navarre
+		dod_bal.2
+		dod_bal.3
+		dod_bal.4
+		dod_bal.12
+		dod_bal.13
+		dod_bal.14
+		dod_bal.5
+		dod_bal.6
+		dod_bal.7
+		dod_bal.8
+		dod_bal.21
+		dod_bal.22
+		dod_bal.30
+		dod_bal.35
+		dod_bal.40
+		dod_bal.41
+		dod_bal.42
+		dod_bal.44
+		dod_bal.48
+		dod_blt.2
+		dod_blt.5
+		dod_blt.6
+		dod_blt.8
+		dod_rus.2
+		dod_rus.3
+		dod_rus.4
+		dod_rus.8
+		dod_rus.12
+		dod_rus.13
+		dod_rus.15
+		dod_rus.16
+		dod_rus.17
+		dod_rus.18
+		dod_per.1
+		dod_per.8
+		dod_per.9
+		dod_per.20
+		dod_per.21
+		dod_per.22
+		dod_per.24
+		dod_per.30
+		dod_per.31
+		dod_per.32
+		dod_per.40
+		dod_per.42
+		dod_per.43
+		dod_per.50
+		dod_per.51
+		dod_per.60
+		dod_per.61
+		dod_per.70
+		dod_ame.3
+		dod_ame.6
+		dod_ame.7
+		dod_ame.24
+		dod_ame.25
+		dod_clm.1
+		dod_clm.20
+		dod_clm.21
+		dod_clm.22
+		dod_clm.23
+		dod_clm.24
+		dod_clm.25
+		dod_clm.30
+		dod_clm.31
+		dod_clm.32
+		dod_clm.33
+		dod_clm.40
+		dod_clm.41
+		dod_clm.42
+		dod_clm.50
+		dod_asi.3
+		dod_asi.5
+		dod_asi.6
+		dod_asi.7
+		dod_asi.12
+		dod_asi.13
+		dod_asi.20
+		dod_asi.21
+		dod_asi.22
+		dod_asi.24
+		dod_afr.1
+		dod_afr.4
+		dod_afr.5
+		dod_afr.10
+		dod_afr.11
+		dod_afr.12
+		dod_afr.20
+		dod_afr.21
+		dod_afr.22
+		dod_afr.30
+		dod_arc.21
+		dod_arc.30
+		dod_arc.31
+		dod_arc.32
+		dod_arc.33
+		dod_ext.10	# A King on Horseback
+		dod_ext.36	# Raids across the Pampas
+		dod_ext.37	# Lotharian separatism
+		dod_wiki.1
+		dod_wiki.2
+		dod_wiki.3
+		dod_wiki.4
+		dod_wiki.5
+		dod_wiki.6
+		dod_wiki.7
+		dod_wiki.8
+		dod_wiki.9
+		dod_wiki.10
+	}
+}

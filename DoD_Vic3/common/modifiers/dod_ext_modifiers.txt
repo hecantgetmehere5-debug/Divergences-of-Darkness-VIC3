@@ -1,0 +1,71 @@
+# Expanded content: modifiers
+
+dod_emancipation = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
+	country_legitimacy_base_add = 10
+	country_prestige_add = 10
+}
+
+dod_planter_victory = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_scroll_negative.dds"
+	country_prestige_add = -15
+}
+
+dod_peoples_king = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
+	country_legitimacy_base_add = 15
+}
+
+dod_crown_humbled = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_scroll_negative.dds"
+	country_legitimacy_base_add = -10
+	country_authority_add = -50
+}
+
+dod_arcadian_hegemony = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
+	country_prestige_add = 75
+	country_legitimacy_base_add = 10
+}
+
+dod_king_swore = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_scroll_positive.dds"
+	country_legitimacy_base_add = 10
+	country_authority_add = -25
+}
+
+dod_communion_settled = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_scroll_positive.dds"
+	country_legitimacy_base_add = 15
+}
+
+dod_communion_broken = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_scroll_negative.dds"
+	country_legitimacy_base_add = -10
+}
+
+dod_beornian_lotharian_union_mod = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
+	country_prestige_add = 30
+}
+
+dod_savoy_stable = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_scroll_positive.dds"
+	country_legitimacy_base_add = 10
+}
+
+dod_duke_amedeo = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
+	country_authority_add = 50
+	unit_offense_mult = 0.05
+}
+
+dod_italian_league = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
+	country_prestige_add = 20
+}
+
+dod_italian_wars = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
+	country_prestige_add = 10
+}

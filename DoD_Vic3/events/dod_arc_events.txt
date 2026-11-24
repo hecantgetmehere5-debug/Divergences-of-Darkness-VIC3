@@ -1,0 +1,475 @@
+namespace = dod_arc
+
+dod_arc.1 = {
+	type = country_event
+	placement = root
+	title = dod_arc.1.t
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				desc = dod_arc.1.d_main
+			}
+		}
+	}
+	flavor = dod_arc.1.f
+	event_image = { video = "unspecific_politicians_arguing" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+	duration = 3
+
+	trigger = {
+		has_variable = dod_dig_requester
+	}
+
+	option = {
+		name = dod_arc.1.a
+		default_option = yes
+		var:dod_dig_requester = {
+			add_journal_entry = { type = je_dod_excavation }
+		}
+		change_relations = { country = var:dod_dig_requester value = 20 }
+		remove_variable = dod_dig_requester
+		ai_chance = { base = 60 }
+	}
+
+	option = {
+		name = dod_arc.1.b
+		var:dod_dig_requester = { trigger_event = { id = dod_arc.2 days = 3 } }
+		remove_variable = dod_dig_requester
+		ai_chance = { base = 40 }
+	}
+}
+
+dod_arc.2 = {
+	type = country_event
+	placement = root
+	title = dod_arc.2.t
+	desc = dod_arc.2.d
+	flavor = dod_arc.2.f
+	event_image = { video = "unspecific_politicians_arguing" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+	duration = 3
+
+	option = {
+		name = dod_arc.2.a
+		default_option = yes
+		change_infamy = 5
+		add_journal_entry = { type = je_dod_excavation }
+		ai_chance = { base = 40 }
+	}
+
+	option = {
+		name = dod_arc.2.b
+		remove_variable = dod_dig_site
+		ai_chance = { base = 60 }
+	}
+}
+
+dod_arc.10 = {
+	type = country_event
+	placement = root
+	title = dod_arc.10.t
+	desc = dod_arc.10.d
+	flavor = dod_arc.10.f
+	event_image = { video = "unspecific_politicians_arguing" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	duration = 3
+
+	trigger = {
+		has_journal_entry = je_dod_excavation
+	}
+
+	option = {
+		name = dod_arc.10.a
+		default_option = yes
+		change_variable = { name = dod_dig_progress add = 2 }
+	}
+}
+
+dod_arc.11 = {
+	type = country_event
+	placement = root
+	title = dod_arc.11.t
+	desc = dod_arc.11.d
+	flavor = dod_arc.11.f
+	event_image = { video = "unspecific_politicians_arguing" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	duration = 3
+
+	trigger = {
+		has_journal_entry = je_dod_excavation
+	}
+
+	option = {
+		name = dod_arc.11.a
+		default_option = yes
+		change_variable = { name = dod_dig_progress add = 1 }
+		add_modifier = { name = dod_dig_expenses months = 12 }
+		ai_chance = { base = 50 }
+	}
+
+	option = {
+		name = dod_arc.11.b
+		change_variable = { name = dod_dig_progress add = -2 }
+		ai_chance = { base = 50 }
+	}
+}
+
+dod_arc.12 = {
+	type = country_event
+	placement = root
+	title = dod_arc.12.t
+	desc = dod_arc.12.d
+	flavor = dod_arc.12.f
+	event_image = { video = "unspecific_politicians_arguing" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	duration = 3
+
+	trigger = {
+		has_journal_entry = je_dod_excavation
+		var:dod_dig_site = 1
+	}
+
+	option = {
+		name = dod_arc.12.a
+		default_option = yes
+		change_variable = { name = dod_dig_progress add = -1 }
+	}
+}
+
+dod_arc.13 = {
+	type = country_event
+	placement = root
+	title = dod_arc.13.t
+	desc = dod_arc.13.d
+	flavor = dod_arc.13.f
+	event_image = { texture = "gfx/event_pictures/dod/Maya_pyramid.dds" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	trigger = {
+		has_journal_entry = je_dod_excavation
+		var:dod_dig_site = 1
+		NOT = { has_variable = dod_seen_idol }
+	}
+
+	immediate = {
+		set_variable = dod_seen_idol
+	}
+
+	option = {
+		name = dod_arc.13.a
+		default_option = yes
+		random_list = {
+			50 = { change_variable = { name = dod_dig_progress add = 4 } }
+			50 = { change_variable = { name = dod_dig_progress add = -1 } }
+		}
+		ai_chance = { base = 60 }
+	}
+
+	option = {
+		name = dod_arc.13.b
+		change_variable = { name = dod_dig_progress add = 1 }
+		ai_chance = { base = 40 }
+	}
+}
+
+dod_arc.14 = {
+	type = country_event
+	placement = root
+	title = dod_arc.14.t
+	desc = dod_arc.14.d
+	flavor = dod_arc.14.f
+	event_image = { texture = "gfx/event_pictures/dod/Maya_pyramid.dds" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	trigger = {
+		has_journal_entry = je_dod_excavation
+		var:dod_dig_site = 1
+		has_variable = dod_seen_idol
+		NOT = { has_variable = dod_seen_frenchman }
+	}
+
+	immediate = {
+		set_variable = dod_seen_frenchman
+	}
+
+	option = {
+		name = dod_arc.14.a
+		default_option = yes
+		change_variable = { name = dod_dig_progress add = -2 }
+	}
+}
+
+dod_arc.15 = {
+	type = country_event
+	placement = root
+	title = dod_arc.15.t
+	desc = dod_arc.15.d
+	flavor = dod_arc.15.f
+	event_image = { texture = "gfx/event_pictures/dod/cuneiform_tablet.dds" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	trigger = {
+		has_journal_entry = je_dod_excavation
+		var:dod_dig_site = 2
+	}
+
+	option = {
+		name = dod_arc.15.a
+		default_option = yes
+		change_variable = { name = dod_dig_progress add = 3 }
+	}
+}
+
+dod_arc.16 = {
+	type = country_event
+	placement = root
+	title = dod_arc.16.t
+	desc = dod_arc.16.d
+	flavor = dod_arc.16.f
+	event_image = { video = "unspecific_politicians_arguing" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+	duration = 3
+
+	trigger = {
+		has_journal_entry = je_dod_excavation
+		OR = {
+			var:dod_dig_site = 3
+			var:dod_dig_site = 4
+			var:dod_dig_site = 5
+		}
+	}
+
+	option = {
+		name = dod_arc.16.a
+		default_option = yes
+		change_variable = { name = dod_dig_progress add = -1 }
+		add_modifier = { name = dod_dig_scandal months = 24 }
+	}
+}
+
+dod_arc.20 = {
+	type = country_event
+	placement = root
+	title = dod_arc.20.t
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				desc = dod_arc.20.d_maya
+				trigger = { var:dod_dig_site = 1 }
+			}
+			triggered_desc = {
+				desc = dod_arc.20.d_mesopotamia
+				trigger = { var:dod_dig_site = 2 }
+			}
+			triggered_desc = {
+				desc = dod_arc.20.d_mycenae
+				trigger = { var:dod_dig_site = 3 }
+			}
+			triggered_desc = {
+				desc = dod_arc.20.d_knossos
+				trigger = { var:dod_dig_site = 4 }
+			}
+			triggered_desc = {
+				desc = dod_arc.20.d_troy
+			}
+		}
+	}
+	flavor = dod_arc.20.f
+	event_image = { video = "europenorthamerica_springtime_of_nations" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	option = {
+		name = dod_arc.20.a
+		default_option = yes
+		add_modifier = { name = dod_great_discovery months = 240 }
+		change_variable = { name = dod_discoveries add = 1 }
+		ai_chance = { base = 60 }
+	}
+
+	option = {
+		name = dod_arc.20.b
+		add_modifier = { name = dod_respected_scholars months = 240 }
+		change_variable = { name = dod_discoveries add = 1 }
+		ai_chance = { base = 40 }
+	}
+}
+
+dod_arc.21 = {
+	type = country_event
+	placement = root
+	title = dod_arc.21.t
+	desc = dod_arc.21.d
+	flavor = dod_arc.21.f
+	event_image = { video = "unspecific_politicians_arguing" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	trigger = {
+		has_variable = dod_discoveries
+		var:dod_discoveries >= 2
+		NOT = { has_variable = dod_held_exhibition }
+	}
+
+	immediate = {
+		set_variable = dod_held_exhibition
+	}
+
+	option = {
+		name = dod_arc.21.a
+		default_option = yes
+		add_modifier = { name = dod_archaeology_exhibition months = 120 }
+		every_country = {
+			limit = {
+				country_rank >= rank_value:great_power
+				NOT = { this = root }
+				NOT = { has_variable = dod_discoveries }
+			}
+			trigger_event = { id = dod_arc.22 days = 14 }
+		}
+	}
+}
+
+dod_arc.22 = {
+	type = country_event
+	placement = root
+	title = dod_arc.22.t
+	desc = dod_arc.22.d
+	flavor = dod_arc.22.f
+	event_image = { video = "unspecific_politicians_arguing" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+	duration = 3
+
+	option = {
+		name = dod_arc.22.a
+		default_option = yes
+		add_modifier = { name = dod_backward_science months = 60 }
+	}
+}
+
+dod_arc.30 = {
+	type = country_event
+	placement = root
+	title = dod_arc.30.t
+	desc = dod_arc.30.d
+	flavor = dod_arc.30.f
+	event_image = { texture = "gfx/event_pictures/dod/paleoanthropology.dds" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	trigger = {
+		game_date >= 1856.1.1
+		any_scope_state = { state_region = { is_homeland = cu:rheinish } }
+		NOT = { has_global_variable = dod_neanderthal }
+	}
+
+	immediate = {
+		set_global_variable = dod_neanderthal
+	}
+
+	option = {
+		name = dod_arc.30.a
+		default_option = yes
+		add_modifier = { name = dod_ancient_man months = 60 }
+	}
+}
+
+dod_arc.31 = {
+	type = country_event
+	placement = root
+	title = dod_arc.31.t
+	desc = dod_arc.31.d
+	flavor = dod_arc.31.f
+	event_image = { texture = "gfx/event_pictures/dod/paleoanthropology.dds" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	trigger = {
+		game_date >= 1891.1.1
+		any_scope_state = { state_region = { is_homeland = cu:javan } }
+		NOT = { has_global_variable = dod_java_man }
+	}
+
+	immediate = {
+		set_global_variable = dod_java_man
+	}
+
+	option = {
+		name = dod_arc.31.a
+		default_option = yes
+		add_modifier = { name = dod_ancient_man months = 60 }
+	}
+}
+
+dod_arc.32 = {
+	type = country_event
+	placement = root
+	title = dod_arc.32.t
+	desc = dod_arc.32.d
+	flavor = dod_arc.32.f
+	event_image = { video = "unspecific_politicians_arguing" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	trigger = {
+		game_date >= 1920.1.1
+		any_scope_state = { state_region = { is_homeland = cu:misri } }
+		NOT = { has_global_variable = dod_tutankhamun }
+	}
+
+	immediate = {
+		set_global_variable = dod_tutankhamun
+	}
+
+	option = {
+		name = dod_arc.32.a
+		default_option = yes
+		add_modifier = { name = dod_great_discovery months = 120 }
+	}
+}
+
+dod_arc.33 = {
+	type = country_event
+	placement = root
+	title = dod_arc.33.t
+	desc = dod_arc.33.d
+	flavor = dod_arc.33.f
+	event_image = { texture = "gfx/event_pictures/dod/Machupicchu.dds" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	trigger = {
+		game_date >= 1900.1.1
+		any_scope_state = { state_region = { is_homeland = cu:quechua } }
+		NOT = { has_global_variable = dod_golden_andes }
+	}
+
+	immediate = {
+		set_global_variable = dod_golden_andes
+	}
+
+	option = {
+		name = dod_arc.33.a
+		default_option = yes
+		add_modifier = { name = dod_great_discovery months = 120 }
+	}
+}

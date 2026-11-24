@@ -1,0 +1,2325 @@
+namespace = dod_lore
+
+dod_lore.100 = {
+	type = country_event
+	placement = root
+	title = dod_lore.100.t
+	desc = dod_lore.100.d
+	flavor = dod_lore.flavor
+	event_image = { video = "unspecific_signed_contract" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	option = {
+		name = dod_lore.next
+		trigger_event = { id = dod_lore.101 }
+	}
+
+	option = {
+		name = dod_lore.close
+	}
+}
+
+dod_lore.101 = {
+	type = country_event
+	placement = root
+	title = dod_lore.101.t
+	desc = dod_lore.101.d
+	flavor = dod_lore.flavor
+	event_image = { video = "unspecific_signed_contract" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	option = {
+		name = dod_lore.next
+		trigger_event = { id = dod_lore.102 }
+	}
+
+	option = {
+		name = dod_lore.close
+	}
+}
+
+dod_lore.102 = {
+	type = country_event
+	placement = root
+	title = dod_lore.102.t
+	desc = dod_lore.102.d
+	flavor = dod_lore.flavor
+	event_image = { video = "unspecific_signed_contract" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	option = {
+		name = dod_lore.next
+		trigger_event = { id = dod_lore.103 }
+	}
+
+	option = {
+		name = dod_lore.close
+	}
+}
+
+dod_lore.103 = {
+	type = country_event
+	placement = root
+	title = dod_lore.103.t
+	desc = dod_lore.103.d
+	flavor = dod_lore.flavor
+	event_image = { video = "unspecific_signed_contract" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	option = {
+		name = dod_lore.next
+		trigger_event = { id = dod_lore.104 }
+	}
+
+	option = {
+		name = dod_lore.close
+	}
+}
+
+dod_lore.104 = {
+	type = country_event
+	placement = root
+	title = dod_lore.104.t
+	desc = dod_lore.104.d
+	flavor = dod_lore.flavor
+	event_image = { video = "unspecific_signed_contract" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	option = {
+		name = dod_lore.next
+		trigger_event = { id = dod_lore.105 }
+	}
+
+	option = {
+		name = dod_lore.close
+	}
+}
+
+dod_lore.105 = {
+	type = country_event
+	placement = root
+	title = dod_lore.105.t
+	desc = dod_lore.105.d
+	flavor = dod_lore.flavor
+	event_image = { video = "unspecific_signed_contract" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	option = {
+		name = dod_lore.next
+		trigger_event = { id = dod_lore.106 }
+	}
+
+	option = {
+		name = dod_lore.close
+	}
+}
+
+dod_lore.106 = {
+	type = country_event
+	placement = root
+	title = dod_lore.106.t
+	desc = dod_lore.106.d
+	flavor = dod_lore.flavor
+	event_image = { video = "unspecific_signed_contract" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	option = {
+		name = dod_lore.next
+		trigger_event = { id = dod_lore.107 }
+	}
+
+	option = {
+		name = dod_lore.close
+	}
+}
+
+dod_lore.107 = {
+	type = country_event
+	placement = root
+	title = dod_lore.107.t
+	desc = dod_lore.107.d
+	flavor = dod_lore.flavor
+	event_image = { video = "unspecific_signed_contract" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	option = {
+		name = dod_lore.close
+	}
+}
+
+dod_lore.113 = {
+	type = country_event
+	placement = root
+	title = dod_lore.113.t
+	desc = dod_lore.113.d
+	flavor = dod_lore.flavor
+	event_image = { video = "unspecific_signed_contract" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	option = {
+		name = dod_lore.next
+		trigger_event = { id = dod_lore.114 }
+	}
+
+	option = {
+		name = dod_lore.close
+	}
+}
+
+dod_lore.114 = {
+	type = country_event
+	placement = root
+	title = dod_lore.114.t
+	desc = dod_lore.114.d
+	flavor = dod_lore.flavor
+	event_image = { video = "unspecific_signed_contract" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	option = {
+		name = dod_lore.next
+		trigger_event = { id = dod_lore.115 }
+	}
+
+	option = {
+		name = dod_lore.close
+	}
+}
+
+dod_lore.115 = {
+	type = country_event
+	placement = root
+	title = dod_lore.115.t
+	desc = dod_lore.115.d
+	flavor = dod_lore.flavor
+	event_image = { video = "unspecific_signed_contract" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	option = {
+		name = dod_lore.next
+		trigger_event = { id = dod_lore.116 }
+	}
+
+	option = {
+		name = dod_lore.close
+	}
+}
+
+dod_lore.116 = {
+	type = country_event
+	placement = root
+	title = dod_lore.116.t
+	desc = dod_lore.116.d
+	flavor = dod_lore.flavor
+	event_image = { video = "unspecific_signed_contract" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	option = {
+		name = dod_lore.next
+		trigger_event = { id = dod_lore.117 }
+	}
+
+	option = {
+		name = dod_lore.close
+	}
+}
+
+dod_lore.117 = {
+	type = country_event
+	placement = root
+	title = dod_lore.117.t
+	desc = dod_lore.117.d
+	flavor = dod_lore.flavor
+	event_image = { video = "unspecific_signed_contract" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	option = {
+		name = dod_lore.next
+		trigger_event = { id = dod_lore.118 }
+	}
+
+	option = {
+		name = dod_lore.close
+	}
+}
+
+dod_lore.118 = {
+	type = country_event
+	placement = root
+	title = dod_lore.118.t
+	desc = dod_lore.118.d
+	flavor = dod_lore.flavor
+	event_image = { video = "unspecific_signed_contract" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	option = {
+		name = dod_lore.close
+	}
+}
+
+dod_lore.124 = {
+	type = country_event
+	placement = root
+	title = dod_lore.124.t
+	desc = dod_lore.124.d
+	flavor = dod_lore.flavor
+	event_image = { video = "unspecific_signed_contract" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	option = {
+		name = dod_lore.next
+		trigger_event = { id = dod_lore.125 }
+	}
+
+	option = {
+		name = dod_lore.close
+	}
+}
+
+dod_lore.125 = {
+	type = country_event
+	placement = root
+	title = dod_lore.125.t
+	desc = dod_lore.125.d
+	flavor = dod_lore.flavor
+	event_image = { video = "unspecific_signed_contract" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	option = {
+		name = dod_lore.next
+		trigger_event = { id = dod_lore.126 }
+	}
+
+	option = {
+		name = dod_lore.close
+	}
+}
+
+dod_lore.126 = {
+	type = country_event
+	placement = root
+	title = dod_lore.126.t
+	desc = dod_lore.126.d
+	flavor = dod_lore.flavor
+	event_image = { video = "unspecific_signed_contract" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	option = {
+		name = dod_lore.next
+		trigger_event = { id = dod_lore.127 }
+	}
+
+	option = {
+		name = dod_lore.close
+	}
+}
+
+dod_lore.127 = {
+	type = country_event
+	placement = root
+	title = dod_lore.127.t
+	desc = dod_lore.127.d
+	flavor = dod_lore.flavor
+	event_image = { video = "unspecific_signed_contract" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	option = {
+		name = dod_lore.next
+		trigger_event = { id = dod_lore.128 }
+	}
+
+	option = {
+		name = dod_lore.close
+	}
+}
+
+dod_lore.128 = {
+	type = country_event
+	placement = root
+	title = dod_lore.128.t
+	desc = dod_lore.128.d
+	flavor = dod_lore.flavor
+	event_image = { video = "unspecific_signed_contract" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	option = {
+		name = dod_lore.next
+		trigger_event = { id = dod_lore.129 }
+	}
+
+	option = {
+		name = dod_lore.close
+	}
+}
+
+dod_lore.129 = {
+	type = country_event
+	placement = root
+	title = dod_lore.129.t
+	desc = dod_lore.129.d
+	flavor = dod_lore.flavor
+	event_image = { video = "unspecific_signed_contract" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	option = {
+		name = dod_lore.next
+		trigger_event = { id = dod_lore.130 }
+	}
+
+	option = {
+		name = dod_lore.close
+	}
+}
+
+dod_lore.130 = {
+	type = country_event
+	placement = root
+	title = dod_lore.130.t
+	desc = dod_lore.130.d
+	flavor = dod_lore.flavor
+	event_image = { video = "unspecific_signed_contract" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	option = {
+		name = dod_lore.next
+		trigger_event = { id = dod_lore.131 }
+	}
+
+	option = {
+		name = dod_lore.close
+	}
+}
+
+dod_lore.131 = {
+	type = country_event
+	placement = root
+	title = dod_lore.131.t
+	desc = dod_lore.131.d
+	flavor = dod_lore.flavor
+	event_image = { video = "unspecific_signed_contract" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	option = {
+		name = dod_lore.next
+		trigger_event = { id = dod_lore.132 }
+	}
+
+	option = {
+		name = dod_lore.close
+	}
+}
+
+dod_lore.132 = {
+	type = country_event
+	placement = root
+	title = dod_lore.132.t
+	desc = dod_lore.132.d
+	flavor = dod_lore.flavor
+	event_image = { video = "unspecific_signed_contract" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	option = {
+		name = dod_lore.next
+		trigger_event = { id = dod_lore.133 }
+	}
+
+	option = {
+		name = dod_lore.close
+	}
+}
+
+dod_lore.133 = {
+	type = country_event
+	placement = root
+	title = dod_lore.133.t
+	desc = dod_lore.133.d
+	flavor = dod_lore.flavor
+	event_image = { video = "unspecific_signed_contract" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	option = {
+		name = dod_lore.close
+	}
+}
+
+dod_lore.139 = {
+	type = country_event
+	placement = root
+	title = dod_lore.139.t
+	desc = dod_lore.139.d
+	flavor = dod_lore.flavor
+	event_image = { video = "unspecific_signed_contract" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	option = {
+		name = dod_lore.next
+		trigger_event = { id = dod_lore.140 }
+	}
+
+	option = {
+		name = dod_lore.close
+	}
+}
+
+dod_lore.140 = {
+	type = country_event
+	placement = root
+	title = dod_lore.140.t
+	desc = dod_lore.140.d
+	flavor = dod_lore.flavor
+	event_image = { video = "unspecific_signed_contract" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	option = {
+		name = dod_lore.next
+		trigger_event = { id = dod_lore.141 }
+	}
+
+	option = {
+		name = dod_lore.close
+	}
+}
+
+dod_lore.141 = {
+	type = country_event
+	placement = root
+	title = dod_lore.141.t
+	desc = dod_lore.141.d
+	flavor = dod_lore.flavor
+	event_image = { video = "unspecific_signed_contract" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	option = {
+		name = dod_lore.next
+		trigger_event = { id = dod_lore.142 }
+	}
+
+	option = {
+		name = dod_lore.close
+	}
+}
+
+dod_lore.142 = {
+	type = country_event
+	placement = root
+	title = dod_lore.142.t
+	desc = dod_lore.142.d
+	flavor = dod_lore.flavor
+	event_image = { video = "unspecific_signed_contract" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	option = {
+		name = dod_lore.next
+		trigger_event = { id = dod_lore.143 }
+	}
+
+	option = {
+		name = dod_lore.close
+	}
+}
+
+dod_lore.143 = {
+	type = country_event
+	placement = root
+	title = dod_lore.143.t
+	desc = dod_lore.143.d
+	flavor = dod_lore.flavor
+	event_image = { video = "unspecific_signed_contract" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	option = {
+		name = dod_lore.next
+		trigger_event = { id = dod_lore.144 }
+	}
+
+	option = {
+		name = dod_lore.close
+	}
+}
+
+dod_lore.144 = {
+	type = country_event
+	placement = root
+	title = dod_lore.144.t
+	desc = dod_lore.144.d
+	flavor = dod_lore.flavor
+	event_image = { video = "unspecific_signed_contract" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	option = {
+		name = dod_lore.next
+		trigger_event = { id = dod_lore.145 }
+	}
+
+	option = {
+		name = dod_lore.close
+	}
+}
+
+dod_lore.145 = {
+	type = country_event
+	placement = root
+	title = dod_lore.145.t
+	desc = dod_lore.145.d
+	flavor = dod_lore.flavor
+	event_image = { video = "unspecific_signed_contract" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	option = {
+		name = dod_lore.next
+		trigger_event = { id = dod_lore.146 }
+	}
+
+	option = {
+		name = dod_lore.close
+	}
+}
+
+dod_lore.146 = {
+	type = country_event
+	placement = root
+	title = dod_lore.146.t
+	desc = dod_lore.146.d
+	flavor = dod_lore.flavor
+	event_image = { video = "unspecific_signed_contract" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	option = {
+		name = dod_lore.next
+		trigger_event = { id = dod_lore.147 }
+	}
+
+	option = {
+		name = dod_lore.close
+	}
+}
+
+dod_lore.147 = {
+	type = country_event
+	placement = root
+	title = dod_lore.147.t
+	desc = dod_lore.147.d
+	flavor = dod_lore.flavor
+	event_image = { video = "unspecific_signed_contract" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	option = {
+		name = dod_lore.close
+	}
+}
+
+dod_lore.153 = {
+	type = country_event
+	placement = root
+	title = dod_lore.153.t
+	desc = dod_lore.153.d
+	flavor = dod_lore.flavor
+	event_image = { video = "unspecific_signed_contract" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	option = {
+		name = dod_lore.next
+		trigger_event = { id = dod_lore.154 }
+	}
+
+	option = {
+		name = dod_lore.close
+	}
+}
+
+dod_lore.154 = {
+	type = country_event
+	placement = root
+	title = dod_lore.154.t
+	desc = dod_lore.154.d
+	flavor = dod_lore.flavor
+	event_image = { video = "unspecific_signed_contract" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	option = {
+		name = dod_lore.next
+		trigger_event = { id = dod_lore.155 }
+	}
+
+	option = {
+		name = dod_lore.close
+	}
+}
+
+dod_lore.155 = {
+	type = country_event
+	placement = root
+	title = dod_lore.155.t
+	desc = dod_lore.155.d
+	flavor = dod_lore.flavor
+	event_image = { video = "unspecific_signed_contract" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	option = {
+		name = dod_lore.next
+		trigger_event = { id = dod_lore.156 }
+	}
+
+	option = {
+		name = dod_lore.close
+	}
+}
+
+dod_lore.156 = {
+	type = country_event
+	placement = root
+	title = dod_lore.156.t
+	desc = dod_lore.156.d
+	flavor = dod_lore.flavor
+	event_image = { video = "unspecific_signed_contract" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	option = {
+		name = dod_lore.next
+		trigger_event = { id = dod_lore.157 }
+	}
+
+	option = {
+		name = dod_lore.close
+	}
+}
+
+dod_lore.157 = {
+	type = country_event
+	placement = root
+	title = dod_lore.157.t
+	desc = dod_lore.157.d
+	flavor = dod_lore.flavor
+	event_image = { video = "unspecific_signed_contract" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	option = {
+		name = dod_lore.next
+		trigger_event = { id = dod_lore.158 }
+	}
+
+	option = {
+		name = dod_lore.close
+	}
+}
+
+dod_lore.158 = {
+	type = country_event
+	placement = root
+	title = dod_lore.158.t
+	desc = dod_lore.158.d
+	flavor = dod_lore.flavor
+	event_image = { video = "unspecific_signed_contract" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	option = {
+		name = dod_lore.next
+		trigger_event = { id = dod_lore.159 }
+	}
+
+	option = {
+		name = dod_lore.close
+	}
+}
+
+dod_lore.159 = {
+	type = country_event
+	placement = root
+	title = dod_lore.159.t
+	desc = dod_lore.159.d
+	flavor = dod_lore.flavor
+	event_image = { video = "unspecific_signed_contract" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	option = {
+		name = dod_lore.close
+	}
+}
+
+dod_lore.165 = {
+	type = country_event
+	placement = root
+	title = dod_lore.165.t
+	desc = dod_lore.165.d
+	flavor = dod_lore.flavor
+	event_image = { video = "unspecific_signed_contract" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	option = {
+		name = dod_lore.next
+		trigger_event = { id = dod_lore.166 }
+	}
+
+	option = {
+		name = dod_lore.close
+	}
+}
+
+dod_lore.166 = {
+	type = country_event
+	placement = root
+	title = dod_lore.166.t
+	desc = dod_lore.166.d
+	flavor = dod_lore.flavor
+	event_image = { video = "unspecific_signed_contract" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	option = {
+		name = dod_lore.next
+		trigger_event = { id = dod_lore.167 }
+	}
+
+	option = {
+		name = dod_lore.close
+	}
+}
+
+dod_lore.167 = {
+	type = country_event
+	placement = root
+	title = dod_lore.167.t
+	desc = dod_lore.167.d
+	flavor = dod_lore.flavor
+	event_image = { video = "unspecific_signed_contract" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	option = {
+		name = dod_lore.next
+		trigger_event = { id = dod_lore.168 }
+	}
+
+	option = {
+		name = dod_lore.close
+	}
+}
+
+dod_lore.168 = {
+	type = country_event
+	placement = root
+	title = dod_lore.168.t
+	desc = dod_lore.168.d
+	flavor = dod_lore.flavor
+	event_image = { video = "unspecific_signed_contract" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	option = {
+		name = dod_lore.next
+		trigger_event = { id = dod_lore.169 }
+	}
+
+	option = {
+		name = dod_lore.close
+	}
+}
+
+dod_lore.169 = {
+	type = country_event
+	placement = root
+	title = dod_lore.169.t
+	desc = dod_lore.169.d
+	flavor = dod_lore.flavor
+	event_image = { video = "unspecific_signed_contract" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	option = {
+		name = dod_lore.next
+		trigger_event = { id = dod_lore.170 }
+	}
+
+	option = {
+		name = dod_lore.close
+	}
+}
+
+dod_lore.170 = {
+	type = country_event
+	placement = root
+	title = dod_lore.170.t
+	desc = dod_lore.170.d
+	flavor = dod_lore.flavor
+	event_image = { video = "unspecific_signed_contract" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	option = {
+		name = dod_lore.next
+		trigger_event = { id = dod_lore.171 }
+	}
+
+	option = {
+		name = dod_lore.close
+	}
+}
+
+dod_lore.171 = {
+	type = country_event
+	placement = root
+	title = dod_lore.171.t
+	desc = dod_lore.171.d
+	flavor = dod_lore.flavor
+	event_image = { video = "unspecific_signed_contract" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	option = {
+		name = dod_lore.close
+	}
+}
+
+dod_lore.177 = {
+	type = country_event
+	placement = root
+	title = dod_lore.177.t
+	desc = dod_lore.177.d
+	flavor = dod_lore.flavor
+	event_image = { video = "unspecific_signed_contract" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	option = {
+		name = dod_lore.next
+		trigger_event = { id = dod_lore.178 }
+	}
+
+	option = {
+		name = dod_lore.close
+	}
+}
+
+dod_lore.178 = {
+	type = country_event
+	placement = root
+	title = dod_lore.178.t
+	desc = dod_lore.178.d
+	flavor = dod_lore.flavor
+	event_image = { video = "unspecific_signed_contract" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	option = {
+		name = dod_lore.next
+		trigger_event = { id = dod_lore.179 }
+	}
+
+	option = {
+		name = dod_lore.close
+	}
+}
+
+dod_lore.179 = {
+	type = country_event
+	placement = root
+	title = dod_lore.179.t
+	desc = dod_lore.179.d
+	flavor = dod_lore.flavor
+	event_image = { video = "unspecific_signed_contract" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	option = {
+		name = dod_lore.next
+		trigger_event = { id = dod_lore.180 }
+	}
+
+	option = {
+		name = dod_lore.close
+	}
+}
+
+dod_lore.180 = {
+	type = country_event
+	placement = root
+	title = dod_lore.180.t
+	desc = dod_lore.180.d
+	flavor = dod_lore.flavor
+	event_image = { video = "unspecific_signed_contract" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	option = {
+		name = dod_lore.next
+		trigger_event = { id = dod_lore.181 }
+	}
+
+	option = {
+		name = dod_lore.close
+	}
+}
+
+dod_lore.181 = {
+	type = country_event
+	placement = root
+	title = dod_lore.181.t
+	desc = dod_lore.181.d
+	flavor = dod_lore.flavor
+	event_image = { video = "unspecific_signed_contract" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	option = {
+		name = dod_lore.next
+		trigger_event = { id = dod_lore.182 }
+	}
+
+	option = {
+		name = dod_lore.close
+	}
+}
+
+dod_lore.182 = {
+	type = country_event
+	placement = root
+	title = dod_lore.182.t
+	desc = dod_lore.182.d
+	flavor = dod_lore.flavor
+	event_image = { video = "unspecific_signed_contract" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	option = {
+		name = dod_lore.next
+		trigger_event = { id = dod_lore.183 }
+	}
+
+	option = {
+		name = dod_lore.close
+	}
+}
+
+dod_lore.183 = {
+	type = country_event
+	placement = root
+	title = dod_lore.183.t
+	desc = dod_lore.183.d
+	flavor = dod_lore.flavor
+	event_image = { video = "unspecific_signed_contract" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	option = {
+		name = dod_lore.next
+		trigger_event = { id = dod_lore.184 }
+	}
+
+	option = {
+		name = dod_lore.close
+	}
+}
+
+dod_lore.184 = {
+	type = country_event
+	placement = root
+	title = dod_lore.184.t
+	desc = dod_lore.184.d
+	flavor = dod_lore.flavor
+	event_image = { video = "unspecific_signed_contract" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	option = {
+		name = dod_lore.next
+		trigger_event = { id = dod_lore.185 }
+	}
+
+	option = {
+		name = dod_lore.close
+	}
+}
+
+dod_lore.185 = {
+	type = country_event
+	placement = root
+	title = dod_lore.185.t
+	desc = dod_lore.185.d
+	flavor = dod_lore.flavor
+	event_image = { video = "unspecific_signed_contract" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	option = {
+		name = dod_lore.next
+		trigger_event = { id = dod_lore.186 }
+	}
+
+	option = {
+		name = dod_lore.close
+	}
+}
+
+dod_lore.186 = {
+	type = country_event
+	placement = root
+	title = dod_lore.186.t
+	desc = dod_lore.186.d
+	flavor = dod_lore.flavor
+	event_image = { video = "unspecific_signed_contract" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	option = {
+		name = dod_lore.close
+	}
+}
+
+dod_lore.192 = {
+	type = country_event
+	placement = root
+	title = dod_lore.192.t
+	desc = dod_lore.192.d
+	flavor = dod_lore.flavor
+	event_image = { video = "unspecific_signed_contract" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	option = {
+		name = dod_lore.next
+		trigger_event = { id = dod_lore.193 }
+	}
+
+	option = {
+		name = dod_lore.close
+	}
+}
+
+dod_lore.193 = {
+	type = country_event
+	placement = root
+	title = dod_lore.193.t
+	desc = dod_lore.193.d
+	flavor = dod_lore.flavor
+	event_image = { video = "unspecific_signed_contract" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	option = {
+		name = dod_lore.next
+		trigger_event = { id = dod_lore.194 }
+	}
+
+	option = {
+		name = dod_lore.close
+	}
+}
+
+dod_lore.194 = {
+	type = country_event
+	placement = root
+	title = dod_lore.194.t
+	desc = dod_lore.194.d
+	flavor = dod_lore.flavor
+	event_image = { video = "unspecific_signed_contract" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	option = {
+		name = dod_lore.next
+		trigger_event = { id = dod_lore.195 }
+	}
+
+	option = {
+		name = dod_lore.close
+	}
+}
+
+dod_lore.195 = {
+	type = country_event
+	placement = root
+	title = dod_lore.195.t
+	desc = dod_lore.195.d
+	flavor = dod_lore.flavor
+	event_image = { video = "unspecific_signed_contract" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	option = {
+		name = dod_lore.next
+		trigger_event = { id = dod_lore.196 }
+	}
+
+	option = {
+		name = dod_lore.close
+	}
+}
+
+dod_lore.196 = {
+	type = country_event
+	placement = root
+	title = dod_lore.196.t
+	desc = dod_lore.196.d
+	flavor = dod_lore.flavor
+	event_image = { video = "unspecific_signed_contract" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	option = {
+		name = dod_lore.next
+		trigger_event = { id = dod_lore.197 }
+	}
+
+	option = {
+		name = dod_lore.close
+	}
+}
+
+dod_lore.197 = {
+	type = country_event
+	placement = root
+	title = dod_lore.197.t
+	desc = dod_lore.197.d
+	flavor = dod_lore.flavor
+	event_image = { video = "unspecific_signed_contract" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	option = {
+		name = dod_lore.next
+		trigger_event = { id = dod_lore.198 }
+	}
+
+	option = {
+		name = dod_lore.close
+	}
+}
+
+dod_lore.198 = {
+	type = country_event
+	placement = root
+	title = dod_lore.198.t
+	desc = dod_lore.198.d
+	flavor = dod_lore.flavor
+	event_image = { video = "unspecific_signed_contract" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	option = {
+		name = dod_lore.next
+		trigger_event = { id = dod_lore.199 }
+	}
+
+	option = {
+		name = dod_lore.close
+	}
+}
+
+dod_lore.199 = {
+	type = country_event
+	placement = root
+	title = dod_lore.199.t
+	desc = dod_lore.199.d
+	flavor = dod_lore.flavor
+	event_image = { video = "unspecific_signed_contract" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	option = {
+		name = dod_lore.next
+		trigger_event = { id = dod_lore.200 }
+	}
+
+	option = {
+		name = dod_lore.close
+	}
+}
+
+dod_lore.200 = {
+	type = country_event
+	placement = root
+	title = dod_lore.200.t
+	desc = dod_lore.200.d
+	flavor = dod_lore.flavor
+	event_image = { video = "unspecific_signed_contract" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	option = {
+		name = dod_lore.next
+		trigger_event = { id = dod_lore.201 }
+	}
+
+	option = {
+		name = dod_lore.close
+	}
+}
+
+dod_lore.201 = {
+	type = country_event
+	placement = root
+	title = dod_lore.201.t
+	desc = dod_lore.201.d
+	flavor = dod_lore.flavor
+	event_image = { video = "unspecific_signed_contract" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	option = {
+		name = dod_lore.close
+	}
+}
+
+dod_lore.207 = {
+	type = country_event
+	placement = root
+	title = dod_lore.207.t
+	desc = dod_lore.207.d
+	flavor = dod_lore.flavor
+	event_image = { video = "unspecific_signed_contract" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	option = {
+		name = dod_lore.next
+		trigger_event = { id = dod_lore.208 }
+	}
+
+	option = {
+		name = dod_lore.close
+	}
+}
+
+dod_lore.208 = {
+	type = country_event
+	placement = root
+	title = dod_lore.208.t
+	desc = dod_lore.208.d
+	flavor = dod_lore.flavor
+	event_image = { video = "unspecific_signed_contract" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	option = {
+		name = dod_lore.next
+		trigger_event = { id = dod_lore.209 }
+	}
+
+	option = {
+		name = dod_lore.close
+	}
+}
+
+dod_lore.209 = {
+	type = country_event
+	placement = root
+	title = dod_lore.209.t
+	desc = dod_lore.209.d
+	flavor = dod_lore.flavor
+	event_image = { video = "unspecific_signed_contract" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	option = {
+		name = dod_lore.next
+		trigger_event = { id = dod_lore.210 }
+	}
+
+	option = {
+		name = dod_lore.close
+	}
+}
+
+dod_lore.210 = {
+	type = country_event
+	placement = root
+	title = dod_lore.210.t
+	desc = dod_lore.210.d
+	flavor = dod_lore.flavor
+	event_image = { video = "unspecific_signed_contract" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	option = {
+		name = dod_lore.next
+		trigger_event = { id = dod_lore.211 }
+	}
+
+	option = {
+		name = dod_lore.close
+	}
+}
+
+dod_lore.211 = {
+	type = country_event
+	placement = root
+	title = dod_lore.211.t
+	desc = dod_lore.211.d
+	flavor = dod_lore.flavor
+	event_image = { video = "unspecific_signed_contract" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	option = {
+		name = dod_lore.next
+		trigger_event = { id = dod_lore.212 }
+	}
+
+	option = {
+		name = dod_lore.close
+	}
+}
+
+dod_lore.212 = {
+	type = country_event
+	placement = root
+	title = dod_lore.212.t
+	desc = dod_lore.212.d
+	flavor = dod_lore.flavor
+	event_image = { video = "unspecific_signed_contract" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	option = {
+		name = dod_lore.next
+		trigger_event = { id = dod_lore.213 }
+	}
+
+	option = {
+		name = dod_lore.close
+	}
+}
+
+dod_lore.213 = {
+	type = country_event
+	placement = root
+	title = dod_lore.213.t
+	desc = dod_lore.213.d
+	flavor = dod_lore.flavor
+	event_image = { video = "unspecific_signed_contract" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	option = {
+		name = dod_lore.next
+		trigger_event = { id = dod_lore.214 }
+	}
+
+	option = {
+		name = dod_lore.close
+	}
+}
+
+dod_lore.214 = {
+	type = country_event
+	placement = root
+	title = dod_lore.214.t
+	desc = dod_lore.214.d
+	flavor = dod_lore.flavor
+	event_image = { video = "unspecific_signed_contract" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	option = {
+		name = dod_lore.next
+		trigger_event = { id = dod_lore.215 }
+	}
+
+	option = {
+		name = dod_lore.close
+	}
+}
+
+dod_lore.215 = {
+	type = country_event
+	placement = root
+	title = dod_lore.215.t
+	desc = dod_lore.215.d
+	flavor = dod_lore.flavor
+	event_image = { video = "unspecific_signed_contract" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	option = {
+		name = dod_lore.next
+		trigger_event = { id = dod_lore.216 }
+	}
+
+	option = {
+		name = dod_lore.close
+	}
+}
+
+dod_lore.216 = {
+	type = country_event
+	placement = root
+	title = dod_lore.216.t
+	desc = dod_lore.216.d
+	flavor = dod_lore.flavor
+	event_image = { video = "unspecific_signed_contract" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	option = {
+		name = dod_lore.close
+	}
+}
+
+dod_lore.222 = {
+	type = country_event
+	placement = root
+	title = dod_lore.222.t
+	desc = dod_lore.222.d
+	flavor = dod_lore.flavor
+	event_image = { video = "unspecific_signed_contract" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	option = {
+		name = dod_lore.next
+		trigger_event = { id = dod_lore.223 }
+	}
+
+	option = {
+		name = dod_lore.close
+	}
+}
+
+dod_lore.223 = {
+	type = country_event
+	placement = root
+	title = dod_lore.223.t
+	desc = dod_lore.223.d
+	flavor = dod_lore.flavor
+	event_image = { video = "unspecific_signed_contract" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	option = {
+		name = dod_lore.next
+		trigger_event = { id = dod_lore.224 }
+	}
+
+	option = {
+		name = dod_lore.close
+	}
+}
+
+dod_lore.224 = {
+	type = country_event
+	placement = root
+	title = dod_lore.224.t
+	desc = dod_lore.224.d
+	flavor = dod_lore.flavor
+	event_image = { video = "unspecific_signed_contract" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	option = {
+		name = dod_lore.next
+		trigger_event = { id = dod_lore.225 }
+	}
+
+	option = {
+		name = dod_lore.close
+	}
+}
+
+dod_lore.225 = {
+	type = country_event
+	placement = root
+	title = dod_lore.225.t
+	desc = dod_lore.225.d
+	flavor = dod_lore.flavor
+	event_image = { video = "unspecific_signed_contract" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	option = {
+		name = dod_lore.next
+		trigger_event = { id = dod_lore.226 }
+	}
+
+	option = {
+		name = dod_lore.close
+	}
+}
+
+dod_lore.226 = {
+	type = country_event
+	placement = root
+	title = dod_lore.226.t
+	desc = dod_lore.226.d
+	flavor = dod_lore.flavor
+	event_image = { video = "unspecific_signed_contract" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	option = {
+		name = dod_lore.next
+		trigger_event = { id = dod_lore.227 }
+	}
+
+	option = {
+		name = dod_lore.close
+	}
+}
+
+dod_lore.227 = {
+	type = country_event
+	placement = root
+	title = dod_lore.227.t
+	desc = dod_lore.227.d
+	flavor = dod_lore.flavor
+	event_image = { video = "unspecific_signed_contract" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	option = {
+		name = dod_lore.next
+		trigger_event = { id = dod_lore.228 }
+	}
+
+	option = {
+		name = dod_lore.close
+	}
+}
+
+dod_lore.228 = {
+	type = country_event
+	placement = root
+	title = dod_lore.228.t
+	desc = dod_lore.228.d
+	flavor = dod_lore.flavor
+	event_image = { video = "unspecific_signed_contract" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	option = {
+		name = dod_lore.next
+		trigger_event = { id = dod_lore.229 }
+	}
+
+	option = {
+		name = dod_lore.close
+	}
+}
+
+dod_lore.229 = {
+	type = country_event
+	placement = root
+	title = dod_lore.229.t
+	desc = dod_lore.229.d
+	flavor = dod_lore.flavor
+	event_image = { video = "unspecific_signed_contract" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	option = {
+		name = dod_lore.next
+		trigger_event = { id = dod_lore.230 }
+	}
+
+	option = {
+		name = dod_lore.close
+	}
+}
+
+dod_lore.230 = {
+	type = country_event
+	placement = root
+	title = dod_lore.230.t
+	desc = dod_lore.230.d
+	flavor = dod_lore.flavor
+	event_image = { video = "unspecific_signed_contract" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	option = {
+		name = dod_lore.next
+		trigger_event = { id = dod_lore.231 }
+	}
+
+	option = {
+		name = dod_lore.close
+	}
+}
+
+dod_lore.231 = {
+	type = country_event
+	placement = root
+	title = dod_lore.231.t
+	desc = dod_lore.231.d
+	flavor = dod_lore.flavor
+	event_image = { video = "unspecific_signed_contract" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	option = {
+		name = dod_lore.close
+	}
+}
+
+dod_lore.237 = {
+	type = country_event
+	placement = root
+	title = dod_lore.237.t
+	desc = dod_lore.237.d
+	flavor = dod_lore.flavor
+	event_image = { video = "unspecific_signed_contract" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	option = {
+		name = dod_lore.next
+		trigger_event = { id = dod_lore.238 }
+	}
+
+	option = {
+		name = dod_lore.close
+	}
+}
+
+dod_lore.238 = {
+	type = country_event
+	placement = root
+	title = dod_lore.238.t
+	desc = dod_lore.238.d
+	flavor = dod_lore.flavor
+	event_image = { video = "unspecific_signed_contract" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	option = {
+		name = dod_lore.next
+		trigger_event = { id = dod_lore.239 }
+	}
+
+	option = {
+		name = dod_lore.close
+	}
+}
+
+dod_lore.239 = {
+	type = country_event
+	placement = root
+	title = dod_lore.239.t
+	desc = dod_lore.239.d
+	flavor = dod_lore.flavor
+	event_image = { video = "unspecific_signed_contract" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	option = {
+		name = dod_lore.next
+		trigger_event = { id = dod_lore.240 }
+	}
+
+	option = {
+		name = dod_lore.close
+	}
+}
+
+dod_lore.240 = {
+	type = country_event
+	placement = root
+	title = dod_lore.240.t
+	desc = dod_lore.240.d
+	flavor = dod_lore.flavor
+	event_image = { video = "unspecific_signed_contract" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	option = {
+		name = dod_lore.next
+		trigger_event = { id = dod_lore.241 }
+	}
+
+	option = {
+		name = dod_lore.close
+	}
+}
+
+dod_lore.241 = {
+	type = country_event
+	placement = root
+	title = dod_lore.241.t
+	desc = dod_lore.241.d
+	flavor = dod_lore.flavor
+	event_image = { video = "unspecific_signed_contract" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	option = {
+		name = dod_lore.next
+		trigger_event = { id = dod_lore.242 }
+	}
+
+	option = {
+		name = dod_lore.close
+	}
+}
+
+dod_lore.242 = {
+	type = country_event
+	placement = root
+	title = dod_lore.242.t
+	desc = dod_lore.242.d
+	flavor = dod_lore.flavor
+	event_image = { video = "unspecific_signed_contract" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	option = {
+		name = dod_lore.next
+		trigger_event = { id = dod_lore.243 }
+	}
+
+	option = {
+		name = dod_lore.close
+	}
+}
+
+dod_lore.243 = {
+	type = country_event
+	placement = root
+	title = dod_lore.243.t
+	desc = dod_lore.243.d
+	flavor = dod_lore.flavor
+	event_image = { video = "unspecific_signed_contract" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	option = {
+		name = dod_lore.next
+		trigger_event = { id = dod_lore.244 }
+	}
+
+	option = {
+		name = dod_lore.close
+	}
+}
+
+dod_lore.244 = {
+	type = country_event
+	placement = root
+	title = dod_lore.244.t
+	desc = dod_lore.244.d
+	flavor = dod_lore.flavor
+	event_image = { video = "unspecific_signed_contract" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	option = {
+		name = dod_lore.close
+	}
+}
+
+dod_lore.250 = {
+	type = country_event
+	placement = root
+	title = dod_lore.250.t
+	desc = dod_lore.250.d
+	flavor = dod_lore.flavor
+	event_image = { video = "unspecific_signed_contract" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	option = {
+		name = dod_lore.next
+		trigger_event = { id = dod_lore.251 }
+	}
+
+	option = {
+		name = dod_lore.close
+	}
+}
+
+dod_lore.251 = {
+	type = country_event
+	placement = root
+	title = dod_lore.251.t
+	desc = dod_lore.251.d
+	flavor = dod_lore.flavor
+	event_image = { video = "unspecific_signed_contract" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	option = {
+		name = dod_lore.next
+		trigger_event = { id = dod_lore.252 }
+	}
+
+	option = {
+		name = dod_lore.close
+	}
+}
+
+dod_lore.252 = {
+	type = country_event
+	placement = root
+	title = dod_lore.252.t
+	desc = dod_lore.252.d
+	flavor = dod_lore.flavor
+	event_image = { video = "unspecific_signed_contract" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	option = {
+		name = dod_lore.next
+		trigger_event = { id = dod_lore.253 }
+	}
+
+	option = {
+		name = dod_lore.close
+	}
+}
+
+dod_lore.253 = {
+	type = country_event
+	placement = root
+	title = dod_lore.253.t
+	desc = dod_lore.253.d
+	flavor = dod_lore.flavor
+	event_image = { video = "unspecific_signed_contract" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	option = {
+		name = dod_lore.next
+		trigger_event = { id = dod_lore.254 }
+	}
+
+	option = {
+		name = dod_lore.close
+	}
+}
+
+dod_lore.254 = {
+	type = country_event
+	placement = root
+	title = dod_lore.254.t
+	desc = dod_lore.254.d
+	flavor = dod_lore.flavor
+	event_image = { video = "unspecific_signed_contract" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	option = {
+		name = dod_lore.next
+		trigger_event = { id = dod_lore.255 }
+	}
+
+	option = {
+		name = dod_lore.close
+	}
+}
+
+dod_lore.255 = {
+	type = country_event
+	placement = root
+	title = dod_lore.255.t
+	desc = dod_lore.255.d
+	flavor = dod_lore.flavor
+	event_image = { video = "unspecific_signed_contract" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	option = {
+		name = dod_lore.close
+	}
+}
+
+dod_lore.261 = {
+	type = country_event
+	placement = root
+	title = dod_lore.261.t
+	desc = dod_lore.261.d
+	flavor = dod_lore.flavor
+	event_image = { video = "unspecific_signed_contract" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	option = {
+		name = dod_lore.next
+		trigger_event = { id = dod_lore.262 }
+	}
+
+	option = {
+		name = dod_lore.close
+	}
+}
+
+dod_lore.262 = {
+	type = country_event
+	placement = root
+	title = dod_lore.262.t
+	desc = dod_lore.262.d
+	flavor = dod_lore.flavor
+	event_image = { video = "unspecific_signed_contract" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	option = {
+		name = dod_lore.next
+		trigger_event = { id = dod_lore.263 }
+	}
+
+	option = {
+		name = dod_lore.close
+	}
+}
+
+dod_lore.263 = {
+	type = country_event
+	placement = root
+	title = dod_lore.263.t
+	desc = dod_lore.263.d
+	flavor = dod_lore.flavor
+	event_image = { video = "unspecific_signed_contract" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	option = {
+		name = dod_lore.next
+		trigger_event = { id = dod_lore.264 }
+	}
+
+	option = {
+		name = dod_lore.close
+	}
+}
+
+dod_lore.264 = {
+	type = country_event
+	placement = root
+	title = dod_lore.264.t
+	desc = dod_lore.264.d
+	flavor = dod_lore.flavor
+	event_image = { video = "unspecific_signed_contract" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	option = {
+		name = dod_lore.next
+		trigger_event = { id = dod_lore.265 }
+	}
+
+	option = {
+		name = dod_lore.close
+	}
+}
+
+dod_lore.265 = {
+	type = country_event
+	placement = root
+	title = dod_lore.265.t
+	desc = dod_lore.265.d
+	flavor = dod_lore.flavor
+	event_image = { video = "unspecific_signed_contract" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	option = {
+		name = dod_lore.next
+		trigger_event = { id = dod_lore.266 }
+	}
+
+	option = {
+		name = dod_lore.close
+	}
+}
+
+dod_lore.266 = {
+	type = country_event
+	placement = root
+	title = dod_lore.266.t
+	desc = dod_lore.266.d
+	flavor = dod_lore.flavor
+	event_image = { video = "unspecific_signed_contract" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	option = {
+		name = dod_lore.next
+		trigger_event = { id = dod_lore.267 }
+	}
+
+	option = {
+		name = dod_lore.close
+	}
+}
+
+dod_lore.267 = {
+	type = country_event
+	placement = root
+	title = dod_lore.267.t
+	desc = dod_lore.267.d
+	flavor = dod_lore.flavor
+	event_image = { video = "unspecific_signed_contract" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	option = {
+		name = dod_lore.next
+		trigger_event = { id = dod_lore.268 }
+	}
+
+	option = {
+		name = dod_lore.close
+	}
+}
+
+dod_lore.268 = {
+	type = country_event
+	placement = root
+	title = dod_lore.268.t
+	desc = dod_lore.268.d
+	flavor = dod_lore.flavor
+	event_image = { video = "unspecific_signed_contract" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	option = {
+		name = dod_lore.next
+		trigger_event = { id = dod_lore.269 }
+	}
+
+	option = {
+		name = dod_lore.close
+	}
+}
+
+dod_lore.269 = {
+	type = country_event
+	placement = root
+	title = dod_lore.269.t
+	desc = dod_lore.269.d
+	flavor = dod_lore.flavor
+	event_image = { video = "unspecific_signed_contract" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	option = {
+		name = dod_lore.next
+		trigger_event = { id = dod_lore.270 }
+	}
+
+	option = {
+		name = dod_lore.close
+	}
+}
+
+dod_lore.270 = {
+	type = country_event
+	placement = root
+	title = dod_lore.270.t
+	desc = dod_lore.270.d
+	flavor = dod_lore.flavor
+	event_image = { video = "unspecific_signed_contract" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	option = {
+		name = dod_lore.next
+		trigger_event = { id = dod_lore.271 }
+	}
+
+	option = {
+		name = dod_lore.close
+	}
+}
+
+dod_lore.271 = {
+	type = country_event
+	placement = root
+	title = dod_lore.271.t
+	desc = dod_lore.271.d
+	flavor = dod_lore.flavor
+	event_image = { video = "unspecific_signed_contract" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	option = {
+		name = dod_lore.next
+		trigger_event = { id = dod_lore.272 }
+	}
+
+	option = {
+		name = dod_lore.close
+	}
+}
+
+dod_lore.272 = {
+	type = country_event
+	placement = root
+	title = dod_lore.272.t
+	desc = dod_lore.272.d
+	flavor = dod_lore.flavor
+	event_image = { video = "unspecific_signed_contract" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	option = {
+		name = dod_lore.close
+	}
+}
+
+dod_lore.278 = {
+	type = country_event
+	placement = root
+	title = dod_lore.278.t
+	desc = dod_lore.278.d
+	flavor = dod_lore.flavor
+	event_image = { video = "unspecific_signed_contract" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	option = {
+		name = dod_lore.close
+	}
+}

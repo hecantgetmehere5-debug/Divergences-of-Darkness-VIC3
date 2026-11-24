@@ -1,0 +1,1300 @@
+namespace = dod_dua
+
+dod_dua.1 = {
+	type = country_event
+	placement = root
+	title = dod_dua.1.t
+	desc = dod_dua.1.d
+	flavor = dod_dua.1.f
+	event_image = { video = "unspecific_politicians_arguing" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+	duration = 3
+
+	trigger = {
+		this = c:DUA
+	}
+
+	immediate = {
+		remove_variable = dod_path_french
+		remove_variable = dod_path_english
+		remove_variable = dod_path_anglois
+	}
+
+	option = {
+		name = dod_dua.1.a
+		default_option = yes
+		set_variable = dod_path_french
+		ai_chance = { base = 50 }
+	}
+
+	option = {
+		name = dod_dua.1.b
+		set_variable = dod_path_english
+		ai_chance = { base = 20 }
+	}
+
+	option = {
+		name = dod_dua.1.c
+		set_variable = dod_path_anglois
+		ai_chance = { base = 30 }
+	}
+}
+
+dod_dua.2 = {
+	type = country_event
+	placement = root
+	title = dod_dua.2.t
+	desc = dod_dua.2.d
+	flavor = dod_dua.2.f
+	event_image = { video = "unspecific_military_parade" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	trigger = {
+		dod_dua_dilemma_active = yes
+		dod_dua_french_path = yes
+		NOT = { has_variable = dod_dua_seen_2 }
+	}
+
+	immediate = {
+		set_variable = dod_dua_seen_2
+	}
+
+	option = {
+		name = dod_dua.2.a
+		default_option = yes
+		dod_dua_shift = { ENGLISH = 5 FRENCH = -5 ACCEPT = 5 }
+	}
+}
+
+dod_dua.3 = {
+	type = country_event
+	placement = root
+	title = dod_dua.3.t
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				desc = dod_dua.3.d_france
+				trigger = { dod_dua_french_path = yes }
+			}
+			triggered_desc = {
+				desc = dod_dua.3.d_england
+			}
+		}
+	}
+	flavor = dod_dua.3.f
+	event_image = { video = "unspecific_military_parade" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	trigger = {
+		dod_dua_dilemma_active = yes
+		OR = {
+			dod_dua_french_path = yes
+			dod_dua_english_path = yes
+		}
+		NOT = { has_variable = dod_dua_seen_3 }
+	}
+
+	immediate = {
+		set_variable = dod_dua_seen_3
+	}
+
+	option = {
+		name = dod_dua.3.a
+		default_option = yes
+		if = {
+			limit = { dod_dua_french_path = yes }
+			dod_dua_shift = { ENGLISH = 3 FRENCH = -5 ACCEPT = 5 }
+		}
+		else = {
+			dod_dua_shift = { ENGLISH = -5 FRENCH = 3 ACCEPT = 5 }
+		}
+	}
+}
+
+dod_dua.4 = {
+	type = country_event
+	placement = root
+	title = dod_dua.4.t
+	desc = dod_dua.4.d
+	flavor = dod_dua.4.f
+	event_image = { texture = "gfx/event_pictures/dod/liberals_org.dds" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+	duration = 3
+
+	trigger = {
+		dod_dua_dilemma_active = yes
+		dod_dua_french_path = yes
+		NOT = { has_variable = dod_dua_seen_4 }
+	}
+
+	immediate = {
+		set_variable = dod_dua_seen_4
+	}
+
+	option = {
+		name = dod_dua.4.a
+		default_option = yes
+		set_variable = dod_harold_active
+		dod_dua_shift = { ENGLISH = 10 FRENCH = 0 ACCEPT = 0 }
+		ai_chance = { base = 60 }
+	}
+
+	option = {
+		name = dod_dua.4.b
+		set_variable = dod_harold_active
+		ig:ig_intelligentsia = { add_modifier = { name = dod_anglois_censorship months = 36 } }
+		dod_dua_shift = { ENGLISH = 5 FRENCH = 0 ACCEPT = 0 }
+		ai_chance = { base = 40 }
+	}
+}
+
+dod_dua.5 = {
+	type = country_event
+	placement = root
+	title = dod_dua.5.t
+	desc = dod_dua.5.d
+	flavor = dod_dua.5.f
+	event_image = { video = "unspecific_politicians_arguing" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+	duration = 3
+
+	trigger = {
+		dod_dua_dilemma_active = yes
+		OR = {
+			dod_dua_french_path = yes
+			dod_dua_anglois_path = yes
+		}
+		NOT = { has_variable = dod_dua_seen_5 }
+	}
+
+	immediate = {
+		set_variable = dod_dua_seen_5
+	}
+
+	option = {
+		name = dod_dua.5.a
+		default_option = yes
+		dod_dua_shift = { ENGLISH = 10 FRENCH = -5 ACCEPT = 0 }
+		ai_chance = { base = 40 }
+	}
+
+	option = {
+		name = dod_dua.5.b
+		dod_dua_shift = { ENGLISH = -5 FRENCH = 10 ACCEPT = 0 }
+		ai_chance = { base = 20 }
+	}
+
+	option = {
+		name = dod_dua.5.c
+		dod_dua_shift = { ENGLISH = 0 FRENCH = 0 ACCEPT = 3 }
+		ai_chance = { base = 40 }
+	}
+}
+
+dod_dua.6 = {
+	type = country_event
+	placement = root
+	title = dod_dua.6.t
+	desc = dod_dua.6.d
+	flavor = dod_dua.6.f
+	event_image = { video = "europenorthamerica_springtime_of_nations" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	trigger = {
+		dod_dua_dilemma_active = yes
+		dod_dua_french_path = yes
+		has_variable = dod_harold_active
+		NOT = { has_variable = dod_dua_seen_6 }
+	}
+
+	immediate = {
+		set_variable = dod_dua_seen_6
+	}
+
+	option = {
+		name = dod_dua.6.a
+		default_option = yes
+		dod_dua_shift = { ENGLISH = -5 FRENCH = 0 ACCEPT = -5 }
+		ai_chance = { base = 30 }
+	}
+
+	option = {
+		name = dod_dua.6.b
+		dod_dua_shift = { ENGLISH = 3 FRENCH = 0 ACCEPT = 0 }
+		ai_chance = { base = 40 }
+	}
+
+	option = {
+		name = dod_dua.6.c
+		dod_dua_shift = { ENGLISH = 10 FRENCH = -3 ACCEPT = 0 }
+		ai_chance = { base = 30 }
+	}
+}
+
+dod_dua.7 = {
+	type = country_event
+	placement = root
+	title = dod_dua.7.t
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				desc = dod_dua.7.d_english
+				trigger = { var:dod_english_unrest >= var:dod_french_unrest }
+			}
+			triggered_desc = {
+				desc = dod_dua.7.d_french
+			}
+		}
+	}
+	flavor = dod_dua.7.f
+	event_image = { texture = "gfx/event_pictures/dod/assassination_dauphin.dds" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+	duration = 3
+
+	trigger = {
+		dod_dua_dilemma_active = yes
+		NOT = { has_variable = dod_heir_killed }
+		OR = {
+			var:dod_english_unrest >= 50
+			var:dod_french_unrest >= 50
+		}
+	}
+
+	option = {
+		name = dod_dua.7.a
+		default_option = yes
+		set_variable = dod_heir_killed
+		ig:ig_intelligentsia = { add_modifier = { name = dod_anglois_censorship months = 60 } }
+		dod_dua_shift = { ENGLISH = -10 FRENCH = -10 ACCEPT = -5 }
+		ai_chance = { base = 60 }
+	}
+
+	option = {
+		name = dod_dua.7.b
+		set_variable = dod_heir_killed
+		dod_dua_shift = { ENGLISH = 0 FRENCH = 0 ACCEPT = -5 }
+		ai_chance = { base = 40 }
+	}
+}
+
+dod_dua.8 = {
+	type = country_event
+	placement = root
+	title = dod_dua.8.t
+	desc = dod_dua.8.d
+	flavor = dod_dua.8.f
+	event_image = { video = "europenorthamerica_political_extremism" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+	duration = 3
+
+	trigger = {
+		dod_dua_dilemma_active = yes
+		dod_dua_english_path = yes
+		NOT = { has_variable = dod_dua_seen_8 }
+	}
+
+	immediate = {
+		set_variable = dod_dua_seen_8
+	}
+
+	option = {
+		name = dod_dua.8.a
+		default_option = yes
+		set_variable = dod_louis_active
+		dod_dua_shift = { ENGLISH = 0 FRENCH = 10 ACCEPT = 0 }
+		ai_chance = { base = 60 }
+	}
+
+	option = {
+		name = dod_dua.8.b
+		set_variable = dod_louis_active
+		ig:ig_intelligentsia = { add_modifier = { name = dod_anglois_censorship months = 36 } }
+		dod_dua_shift = { ENGLISH = 0 FRENCH = 5 ACCEPT = 0 }
+		ai_chance = { base = 40 }
+	}
+}
+
+dod_dua.9 = {
+	type = country_event
+	placement = root
+	title = dod_dua.9.t
+	desc = dod_dua.9.d
+	flavor = dod_dua.9.f
+	event_image = { texture = "gfx/event_pictures/dod/Saxon_romanticism.dds" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	trigger = {
+		dod_dua_dilemma_active = yes
+		OR = {
+			dod_dua_english_path = yes
+			dod_dua_anglois_path = yes
+		}
+		NOT = { has_variable = dod_dua_seen_9 }
+	}
+
+	immediate = {
+		set_variable = dod_dua_seen_9
+	}
+
+	option = {
+		name = dod_dua.9.a
+		default_option = yes
+		dod_dua_shift = { ENGLISH = -5 FRENCH = 5 ACCEPT = 0 }
+		ai_chance = { base = 50 }
+	}
+
+	option = {
+		name = dod_dua.9.b
+		dod_dua_shift = { ENGLISH = 5 FRENCH = -5 ACCEPT = 0 }
+		ai_chance = { base = 50 }
+	}
+}
+
+dod_dua.10 = {
+	type = country_event
+	placement = root
+	title = dod_dua.10.t
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				desc = dod_dua.10.d_elisabeth
+				trigger = { var:dod_succession = 1 }
+			}
+			triggered_desc = {
+				desc = dod_dua.10.d_edouard
+				trigger = { var:dod_succession = 2 }
+			}
+			triggered_desc = {
+				desc = dod_dua.10.d_gascony
+				trigger = { var:dod_succession = 3 }
+			}
+			triggered_desc = {
+				desc = dod_dua.10.d_natural
+			}
+		}
+	}
+	flavor = dod_dua.10.f
+	event_image = { texture = "gfx/event_pictures/dod/Death_King.dds" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	trigger = {
+		this = c:DUA
+		NOT = { has_variable = dod_succession_done }
+		OR = {
+			AND = {
+				has_variable = dod_heir_killed
+				game_date >= 1845.1.1
+			}
+			game_date >= 1861.1.1
+		}
+	}
+
+	immediate = {
+		set_variable = dod_succession_done
+		if = {
+			limit = { has_variable = dod_heir_killed }
+			random_list = {
+				45 = { set_variable = { name = dod_succession value = 1 } }
+				30 = { set_variable = { name = dod_succession value = 2 } }
+				25 = { set_variable = { name = dod_succession value = 3 } }
+			}
+		}
+		else = {
+			set_variable = { name = dod_succession value = 4 }
+		}
+	}
+
+	option = {
+		name = dod_dua.10.a
+		default_option = yes
+		if = {
+			limit = { var:dod_succession = 1 }
+			create_character = { first_name = "Elisabeth" last_name = "Plantagenet" female = yes ruler = yes age = 28 }
+			dod_dua_shift = { ENGLISH = -5 FRENCH = 5 ACCEPT = 0 }
+		}
+		else_if = {
+			limit = { var:dod_succession = 2 }
+			create_character = { first_name = "Edouard" last_name = "Plantagenet" ruler = yes age = 40 }
+			dod_dua_shift = { ENGLISH = -15 FRENCH = 15 ACCEPT = 0 }
+		}
+		else_if = {
+			limit = { var:dod_succession = 3 }
+			create_character = { first_name = "Henri" last_name = "Plantagenet" ruler = yes age = 35 }
+			dod_dua_shift = { ENGLISH = 15 FRENCH = -15 ACCEPT = 0 }
+		}
+		else = {
+			create_character = { first_name = "Henri" last_name = "Plantagenet" ruler = yes age = 45 }
+			dod_dua_shift = { ENGLISH = -5 FRENCH = -5 ACCEPT = 5 }
+		}
+		remove_variable = dod_succession
+	}
+}
+
+dod_dua.11 = {
+	type = country_event
+	placement = root
+	title = dod_dua.11.t
+	desc = dod_dua.11.d
+	flavor = dod_dua.11.f
+	event_image = { video = "unspecific_politicians_arguing" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	trigger = {
+		dod_dua_dilemma_active = yes
+		dod_dua_anglois_path = yes
+		NOT = { has_variable = dod_dua_seen_11 }
+	}
+
+	immediate = {
+		set_variable = dod_dua_seen_11
+	}
+
+	option = {
+		name = dod_dua.11.a
+		default_option = yes
+		dod_dua_shift = { ENGLISH = 5 FRENCH = -10 ACCEPT = 3 }
+		ai_chance = { base = 35 }
+	}
+
+	option = {
+		name = dod_dua.11.b
+		dod_dua_shift = { ENGLISH = -10 FRENCH = 5 ACCEPT = 3 }
+		ai_chance = { base = 35 }
+	}
+
+	option = {
+		name = dod_dua.11.c
+		dod_dua_shift = { ENGLISH = 5 FRENCH = 5 ACCEPT = 5 }
+		ai_chance = { base = 30 }
+	}
+}
+
+dod_dua.12 = {
+	type = country_event
+	placement = root
+	title = dod_dua.12.t
+	desc = dod_dua.12.d
+	flavor = dod_dua.12.f
+	event_image = { texture = "gfx/event_pictures/dod/liberals_org.dds" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+	duration = 3
+
+	trigger = {
+		dod_dua_dilemma_active = yes
+		dod_dua_anglois_path = yes
+		NOT = { has_variable = dod_dua_seen_12 }
+	}
+
+	immediate = {
+		set_variable = dod_dua_seen_12
+	}
+
+	option = {
+		name = dod_dua.12.a
+		default_option = yes
+		dod_dua_shift = { ENGLISH = 5 FRENCH = 5 ACCEPT = 0 }
+		ai_chance = { base = 50 }
+	}
+
+	option = {
+		name = dod_dua.12.b
+		ig:ig_intelligentsia = { add_modifier = { name = dod_anglois_censorship months = 36 } }
+		dod_dua_shift = { ENGLISH = -3 FRENCH = -3 ACCEPT = -3 }
+		ai_chance = { base = 50 }
+	}
+}
+
+dod_dua.13 = {
+	type = country_event
+	placement = root
+	title = dod_dua.13.t
+	desc = dod_dua.13.d
+	flavor = dod_dua.13.f
+	event_image = { video = "unspecific_politicians_arguing" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	trigger = {
+		dod_dua_dilemma_active = yes
+		dod_dua_anglois_path = yes
+		NOT = { has_variable = dod_dua_seen_13 }
+	}
+
+	immediate = {
+		set_variable = dod_dua_seen_13
+	}
+
+	option = {
+		name = dod_dua.13.a
+		default_option = yes
+		dod_dua_shift = { ENGLISH = 10 FRENCH = -5 ACCEPT = 0 }
+		ai_chance = { base = 50 }
+	}
+
+	option = {
+		name = dod_dua.13.b
+		dod_dua_shift = { ENGLISH = -5 FRENCH = 10 ACCEPT = 0 }
+		ai_chance = { base = 50 }
+	}
+}
+
+dod_dua.14 = {
+	type = country_event
+	placement = root
+	title = dod_dua.14.t
+	desc = dod_dua.14.d
+	flavor = dod_dua.14.f
+	event_image = { texture = "gfx/event_pictures/dod/Saxon_romanticism.dds" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	trigger = {
+		dod_dua_dilemma_active = yes
+		dod_dua_anglois_path = yes
+		NOT = { has_variable = dod_dua_seen_14 }
+	}
+
+	immediate = {
+		set_variable = dod_dua_seen_14
+	}
+
+	option = {
+		name = dod_dua.14.a
+		default_option = yes
+		dod_dua_shift = { ENGLISH = -5 FRENCH = 5 ACCEPT = 0 }
+		ai_chance = { base = 50 }
+	}
+
+	option = {
+		name = dod_dua.14.b
+		dod_dua_shift = { ENGLISH = 5 FRENCH = -5 ACCEPT = 0 }
+		ai_chance = { base = 50 }
+	}
+}
+
+dod_dua.15 = {
+	type = country_event
+	placement = root
+	title = dod_dua.15.t
+	desc = dod_dua.15.d
+	flavor = dod_dua.15.f
+	event_image = { video = "unspecific_military_parade" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	trigger = {
+		dod_dua_dilemma_active = yes
+		dod_dua_anglois_path = yes
+		NOT = { has_variable = dod_dua_seen_15 }
+	}
+
+	immediate = {
+		set_variable = dod_dua_seen_15
+	}
+
+	option = {
+		name = dod_dua.15.a
+		default_option = yes
+		dod_dua_shift = { ENGLISH = 3 FRENCH = -8 ACCEPT = 3 }
+		ai_chance = { base = 40 }
+	}
+
+	option = {
+		name = dod_dua.15.b
+		dod_dua_shift = { ENGLISH = -8 FRENCH = 3 ACCEPT = 3 }
+		ai_chance = { base = 40 }
+	}
+
+	option = {
+		name = dod_dua.15.c
+		dod_dua_shift = { ENGLISH = 3 FRENCH = 3 ACCEPT = 0 }
+		ai_chance = { base = 20 }
+	}
+}
+
+dod_dua.16 = {
+	type = country_event
+	placement = root
+	title = dod_dua.16.t
+	desc = dod_dua.16.d
+	flavor = dod_dua.16.f
+	event_image = { video = "europenorthamerica_springtime_of_nations" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	trigger = {
+		dod_dua_dilemma_active = yes
+		dod_dua_anglois_path = yes
+		NOT = { has_variable = dod_dua_seen_16 }
+	}
+
+	immediate = {
+		set_variable = dod_dua_seen_16
+	}
+
+	option = {
+		name = dod_dua.16.a
+		default_option = yes
+		dod_dua_shift = { ENGLISH = -5 FRENCH = 5 ACCEPT = 0 }
+		ai_chance = { base = 35 }
+	}
+
+	option = {
+		name = dod_dua.16.b
+		dod_dua_shift = { ENGLISH = 5 FRENCH = -3 ACCEPT = 0 }
+		ai_chance = { base = 35 }
+	}
+
+	option = {
+		name = dod_dua.16.c
+		dod_dua_shift = { ENGLISH = 3 FRENCH = 3 ACCEPT = 3 }
+		ai_chance = { base = 30 }
+	}
+}
+
+dod_dua.17 = {
+	type = country_event
+	placement = root
+	title = dod_dua.17.t
+	desc = dod_dua.17.d
+	flavor = dod_dua.17.f
+	event_image = { texture = "gfx/event_pictures/dod/academy_france.dds" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	trigger = {
+		dod_dua_dilemma_active = yes
+		dod_dua_anglois_path = yes
+		NOT = { has_variable = dod_dua_seen_17 }
+	}
+
+	immediate = {
+		set_variable = dod_dua_seen_17
+	}
+
+	option = {
+		name = dod_dua.17.a
+		default_option = yes
+		dod_dua_shift = { ENGLISH = -8 FRENCH = 5 ACCEPT = 0 }
+		ai_chance = { base = 35 }
+	}
+
+	option = {
+		name = dod_dua.17.b
+		dod_dua_shift = { ENGLISH = 5 FRENCH = -8 ACCEPT = 0 }
+		ai_chance = { base = 35 }
+	}
+
+	option = {
+		name = dod_dua.17.c
+		dod_dua_shift = { ENGLISH = 3 FRENCH = 3 ACCEPT = 3 }
+		ai_chance = { base = 30 }
+	}
+}
+
+dod_dua.18 = {
+	type = country_event
+	placement = root
+	title = dod_dua.18.t
+	desc = dod_dua.18.d
+	flavor = dod_dua.18.f
+	event_image = { video = "unspecific_politicians_arguing" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+	duration = 3
+
+	trigger = {
+		dod_dua_dilemma_active = yes
+		NOT = { has_variable = dod_dua_seen_18 }
+	}
+
+	immediate = {
+		set_variable = dod_dua_seen_18
+	}
+
+	option = {
+		name = dod_dua.18.a
+		default_option = yes
+		dod_dua_shift = { ENGLISH = 5 FRENCH = -10 ACCEPT = 0 }
+		ai_chance = { base = 34 }
+	}
+
+	option = {
+		name = dod_dua.18.b
+		dod_dua_shift = { ENGLISH = 0 FRENCH = 0 ACCEPT = 5 }
+		ai_chance = { base = 33 }
+	}
+
+	option = {
+		name = dod_dua.18.c
+		dod_dua_shift = { ENGLISH = -10 FRENCH = 5 ACCEPT = 0 }
+		ai_chance = { base = 33 }
+	}
+}
+
+dod_dua.20 = {
+	type = country_event
+	placement = root
+	title = dod_dua.20.t
+	desc = dod_dua.20.d
+	flavor = dod_dua.20.f
+	event_image = { video = "europenorthamerica_springtime_of_nations" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+	duration = 3
+
+	trigger = {
+		this = c:DUA
+		NOT = { exists = c:ENL }
+	}
+
+	immediate = {
+		set_global_variable = dod_glorious_revolution
+		dod_release_homeland = { TAG = ENL CULTURE = english }
+		c:ENL ?= { trigger_event = { id = dod_dua.21 } }
+	}
+
+	option = {
+		name = dod_dua.20.a
+		trigger = { exists = c:ENL }
+		default_option = yes
+		create_diplomatic_play = {
+			target_country = c:ENL
+			type = dp_annex_war
+		}
+		add_journal_entry = { type = je_dod_dua_revolution_war }
+		ai_chance = { base = 80 }
+	}
+
+	option = {
+		name = dod_dua.20.b
+		add_modifier = { name = dod_anglois_dream_broken months = 120 }
+		ai_chance = { base = 20 }
+	}
+}
+
+dod_dua.21 = {
+	type = country_event
+	placement = root
+	title = dod_dua.21.t
+	desc = dod_dua.21.d
+	flavor = dod_dua.21.f
+	event_image = { video = "unspecific_signed_contract" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+	duration = 3
+
+	option = {
+		name = dod_dua.21.a
+		default_option = yes
+		activate_law = law_type:law_monarchy
+		ai_chance = { base = 50 }
+	}
+
+	option = {
+		name = dod_dua.21.b
+		activate_law = law_type:law_parliamentary_republic
+		ai_chance = { base = 50 }
+	}
+}
+
+dod_dua.25 = {
+	type = country_event
+	placement = root
+	title = dod_dua.25.t
+	desc = dod_dua.25.d
+	flavor = dod_dua.25.f
+	event_image = { video = "europenorthamerica_springtime_of_nations" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+	duration = 3
+
+	trigger = {
+		this = c:DUA
+		NOT = { exists = c:OCC }
+	}
+
+	immediate = {
+		dod_release_homeland = { TAG = OCC CULTURE = provencal }
+		c:OCC ?= { trigger_event = { id = dod_dua.26 } }
+	}
+
+	option = {
+		name = dod_dua.25.a
+		trigger = { exists = c:OCC }
+		default_option = yes
+		create_diplomatic_play = {
+			target_country = c:OCC
+			type = dp_annex_war
+		}
+		add_journal_entry = { type = je_dod_dua_revolution_war }
+		ai_chance = { base = 80 }
+	}
+
+	option = {
+		name = dod_dua.25.b
+		add_modifier = { name = dod_anglois_dream_broken months = 120 }
+		ai_chance = { base = 20 }
+	}
+}
+
+dod_dua.26 = {
+	type = country_event
+	placement = root
+	title = dod_dua.26.t
+	desc = dod_dua.26.d
+	flavor = dod_dua.26.f
+	event_image = { video = "unspecific_signed_contract" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+	duration = 3
+
+	option = {
+		name = dod_dua.26.a
+		trigger = { exists = c:PRV }
+		default_option = yes
+		c:PRV = { annex = root }
+		c:DUA = { trigger_event = { id = dod_dua.27 days = 7 } }
+		ai_chance = { base = 75 }
+	}
+
+	option = {
+		name = dod_dua.26.b
+		activate_law = law_type:law_parliamentary_republic
+		ai_chance = { base = 25 }
+	}
+}
+
+dod_dua.27 = {
+	type = country_event
+	placement = root
+	title = dod_dua.27.t
+	desc = dod_dua.27.d
+	flavor = dod_dua.27.f
+	event_image = { video = "unspecific_military_parade" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+	duration = 3
+
+	trigger = {
+		exists = c:PRV
+	}
+
+	option = {
+		name = dod_dua.27.a
+		default_option = yes
+		create_diplomatic_play = {
+			target_country = c:PRV
+			type = dp_annex_war
+		}
+		ai_chance = { base = 90 }
+	}
+
+	option = {
+		name = dod_dua.27.b
+		add_modifier = { name = dod_anglois_dream_broken months = 60 }
+		ai_chance = { base = 10 }
+	}
+}
+
+dod_dua.29 = {
+	type = country_event
+	placement = root
+	title = dod_dua.29.t
+	desc = dod_dua.29.d
+	flavor = dod_dua.29.f
+	event_image = { video = "europenorthamerica_springtime_of_nations" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+	duration = 3
+
+	trigger = {
+		this = c:DUA
+	}
+
+	immediate = {
+		set_global_variable = dod_glorious_revolution
+		if = {
+			limit = { NOT = { exists = c:ENL } }
+			dod_release_homeland = { TAG = ENL CULTURE = english }
+			c:ENL ?= { trigger_event = { id = dod_dua.21 } }
+		}
+		if = {
+			limit = { NOT = { exists = c:OCC } }
+			dod_release_homeland = { TAG = OCC CULTURE = provencal }
+			c:OCC ?= { trigger_event = { id = dod_dua.26 } }
+		}
+	}
+
+	option = {
+		name = dod_dua.29.a
+		default_option = yes
+		if = {
+			limit = { exists = c:ENL }
+			create_diplomatic_play = {
+				target_country = c:ENL
+				type = dp_annex_war
+			}
+		}
+		if = {
+			limit = { exists = c:OCC }
+			create_diplomatic_play = {
+				target_country = c:OCC
+				type = dp_annex_war
+			}
+		}
+		add_journal_entry = { type = je_dod_dua_revolution_war }
+		ai_chance = { base = 70 }
+	}
+
+	option = {
+		name = dod_dua.29.b
+		add_modifier = { name = dod_angevin_legacy_ends months = 240 }
+		ai_chance = { base = 30 }
+	}
+}
+
+dod_dua.31 = {
+	type = country_event
+	placement = root
+	title = dod_dua.31.t
+	desc = dod_dua.31.d
+	flavor = dod_dua.31.f
+	event_image = { video = "europenorthamerica_political_extremism" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	option = {
+		name = dod_dua.31.a
+		default_option = yes
+		add_modifier = { name = dod_anglois_dream_broken months = 120 }
+	}
+}
+
+dod_dua.32 = {
+	type = country_event
+	placement = root
+	title = dod_dua.32.t
+	desc = dod_dua.32.d
+	flavor = dod_dua.32.f
+	event_image = { video = "unspecific_military_parade" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+	duration = 3
+
+	option = {
+		name = dod_dua.32.a
+		default_option = yes
+		add_modifier = { name = dod_realm_pacified months = 120 }
+		add_journal_entry = { type = je_dod_anglois_dilemma }
+	}
+}
+
+dod_dua.40 = {
+	type = country_event
+	placement = root
+	title = dod_dua.40.t
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				desc = dod_dua.40.d_french
+				trigger = { dod_dua_french_path = yes }
+			}
+			triggered_desc = {
+				desc = dod_dua.40.d_english
+				trigger = { dod_dua_english_path = yes }
+			}
+			triggered_desc = {
+				desc = dod_dua.40.d_anglois
+			}
+		}
+	}
+	flavor = dod_dua.40.f
+	event_image = { video = "unspecific_military_parade" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	option = {
+		name = dod_dua.40.a
+		default_option = yes
+		if = {
+			limit = { dod_dua_french_path = yes }
+			add_primary_culture = cu:french
+		}
+		else_if = {
+			limit = { dod_dua_english_path = yes }
+			add_primary_culture = cu:english
+		}
+		else = {
+			add_primary_culture = cu:french
+			add_primary_culture = cu:english
+			set_variable = dod_anglois_accepted
+		}
+		add_modifier = { name = dod_crown_prevails months = 240 }
+	}
+}
+
+dod_dua.41 = {
+	type = country_event
+	placement = root
+	title = dod_dua.41.t
+	desc = dod_dua.41.d
+	flavor = dod_dua.41.f
+	event_image = { video = "unspecific_politicians_arguing" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+	duration = 3
+
+	trigger = {
+		this = c:DUA
+		game_date >= 1860.1.1
+		NOT = { exists = c:IRE }
+		NOT = { has_variable = dod_irish_handled }
+		NOT = { has_variable = dod_anglois_accepted }
+		any_scope_state = { dod_is_irish_state = yes }
+	}
+
+	immediate = {
+		set_variable = dod_irish_handled
+	}
+
+	option = {
+		name = dod_dua.41.a
+		default_option = yes
+		dod_release_homeland = { TAG = IRE CULTURE = irish }
+		if = {
+			limit = { exists = c:IRE }
+			create_diplomatic_pact = { country = c:IRE type = dominion }
+		}
+		ai_chance = { base = 40 }
+	}
+
+	option = {
+		name = dod_dua.41.b
+		set_global_variable = dod_irish_brotherhood
+		ai_chance = { base = 60 }
+	}
+}
+
+dod_dua.42 = {
+	type = country_event
+	placement = root
+	title = dod_dua.42.t
+	desc = dod_dua.42.d
+	flavor = dod_dua.42.f
+	event_image = { video = "europenorthamerica_springtime_of_nations" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+	duration = 3
+
+	trigger = {
+		this = c:DUA
+		game_date >= 1865.1.1
+		has_global_variable = dod_irish_brotherhood
+		NOT = { has_global_variable = dod_irish_rising }
+		NOT = { exists = c:IRE }
+		any_scope_state = { dod_is_irish_state = yes }
+	}
+
+	immediate = {
+		set_global_variable = dod_irish_rising
+		dod_release_homeland = { TAG = IRE CULTURE = irish }
+	}
+
+	option = {
+		name = dod_dua.42.a
+		trigger = { exists = c:IRE }
+		default_option = yes
+		create_diplomatic_play = {
+			target_country = c:IRE
+			type = dp_annex_war
+		}
+		ai_chance = { base = 70 }
+	}
+
+	option = {
+		name = dod_dua.42.b
+		add_modifier = { name = dod_anglois_dream_broken months = 60 }
+		ai_chance = { base = 30 }
+	}
+}
+
+dod_dua.45 = {
+	type = country_event
+	placement = root
+	title = dod_dua.45.t
+	desc = dod_dua.45.d
+	flavor = dod_dua.45.f
+	event_image = { video = "europenorthamerica_political_extremism" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+	duration = 3
+
+	trigger = {
+		this = c:SCA
+		has_global_variable = dod_glorious_revolution
+		exists = c:ENL
+		NOT = { has_variable = dod_young_scotland }
+		any_scope_state = { dod_is_scottish_state = yes }
+	}
+
+	immediate = {
+		set_variable = dod_young_scotland
+	}
+
+	option = {
+		name = dod_dua.45.a
+		default_option = yes
+		c:ENL ?= { trigger_event = { id = dod_dua.47 days = 30 } }
+		ai_chance = { base = 60 }
+	}
+
+	option = {
+		name = dod_dua.45.b
+		set_global_variable = dod_scottish_unrest
+		ai_chance = { base = 40 }
+	}
+}
+
+dod_dua.47 = {
+	type = country_event
+	placement = root
+	title = dod_dua.47.t
+	desc = dod_dua.47.d
+	flavor = dod_dua.47.f
+	event_image = { video = "unspecific_politicians_arguing" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+	duration = 3
+
+	option = {
+		name = dod_dua.47.a
+		default_option = yes
+		set_global_variable = dod_scottish_unrest
+		change_relations = { country = c:SCA value = -30 }
+		ai_chance = { base = 60 }
+	}
+
+	option = {
+		name = dod_dua.47.b
+		ai_chance = { base = 40 }
+	}
+}
+
+dod_dua.46 = {
+	type = country_event
+	placement = root
+	title = dod_dua.46.t
+	desc = dod_dua.46.d
+	flavor = dod_dua.46.f
+	event_image = { video = "europenorthamerica_springtime_of_nations" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+	duration = 3
+
+	trigger = {
+		this = c:SCA
+		has_global_variable = dod_scottish_unrest
+		NOT = { exists = c:SCO }
+		NOT = { has_variable = dod_scottish_revolution }
+		any_scope_state = { dod_is_scottish_state = yes }
+	}
+
+	immediate = {
+		set_variable = dod_scottish_revolution
+		dod_release_homeland = { TAG = SCO CULTURE = scottish }
+		c:SCO ?= {
+			activate_law = law_type:law_parliamentary_republic
+			c:ENL ?= { create_diplomatic_pact = { country = c:SCO type = alliance } }
+		}
+	}
+
+	option = {
+		name = dod_dua.46.a
+		trigger = { exists = c:SCO }
+		default_option = yes
+		create_diplomatic_play = {
+			target_country = c:SCO
+			type = dp_annex_war
+		}
+		ai_chance = { base = 70 }
+	}
+
+	option = {
+		name = dod_dua.46.b
+		ai_chance = { base = 30 }
+	}
+}
+
+dod_dua.50 = {
+	type = country_event
+	placement = root
+	title = dod_dua.50.t
+	desc = dod_dua.50.d
+	flavor = dod_dua.50.f
+	event_image = { video = "unspecific_military_parade" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+	duration = 3
+
+	trigger = {
+		this = c:DUA
+		game_date >= 1850.1.1
+		is_at_war = no
+		exists = c:PRV
+		c:PRV = { country_rank < rank_value:major_power }
+		NOT = { has_variable = dod_valois_handled }
+	}
+
+	immediate = {
+		set_variable = dod_valois_handled
+	}
+
+	option = {
+		name = dod_dua.50.a
+		trigger = { c:PRV = { is_subject_of = root } }
+		default_option = yes
+		annex = c:PRV
+		ai_chance = { base = 100 }
+	}
+
+	option = {
+		name = dod_dua.50.b
+		trigger = { c:PRV = { NOT = { is_subject_of = root } } }
+		create_diplomatic_play = {
+			target_country = c:PRV
+			type = dp_annex_war
+		}
+		ai_chance = { base = 70 }
+	}
+
+	option = {
+		name = dod_dua.50.c
+		ai_chance = { base = 30 }
+	}
+}

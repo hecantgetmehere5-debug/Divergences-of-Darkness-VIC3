@@ -1,0 +1,50 @@
+# Balkans & the Ottoman fall: modifiers
+
+dod_janissaries_defeated = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
+	country_authority_add = 50
+	country_legitimacy_base_add = 10
+}
+
+dod_ottoman_province_lost = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds"
+	country_prestige_add = -15
+}
+
+dod_ottoman_reconquest = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
+	country_prestige_add = 15
+}
+
+dod_sunset_rebellions = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_scroll_positive.dds"
+	country_legitimacy_base_add = 10
+}
+
+dod_zahiri_victory = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
+	country_prestige_add = 20
+	country_legitimacy_base_add = 10
+}
+
+dod_misri_nahda = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
+	country_prestige_add = 50
+}
+
+dod_magyar_repression = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_fist_negative.dds"
+	interest_group_approval_add = -2
+}
+
+dod_tanzimat = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_scroll_positive.dds"
+	country_legitimacy_base_add = 10
+	country_authority_add = 25
+}
+
+dod_tanzimat_extended = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_scroll_positive.dds"
+	country_legitimacy_base_add = 10
+	country_prestige_add = 15
+}

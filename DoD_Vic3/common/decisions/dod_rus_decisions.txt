@@ -1,0 +1,567 @@
+# Russia, the Steppe & the Caucasus
+
+dod_form_russia = {
+	is_shown = {
+		country_has_primary_culture = cu:russian
+		NOT = { exists = c:RUS }
+	}
+	possible = {
+		is_at_war = no
+		any_scope_state = {
+			count >= 6
+			state_region = {
+				is_homeland = cu:russian
+			}
+		}
+	}
+	when_taken = {
+		change_tag = RUS
+		every_country = {
+			limit = {
+				country_has_primary_culture = cu:russian
+				NOT = { this = root }
+			}
+			trigger_event = { id = dod_rus.1 days = 7 }
+		}
+	}
+	ai_chance = { base = 100 }
+}
+
+dod_rus_west_focus = {
+	is_shown = {
+		this = c:RUS
+		NOT = { has_variable = dod_rus_west_focus }
+	}
+	possible = {
+		is_at_war = no
+		country_rank >= rank_value:great_power
+	}
+	when_taken = {
+		set_variable = dod_rus_west_focus
+		change_infamy = 5
+		trigger_event = { id = dod_rus.5 }
+	}
+	ai_chance = { base = 50 }
+}
+
+dod_rus_wild_lands = {
+	is_shown = {
+		OR = {
+			this = c:MUS
+			this = c:RUS
+		}
+		NOT = { has_variable = dod_wild_lands }
+	}
+	possible = {
+		is_at_war = no
+		country_rank >= rank_value:major_power
+	}
+	when_taken = {
+		set_variable = dod_wild_lands
+		every_state = {
+			limit = {
+				state_region = {
+					OR = {
+						is_homeland = cu:astrakhani
+						is_homeland = cu:tatar
+					}
+				}
+				NOT = { owner = root }
+			}
+			state_region = { add_claim = root }
+		}
+	}
+	ai_chance = { base = 50 }
+}
+
+dod_rus_siberia = {
+	is_shown = {
+		this = c:RUS
+		NOT = { has_variable = dod_siberia_claimed }
+	}
+	possible = {
+		is_at_war = no
+	}
+	when_taken = {
+		set_variable = dod_siberia_claimed
+		every_state = {
+			limit = {
+				state_region = {
+					is_homeland = cu:yakut
+				}
+				NOT = { owner = root }
+			}
+			state_region = { add_claim = root }
+		}
+	}
+	ai_chance = { base = 60 }
+}
+
+dod_rus_mongolia = {
+	is_shown = {
+		this = c:RUS
+		exists = c:MGL
+		NOT = { has_variable = dod_mongolia_offer }
+	}
+	possible = {
+		is_at_war = no
+		country_rank >= rank_value:great_power
+		c:MGL = { NOT = { is_subject_of = root } }
+	}
+	when_taken = {
+		set_variable = dod_mongolia_offer
+		c:MGL = { trigger_event = { id = dod_rus.7 days = 7 } }
+	}
+	ai_chance = { base = 50 }
+}
+
+dod_rus_integrate = {
+	is_shown = {
+		this = c:RUS
+		NOT = { has_variable = dod_rus_integrated }
+	}
+	possible = {
+		is_at_war = no
+		game_date >= 1850.1.1
+	}
+	when_taken = {
+		set_variable = dod_rus_integrated
+		if = {
+			limit = {
+				any_scope_state = { state_region = { is_homeland = cu:ruthenian } }
+			}
+			add_primary_culture = cu:ruthenian
+		}
+		if = {
+			limit = {
+				any_scope_state = { state_region = { is_homeland = cu:tatar } }
+			}
+			add_primary_culture = cu:tatar
+		}
+		if = {
+			limit = {
+				any_scope_state = { state_region = { is_homeland = cu:astrakhani } }
+			}
+			add_primary_culture = cu:astrakhani
+		}
+		if = {
+			limit = {
+				any_scope_state = { state_region = { is_homeland = cu:crimean } }
+			}
+			add_primary_culture = cu:crimean
+		}
+		if = {
+			limit = {
+				any_scope_state = { state_region = { is_homeland = cu:georgian } }
+			}
+			add_primary_culture = cu:georgian
+		}
+		if = {
+			limit = {
+				any_scope_state = { state_region = { is_homeland = cu:estonian } }
+			}
+			add_primary_culture = cu:estonian
+		}
+		if = {
+			limit = {
+				any_scope_state = { state_region = { is_homeland = cu:latvian } }
+			}
+			add_primary_culture = cu:latvian
+		}
+		if = {
+			limit = {
+				any_scope_state = { state_region = { is_homeland = cu:finnish } }
+			}
+			add_primary_culture = cu:finnish
+		}
+	}
+	ai_chance = { base = 60 }
+}
+
+dod_form_tatarstan = {
+	is_shown = {
+		OR = {
+			country_has_primary_culture = cu:crimean
+			country_has_primary_culture = cu:astrakhani
+			country_has_primary_culture = cu:tatar
+		}
+		NOT = { exists = c:TAR }
+	}
+	possible = {
+		is_at_war = no
+		any_scope_state = {
+			count >= 4
+			state_region = {
+				OR = {
+					is_homeland = cu:crimean
+					is_homeland = cu:astrakhani
+					is_homeland = cu:tatar
+				}
+			}
+		}
+	}
+	when_taken = {
+		every_country = {
+			limit = {
+				is_subject_of = root
+				OR = {
+					country_has_primary_culture = cu:crimean
+					country_has_primary_culture = cu:astrakhani
+					country_has_primary_culture = cu:tatar
+				}
+			}
+			root = { annex = prev }
+		}
+		add_primary_culture = cu:crimean
+		add_primary_culture = cu:astrakhani
+		add_primary_culture = cu:tatar
+		change_tag = TAR
+	}
+	ai_chance = { base = 100 }
+}
+
+dod_tar_sedentarize = {
+	is_shown = {
+		this = c:TAR
+		NOT = { has_variable = dod_sedentarized }
+	}
+	possible = {
+		is_at_war = no
+	}
+	when_taken = {
+		set_variable = dod_sedentarized
+		add_modifier = { name = dod_sedentarisation months = 240 }
+	}
+	ai_chance = { base = 60 }
+}
+
+dod_tar_krymchak = {
+	is_shown = {
+		OR = {
+			this = c:TAR
+			this = c:CRI
+		}
+		NOT = { country_has_primary_culture = cu:krymchak }
+	}
+	possible = {
+		is_at_war = no
+	}
+	when_taken = {
+		add_primary_culture = cu:krymchak
+	}
+	ai_chance = { base = 40 }
+}
+
+dod_cir_break_yoke = {
+	is_shown = {
+		this = c:CIR
+		exists = c:ASK
+		is_subject_of = c:ASK
+	}
+	possible = {
+		is_at_war = no
+	}
+	when_taken = {
+		create_diplomatic_play = {
+			target_country = c:ASK
+			type = dp_independence
+		}
+	}
+	ai_chance = { base = 40 }
+}
+
+dod_cir_integrate = {
+	is_shown = {
+		this = c:CIR
+		NOT = { has_variable = dod_cir_integrated }
+	}
+	possible = {
+		is_at_war = no
+		NOT = { is_subject_of = c:ASK }
+	}
+	when_taken = {
+		set_variable = dod_cir_integrated
+		if = {
+			limit = {
+				any_scope_state = { state_region = { is_homeland = cu:circassian } }
+			}
+			add_primary_culture = cu:circassian
+		}
+		if = {
+			limit = {
+				any_scope_state = { state_region = { is_homeland = cu:abkhaz } }
+			}
+			add_primary_culture = cu:abkhaz
+		}
+		if = {
+			limit = {
+				any_scope_state = { state_region = { is_homeland = cu:karachai } }
+			}
+			add_primary_culture = cu:karachai
+		}
+		if = {
+			limit = {
+				any_scope_state = { state_region = { is_homeland = cu:astrakhani } }
+			}
+			add_primary_culture = cu:astrakhani
+		}
+	}
+	ai_chance = { base = 80 }
+}
+
+dod_cir_inal = {
+	is_shown = {
+		this = c:CIR
+		NOT = { has_variable = dod_cir_inal }
+	}
+	possible = {
+		is_at_war = no
+		NOT = { is_subject_of = c:ASK }
+	}
+	when_taken = {
+		set_variable = dod_cir_inal
+		change_infamy = 5
+		every_state = {
+			limit = {
+				state_region = {
+					OR = {
+						is_homeland = cu:abkhaz
+						is_homeland = cu:karachai
+						is_homeland = cu:circassian
+					}
+				}
+				NOT = { owner = root }
+			}
+			state_region = { add_claim = root }
+		}
+	}
+	ai_chance = { base = 50 }
+}
+
+dod_geo_rebel = {
+	is_shown = {
+		country_has_primary_culture = cu:georgian
+		exists = c:AZB
+		is_subject_of = c:AZB
+	}
+	possible = {
+		is_at_war = no
+	}
+	when_taken = {
+		create_diplomatic_play = {
+			target_country = c:AZB
+			type = dp_independence
+		}
+	}
+	ai_chance = { base = 40 }
+}
+
+dod_form_georgia = {
+	is_shown = {
+		country_has_primary_culture = cu:georgian
+		NOT = { exists = c:GEO }
+		NOT = { exists = c:TCA }
+	}
+	possible = {
+		is_at_war = no
+		any_scope_state = {
+			count >= 2
+			state_region = {
+				is_homeland = cu:georgian
+			}
+		}
+	}
+	when_taken = {
+		change_tag = GEO
+	}
+	ai_chance = { base = 100 }
+}
+
+dod_geo_tamar = {
+	is_shown = {
+		this = c:GEO
+		NOT = { has_variable = dod_geo_tamar }
+	}
+	possible = {
+		is_at_war = no
+		country_rank >= rank_value:major_power
+	}
+	when_taken = {
+		set_variable = dod_geo_tamar
+		change_infamy = 10
+		every_state = {
+			limit = {
+				state_region = {
+					OR = {
+						is_homeland = cu:armenian
+						is_homeland = cu:azerbaijani
+						is_homeland = cu:abkhaz
+					}
+				}
+				NOT = { owner = root }
+			}
+			state_region = { add_claim = root }
+		}
+	}
+	ai_chance = { base = 40 }
+}
+
+dod_geo_armenians = {
+	is_shown = {
+		this = c:GEO
+		NOT = { country_has_primary_culture = cu:armenian }
+	}
+	possible = {
+		any_scope_state = { state_region = { is_homeland = cu:armenian } }
+	}
+	when_taken = {
+		add_primary_culture = cu:armenian
+	}
+	ai_chance = { base = 80 }
+}
+
+dod_form_transcaucasia = {
+	is_shown = {
+		OR = {
+			this = c:GEO
+			this = c:ARM
+			this = c:AZB
+		}
+		NOT = { exists = c:TCA }
+	}
+	possible = {
+		is_at_war = no
+		any_scope_state = { state_region = { is_homeland = cu:georgian } }
+		any_scope_state = { state_region = { is_homeland = cu:armenian } }
+		any_scope_state = { state_region = { is_homeland = cu:azerbaijani } }
+	}
+	when_taken = {
+		add_primary_culture = cu:georgian
+		add_primary_culture = cu:armenian
+		add_primary_culture = cu:azerbaijani
+		change_tag = TCA
+	}
+	ai_chance = { base = 100 }
+}
+
+dod_tca_north_caucasus = {
+	is_shown = {
+		this = c:TCA
+		NOT = { has_variable = dod_tca_claims }
+	}
+	possible = {
+		is_at_war = no
+	}
+	when_taken = {
+		set_variable = dod_tca_claims
+		change_infamy = 5
+		every_state = {
+			limit = {
+				state_region = {
+					OR = {
+						is_homeland = cu:north_caucasian
+						is_homeland = cu:circassian
+						is_homeland = cu:chechen
+						is_homeland = cu:avar
+						is_homeland = cu:ingush
+						is_homeland = cu:ossetian
+					}
+				}
+				NOT = { owner = root }
+			}
+			state_region = { add_claim = root }
+		}
+	}
+	ai_chance = { base = 50 }
+}
+
+dod_tca_embrace = {
+	is_shown = {
+		this = c:TCA
+		has_variable = dod_tca_claims
+		NOT = { has_variable = dod_tca_embraced }
+	}
+	possible = {
+		is_at_war = no
+	}
+	when_taken = {
+		set_variable = dod_tca_embraced
+		if = {
+			limit = {
+				any_scope_state = { state_region = { is_homeland = cu:north_caucasian } }
+			}
+			add_primary_culture = cu:north_caucasian
+		}
+		if = {
+			limit = {
+				any_scope_state = { state_region = { is_homeland = cu:circassian } }
+			}
+			add_primary_culture = cu:circassian
+		}
+		if = {
+			limit = {
+				any_scope_state = { state_region = { is_homeland = cu:chechen } }
+			}
+			add_primary_culture = cu:chechen
+		}
+		if = {
+			limit = {
+				any_scope_state = { state_region = { is_homeland = cu:avar } }
+			}
+			add_primary_culture = cu:avar
+		}
+		if = {
+			limit = {
+				any_scope_state = { state_region = { is_homeland = cu:ingush } }
+			}
+			add_primary_culture = cu:ingush
+		}
+		if = {
+			limit = {
+				any_scope_state = { state_region = { is_homeland = cu:ossetian } }
+			}
+			add_primary_culture = cu:ossetian
+		}
+	}
+	ai_chance = { base = 80 }
+}
+
+dod_form_kazakhstan = {
+	is_shown = {
+		country_has_primary_culture = cu:kazak
+		NOT = { exists = c:KZH }
+	}
+	possible = {
+		is_at_war = no
+		any_scope_state = {
+			count >= 3
+			state_region = {
+				is_homeland = cu:kazak
+			}
+		}
+	}
+	when_taken = {
+		change_tag = KZH
+	}
+	ai_chance = { base = 100 }
+}
+
+dod_form_kyrgyzstan = {
+	is_shown = {
+		country_has_primary_culture = cu:kirgiz
+		NOT = { exists = c:KYR }
+	}
+	possible = {
+		is_at_war = no
+		any_scope_state = {
+			count >= 2
+			state_region = {
+				is_homeland = cu:kirgiz
+			}
+		}
+	}
+	when_taken = {
+		change_tag = KYR
+	}
+	ai_chance = { base = 100 }
+}

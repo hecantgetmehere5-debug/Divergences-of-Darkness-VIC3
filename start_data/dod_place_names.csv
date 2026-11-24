@@ -1,0 +1,2841 @@
+province,dod_name,map_file_name,owner
+1,Sitka,Sitka,JAP
+2,Yakutat,Yakutat,JAP
+3,Hannô,Kenai,JAP
+4,Takahagi,Dutch Harbor,JAP
+5,Gyôda,Unalakleet,JAP
+6,Sodegaura,Whitehorse,JAP
+7,Motomiya,Dawson,JAP
+8,Belluno,Ross River,VEN
+9,Torstad,Fort Simpson,
+10,Pescara,Inuvik,ARA
+11,Odenkøping,Echo Bay,
+12,Sado,Reliance,JAP
+13,Xiazhou,Vancouver,DNG
+14,Dingguo,Vancouver Island,DNG
+15,Rongzhou,Prince Rupert,DNG
+16,Zhaoyao Shan,Glenora,DNG
+17,Tangwan,Atlin,
+18,Shuanggang,Fort Saint John,
+19,Yiyu,Prince George,DNG
+20,Wenyuangu,Kelowna,DNG
+21,Xuangu,Vernon,DNG
+22,Baizehu,Edmonton,
+23,Tongcheng,Athabaska Landing,HHR
+24,Huangjia,Jasper,
+25,Daqiaojing,Banff,
+26,Luoling,Calgary,
+27,Dalongshan,Denwood,HHR
+28,Wuheng,Fort MacLeod,
+29,Kyzylkum,Medicine Hat,CHG
+30,Strømkøping,Regina,HHR
+31,Høleby,Stanley,
+32,Skandervik,Prince Albert,
+33,Daqiao,Asquith,HHR
+34,Bergsvik,Saskatoon,HHR
+35,Yixiu,Maple Creek,
+36,Gylhenvik,Winnipeg,
+37,Voigar,Churchill,VIN
+38,Trækøping,Indian Lakes,
+39,Rævmarkk,Norway House,
+40,Stormby,Dauphin,
+41,Fåkerborg,Brandon,
+42,Stiureberg,Pembina,
+43,Mýrdalvidlillsjøn,Arviat,VIN
+44,Guantanamo Bay,Echo Bay,SPA
+45,Storø,Baffin Island,VIN
+46,Nesvollberget,Toronto,VIN
+47,Eyjafjallajøkull,Fort Severn,VIN
+48,Steinberg,Fort Albany,VIN
+49,Kirkjubæjarklaustur,Dryden,VIN
+50,Sandvika,Thunder Bay,VIN
+51,Ruskåsen,Sault Ste Marie,VIN
+52,Olavshavn,Sudbury,VIN
+53,Segerkrantz,Barrie,VIN
+54,Løten,Windsor,VIN
+55,Løfby,Hamilton,VIN
+56,Bystierna,Kingston,VIN
+57,Sparrebark,Ottawa,VIN
+58,Frederikstad,Montreal,VIN
+59,Igeltræsk,Nitchequon,VIN
+60,Kalmarsborg,Charles Fort,VIN
+61,Dahlborg,Chicoutimi,VIN
+62,Blodvik,Sept-Iles,VIN
+63,Lillkøping,Temiscaming,VIN
+64,Norrby,Trois Rivieres,VIN
+65,Erikshavn,Quebec City,VIN
+66,Kusbøle,Sherbrooke,VIN
+67,Bååthamn,Rimouski,VIN
+68,Ny Aarhus,Fredericton,VIN
+69,Christiansborg,Bathurst,VIN
+70,Ø,Prince Edward Island,VIN
+71,Frælsarborg,Halifax,VIN
+72,Ny Jelling,Truro,VIN
+73,Olavsstad,Cape Breton Island,VIN
+74,Holmeborg,Saint Johns,VIN
+75,Bjørkvik,Millertown,VIN
+76,Scheffergård,Hopedale,VIN
+77,Søholm,St Pierre & Miquelon,VIN
+78,Xiaosu,Seattle,DNG
+79,Huazhong,Spokane,DNG
+80,Walla Walla,Walla Walla,DNG
+81,Qizhou,Portland,DNG
+82,Ruilin,Baker City,DNG
+83,Rui'an,Klamath Falls,DNG
+84,Sanbao,San Francisco,DNG
+85,Xingye,Eureka,DNG
+86,Dongji Shan,Sacramento,DNG
+87,Donghai,Monterey,DNG
+88,Jilinyutian Shan,Mariposa,DNG
+89,Yongle,Los Angeles,DNG
+90,Porto Novo,San Diego,CLM
+91,Menzhou,Boise,DNG
+92,Yingjiang,Coeur D'Alene,DNG
+93,Xinzhou,Pocatello,
+94,Zhendongfu,Carson City,DNG
+95,Dahuang,Elko,DNG
+96,Qingma,Las Vegas,DNG
+97,Jianshe,Salt Lake City,
+98,Yicheng,Loa,
+99,Xinhe,Moab,
+100,Fortaleza,Phoenix,CLM
+101,Serra Vermelha,Flagstaff,CLM
+102,São Nicolas,Tucson,CLM
+103,Daguan,Santa Fe,
+104,Belo Horizonte,Albuquerque,CLM
+105,Cruz,Las Cruces,CLM
+106,Yulin,Denver,
+107,Dekuan,Grand Junction,
+108,Longshiqiao,Alamosa,
+109,Laofeng,Pueblo,
+110,Longshan,Chyenne,
+111,Changfeng,Cody,
+112,Jixuan,Casper,
+113,Huaxiang,Bozeman,
+114,Haikou,Missoula,
+115,Linghu,Great Falls,
+116,Shihua,Billings,
+117,Slottsholme,Bismarck,
+118,Kvarneby,Minot,
+119,Drøsund,Dickinson,
+120,Chutes-Sioux,Sioux Falls,
+121,Collines Noires,Dupree,
+122,Grandes Plaines,Rapid City,
+123,Renault,Omaha,
+124,Panimaha,Alliance,
+125,Sauque,North Platte,
+126,Cavagnial,Topeka,
+127,Bergerac,Goodland,
+128,Nouveau Lancastre,Wichita,
+129,Saint Georges,Oklahoma City,
+130,Tahlecua,Tahlequah,
+131,Plaisance,Okmulgee,
+132,São Salvador,Houston,CLM
+133,Porto Seguro,Austin,CLM
+134,Joquicingo,Dallas,CLM
+135,Campo Largo,Lubbock,CLM
+136,Feira de Santana,El Paso,CLM
+137,Nova Lisboa,San Antonio,CLM
+138,Natal,Laredo,CLM
+139,Nouvelle Orléans,New Orleans,PLA
+140,Bâton-Rouge,Baton Rouge,PLA
+141,Lac Henri,Lake Charles,PLA
+142,Brucourt,Shreveport,PLA
+143,Trois-Rivières,Little Rock,PLA
+144,Sources Chaudes,Hot Springs,PLA
+145,Aux Arcs,Fayetteville,
+146,Saint-Martin,St Louis,
+147,Arundell,Joplin,
+148,La Galette,Malden,PLA
+149,Havant,Jefferson City,
+150,Fort Plymville,Kansas City,
+151,Sabine,Des Moines,
+152,Rinard,Oskaloosa,
+153,Duprat,Cedar Rapids,
+154,Fauxe,Sioux City,
+155,Hólarbórgh,Minneapolis,VIN
+156,Sauque,Granite Falls,
+157,Askjavidrøijfjórd,Moorehead,VIN
+158,Jernberg,Duluth,VIN
+159,Milwaukee,Milwaukee,VIN
+160,Åsgårdsala,Eau Claire,VIN
+161,Varaldskogen,Green Bay,VIN
+162,Ramsøya,Madison,VIN
+163,Tobøl,Chicago,VIN
+164,Rabbkjølgrenda,Rockford,VIN
+165,Telneset,Champaign,VIN
+166,Fort Crèvecœur,Peoria,PLA
+167,Cornouailles,Springfield,PLA
+168,Ascension,Carbondale,PLA
+169,Vermundsjøen,Indianapolis,VIN
+170,Douvres,Evansville,PLA
+171,Åsmarka,South Bend,VIN
+172,Trautskogen,Fort Wayne,VIN
+173,Lonåsmoen,Detroit,VIN
+174,Osmoen,Grand Rapids,VIN
+175,Saginaw,Saginaw,VIN
+176,Odals Verk,Traverse City,VIN
+177,Ottestad,Marquette,VIN
+178,Nye Nidaros,Cleveland,VIN
+179,Skivik,Columbus,VIN
+180,Skjøldby,Sandusky,VIN
+181,Strømberg,Dayton,VIN
+182,Låkkness,Cincinnati,VIN
+183,La Biche,Marietta,PLA
+184,Antrim,Louisville,PLA
+185,Colbert,Lexington,PLA
+186,Fort Clara,Bowling Green,PLA
+187,Paducha,Paducah,PLA
+188,Arlette,Nashville,PLA
+189,Richelieu,Memphis,PLA
+190,Bois Rouvray,Knoxville,PLA
+191,Versailles,Chattanooga,PLA
+192,Rosalie,Jackson,PLA
+193,Branville,Vicksburg,PLA
+194,Bilocci,Biloxi,PLA
+195,Fort Toulouse,Montgomery,PLA
+196,Blois,Tuscaloosa,PLA
+197,Mobile,Mobile,PLA
+198,Talahasi,Tallahassee,PLA
+199,Porto Dandolo,St Augustine,VEN
+200,Rialto,Tampa,VEN
+201,Fort Verwood,Atlanta,PLA
+202,Argentan,Valdosta,PLA
+203,Bermuda,Bermuda,PLA
+204,Nouvelle-Angoulême,Savannah,PLA
+205,Port-Royal,Charleston,PLA
+206,Résurrection,Columbia,PLA
+207,Ste Eleanor,Raleigh,PLA
+208,Tiverton,Winston-Salem,PLA
+209,Richardville,Charlotte,PLA
+210,Bourg-du-Roi,WIlmington,PLA
+211,Villefranche,Richmond,NBG
+212,Pont Vedrin,Manassas,NBG
+213,Cap Morlanwelz,Fredericksburg,NBG
+214,Vierset,Norfolk,NBG
+215,Mont Mouscron,Staunton,NBG
+216,Roanoqué,Roanoke,PLA
+217,Metz,Wheeling,NBG
+218,Brittas,Huntington,PLA
+219,Cap Valois,Baltimore,NBG
+220,Bruxelles-Atlantique,Washington,NBG
+221,Alzing,Hagerstown,NBG
+222,Bourg-Leblois,Dover,NBG
+223,Bourg-George,Philadelphia,NBG
+224,Nouvelle Anvers,Scranton,NBG
+225,Sinaï,Williamsport,NBG
+226,Waldwisse,Harrisburg,NBG
+227,Haselbourg,Pittsburgh,NBG
+228,Port Laurent,Erie,NBG
+229,Maline,Newark,NBG
+230,Luther,Trenton,NBG
+231,Port Clair,Atlantic City,NBG
+232,Port Valois,New York,NBG
+233,Nouvelle Bruges,Long Island,NBG
+234,Deux-Sources,Albany,NBG
+235,Blegny,Binghamton,NBG
+236,Roi-Charles,Buffalo,NBG
+237,Rousseau,Rochester,NBG
+238,Nijverdal,Syracuse,NBG
+239,Rochefort-en-Terre,Watertown,NBG
+240,Genève,Plattsburgh,NBG
+241,Espérance,Hartford,NBG
+242,Visé,Providence,NBG
+243,Philippa,Boston,NBG
+244,Cap Bon,New Bedford,NBG
+245,Ville Louis,Pittsfield,NBG
+246,Mont Rouge,Burlington,NBG
+247,Binche,Concord,NBG
+248,Hamina,Lewiston,VIN
+249,Væstersund,Bangor,VIN
+250,Markby,Caribou,VIN
+251,Godthab,Nuuk,SCA
+252,Iceland,Iceland,SCA
+253,Faroe Islands,Faroe Islands,SCA
+254,Belfast,Belfast,DUA
+255,Parisderry,Londonderry,DUA
+256,Armagh,Armagh,DUA
+257,Donegal,Donegal,DUA
+258,Galway,Galway,DUA
+259,Sligo,Sligo,DUA
+260,Cork,Cork,DUA
+261,Limerick,Limerick,DUA
+262,Waterford,Waterford,DUA
+263,Dublin,Dublin,DUA
+264,Kildare,Kildare,DUA
+265,Wexford,Wexford,DUA
+266,Aberdeen,Aberdeen,SCA
+267,Inverness,Inverness,SCA
+268,Dundee,Dundee,SCA
+269,Edinburgh,Edinburgh,SCA
+270,Stirling,Stirling,SCA
+271,Glasgow,Glasgow,SCA
+272,Dumfries,Dumfries,SCA
+273,Caerdydd,Cardiff,DUA
+274,Aberteifi,Cardigan,DUA
+275,Llandrindod,Llandrindod,DUA
+276,Caergybi,Holyhead,DUA
+277,Livreport,Liverpool,DUA
+278,Mamcestre,Manchester,DUA
+279,Carlisle,Carlisle,DUA
+280,Neufchâtel-sur-Tyne,Newcastle On Tyne,DUA
+281,York,Hull,DUA
+282,Loinèr,Leeds,DUA
+283,Chef-des-Champs,Sheffield,DUA
+284,Birmingham,Birmingham,DUA
+285,Cestre,Chester,DUA
+286,Amwythig,Shrewesbury,DUA
+287,Coventry,Coventry,DUA
+288,Notinville,Nottingham,DUA
+289,Leicestre,Leicester,DUA
+290,Lindre,Lincoln,DUA
+291,Cambridge,Cambridge,DUA
+292,Ipswich,Ipswich,DUA
+293,Chelmsford,Chelmsford,DUA
+294,Oxford,Oxford,DUA
+295,St Albans,St Albans,DUA
+296,Bristol,Bristol,DUA
+297,Seresbery,Salisbury,DUA
+298,Bath,Bath,DUA
+299,Plymville,Plymouth,DUA
+300,Londres,London,DUA
+301,Cantorbéry,Canterbury,DUA
+302,Brighton,Brighton,DUA
+303,Hantone,Southampton,DUA
+304,Île de Man,Isle of Man,DUA
+305,Trondheim,Trondheim,SCA
+306,Bodo,Bodo,SCA
+307,Hammerfest,Hammerfest,SCA
+308,Alesund,Alesund,SCA
+309,Bergen,Bergen,SCA
+310,Christianssand,Christiansand,SCA
+311,Skien,Skien,SCA
+312,Drammen,Drammen,SCA
+313,Christiania,Christiania,SCA
+314,Hamar,Hamar,SCA
+315,Lillehammer,Lillehammer,SCA
+316,Frederiksstad,Frederiksstad,SCA
+317,Gävle,Gavle,SCA
+318,Sundsvall,Sundsvall,SCA
+319,Östersund,Ostersund,SCA
+320,Umeå,Umea,SCA
+321,Luleå,Lulea,SCA
+322,Stockholm,Stockholm,SCA
+323,Falun,Falun,SCA
+324,Uppsala,Uppsala,SCA
+325,Norrköping,Norrkoping,SCA
+326,Västerås,Vasteras,SCA
+327,Örebro,Orebro,SCA
+328,Karlstad,Karlstad,SCA
+329,Göteborg,Gothenburg,SCA
+330,Borås,Boras,SCA
+331,Gotland,Gotland,SCA
+332,Kalmar,Kalmar,SCA
+333,Växjö,Vaxjo,SCA
+334,Malmö,Malmo,SCA
+335,Karlskrona,Karlskrona,SCA
+336,Oulu,Oulu,SCA
+337,Kajaani,Kajaani,SCA
+338,Tornio,Tornio,SCA
+339,Viipuri,Viipuri,SCA
+340,Kotka,Kotka,SCA
+341,Mikkeli,Mikkeli,SCA
+342,Kuopio,Kuopio,SCA
+343,Helsinki,Helsinki,SCA
+344,Hameenlinna,Hameenlinna,SCA
+345,Turku,Turku,SCA
+346,Vaasa,Vaasa,SCA
+347,Tampere,Tampere,SCA
+348,Aland Islands,Aland Islands,SCA
+349,Reval,Reval,SCA
+350,Narva,Narva,SCA
+351,Parnu,Parnu,SCA
+352,Dorpat,Dorpat,SCA
+353,Ösel,Kuressaare,SCA
+354,Riga,Riga,SCA
+355,Valmiera,Valmiera,SCA
+356,Daugavpils,Daugavpils,SCA
+357,Mitau,Jelgava,KRL
+358,Windau,Ventspils,KRL
+359,Libau,Liepaja,KRL
+360,Vilnius,Vilnius,LIT
+361,Kaunas,Kaunas,LIT
+362,Marijampole,Marijampole,LIT
+363,Panevezys,Panevezys,LIT
+364,Siauliai,Siauliai,LIT
+365,Palanga,Palanga,LIT
+366,Aarhus,Aarhus,SCA
+367,Aalborg,Aalborg,SCA
+368,Ribe,Ribe,SCA
+369,Kiel,Kiel,SCA
+370,Flensburg,Flensburg,SCA
+371,Aabenraa,Abenra,SCA
+372,Copenhagen,Copenhagen,SCA
+373,Odense,Odense,SCA
+374,Bornholm,Bornholm,SCA
+375,Amsterdam,Amsterdam,BRG
+376,Rotterdam,Rotterdam,BRG
+377,Utrecht,Utrecht,BRG
+378,Middelburg,Middelburg,BRG
+379,Eindhoven,Eindhoven,BRG
+380,Breda,Breda,BRG
+381,Maastricht,Maastricht,BRG
+382,Arnhem,Arnhem,BRG
+383,Groningen,Groningen,BRG
+384,Zwolle,Zwolle,BRG
+385,Leeuwarden,Leeuwarden,BRG
+386,Assen,Assen,BRG
+387,Brussels,Brussels,BRG
+388,Bruges,Bruges,BRG
+389,Ghent,Ghent,BRG
+390,Anvers,Antwerp,BRG
+391,Hasselt,Hasselt,BRG
+392,Namur,Namur,BRG
+393,Tournai,Tournai,BRG
+394,Charleroi,Charleroi,BRG
+395,Liege,Liege,BRG
+396,Spa,Spa,BRG
+397,Luxembourg,Luxembourg,BRG
+398,Arlon,Arlon,BRG
+399,Lille,Lille,BRG
+400,Calais,Dunkirk,BRG
+401,Arras,Arras,BRG
+402,Amiens,Amiens,DUA
+403,Laon,Laon,DUA
+404,Cambrai,Cambrai,BRG
+405,Charleville,Charleville,BRG
+406,Troyes,Troyes,DUA
+407,Chaumont,Chaumont,BRG
+408,Chalons,Chalons,DUA
+409,Strasbourg,Strasbourg,BRG
+410,Colmar,Colmar,BRG
+411,Nancy,Nancy,BRG
+412,Metz,Metz,BRG
+413,Verdun,Verdun,BRG
+414,Epinal,Epinal,BRG
+415,Rouen,Rouen,DUA
+416,Evreux,Evreux,DUA
+417,Alencon,Alencon,DUA
+418,Caen,Caen,DUA
+419,Channel Islands,Channel Islands,DUA
+420,Brest,Brest,DUA
+421,St Brieuc,St Brieuc,DUA
+422,Vannes,Vannes,DUA
+423,Nantes,Nantes,DUA
+424,Rennes,Rennes,DUA
+425,Paris,Paris,DUA
+426,Chartres,Chartres,DUA
+427,Melun,Melun,DUA
+428,Dijon,Dijon,BRG
+429,Auxerre,Auxerre,BRG
+430,Moulins,Moulins,BRG
+431,Macon,Macon,BRG
+432,Besancon,Besancon,BRG
+433,Lons,Lons,BRG
+434,Angers,Angers,DUA
+435,Laval,Laval,DUA
+436,Le Mans,Le Mans,DUA
+437,La Roche,La Roche,DUA
+438,Orleans,Orleans,DUA
+439,Bourges,Bourges,DUA
+440,Blois,Blois,DUA
+441,Tours,Tours,DUA
+442,La Rochelle,La Rochelle,DUA
+443,Poitiers,Poitiers,DUA
+444,Angouleme,Angouleme,DUA
+445,Limoges,Limoges,DUA
+446,Chateauroux,Chateauroux,DUA
+447,Tulle,Tulle,DUA
+448,Clermont-Ferrand,Clermont-Ferrand,DUA
+449,Aurillac,Aurillac,DUA
+450,Cahors,Cahors,DUA
+451,Lyon,Lyon,DUA
+452,St Etienne,St Etienne,DUA
+453,Valence,Valence,DUA
+454,Grenoble,Grenoble,DUA
+455,Toulouse,Toulouse,DUA
+456,Montauban,Montauban,DUA
+457,Foix,Foix,DUA
+458,Bordeaux,Bordeaux,DUA
+459,Mont de Marsan,Mont de Marsan,DUA
+460,Pau,Pau,DUA
+461,Montpellier,Montpellier,DUA
+462,Rodez,Rodez,DUA
+463,Carcassonne,Carcassone,DUA
+464,Perpinyà,Perpignan,ARA
+465,Annecy,Annency,SAR
+466,Ciamberì,Chambery,SAR
+467,Marselha,Marseilles,PRV
+468,Avinhon,Avignon,PRV
+469,Dinha,Digne,PRV
+470,Tolon,Toulon,PRV
+471,Frejús,Frejus,PRV
+472,Nizza,Nice,GEN
+473,Còrsega,Corsica,ARA
+474,La Coruna,La Coruna,SPA
+475,Oviedo,Oviedo,SPA
+476,Vigo,Vigo,SPA
+477,León,Leon,SPA
+478,Santander,Santander,SPA
+479,Burgos,Burgos,SPA
+480,Valladolid,Valladolid,SPA
+481,Soria,Soria,SPA
+482,Salamanca,Salamanca,SPA
+483,Ávila,Avila,SPA
+484,Badajoz,Badajoz,SPA
+485,Almendralejo,Almendralejo,SPA
+486,Cáceres,Caceres,SPA
+487,Madrid,Madrid,SPA
+488,Sigüenza,Siguenza,SPA
+489,Toledo,Toledo,SPA
+490,Cuenca,Cuenca,SPA
+491,Ciudad Real,Ciudad Real,SPA
+492,Bilbo,BIlbao,NAV
+493,Iruña,Pamplona,NAV
+494,Lugruñu,Logrono,NAV
+495,Saragossa,Zaragoza,ARA
+496,Osca,Huesca,ARA
+497,Terol,Teruel,ARA
+498,Barcelona,Barcelona,ARA
+499,Girona,Gerona,ARA
+500,Lleida,Lerida,ARA
+501,Tarragona,Tarragona,ARA
+502,Illes Balears,Balearic Islands,ARA
+503,València,Valencia,ARA
+504,Castelló,Castellon,ARA
+505,Alacant,Alicante,ARA
+506,Cartagena,Cartagena,SPA
+507,Murcia,Murcia,SPA
+508,Albacete,Albacete,SPA
+509,Sevilla,Seville,SPA
+510,Córdoba,Cordoba,SPA
+511,Huelva,Huelva,SPA
+512,Cádiz,Cadiz,SPA
+513,Granada,Granada,SPA
+514,Málaga,Malaga,SPA
+515,Almería,Almeria,SPA
+516,Jaén,Jaen,SPA
+517,Gibraltar,Gibraltar,SPA
+518,Oporto,Oporto,SPA
+519,Vila Real,Vila Real,SPA
+520,Covilha,Covilha,SPA
+521,Lisboa,Lisbon,SPA
+522,Coimbra,Coimbra,SPA
+523,Abrantes,Abrantes,SPA
+524,Setubal,Setubal,SPA
+525,Evora,Evora,SPA
+526,Beja,Beja,SPA
+527,Faro,Faro,SPA
+528,Hamburg,Hamburg,SCA
+529,Lauenburg,Lauenburg,SCA
+530,Lubeck,Lubeck,SCA
+531,Stade,Stade,HAN
+532,Lüneburg,Luneburg,HAN
+533,Heligoland,Heligoland,SCA
+534,Hanover,Hanover,HAN
+535,Nienburg,Nienburg,HAN
+536,Braunschweig,Brunswick,BRA
+537,Gottingen,Gottingen,BRA
+538,Osnabruck,Osnabruck,MNR
+539,Bremen,Bremen,BRE
+540,Oldenburg,Oldenburg,OLD
+541,Cloppenburg,Cloppenburg,OLD
+542,Lingen,Lingen,FRI
+543,Emden,Emden,FRI
+544,Schwerin,Schwerin,SCA
+545,Neustrelitz,Neustrelitz,SCA
+546,Stettin,Stettin,SCA
+547,Swinemunde,Swinemunde,SCA
+548,Stralsund,Stralsund,SCA
+549,Berlin,Berlin,BOH
+550,Prenzlau,Prenzlau,BOH
+551,Pritzwalk,Pritzwalk,BOH
+552,Cottbus,Cottbus,BOH
+553,Magdeburg,Magdeburg,BOH
+554,Erfurt,Erfurt,ERF
+555,Dessau,Dessau,BOH
+556,Halle,Halle,BOH
+557,Stendal,Stendal,BOH
+558,Dresden,Dresden,BOH
+559,Leipzig,Leipzig,BOH
+560,Chemnitz,Chemnitz,BOH
+561,Weimar,Weimar,THU
+562,Gotha,Gotha,THU
+563,Meiningen,Meiningen,THU
+564,Frankfurt,Frankfurt,FRM
+565,Wiesbaden,Wiesbaden,NAS
+566,Kassel,Kassel,HEK
+567,Giessen,Giessen,HEK
+568,Fulda,Fulda,FUL
+569,Mannheim,Mannheim,BAD
+570,Mainz,Mainz,BRG
+571,Kaiserlautern,Kaiserlautern,BRG
+572,Trier,Trier,BRG
+573,Saarbrucken,Saarbrucken,BRG
+574,Kreuznach,Kreuznach,BRG
+575,Cologne,Cologne,BRG
+576,Aachen,Aachen,BRG
+577,Cleves,Kleves,BRG
+578,Dusseldorf,Dusseldorf,BEG
+579,Koblenz,Koblenz,BEG
+580,Dortmund,Dortmund,MNR
+581,Munster,Munster,MNR
+582,Minden,Minden,LIP
+583,Arnsberg,Siegen,MRK
+584,Korbach,Korbach,MRK
+585,Detmold,Detmold,LIP
+586,Karlsruhe,Karlsruhe,BAD
+587,Freiburg,Freiburg,FRB
+588,Konstanz,Konstanz,FTB
+589,Stuttgart,Stuttgart,WUR
+590,Heilbronn,Heilbronn,WUR
+591,Tubingen,Tubingen,WUR
+592,Augsburg,Augsburg,BAV
+593,Ulm,Ulm,WUR
+594,Sigmaringen,Sigmaringen,WUR
+595,Nuremburg,Nuremburg,ANB
+596,Aschaffenburg,Aschaffenburg,WZB
+597,Wurzburg,Wurzburg,WZB
+598,Bayreuth,Bayreuth,BMB
+599,Munich,Munich,BAV
+600,Landshut,Landshut,BAV
+601,Ingolstadt,Ingolstadt,BAV
+602,Regensburg,Regensburg,BAV
+603,Zurich,Zurich,SWI
+604,Basel,Basel,SWI
+605,Bern,Bern,SWI
+606,Lucerne,Lucern,SWI
+607,Geneva,Geneva,BRG
+608,Neuchatel,Neuchatel,BRG
+609,Sitten,Sitten,SAR
+610,Ponape,Ponape,
+611,Chur,Chur,SWI
+612,Innsbruck,Innsbruck,BAV
+613,Salzburg,Salzburg,SAL
+614,Bregenz,Bregenz,SWI
+615,Lienz,Lienz,BAV
+616,Graz,Graz,AUS
+617,Judenburg,Judenburg,AUS
+618,Klagenfurt,Klagenfurt,AUS
+619,Vienna,Vienna,AUS
+620,Sankt Polten,Sankt Polten,AUS
+621,Krems,Krems,AUS
+622,Linz,Linz,AUS
+623,Sopron,Sopron,HUN
+624,Eisenstadt,Eisenstadt,HUN
+625,Prague,Prague,BOH
+626,Hradec Kralove,Hradec Kralove,BOH
+627,Karlovy Vary,Karlsbad,BOH
+628,Labem,Aussig,BOH
+629,Plzen,Plzen,BOH
+630,Budejovice,Budejovice,BOH
+631,Brno,Brno,BOH
+632,Olomóc,Olomouc,BOH
+633,Bratislava,Bratislava,HUN
+634,Trencin,Trencin,HUN
+635,Nitra,Nitra,HUN
+636,Banska Bystrica,Banska Bystrica,HUN
+637,Kassa,Kosice,HUN
+638,Roznava,Roznava,HUN
+639,Zalaegerszeg,Zalaegerszeg,HUN
+640,Pecs,Pecs,HUN
+641,Buda,Budapest,HUN
+642,Gyor,Gyor,HUN
+643,Szekesfehevar,Szekesfehevar,HUN
+644,Kaposvar,Kaposvar,HUN
+645,Kecskemet,Kecskemet,HUN
+646,Miskolc,Miskolc,HUN
+647,Nagyvárad,Oradea,HUN
+648,Debrecen,Debrecen,HUN
+649,Szeged,Szeged,HUN
+650,Bekescsaba,Bekescsaba,HUN
+651,Szatmár,Szatmar,HUN
+652,Temesvár,Temesvar,HUN
+653,Resicabánya,Resicabanya,HUN
+654,Kolozsvár,Cluj,HUN
+655,Gyulafehérvár,Gyulafehervar,HUN
+656,Déva,Deva,HUN
+657,Hermannstadt,Nagyszeben,HUN
+658,Hawaii,Hawaii,HAW
+659,Kronstadt,Brasso,HUN
+660,Csíkszereda,Udvarhely,HUN
+661,Máramaros,Beszterce,HUN
+662,Cernauti,Cernauti,MOL
+663,Suceava,Suceava,MOL
+664,Bucharest,Bucharest,WAL
+665,Tirgu Jiu,Tirgu Jiu,WAL
+666,Craiova,Craiova,WAL
+667,Tirgoviste,Tirgoviste,WAL
+668,Braila,Braila,WAL
+669,Calarasi,Calarasi,WAL
+670,Iasi,Iasi,MOL
+671,Botosani,Botosani,MOL
+672,Bacau,Bacau,MOL
+673,Galati,Galati,MOL
+674,Constanta,Constanta,TUR
+675,Tulcea,Tulcea,TUR
+676,Chisinau,Chisinau,MOL
+677,Balti,Balti,MOL
+678,Izmail,Izmail,MOL
+679,Kolberg,Kolberg,SCA
+680,Koslin,Koslin,SCA
+681,Kustrin,Kustrin,BOH
+682,Wratislavia,Breslau,BOH
+683,Lehnice,Liegnitz,BOH
+684,Opolí,Oppeln,BOH
+685,Katowicy,Kattowitz,BOH
+686,Kara-Kum,Line Islands,
+687,Zhorjelc,Gorlitz,BOH
+688,Opava,Troppau,BOH
+689,Tesin,Tesin,BOH
+690,Danzig,Danzig,PLC
+691,Tuchola,Tuchel,PLC
+692,Walcz,Deutsch Krone,PLC
+693,Mohrungen,Elbing,PRU
+694,Torun,Torun,PLC
+695,Königsberg,Konigsburg,PRU
+696,Allenstein,Allenstein,PRU
+697,Gumbinnen,Gumbinnen,PRU
+698,Memel,Memel,PRU
+699,Poznan,Posen,PLC
+700,Bydgoszcz,Bromberg,PLC
+701,Gniezno,Gniezno,PLC
+702,Lvov,Lvov,PLC
+703,Krakow,Krakow,PLC
+704,Nowy Sacz,Novy Sacz,PLC
+705,Przemysl,Przemysl,PLC
+706,Warsaw,Warsaw,PLC
+707,Suwalki,Suwalki,LIT
+708,Plock,Plock,PLC
+709,Lomza,Lomza,PLC
+710,Skierniewice,Skierniewicz,PLC
+711,Siedlice,Siedlice,PLC
+712,Lodz,Lodz,PLC
+713,Radom,Radom,PLC
+714,Tarnow,Tarnow,PLC
+715,Lublin,Lublin,PLC
+716,Kielce,Kielce,PLC
+717,Kalisz,Kalisz,PLC
+718,Minsk,Minsk,BLR
+719,Bialystock,Bialystock,PLC
+720,Turin,Turin,SAR
+721,Aosta,Aosta,SAR
+722,Novara,Novara,SAR
+723,Alessandria,Alessandria,SAR
+724,Genoa,Genoa,GEN
+725,Savona,Savona,GEN
+726,Milan,Milan,LOM
+727,Bergamo,Bergamo,LOM
+728,Brescia,Brescia,LOM
+729,Venice,Venice,VEN
+730,Verona,Verona,VEN
+731,Padua,Padua,VEN
+732,Treviso,Treviso,VEN
+733,Udine,Udine,VEN
+734,Trent,Trent,VEN
+735,Bozen,Bozen,BAV
+736,Trieste,Trieste,VEN
+737,Gorizia,Gorizia,VEN
+738,Parma,Parma,PAR
+739,Modena,Modena,MOD
+740,Massa,Massa,MOD
+741,Bologna,Bologna,FRR
+742,Ferrara,Ferrara,FRR
+743,Ravenna,Ravenna,FRR
+744,Florence,Florence,TUS
+745,Livorno,Leghorn,TUS
+746,Lucca,Lucca,LUC
+747,Siena,Siena,TUS
+748,Grosetto,Grosetto,TUS
+749,Rome,Rome,PAP
+750,Viterbo,Viterbo,PAP
+751,Perugia,Perugia,PAP
+752,Ancona,Ancona,PAP
+753,Aquila,Aquila,ARA
+754,Nàpols,Naples,ARA
+755,Salerno,Salerno,ARA
+756,Bari,Bari,ARA
+757,Foggia,Foggia,ARA
+758,Brindisi,Brindisi,ARA
+759,Reggio di Calabria,Reggio di Calabria,ARA
+760,Catanzaro,Catanzaro,ARA
+761,Potenza,Potenza,ARA
+762,Palermo,Palermo,ARA
+763,Messina,Messina,ARA
+764,Catania,Catania,ARA
+765,Càller,Cagliari,ARA
+766,Sàsser,Sassari,ARA
+767,Maribor,Maribor,AUS
+768,Ljubljana,Ljubljana,AUS
+769,Postojna,Postojna,VEN
+770,Pola,Pola,VEN
+771,Zagreb,Zagreb,CRO
+772,Sisak,Sisak,CRO
+773,Karlovac,Karlovac,CRO
+774,Senj,Senj,VEN
+775,Varazdin,Varadzin,CRO
+776,Bjelovar,Bjelovar,CRO
+777,Pozega,Pozega,CRO
+778,Fiume,Fiume,VEN
+779,Osijek,Osijek,HUN
+780,Split,Split,VEN
+781,Zadar,Zadar,VEN
+782,Dubrovnik,Dubrovnik,VEN
+783,Sarajevo,Sarajevo,CRO
+784,Bihac,Bihac,CRO
+785,Banja Luka,Banja Luka,CRO
+786,Tuzla,Tuzla,CRO
+787,Foca,Foca,CRO
+788,Mostar,Mostar,CRO
+789,Livno,Livno,CRO
+790,Kitwe,Kitwe,KZB
+791,Mitrovica,Mitrovica,HUN
+792,Pancevo,Pancevo,HUN
+793,Vukovar,Vukovar,HUN
+794,Belgrade,Belgrade,TUR
+795,Bor,Bor,TUR
+796,Kragujevac,Kragujevac,TUR
+797,Uzice,Uzice,TUR
+798,Nis,Nis,TUR
+799,Leskovac,Leskovac,TUR
+800,Ulcinj,Ulcinj,MON
+801,Tahiti,Tahiti,
+802,Pristina,Pristina,TUR
+803,Prizren,Prizren,TUR
+804,Novi Pazar,Novi Pazar,TUR
+805,Salonika,Salonika,MAC
+806,Skopje,Skopje,MAC
+807,Bitola,Bitola,MAC
+808,Petrich,Petrich,MAC
+809,Sofia,Sofia,TUR
+810,Vidin,Vidin,TUR
+811,Ruse,Ruse,TUR
+812,Pleven,Pleven,TUR
+813,Shumen,Shumen,TUR
+814,Varna,Varna,TUR
+815,Plovdiv,Plovdiv,TUR
+816,Stara Zagora,Stara Zagora,TUR
+817,Burgas,Burgas,TUR
+818,Silistre,Silistre,TUR
+819,Florina,Florina,MAC
+820,Grevena,Grevena,MAC
+821,Edessa,Edessa,MAC
+822,Polygyros,Polygyros,MAC
+823,Kavala,Kavala,TUR
+824,Janina,Janina,ALB
+825,Arta,Arta,VEN
+826,Corfu,Corfu,VEN
+827,Zante,Zante,VEN
+828,Edirne,Edirne,TUR
+829,Xanthe,Xanthe,TUR
+830,Dedeagatch,Dedeagatch,TUR
+831,Larisa,Larisa,VEN
+832,Volos,Volos,VEN
+833,Trikkala,Trikkala,VEN
+834,Athens,Athens,VEN
+835,Amfissa,Amfissa,VEN
+836,Lamia,Lamia,VEN
+837,Missolonghi,Missolonghi,VEN
+838,Khalkis,Khalkis,VEN
+839,Nafplion,Nafplion,VEN
+840,Corinth,Corinth,VEN
+841,Kalamata,Kalamata,VEN
+842,Patras,Patras,VEN
+843,Chios,Chios,TUR
+844,Myteline,Myteline,TUR
+845,Cyclades,Cyclades,VEN
+846,Dodecanese,Dodecanese,TUR
+847,Chania,Chania,VEN
+848,Iraklion,Iraklion,VEN
+849,Tirana,Tirana,ALB
+850,Shkoder,Shkoder,ALB
+851,Durres,Durres,ALB
+852,Vlorë,Vlore,ALB
+853,Gjirokaster,Gjirokaster,ALB
+854,Malta,Malta,ARA
+855,Nicosia,Nicosia,VEN
+856,Limassol,Limassol,VEN
+857,Famagusta,Famagusta,VEN
+858,Kirklareli,Kirklareli,TUR
+859,Gallipoli,Gallipoli,TUR
+860,Konstantiniyye,Istanbul,TUR
+861,Uskudar,Uskudar,TUR
+862,Izmit,Izmit,TUR
+863,Bursa,Bursa,TUR
+864,Balikesir,Balikesir,TUR
+865,Canakkale,Canakkale,TUR
+866,Afyon,Afyon,TUR
+867,Kutahya,Kutahya,TUR
+868,Eskishehir,Eskishehir,TUR
+869,Izmir,Izmir,TUR
+870,Manisa,Manisa,TUR
+871,Denizli,Denizli,TUR
+872,Mugla,Mugla,TUR
+873,Konya,Konya,TUR
+874,Burdur,Burdur,TUR
+875,Antalya,Antalya,TUR
+876,Ankara,Ankara,TUR
+877,Amasya,Amasya,TUR
+878,Kayseri,Kayseri,TUR
+879,Sivas,Sivas,TUR
+880,Kastamonu,Kastamonu,TUR
+881,Bolu,Bolu,TUR
+882,Trabzon,Trabzon,TUR
+883,Sinop,Sinop,TUR
+884,Giresun,Giresun,TUR
+885,Kars,Kars,AZB
+886,Ardahan,Ardahan,SAM
+887,Erzurum,Erzurum,TUR
+888,Erzincan,Erzincan,TUR
+889,Malatya,Malatya,TUR
+890,Van,Van,BDN
+891,Bitlis,Bitlis,BTL
+892,Hakkari,Hakkari,BDN
+893,Diyarbakir,Diyarbakir,TUR
+894,Adana,Adana,TUR
+895,Mersin,Mersin,TUR
+896,Marash,Marash,TUR
+897,Aleppo,Aleppo,TUR
+898,Antep,Antep,TUR
+899,Urfa,Urfa,TUR
+900,Antioch,Antioch,TUR
+901,Dayr al-Zour,Dayr al-Zour,TUR
+902,Damascus,Damascus,TUR
+903,Homs,Homs,TUR
+904,Hama,Hama,TUR
+905,Latakia,Latakia,TUR
+906,Suwayda,Suwayda,TUR
+907,Palmyra,Palmyra,TUR
+908,Amman,Amman,TUR
+909,Jerash,Jerash,TUR
+910,Ruwayshid,Ruwayshid,
+911,Ma'an,Maan,
+912,Baalbeck,Baalbeck,TUR
+913,Beirut,Beirut,TUR
+914,Askaleh,Askaleh,TUR
+915,Sidon,Sidon,TUR
+916,Acre,Acre,TUR
+917,Jerusalem,Jerusalem,TUR
+918,Nablus,Nablus,TUR
+919,Jaffa,Jaffa,TUR
+920,Gaza,Gaza,TUR
+921,Beersheba,Beersheba,TUR
+922,Aqaba,Aqaba,TUR
+923,Mosul,Mosul,TUR
+924,Arbil,Arbil,SRN
+925,Kirkuk,Kirkuk,ZND
+926,Baghdad,Baghdad,IRQ
+927,Samarra,Samarra,IRQ
+928,Mendeli,Mendeli,ZND
+929,Karbala,Karbala,IRQ
+930,Kut,Kut,IRQ
+931,Rutbah,Rutbah,
+932,Basra,Basra,IRQ
+933,Nasiriyya,Nasiriyya,IRQ
+934,Najaf,Najaf,IRQ
+935,Kuwait,Kuwait,ALH
+936,Grodno,Grodno,LIT
+937,Brest-Litovsk,Brest-Litovsk,PLC
+938,Lida,Lida,LIT
+939,Baranovichi,Baranovichi,LIT
+940,Pinsk,Pinsk,PLC
+941,Slutsk,Slutsk,BLR
+942,Mozyr,Mozyr,BLR
+943,Smolensk,Smolensk,MUS
+944,Orsha,Orsha,BLR
+945,Vitebsk,Vitebsk,BLR
+946,Polotsk,Polotsk,BLR
+947,Pastavy,Pastavy,LIT
+948,Mogilev,Mogilev,BLR
+949,Gomel,Gomel,BLR
+950,Huszt,Uzgorord,HUN
+951,Stryi,Stryi,PLC
+952,Ternopil,Ternopil,PLC
+953,Stanislavov,Stanislavov,PLC
+954,Vinnitsa,Vinnitsa,PLC
+955,Proskorov,Proskorov,PLC
+956,Rovne,Rovne,PLC
+957,Kovel,Kovel,PLC
+958,Kiev,Kiev,UKR
+959,Korosten,Korosten,UKR
+960,Zhitomir,Zhitomir,UKR
+961,Cherkassy,Cherkassy,UKR
+962,Chernigov,Chernigov,UKR
+963,Poltava,Poltava,UKR
+964,Aqmescit,Simferopol,CRI
+965,Akhtiar,Cherson,CRI
+966,Keriç,Kerch,CRI
+967,Aqyar,Sevastopol,CRI
+968,Yedisan,Odessa,CRI
+969,Orlik,Pervomaisk,CRI
+970,Inhul,Nikolaev,CRI
+971,Saxagan,Krivoy Rog,CRI
+972,Özü-cale,Ekaterinoslav,CRI
+973,Kyzyl-Yar,Melitopol,CRI
+974,Babka,Kramatorsk,CRI
+975,Besterek,Yuzovka,CRI
+976,Kalmius,Mariopol,CRI
+977,Kursk,Kursk,MUS
+978,Lopan,Kharkov,CRI
+979,Kyzyl-Kut,Rostov,CRI
+980,Danu,Luhansk,CRI
+981,Archangel,Archangel,NOV
+982,Petsamo,Petsamo,SCA
+983,Kandalaksha,Kandalaksha,NOV
+984,Kostomushka,Kostomushka,NOV
+985,Mezen,Mezen,NOV
+986,Naryn Mar,Naryn Mar,NOV
+987,Ust Sysolsk,Ust Sysolsk,NOV
+988,Povyents,Povyents,NOV
+989,Vologda,Vologda,NOV
+990,Kotlas,Kotlas,NOV
+991,Uglich,Uglich,NOV
+992,Belozersk,Belozersk,NOV
+993,Vyterga,Vyterga,NOV
+994,Nyenschantz,St Petersburg,PSV
+995,Petrozavorsk,Petrozavorsk,NOV
+996,Luga,Luga,PSV
+997,Gdov,Gdov,PSV
+998,Tver,Tver,MUS
+999,Rzhev,Rzhev,MUS
+1000,Staritsa,Staritsa,MUS
+1001,Yaroslavl,Yaroslavl,MUS
+1002,Manzhouli,Manzhouli,MCK
+1003,Novgorod,Novgorod,NOV
+1004,Tikhvin,Tikhvin,NOV
+1005,Borovichi,Borovichi,NOV
+1006,Pskov,Pskov,PSV
+1007,Velikiye Luki,Velikiye Luki,MUS
+1008,Moscow,Moscow,MUS
+1009,Borodino,Borodino,MUS
+1010,Kaluga,Kaluga,MUS
+1011,Tula,Tula,MUS
+1012,Ryazan,Ryazan,MUS
+1013,Vladimir,Vladimir,MUS
+1014,Vyazma,Vyazma,MUS
+1015,Peremyshl,Peremyshl,MUS
+1016,Bryansk,Bryansk,MUS
+1017,Orel,Orel,MUS
+1018,Belgorod,Belgorod,MUS
+1019,Voronets,Voronets,MUS
+1020,Nizhni Novgorod,Nizhni Novgorod,MUS
+1021,Penza,Penza,MUS
+1022,Ivanovo,Ivanovo,MUS
+1023,Kostorma,Kostorma,NOV
+1024,Galich,Galich,NOV
+1025,Tambov,Tambov,MUS
+1026,Perm,Perm,NOV
+1027,Vetluga,Vetluga,NOV
+1028,Vyatkha,Vyatkha,NOV
+1029,Glasov,Glasov,NOV
+1030,Kazan,Kazan,MUS
+1031,Sarapul,Sarapol,NOV
+1032,Cistaj,Chistopol,NOG
+1033,Simbirsk,Simbirsk,MUS
+1034,Samara,Samara,NOG
+1035,Cinghylëy,Syzran,NOG
+1036,Xacitarxan,Astrakhan,ASK
+1037,Ukek,Saratov,NOG
+1038,Janaozen,Novo Uzensk,NOG
+1039,Sary Su,Tsaritsyn,ASK
+1040,Sok,Zarevka,ASK
+1041,Elst,Elitsa,ASK
+1042,Ufa,Ufa,NOG
+1043,Busuluk,Busuluk,NOG
+1044,Orynbor,Orenburg,NOG
+1045,Meskeçi,Migolinskaya,ASK
+1046,Cir,Chirskaya,ASK
+1047,Azak,Azov,ASK
+1048,Qoban,Ekaterinodar,ASK
+1049,Suzako,Novorossiysk,CIR
+1050,Jarymaj Sehere,Stavropol,ASK
+1051,Adygei,Adygei,CIR
+1052,Kumukh,Derbent,KMY
+1053,Gunib,Gunib,KMY
+1054,Dzaudzhikau,Vladikavkaz,ASK
+1055,Sölza-Gala,Grozny,ASK
+1056,Beshtau,Pyatigorsk,CIR
+1057,Kizylyar,Kizylyar,ASK
+1058,Miass,Ekaterinburg,SIB
+1059,Iset,Chelyabinsk,SIB
+1060,Jamanqala,Orsk,NOG
+1061,Tyumen,Tyumen,SIB
+1062,Khanty,Berezov,SIB
+1063,Chuldum,Tomsk,CHG
+1064,Yadegar,Omsk,SIB
+1065,Taz,Surgut,
+1066,Qashliq,Tobolsk,SIB
+1067,Barnaul,Kemerevo,CHG
+1068,Ulala,Ulala,CHG
+1069,Yilehuli,Yakutsk,
+1070,Chuvash,Tunginskoye,
+1071,Qeshm,Lazo,ZND
+1072,Nivkh,Okhotsk,AIN
+1073,Yevensk,Gizhiga,AIN
+1074,Dembei,Petropavlovsk,AIN
+1075,Buryat,Irkutsk,CHG
+1076,Tofalar,Chunskoye,
+1077,Kyzyl,Krasnoyarsk,CHG
+1078,Chita,Chita,CHG
+1079,Ust-Urda,Nerchinsk,CHG
+1080,Toron,Bauntovskiy,MCK
+1081,Yakesa,Yaksa,MCK
+1082,Haishenwai,HaIshenwai,MCK
+1083,Boli,Boli,MCK
+1084,Utchan,Utchan,MCK
+1085,Ulusamudan,Ulusamudan,MCK
+1086,Pogobi,Pogobi,JAP
+1087,Ootomari,Ootomari,JAP
+1088,Shumshu,Shumshu,JAP
+1089,Etorofu,Etorofu,JAP
+1090,Tblisi,Tblisi,AZB
+1091,Pasanauri,Pasanauri,AZB
+1092,Kutaisi,Kutaisi,IME
+1093,Akhaltsikhe,Akhaltsikhe,SAM
+1094,Poti,Poti,IME
+1095,Sukhumi,Sukhumi,IME
+1096,Batum,Batum,IME
+1097,Kanaky,New Caledonia,
+1098,Erivan,Erivan,AZB
+1099,Gyumri,Gyumri,AZB
+1100,Kapan,Kapan,AZB
+1101,Nakhichevan,Nakhichevan,AZB
+1102,Baku,Baku,AZB
+1103,Siyazen,Siyazen,AZB
+1104,Shaki,Sheki,AZB
+1105,Ganja,Ganja,AZB
+1106,Agdam,Agdam,AZB
+1107,Lankaran,Lankaran,AZB
+1108,Tabriz,Tabriz,AZB
+1109,Khvoy,Khvoy,AZB
+1110,Urumia,Urumia,AZB
+1111,Mahabad,Mahabad,AZB
+1112,Ardabil,Ardabil,AZB
+1113,Rasht,Rasht,QAJ
+1114,Noshehr,Noshehr,QAJ
+1115,Amol,Sari,QAJ
+1116,Gorgan,Gorgan,AFS
+1117,Sanandaj,Kermanshah,ZND
+1118,Saqqez,Sanandaj,ZND
+1119,Kermanshah,Ilam,ZND
+1120,Khoramabad,Khoramabad,ZND
+1121,Tehran,Tehran,QAJ
+1122,Hamadan,Hamadan,ZND
+1123,Zanjan,Zanjan,AZB
+1124,Qazvin,Qazvin,QAJ
+1125,Qom,Qom,QAJ
+1126,Semnan,Semnan,QAJ
+1127,Isfahan,Isfahan,ZND
+1128,Arak,Arak,ZND
+1129,Kashan,Kashan,QAJ
+1130,Yazd,Yazd,ZND
+1131,Ahvaz,Ahvaz,IRQ
+1132,Abadan,Abadan,IRQ
+1133,Ilam,Ilam,ZND
+1134,Dehkord,Dehkord,ZND
+1135,Shiraz,Shiraz,ZND
+1136,Bushire,Bushire,ZND
+1137,Yasuj,Yasuj,ZND
+1138,Kangan,Kangan,ZND
+1139,Sirjan,Sirjan,ZND
+1140,Kerman,Kerman,ZND
+1141,Lengeh,Lengeh,ZND
+1142,Bandar Abbas,Bandar Abbas,ZND
+1143,Bam,Bam,ZND
+1144,Zahedan,Zahedan,ZND
+1145,Jask,Jask,ZND
+1146,Chabahar,Chabahar,ZND
+1147,Mashhad,Mashhad,AFS
+1148,Birjand,Birjand,AFS
+1149,Sabzevar,Sabzevar,AFS
+1150,Bojnurd,Bojnurd,AFS
+1151,Mecca,Mecca,HDJ
+1152,Jeddah,Jidda,HDJ
+1153,Medina,Medina,HDJ
+1154,Tabuk,Tabuk,HDJ
+1155,Abha,Abha,HDJ
+1156,Kaf,Kaf,NEJ
+1157,Riyadh,Riyadh,NEJ
+1158,Rafha,Rafha,
+1159,Halaban,Halaban,NEJ
+1160,Hail,Hail,NEJ
+1161,Sharurah,Sharawrah,NEJ
+1162,Bahrain,Bahrain,ABU
+1163,Qatif,Qatif,ALH
+1164,Hufuf,Hufuf,ALH
+1165,Doha,Doha,ABU
+1166,Muscat,Muscat,OMA
+1167,Abu Dhabi,Abu Dhabi,ABU
+1168,Dubai,Dubai,ABU
+1169,Sohar,Suhar,OMA
+1170,Nizwa,Nizwa,OMA
+1171,Sur,Sur,OMA
+1172,Duqm,Duqm,
+1173,Mukalla,Mukalla,YEM
+1174,Salalah,Salalah,OMA
+1175,Ghayda,Ghayda,
+1176,Bayda,Bayda,YEM
+1177,Socotra,Socotra,SPA
+1178,Sana,Sana,YEM
+1179,Hodeida,Hodeida,YEM
+1180,Taizz,Taizz,YEM
+1181,Qaraganda,Qaraganda,CHG
+1182,Atyray,Guryev,NOG
+1183,Aqtobe,Aqtobe,NOG
+1184,Kokshetau,Kokshetau,CHG
+1185,Yasi,Yasi,CHG
+1186,Alma Ata,Alma Ata,CHG
+1187,Semeï,Semipalatinsk,CHG
+1188,Qaratal,Qaratal,CHG
+1189,Bishkek,Bishkek,CHG
+1190,Naryn,Naryn,CHG
+1191,Khiva,Khiva,CHG
+1192,Trutkul,Nukus,CHG
+1193,Yasi,Kyzylorda,CHG
+1194,Aqtau,Aqtau,NOG
+1195,Tashkent,Tashkent,CHG
+1196,Gurgench,Dashhowuz,CHG
+1197,Chimkent,Shymkent,CHG
+1198,Bukhara,Bukhara,CHG
+1199,Samarkand,Samarkand,CHG
+1200,Qarshi,Qarshi,CHG
+1201,Khojand,Khojand,CHG
+1202,Kokand,Kokand,CHG
+1203,Osh,Osh,CHG
+1204,Ashkhabad,Ashkabad,AFS
+1205,Kyzyl-Su,Kizil Arvat,
+1206,Amul,Merv,CHG
+1207,Kulob,Kulob,CHG
+1208,Khorug,Khorug,CHG
+1209,Kabul,Kabul,AFG
+1210,Fayzabad,Faizabad,AFG
+1211,Balkh,Balkh,AFG
+1212,Herat,Herat,AFS
+1213,Bamyan,Bamyan,AFG
+1214,Farrah,Farrah,AFS
+1215,Kandahar,Kandahar,AFG
+1216,Jalalabad,Jalalabad,AFG
+1217,Ghazni,Ghazni,AFG
+1218,Peshawar,Peshawar,AFG
+1219,Quetta,Quetta,AFG
+1220,Dalbandin,Dalbandin,KAL
+1221,Kalat,Kalat,KAL
+1222,Bela,Bela,KAL
+1223,Chitral,Chitral,AFG
+1224,Srinagar,Srinagar,KAS
+1225,Gilgit,Gilgit,KAS
+1226,Leh,Leh,KAS
+1227,Lahore,Lahore,AFG
+1228,Multan,Multan,SIN
+1229,Sialkot,Sialkot,AFG
+1230,Attock,Attock,AFG
+1231,Bahawalpur,Bahawalpur,SIN
+1232,Shahpur,Shahpur,AFG
+1233,Amritsar,Amritsar,AFG
+1234,Firozpur,Firuzapur,AFG
+1235,Kangra,Simla,MUG
+1236,Delhi,Delhi,MUG
+1237,Panipat,Panipat,MUG
+1238,Dehra Dun,Dehra Dun,MUG
+1239,Meerut,Meerut,MUG
+1240,Agra,Agra,MUG
+1241,Cawnpore,Cawnpore,MUG
+1242,Lucknow,Lucknow,MUG
+1243,Allahabad,Allahabad,MUG
+1244,Fyzabad,Fyzabad,MUG
+1245,Benares,Benares,MUG
+1246,Gorakhpur,Gorakhpur,MUG
+1247,Patna,Patna,MUG
+1248,Gaya,Gaya,MUG
+1249,Kharswari,Kharswari,MUG
+1250,Bhagalpur,Bhagalpur,MUG
+1251,Rajbalhat,Calcutta,BEN
+1252,Darjeeling,Darjeeling,BEN
+1253,Bardwan,Bardwan,BEN
+1254,Dacca,Dacca,BEN
+1255,Rajshahi,Rajshahi,BEN
+1256,Jessore,Jessore,BEN
+1257,Chittagong,Chittagong,BEN
+1258,Gauhati,Gauhati,BEN
+1259,Imphal,Imphal,BUR
+1260,Dibrugarh,Dibrugarh,BUR
+1261,Cuttack,Cuttack,MUG
+1262,Keunjahr,Keunjahr,MUG
+1263,Sambalpur,Sambalpur,MUG
+1264,Ajmer,Ajmer,MEW
+1265,Jaisalmer,Jaisalmer,JAS
+1266,Jodhpur,Jodhpur,JOD
+1267,Bikaner,Bikaner,BIK
+1268,Jaipur,Jaipur,JAI
+1269,Udaipur,Udaipur,MEW
+1270,Gwalior,Gwalior,MUG
+1271,Dhar,Indore,MUG
+1272,Bhopal,Bhopal,MUG
+1273,Chhatarpur,Chatarpur,MUG
+1274,Rewa,Rewa,MUG
+1275,Jubbulpore,Jubulpore,MUG
+1276,Hoshangabad,Hoshangabad,MUG
+1277,Nagpur,Nagpur,NAG
+1278,Amarati,Amarati,VIJ
+1279,Jagdalpur,Jagdalpur,HYD
+1280,Raipur,Raipur,NAG
+1281,Bilaspur,Bilaspur,NAG
+1282,Raigarh,Raigarh,MUG
+1283,Hyderabad,Hyderabad,HYD
+1284,Aurangabad,Aurangabad,VIJ
+1285,Nizamabad,Nizamabad,HYD
+1286,Gulbarga,Gulbarga,VIJ
+1287,Warangal,Warangal,HYD
+1288,Karachi,Karachi,SIN
+1289,Sukkur,Sukkur,SIN
+1290,Umarkot,Umarkot,SIN
+1291,Ahmedabad,Ahmedabad,BER
+1292,Rajkot,Rajkot,BER
+1293,Osthavn,Mandvi,BER
+1294,Patan,Patan,BER
+1295,Baroda,Baroda,BER
+1296,Surat,Surat,BER
+1297,Bombay,Bombay,VIJ
+1298,Nasik,Nasik,VIJ
+1299,Poona,Poona,VIJ
+1300,Bijapur,Bijapur,VIJ
+1301,Kolhapur,Kolhapur,VIJ
+1302,Belgaum,Belgaum,VIJ
+1303,Goa,Goa,SPA
+1304,Madras,Madras,MDR
+1305,Vizagapatnam,Vizagapatnam,HYD
+1306,Masulipatnam,Masulipatnam,BRG
+1307,Nellore,Nellore,VIJ
+1308,Kurnool,Kurnool,VIJ
+1309,Tanjore,Tanjore,MDR
+1310,Madurai,Madurai,MDR
+1311,Coimbatore,Coimbatore,MDR
+1312,Pondicherry,Pondicherry,MDR
+1313,Bangalore,Bangalore,TRA
+1314,Mysore,Mysore,TRA
+1315,Chitaldroog,Chitaldroog,TRA
+1316,Mangalore,Mangalore,TRA
+1317,Calicut,Calicut,TRA
+1318,Cochin,Cochin,TRA
+1319,Trivandrum,Trivandrum,TRA
+1320,Andaman Islands,Andaman Islands,SPA
+1321,St. Élisabeth,Colombo,DUA
+1322,Jaffna,Jaffna,DUA
+1323,Kandy,Kandy,DUA
+1324,Trincomalee,Trincomalee,DUA
+1325,Maaldiberne,Maldives,SCA
+1326,Katmandu,Katmandu,NEP
+1327,Jumla,Jumla,NEP
+1328,Tumlong,Tumlong,SIK
+1329,Thimpu,Thimpu,BHU
+1330,Rangoon,Rangoon,SPA
+1331,Bassein,Bassein,SPA
+1332,Pegu,Pegu,BUR
+1333,Toungoo,Toungoo,BUR
+1334,Ava,Ava,BUR
+1335,Kyaukse,Kyaukse,BUR
+1336,Magwe,Magwe,BUR
+1337,Prome,Prome,BUR
+1338,Taunggyi,Taunggyi,BUR
+1339,Haka,Haka,BUR
+1340,Lashio,Lashio,BUR
+1341,Putao,Putao,BUR
+1342,Myitkyina,Myitkyina,BUR
+1343,Moulmein,Moulmein,SIA
+1344,Mergui,Mergui,SIA
+1345,Sittwe,Sittwe,BUR
+1346,Thonburi,Bangkok,SIA
+1347,Lopburi,Lopburi,SIA
+1348,Nakhon Sawan,Nakhon Sawan,CAM
+1349,Sukhothai,Sukothai,CAM
+1350,Nakhon Ratchasima,Nakhon Ratchasima,CAM
+1351,Prachinburi,Prachinburi,CAM
+1352,Phuket,Phuket,SIA
+1353,Ratchaburi,Ratchaburi,SIA
+1354,Nakhon Si Thammarat,Nakhon Si Thammanet,SIA
+1355,Chiang Mai,Chiang Mai,CAM
+1356,Luang Prabang,Luangprabang,DAI
+1357,Vientiane,Vientiane,DAI
+1358,Udon Thani,Udon Thani,CAM
+1359,Sisaket,Sisaket,CAM
+1360,Xiangabouli,Xiangabouli,CAM
+1361,Savannakhet,Savannakhet,DAI
+1362,Salavan,Satavan,DAI
+1363,Pakse,Pakche,CAM
+1364,Phnom Penh,Oudong,CHP
+1365,Chanthaburi,Chanthaburi,CAM
+1366,Ankgor,Battambang,CAM
+1367,Kampot,Kampot,CHP
+1368,Stongtreng,Stongtreng,CHP
+1369,Hanoi,Hanoi,DAI
+1370,Hai Phong,Haiphong,DAI
+1371,Cao Bang,Cao Bang,DAI
+1372,Son La,Son La,DAI
+1373,Lang Son,Lang Son,DAI
+1374,Thanh Hoa,Thanh Hoa,DAI
+1375,Hue,Hue,DAI
+1376,Vinh,Vinh,DAI
+1377,Tourane,Tourane,DAI
+1378,Pleiku,Pleiku,CHP
+1379,Qui Nhon,Quinhon,CHP
+1380,Prey Nokor,Saigon,CHP
+1381,Dong Quai,Dongquai,CHP
+1382,Hatien,Hatien,CHP
+1383,Vinhlong,Vinhlong,CHP
+1384,Singapore,Singapore,SCA
+1385,Johor Bahru,Johor Bahru,JOH
+1386,Malacca,Malacca,JOH
+1387,Kuala Lumpur,Kuala Lumpur,JOH
+1388,Penang,Penang,BRG
+1389,Alor Setar,Alor Setar,JOH
+1390,Kuantan,Kuantan,JOH
+1391,Kota Bahru,Kota Bahru,JOH
+1392,Pattani,Pattani,JOH
+1393,Brunei,Brunei,BRU
+1394,Kuching,Kuching,BRU
+1395,Bintulu,Bintulu,BRU
+1396,Api,Api,SUL
+1397,Sandakan,Sandakan,SUL
+1398,Jambi,Jambi,PLM
+1399,Palembang,Palembang,PLM
+1400,Inderagiri,Inderagiri,PLM
+1401,Siak,Siak,PLM
+1402,Tanjungpinang,Tanjungpinang,SCA
+1403,Lampung,Lampung,PLM
+1404,Palak Pinang,Palakpinang,PLM
+1405,Banda Aceh,Banda Aceh,ATJ
+1406,Medan,Medan,ATJ
+1407,Tapaktuan,Tapaktuan,ATJ
+1408,Padang,Padang,PLM
+1409,Sibolga,Sibolga,ATJ
+1410,Bencoolen,Bencoolen,PLM
+1411,Gunungsitoli,Gunungsitoli,PLM
+1412,Aden,Aden,YEM
+1413,Batavia,Batavia,BRG
+1414,Bogor,Bogor,BRG
+1415,Cirebon,Cirebon,JAV
+1416,Yogyakarta,Yogyakarta,JAV
+1417,Semarang,Semarang,JAV
+1418,Surabaya,Surabaya,JAV
+1419,Surakarta,Surakarta,JAV
+1420,Probolinggo,Probolinggo,JAV
+1421,Madura,Madura,JAV
+1422,Muraleve,Muraleve,KLM
+1423,Banjarmasin,Banjarmasin,KLM
+1424,Pasir,Pasir,KLM
+1425,Tarakan,Tarakan,KTI
+1426,Pontianak,Pontianak,LFG
+1427,Kota Waringin,Kota Waringin,LFG
+1428,Sintang,Sintang,LFG
+1429,Samarinda,Samarinda,KTI
+1430,Makassar,Makassar,MKS
+1431,Bone,Bone,MKS
+1432,Mamuju,Mamuju,MKS
+1433,Menado,Menado,SCA
+1434,Luwuk,Luwuk,SCA
+1435,Pallo,Palu,SCA
+1436,Kendari,Kendari,MKS
+1437,Bulon,Bulon,MKS
+1438,Bali,Bali,BAL
+1439,Lorrvåk,Flores,BAL
+1440,Sumbawa,Sumbawa,BAL
+1441,Sumba,Sumba,BAL
+1442,Lombok,Lombok,BAL
+1443,Roti,Roti,DUA
+1444,Bellevue,Alor,DUA
+1445,Kupang,Kaupeng,DUA
+1446,Fort St. James,Dili,DUA
+1447,Tærnettern,Ternate,SCA
+1448,Gjilålle,Jilolo,SCA
+1449,Annbom,Ambon,SCA
+1450,Kjerram,Ceram,SCA
+1451,Neu-Windau,Aru,DUA
+1452,Biak,Biak,BRG
+1453,Sorong,Sorong,BRG
+1454,Merah,Merah,
+1455,Xinbu,Manila,TNG
+1456,Weigan,Vigan,TNG
+1457,Liyashibi,Legazpi,TNG
+1458,Xiang Qundao,Mindoro,TNG
+1459,Palawan,Palawan,TON
+1460,Iloilo,Iloilo,TON
+1461,Tacloban,Tacloban,TON
+1462,Sambånger,Zamboanga,SCA
+1463,Davå,Davao,SCA
+1464,Jolo,Sulu,SUL
+1465,Urga,Urga,CHG
+1466,Dalandzadgad,Dalandzadgad,CHG
+1467,Bayan Tumen,Bayan Tumen,CHG
+1468,Uliastai,Altai,CHG
+1469,Uriankhai,Kyzyl,CHG
+1470,Anqing,Anqing,TAI
+1471,Chizhou,Chizhou,MIG
+1472,Fengyang,Fengyang,MCK
+1473,Huizhou,Huizhou,MIG
+1474,Luzhou,Luzhou,MCK
+1475,Ningguo,Ningguo,MIG
+1476,Sizhou,Sizhou,MCK
+1477,Taiping,Taiping,MCK
+1478,Yingzhou,Yingzhou,MCK
+1479,Mukden,Mukden,MCK
+1480,Jinzhou,Jinzhou,MCK
+1481,Dalian,Port Arthur,MCK
+1482,Fuzhou,Fuzhou,TNG
+1483,Jianning,Jianning,TAI
+1484,Quanzhou,Quanzhou,TNG
+1485,Tainan,Taibei,TNG
+1486,Tingzhou,Tingzhou,TAI
+1487,Zhangzhou,Zhangzhou,TNG
+1488,Jiayuguan,Gansu,MCK
+1489,Gongchang,Gongchang,MCK
+1490,Lanzhou,Lanzhou,MCK
+1491,Ningxia,Ningxia,MCK
+1492,Pingliang,Pingliang,MCK
+1493,Guangzhou,Canton,TAI
+1494,Chaozhou,Chaozhou,TNG
+1495,Gauzhou,Gauzhou,TAI
+1496,Xianggang,Hong Kong,TNG
+1497,Waizao,Waizao,TNG
+1498,Macao,Macao,SPA
+1499,Hainan,Hainan,TAI
+1500,Shaozhou,Shaozhou,TAI
+1501,Zhaoqing,Zhaoqing,TAI
+1502,Nanning,Nanning,TAI
+1503,Guilin,Guilin,TAI
+1504,Pingle,Pingle,TAI
+1505,Guiyang,Guiyang,TAI
+1506,Anshun,Anshun,TAI
+1507,Zhenyuan,Zhenyuan,TAI
+1508,Kaifeng,Kaifeng,MCK
+1509,Guide,Guide,MCK
+1510,Luoyang,Henan,MCK
+1511,Huaiqing,Huaiqing,MCK
+1512,Chenzhou,Chenzhou,MCK
+1513,Nanyang,Nanyang,MCK
+1514,Runing,Runing,MCK
+1515,Weihui,Weihui,MCK
+1516,Hanyang,Hanyang,TAI
+1517,Dean,Dean,TAI
+1518,Huangzhou,Huangzhou,TAI
+1519,Anlu,Anlu,TAI
+1520,Jingzhou,Jingzhou,TAI
+1521,Shinan,Shinan,TAI
+1522,Wuchang,Wuchang,TAI
+1523,Xiangyang,Xiangyang,TAI
+1524,Changsha,Changsha,TAI
+1525,Changde,Changde,TAI
+1526,Baoqing,Baoqing,TAI
+1527,Hengzhou,Hengzhou,TAI
+1528,Yuezhou,Yuezhou,TAI
+1529,Yongshun,Yongshun,TAI
+1530,Yongzhou,Yongzhou,TAI
+1531,Kaiveng,New Ireland,
+1532,Guihua Tumed,Guihua Tumed,CHG
+1533,Jirim Chuulgan,Jirim Chuulgan,MCK
+1534,Ulaan Chab Chuulghan,Ulaan Chab Chuulghan,CHG
+1535,Yeke Juu Chuulghan,Yeke Juu Chuulghan,CHG
+1536,Huaian,Huaian,MCK
+1537,Changzhou,Changzhou,MIG
+1538,Shanghai,Shanghai,MIG
+1539,Suzhou,Suzhou,MIG
+1540,Taicangzhou,Taicangzhou,MIG
+1541,Tongzhou,Tongzhou,MIG
+1542,Xuzhou,Xuzhou,MCK
+1543,Yangzhou,Yangzhou,MCK
+1544,Zhenjiang,Zhenjiang,MIG
+1545,Nanchang,Nanchang,TAI
+1546,Guangxin,Guangxin,TAI
+1547,Jian,Jian,TAI
+1548,Jianchang,Jianchang,TAI
+1549,Jiujiang,Jiujiang,TAI
+1550,Ganzhou,Ganzhou,TAI
+1551,Raozhou,Raozhou,TAI
+1552,Qiqihar,Qiqihar,MCK
+1553,Aigun,Aigun,MCK
+1554,Ninguta,Ninguta,MCK
+1555,Jilin,Jilin,MCK
+1556,Makhai,Makhai,TIB
+1557,Balekungomi,Balekungomi,TIB
+1558,Kegudo,Kegudo,TIB
+1559,Xian,Xian,MCK
+1560,Merauke,Merauke,
+1561,Yenan,Yenan,MCK
+1562,Hanzhong,Hanzhong,MCK
+1563,Jinan,Jinan,MCK
+1564,Caozhou,Caozhou,MCK
+1565,Laizhou,Laizhou,MCK
+1566,Qingdao,Qingdao,MCK
+1567,Qingzhou,Qingzhou,MCK
+1568,Taian,Taian,MCK
+1569,Weihaiwei,Weihaiwei,MCK
+1570,Wuding,Wuding,MCK
+1571,Yizhou,Yizhou,MCK
+1572,Taiyuan,Taiyuan,MCK
+1573,Fenzhou,Fenzhou,MCK
+1574,Luan,Luan,MCK
+1575,Pingyang,Pingyang,MCK
+1576,Datong,Datong,MCK
+1577,Chongqing,Chongqing,TAI
+1578,Chengdu,Chengdu,TAI
+1579,Baotung,Baotung,TAI
+1580,Jiading,Jiading,TAI
+1581,Kuizhou,Kuizhou,TAI
+1582,Longan,Longan,TAI
+1583,Shunqing,Shunqing,TAI
+1584,Tongchuan,Tongchuan,TAI
+1585,Yibin,Yibin,TAI
+1586,Yazhou,Yazhou,TAI
+1587,Lhasa,Lhasa,TIB
+1588,Chamdo,Chamdo,TIB
+1589,Shigatse,Shigatse,TIB
+1590,Lhodrak,Lhodrak,TIB
+1591,Changtang,Changtang,TIB
+1592,Ngari,Ngari,TIB
+1593,Tawang,Tawang,TIB
+1594,Kashgar,Kashgar,CHG
+1595,Ili,Ili,CHG
+1596,Tulta,Tulta,CHG
+1597,Aksu,Aksu,CHG
+1598,Khotan,Khotan,CHG
+1599,Kumul,Kumul,CHG
+1600,Urumqi,Urumqi,CHG
+1601,Kunming,Kunming,TAI
+1602,Dali,Dali,TAI
+1603,Puer,Puer,DAI
+1604,Hangzhou,Hangzhou,MIG
+1605,Huzhou,Huzhou,MIG
+1606,Jiaxing,Jiaxing,MIG
+1607,Jinhua,Jinhua,MIG
+1608,Ningbo,Ningbo,TNG
+1609,Shaoxing,Shaoxing,MIG
+1610,Taizhou,Taizhou,TNG
+1611,Wenzhou,Wenzhou,TNG
+1612,Beijing,Beijing,MCK
+1613,Chengde,Chengde,MCK
+1614,Daming,Daming,MCK
+1615,Jizhou,Jizhou,MCK
+1616,Shuntian,Shuntian,MCK
+1617,Tianjin,Tianjin,MCK
+1618,Zhongding,Zhongding,MCK
+1619,Pyongyang,Pyongyang,KOR
+1620,Chonchon,Chonchon,KOR
+1621,Hamhung,Hamhung,KOR
+1622,Chongjin,Chongjin,KOR
+1623,Kimchaek,Kimchaek,KOR
+1624,Hanseong,Seoul,KOR
+1625,Kaesong,Kaesong,KOR
+1626,Haeju,Haeju,KOR
+1627,Sariwon,Sariwon,KOR
+1628,Inchon,Inchon,KOR
+1629,Wonsan,Wonsan,KOR
+1630,Kangnung,Kangnung,KOR
+1631,Wonju,Wonju,KOR
+1632,Pusan,Pusan,KOR
+1633,Taegu,Taegu,KOR
+1634,Pohang,Pohang,KOR
+1635,Kwangju,Kwangju,KOR
+1636,Taejon,Taejon,KOR
+1637,Cheju,Cheju,KOR
+1638,Hiroshima,Hiroshima,JAP
+1639,Okayama,Okayama,JAP
+1640,Yamaguchi,Yamaguchi,JAP
+1641,Matsue,Matsue,JAP
+1642,Hakodate,Hakodate,JAP
+1643,Ishikara,Ishikara,JAP
+1644,Nemuru,Nemuru,JAP
+1645,Niigata,Niigata,JAP
+1646,Kanazawa,Kanazawa,JAP
+1647,Fukui,Fukui,JAP
+1648,Toyama,Toyama,JAP
+1649,Edo,Edo,JAP
+1650,Chiba,Chiba,JAP
+1651,Yokohama,Yokohama,JAP
+1652,Urawa,Urawa,JAP
+1653,Mito,Mito,JAP
+1654,Bonin,Bonin,JAP
+1655,Osaka,Osaka,JAP
+1656,Wakayama,Wakayama,JAP
+1657,Kyoto,Kyoto,JAP
+1658,Nara,Nara,JAP
+1659,Kobe,Kobe,JAP
+1660,Fukuoka,Fukuoka,JAP
+1661,Nagasaki,Nagasaki,JAP
+1662,Kagoshima,Kagoshima,JAP
+1663,Miyazaki,Miyazaki,JAP
+1664,Kumamoto,Kumamoto,JAP
+1665,Kochi,Kochi,JAP
+1666,Matsuyama,Matsuyama,JAP
+1667,Tokushima,Tokushima,JAP
+1668,Sendai,Sendai,JAP
+1669,Fukushima,Fukushima,JAP
+1670,Morioka,Morioka,JAP
+1671,Akita,Akita,JAP
+1672,Aomori,Aomori,JAP
+1673,Yamagata,Yamagata,JAP
+1674,Utsunomiya,Utsunomiya,JAP
+1675,Nagoya,Nagoya,JAP
+1676,Shizuoka,Shizuoka,JAP
+1677,Nagano,Nagano,JAP
+1678,Okinawa,Okinawa,JAP
+1679,Amari,Amari,JAP
+1680,Fez,Fez,SPA
+1681,Wazzan,Wazzan,SPA
+1682,Meknes,Meknes,SPA
+1683,Taza,Taza,SPA
+1684,Wujda,Wujda,ARA
+1685,Rabat,Rabat,SPA
+1686,Tangier,Tangier,SPA
+1687,Tetouan,Tetouan,SPA
+1688,Ajdir,Ajdir,SPA
+1689,Melilla,Melilla,SPA
+1690,Marrakesh,Marrakesh,SPA
+1691,Casablanca,Casablanca,SPA
+1692,Huribka,Huribka,SPA
+1693,Sawira,Sawira,SPA
+1694,Agadir,Agadir,SPA
+1695,Santa Cruz,Ifni,SPA
+1696,Tarfaya,Tarfaya,
+1697,Figuig,Figuig,MGH
+1698,Rashidia,Rashidia,MGH
+1699,Warzazat,Warzazat,MGH
+1700,Alger,Algiers,ARA
+1701,Bugia,Bougie,ARA
+1702,Setif,Setif,ARA
+1703,Medea,Medea,ARA
+1704,Dos lleons,Oran,ARA
+1705,Tremissèn,Tlemcen,ARA
+1706,Mustaghanim,Mustaghanim,ARA
+1707,Mascara,Mascara,ARA
+1708,Constantine,Constantine,ARA
+1709,Bone,Bone,ARA
+1710,Biskra,Biskra,MGH
+1711,Ouargla,Ouargla,MGH
+1712,Tuggurt,Tuggurt,MGH
+1713,Laghwat,Laghwat,MGH
+1714,Tinogasta,Bechar,INC
+1715,Naama,Naama,MGH
+1716,Tindouf,Tindouf,
+1717,Chenachene,Chenachene,
+1718,In Salah,In Salah,
+1719,Ilizi,Ilizi,
+1720,Timimoun,Timimoun,
+1721,In Guezzam,In Guezzam,
+1722,Tin Zawatene,Tin Zawatene,
+1723,Balboa,Panama Canal,CLM
+1724,Orkney & Shetland,Tamanrasset,SCA
+1725,Cartago,Tunis,ARA
+1726,Bizerte,Bizerte,ARA
+1727,Gafsa,Gafsa,TUN
+1728,Kairouan,Kairouan,TUN
+1729,Tozeur,Tozeur,TUN
+1730,Gabes,Gabes,TUN
+1731,Tripoli,Tripoli,TUN
+1732,Gharyan,Ghayran,TUN
+1733,Misratah,Misratah,TUN
+1734,Sirt,Sirt,TUN
+1735,Benghazi,Benghazi,EGY
+1736,Darna,Darna,EGY
+1737,Tobruk,Tobruk,EGY
+1738,Jaghbub,Jaghbub,EGY
+1739,Asiaat,Kufra,SCA
+1740,Waddan,Waddan,TUN
+1741,Murzuk,Murzuk,TUN
+1742,Sabha,Sabha,TUN
+1743,Nordhorn,Ghat,FRI
+1744,Ghadamis,Ghadamis,TUN
+1745,Cairo,Cairo,EGY
+1746,Dumyat,Dumyat,TUR
+1747,Tanta,Tanta,EGY
+1748,Mansura,Mansura,TUR
+1749,Ziqaziq,Ziqaziq,TUR
+1750,Giza,Giza,EGY
+1751,Alexandria,Alexandria,EGY
+1752,Matruh,Matruh,EGY
+1753,Sidi Barrani,Sidi Barrani,EGY
+1754,Siwa,Siwa,EGY
+1755,Suez,Suez Canal,TUR
+1756,Al Arish,Al Arish,TUR
+1757,Sharm al-Shaykh,Sharm al-Shaykh,TUR
+1758,Farafra,Hariga,
+1759,Bawiti,Bawiti,EGY
+1760,Mut,Mut,EGY
+1761,Baris,Baris,EGY
+1762,Asyut,Asyut,EGY
+1763,Bani Suwayf,Bani Suwayf,EGY
+1764,Minya,Minya,EGY
+1765,Fayyum,Fayyum,EGY
+1766,Aswan,Aswan,EGY
+1767,Luxor,Luxor,EGY
+1768,Idfu,Idfu,EGY
+1769,Qina,Qina,EGY
+1770,Qusayr,Qusayr,EGY
+1771,Marsa Alam,Marsa Alam,EGY
+1772,Ras Gharib,Ras Gharib,EGY
+1773,Aaiun,Aaiun,
+1774,Dakhla,Dakhla,
+1775,Nouakchott,Nouakchott,
+1776,Rosso,Rosso,VEN
+1777,Aleg,Aleg,VEN
+1778,Maghama,Maghama,
+1779,Shingit,Shingit,
+1780,Debar,Tishit,MAC
+1781,Walata,Walata,
+1782,Bir Murghayn,Bir Murghayn,
+1783,Dakar,Dakar,FJA
+1784,San Marco,Saint-Louis,VEN
+1785,Banjul,Banjul,KRL
+1786,Linguere,Linguere,FJA
+1787,Diourbel,Diourbel,FJA
+1788,Kaolack,Kaolack,FJA
+1789,Podor,Podor,VEN
+1790,Matam,Matam,FJA
+1791,Bakel,Bakel,FJA
+1792,Ziguinchor,Ziguinchor,FJA
+1793,Velingara,Velingara,FJA
+1794,Bamako,Bamako,MAL
+1795,Kayes,Kayes,FJA
+1796,Nioro,Nioro,MAL
+1797,Kita,Kita,MAL
+1798,Bougouni,Bougouni,MAL
+1799,Sikasso,Sikasso,MAL
+1800,Segu,Segu,MAL
+1801,Mourdiah,Mourdiah,MAL
+1802,Jenne,Jenne,MAL
+1803,Timbuktu,Timbuktu,ILO
+1804,Bandiagara,Bandiagara,MAL
+1805,Gao,Gao,ILO
+1806,Bayuda,Bayuda,
+1807,Tessalit,Tessalit,
+1808,Niamey,Niamey,MAL
+1809,Say,Say,MAL
+1810,Dosso,Dosso,KNO
+1811,Maradi,Maradi,KNO
+1812,Agades,Agades,
+1813,Arlit,Arlit,
+1814,Madama,Madama,
+1815,Zinder,Zinder,KNO
+1816,Kufe,Kufe,KAN
+1817,Bilma,Bilma,
+1818,Massenya,Massenya,KAN
+1819,Moundou,Moundou,KAN
+1820,Bongor,Bongor,KAN
+1821,Abeche,Abeche,KAN
+1822,Am Timan,Am Timan,KAN
+1823,Mongo,Mongo,KAN
+1824,Mao,Mao,KAN
+1825,Zouar,Zouar,
+1826,Faya,Faya,
+1827,Khartoum,Khartoum,FUN
+1828,Wad Madani,Wad Madani,FUN
+1829,Kassala,Kassala,FUN
+1830,Sennar,Sennar,FUN
+1831,Rabak,Rabak,FUN
+1832,Fashoda,Fashoda,FUN
+1833,Suakin,Suakin,FUN
+1834,Halaib,Halaib,FUN
+1835,Dongola,Dongola,FUN
+1836,Hayya,Hayya,FUN
+1837,Atbara,Atbara,FUN
+1838,Obeid,Obeid,DAR
+1839,Nuhud,Nuhud,DAR
+1840,Kaduqli,Kaduqli,DAR
+1841,Fasher,Fasher,DAR
+1842,Junaynah,Junayah,DAR
+1843,Waw,Waw,
+1844,Bor,Bor,
+1845,Yambio,Yambio,AZA
+1846,Lado,Lado,AZA
+1847,Kapoeta,Kapoeta,
+1848,Asmara,Asmara,AMT
+1849,Massawa,Massawa,AMT
+1850,Akordat,Akordat,AMT
+1851,Assab,Assab,AMT
+1852,Gonder,Gonder,ETH
+1853,Debre Tabor,Debre Tabor,ETH
+1854,Matamma,Matamma,ETH
+1855,Debre Markos,Debre Markos,ETH
+1856,Aksum,Aksum,AMT
+1857,Antalo,Antalo,AMT
+1858,Asaita,Awsa,AMT
+1859,Ankober,Ankober,ETH
+1860,Awasa,Awasa,ETH
+1861,Aselia,Aselia,ADA
+1862,Bonga,Bonga,ETH
+1863,Asosa,Asosa,ETH
+1864,Negele,Negele,
+1865,Harer,Harer,ADA
+1866,Goba,Goba,ADA
+1867,Werder,Werder,ADA
+1868,Mogadishu,Mogadishu,AJU
+1869,Baidoa,Baidoa,AJU
+1870,Kismayo,Kismayo,AJU
+1871,Hobyo,Hobye,AJU
+1872,Bosaso,Busaso,AJU
+1873,Berbera,Berbera,ADA
+1874,Zeyla,Zeyla,ADA
+1875,Djibuti,Djibuti,AMT
+1876,Cap Vert,Cape Verde,SPA
+1877,Bissau,Bissau,FJA
+1878,Gabu,Gabu,FJA
+1879,Boffa,Boffa,FJA
+1880,Timbo,Timbo,FJA
+1881,Dinguiraye,Dinguiraye,FJA
+1882,Kankan,Kankan,FJA
+1883,Beyla,Beyla,FJA
+1884,Port Léonin,Freetown,DUA
+1885,Falaba,Falaba,FJA
+1886,Bo,Bo,FJA
+1887,Saint Jean,Monrovia,DUA
+1888,Leblois,Harper,DUA
+1889,Bopolu,Bopolu,FJA
+1890,Gbarnga,Gbarnga,FJA
+1891,Zwedru,Zwedru,FJA
+1892,Bandama,Grand Lahou,FJA
+1893,Sassandra,Sassandra,FJA
+1894,Grand Bassam,Grand Bassam,BRG
+1895,Bouake,Bouake,FJA
+1896,Man,Man,FJA
+1897,Akoupe,Akoupe,FJA
+1898,Kong,Kong,
+1899,Bondouku,Bondouku,
+1900,Odienne,Odienne,
+1901,Wagadugu,Wagadugu,MAL
+1902,Wahiguya,Wahiguya,MAL
+1903,Dori,Dori,MAL
+1904,Fada Ngourma,Fada Ngourma,MAL
+1905,Bobo Dioulasso,Bobo Dioulasso,MAL
+1906,Orodaro,Orodaro,MAL
+1907,Fredensborg,Accra,ASH
+1908,Prinsensten,Cape Coast,SCA
+1909,Christiansborg,Sekondi,SCA
+1910,Kumasi,Kumasi,ASH
+1911,Kintampo,Kintampo,ASH
+1912,Wa,Wa,ASH
+1913,Tamale,Tamale,ASH
+1914,Lome,Lome,OYO
+1915,Ho,Ho,ASH
+1916,Yendi,Yendi,ASH
+1917,Atakpame,Atakpane,OYO
+1918,Sokode,Sokode,
+1919,Cotonou,Cotonou,DHY
+1920,Abomey,Abomey,DHY
+1921,Nikki,Nikki,OYO
+1922,Jugu,Jugu,
+1923,Eko,Lagos,OYO
+1924,Abeokuta,Abeokuta,OYO
+1925,Ibadan,Ibadan,OYO
+1926,Ife,Ife,OYO
+1927,Ilorin,Ilorin,OYO
+1928,Benin,Benin,OYO
+1929,Akure,Akure,OYO
+1930,Lokoja,Lokoja,ADW
+1931,Warri,Warri,NRI
+1932,Ubani,Bonny,NRI
+1933,Awka,Awka,NRI
+1934,Calabar,Calabar,NRI
+1935,Aruchukwu,Aruchukwu,NRI
+1936,Makurdi,Makurdi,ADW
+1937,Tukari,Tukari,ADW
+1938,Bussa,Bussa,OYO
+1939,Zaria,Zaria,KNO
+1940,Bida,Bida,OYO
+1941,Abuja,Abuja,ADW
+1942,Bauchi,Bauchi,ADW
+1943,Jos,Jos,ADW
+1944,Gombe,Gombe,ADW
+1945,Kano,Kano,KNO
+1946,Kebbi,Kebbi,KNO
+1947,Katsina,Katsina,KNO
+1948,Sokoto,Sokoto,KNO
+1949,Hadejia,Hadejia,KNO
+1950,Yola,Yola,ADW
+1951,Kuka,Kuka,KAN
+1952,Nguru,Nguru,KAN
+1953,Dikoa,Dikoa,KAN
+1954,Sao Tome,Sao Tome,SPA
+1955,Fernando Po,Fernando Po,SPA
+1956,Douala,Douala,GEN
+1957,Buea,Buea,GEN
+1958,Kribi,Kribi,
+1959,Yaounde,Yaounde,
+1960,Bafoussam,Bafoussam,NRI
+1961,Bamenda,Bamenda,NRI
+1962,Bertoua,Bertoua,
+1963,Ngaoundere,Ngaoundere,ADW
+1964,Maroua,Maroua,KAN
+1965,Bangui,Bangui,
+1966,Nola,Nola,
+1967,Bouar,Bouar,
+1968,Bossangoa,Bossangoa,
+1969,Zemio,Zemio,AZA
+1970,Bangassou,Bangassou,AZA
+1971,Ndele,Ndele,
+1972,Mpongwe,Libreville,
+1973,Bata,Bata,
+1974,Mayumbe,Mayumbe,
+1975,Moanda,Moanda,
+1976,Makokou,Makokou,
+1977,Nkuna,Nkuna,LOA
+1978,Madingou,Madingou,LOA
+1979,Biloka,Biloka,CLM
+1980,Djambala,Djambala,
+1981,Impfondo,Impfondo,
+1982,Kinshasa,Kinshasa,KON
+1983,Boma,Boma,KON
+1984,Kananga,Kananga,KUB
+1985,Kumbana,Kumbana,KUB
+1986,Lusambo,Lusambo,LBA
+1987,Bunkeya,Bunkeya,KZB
+1988,Mussumba,Mussumba,LBA
+1989,Munza,Munza,
+1990,Nyangwe,Nyangwe,
+1991,Uvira,Uvira,
+1992,Basoko,Basoko,MNG
+1993,Irebu,Irebu,MNG
+1994,Nsheng,Nsheng,KUB
+1995,Gemena,Gemena,MNG
+1996,Kisangani,Kisangani,AZA
+1997,Mungbane,Mungbane,AZA
+1998,Baramo,Baramo,AZA
+1999,Christianborg,Luanda,SCA
+2000,Ngoyo,Cabinda,KON
+2001,Embaza,Mbanza,KON
+2002,Bartolomé Díaz,Quibala,SCA
+2003,Augustaborg,Benguela,SCA
+2004,Vestpost,Mocamedes,SCA
+2005,Huambo,Huambo,
+2006,Kuito,Kuito,
+2007,Mavinga,Mavinga,
+2008,Ondjiva,Ondjiva,
+2009,Malanje,Malanje,
+2010,Saurimo,Saurimo,LUN
+2011,Kubanda,Kubanda,LUN
+2012,Lusaka,Lusaka,KZB
+2013,Mongu,Mongu,
+2014,Kasempa,Kasempa,
+2015,Monzo,Monzo,KZB
+2016,Kazembe,Kazembe,KZB
+2017,Kasema,Kasema,KZB
+2018,Chipata,Chipata,KZB
+2019,Entebbe,Entebbe,BUG
+2020,Mbarara,Mbarara,BUG
+2021,Masindi,Masindi,
+2022,Kitgum,Kitgum,
+2023,Jinja,Jinja,BUG
+2024,Nairobi,Nairobi,
+2025,Marsabit,Marsabit,
+2026,Lodwar,Lodwar,
+2027,Nakuru,Nakuru,
+2028,Kisumu,Kisumu,
+2029,Mombasa,Mombasa,SPA
+2030,Lamu,Lamu,SPA
+2031,Wajir,Wajir,
+2032,Garissa,Garissa,
+2033,Voi,Voi,
+2034,Kigali,Kigali,RWA
+2035,Usumbura,Usumbura,BRD
+2036,São Pedro,Dar Es Salaam,SPA
+2037,Tanga,Tanga,SPA
+2038,Kilwa,Kilwa,SPA
+2039,Lindi,Lindi,SPA
+2040,Songea,Songea,
+2041,Masasi,Masasi,
+2042,Iringa,Iringa,
+2043,Tabora,Tabora,
+2044,Mwanza,Mwanza,
+2045,Morogoro,Morogoro,
+2046,Ujiji,Ujiji,
+2047,Arusha,Arusha,
+2048,Zanzibar,Zanzibar,SPA
+2049,Nieuwe Antwerpen,Maputo,NFL
+2050,Chaimate,Chaimate,NFL
+2051,Ostpost,Inhambane,SCA
+2052,Massekisse,Massekisse,SHO
+2053,Sena,Sena,SCA
+2054,Tete,Tete,SHO
+2055,Songo,Songo,SHO
+2056,Zumbo,Zombo,SHO
+2057,Gundersborg,Sofala,SCA
+2058,Mossurize,Mossurize,SHO
+2059,Danborg,Quelimane,SCA
+2060,Nacala,Mocambique,SCA
+2061,Karlsten,Angoche,SCA
+2062,Shangzhou,Shangzhou,MCK
+2063,Ibo,Ibo,SCA
+2064,Nampula,Nampula,SCA
+2065,Milange,Milange,SCA
+2066,Zomba,Zomba,
+2067,Lilongwe,Lilongwe,
+2068,Harare,Harare,SHO
+2069,Gweru,Gweru,SHO
+2070,Mutare,Mutare,SHO
+2071,Bulawayo,Bulawayo,MAT
+2072,Hwange,Hwange,SHO
+2073,Masvingo,Masvingo,MAT
+2074,Gaborone,Gaborone,GRQ
+2075,Serowe,Serowe,GRQ
+2076,Nokaneng,Nokaneng,GRQ
+2077,Tsabong,Tsabong,GRQ
+2078,Windhoek,Windhoek,
+2079,Swakopmund,Swakopmund,
+2080,Tsumeb,Tsumeb,
+2081,Linyati,Linyati,GRQ
+2082,Otjinene,Otjinene,GRQ
+2083,Kuiseb Bay,Walvis Bay,
+2084,Angra Pequena,Angra Pequena,
+2085,Nu-gouses,Nugouses,
+2086,Oshiwambo,Karasburg,
+2087,Ville du Cap,Cape Town,BRG
+2088,Hoornehove,Springbok,
+2089,Heckseberge,Worcester,BRG
+2090,Swellendam,Swettenham,BRG
+2091,Mossel Baai,Mossel Bay,BRG
+2092,Rijssenfoort,Beaufort,LWE
+2093,Calvijnsdorp,Calvinia,
+2094,Kolesberg,Kimberley,GRQ
+2095,Dikathong,Dikathong,GRQ
+2096,Ylnerdam,Port Elizabeth,LWE
+2097,Graaf Reinet,Graaf Reinet,LWE
+2098,Bufelsdorp,Bisho,XHO
+2099,Vlaasum,Mathele,XHO
+2100,Reimerdam,Umtata,XHO
+2101,Bloemfontein,Bloemfontein,BSH
+2102,Winburg,Winburg,BSH
+2103,Philipsdorp,Philippolis,BSH
+2104,Thaba Bosiu,Thaba Bosiu,BSH
+2105,Pretoria,Pretoria,TRN
+2106,Witwatersrand,Johannesburg,TRN
+2107,Klerksdorp,Klerksdorp,TRN
+2108,Mosega,Mosega,MAT
+2109,Lydenburg,Lydenburg,TRN
+2110,Thohoyandu,Thohoyandu,TRN
+2111,eThekwini,Durban,ZUL
+2112,Uthukela,Ladysmith,ZUL
+2113,Ulundi,Ulundi,ZUL
+2114,Mbabane,Mbabane,SUA
+2115,Tananarive,Tananarive,MAD
+2116,Fianarantsoa,Fianarantsoa,MAD
+2117,Ampanihy,Ampanihy,MAD
+2118,Tolanaro,Tolanaro,MAD
+2119,Toamasina,Toamasina,MAD
+2120,Antsiranana,Antsiranana,MAD
+2121,Mahajanga,Mahajanga,MAD
+2122,Toliara,Toliara,MAD
+2123,Comoros,Comoros,
+2124,Mayotte,Mayotte,
+2125,Dom Sebastião,Mauritius,SPA
+2126,Bourbon,Bourbon,DUA
+2127,Veihavn,Seychelles,SCA
+2128,Deusen,Diego Garcia,BRG
+2129,Ile Royale,Saint Helena,DUA
+2130,Erikskyst,Ascension,SCA
+2131,Tapt Ø,Falkland Islands,SCA
+2132,Ile de Brugge,Tristan da Cunha,BRG
+2133,Duvborg,South Georgia,
+2134,Azores,Azores,SPA
+2135,Madeira,Madeira,SPA
+2136,Canary Islands,Canary Islands,SPA
+2137,Campo Limpo,Hermosillo,CLM
+2138,Ponta Grossa,Loreto,CLM
+2139,Enseada,Rosarito,CLM
+2140,Porto Velho,Nogales,CLM
+2141,Guaímas,Guaymas,CLM
+2142,Chiuáua,Chihuahua,CLM
+2143,Padre Manuel,Paso del Norte,CLM
+2144,Nossa Senhora do Rio Grande,Delicias,CLM
+2145,Santo Antônio da Serra,Parral,CLM
+2146,Ghat,Monterrey,
+2147,Morelos,Morelos,CLM
+2148,Reynosa,Reynosa,CLM
+2149,Matamoros,Matamoros,CLM
+2150,Ciudad Victoria,Ciudad Victoria,CLM
+2151,Saltillo,Saltillo,CLM
+2152,São João dos Montes,Monclova,CLM
+2153,Durango,Durango,CLM
+2154,Santa Maria del Oro,Santa Maria del Oro,CLM
+2155,Torreon,Torreon,CLM
+2156,Mazatlan,Mazatlan,CLM
+2157,Culiacan,Culiacan,CLM
+2158,Zacatecas,Zacatecas,CLM
+2159,San Luis Potosi,San Luis Potosi,CLM
+2160,Aguascalientes,Aguascalientes,CLM
+2161,Tepic,Tepic,CLM
+2162,Veracruz,Veracruz,CLM
+2163,Tampico,Tampico,CLM
+2164,Los Tuxtlas,Mintatitlan,CLM
+2165,Villahermosa,Villahermosa,CLM
+2166,Guadalajara,Guadalajara,CLM
+2167,Guanajuato,Guanajuato,CLM
+2168,Puerto Vallarta,Puerto Vallarta,CLM
+2169,Colima,Colima,CLM
+2170,Morelia,Morelia,CLM
+2171,Los Albaniles,Los Alaniles,CLM
+2172,Mexico City,Mexico City,CLM
+2173,Queretaro,Queretaro,CLM
+2174,Toluca,Toluca,CLM
+2175,Tlaxcala,Tlaxcala,CLM
+2176,Acatlán,Acatlán,CLM
+2177,Oaxaca,Oaxaca,CLM
+2178,Huatulco,Tehuantepec,CLM
+2179,Acapulco,Acapuilco,CLM
+2180,Chilpancingo,Chilpancingo,CLM
+2181,Tuxtla,Tuxtla,CLM
+2182,Tapachula,Tapachula,CLM
+2183,Merida,Merida,CLM
+2184,Campeche,Campeche,CLM
+2185,Bacalar,Bacalar,CLM
+2186,Guatemala,Guatemala,CLM
+2187,Comitán,Quetzaltenango,CLM
+2188,Puerto Barrios,Puerto Barrios,CLM
+2189,Sayaxche,Sayaxche,CLM
+2190,Belize,Belize,CLM
+2191,San Salvador,San Salvador,CLM
+2192,San Miguel,San Miguel,CLM
+2193,Comayagua,Comayagua,CLM
+2194,San Pedro Sula,San Pedro Sula,CLM
+2195,La Ceiba,La Ceiba,CLM
+2196,Puerto Lempira,Puerto Lempira,CLM
+2197,Managua,Managua,CLM
+2198,Rivas,Rivas,CLM
+2199,León,León,CLM
+2200,Bluefields,Bluefields,CLM
+2201,San Jose,San Jose,CLM
+2202,Liberia,Liberia,CLM
+2203,Limon,Limon,CLM
+2204,Andagoya City,Panama City,CLM
+2205,David,David,CLM
+2206,Penonome,Penonome,CLM
+2207,Sainshand,Sainshand,CHG
+2208,Yaviza,Yaviza,CLM
+2209,Havana,Havana,SPA
+2210,Jagua,Jagua,SPA
+2211,Camaguey,Camaguey,SPA
+2212,Santiago de Cuba,Santiago de Cuba,SPA
+2213,Prøvestenen,Port Au Prince,SCA
+2214,Bergpost,Santo Domingo,SCA
+2215,Cape Ajitti,Cap Haitien,SCA
+2216,Oppersteina,La Vega,SCA
+2217,Eendrachtsland,Jamaica,BRG
+2218,Las Tortugas,Cayman Islands,SPA
+2219,Eleuthera,Bahamas,VEN
+2220,Lucaya,Turks And Caicos,VEN
+2221,Nanjing,Nanjing,MIG
+2222,Righavn,Puerto Rico,SCA
+2223,St. François of Kent,Saint Thomas,DUA
+2224,Montserrat,Antigua,ARA
+2225,Larshavn,Montserrat,SCA
+2226,Georgeville,Tortola,DUA
+2227,San Cristóbal y Nieves,Saint Kitts,SPA
+2228,Martinique,Martinique,BRG
+2229,Neu-Kurland,Barbados,KRL
+2230,Gundershavn,Guadeloupe,SCA
+2231,Sant Jordi,Saint Lucia,ARA
+2232,Dominica,Dominica,SPA
+2233,Swiety Andrzej,Grenada,PLC
+2234,Curacao,Curacao,BRG
+2235,St. Jean,Aruba,BRG
+2236,St.Marguerite,Saint Martin,DUA
+2237,Trinidad,Trinidad,CLM
+2238,Tobago,Tobago,KRL
+2239,Essequibo,Georgetown,CLM
+2240,Olivares,Paramaribo,CLM
+2241,Cayena,Cayenne,CLM
+2242,Mahdia,Mahdia,CLM
+2243,Paramaribo,Essequibo,CLM
+2244,Isla de Navidad,Christmas Island,SPA
+2245,Apetina,Apetina,CLM
+2246,Maripasoula,Maripasoula,CLM
+2247,Bogota,Bogota,CLM
+2248,Ibagué,Ibaque,CLM
+2249,Tunja,Tunja,CLM
+2250,Manizales,Manizales,CLM
+2251,Cucuta,Cucuta,CLM
+2252,Medellin,Medellin,CLM
+2253,Quibdo,Quibdo,CLM
+2254,Cartagena de Indias,Cartagena de Indias,CLM
+2255,Barranquilla,Barranquilla,CLM
+2256,Cali,Cali,CLM
+2257,Popayan,Popayan,CLM
+2258,Buenaventura,Buenaventura,CLM
+2259,Pasto,Pasto,CLM
+2260,San Jose del Guaviare,San Jose del Gauaviare,CLM
+2261,Obando,Obando,CLM
+2262,Casanare,Casanare,CLM
+2263,El Encanto,El Encanto,CLM
+2264,Caracas,Caracas,CLM
+2265,Guanare,Guanare,CLM
+2266,Calabozo,Calabozo,CLM
+2267,Cumana,Cumana,CLM
+2268,San Felipe,San Felipe,CLM
+2269,Guiria,Guiria,CLM
+2270,Maracaibo,Maracaibo,CLM
+2271,Valera,Valera,CLM
+2272,Coro,Coro,CLM
+2273,Barquisimeto,Barquisimento,CLM
+2274,Barinas,Barinas,CLM
+2275,Angostura,Angostura,CLM
+2276,Curiapo,Curiapo,CLM
+2277,El Jobal,El Jobal,CLM
+2278,San Fernando de Atabapo,San Fernado de Atabapo,CLM
+2279,Quito,Quito,CLM
+2280,Guayaquil,Guayaquil,CLM
+2281,Esmeraldas,Esmereldas,CLM
+2282,Loja,Loja,CLM
+2283,Zamora,Zamora,CLM
+2284,Tena,Tena,CLM
+2285,Galapagos,Galapagos,CLM
+2286,Iquitos,Iquitos,CLM
+2287,Yurimaguas,Yurimagues,CLM
+2288,Yuncos,Yuncos,CLM
+2289,Puca Urco,Puca Urco,CLM
+2290,Cajamarca,Cajamarca,CLM
+2291,Piura,Piura,CLM
+2292,Trujillo,Trujillo,CLM
+2293,Huanuco,Huanuco,CLM
+2294,Moyobamba,Moyobamba,CLM
+2295,Lima,Lima,CLM
+2296,Huancavelica,Huancavelica,CLM
+2297,Ica,Ica,CLM
+2298,Huaraz,Huaraz,CLM
+2299,Ayacucho,Ayacucho,CLM
+2300,Pucallpa,Pucallpa,CLM
+2301,Urubamba,Puerto Maldonado,CLM
+2302,Cusco,Cusco,CLM
+2303,Puno,Puno,CLM
+2304,Arequipa,Arequipa,CLM
+2305,Antofagasta,Antofagasta,INC
+2306,Rouvres-en-Plaine,Sorocaba,LOT
+2307,Iquique,Iquique,INC
+2308,Arica,Arica,INC
+2309,Calama,Calama,INC
+2310,Tiwanaku,La Paz,INC
+2311,Cochabamba,Cochabamba,INC
+2312,Oruro,Oruro,INC
+2313,Chuquisaca,Chuquisaca,INC
+2314,Potosi,Potosi,INC
+2315,Tarija,Tarija,INC
+2316,Guana,Santa Cruz,
+2317,Machiguenga,San Ignacio,
+2318,Ayoreo,Robore,
+2319,Beni,Santa Ana,INC
+2320,Piro,Riberalta,
+2321,Yaminanua,Cobija,
+2322,Copiapo,Copiapo,INC
+2323,Sunipacha,La Serena,INC
+2324,Mapucho,Santiago,INC
+2325,Uraycusta,Valparaiso,INC
+2326,Quchamama,Vina del Mar,INC
+2327,Talca,Talca,INC
+2328,Urqu,Valdivia,
+2329,Temuco,Temuco,
+2330,Cauquenes,Cauquenes,INC
+2331,Chillan,Chillan,
+2332,Osorno,Osorno,
+2333,Watapacha,Puerto Aisen,
+2334,Mallkipacha,Punta Arenas,
+2335,Manallapa,Porvenir,
+2336,Easter Island,Easter Island,RAP
+2337,Mocoví,Fortin Falcon,
+2338,Chané,Puerto Gaurani,
+2339,Riel-les-Eaux,Asuncion,LOT
+2340,Confluence,Pilar,LOT
+2341,Massingy,Encarnacion,LOT
+2342,Rouvray,San Pedro,LOT
+2343,Ormoy,Concepcion,LOT
+2344,Charlemagne,Montevideo,LOT
+2345,Delta-Odon,Paysandu,LOT
+2346,Vertault,Tacumba,LOT
+2347,Uchon,Melo,LOT
+2348,Camelot,Buenos Aires,NAN
+2349,New Kent,Junin,NAN
+2350,Edwardia,Azul,NAN
+2351,Ceolwulf,La Plata,NAN
+2352,Seaxburh,Mar del Plata,NAN
+2353,Æthelwulf,Trenque Lanquen,NAN
+2354,Cuthred,Bahia Blanca,NAN
+2355,New London,Carmen,NAN
+2356,Montreuillon,Corrientes,LOT
+2357,Saint-Jean-la-Forêt,Curuzu Cuatia,LOT
+2358,Bruxelles-sur-Odon,Santo Tomas,LOT
+2359,Outre-Odon,Colon,LOT
+2360,Montaron,Parana,LOT
+2361,New Jerusalem,Santa Espiritu,NAN
+2362,Eoferwic,Reconquista,NAN
+2363,Birstwith,Rosario,NAN
+2364,Bewcastle,Resistencia,NAN
+2365,Penrith,Villa Angela,NAN
+2366,Wichi,Formosa,
+2367,Enxet,Xolotas,
+2368,Puya,Salta,INC
+2369,Jujuy,Jujuy,INC
+2370,Cochinoca,Cochinoca,INC
+2371,Equia,Equia,INC
+2372,Tilcara,Rivadavia,INC
+2373,Tucuman,Tucuman,INC
+2374,Catamarca,Catamarca,INC
+2375,Vinchina,Vinchina,INC
+2376,Hincaster,Santiago del Estero,NAN
+2377,Cartmel,Anatuya,NAN
+2378,Furness,Mailin,NAN
+2379,Sharow,Cordoba de Argentina,NAN
+2380,Hemingbrough,Villa Nueva,NAN
+2381,Risplith,Rio Cuarto,NAN
+2382,Kettlewell,Renanco,NAN
+2383,Osmotherley,San Luis,NAN
+2384,Ryedale,Mercedes,NAN
+2385,Pucara,La Rioja,INC
+2386,Ebberston,Santa Rita,NAN
+2387,Chilecito,San Juan,INC
+2388,Calingasta,Calingasta,INC
+2389,Kuchichay,Mendoza,INC
+2390,Camblesforth,San Rafael,NAN
+2391,Ireleth,Nequen,
+2392,Crummock,Viedma,
+2393,Beorhtric,Telen,NAN
+2394,Fenton,Bariloche,
+2395,Staithes,Curaco,NAN
+2396,Salkeld,Rawson,
+2397,Whitehaven,Esquel,
+2398,Barren,Puerto Deseado,
+2399,Skitby,Rio Galleagos,
+2400,Land's End,Rio Grande,
+2401,Marabitanas,Marabitanas,CLM
+2402,Pasé,Manaus,
+2403,Yagua,Cachoeira,
+2404,Matis,Tefe,
+2405,Tapajo,Borba,
+2406,Penghu,Cocos Islands,TNG
+2407,Mayoruna,Tabatinga,
+2408,Oriximina,Oriximina,CLM
+2409,São Vicente,Saint Vincent,SPA
+2410,Bethléem,Belem,AMA
+2411,Xingu,Santarem,
+2412,Obidos,Obidos,CLM
+2413,Jouruna,Maraba,
+2414,Jezira,Amapa,BHT
+2415,Macapa,Macapa,CLM
+2416,Sanapana,Dourados,LOT
+2417,Iaco,Vila Bela,
+2418,Canamari,Cuiaba,
+2419,Fort-le-Duc,Corumba,LOT
+2420,Fontenoy,Iguatemi,LOT
+2421,Vaura,Vila Boa,AMA
+2422,Monts Indiens,Aganja,AMA
+2423,Villefranche d'Amazonie,Palmas,AMA
+2424,Saint Georges,Sao Luis,AMA
+2425,Plateau St Louis,Chapada,AMA
+2426,Rives-Brunes,Teresina,AMA
+2427,Mission Françiscaine,Oieras,AMA
+2428,Saint-Floret,Paraiba,AMA
+2429,Charroux,Fortaleza,AMA
+2430,Pradelles,Crato,AMA
+2431,Port Liberté,Natal,AMA
+2432,Le Faou,Recife,AMA
+2433,Mont-Peyroux,Cabrobo,AMA
+2434,Locronan,Maceio,AMA
+2435,Delta-Joseph,Aracaju,AMA
+2436,Port Sucre,Salvador de Bahia,AMA
+2437,Vallée Joseph,Juazeiro,AMA
+2438,Castel-Royal,Vila do Barra,AMA
+2439,Nouvelle Aquitaine,Porto Seguro,AMA
+2440,Mont Putois,Vitoria da Conquista,AMA
+2441,Sainte Geneviève,Ouro Preto,AMA
+2442,Cytère,Sabara,AMA
+2443,Monts Noirs,Januaria,AMA
+2444,Paraquatou,Paracatu,AMA
+2445,Anzy-le-Duc,Uberaba,LOT
+2446,Libreville,Sao Joao del Rey,LOT
+2447,Nouvelle Amsterdam,Rio de Janeiro,AMA
+2448,Cap-Lenotre,Campos,AMA
+2449,Victoire,Vitoria,AMA
+2450,Saxi-Bourdon,Sao Paulo,LOT
+2451,Varennes-les-Amériques,Santos,LOT
+2452,Parigny-les-Vaux,Campinas,LOT
+2453,Villeblevin,Assis,LOT
+2454,Fiji,Fiji,TUI
+2455,Sainte-Marie-la-Blanche,Iguape,LOT
+2456,Flavignerot,Araraquara,LOT
+2457,Isenay,Curitiba,LOT
+2458,Sermoise-sur-Odon,Garapuava,LOT
+2459,Hauteroche,Lajes,LOT
+2460,Virey-le-Grand,Castro,LOT
+2461,Domecy-sur-Odon,Desterro,LOT
+2462,Dracy-le-Fort,Sao Miguel,LOT
+2463,Fort Lothère,Porto Alegre,LOT
+2464,Jouancy,Pelotas,LOT
+2465,Vauclaix,Passo Fundo,LOT
+2466,Villemanoche,Santa Maria,LOT
+2467,Gergueil,Alegrete,LOT
+2468,Zheng He,Sydney,GAN
+2469,Rongzhou,Newcastle,GAN
+2470,Rongshan,Port Macquarie,GAN
+2471,Cangwuye,Ophir,GAN
+2472,Nanshan,Eden,GAN
+2473,Wagga Wagga,Wagga Wagga,GAN
+2474,Hualien,Moree,GAN
+2475,Taitung,Broken Hill,GAN
+2476,Qingshui,Melbourne,GAN
+2477,Warmambool,Warmambool,GAN
+2478,Liusha,Ballarat,GAN
+2479,Guanzhou,Sale,GAN
+2480,Heishui,Beechworth,GAN
+2481,Guangling,Swan Hill,GAN
+2482,Parlevar,Tasmania,GAN
+2483,Weizhou,Brisbane,GAN
+2484,Butingshan,Gladstone,GAN
+2485,Pusen,Clermont,GAN
+2486,Toowoomba,Toowoomba,GAN
+2487,Bozhou,Townsville,
+2488,Azhou,Cooktown,
+2489,Hsinchu,Longreach,
+2490,Yilan,Charleville,GAN
+2491,Penghu,Adelaide,GAN
+2492,Lienchiang,Port Lincolon,GAN
+2493,Yongjia,Robe,GAN
+2494,Kinmen,Port Augusta,GAN
+2495,Oodnadatta,Oodnadatta,
+2496,Tarcoola,Tarcoola,
+2497,Noongar,Perth,
+2498,Kojonup,Kojonup,
+2499,Mawarra,Geraldton,
+2500,Kalgoorlie,Kalgoorlie,
+2501,Ngaanyatjarra,Broome,
+2502,Kutyukutyu,Dampier,
+2503,Arramagong,Wiluna,
+2504,Wambangalang,Esperance,
+2505,Yolngu,Palmerston,
+2506,Mulwala,Tennant Creek,
+2507,Kangamarru,Alice Springs,
+2508,Makariri,Norfolk Island,
+2509,Whangarei,Auckland,AOT
+2510,Taranaki,New Plymouth,AOT
+2511,Raukumara,Napier,AOT
+2512,Manawatu,Wellington,AOT
+2513,Otago,Dunedin,
+2514,Hokitika,Hokitika,
+2515,Timaru,Christchurch,
+2516,Motueka,Nelson,
+2517,Guam,Guam,SPA
+2518,Palau,Palau,
+2519,Yap,Yap,
+2520,Taveuni,Taveuni,TUI
+2521,Saipan,Saipan,SPA
+2522,Aorokin,Marshall Islands,
+2523,Nauru,Nauru,
+2524,Kirikiriroa,Wake,AOT
+2525,Minamitorishima,Marcus,
+2526,Kaula,Palmyra,HAW
+2527,Tungaru,Gilbert Islands,
+2528,Motu Kotaibu,Port Moresby,
+2529,Kerema,Kerema,
+2530,Lae,Lae,
+2531,Madang,Madang,
+2532,Forte Sao Joaquim,Forte Sao Joaquim,CLM
+2533,Marosvásárhely,Targu Mures,HUN
+2534,Honiara,Solomon Islands,
+2535,Vanuatu,New Hebrides,
+2536,Temotu,Santa Cruz Islands,
+2537,Kokopo,New Britain,
+2538,Újvidék,Novi Sad,HUN
+2539,Arawa,Bougainville,
+2540,Tonga,Tonga,TUI
+2541,Tuvalu,Ellice Islands,
+2542,Uvea Futuna,Wallis And Futuna,TUI
+2543,Apia,Apia,TUI
+2544,Pago Pago,Pago Pago,TUI
+2545,Rarotonga,Rarotonga,TUI
+2546,Tongareva,Tongareva,TUI
+2547,Tokelau,Tokelau,TUI
+2548,Niue,Niue,TUI
+2549,Marubo,Tarauaca,
+2550,Sharanahua,Forte do Principe,
+2551,Te Henua,Marquesas,
+2552,Oeno,Pitcairn,
+2553,Tuamotus,Tuamotus,
+2554,Bois-les-Fleuves,Posadas,LOT
+2555,Guéron,Augusta,PLA
+2556,Montagnes Enfumées,Asheville,PLA
+2557,Esbjerg,Esbjerg,SCA
+2558,De Aar,De Aar,LWE
+2559,Suhaj,Suhaj,EGY
+2560,Darmstadt,Darmstadt,HES
+2561,Siegburg,Siegburg,BEG
+2562,Taitung,Tainan,TNG
+2563,Safi,Safi,SPA
+2564,Salima,Salima,
+2565,Cebu,Cebu,TON
+2566,Agartala,Agartala,BUR
+2567,Gaeta,Gaeta,ARA
+2568,Lugano,Lugano,LOM
+2569,Niksic,Niksic,MON
+2570,Beauvais,Beauvais,DUA
+2571,Tauranga,Tauranga,AOT
+2572,Nan,Nan,CAM
+2573,Mboul,Mboul,FJA
+2574,Mochudi,Mochudi,GRQ
+2575,Ipoh,Ipoh,JOH
+2576,Natuna,Natuna,BRU
+2577,Pljevlja,Pljevlja,MON
+2578,Tacna,Tacna,CLM
+2579,Truk,Truk,
+2580,Stara Ladoga,Stara Ladoga,NOV
+2581,Mataka,Mataka,
+2582,Kotor,Kotor,MON
+2583,Cetinje,Cetinje,MON
+2584,Bílsko,Bielsko,BOH
+2585,Matan as Sarah,Matan as Sarah,
+2586,Rub' al Khali,Al-Ahsa,
+2587,Kola,Kola,NOV
+2588,Onega,Onega,NOV
+2589,Tsushima,Kanin,JAP
+2590,Ceuta,Ceuta,SPA
+2591,Al Hasakah,Tranquebar,MGH
+2592,Blikberget,Ungava,VIN
+2593,Tollvik,Fort George,VIN
+2594,Reykjanesbær,Pickle,VIN
+2595,Nunavut,Nunavut,VIN
+2596,Granvik,Fort Resolution,
+2597,Xindu,Fort Vermilion,
+2598,Takikawa,Fort Liard,
+2599,Ichinomiya,Fort Yukon,JAP
+2600,Shipaya,Altamira,
+2601,Pitjantjatjara,Sandy Desert,
+2602,Coomalong,Roebourne,
+2603,Tanami,Tanami,
+2604,Wencheng,Normanton,
+2605,Yankunytjatjara,Gibson's Desert,
+2606,Balkhash,Aktogay,CHG
+2607,Taklamakan,Taklamakan,CHG
+2608,Khatgal,Khatgal,CHG
+2609,Araouane,Araouane,
+2610,Isun,Oral,NOG
+2611,Turgay,Turgay,CHG
+2612,Aktash,Zhambyl,CHG
+2613,Nyda,Novyj Urengoj,
+2614,Yarkand,Panajevsk,CHG
+2615,Enets,Sidorovsk,
+2616,Tilichiki,Korf,AIN
+2617,Saghalian Oula,Amgun,MCK
+2618,Talaya,Talaya,AIN
+2619,Yana,Indigirka,
+2620,Syasir,Kolyma,AIN
+2621,Srednekolymsk,Srednekolymsk,
+2622,Markovo,Majn,
+2623,Pihemanu,Midway Island,HAW
+2624,Loango,Loango,LOA
+2625,Bjørnkøping,Port Hope Simpson,VIN
+2626,Saltberg,Port Harrison,VIN
+2627,Stugvall,Fort Chimo,VIN
+2628,Ocos,Attawapiskat,CLM
+2629,Luxiang,Beatton River,
+2630,Sueyoshi,Fairbanks,JAP
+2631,Tosayamada,Yukon,JAP
+2632,Kwangchowan,Kwangchowan,TAI
+2633,Ossora,Palana,AIN
+2634,Rassvet,Khatyrka,AIN
+2635,Kariba,Kariba,SHO
+2636,Dunkerque,Aasiaat,BRG
+2637,Novo Mariinsk,Navarin,AIN
+2638,Omsukchan,Sugoj,AIN
+2639,Susuman,Susuman,AIN
+2640,Gwadar,Ugolnoe,OMA
+2641,Ayan,Ajan,AIN
+2642,Ust Nera,Tomtor,
+2643,Honuu,Honuu,
+2644,Ducher,Tommot,
+2645,Chilchi,Artemovskij,
+2646,Ases Igan,Niznevartovsk,
+2647,Lifau,Lifau,DUA
+2648,Nanai,Handyga,
+2649,Kumis,Tomtor,
+2650,Nyurba,Malykaj,
+2651,Shiwei,Zigansk,
+2652,Kular,Kular,
+2653,Sakha,Saskylah,
+2654,Khatanga,Hatanga,
+2655,Tura,Essej,
+2656,Tayimba,Vanavara,
+2657,Koibal,Svetlogorsk,
+2658,Kheta,Kheta,
+2659,Nenets,Guba,
+2660,Bereyezovka,Anuj,
+2661,Nizhnekolymsk,Anjuj,
+2662,Cherskiy,Ambarcik,
+2663,Kamenskoye,Manily,AIN
+2664,Khasab,Omolon,OMA
+2665,Chokurdakh,Cokurdah,
+2666,Pevek,Komsomolskiy,AIN
+2667,Bulun,Kazace,
+2668,Negidal,Adyca,
+2669,Sondrio,Majja,LOM
+2670,Tiksi,Tiksi,
+2671,Daur,Lena,
+2672,Udege,Borogoncy,
+2673,Olkhan,Olenek,
+2674,Abakan,Novyj Kajak,
+2675,Eventi,Ajhal,
+2676,Ulan-Ude,Kirensk,CHG
+2677,Dotkon,Nepa,
+2678,Bulgan,Bulgan,CHG
+2679,Khovd,Khovd,CHG
+2680,Nganasan,Dudinka,
+2681,Taipei,Taz,TNG
+2682,Narim,Nadym,
+2683,Bakchar,Vasjugan,SIB
+2684,Yar Sale,Aksarka,NOV
+2685,Muzhi,Njagan,SIB
+2686,Ishim,Isim,SIB
+2687,Amderma,Amderma,NOV
+2688,Inta,Inta,NOV
+2689,Mulda,Vojvoz,NOV
+2690,Sorgit,Gornopravdinsk,
+2691,Anatri,Vorgovo,
+2692,Anatjenci,Kostino,
+2693,Uchami,Kotuj,
+2694,Kets,Erbogacen,
+2695,Mukhtuya,Lensk,
+2696,Aldan,Nerjungri,
+2697,Jingkiri,Tygda,MCK
+2698,Anchimha,Slavgorod,CHG
+2699,Izhma,Izma,NOV
+2700,Usogorsk,Usogorsk,NOV
+2701,Surinda,Cunyja,
+2702,Alty-Kuduk,Aralsk,NOG
+2778,Lake Balaton,Lake Balaton,
+3246,Gustavia,Jan Mayen,SCA
+3249,Kiritimati,Kiritimati,
+3274,Schultz Lake,Schultz Lake,CLN
+3314,Lake Storsjön,Lake Storsjon,
+3321,Darband,Darband,KMY
+3322,Tarki,Tarki,KMY
+3323,Neftçala,Naftmardab,AZB
+3324,Astara,Astara,AZB
+3325,Behbahan,Behbahan,ZND
+3326,Jahrum,Jahrum,ZND
+3327,Zarang,Zarang,AFS
+3328,Kafiristan,Kafiristan,AFG
+3329,Dihistan,Dihistan,AFS
+3330,Marw,Marw,AFS
+3331,Merutschak,Merutschak,AFS
+3332,Lahijan,Lahijan,QAJ
+3333,Firuzkuh,Firuzkuh,QAJ
+3334,Dasht-e Kavir,Dasht-e Kavir,QAJ
+3335,Ardakan,Ardakan,QAJ
+3336,Tabas,Tabas,AFS
+3337,Ghaen,Ghaen,AFS
+3338,Kashmar,Kashmar,AFS
+3339,Nishapur,Nishapur,AFS
+3340,Quchan,Quchan,AFS
+3341,Zabol,Zabol,AFS
+3342,Maymana,Maymana,AFG
+3343,Konduz,Konduz,AFG
+3344,Sar-e Pol,Sar-e Pol,AFG
+3345,Ghor,Ghor,AFG
+3346,Ghuryan,Ghuryan,AFS
+3347,Kohistan,Kohistan,AFG
+3348,Kos,Kos,CHG
+3349,Hazorasp,Hazorasp,CHG
+3350,Lebap,Lebap,CHG
+3351,Makran,Makran,KAL
+3352,Turkmensahra,Turkmensahra,AFS
+3353,Bastam,Bastam,AFS
+3354,Tejen,Tejen,AFS
+3355,Tuz Qala,Tuz Qala,CHG
+3356,Taras,Taras,CHG
+3357,Andijon,Andijon,CHG
+3358,Kyzylsu,Kyzylsu,CHG
+3359,Tashkurgan,Tashkurgan,CHG
+3360,Murghab,Murghab,CHG
+3361,Namagan,Namagan,CHG
+3362,Tirmidh,Tirmidh,CHG
+3363,Gharm,Gharm,CHG
+3364,Hissar,Hissar,CHG
+3365,Uroteppa,Uroteppa,CHG
+3366,Kuchar,Kuchar,CHG
+3367,Turfan,Turfan,CHG
+3368,Qerqen,Qerqen,CHG
+3369,Qarashahr,Qarashahr,CHG
+3370,Lop Nur,Lop Nur,CHG
+3371,Ajakkumkul,Ajakkumkul,CHG
+3372,Kunlun,Kunlun,CHG
+3373,Wakhan,Wakhan,AFG
+3374,Qalat-e Nadiri,Qalat-e Nadiri,AFS
+3375,Aktash,Aktash,CHG
+3376,Al Hasakah,Al Hasakah,TUR
+3377,Bahdinan,Bahdinan,SRN
+3378,Tur Abdin,Tur Abdin,TUR
+3379,Anar Dareh,Anar Dareh,AFS
+3380,Parakou,Parakou,OYO
+3381,Dezful,Dezful,ZND
+3382,Shushtar,Shushtar,ZND
+3383,Gori,Gori,AZB
+3384,Tskhinval,Tskhinval,AZB
+3385,Kakheti,Kakheti,AZB
+3386,Ilisu,Ilisu,AZB
+3387,Shirvan,Shirvan,AZB
+3388,Shushi,Shushi,AZB
+3389,Kelbajar,Kelbajar,AZB
+3390,Gegharkunik,Gegharkunik,AZB
+3391,Istisu,Istisu,AZB
+3392,Khanlar,Khanlar,AZB
+3393,Akhalkalaki,Akhalkalaki,SAM
+3394,Parsabad,Parsabad,AZB
+3395,Marand,Marand,AZB
+3396,Maku,Maku,AZB
+3397,Fogaras,Fogaras,HUN
+3398,Mediasch,Eppeschdorf,HUN
+3399,Aranyosszék,Torda,HUN
+3400,Sächsisch-Regen,Sachsisch Regen,HUN
+3401,Belsö-Szolnok,Belso Szolnok,HUN
+3402,Bereg,Bereg,HUN
+3403,Gömör,Gömör,HUN
+3404,Fier,Fier,ALB
+3405,Sarandë,Sarandë,ALB
+3406,Hildesheim,Hidelsheim,HIL
+3407,Bamberg,Bamberg,BMB
+3408,Ansbach,Ansbach,ANB
+3409,Mühlhausen,Muhlhausen,THU
+3410,Naumburg,Naumburg,THU
+3411,Marienburg,Marienburg,PLC
+3412,Ermland,Ermland,PLC
+3413,Tacanahuitz,Tacanahuitz,CLM
+3414,Tempoal,Tempoal,CLM
+3415,Tamiahua,Tamiahua,CLM
+3416,Tamazunchale,Tamazunchale,CLM
+3417,Huejutla,Huejutla,CLM
+3418,Chicontepec,Chicontepec,CLM
+3419,Texcatepec,Texcatepec,CLM
+3420,Coatzintla,Papantla,CLM
+3421,Papantla,Zacatlan,CLM
+3422,Xicotepec,Xicotepec,CLM
+3423,Zacapoaxtla,Zacapoaxtla,CLM
+3424,Ixmiquilpan,Ixmiquilpan,CLM
+3425,Tulancingo,Tulancingo,CLM
+3426,Temoaya,Temoaya,CLM
+3427,Puebla,Puebla,CLM
+3428,Cuernavaca,Cuernavaca,CLM
+3429,Orizaba,Orizaba,CLM
+3430,Chalchicomula,Chalchicomula,CLM
+3431,Malinaltepec,Malinaltepec,CLM
+3432,Huajuapan,Huajuapan,CLM
+3433,Huautla,Huautla,CLM
+3434,La Chinantla,La Chinantla,CLM
+3435,Tlahuitoltepec,Tlahuitoltepec,CLM
+3436,Jaltepec,Jaltepec,CLM
+3437,Coatzacoalcos,Coatzacoalcos,CLM
+3438,Acayucan,Acayucan,CLM
+3439,Chimalapa,Chimalapa,CLM
+3440,Acatepec,Acatepec,CLM
+3441,Pinotepa,Pinotepa,CLM
+3442,Putla,Putla,CLM
+3443,Nochixtlán,Nochixtlán,CLM
+3444,Juaquila,Juaquila,CLM
+3445,Loxicha,Loxicha,CLM
+3446,Tenosique,Tenosique,CLM
+3447,Ocosingo,Ocosingo,CLM
+3448,Quetzaltenango,Quetzaltenango,CLM
+3449,El Quiché,El Quiché,CLM
+3450,Xpujil,Xpujil,CLM
+3451,Valladolid,Valladolid,CLM
+3452,Calkiní,Calkiní,CLM
+3453,Tulum,Tulum,CLM

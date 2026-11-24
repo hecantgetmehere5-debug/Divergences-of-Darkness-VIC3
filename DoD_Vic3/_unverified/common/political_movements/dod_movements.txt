@@ -1,0 +1,66 @@
+# Divergences of Darkness political movements (DRAFT - layout to verify against vanilla).
+# Each movement is meant to rise where the lore says it should, and to push for the laws it names.
+
+movement_dod_parishers = {  # Beornia: every parish governs itself; against bishops and the absolute King
+	category = movement_category_reform
+	ideology = ideology_liberal
+	character_ideologies = { ideology_liberal }
+	creation_trigger = {
+		OR = {
+			owner = c:NAN
+			owner = c:HBE
+		}
+	}
+	support = {
+		value = 0
+		add = { value = 10 if = { limit = { owner = { has_law = law_type:law_autocracy } } } }
+	}
+}
+
+movement_dod_arcadianism = {  # Arcadia: one Union for all Arcadian peoples, liberty, expel the colonisers
+	category = movement_category_nationalist
+	ideology = ideology_patriotic
+	creation_trigger = {
+		owner = {
+			OR = {
+				this = c:NBG
+				this = c:PLA
+				this = c:VIN
+			}
+		}
+	}
+	support = {
+		value = 5
+		add = { value = 10 if = { limit = { owner = c:NBG } } }
+		add = { value = -5 if = { limit = { owner = c:VIN } } }
+	}
+}
+
+movement_dod_sons_of_harold = {  # Dual Monarchy: English nationalists against the Anglois Crown
+	category = movement_category_cultural
+	culture = cu:english
+	creation_trigger = { owner = c:DUA }
+	support = { value = 10 }
+}
+
+movement_dod_sons_of_saint_louis = {  # Dual Monarchy: French and Provencal nationalists
+	category = movement_category_cultural
+	culture = cu:french
+	creation_trigger = { owner = c:DUA }
+	support = { value = 10 }
+}
+
+movement_dod_carbonari = {  # Italy: the revolutionary secret society spread by Etruria
+	category = movement_category_reform
+	ideology = ideology_republican
+	creation_trigger = {
+		owner = {
+			OR = {
+				country_has_primary_culture = cu:north_italian
+				country_has_primary_culture = cu:south_italian
+			}
+			NOT = { has_law = law_type:law_parliamentary_republic }
+		}
+	}
+	support = { value = 5 }
+}

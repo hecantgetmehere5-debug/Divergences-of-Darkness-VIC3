@@ -1,0 +1,106 @@
+# Asia flavour: modifiers
+
+dod_treasure_fleets = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
+	country_prestige_add = 10
+}
+
+dod_young_emperor = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_scroll_positive.dds"
+	country_legitimacy_base_add = 5
+}
+
+dod_taiping_zeal = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
+	country_legitimacy_base_add = 5
+}
+
+dod_open_ports = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_scroll_positive.dds"
+	country_prestige_add = 5
+}
+
+dod_japanese_gunsmiths = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
+	unit_offense_mult = 0.05
+}
+
+dod_korean_autonomy = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_scroll_positive.dds"
+	country_legitimacy_base_add = 5
+}
+
+dod_ainu_protection = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_scroll_positive.dds"
+	country_legitimacy_base_add = 3
+}
+
+dod_central_authority = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_scroll_positive.dds"
+	country_authority_add = 25
+}
+
+dod_akbar_tolerance = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_scroll_positive.dds"
+	country_legitimacy_base_add = 10
+}
+
+dod_vijayanagar_glory = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
+	country_prestige_add = 15
+}
+
+dod_bengal_trade = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_scroll_positive.dds"
+	country_prestige_add = 5
+}
+
+dod_ceylon_governed = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_scroll_positive.dds"
+	country_legitimacy_base_add = 3
+}
+
+dod_spice_trade = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_scroll_positive.dds"
+	country_prestige_add = 5
+}
+
+dod_christiania_tolerance = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_scroll_positive.dds"
+	country_legitimacy_base_add = 3
+}
+
+dod_zhourao_destiny_mod = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
+	country_prestige_add = 10
+}
+
+dod_zhourao_humility = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_scroll_positive.dds"
+	country_legitimacy_base_add = 5
+}
+
+dod_lanfang_kongsi = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_scroll_positive.dds"
+	country_legitimacy_base_add = 10
+}
+
+dod_selon_respected = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_scroll_positive.dds"
+	country_legitimacy_base_add = 3
+}
+
+dod_steppe_tradition = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
+	unit_offense_mult = 0.05
+}
+
+dod_steppe_reform = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_book_positive.dds"
+	country_prestige_add = 5
+}
+
+dod_tribal_loyalty = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_scroll_positive.dds"
+	country_legitimacy_base_add = 5
+}

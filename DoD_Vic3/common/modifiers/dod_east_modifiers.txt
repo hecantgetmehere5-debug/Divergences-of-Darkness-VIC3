@@ -1,0 +1,33 @@
+# East Asian chains: modifiers
+
+dod_self_strengthening = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_scroll_positive.dds"
+	country_authority_add = 25
+	country_prestige_add = 10
+}
+
+dod_regency_endures = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
+	country_legitimacy_base_add = 10
+}
+
+dod_enforced_peace = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds"
+	country_prestige_add = -15
+}
+
+dod_asiatic_legions = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
+	unit_offense_mult = 0.1
+	unit_defense_mult = 0.1
+}
+
+dod_mad_baron_shame = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds"
+	country_prestige_add = -10
+}
+
+dod_lhasa_monks = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_book_positive.dds"
+	country_prestige_add = 15
+}

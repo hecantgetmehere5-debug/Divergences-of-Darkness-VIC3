@@ -1,0 +1,167 @@
+# Iberia: the Iberian Union, the Hispanic Commonwealth & Navarre
+
+dod_propose_iberian_union = {
+	is_shown = {
+		this = c:SPA
+		NOT = { has_variable = dod_iberian_union }
+		NOT = { exists = c:SPC }
+	}
+	possible = {
+		is_at_war = no
+		country_rank >= rank_value:great_power
+		NOT = { exists = c:ARI }
+		OR = {
+			exists = c:CAT
+			any_scope_state = { state_region = { is_homeland = cu:catalan } }
+		}
+	}
+	when_taken = {
+		set_variable = dod_iberian_union
+		every_state = {
+			limit = {
+				state_region = { is_homeland = cu:catalan }
+				NOT = { owner = root }
+			}
+			state_region = { add_claim = root }
+		}
+		c:CAT ?= { trigger_event = { id = dod_ibr.2 days = 7 } }
+	}
+	ai_chance = { base = 50 }
+}
+
+dod_integrate_catalans = {
+	is_shown = {
+		this = c:SPA
+		has_variable = dod_iberian_union
+		NOT = { country_has_primary_culture = cu:catalan }
+	}
+	possible = {
+		NOT = { exists = c:CAT }
+		any_scope_state = { state_region = { is_homeland = cu:catalan } }
+	}
+	when_taken = {
+		add_primary_culture = cu:catalan
+	}
+	ai_chance = { base = 100 }
+}
+
+dod_unify_navarra = {
+	is_shown = {
+		this = c:SPA
+		has_variable = dod_iberian_union
+		NOT = { country_has_primary_culture = cu:basque }
+	}
+	possible = {
+		OR = {
+			AND = {
+				exists = c:NAV
+				c:NAV = { is_subject_of = root }
+			}
+			any_scope_state = { state_region = { is_homeland = cu:basque } }
+		}
+	}
+	when_taken = {
+		if = {
+			limit = {
+				exists = c:NAV
+				c:NAV = { is_subject_of = root }
+			}
+			annex = c:NAV
+		}
+		add_primary_culture = cu:basque
+	}
+	ai_chance = { base = 100 }
+}
+
+dod_form_mancomunidad = {
+	is_shown = {
+		this = c:SPA
+		NOT = { exists = c:SPC }
+		NOT = { has_variable = dod_iberian_union }
+	}
+	possible = {
+		is_at_war = no
+		NOT = { has_law = law_type:law_autocracy }
+		any_scope_state = {
+			count >= 3
+			state_region = {
+				OR = {
+					is_homeland = cu:mexican
+					is_homeland = cu:central_american
+					is_homeland = cu:granadan
+					is_homeland = cu:lusitanian
+				}
+			}
+		}
+	}
+	when_taken = {
+		every_country = {
+			limit = {
+				is_subject_of = root
+				OR = {
+					country_has_primary_culture = cu:mexican
+					country_has_primary_culture = cu:central_american
+					country_has_primary_culture = cu:granadan
+					country_has_primary_culture = cu:lusitanian
+				}
+			}
+			root = { annex = prev }
+		}
+		add_primary_culture = cu:mexican
+		add_primary_culture = cu:central_american
+		add_primary_culture = cu:granadan
+		add_primary_culture = cu:lusitanian
+		change_tag = SPC
+		trigger_event = { id = dod_ibr.5 }
+	}
+	ai_chance = { base = 50 }
+}
+
+dod_iberian_cooperation = {
+	is_shown = {
+		this = c:SPC
+		NOT = { has_variable = dod_iberian_cooperation }
+		OR = {
+			exists = c:ARA
+			exists = c:ARI
+		}
+	}
+	possible = {
+		is_at_war = no
+	}
+	when_taken = {
+		set_variable = dod_iberian_cooperation
+		c:ARA ?= { trigger_event = { id = dod_ibr.7 days = 7 } }
+		c:ARI ?= { trigger_event = { id = dod_ibr.7 days = 7 } }
+	}
+	ai_chance = { base = 50 }
+}
+
+dod_greater_euskadia = {
+	is_shown = {
+		this = c:NAV
+		NOT = { has_variable = dod_greater_euskadia }
+	}
+	possible = {
+		is_at_war = no
+		NOT = {
+			any_state = {
+				state_region = { is_homeland = cu:basque }
+				NOT = { owner = root }
+			}
+		}
+	}
+	when_taken = {
+		set_variable = dod_greater_euskadia
+		add_primary_culture = cu:provencal
+		every_state = {
+			limit = {
+				state_region = { is_homeland = cu:provencal }
+				NOT = { owner = root }
+				any_neighbouring_state = { owner = root }
+			}
+			state_region = { add_claim = root }
+		}
+	}
+	ai_chance = { base = 50 }
+}

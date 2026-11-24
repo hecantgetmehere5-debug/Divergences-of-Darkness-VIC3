@@ -1,0 +1,150 @@
+# Dual Monarchy & Britain: journal entries
+#
+#   je_dod_anglois_dilemma     -> choose French, English or Anglois rule; keep both peoples
+#                                 below the breaking point until acceptance reaches 100
+#   je_dod_dua_revolution_war  -> after a revolution, crush the rebels or lose them
+
+je_dod_anglois_dilemma = {
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+	group = je_group_historical_content
+
+	immediate = {
+		set_variable = { name = dod_english_unrest value = 20 }
+		set_variable = { name = dod_french_unrest value = 20 }
+		set_variable = { name = dod_anglois_acceptance value = 0 }
+		trigger_event = { id = dod_dua.1 days = 30 }
+	}
+
+	current_value = {
+		value = root.var:dod_anglois_acceptance
+	}
+	goal_add_value = {
+		add = 100
+	}
+	progressbar = yes
+
+	on_monthly_pulse = {
+		effect = {
+			if = {
+				limit = { is_at_war = no }
+				change_variable = { name = dod_anglois_acceptance add = 1 }
+			}
+			if = {
+				limit = { NOT = { has_law = law_type:law_multicultural } }
+				if = {
+					limit = { dod_dua_french_path = yes }
+					change_variable = { name = dod_english_unrest add = 1 }
+				}
+				else_if = {
+					limit = { dod_dua_english_path = yes }
+					change_variable = { name = dod_french_unrest add = 1 }
+				}
+				else_if = {
+					limit = { dod_dua_anglois_path = yes }
+					random_list = {
+						50 = { change_variable = { name = dod_english_unrest add = 1 } }
+						50 = { change_variable = { name = dod_french_unrest add = 1 } }
+					}
+				}
+			}
+		}
+		random_events = {
+			70 = 0
+			3 = dod_dua.2
+			3 = dod_dua.3
+			3 = dod_dua.4
+			3 = dod_dua.5
+			3 = dod_dua.6
+			3 = dod_dua.7
+			3 = dod_dua.8
+			3 = dod_dua.9
+			3 = dod_dua.11
+			3 = dod_dua.12
+			3 = dod_dua.13
+			3 = dod_dua.14
+			3 = dod_dua.15
+			3 = dod_dua.16
+			3 = dod_dua.17
+			3 = dod_dua.18
+		}
+	}
+
+	complete = {
+		var:dod_anglois_acceptance >= 100
+		OR = {
+			dod_dua_french_path = yes
+			dod_dua_english_path = yes
+			dod_dua_anglois_path = yes
+		}
+	}
+
+	on_complete = {
+		trigger_event = { id = dod_dua.40 }
+	}
+
+	fail = {
+		OR = {
+			var:dod_english_unrest >= 100
+			var:dod_french_unrest >= 100
+		}
+	}
+
+	on_fail = {
+		if = {
+			limit = {
+				var:dod_english_unrest >= 80
+				var:dod_french_unrest >= 80
+			}
+			trigger_event = { id = dod_dua.29 }
+		}
+		else_if = {
+			limit = { var:dod_english_unrest >= 100 }
+			trigger_event = { id = dod_dua.20 }
+		}
+		else = {
+			trigger_event = { id = dod_dua.25 }
+		}
+	}
+
+	invalid = {
+		NOT = { this = c:DUA }
+	}
+
+	should_be_pinned_by_default = yes
+	weight = 1000
+}
+
+je_dod_dua_revolution_war = {
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+	group = je_group_historical_content
+
+	immediate = {
+		set_variable = { name = dod_revolution_war_grace days = 365 }
+	}
+
+	complete = {
+		is_at_war = no
+		NOT = { exists = c:ENL }
+		NOT = { exists = c:OCC }
+	}
+
+	on_complete = {
+		trigger_event = { id = dod_dua.32 }
+	}
+
+	fail = {
+		OR = {
+			exists = c:ENL
+			exists = c:OCC
+		}
+		is_at_war = no
+		NOT = { has_variable = dod_revolution_war_grace }
+	}
+
+	on_fail = {
+		trigger_event = { id = dod_dua.31 }
+	}
+
+	should_be_pinned_by_default = yes
+	weight = 1000
+}

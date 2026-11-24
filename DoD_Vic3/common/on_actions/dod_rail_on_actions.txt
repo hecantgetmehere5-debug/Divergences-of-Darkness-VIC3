@@ -1,0 +1,27 @@
+# Railroading: the 1836 opening conflicts described by the wiki history.
+# Each event checks its own date and guard, so it only fires once, early in 1836.
+on_monthly_pulse_country = {
+	events = {
+		dod_rail.1	# Spain's reconquest of the Indies
+		dod_rail.2	# Ottoman war on Macedonia
+		dod_rail.3	# Ottoman war on Egypt
+		dod_rail.4	# Ottoman war on Albania
+		dod_rail.5	# The Hafsids against Egypt
+	}
+}
+
+on_yearly_pulse_country = {
+	events = {
+		dod_rail.10	# The Imperial lands
+		dod_cong.1	# The Congress of our capital
+		dod_east.1
+		dod_east.2
+		dod_east.3
+		dod_east.10
+		dod_east.20
+		dod_east.21
+		dod_east.22
+		dod_east.30
+		dod_east.32
+	}
+}

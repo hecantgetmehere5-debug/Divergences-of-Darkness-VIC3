@@ -1,0 +1,207 @@
+namespace = dod_blt
+
+dod_blt.2 = {
+	type = country_event
+	placement = root
+	title = dod_blt.2.t
+	desc = dod_blt.2.d
+	flavor = dod_blt.2.f
+	event_image = { video = "unspecific_politicians_arguing" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	duration = 3
+
+	trigger = {
+		this = c:PLC
+		exists = c:UKR
+		c:UKR = { is_subject_of = root }
+		any_scope_state = { state_region = { is_homeland = cu:crimean } }
+		NOT = { has_variable = dod_blt_seen_2 }
+	}
+
+	immediate = {
+		set_variable = dod_blt_seen_2
+	}
+
+	option = {
+		name = dod_blt.2.a
+		default_option = yes
+		every_scope_state = {
+			limit = { state_region = { is_homeland = cu:crimean } }
+			set_state_owner = c:UKR
+		}
+	}
+}
+
+dod_blt.3 = {
+	type = country_event
+	placement = root
+	title = dod_blt.3.t
+	desc = dod_blt.3.d
+	flavor = dod_blt.3.f
+	event_image = { video = "unspecific_politicians_arguing" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+	duration = 3
+
+	trigger = {
+		this = c:UKR
+		exists = c:PLC
+		is_subject_of = c:PLC
+	}
+
+	option = {
+		name = dod_blt.3.a
+		default_option = yes
+		c:RUS = { create_diplomatic_pact = { country = root type = alliance } }
+		create_diplomatic_play = {
+			target_country = c:PLC
+			type = dp_independence
+		}
+		ai_chance = { base = 50 }
+	}
+
+	option = {
+		name = dod_blt.3.b
+		c:RUS = { change_relations = { country = root value = -30 } }
+		ai_chance = { base = 50 }
+	}
+}
+
+dod_blt.5 = {
+	type = country_event
+	placement = root
+	title = dod_blt.5.t
+	desc = dod_blt.5.d
+	flavor = dod_blt.5.f
+	event_image = { video = "europenorthamerica_political_extremism" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	duration = 3
+
+	trigger = {
+		this = c:PLC
+		game_date >= 1860.1.1
+		country_rank < rank_value:great_power
+		NOT = { has_variable = dod_lublin_renewed }
+		NOT = { has_variable = dod_blt_seen_5 }
+	}
+
+	immediate = {
+		set_variable = dod_blt_seen_5
+		if = {
+			limit = { NOT = { exists = c:LIT } }
+			dod_release_homeland = { TAG = LIT CULTURE = lithuanian }
+		}
+		if = {
+			limit = { NOT = { exists = c:UKR } }
+			dod_release_homeland = { TAG = UKR CULTURE = ruthenian }
+		}
+		if = {
+			limit = { NOT = { exists = c:BLR } }
+			dod_release_homeland = { TAG = BLR CULTURE = byelorussian }
+		}
+	}
+
+	option = {
+		name = dod_blt.5.a
+		default_option = yes
+		add_modifier = { name = dod_commonwealth_dissolved months = 120 }
+	}
+}
+
+dod_blt.6 = {
+	type = country_event
+	placement = root
+	title = dod_blt.6.t
+	desc = dod_blt.6.d
+	flavor = dod_blt.6.f
+	event_image = { video = "unspecific_politicians_arguing" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+	duration = 3
+
+	trigger = {
+		this = c:UKR
+		exists = c:BLR
+		NOT = { is_subject_of = c:PLC }
+		c:BLR = { NOT = { is_subject_of = c:PLC } }
+		NOT = { has_variable = dod_blt_seen_6 }
+	}
+
+	immediate = {
+		set_variable = dod_blt_seen_6
+	}
+
+	option = {
+		name = dod_blt.6.a
+		default_option = yes
+		c:BLR = { trigger_event = { id = dod_blt.7 days = 14 } }
+		ai_chance = { base = 80 }
+	}
+
+	option = {
+		name = dod_blt.6.b
+		ai_chance = { base = 20 }
+	}
+}
+
+dod_blt.7 = {
+	type = country_event
+	placement = root
+	title = dod_blt.7.t
+	desc = dod_blt.7.d
+	flavor = dod_blt.7.f
+	event_image = { video = "unspecific_politicians_arguing" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+	duration = 3
+
+	option = {
+		name = dod_blt.7.a
+		default_option = yes
+		c:UKR = {
+			annex = root
+			add_primary_culture = cu:byelorussian
+			if = {
+				limit = { NOT = { exists = c:RUT } }
+				change_tag = RUT
+			}
+		}
+		ai_chance = { base = 70 }
+	}
+
+	option = {
+		name = dod_blt.7.b
+		ai_chance = { base = 30 }
+	}
+}
+
+dod_blt.8 = {
+	type = country_event
+	placement = root
+	title = dod_blt.8.t
+	desc = dod_blt.8.d
+	flavor = dod_blt.8.f
+	event_image = { video = "europenorthamerica_political_extremism" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	trigger = {
+		this = c:SCA
+		country_rank < rank_value:great_power
+		NOT = { any_scope_state = { state_region = { is_homeland = cu:danish } } }
+		NOT = { has_variable = dod_blt_seen_8 }
+	}
+
+	immediate = {
+		set_variable = dod_blt_seen_8
+	}
+
+	option = {
+		name = dod_blt.8.a
+		default_option = yes
+		add_modifier = { name = dod_flight_into_exile months = 120 }
+	}
+}

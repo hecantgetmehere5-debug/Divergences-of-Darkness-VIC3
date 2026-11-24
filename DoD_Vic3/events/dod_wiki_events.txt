@@ -1,0 +1,333 @@
+namespace = dod_wiki
+
+dod_wiki.1 = {
+	type = country_event
+	placement = root
+	title = dod_wiki.1.t
+	desc = dod_wiki.1.d
+	flavor = dod_wiki.1.f
+	event_image = { video = "unspecific_military_parade" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	trigger = {
+		OR = {
+			this = c:HLR
+			this = c:BOH
+		}
+		is_at_war = yes
+		game_date >= 1840.1.1
+		NOT = { has_global_variable = dod_opa_stein }
+	}
+
+	immediate = {
+		set_global_variable = dod_opa_stein
+	}
+
+	option = {
+		name = dod_wiki.1.a
+		default_option = yes
+		add_modifier = { name = dod_opa_stein months = 60 }
+	}
+}
+
+dod_wiki.2 = {
+	type = country_event
+	placement = root
+	title = dod_wiki.2.t
+	desc = dod_wiki.2.d
+	flavor = dod_wiki.2.f
+	event_image = { video = "unspecific_politicians_arguing" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	trigger = {
+		OR = {
+			this = c:HLR
+			this = c:BOH
+		}
+		game_date >= 1921.1.1
+		NOT = { has_global_variable = dod_stone_centenary }
+	}
+
+	immediate = {
+		set_global_variable = dod_stone_centenary
+	}
+
+	option = {
+		name = dod_wiki.2.a
+		default_option = yes
+		add_modifier = { name = dod_stone_emperor_centenary months = 60 }
+	}
+}
+
+dod_wiki.3 = {
+	type = country_event
+	placement = root
+	title = dod_wiki.3.t
+	desc = dod_wiki.3.d
+	flavor = dod_wiki.3.f
+	event_image = { video = "unspecific_politicians_arguing" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	trigger = {
+		OR = {
+			country_has_primary_culture = cu:north_german
+			country_has_primary_culture = cu:south_german
+			country_has_primary_culture = cu:rheinish
+			this = c:HLR
+		}
+		game_date >= 1845.1.1
+		NOT = { has_global_variable = dod_ein_deutschland }
+	}
+
+	immediate = {
+		set_global_variable = dod_ein_deutschland
+	}
+
+	option = {
+		name = dod_wiki.3.a
+		default_option = yes
+		ig:ig_intelligentsia = { add_modifier = { name = dod_ig_angered months = 24 } }
+		ai_chance = { base = 40 }
+	}
+
+	option = {
+		name = dod_wiki.3.b
+		add_modifier = { name = dod_german_dreams months = 60 }
+		ai_chance = { base = 60 }
+	}
+}
+
+dod_wiki.4 = {
+	type = country_event
+	placement = root
+	title = dod_wiki.4.t
+	desc = dod_wiki.4.d
+	flavor = dod_wiki.4.f
+	event_image = { video = "unspecific_politicians_arguing" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+	duration = 3
+
+	trigger = {
+		OR = {
+			this = c:DUA
+			this = c:PRV
+		}
+		game_date >= 1848.1.1
+		NOT = { has_global_variable = dod_treaty_rome }
+	}
+
+	immediate = {
+		set_global_variable = dod_treaty_rome
+	}
+
+	option = {
+		name = dod_wiki.4.a
+		trigger = { this = c:DUA }
+		default_option = yes
+		add_modifier = { name = dod_treaty_of_rome months = 60 }
+	}
+
+	option = {
+		name = dod_wiki.4.b
+		trigger = { NOT = { this = c:DUA } }
+		add_modifier = { name = dod_valois_grievance months = 60 }
+	}
+}
+
+dod_wiki.5 = {
+	type = country_event
+	placement = root
+	title = dod_wiki.5.t
+	desc = dod_wiki.5.d
+	flavor = dod_wiki.5.f
+	event_image = { video = "unspecific_military_parade" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	trigger = {
+		this = c:BRG
+		game_date >= 1884.1.1
+		NOT = { has_global_variable = dod_brg_400 }
+	}
+
+	immediate = {
+		set_global_variable = dod_brg_400
+	}
+
+	option = {
+		name = dod_wiki.5.a
+		default_option = yes
+		add_modifier = { name = dod_burgundian_jubilee months = 60 }
+	}
+}
+
+dod_wiki.6 = {
+	type = country_event
+	placement = root
+	title = dod_wiki.6.t
+	desc = dod_wiki.6.d
+	flavor = dod_wiki.6.f
+	event_image = { video = "unspecific_politicians_arguing" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+	duration = 3
+
+	trigger = {
+		this = c:VIN
+		game_date >= 1840.1.1
+		NOT = { has_global_variable = dod_baudissin }
+	}
+
+	immediate = {
+		set_global_variable = dod_baudissin
+	}
+
+	option = {
+		name = dod_wiki.6.a
+		default_option = yes
+		every_state = {
+			limit = {
+				state_region = { is_homeland = cu:vinlander }
+				NOT = { owner = root }
+			}
+			state_region = { add_claim = root }
+		}
+		ai_chance = { base = 50 }
+	}
+
+	option = {
+		name = dod_wiki.6.b
+		add_modifier = { name = dod_lofby_forgiven months = 60 }
+		ai_chance = { base = 50 }
+	}
+}
+
+dod_wiki.7 = {
+	type = country_event
+	placement = root
+	title = dod_wiki.7.t
+	desc = dod_wiki.7.d
+	flavor = dod_wiki.7.f
+	event_image = { video = "unspecific_politicians_arguing" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	trigger = {
+		this = c:NBG
+		game_date >= 1850.1.1
+		NOT = { has_global_variable = dod_geloes }
+	}
+
+	immediate = {
+		set_global_variable = dod_geloes
+	}
+
+	option = {
+		name = dod_wiki.7.a
+		default_option = yes
+		add_modifier = { name = dod_waldwisse_hero months = 120 }
+	}
+}
+
+dod_wiki.8 = {
+	type = country_event
+	placement = root
+	title = dod_wiki.8.t
+	desc = dod_wiki.8.d
+	flavor = dod_wiki.8.f
+	event_image = { video = "unspecific_politicians_arguing" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	duration = 3
+
+	trigger = {
+		OR = {
+			this = c:DUA
+			this = c:PLA
+			this = c:ARC
+		}
+		game_date >= 1890.1.1
+		NOT = { has_global_variable = dod_columbus }
+	}
+
+	immediate = {
+		set_global_variable = dod_columbus
+	}
+
+	option = {
+		name = dod_wiki.8.a
+		default_option = yes
+		add_modifier = { name = dod_columbus_jubilee months = 60 }
+	}
+}
+
+dod_wiki.9 = {
+	type = country_event
+	placement = root
+	title = dod_wiki.9.t
+	desc = dod_wiki.9.d
+	flavor = dod_wiki.9.f
+	event_image = { video = "unspecific_politicians_arguing" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	duration = 3
+
+	trigger = {
+		OR = {
+			this = c:DNG
+			this = c:GAN
+		}
+		game_date >= 1880.1.1
+		NOT = { has_global_variable = dod_zheng_he }
+	}
+
+	immediate = {
+		set_global_variable = dod_zheng_he
+	}
+
+	option = {
+		name = dod_wiki.9.a
+		default_option = yes
+		add_modifier = { name = dod_zheng_he months = 60 }
+	}
+}
+
+dod_wiki.10 = {
+	type = country_event
+	placement = root
+	title = dod_wiki.10.t
+	desc = dod_wiki.10.d
+	flavor = dod_wiki.10.f
+	event_image = { video = "unspecific_politicians_arguing" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	trigger = {
+		OR = {
+			this = c:SPA
+			this = c:DUA
+		}
+		game_date >= 1836.6.1
+		NOT = { has_global_variable = dod_saadi }
+	}
+
+	immediate = {
+		set_global_variable = dod_saadi
+	}
+
+	option = {
+		name = dod_wiki.10.a
+		default_option = yes
+		add_modifier = { name = dod_saadi_end months = 60 }
+	}
+}

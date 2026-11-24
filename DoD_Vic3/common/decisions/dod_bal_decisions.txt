@@ -1,0 +1,407 @@
+# Balkans & the Ottoman fall
+
+dod_tanzimat_1 = {
+	is_shown = {
+		this = c:TUR
+		NOT = { has_variable = dod_tanzimat_1 }
+	}
+	possible = {
+		is_at_war = no
+		NOT = { has_journal_entry = je_dod_ottoman_civil_war }
+	}
+	when_taken = {
+		set_variable = dod_tanzimat_1
+		add_modifier = { name = dod_tanzimat months = 240 }
+	}
+	ai_chance = { base = 50 }
+}
+
+dod_tanzimat_2 = {
+	is_shown = {
+		this = c:TUR
+		has_variable = dod_tanzimat_1
+		NOT = { has_variable = dod_tanzimat_2 }
+	}
+	possible = {
+		is_at_war = no
+		game_date >= 1856.1.1
+		NOT = { has_law = law_type:law_ethnostate }
+	}
+	when_taken = {
+		set_variable = dod_tanzimat_2
+		add_modifier = { name = dod_tanzimat_extended months = 240 }
+	}
+	ai_chance = { base = 50 }
+}
+
+dod_reclaim_macedonia = {
+	is_shown = {
+		this = c:TUR
+		NOT = { has_variable = dod_reclaimed_macedonia }
+	}
+	possible = {
+		is_at_war = no
+		NOT = { has_journal_entry = je_dod_ottoman_civil_war }
+		country_rank >= rank_value:major_power
+	}
+	when_taken = {
+		set_variable = dod_reclaimed_macedonia
+		change_infamy = 10
+		every_state = {
+			limit = {
+				state_region = {
+					OR = {
+						is_homeland = cu:greek
+						is_homeland = cu:bulgarian
+					}
+				}
+				NOT = { owner = root }
+			}
+			state_region = { add_claim = root }
+		}
+	}
+	ai_chance = { base = 30 }
+}
+
+dod_reclaim_illyria = {
+	is_shown = {
+		this = c:TUR
+		NOT = { has_variable = dod_reclaimed_illyria }
+	}
+	possible = {
+		is_at_war = no
+		NOT = { has_journal_entry = je_dod_ottoman_civil_war }
+		country_rank >= rank_value:great_power
+	}
+	when_taken = {
+		set_variable = dod_reclaimed_illyria
+		change_infamy = 15
+		add_primary_culture = cu:bosniak
+		every_state = {
+			limit = {
+				state_region = { is_homeland = cu:bosniak }
+				NOT = { owner = root }
+			}
+			state_region = { add_claim = root }
+		}
+	}
+	ai_chance = { base = 20 }
+}
+
+dod_reclaim_madjaristan = {
+	is_shown = {
+		this = c:TUR
+		NOT = { has_variable = dod_reclaimed_madjaristan }
+	}
+	possible = {
+		is_at_war = no
+		NOT = { has_journal_entry = je_dod_ottoman_civil_war }
+		country_rank >= rank_value:great_power
+	}
+	when_taken = {
+		set_variable = dod_reclaimed_madjaristan
+		change_infamy = 25
+		every_state = {
+			limit = {
+				state_region = { is_homeland = cu:hungarian }
+				NOT = { owner = root }
+			}
+			state_region = { add_claim = root }
+		}
+	}
+	ai_chance = { base = 10 }
+}
+
+dod_reclaim_shirvan = {
+	is_shown = {
+		this = c:TUR
+		NOT = { has_variable = dod_reclaimed_shirvan }
+	}
+	possible = {
+		is_at_war = no
+		NOT = { has_journal_entry = je_dod_ottoman_civil_war }
+		country_rank >= rank_value:great_power
+	}
+	when_taken = {
+		set_variable = dod_reclaimed_shirvan
+		change_infamy = 20
+		add_primary_culture = cu:azerbaijani
+		every_state = {
+			limit = {
+				state_region = { is_homeland = cu:azerbaijani }
+				NOT = { owner = root }
+			}
+			state_region = { add_claim = root }
+		}
+	}
+	ai_chance = { base = 10 }
+}
+
+dod_egyptian_levant = {
+	is_shown = {
+		this = c:EGY
+		NOT = { has_variable = dod_egyptian_levant }
+	}
+	possible = {
+		is_at_war = no
+		has_variable = dod_bal_seen_22
+		country_rank >= rank_value:major_power
+	}
+	when_taken = {
+		set_variable = dod_egyptian_levant
+		change_infamy = 10
+		add_primary_culture = cu:mashriqi
+		every_state = {
+			limit = {
+				state_region = { is_homeland = cu:mashriqi }
+				NOT = { owner = root }
+			}
+			state_region = { add_claim = root }
+		}
+	}
+	ai_chance = { base = 50 }
+}
+
+# ---------------------------------------------------------------------
+# Yugoslavia
+# ---------------------------------------------------------------------
+
+dod_form_yugoslavia = {
+	is_shown = {
+		OR = {
+			country_has_primary_culture = cu:serb
+			country_has_primary_culture = cu:croat
+			country_has_primary_culture = cu:slovene
+			country_has_primary_culture = cu:bosniak
+		}
+		NOT = { exists = c:YUG }
+	}
+	possible = {
+		is_at_war = no
+		any_scope_state = {
+			count >= 5
+			state_region = {
+				OR = {
+					is_homeland = cu:serb
+					is_homeland = cu:croat
+					is_homeland = cu:slovene
+					is_homeland = cu:bosniak
+				}
+			}
+		}
+	}
+	when_taken = {
+		add_primary_culture = cu:serb
+		add_primary_culture = cu:croat
+		add_primary_culture = cu:slovene
+		add_primary_culture = cu:bosniak
+		change_tag = YUG
+	}
+	ai_chance = { base = 100 }
+}
+
+dod_yug_claim_albania = {
+	is_shown = {
+		this = c:YUG
+		NOT = { has_variable = dod_yug_albania }
+	}
+	possible = { is_at_war = no }
+	when_taken = {
+		set_variable = dod_yug_albania
+		change_infamy = 10
+		every_state = {
+			limit = {
+				state_region = { is_homeland = cu:albanian }
+				NOT = { owner = root }
+			}
+			state_region = { add_claim = root }
+		}
+	}
+	ai_chance = { base = 30 }
+}
+
+dod_yug_claim_bulgaria = {
+	is_shown = {
+		this = c:YUG
+		NOT = { has_variable = dod_yug_bulgaria }
+	}
+	possible = { is_at_war = no }
+	when_taken = {
+		set_variable = dod_yug_bulgaria
+		change_infamy = 10
+		add_primary_culture = cu:bulgarian
+		every_state = {
+			limit = {
+				state_region = { is_homeland = cu:bulgarian }
+				NOT = { owner = root }
+			}
+			state_region = { add_claim = root }
+		}
+	}
+	ai_chance = { base = 30 }
+}
+
+dod_yug_claim_serbian_empire = {
+	is_shown = {
+		this = c:YUG
+		NOT = { has_variable = dod_yug_serbian_empire }
+	}
+	possible = {
+		is_at_war = no
+		country_rank >= rank_value:major_power
+	}
+	when_taken = {
+		set_variable = dod_yug_serbian_empire
+		change_infamy = 15
+		every_state = {
+			limit = {
+				state_region = { is_homeland = cu:greek }
+				NOT = { owner = root }
+				any_neighbouring_state = { owner = root }
+			}
+			state_region = { add_claim = root }
+		}
+	}
+	ai_chance = { base = 20 }
+}
+
+# ---------------------------------------------------------------------
+# Macedonia
+# ---------------------------------------------------------------------
+
+dod_mac_restore = {
+	is_shown = {
+		this = c:MAC
+		NOT = { has_variable = dod_mac_greek }
+		NOT = { has_variable = dod_mac_slav }
+	}
+	possible = {
+		is_at_war = no
+		any_scope_state = {
+			count >= 3
+			state_region = { is_homeland = cu:greek }
+		}
+	}
+	when_taken = {
+		set_variable = dod_mac_greek
+		add_primary_culture = cu:greek
+		every_state = {
+			limit = {
+				state_region = { is_homeland = cu:greek }
+				NOT = { owner = root }
+			}
+			state_region = { add_claim = root }
+		}
+	}
+	ai_chance = { base = 60 }
+}
+
+dod_mac_alexander = {
+	is_shown = {
+		this = c:MAC
+		has_variable = dod_mac_greek
+		NOT = { has_variable = dod_mac_alexander }
+	}
+	possible = {
+		is_at_war = no
+		country_rank >= rank_value:great_power
+	}
+	when_taken = {
+		set_variable = dod_mac_alexander
+		change_infamy = 20
+		every_state = {
+			limit = {
+				state_region = { is_homeland = cu:turkish }
+				NOT = { owner = root }
+				any_neighbouring_state = { owner = root }
+			}
+			state_region = { add_claim = root }
+		}
+	}
+	ai_chance = { base = 30 }
+}
+
+dod_mac_align_yugoslavia = {
+	is_shown = {
+		this = c:MAC
+		NOT = { has_variable = dod_mac_greek }
+		NOT = { has_variable = dod_mac_slav }
+	}
+	possible = {
+		is_at_war = no
+		OR = {
+			exists = c:YUG
+			exists = c:SER
+		}
+	}
+	when_taken = {
+		set_variable = dod_mac_slav
+		add_primary_culture = cu:bulgarian
+		every_state = {
+			limit = {
+				state_region = { is_homeland = cu:bulgarian }
+				NOT = { owner = root }
+			}
+			state_region = { add_claim = root }
+		}
+	}
+	ai_chance = { base = 40 }
+}
+
+dod_mac_hegemonia = {
+	is_shown = {
+		this = c:MAC
+		exists = c:GRE
+		NOT = { has_variable = dod_mac_hegemonia }
+	}
+	possible = {
+		is_at_war = no
+		c:GRE = { is_at_war = no }
+	}
+	when_taken = {
+		set_variable = dod_mac_hegemonia
+		create_diplomatic_play = {
+			target_country = c:GRE
+			type = dp_annex_war
+		}
+	}
+	ai_chance = { base = 20 }
+}
+
+# ---------------------------------------------------------------------
+# Romania
+# ---------------------------------------------------------------------
+
+dod_form_romania = {
+	is_shown = {
+		country_has_primary_culture = cu:romanian
+		NOT = { exists = c:ROM }
+	}
+	possible = {
+		is_at_war = no
+		any_scope_state = {
+			count >= 3
+			state_region = { is_homeland = cu:romanian }
+		}
+	}
+	when_taken = {
+		change_tag = ROM
+	}
+	ai_chance = { base = 100 }
+}
+
+dod_unite_with_romania = {
+	is_shown = {
+		country_has_primary_culture = cu:romanian
+		exists = c:ROM
+		NOT = { this = c:ROM }
+	}
+	possible = {
+		is_at_war = no
+		c:ROM = { is_at_war = no }
+	}
+	when_taken = {
+		c:ROM = { annex = root }
+	}
+	ai_chance = { base = 50 }
+}

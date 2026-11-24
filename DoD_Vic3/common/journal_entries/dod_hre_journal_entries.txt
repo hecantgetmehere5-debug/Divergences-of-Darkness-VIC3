@@ -1,0 +1,312 @@
+# Holy Roman Empire storyline: journal entries
+#
+# Flow:
+#   je_dod_prague_proclamation   -> conditions to issue the Proclamation       (dod_hre.1)
+#   je_dod_imperial_diets        -> princes answer, results after 180 days     (dod_hre.20)
+#   je_dod_submission_or_conquest -> bring every remaining prince to heel      (dod_hre.40)
+#   je_dod_bohemian_question     -> only if the Reich is centralised without the Czechs
+#   je_dod_war_for_bohemia       -> after the Bohemian Revolution
+
+je_dod_prague_proclamation = {
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+	group = je_group_historical_content
+
+	is_shown_when_inactive = {
+		this = c:HLR
+	}
+
+	possible = {
+		this = c:HLR
+	}
+
+	complete = {
+		is_at_war = no
+		country_rank >= rank_value:great_power
+		any_country = {
+			dod_is_free_prince = yes
+		}
+	}
+
+	on_complete = {
+		trigger_event = { id = dod_hre.1 }
+	}
+
+	# Wiki: the window to form the Empire closes in the late 1840s.
+	fail = {
+		game_date >= 1849.1.1
+	}
+
+	on_fail = {
+		trigger_event = { id = dod_rail.11 }
+	}
+
+	invalid = {
+		NOT = {
+			any_country = {
+				dod_is_free_prince = yes
+			}
+		}
+	}
+
+	should_be_pinned_by_default = yes
+	weight = 1000
+}
+
+je_dod_imperial_diets = {
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+	group = je_group_historical_content
+
+	immediate = {
+		set_variable = { name = dod_elbe_accept value = 0 }
+		set_variable = { name = dod_elbe_refuse value = 0 }
+		set_variable = { name = dod_rhine_accept value = 0 }
+		set_variable = { name = dod_rhine_refuse value = 0 }
+		set_variable = { name = dod_danube_accept value = 0 }
+		set_variable = { name = dod_danube_refuse value = 0 }
+		set_variable = { name = dod_negotiated value = 0 }
+		set_variable = { name = dod_federations value = 0 }
+	}
+
+	timeout = 180
+
+	on_timeout = {
+		trigger_event = { id = dod_hre.20 }
+	}
+
+	should_be_pinned_by_default = yes
+	weight = 1000
+}
+
+je_dod_submission_or_conquest = {
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+	group = je_group_historical_content
+
+	complete = {
+		is_at_war = no
+		NOT = {
+			any_country = {
+				dod_is_free_prince = yes
+			}
+		}
+	}
+
+	on_complete = {
+		trigger_event = { id = dod_hre.40 }
+	}
+
+	on_monthly_pulse = {
+		random_events = {
+			85 = 0
+			15 = dod_hre.30
+		}
+	}
+
+	timeout = 3650
+
+	on_timeout = {
+		add_modifier = { name = dod_princes_endure months = 120 }
+	}
+
+	should_be_pinned_by_default = yes
+	weight = 1000
+}
+
+je_dod_bohemian_question = {
+	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+	group = je_group_historical_content
+
+	immediate = {
+		set_variable = { name = dod_bohemian_unrest value = 10 }
+	}
+
+	current_value = {
+		value = root.var:dod_bohemian_unrest
+	}
+	goal_add_value = {
+		add = 100
+	}
+	progressbar = yes
+
+	on_monthly_pulse = {
+		effect = {
+			if = {
+				limit = {
+					OR = {
+						has_law = law_type:law_ethnostate
+						has_law = law_type:law_national_supremacy
+					}
+				}
+				change_variable = { name = dod_bohemian_unrest add = 2 }
+			}
+			else_if = {
+				limit = { has_law = law_type:law_cultural_exclusion }
+				change_variable = { name = dod_bohemian_unrest add = 1 }
+			}
+		}
+		random_events = {
+			80 = 0
+			20 = dod_hre.51
+		}
+	}
+
+	complete = {
+		OR = {
+			country_has_primary_culture = cu:czech
+			has_law = law_type:law_multicultural
+		}
+	}
+
+	on_complete = {
+		trigger_event = { id = dod_hre.52 }
+	}
+
+	fail = {
+		var:dod_bohemian_unrest >= 100
+	}
+
+	on_fail = {
+		trigger_event = { id = dod_hre.54 }
+	}
+
+	invalid = {
+		NOT = {
+			any_scope_state = {
+				dod_is_bohemian_state = yes
+			}
+		}
+	}
+
+	should_be_pinned_by_default = yes
+	weight = 1000
+}
+
+je_dod_war_for_bohemia = {
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+	group = je_group_historical_content
+
+	immediate = {
+		set_variable = { name = dod_bohemian_war_grace days = 365 }
+	}
+
+	complete = {
+		NOT = { exists = c:BOH }
+	}
+
+	on_complete = {
+		trigger_event = { id = dod_hre.59 }
+	}
+
+	fail = {
+		exists = c:BOH
+		is_at_war = no
+		NOT = { has_variable = dod_bohemian_war_grace }
+	}
+
+	on_fail = {
+		trigger_event = { id = dod_hre.58 }
+		c:BOH = {
+			trigger_event = { id = dod_hre.60 }
+		}
+	}
+
+	should_be_pinned_by_default = yes
+	weight = 1000
+}
+
+# ---------------------------------------------------------------------
+# Elbian Confederation
+#   je_dod_elbian_unity            -> invite or force Courland, Livonia and Baltenland in
+#   je_dod_elbian_secession_war    -> after the Elbian secession crisis   (vs NGF)
+#   je_dod_bohemian_secession_war  -> after the uprising in Prague        (vs BOH)
+# ---------------------------------------------------------------------
+
+je_dod_elbian_unity = {
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	group = je_group_historical_content
+
+	complete = {
+		is_at_war = no
+		NOT = {
+			any_country = { dod_is_baltic_elbian_country = yes }
+		}
+	}
+
+	on_complete = {
+		set_variable = dod_baltic_integrated
+		trigger_event = { id = dod_elb.15 }
+	}
+
+	on_monthly_pulse = {
+		random_events = {
+			90 = 0
+			10 = dod_elb.10
+		}
+	}
+
+	invalid = {
+		NOT = { this = c:CAE }
+	}
+
+	should_be_pinned_by_default = yes
+	weight = 1000
+}
+
+je_dod_elbian_secession_war = {
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+	group = je_group_historical_content
+
+	immediate = {
+		set_variable = { name = dod_secession_war_grace days = 365 }
+	}
+
+	complete = {
+		NOT = { exists = c:NGF }
+	}
+
+	on_complete = {
+		trigger_event = { id = dod_elb.31 }
+	}
+
+	fail = {
+		exists = c:NGF
+		is_at_war = no
+		NOT = { has_variable = dod_secession_war_grace }
+	}
+
+	on_fail = {
+		trigger_event = { id = dod_elb.32 }
+	}
+
+	should_be_pinned_by_default = yes
+	weight = 1000
+}
+
+je_dod_bohemian_secession_war = {
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+	group = je_group_historical_content
+
+	immediate = {
+		set_variable = { name = dod_secession_war_grace days = 365 }
+	}
+
+	complete = {
+		NOT = { exists = c:BOH }
+	}
+
+	on_complete = {
+		trigger_event = { id = dod_elb.41 }
+	}
+
+	fail = {
+		exists = c:BOH
+		is_at_war = no
+		NOT = { has_variable = dod_secession_war_grace }
+	}
+
+	on_fail = {
+		trigger_event = { id = dod_elb.42 }
+	}
+
+	should_be_pinned_by_default = yes
+	weight = 1000
+}

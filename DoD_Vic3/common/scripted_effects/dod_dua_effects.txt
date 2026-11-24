@@ -1,0 +1,10 @@
+# Dual Monarchy: shift the three Anglois Dilemma meters.
+# Usage: dod_dua_shift = { ENGLISH = 5 FRENCH = -5 ACCEPT = 5 }
+dod_dua_shift = {
+	change_variable = { name = dod_english_unrest add = $ENGLISH$ }
+	change_variable = { name = dod_french_unrest add = $FRENCH$ }
+	change_variable = { name = dod_anglois_acceptance add = $ACCEPT$ }
+	clamp_variable = { name = dod_english_unrest min = 0 max = 100 }
+	clamp_variable = { name = dod_french_unrest min = 0 max = 100 }
+	clamp_variable = { name = dod_anglois_acceptance min = 0 max = 100 }
+}

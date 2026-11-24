@@ -1,0 +1,10 @@
+﻿l_german:
+ gwar_we_win_small_title:0 "Sieg über $TAG_3_0$!"
+ gwar_we_win_small_desc:0 "$STRING_0_0$ endete mit der Niederlage von $TAG_3_0$."
+ gwar_we_lose_large_title:0 "EIN TAG DER SCHANDE.\nFRIEDEN MIT $TAG_2_0_UPPER$ UNTERZEICHNET!"
+ gwar_we_lose_large_desc:0 "Am $DATE_LONG_1$ endete der  Krieg gegen $TAG_2_0$ mit unserer schändlichen Niederlage. Der Krieg, $STRING_0_0$, wütete von $DATE_SHORT_0$ über $STRING_9_0$ und am Ende stand $STRINGS_LIST_4$."
+ gwar_we_lose_medium_title:0 "FRIEDEN MIT $TAG_2_0_UPPER$!"
+ gwar_we_lose_medium_desc:0 "Am $DATE_LONG_1$ endete der Krieg zwischen $TAG_0_0$ und $TAG_1_0$ mit unserem Sieg. Der Krieg, bekannt als $STRING_0_0$, wütete von $DATE_SHORT_0$ über $STRING_9_0$."
+ gwar_we_lose_small_title:0 "Frieden mit $TAG_2_0$"
+ gwar_we_lose_small_desc:0 "$STRING_0_0$ endete mit unserer Niederlage durch $TAG_2_0$"
+ war_we_win_large_title:0 "WAFFENRUHE!\n $TAG_3_0_UPPER$ GIBT AUF"

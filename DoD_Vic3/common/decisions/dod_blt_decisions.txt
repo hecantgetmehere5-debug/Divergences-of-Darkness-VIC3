@@ -1,0 +1,315 @@
+# Baltic, Scandinavia & Poland-Lithuania
+
+dod_abolish_courland = {
+	is_shown = {
+		this = c:SCA
+		exists = c:KRL
+		c:KRL = { is_subject_of = root }
+	}
+	possible = {
+		is_at_war = no
+	}
+	when_taken = {
+		annex = c:KRL
+	}
+	ai_chance = { base = 60 }
+}
+
+dod_annex_kurland = {
+	is_shown = {
+		this = c:SCA
+		exists = c:KRL
+		c:KRL = { NOT = { is_subject_of = root } }
+		NOT = { has_variable = dod_kurland_war }
+	}
+	possible = {
+		is_at_war = no
+		country_rank >= rank_value:great_power
+	}
+	when_taken = {
+		set_variable = dod_kurland_war
+		create_diplomatic_play = {
+			target_country = c:KRL
+			type = dp_annex_war
+		}
+	}
+	ai_chance = { base = 30 }
+}
+
+dod_dominium_maris_baltici = {
+	is_shown = {
+		this = c:SCA
+		NOT = { has_variable = dod_dominium }
+	}
+	possible = {
+		is_at_war = no
+		country_rank >= rank_value:great_power
+	}
+	when_taken = {
+		set_variable = dod_dominium
+		change_infamy = 15
+		add_modifier = { name = dod_baltic_dominion months = 120 }
+		every_state = {
+			limit = {
+				state_region = {
+					OR = {
+					is_homeland = cu:latvian
+					is_homeland = cu:estonian
+					is_homeland = cu:livlandian
+					}
+				}
+				NOT = { owner = root }
+			}
+			state_region = { add_claim = root }
+		}
+	}
+	ai_chance = { base = 50 }
+}
+
+dod_take_lithuania = {
+	is_shown = {
+		this = c:SCA
+		has_variable = dod_dominium
+		NOT = { has_variable = dod_take_lithuania }
+	}
+	possible = {
+		is_at_war = no
+		NOT = {
+			any_state = {
+				state_region = {
+					OR = {
+						is_homeland = cu:latvian
+						is_homeland = cu:estonian
+					}
+				}
+				NOT = { owner = root }
+			}
+		}
+	}
+	when_taken = {
+		set_variable = dod_take_lithuania
+		change_infamy = 10
+		every_state = {
+			limit = {
+				state_region = {
+					OR = {
+					is_homeland = cu:lithuanian
+					}
+				}
+				NOT = { owner = root }
+			}
+			state_region = { add_claim = root }
+		}
+	}
+	ai_chance = { base = 50 }
+}
+
+dod_nordtyskland = {
+	is_shown = {
+		this = c:SCA
+		NOT = { country_has_primary_culture = cu:north_german }
+	}
+	possible = {
+		any_scope_state = {
+			count >= 3
+			state_region = { is_homeland = cu:north_german }
+		}
+	}
+	when_taken = {
+		add_primary_culture = cu:north_german
+	}
+	ai_chance = { base = 100 }
+}
+
+dod_plc_act_of_union = {
+	is_shown = {
+		this = c:PLC
+		NOT = { has_variable = dod_lublin_renewed }
+	}
+	possible = {
+		is_at_war = no
+		NOT = { has_law = law_type:law_autocracy }
+	}
+	when_taken = {
+		set_variable = dod_lublin_renewed
+		add_primary_culture = cu:lithuanian
+		add_modifier = { name = dod_lublin_renewed months = 240 }
+	}
+	ai_chance = { base = 80 }
+}
+
+dod_plc_baltic_peoples = {
+	is_shown = {
+		this = c:PLC
+		has_variable = dod_lublin_renewed
+		NOT = { country_has_primary_culture = cu:latvian }
+	}
+	possible = {
+		any_scope_state = {
+			state_region = {
+				OR = {
+					is_homeland = cu:latvian
+					is_homeland = cu:estonian
+				}
+			}
+		}
+	}
+	when_taken = {
+		add_primary_culture = cu:latvian
+		add_primary_culture = cu:estonian
+	}
+	ai_chance = { base = 100 }
+}
+
+dod_plc_hadiach = {
+	is_shown = {
+		this = c:PLC
+		has_variable = dod_lublin_renewed
+		NOT = { country_has_primary_culture = cu:ruthenian }
+	}
+	possible = {
+		any_scope_state = {
+			state_region = {
+				OR = {
+					is_homeland = cu:ruthenian
+					is_homeland = cu:byelorussian
+				}
+			}
+		}
+	}
+	when_taken = {
+		add_primary_culture = cu:ruthenian
+		add_primary_culture = cu:byelorussian
+	}
+	ai_chance = { base = 100 }
+}
+
+dod_romanian_transnistria = {
+	is_shown = {
+		OR = {
+			this = c:ROM
+			this = c:MOL
+		}
+		NOT = { has_variable = dod_transnistria }
+	}
+	possible = {
+		is_at_war = no
+		country_rank >= rank_value:major_power
+	}
+	when_taken = {
+		set_variable = dod_transnistria
+		change_infamy = 10
+		every_state = {
+			limit = {
+				state_region = {
+					OR = {
+					is_homeland = cu:romanian
+					}
+				}
+				NOT = { owner = root }
+			}
+			state_region = { add_claim = root }
+		}
+	}
+	ai_chance = { base = 50 }
+}
+
+dod_rus_cossacks = {
+	is_shown = {
+		this = c:RUS
+		exists = c:UKR
+		exists = c:PLC
+		c:UKR = { is_subject_of = c:PLC }
+		NOT = { has_variable = dod_rus_cossacks }
+	}
+	possible = {
+		is_at_war = no
+		country_rank >= rank_value:great_power
+	}
+	when_taken = {
+		set_variable = dod_rus_cossacks
+		c:UKR = { trigger_event = { id = dod_blt.3 days = 7 } }
+	}
+	ai_chance = { base = 50 }
+}
+
+dod_rus_annex_ruthenia = {
+	is_shown = {
+		this = c:RUS
+		any_country = {
+			OR = {
+				this = c:UKR
+				this = c:RUT
+			}
+			is_subject_of = root
+		}
+	}
+	possible = {
+		is_at_war = no
+	}
+	when_taken = {
+		every_country = {
+			limit = {
+				OR = {
+					this = c:UKR
+					this = c:RUT
+				}
+				is_subject_of = root
+			}
+			root = { annex = prev }
+		}
+		add_primary_culture = cu:ruthenian
+	}
+	ai_chance = { base = 60 }
+}
+
+dod_livonian_confederation = {
+	is_shown = {
+		this = c:LAT
+		NOT = { country_has_primary_culture = cu:estonian }
+	}
+	possible = {
+		is_at_war = no
+		any_scope_state = { state_region = { is_homeland = cu:estonian } }
+		any_scope_state = { state_region = { is_homeland = cu:latvian } }
+	}
+	when_taken = {
+		add_primary_culture = cu:estonian
+		add_primary_culture = cu:latvian
+		add_primary_culture = cu:livlandian
+	}
+	ai_chance = { base = 100 }
+}
+
+dod_reform_grand_duchy = {
+	is_shown = {
+		this = c:LIT
+		NOT = { has_variable = dod_grand_duchy }
+	}
+	possible = {
+		is_at_war = no
+		OR = {
+			NOT = { exists = c:PLC }
+			c:PLC = { country_rank < rank_value:great_power }
+		}
+		any_scope_state = { state_region = { is_homeland = cu:byelorussian } }
+	}
+	when_taken = {
+		set_variable = dod_grand_duchy
+		add_primary_culture = cu:byelorussian
+		add_modifier = { name = dod_grand_duchy_reformed months = 120 }
+		every_state = {
+			limit = {
+				state_region = {
+					OR = {
+					is_homeland = cu:lithuanian
+					is_homeland = cu:byelorussian
+					}
+				}
+				NOT = { owner = root }
+			}
+			state_region = { add_claim = root }
+		}
+	}
+	ai_chance = { base = 80 }
+}

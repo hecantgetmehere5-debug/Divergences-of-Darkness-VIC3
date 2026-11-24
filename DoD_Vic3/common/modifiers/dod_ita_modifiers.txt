@@ -1,0 +1,100 @@
+# Italy, Aragon-Italy & Venice-Greece: modifiers
+
+dod_italy_united = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
+	country_prestige_add = 50
+	country_legitimacy_base_add = 10
+}
+
+dod_council_failed = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds"
+	country_prestige_add = -20
+}
+
+dod_carbonari_crackdown = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_fist_negative.dds"
+	interest_group_approval_add = -2
+}
+
+dod_carbonari_concessions = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_scroll_positive.dds"
+	country_legitimacy_base_add = -5
+	country_authority_add = -25
+}
+
+dod_regional_investment = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_scroll_positive.dds"
+	country_legitimacy_base_add = 5
+	state_construction_mult = -0.1
+}
+
+dod_regional_neglect = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds"
+	country_legitimacy_base_add = -5
+}
+
+dod_house_of_rome_falls = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds"
+	country_prestige_add = -40
+}
+
+dod_aragon_ascendant = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
+	country_prestige_add = 40
+	country_authority_add = 50
+}
+
+dod_flight_into_exile = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds"
+	country_prestige_add = -10
+}
+
+dod_greek_rebellion_crushed = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
+	country_prestige_add = 20
+}
+
+dod_greece_lost = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds"
+	country_prestige_add = -25
+}
+
+dod_greek_mobilisation = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
+	unit_offense_mult = 0.1
+	unit_defense_mult = 0.15
+}
+
+dod_burgundian_loan = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_scroll_positive.dds"
+	unit_defense_mult = 0.05
+	country_legitimacy_base_add = 5
+}
+
+dod_venice_biennale = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_book_positive.dds"
+	country_prestige_add = 25
+}
+
+dod_venice_1500 = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
+	country_prestige_add = 15
+	country_legitimacy_base_add = 5
+}
+
+dod_scuola_commercio = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_book_positive.dds"
+	country_prestige_add = 5
+	country_legitimacy_base_add = 5
+}
+
+dod_enosis = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
+	country_prestige_add = 30
+	country_legitimacy_base_add = 10
+}
+
+dod_transalpina = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
+	country_prestige_add = 50
+}

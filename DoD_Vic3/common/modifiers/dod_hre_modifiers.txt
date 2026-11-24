@@ -1,0 +1,97 @@
+# Holy Roman Empire storyline: modifiers
+
+dod_imperial_guarantees = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_scroll_positive.dds"
+	country_authority_add = -50
+	country_legitimacy_base_add = 5
+}
+
+dod_imperial_hegemony = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
+	country_prestige_add = 50
+	country_authority_add = 100
+}
+
+dod_federal_reich = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_scroll_positive.dds"
+	country_legitimacy_base_add = 10
+	country_prestige_add = 25
+}
+
+dod_princes_endure = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds"
+	country_prestige_add = -25
+	country_legitimacy_base_add = -5
+}
+
+dod_bohemian_crackdown = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_fist_negative.dds"
+	interest_group_approval_add = -2
+}
+
+dod_bohemian_mobilisation = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
+	unit_offense_mult = 0.1
+	unit_defense_mult = 0.15
+}
+
+dod_revolution_crushed = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
+	country_prestige_add = 50
+}
+
+dod_prague_lost = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds"
+	country_prestige_add = -40
+}
+
+dod_bohemian_victory = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
+	country_prestige_add = 50
+	country_legitimacy_base_add = 10
+}
+
+dod_bohemian_rhapsody = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_book_positive.dds"
+	country_prestige_add = 10
+}
+
+dod_imperial_jubilee = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
+	country_prestige_add = 30
+	country_legitimacy_base_add = 10
+}
+
+# Elbian Confederation
+dod_elbian_confederation_founded = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_scroll_positive.dds"
+	country_legitimacy_base_add = 10
+	country_prestige_add = 25
+}
+
+dod_colonial_humiliation = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds"
+	country_prestige_add = -5
+}
+
+dod_brothers_spared = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds"
+	country_prestige_add = -50
+}
+
+dod_baltic_betrayal = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds"
+	country_prestige_add = -25
+}
+
+dod_elbian_union_restored = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
+	country_prestige_add = 30
+	country_authority_add = 50
+}
+
+dod_grasp_all_lose_all = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds"
+	country_prestige_add = -50
+	country_legitimacy_base_add = -10
+}

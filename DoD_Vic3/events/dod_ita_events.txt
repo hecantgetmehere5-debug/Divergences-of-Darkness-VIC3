@@ -1,0 +1,2060 @@
+namespace = dod_ita
+
+dod_ita.2 = {
+	type = country_event
+	placement = root
+	title = dod_ita.2.t
+	desc = dod_ita.2.d
+	flavor = dod_ita.2.f
+	event_image = { texture = "gfx/event_pictures/dod/speech_assembly.dds" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+	duration = 3
+
+	trigger = {
+		has_journal_entry = je_dod_council_of_italy
+		NOT = { has_variable = dod_ita_seen_2 }
+	}
+
+	immediate = {
+		set_variable = dod_ita_seen_2
+	}
+
+	option = {
+		name = dod_ita.2.a
+		default_option = yes
+		change_variable = { name = dod_unification_support add = -2 }
+	}
+}
+
+dod_ita.3 = {
+	type = country_event
+	placement = root
+	title = dod_ita.3.t
+	desc = dod_ita.3.d
+	flavor = dod_ita.3.f
+	event_image = { video = "unspecific_politicians_arguing" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+	duration = 3
+
+	trigger = {
+		has_journal_entry = je_dod_council_of_italy
+		NOT = { has_variable = dod_ita_seen_3 }
+	}
+
+	immediate = {
+		set_variable = dod_ita_seen_3
+	}
+
+	option = {
+		name = dod_ita.3.a
+		default_option = yes
+		change_variable = { name = dod_unification_support add = 2 }
+	}
+}
+
+dod_ita.4 = {
+	type = country_event
+	placement = root
+	title = dod_ita.4.t
+	desc = dod_ita.4.d
+	flavor = dod_ita.4.f
+	event_image = { texture = "gfx/event_pictures/dod/pope_approval.dds" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	trigger = {
+		has_journal_entry = je_dod_council_of_italy
+		NOT = { has_variable = dod_ita_pope }
+	}
+
+	immediate = {
+		set_variable = dod_ita_pope
+	}
+
+	option = {
+		name = dod_ita.4.a
+		default_option = yes
+		change_variable = { name = dod_unification_support add = 3 }
+	}
+}
+
+dod_ita.5 = {
+	type = country_event
+	placement = root
+	title = dod_ita.5.t
+	desc = dod_ita.5.d
+	flavor = dod_ita.5.f
+	event_image = { video = "unspecific_politicians_arguing" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	trigger = {
+		has_journal_entry = je_dod_council_of_italy
+		NOT = { has_variable = dod_ita_pope }
+	}
+
+	immediate = {
+		set_variable = dod_ita_pope
+	}
+
+	option = {
+		name = dod_ita.5.a
+		default_option = yes
+		change_variable = { name = dod_unification_support add = -3 }
+	}
+}
+
+dod_ita.6 = {
+	type = country_event
+	placement = root
+	title = dod_ita.6.t
+	desc = dod_ita.6.d
+	flavor = dod_ita.6.f
+	event_image = { video = "unspecific_politicians_arguing" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+	duration = 3
+
+	trigger = {
+		has_journal_entry = je_dod_council_of_italy
+		country_rank >= rank_value:great_power
+		NOT = { has_variable = dod_ita_seen_6 }
+	}
+
+	immediate = {
+		set_variable = dod_ita_seen_6
+	}
+
+	option = {
+		name = dod_ita.6.a
+		default_option = yes
+		change_variable = { name = dod_unification_support add = 3 }
+	}
+}
+
+dod_ita.7 = {
+	type = country_event
+	placement = root
+	title = dod_ita.7.t
+	desc = dod_ita.7.d
+	flavor = dod_ita.7.f
+	event_image = { video = "unspecific_politicians_arguing" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+	duration = 3
+
+	trigger = {
+		has_journal_entry = je_dod_council_of_italy
+		country_rank < rank_value:great_power
+		NOT = { has_variable = dod_ita_seen_7 }
+	}
+
+	immediate = {
+		set_variable = dod_ita_seen_7
+	}
+
+	option = {
+		name = dod_ita.7.a
+		default_option = yes
+		change_variable = { name = dod_unification_support add = -2 }
+	}
+}
+
+dod_ita.8 = {
+	type = country_event
+	placement = root
+	title = dod_ita.8.t
+	desc = dod_ita.8.d
+	flavor = dod_ita.8.f
+	event_image = { video = "unspecific_politicians_arguing" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+	duration = 3
+
+	trigger = {
+		has_journal_entry = je_dod_council_of_italy
+		exists = c:DUA
+		c:DUA = { country_rank >= rank_value:great_power }
+		NOT = { has_variable = dod_ita_seen_8 }
+	}
+
+	immediate = {
+		set_variable = dod_ita_seen_8
+	}
+
+	option = {
+		name = dod_ita.8.a
+		default_option = yes
+		change_variable = { name = dod_unification_support add = -2 }
+	}
+}
+
+dod_ita.9 = {
+	type = country_event
+	placement = root
+	title = dod_ita.9.t
+	desc = dod_ita.9.d
+	flavor = dod_ita.9.f
+	event_image = { video = "unspecific_politicians_arguing" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	duration = 3
+
+	trigger = {
+		has_journal_entry = je_dod_council_of_italy
+		any_scope_state = {
+			count >= 4
+			dod_is_italian_state = yes
+		}
+		NOT = { has_variable = dod_ita_seen_9 }
+	}
+
+	immediate = {
+		set_variable = dod_ita_seen_9
+	}
+
+	option = {
+		name = dod_ita.9.a
+		default_option = yes
+		change_variable = { name = dod_unification_support add = 2 }
+	}
+}
+
+dod_ita.10 = {
+	type = country_event
+	placement = root
+	title = dod_ita.10.t
+	desc = dod_ita.10.d
+	flavor = dod_ita.10.f
+	event_image = { video = "unspecific_politicians_arguing" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+	duration = 3
+
+	trigger = {
+		dod_is_council_guest = yes
+	}
+
+	option = {
+		name = dod_ita.10.a
+		default_option = yes
+		set_variable = dod_council_yes
+		global_var:dod_council_host = {
+			change_variable = { name = dod_unification_support add = 2 }
+		}
+		ai_chance = { base = 40
+		modifier = {
+			trigger = { dod_is_republic = yes }
+			add = 30
+		} }
+	}
+
+	option = {
+		name = dod_ita.10.b
+		global_var:dod_council_host = {
+			change_variable = { name = dod_unification_support add = -1 }
+		}
+		ai_chance = { base = 40
+		modifier = {
+			trigger = { country_rank >= rank_value:major_power }
+			add = 30
+		} }
+	}
+}
+
+dod_ita.15 = {
+	type = country_event
+	placement = root
+	title = dod_ita.15.t
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				desc = dod_ita.15.d_success
+				trigger = { var:dod_unification_support >= 10 }
+			}
+			triggered_desc = {
+				desc = dod_ita.15.d_partial
+				trigger = { var:dod_unification_support >= 4 }
+			}
+			triggered_desc = {
+				desc = dod_ita.15.d_failure
+			}
+		}
+	}
+	flavor = dod_ita.15.f
+	event_image = { video = "europenorthamerica_springtime_of_nations" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+	duration = 3
+
+	option = {
+		name = dod_ita.15.a
+		default_option = yes
+		if = {
+			limit = { var:dod_unification_support >= 10 }
+			every_country = {
+				limit = {
+					has_variable = dod_council_yes
+					dod_is_italian_country = yes
+				}
+				root = { annex = prev }
+			}
+			if = {
+				limit = { NOT = { exists = c:ITA } }
+				change_tag = ITA
+			}
+			add_modifier = { name = dod_italy_united months = 120 }
+			every_country = {
+				limit = {
+					dod_is_italian_country = yes
+					NOT = { this = root }
+					NOT = { is_subject_of = root }
+				}
+				trigger_event = { id = dod_ita.16 days = 14 }
+			}
+		}
+		else_if = {
+			limit = { var:dod_unification_support >= 4 }
+			every_country = {
+				limit = {
+					has_variable = dod_council_yes
+					dod_is_italian_country = yes
+				}
+				root = { annex = prev }
+			}
+		}
+		else = {
+			add_modifier = { name = dod_council_failed months = 60 }
+		}
+		every_country = {
+			limit = { has_variable = dod_council_yes }
+			remove_variable = dod_council_yes
+		}
+		remove_global_variable = dod_council_host
+	}
+}
+
+dod_ita.16 = {
+	type = country_event
+	placement = root
+	title = dod_ita.16.t
+	desc = dod_ita.16.d
+	flavor = dod_ita.16.f
+	event_image = { video = "unspecific_politicians_arguing" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+	duration = 3
+
+	trigger = {
+		exists = c:ITA
+		NOT = { this = c:ITA }
+	}
+
+	option = {
+		name = dod_ita.16.a
+		default_option = yes
+		c:ITA = { annex = root }
+		ai_chance = { base = 60 }
+	}
+
+	option = {
+		name = dod_ita.16.b
+		c:ITA = {
+			set_variable = { name = dod_italian_holdout value = root }
+			trigger_event = { id = dod_ita.17 days = 3 }
+		}
+		ai_chance = { base = 40 }
+	}
+}
+
+dod_ita.17 = {
+	type = country_event
+	placement = root
+	title = dod_ita.17.t
+	desc = dod_ita.17.d
+	flavor = dod_ita.17.f
+	event_image = { video = "unspecific_military_parade" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+	duration = 3
+
+	trigger = {
+		has_variable = dod_italian_holdout
+		var:dod_italian_holdout = { exists = this }
+	}
+
+	option = {
+		name = dod_ita.17.a
+		default_option = yes
+		create_diplomatic_play = {
+			target_country = var:dod_italian_holdout
+			type = dp_annex_war
+		}
+		remove_variable = dod_italian_holdout
+		ai_chance = { base = 70 }
+	}
+
+	option = {
+		name = dod_ita.17.b
+		remove_variable = dod_italian_holdout
+		ai_chance = { base = 30 }
+	}
+}
+
+dod_ita.20 = {
+	type = country_event
+	placement = root
+	title = dod_ita.20.t
+	desc = dod_ita.20.d
+	flavor = dod_ita.20.f
+	event_image = { texture = "gfx/event_pictures/dod/carbonari.dds" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+	duration = 3
+
+	trigger = {
+		this = c:TUS
+		dod_is_republic = yes
+		game_date >= 1840.1.1
+		NOT = { has_variable = dod_ita_seen_20 }
+	}
+
+	immediate = {
+		set_variable = dod_ita_seen_20
+	}
+
+	option = {
+		name = dod_ita.20.a
+		default_option = yes
+		every_country = {
+			limit = {
+				dod_is_italian_country = yes
+				NOT = { dod_is_republic = yes }
+			}
+			trigger_event = { id = dod_ita.21 days = { 30 180 } }
+		}
+		ai_chance = { base = 65 }
+	}
+
+	option = {
+		name = dod_ita.20.b
+		ai_chance = { base = 35 }
+	}
+}
+
+dod_ita.21 = {
+	type = country_event
+	placement = root
+	title = dod_ita.21.t
+	desc = dod_ita.21.d
+	flavor = dod_ita.21.f
+	event_image = { texture = "gfx/event_pictures/dod/carbonari.dds" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+	duration = 3
+
+	option = {
+		name = dod_ita.21.a
+		default_option = yes
+		ig:ig_intelligentsia = { add_modifier = { name = dod_carbonari_crackdown months = 36 } }
+		ai_chance = { base = 60 }
+	}
+
+	option = {
+		name = dod_ita.21.b
+		add_modifier = { name = dod_carbonari_concessions months = 60 }
+		ai_chance = { base = 40 }
+	}
+}
+
+dod_ita.22 = {
+	type = country_event
+	placement = root
+	title = dod_ita.22.t
+	desc = dod_ita.22.d
+	flavor = dod_ita.22.f
+	event_image = { texture = "gfx/event_pictures/dod/doria.dds" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	trigger = {
+		this = c:TUS
+		dod_is_republic = yes
+		exists = c:GEN
+		c:GEN = { NOT = { dod_is_republic = yes } }
+		NOT = { has_variable = dod_ita_seen_22 }
+	}
+
+	immediate = {
+		set_variable = dod_ita_seen_22
+	}
+
+	option = {
+		name = dod_ita.22.a
+		default_option = yes
+		c:GEN = { trigger_event = { id = dod_ita.23 days = 30 } }
+	}
+}
+
+dod_ita.23 = {
+	type = country_event
+	placement = root
+	title = dod_ita.23.t
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				desc = dod_ita.23.d_win
+				trigger = { has_variable = dod_doria_wins }
+			}
+			triggered_desc = {
+				desc = dod_ita.23.d_lose
+			}
+		}
+	}
+	flavor = dod_ita.23.f
+	event_image = { texture = "gfx/event_pictures/dod/genova.dds" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+	duration = 3
+
+	immediate = {
+		random_list = {
+			50 = { set_variable = dod_doria_wins }
+			50 = { }
+		}
+	}
+
+	option = {
+		name = dod_ita.23.a
+		default_option = yes
+		if = {
+			limit = { has_variable = dod_doria_wins }
+			activate_law = law_type:law_parliamentary_republic
+			c:TUS ?= { create_diplomatic_pact = { country = root type = alliance } }
+		}
+		remove_variable = dod_doria_wins
+	}
+}
+
+dod_ita.24 = {
+	type = country_event
+	placement = root
+	title = dod_ita.24.t
+	desc = dod_ita.24.d
+	flavor = dod_ita.24.f
+	event_image = { texture = "gfx/event_pictures/dod/parthenopea.dds" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	trigger = {
+		this = c:TUS
+		dod_is_republic = yes
+		exists = c:ARA
+		c:ARA = { any_scope_state = { dod_is_south_italian_state = yes } }
+		NOT = { has_variable = dod_ita_seen_24 }
+	}
+
+	immediate = {
+		set_variable = dod_ita_seen_24
+	}
+
+	option = {
+		name = dod_ita.24.a
+		default_option = yes
+		c:ARA = { trigger_event = { id = dod_ita.25 days = 30 } }
+	}
+}
+
+dod_ita.25 = {
+	type = country_event
+	placement = root
+	title = dod_ita.25.t
+	desc = dod_ita.25.d
+	flavor = dod_ita.25.f
+	event_image = { texture = "gfx/event_pictures/dod/parthenopea.dds" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+	duration = 3
+
+	option = {
+		name = dod_ita.25.a
+		default_option = yes
+		set_variable = dod_etrurian_threat
+		ig:ig_intelligentsia = { add_modifier = { name = dod_carbonari_crackdown months = 24 } }
+		ai_chance = { base = 70 }
+	}
+
+	option = {
+		name = dod_ita.25.b
+		ai_chance = { base = 30 }
+	}
+}
+
+dod_ita.26 = {
+	type = country_event
+	placement = root
+	title = dod_ita.26.t
+	desc = dod_ita.26.d
+	flavor = dod_ita.26.f
+	event_image = { texture = "gfx/event_pictures/dod/parthenopea.dds" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+	duration = 3
+
+	trigger = {
+		this = c:ARA
+		has_variable = dod_etrurian_threat
+		is_at_war = no
+		exists = c:TUS
+		c:TUS = { dod_is_republic = yes }
+	}
+
+	immediate = {
+		remove_variable = dod_etrurian_threat
+	}
+
+	option = {
+		name = dod_ita.26.a
+		default_option = yes
+		create_diplomatic_play = {
+			target_country = c:TUS
+			type = dp_annex_war
+		}
+		ai_chance = { base = 80 }
+	}
+
+	option = {
+		name = dod_ita.26.b
+		ai_chance = { base = 20 }
+	}
+}
+
+dod_ita.30 = {
+	type = country_event
+	placement = root
+	title = dod_ita.30.t
+	desc = dod_ita.30.d
+	flavor = dod_ita.30.f
+	event_image = { texture = "gfx/event_pictures/dod/risorgimento.dds" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	trigger = {
+		this = c:ITA
+		NOT = { has_variable = dod_ita_seen_30 }
+	}
+
+	immediate = {
+		set_variable = dod_ita_seen_30
+	}
+
+	option = {
+		name = dod_ita.30.a
+		default_option = yes
+		add_primary_culture = cu:north_italian
+		add_primary_culture = cu:south_italian
+		add_modifier = { name = dod_italy_united months = 120 }
+	}
+}
+
+dod_ita.31 = {
+	type = country_event
+	placement = root
+	title = dod_ita.31.t
+	desc = dod_ita.31.d
+	flavor = dod_ita.31.f
+	event_image = { texture = "gfx/event_pictures/dod/Italian_immigration.dds" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+	duration = 3
+
+	trigger = {
+		this = c:ITA
+		game_date >= 1865.1.1
+		any_scope_state = { dod_is_south_italian_state = yes }
+		NOT = { has_variable = dod_ita_seen_31 }
+	}
+
+	immediate = {
+		set_variable = dod_ita_seen_31
+	}
+
+	option = {
+		name = dod_ita.31.a
+		default_option = yes
+		add_modifier = { name = dod_regional_investment months = 120 }
+		ai_chance = { base = 40 }
+	}
+
+	option = {
+		name = dod_ita.31.b
+		ai_chance = { base = 40 }
+	}
+
+	option = {
+		name = dod_ita.31.c
+		add_modifier = { name = dod_regional_neglect months = 60 }
+		ai_chance = { base = 20 }
+	}
+}
+
+dod_ita.32 = {
+	type = country_event
+	placement = root
+	title = dod_ita.32.t
+	desc = dod_ita.32.d
+	flavor = dod_ita.32.f
+	event_image = { texture = "gfx/event_pictures/dod/Italian_immigration.dds" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+	duration = 3
+
+	trigger = {
+		this = c:ITA
+		game_date >= 1870.1.1
+		NOT = { has_variable = dod_ita_seen_32 }
+	}
+
+	immediate = {
+		set_variable = dod_ita_seen_32
+	}
+
+	option = {
+		name = dod_ita.32.a
+		default_option = yes
+		add_modifier = { name = dod_regional_investment months = 120 }
+		ai_chance = { base = 40 }
+	}
+
+	option = {
+		name = dod_ita.32.b
+		ai_chance = { base = 40 }
+	}
+
+	option = {
+		name = dod_ita.32.c
+		add_modifier = { name = dod_regional_neglect months = 60 }
+		ai_chance = { base = 20 }
+	}
+}
+
+dod_ita.33 = {
+	type = country_event
+	placement = root
+	title = dod_ita.33.t
+	desc = dod_ita.33.d
+	flavor = dod_ita.33.f
+	event_image = { texture = "gfx/event_pictures/dod/Italian_immigration.dds" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+	duration = 3
+
+	trigger = {
+		this = c:ITA
+		NOT = { country_has_primary_culture = cu:venetian }
+		any_scope_state = { dod_is_venetian_state = yes }
+		NOT = { has_variable = dod_ita_seen_33 }
+	}
+
+	immediate = {
+		set_variable = dod_ita_seen_33
+	}
+
+	option = {
+		name = dod_ita.33.a
+		default_option = yes
+		add_primary_culture = cu:venetian
+		ai_chance = { base = 40 }
+	}
+
+	option = {
+		name = dod_ita.33.b
+		ai_chance = { base = 40 }
+	}
+
+	option = {
+		name = dod_ita.33.c
+		add_modifier = { name = dod_regional_neglect months = 60 }
+		ai_chance = { base = 20 }
+	}
+}
+
+dod_ita.34 = {
+	type = country_event
+	placement = root
+	title = dod_ita.34.t
+	desc = dod_ita.34.d
+	flavor = dod_ita.34.f
+	event_image = { video = "unspecific_politicians_arguing" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	duration = 3
+
+	trigger = {
+		this = c:ITA
+		NOT = { exists = c:GRE }
+		any_scope_state = { dod_is_greek_state = yes }
+		NOT = { has_variable = dod_ita_seen_34 }
+	}
+
+	immediate = {
+		set_variable = dod_ita_seen_34
+	}
+
+	option = {
+		name = dod_ita.34.a
+		default_option = yes
+		dod_release_homeland = { TAG = GRE CULTURE = greek }
+		if = {
+			limit = { exists = c:GRE }
+			create_diplomatic_pact = { country = c:GRE type = puppet }
+		}
+		ai_chance = { base = 40 }
+	}
+
+	option = {
+		name = dod_ita.34.b
+		ai_chance = { base = 40 }
+	}
+
+	option = {
+		name = dod_ita.34.c
+		change_infamy = 10
+		ai_chance = { base = 20 }
+	}
+}
+
+dod_ita.35 = {
+	type = country_event
+	placement = root
+	title = dod_ita.35.t
+	desc = dod_ita.35.d
+	flavor = dod_ita.35.f
+	event_image = { video = "unspecific_politicians_arguing" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	duration = 3
+
+	trigger = {
+		this = c:ITA
+		country_rank >= rank_value:great_power
+		is_at_war = no
+		exists = c:ALB
+		NOT = { has_variable = dod_ita_seen_35 }
+	}
+
+	immediate = {
+		set_variable = dod_ita_seen_35
+	}
+
+	option = {
+		name = dod_ita.35.a
+		default_option = yes
+		c:ALB = { trigger_event = { id = dod_ita.36 days = 14 } }
+		ai_chance = { base = 70 }
+	}
+
+	option = {
+		name = dod_ita.35.b
+		ai_chance = { base = 30 }
+	}
+}
+
+dod_ita.36 = {
+	type = country_event
+	placement = root
+	title = dod_ita.36.t
+	desc = dod_ita.36.d
+	flavor = dod_ita.36.f
+	event_image = { video = "unspecific_politicians_arguing" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	duration = 3
+
+	option = {
+		name = dod_ita.36.a
+		default_option = yes
+		c:ITA = { create_diplomatic_pact = { country = root type = protectorate } }
+		ai_chance = { base = 40 }
+	}
+
+	option = {
+		name = dod_ita.36.b
+		c:ITA = { trigger_event = { id = dod_ita.37 days = 7 } }
+		ai_chance = { base = 60 }
+	}
+}
+
+dod_ita.37 = {
+	type = country_event
+	placement = root
+	title = dod_ita.37.t
+	desc = dod_ita.37.d
+	flavor = dod_ita.37.f
+	event_image = { video = "unspecific_military_parade" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+	duration = 3
+
+	option = {
+		name = dod_ita.37.a
+		default_option = yes
+		change_infamy = 10
+		create_diplomatic_play = {
+			target_country = c:ALB
+			type = dp_make_protectorate
+		}
+		ai_chance = { base = 50 }
+	}
+
+	option = {
+		name = dod_ita.37.b
+		ai_chance = { base = 50 }
+	}
+}
+
+dod_ita.40 = {
+	type = country_event
+	placement = root
+	title = dod_ita.40.t
+	desc = dod_ita.40.d
+	flavor = dod_ita.40.f
+	event_image = { texture = "gfx/event_pictures/dod/rome_ossolinski.dds" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+	duration = 3
+
+	option = {
+		name = dod_ita.40.a
+		default_option = yes
+		change_relations = { country = c:ARI value = -30 }
+	}
+}
+
+dod_ita.41 = {
+	type = country_event
+	placement = root
+	title = dod_ita.41.t
+	desc = dod_ita.41.d
+	flavor = dod_ita.41.f
+	event_image = { video = "europenorthamerica_springtime_of_nations" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+	duration = 3
+
+	trigger = {
+		this = c:ARI
+	}
+
+	immediate = {
+		if = {
+			limit = {
+				exists = c:LOM
+				c:LOM = { is_subject_of = root }
+			}
+			annex = c:LOM
+		}
+		dod_release_homeland = { TAG = LOM CULTURE = north_italian }
+		c:LOM ?= { activate_law = law_type:law_parliamentary_republic }
+	}
+
+	option = {
+		name = dod_ita.41.a
+		default_option = yes
+		set_variable = dod_war_over_italy
+		if = {
+			limit = { exists = c:LOM }
+			create_diplomatic_play = {
+				target_country = c:LOM
+				type = dp_annex_war
+			}
+		}
+		ai_chance = { base = 90 }
+	}
+
+	option = {
+		name = dod_ita.41.b
+		add_modifier = { name = dod_house_of_rome_falls months = 120 }
+		ai_chance = { base = 10 }
+	}
+}
+
+dod_ita.42 = {
+	type = country_event
+	placement = root
+	title = dod_ita.42.t
+	desc = dod_ita.42.d
+	flavor = dod_ita.42.f
+	event_image = { video = "europenorthamerica_political_extremism" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+	duration = 3
+
+	trigger = {
+		this = c:ARI
+		has_variable = dod_war_over_italy
+		is_at_war = no
+		exists = c:LOM
+	}
+
+	immediate = {
+		remove_variable = dod_war_over_italy
+	}
+
+	option = {
+		name = dod_ita.42.a
+		default_option = yes
+		add_modifier = { name = dod_house_of_rome_falls months = 120 }
+	}
+}
+
+dod_ita.43 = {
+	type = country_event
+	placement = root
+	title = dod_ita.43.t
+	desc = dod_ita.43.d
+	flavor = dod_ita.43.f
+	event_image = { video = "unspecific_military_parade" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+	duration = 3
+
+	trigger = {
+		this = c:ARI
+		has_variable = dod_war_over_italy
+		is_at_war = no
+		NOT = { exists = c:LOM }
+	}
+
+	immediate = {
+		remove_variable = dod_war_over_italy
+	}
+
+	option = {
+		name = dod_ita.43.a
+		default_option = yes
+		add_primary_culture = cu:north_italian
+		add_modifier = { name = dod_aragon_ascendant months = 120 }
+	}
+}
+
+dod_ita.44 = {
+	type = country_event
+	placement = root
+	title = dod_ita.44.t
+	desc = dod_ita.44.d
+	flavor = dod_ita.44.f
+	event_image = { video = "unspecific_politicians_arguing" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	duration = 3
+
+	option = {
+		name = dod_ita.44.a
+		default_option = yes
+	}
+}
+
+dod_ita.45 = {
+	type = country_event
+	placement = root
+	title = dod_ita.45.t
+	desc = dod_ita.45.d
+	flavor = dod_ita.45.f
+	event_image = { texture = "gfx/event_pictures/dod/ARA_TUN.dds" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	duration = 3
+
+	trigger = {
+		OR = {
+			this = c:ARA
+			this = c:ARI
+		}
+		game_date >= 1860.1.1
+		country_rank >= rank_value:great_power
+		is_at_war = no
+		exists = c:TUN
+		c:TUN = { is_country_type = unrecognized }
+		NOT = { has_variable = dod_ita_seen_45 }
+	}
+
+	immediate = {
+		set_variable = dod_ita_seen_45
+	}
+
+	option = {
+		name = dod_ita.45.a
+		default_option = yes
+		change_infamy = 5
+		c:TUN = {
+			set_variable = { name = dod_aragon_sender value = root }
+			trigger_event = { id = dod_ita.46 days = 7 }
+		}
+		ai_chance = { base = 70 }
+	}
+
+	option = {
+		name = dod_ita.45.b
+		ai_chance = { base = 30 }
+	}
+}
+
+dod_ita.46 = {
+	type = country_event
+	placement = root
+	title = dod_ita.46.t
+	desc = dod_ita.46.d
+	flavor = dod_ita.46.f
+	event_image = { video = "unspecific_politicians_arguing" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	duration = 3
+
+	option = {
+		name = dod_ita.46.a
+		default_option = yes
+		var:dod_aragon_sender = { trigger_event = { id = dod_ita.47 days = 3 } }
+		ai_chance = { base = 70 }
+	}
+
+	option = {
+		name = dod_ita.46.b
+		var:dod_aragon_sender = { annex = root }
+		ai_chance = { base = 30 }
+	}
+}
+
+dod_ita.47 = {
+	type = country_event
+	placement = root
+	title = dod_ita.47.t
+	desc = dod_ita.47.d
+	flavor = dod_ita.47.f
+	event_image = { texture = "gfx/event_pictures/dod/ARA_TUN.dds" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+	duration = 3
+
+	option = {
+		name = dod_ita.47.a
+		default_option = yes
+		create_diplomatic_play = {
+			target_country = c:TUN
+			type = dp_make_protectorate
+		}
+	}
+}
+
+dod_ita.48 = {
+	type = country_event
+	placement = root
+	title = dod_ita.48.t
+	desc = dod_ita.48.d
+	flavor = dod_ita.48.f
+	event_image = { texture = "gfx/event_pictures/dod/speech_assembly.dds" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+	duration = 3
+
+	trigger = {
+		OR = {
+			this = c:ARA
+			this = c:ARI
+		}
+		country_rank >= rank_value:great_power
+		is_at_war = no
+		NOT = { country_has_primary_culture = cu:basque }
+		any_scope_state = { state_region = { is_homeland = cu:basque } }
+	}
+
+	option = {
+		name = dod_ita.48.a
+		default_option = yes
+		add_primary_culture = cu:basque
+	}
+}
+
+dod_ita.49 = {
+	type = country_event
+	placement = root
+	title = dod_ita.49.t
+	desc = dod_ita.49.d
+	flavor = dod_ita.49.f
+	event_image = { texture = "gfx/event_pictures/dod/napols.dds" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	trigger = {
+		this = c:ARA
+		NOT = { any_scope_state = { dod_is_catalan_state = yes } }
+		any_scope_state = { dod_is_south_italian_state = yes }
+		NOT = { has_variable = dod_ita_seen_49 }
+	}
+
+	immediate = {
+		set_variable = dod_ita_seen_49
+	}
+
+	option = {
+		name = dod_ita.49.a
+		default_option = yes
+		add_primary_culture = cu:south_italian
+		add_modifier = { name = dod_flight_into_exile months = 120 }
+	}
+}
+
+dod_ita.50 = {
+	type = country_event
+	placement = root
+	title = dod_ita.50.t
+	desc = dod_ita.50.d
+	flavor = dod_ita.50.f
+	event_image = { video = "unspecific_politicians_arguing" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	duration = 3
+
+	trigger = {
+		OR = {
+			this = c:PRV
+			AND = {
+				this = c:ITA
+				has_global_variable = dod_valois_italy
+			}
+		}
+		is_at_war = no
+		exists = c:LUC
+		c:LUC = { NOT = { is_subject_of = root } }
+		NOT = { has_variable = dod_ita_seen_50 }
+	}
+
+	immediate = {
+		set_variable = dod_ita_seen_50
+	}
+
+	option = {
+		name = dod_ita.50.a
+		default_option = yes
+		c:LUC = { trigger_event = { id = dod_ita.51 days = 7 } }
+		ai_chance = { base = 60 }
+	}
+
+	option = {
+		name = dod_ita.50.b
+		ai_chance = { base = 40 }
+	}
+}
+
+dod_ita.51 = {
+	type = country_event
+	placement = root
+	title = dod_ita.51.t
+	desc = dod_ita.51.d
+	flavor = dod_ita.51.f
+	event_image = { video = "unspecific_politicians_arguing" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	duration = 3
+
+	option = {
+		name = dod_ita.51.a
+		default_option = yes
+		every_country = {
+			limit = {
+				dod_is_italian_country = yes
+				NOT = { this = root }
+				NOT = { has_global_variable = dod_valois_italy }
+				country_rank < rank_value:great_power
+			}
+			trigger_event = { id = dod_ita.52 days = 7 }
+		}
+		c:PRV ?= { trigger_event = { id = dod_ita.53 days = 30 } }
+		c:ITA ?= { trigger_event = { id = dod_ita.53 days = 30 } }
+		ai_chance = { base = 85 }
+	}
+
+	option = {
+		name = dod_ita.51.b
+		random_country = {
+			limit = {
+				OR = {
+					this = c:PRV
+					AND = {
+						this = c:ITA
+						has_global_variable = dod_valois_italy
+					}
+				}
+			}
+			create_diplomatic_pact = { country = root type = protectorate }
+		}
+		ai_chance = { base = 15 }
+	}
+}
+
+dod_ita.52 = {
+	type = country_event
+	placement = root
+	title = dod_ita.52.t
+	desc = dod_ita.52.d
+	flavor = dod_ita.52.f
+	event_image = { video = "unspecific_politicians_arguing" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	duration = 3
+
+	trigger = {
+		exists = c:LUC
+	}
+
+	option = {
+		name = dod_ita.52.a
+		default_option = yes
+		create_diplomatic_pact = { country = c:LUC type = alliance }
+		ai_chance = { base = 70 }
+	}
+
+	option = {
+		name = dod_ita.52.b
+		ai_chance = { base = 30 }
+	}
+}
+
+dod_ita.53 = {
+	type = country_event
+	placement = root
+	title = dod_ita.53.t
+	desc = dod_ita.53.d
+	flavor = dod_ita.53.f
+	event_image = { video = "unspecific_military_parade" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+	duration = 3
+
+	trigger = {
+		exists = c:LUC
+	}
+
+	option = {
+		name = dod_ita.53.a
+		default_option = yes
+		change_infamy = 10
+		create_diplomatic_play = {
+			target_country = c:LUC
+			type = dp_make_protectorate
+		}
+		ai_chance = { base = 60 }
+	}
+
+	option = {
+		name = dod_ita.53.b
+		ai_chance = { base = 40 }
+	}
+}
+
+dod_ita.54 = {
+	type = country_event
+	placement = root
+	title = dod_ita.54.t
+	desc = dod_ita.54.d
+	flavor = dod_ita.54.f
+	event_image = { video = "unspecific_military_parade" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+	duration = 3
+
+	trigger = {
+		this = c:PRV
+		is_at_war = no
+		exists = c:TUS
+		c:TUS = { dod_is_republic = yes }
+		NOT = { has_variable = dod_ita_seen_54 }
+	}
+
+	immediate = {
+		set_variable = dod_ita_seen_54
+	}
+
+	option = {
+		name = dod_ita.54.a
+		default_option = yes
+		change_infamy = 10
+		create_diplomatic_play = {
+			target_country = c:TUS
+			type = dp_annex_war
+		}
+		ai_chance = { base = 60 }
+	}
+
+	option = {
+		name = dod_ita.54.b
+		ai_chance = { base = 40 }
+	}
+}
+
+dod_ita.55 = {
+	type = country_event
+	placement = root
+	title = dod_ita.55.t
+	desc = dod_ita.55.d
+	flavor = dod_ita.55.f
+	event_image = { video = "unspecific_military_parade" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+	duration = 3
+
+	trigger = {
+		OR = {
+			this = c:ARA
+			this = c:ARI
+		}
+		is_at_war = no
+		exists = c:ITA
+		has_global_variable = dod_valois_italy
+		NOT = { has_variable = dod_ita_seen_55 }
+	}
+
+	immediate = {
+		set_variable = dod_ita_seen_55
+	}
+
+	option = {
+		name = dod_ita.55.a
+		default_option = yes
+		create_diplomatic_play = {
+			target_country = c:ITA
+			type = dp_annex_war
+		}
+		ai_chance = { base = 80 }
+	}
+
+	option = {
+		name = dod_ita.55.b
+		ai_chance = { base = 20 }
+	}
+}
+
+dod_ita.56 = {
+	type = country_event
+	placement = root
+	title = dod_ita.56.t
+	desc = dod_ita.56.d
+	flavor = dod_ita.56.f
+	event_image = { video = "unspecific_politicians_arguing" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	option = {
+		name = dod_ita.56.a
+		default_option = yes
+		add_primary_culture = cu:south_italian
+		ai_chance = { base = 35 }
+	}
+
+	option = {
+		name = dod_ita.56.b
+		add_primary_culture = cu:french
+		ai_chance = { base = 35 }
+	}
+
+	option = {
+		name = dod_ita.56.c
+		add_primary_culture = cu:provencal
+		ai_chance = { base = 30 }
+	}
+}
+
+dod_ita.60 = {
+	type = country_event
+	placement = root
+	title = dod_ita.60.t
+	desc = dod_ita.60.d
+	flavor = dod_ita.60.f
+	event_image = { video = "europenorthamerica_political_extremism" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+	duration = 3
+
+	trigger = {
+		this = c:VEN
+	}
+
+	option = {
+		name = dod_ita.60.a
+		default_option = yes
+		trigger_event = { id = dod_ita.61 days = 60 }
+		ai_chance = { base = 60 }
+	}
+
+	option = {
+		name = dod_ita.60.b
+		set_variable = { name = dod_council_result value = 1 }
+		trigger_event = { id = dod_ita.62 days = 7 }
+		ai_chance = { base = 40 }
+	}
+}
+
+dod_ita.61 = {
+	type = country_event
+	placement = root
+	title = dod_ita.61.t
+	desc = dod_ita.61.d
+	flavor = dod_ita.61.f
+	event_image = { video = "unspecific_politicians_arguing" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+	duration = 3
+
+	immediate = {
+		random_list = {
+			45 = { set_variable = { name = dod_council_result value = 1 } }
+			35 = { set_variable = { name = dod_council_result value = 2 } }
+			20 = { set_variable = { name = dod_council_result value = 3 } }
+		}
+	}
+
+	option = {
+		name = dod_ita.61.a
+		default_option = yes
+		if = {
+			limit = { var:dod_council_result = 1 }
+			trigger_event = { id = dod_ita.62 }
+		}
+		else_if = {
+			limit = { var:dod_council_result = 2 }
+			trigger_event = { id = dod_ita.63 }
+		}
+		else = {
+			trigger_event = { id = dod_ita.64 }
+		}
+	}
+}
+
+dod_ita.62 = {
+	type = country_event
+	placement = root
+	title = dod_ita.62.t
+	desc = dod_ita.62.d
+	flavor = dod_ita.62.f
+	event_image = { video = "europenorthamerica_springtime_of_nations" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+	duration = 3
+
+	trigger = {
+		this = c:VEN
+	}
+
+	option = {
+		name = dod_ita.62.a
+		default_option = yes
+		dod_release_homeland = { TAG = GRE CULTURE = greek }
+		if = {
+			limit = { exists = c:GRE }
+			create_diplomatic_play = {
+				target_country = c:GRE
+				type = dp_annex_war
+			}
+			add_journal_entry = { type = je_dod_greek_war }
+			c:GRE = { trigger_event = { id = dod_ita.68 days = 7 } }
+		}
+		ai_chance = { base = 80 }
+	}
+
+	option = {
+		name = dod_ita.62.b
+		dod_release_homeland = { TAG = GRE CULTURE = greek }
+		set_variable = dod_lost_greece
+		c:GRE ?= { trigger_event = { id = dod_ita.67 days = 30 } }
+		ai_chance = { base = 20 }
+	}
+}
+
+dod_ita.63 = {
+	type = country_event
+	placement = root
+	title = dod_ita.63.t
+	desc = dod_ita.63.d
+	flavor = dod_ita.63.f
+	event_image = { video = "unspecific_politicians_arguing" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+	duration = 3
+
+	trigger = {
+		this = c:VEN
+	}
+
+	option = {
+		name = dod_ita.63.a
+		default_option = yes
+		dod_release_homeland = { TAG = GRE CULTURE = greek }
+		if = {
+			limit = { exists = c:GRE }
+			create_diplomatic_pact = { country = c:GRE type = puppet }
+		}
+		ai_chance = { base = 50 }
+	}
+
+	option = {
+		name = dod_ita.63.b
+		trigger_event = { id = dod_ita.62 days = 7 }
+		ai_chance = { base = 50 }
+	}
+}
+
+dod_ita.64 = {
+	type = country_event
+	placement = root
+	title = dod_ita.64.t
+	desc = dod_ita.64.d
+	flavor = dod_ita.64.f
+	event_image = { video = "unspecific_politicians_arguing" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+	duration = 3
+
+	trigger = {
+		this = c:VEN
+	}
+
+	option = {
+		name = dod_ita.64.a
+		default_option = yes
+		activate_law = law_type:law_parliamentary_republic
+		add_primary_culture = cu:greek
+		ai_chance = { base = 40 }
+	}
+
+	option = {
+		name = dod_ita.64.b
+		activate_law = law_type:law_monarchy
+		add_primary_culture = cu:greek
+		ai_chance = { base = 30 }
+	}
+
+	option = {
+		name = dod_ita.64.c
+		trigger_event = { id = dod_ita.62 days = 7 }
+		ai_chance = { base = 30 }
+	}
+}
+
+dod_ita.65 = {
+	type = country_event
+	placement = root
+	title = dod_ita.65.t
+	desc = dod_ita.65.d
+	flavor = dod_ita.65.f
+	event_image = { video = "unspecific_military_parade" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+	duration = 3
+
+	option = {
+		name = dod_ita.65.a
+		default_option = yes
+		add_modifier = { name = dod_greek_rebellion_crushed months = 120 }
+		set_variable = { name = dod_greek_unrest value = 30 }
+	}
+}
+
+dod_ita.66 = {
+	type = country_event
+	placement = root
+	title = dod_ita.66.t
+	desc = dod_ita.66.d
+	flavor = dod_ita.66.f
+	event_image = { video = "europenorthamerica_political_extremism" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	option = {
+		name = dod_ita.66.a
+		default_option = yes
+		set_variable = dod_lost_greece
+		add_modifier = { name = dod_greece_lost months = 120 }
+		c:GRE ?= { trigger_event = { id = dod_ita.67 days = 30 } }
+	}
+}
+
+dod_ita.67 = {
+	type = country_event
+	placement = root
+	title = dod_ita.67.t
+	desc = dod_ita.67.d
+	flavor = dod_ita.67.f
+	event_image = { video = "unspecific_politicians_arguing" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+	duration = 3
+
+	trigger = {
+		this = c:GRE
+	}
+
+	option = {
+		name = dod_ita.67.a
+		default_option = yes
+		activate_law = law_type:law_monarchy
+		create_character = { first_name = "Konstantinos" last_name = "Zimisces" ruler = yes age = 50 }
+		ai_chance = { base = 40 }
+	}
+
+	option = {
+		name = dod_ita.67.b
+		trigger = { exists = c:MAC }
+		c:MAC = { trigger_event = { id = dod_ita.72 days = 14 } }
+		ai_chance = { base = 25 }
+	}
+
+	option = {
+		name = dod_ita.67.c
+		activate_law = law_type:law_parliamentary_republic
+		ai_chance = { base = 35 }
+	}
+}
+
+dod_ita.68 = {
+	type = country_event
+	placement = root
+	title = dod_ita.68.t
+	desc = dod_ita.68.d
+	flavor = dod_ita.68.f
+	event_image = { texture = "gfx/event_pictures/dod/zimisceses.dds" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+	duration = 3
+
+	option = {
+		name = dod_ita.68.a
+		default_option = yes
+		add_modifier = { name = dod_greek_mobilisation months = 36 }
+		c:BRG ?= { trigger_event = { id = dod_ita.70 days = 60 } }
+		c:ARA ?= { trigger_event = { id = dod_ita.71 days = 90 } }
+	}
+}
+
+dod_ita.70 = {
+	type = country_event
+	placement = root
+	title = dod_ita.70.t
+	desc = dod_ita.70.d
+	flavor = dod_ita.70.f
+	event_image = { texture = "gfx/event_pictures/dod/morea_1817.dds" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	duration = 3
+
+	trigger = {
+		exists = c:GRE
+	}
+
+	option = {
+		name = dod_ita.70.a
+		default_option = yes
+		c:GRE ?= { add_modifier = { name = dod_burgundian_loan months = 60 } }
+		ai_chance = { base = 50 }
+	}
+
+	option = {
+		name = dod_ita.70.b
+		ai_chance = { base = 50 }
+	}
+}
+
+dod_ita.71 = {
+	type = country_event
+	placement = root
+	title = dod_ita.71.t
+	desc = dod_ita.71.d
+	flavor = dod_ita.71.f
+	event_image = { video = "unspecific_politicians_arguing" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+	duration = 3
+
+	trigger = {
+		exists = c:GRE
+		c:GRE = { is_at_war = yes }
+	}
+
+	option = {
+		name = dod_ita.71.a
+		default_option = yes
+		create_diplomatic_pact = { country = c:GRE type = alliance }
+		ai_chance = { base = 50 }
+	}
+
+	option = {
+		name = dod_ita.71.b
+		ai_chance = { base = 50 }
+	}
+}
+
+dod_ita.72 = {
+	type = country_event
+	placement = root
+	title = dod_ita.72.t
+	desc = dod_ita.72.d
+	flavor = dod_ita.72.f
+	event_image = { video = "unspecific_politicians_arguing" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	trigger = {
+		exists = c:GRE
+	}
+
+	option = {
+		name = dod_ita.72.a
+		default_option = yes
+		annex = c:GRE
+		if = {
+			limit = { NOT = { exists = c:GRE } }
+			change_tag = GRE
+		}
+		ai_chance = { base = 70 }
+	}
+
+	option = {
+		name = dod_ita.72.b
+		c:GRE ?= { activate_law = law_type:law_monarchy }
+		ai_chance = { base = 30 }
+	}
+}
+
+dod_ita.73 = {
+	type = country_event
+	placement = root
+	title = dod_ita.73.t
+	desc = dod_ita.73.d
+	flavor = dod_ita.73.f
+	event_image = { video = "europenorthamerica_political_extremism" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	trigger = {
+		this = c:VEN
+		NOT = { any_scope_state = { dod_is_venetian_state = yes } }
+		any_scope_state = { dod_is_greek_state = yes }
+		NOT = { has_variable = dod_ita_seen_73 }
+	}
+
+	immediate = {
+		set_variable = dod_ita_seen_73
+	}
+
+	option = {
+		name = dod_ita.73.a
+		default_option = yes
+		add_primary_culture = cu:greek
+		add_modifier = { name = dod_flight_into_exile months = 120 }
+	}
+}
+
+dod_ita.74 = {
+	type = country_event
+	placement = root
+	title = dod_ita.74.t
+	desc = dod_ita.74.d
+	flavor = dod_ita.74.f
+	event_image = { video = "europenorthamerica_springtime_of_nations" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+	duration = 3
+
+	trigger = {
+		this = c:VEN
+		has_variable = dod_lost_greece
+		is_at_war = no
+		NOT = { dod_is_republic = yes }
+		NOT = { has_variable = dod_ita_seen_74 }
+	}
+
+	immediate = {
+		set_variable = dod_ita_seen_74
+	}
+
+	option = {
+		name = dod_ita.74.a
+		default_option = yes
+		activate_law = law_type:law_parliamentary_republic
+	}
+}
+
+dod_ita.75 = {
+	type = country_event
+	placement = root
+	title = dod_ita.75.t
+	desc = dod_ita.75.d
+	flavor = dod_ita.75.f
+	event_image = { texture = "gfx/event_pictures/dod/silvestro_dandolo.dds" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	trigger = {
+		this = c:VEN
+		game_date >= 1847.1.1
+		NOT = { dod_is_republic = yes }
+		NOT = { has_variable = dod_ita_seen_75 }
+	}
+
+	immediate = {
+		set_variable = dod_ita_seen_75
+	}
+
+	option = {
+		name = dod_ita.75.a
+		default_option = yes
+		create_character = { first_name = "Daniele" last_name = "Manin" ruler = yes age = 43 }
+		if = {
+			limit = { has_journal_entry = je_dod_greek_question }
+			change_variable = { name = dod_greek_unrest add = 10 }
+		}
+		ai_chance = { base = 35 }
+	}
+
+	option = {
+		name = dod_ita.75.b
+		create_character = { first_name = "Antonio" last_name = "Salviati" ruler = yes age = 31 }
+		ai_chance = { base = 35 }
+	}
+
+	option = {
+		name = dod_ita.75.c
+		create_character = { first_name = "Giovanni" last_name = "Albrizzi" ruler = yes age = 55 }
+		if = {
+			limit = { has_journal_entry = je_dod_greek_question }
+			change_variable = { name = dod_greek_unrest add = -10 }
+		}
+		ai_chance = { base = 30 }
+	}
+}
+
+dod_ita.76 = {
+	type = country_event
+	placement = root
+	title = dod_ita.76.t
+	desc = dod_ita.76.d
+	flavor = dod_ita.76.f
+	event_image = { video = "europenorthamerica_springtime_of_nations" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	trigger = {
+		game_date >= 1895.1.1
+		any_scope_state = { dod_is_venetian_state = yes }
+		NOT = { has_global_variable = dod_biennale }
+	}
+
+	immediate = {
+		set_global_variable = dod_biennale
+	}
+
+	option = {
+		name = dod_ita.76.a
+		default_option = yes
+		add_modifier = { name = dod_venice_biennale months = 60 }
+	}
+}
+
+dod_ita.77 = {
+	type = country_event
+	placement = root
+	title = dod_ita.77.t
+	desc = dod_ita.77.d
+	flavor = dod_ita.77.f
+	event_image = { video = "unspecific_military_parade" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	trigger = {
+		this = c:VEN
+		game_date >= 1921.1.1
+		NOT = { has_variable = dod_ita_seen_77 }
+	}
+
+	immediate = {
+		set_variable = dod_ita_seen_77
+	}
+
+	option = {
+		name = dod_ita.77.a
+		default_option = yes
+		add_modifier = { name = dod_venice_1500 months = 60 }
+	}
+}
+
+dod_ita.78 = {
+	type = country_event
+	placement = root
+	title = dod_ita.78.t
+	desc = dod_ita.78.d
+	flavor = dod_ita.78.f
+	event_image = { video = "unspecific_politicians_arguing" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	trigger = {
+		this = c:VEN
+		game_date >= 1841.1.1
+		is_at_war = no
+		NOT = { has_variable = dod_ita_seen_78 }
+	}
+
+	immediate = {
+		set_variable = dod_ita_seen_78
+	}
+
+	option = {
+		name = dod_ita.78.a
+		default_option = yes
+		add_modifier = { name = dod_scuola_commercio months = 120 }
+		ai_chance = { base = 50 }
+	}
+
+	option = {
+		name = dod_ita.78.b
+		trigger = { any_scope_state = { dod_is_greek_state = yes } }
+		if = {
+			limit = { has_journal_entry = je_dod_greek_question }
+			change_variable = { name = dod_greek_unrest add = -15 }
+		}
+		ai_chance = { base = 50 }
+	}
+}
+
+dod_ita.79 = {
+	type = country_event
+	placement = root
+	title = dod_ita.79.t
+	desc = dod_ita.79.d
+	flavor = dod_ita.79.f
+	event_image = { video = "unspecific_politicians_arguing" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	option = {
+		name = dod_ita.79.a
+		default_option = yes
+		add_modifier = { name = dod_enosis months = 240 }
+	}
+}

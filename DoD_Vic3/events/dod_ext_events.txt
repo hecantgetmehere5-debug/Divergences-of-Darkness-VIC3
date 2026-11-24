@@ -1,0 +1,901 @@
+namespace = dod_ext
+
+dod_ext.1 = {
+	type = country_event
+	placement = root
+	title = dod_ext.1.t
+	desc = dod_ext.1.d
+	flavor = dod_ext.1.f
+	event_image = { video = "unspecific_politicians_arguing" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+	duration = 3
+
+	trigger = {
+		has_journal_entry = je_dod_plantagenian_slavery
+		NOT = { has_variable = dod_ext_seen_1 }
+	}
+
+	immediate = {
+		set_variable = dod_ext_seen_1
+	}
+
+	option = {
+		name = dod_ext.1.a
+		default_option = yes
+		change_variable = { name = dod_abolition_support add = 8 }
+		ai_chance = { base = 50 }
+	}
+
+	option = {
+		name = dod_ext.1.b
+		change_variable = { name = dod_abolition_support add = 2 }
+		change_variable = { name = dod_planter_resistance add = -3 }
+		ai_chance = { base = 50 }
+	}
+}
+
+dod_ext.2 = {
+	type = country_event
+	placement = root
+	title = dod_ext.2.t
+	desc = dod_ext.2.d
+	flavor = dod_ext.2.f
+	event_image = { video = "unspecific_politicians_arguing" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	duration = 3
+
+	trigger = {
+		has_journal_entry = je_dod_plantagenian_slavery
+		exists = c:NBG
+		NOT = { has_variable = dod_ext_seen_2 }
+	}
+
+	immediate = {
+		set_variable = dod_ext_seen_2
+	}
+
+	option = {
+		name = dod_ext.2.a
+		default_option = yes
+		change_variable = { name = dod_planter_resistance add = -5 }
+		ai_chance = { base = 50 }
+	}
+
+	option = {
+		name = dod_ext.2.b
+		change_variable = { name = dod_abolition_support add = 5 }
+		change_variable = { name = dod_planter_resistance add = 5 }
+		ai_chance = { base = 50 }
+	}
+}
+
+dod_ext.3 = {
+	type = country_event
+	placement = root
+	title = dod_ext.3.t
+	desc = dod_ext.3.d
+	flavor = dod_ext.3.f
+	event_image = { video = "unspecific_politicians_arguing" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+	duration = 3
+
+	trigger = {
+		has_journal_entry = je_dod_plantagenian_slavery
+		NOT = { has_variable = dod_ext_seen_3 }
+	}
+
+	immediate = {
+		set_variable = dod_ext_seen_3
+	}
+
+	option = {
+		name = dod_ext.3.a
+		default_option = yes
+		change_variable = { name = dod_planter_resistance add = -8 }
+		change_variable = { name = dod_abolition_support add = -3 }
+		ai_chance = { base = 50 }
+	}
+
+	option = {
+		name = dod_ext.3.b
+		change_variable = { name = dod_planter_resistance add = 8 }
+		ig:ig_landowners = { add_modifier = { name = dod_ig_angered months = 36 } }
+		ai_chance = { base = 50 }
+	}
+}
+
+dod_ext.4 = {
+	type = country_event
+	placement = root
+	title = dod_ext.4.t
+	desc = dod_ext.4.d
+	flavor = dod_ext.4.f
+	event_image = { video = "unspecific_politicians_arguing" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	trigger = {
+		has_journal_entry = je_dod_plantagenian_slavery
+		has_law = law_type:law_monarchy
+		NOT = { has_variable = dod_ext_seen_4 }
+	}
+
+	immediate = {
+		set_variable = dod_ext_seen_4
+	}
+
+	option = {
+		name = dod_ext.4.a
+		default_option = yes
+		change_variable = { name = dod_abolition_support add = 10 }
+		change_variable = { name = dod_planter_resistance add = 5 }
+		ai_chance = { base = 50 }
+	}
+
+	option = {
+		name = dod_ext.4.b
+		ai_chance = { base = 50 }
+	}
+}
+
+dod_ext.5 = {
+	type = country_event
+	placement = root
+	title = dod_ext.5.t
+	desc = dod_ext.5.d
+	flavor = dod_ext.5.f
+	event_image = { video = "europenorthamerica_springtime_of_nations" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	option = {
+		name = dod_ext.5.a
+		default_option = yes
+		add_modifier = { name = dod_emancipation months = 120 }
+	}
+}
+
+dod_ext.6 = {
+	type = country_event
+	placement = root
+	title = dod_ext.6.t
+	desc = dod_ext.6.d
+	flavor = dod_ext.6.f
+	event_image = { video = "europenorthamerica_political_extremism" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+	duration = 3
+
+	option = {
+		name = dod_ext.6.a
+		default_option = yes
+		add_modifier = { name = dod_planter_victory months = 120 }
+		ig:ig_landowners = { add_modifier = { name = dod_ig_pleased months = 36 } }
+		ai_chance = { base = 40 }
+	}
+
+	option = {
+		name = dod_ext.6.b
+		activate_law = law_type:law_slavery_banned
+		ig:ig_landowners = { add_modifier = { name = dod_ig_angered months = 60 } }
+		add_modifier = { name = dod_emancipation months = 120 }
+		ai_chance = { base = 60 }
+	}
+}
+
+dod_ext.10 = {
+	type = country_event
+	placement = root
+	title = dod_ext.10.t
+	desc = dod_ext.10.d
+	flavor = dod_ext.10.f
+	event_image = { video = "unspecific_politicians_arguing" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	trigger = {
+		this = c:PLA
+		has_law = law_type:law_monarchy
+		game_date >= 1850.1.1
+		NOT = { has_variable = dod_ext_seen_10 }
+	}
+
+	immediate = {
+		set_variable = dod_ext_seen_10
+	}
+
+	option = {
+		name = dod_ext.10.a
+		default_option = yes
+		add_journal_entry = { type = je_dod_cowboy_king }
+	}
+}
+
+dod_ext.11 = {
+	type = country_event
+	placement = root
+	title = dod_ext.11.t
+	desc = dod_ext.11.d
+	flavor = dod_ext.11.f
+	event_image = { video = "unspecific_politicians_arguing" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	trigger = {
+		has_journal_entry = je_dod_cowboy_king
+		NOT = { has_variable = dod_ext_seen_11 }
+	}
+
+	immediate = {
+		set_variable = dod_ext_seen_11
+	}
+
+	option = {
+		name = dod_ext.11.a
+		default_option = yes
+		change_variable = { name = dod_crown_standing add = 2 }
+	}
+
+	option = {
+		name = dod_ext.11.b
+		change_variable = { name = dod_crown_standing add = -1 }
+	}
+}
+
+dod_ext.12 = {
+	type = country_event
+	placement = root
+	title = dod_ext.12.t
+	desc = dod_ext.12.d
+	flavor = dod_ext.12.f
+	event_image = { video = "unspecific_politicians_arguing" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	trigger = {
+		has_journal_entry = je_dod_cowboy_king
+		NOT = { has_variable = dod_ext_seen_12 }
+	}
+
+	immediate = {
+		set_variable = dod_ext_seen_12
+	}
+
+	option = {
+		name = dod_ext.12.a
+		default_option = yes
+		change_variable = { name = dod_crown_standing add = 2 }
+	}
+
+	option = {
+		name = dod_ext.12.b
+		change_variable = { name = dod_crown_standing add = -1 }
+	}
+}
+
+dod_ext.13 = {
+	type = country_event
+	placement = root
+	title = dod_ext.13.t
+	desc = dod_ext.13.d
+	flavor = dod_ext.13.f
+	event_image = { video = "unspecific_politicians_arguing" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	trigger = {
+		has_journal_entry = je_dod_cowboy_king
+		NOT = { has_variable = dod_ext_seen_13 }
+	}
+
+	immediate = {
+		set_variable = dod_ext_seen_13
+	}
+
+	option = {
+		name = dod_ext.13.a
+		default_option = yes
+		change_variable = { name = dod_crown_standing add = 1 }
+	}
+
+	option = {
+		name = dod_ext.13.b
+		change_variable = { name = dod_crown_standing add = -2 }
+	}
+}
+
+dod_ext.14 = {
+	type = country_event
+	placement = root
+	title = dod_ext.14.t
+	desc = dod_ext.14.d
+	flavor = dod_ext.14.f
+	event_image = { video = "unspecific_politicians_arguing" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	trigger = {
+		has_journal_entry = je_dod_cowboy_king
+		NOT = { has_variable = dod_ext_seen_14 }
+	}
+
+	immediate = {
+		set_variable = dod_ext_seen_14
+	}
+
+	option = {
+		name = dod_ext.14.a
+		default_option = yes
+		change_variable = { name = dod_crown_standing add = -2 }
+	}
+
+	option = {
+		name = dod_ext.14.b
+		change_variable = { name = dod_crown_standing add = -1 }
+	}
+}
+
+dod_ext.15 = {
+	type = country_event
+	placement = root
+	title = dod_ext.15.t
+	desc = dod_ext.15.d
+	flavor = dod_ext.15.f
+	event_image = { video = "unspecific_politicians_arguing" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	trigger = {
+		has_journal_entry = je_dod_cowboy_king
+		NOT = { has_variable = dod_ext_seen_15 }
+	}
+
+	immediate = {
+		set_variable = dod_ext_seen_15
+	}
+
+	option = {
+		name = dod_ext.15.a
+		default_option = yes
+		change_variable = { name = dod_crown_standing add = 3 }
+	}
+}
+
+dod_ext.16 = {
+	type = country_event
+	placement = root
+	title = dod_ext.16.t
+	desc = dod_ext.16.d
+	flavor = dod_ext.16.f
+	event_image = { video = "unspecific_politicians_arguing" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	option = {
+		name = dod_ext.16.a
+		default_option = yes
+		add_modifier = { name = dod_peoples_king months = 240 }
+	}
+}
+
+dod_ext.17 = {
+	type = country_event
+	placement = root
+	title = dod_ext.17.t
+	desc = dod_ext.17.d
+	flavor = dod_ext.17.f
+	event_image = { video = "unspecific_politicians_arguing" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+	duration = 3
+
+	option = {
+		name = dod_ext.17.a
+		default_option = yes
+		add_modifier = { name = dod_crown_humbled months = 120 }
+	}
+}
+
+dod_ext.20 = {
+	type = country_event
+	placement = root
+	title = dod_ext.20.t
+	desc = dod_ext.20.d
+	flavor = dod_ext.20.f
+	event_image = { video = "europenorthamerica_springtime_of_nations" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	option = {
+		name = dod_ext.20.a
+		default_option = yes
+		add_modifier = { name = dod_arcadian_hegemony months = 600 }
+		every_state = {
+			limit = {
+				state_region = {
+					OR = {
+						is_homeland = cu:athesian
+						is_homeland = cu:caribeno
+						is_homeland = cu:ayitian
+					}
+				}
+				NOT = { owner = root }
+			}
+			state_region = { add_claim = root }
+		}
+	}
+}
+
+dod_ext.30 = {
+	type = country_event
+	placement = root
+	title = dod_ext.30.t
+	desc = dod_ext.30.d
+	flavor = dod_ext.30.f
+	event_image = { video = "unspecific_politicians_arguing" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	trigger = {
+		has_journal_entry = je_dod_beornian_communion
+		NOT = { has_variable = dod_ext_seen_30 }
+	}
+
+	immediate = {
+		set_variable = dod_ext_seen_30
+	}
+
+	option = {
+		name = dod_ext.30.a
+		default_option = yes
+		change_variable = { name = dod_communion_unity add = 2 }
+		ig:ig_devout = { add_modifier = { name = dod_ig_pleased months = 36 } }
+		ai_chance = { base = 50 }
+	}
+
+	option = {
+		name = dod_ext.30.b
+		change_variable = { name = dod_communion_unity add = -1 }
+		ai_chance = { base = 50 }
+	}
+}
+
+dod_ext.31 = {
+	type = country_event
+	placement = root
+	title = dod_ext.31.t
+	desc = dod_ext.31.d
+	flavor = dod_ext.31.f
+	event_image = { video = "unspecific_politicians_arguing" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+	duration = 3
+
+	trigger = {
+		has_journal_entry = je_dod_beornian_communion
+		NOT = { has_variable = dod_ext_seen_31 }
+	}
+
+	immediate = {
+		set_variable = dod_ext_seen_31
+	}
+
+	option = {
+		name = dod_ext.31.a
+		default_option = yes
+		change_variable = { name = dod_communion_unity add = 3 }
+		set_variable = dod_presbyterian_voice
+		ai_chance = { base = 50 }
+	}
+
+	option = {
+		name = dod_ext.31.b
+		change_variable = { name = dod_communion_unity add = -2 }
+		ai_chance = { base = 50 }
+	}
+}
+
+dod_ext.32 = {
+	type = country_event
+	placement = root
+	title = dod_ext.32.t
+	desc = dod_ext.32.d
+	flavor = dod_ext.32.f
+	event_image = { video = "europenorthamerica_political_extremism" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+	duration = 3
+
+	trigger = {
+		has_journal_entry = je_dod_beornian_communion
+		NOT = { has_variable = dod_ext_seen_32 }
+	}
+
+	immediate = {
+		set_variable = dod_ext_seen_32
+	}
+
+	option = {
+		name = dod_ext.32.a
+		default_option = yes
+		change_variable = { name = dod_communion_unity add = 2 }
+		ig:ig_intelligentsia = { add_modifier = { name = dod_ig_pleased months = 36 } }
+		ai_chance = { base = 50 }
+	}
+
+	option = {
+		name = dod_ext.32.b
+		change_variable = { name = dod_communion_unity add = -3 }
+		set_variable = dod_parisher_martyr
+		ai_chance = { base = 50 }
+	}
+}
+
+dod_ext.33 = {
+	type = country_event
+	placement = root
+	title = dod_ext.33.t
+	desc = dod_ext.33.d
+	flavor = dod_ext.33.f
+	event_image = { video = "europenorthamerica_springtime_of_nations" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+	duration = 3
+
+	trigger = {
+		has_journal_entry = je_dod_beornian_communion
+		has_variable = dod_parisher_martyr
+		has_law = law_type:law_monarchy
+		NOT = { has_variable = dod_ext_seen_33 }
+	}
+
+	immediate = {
+		set_variable = dod_ext_seen_33
+	}
+
+	option = {
+		name = dod_ext.33.a
+		default_option = yes
+		activate_law = law_type:law_census_voting
+		change_variable = { name = dod_communion_unity add = 4 }
+		add_modifier = { name = dod_king_swore months = 120 }
+		ai_chance = { base = 50 }
+	}
+
+	option = {
+		name = dod_ext.33.b
+		ig:ig_armed_forces = { add_modifier = { name = dod_ig_pleased months = 36 } }
+		ig:ig_intelligentsia = { add_modifier = { name = dod_ig_angered months = 60 } }
+		change_variable = { name = dod_communion_unity add = -4 }
+		ai_chance = { base = 50 }
+	}
+}
+
+dod_ext.34 = {
+	type = country_event
+	placement = root
+	title = dod_ext.34.t
+	desc = dod_ext.34.d
+	flavor = dod_ext.34.f
+	event_image = { video = "unspecific_politicians_arguing" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	option = {
+		name = dod_ext.34.a
+		default_option = yes
+		add_modifier = { name = dod_communion_settled months = 240 }
+		ig:ig_devout = { add_modifier = { name = dod_ig_pleased months = 36 } }
+	}
+}
+
+dod_ext.35 = {
+	type = country_event
+	placement = root
+	title = dod_ext.35.t
+	desc = dod_ext.35.d
+	flavor = dod_ext.35.f
+	event_image = { video = "unspecific_politicians_arguing" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+	duration = 3
+
+	option = {
+		name = dod_ext.35.a
+		default_option = yes
+		add_modifier = { name = dod_communion_broken months = 120 }
+	}
+}
+
+dod_ext.36 = {
+	type = country_event
+	placement = root
+	title = dod_ext.36.t
+	desc = dod_ext.36.d
+	flavor = dod_ext.36.f
+	event_image = { video = "unspecific_politicians_arguing" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+	duration = 3
+
+	trigger = {
+		this = c:NAN
+		exists = c:INC
+		is_at_war = no
+		game_date >= 1845.1.1
+		NOT = { has_variable = dod_raids_cooldown }
+	}
+
+	immediate = {
+		set_variable = { name = dod_raids_cooldown days = 3650 }
+	}
+
+	option = {
+		name = dod_ext.36.a
+		default_option = yes
+		change_infamy = 5
+		create_diplomatic_play = {
+			target_country = c:INC
+			type = dp_humiliation
+		}
+		ai_chance = { base = 50 }
+	}
+
+	option = {
+		name = dod_ext.36.b
+		change_relations = { country = c:INC value = 20 }
+		ai_chance = { base = 50 }
+	}
+}
+
+dod_ext.37 = {
+	type = country_event
+	placement = root
+	title = dod_ext.37.t
+	desc = dod_ext.37.d
+	flavor = dod_ext.37.f
+	event_image = { video = "europenorthamerica_political_extremism" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+	duration = 3
+
+	trigger = {
+		this = c:LOT
+		exists = c:NAN
+		is_subject_of = c:NAN
+		game_date >= 1870.1.1
+		NOT = { has_variable = dod_lot_separatism }
+	}
+
+	immediate = {
+		set_variable = { name = dod_lot_separatism days = 3650 }
+	}
+
+	option = {
+		name = dod_ext.37.a
+		default_option = yes
+		ai_chance = { base = 50 }
+	}
+
+	option = {
+		name = dod_ext.37.b
+		create_diplomatic_play = {
+			target_country = c:NAN
+			type = dp_independence
+		}
+		ai_chance = { base = 50 }
+	}
+}
+
+dod_ext.40 = {
+	type = country_event
+	placement = root
+	title = dod_ext.40.t
+	desc = dod_ext.40.d
+	flavor = dod_ext.40.f
+	event_image = { video = "unspecific_politicians_arguing" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+	duration = 3
+
+	trigger = {
+		has_journal_entry = je_dod_savoyard_succession
+		NOT = { has_variable = dod_ext_seen_40 }
+	}
+
+	immediate = {
+		set_variable = dod_ext_seen_40
+	}
+
+	option = {
+		name = dod_ext.40.a
+		default_option = yes
+		change_variable = { name = dod_vittorio_standing add = -2 }
+		ai_chance = { base = 50 }
+	}
+
+	option = {
+		name = dod_ext.40.b
+		change_variable = { name = dod_vittorio_standing add = 2 }
+		ai_chance = { base = 50 }
+	}
+}
+
+dod_ext.41 = {
+	type = country_event
+	placement = root
+	title = dod_ext.41.t
+	desc = dod_ext.41.d
+	flavor = dod_ext.41.f
+	event_image = { video = "unspecific_politicians_arguing" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+	duration = 3
+
+	trigger = {
+		has_journal_entry = je_dod_savoyard_succession
+		NOT = { has_variable = dod_ext_seen_41 }
+	}
+
+	immediate = {
+		set_variable = dod_ext_seen_41
+	}
+
+	option = {
+		name = dod_ext.41.a
+		default_option = yes
+		change_variable = { name = dod_vittorio_standing add = 3 }
+	}
+}
+
+dod_ext.42 = {
+	type = country_event
+	placement = root
+	title = dod_ext.42.t
+	desc = dod_ext.42.d
+	flavor = dod_ext.42.f
+	event_image = { video = "unspecific_military_parade" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+	duration = 3
+
+	trigger = {
+		has_journal_entry = je_dod_savoyard_succession
+		NOT = { has_variable = dod_ext_seen_42 }
+	}
+
+	immediate = {
+		set_variable = dod_ext_seen_42
+	}
+
+	option = {
+		name = dod_ext.42.a
+		default_option = yes
+		change_variable = { name = dod_vittorio_standing add = -2 }
+		ig:ig_armed_forces = { add_modifier = { name = dod_ig_pleased months = 36 } }
+		ai_chance = { base = 50 }
+	}
+
+	option = {
+		name = dod_ext.42.b
+		change_variable = { name = dod_vittorio_standing add = 1 }
+		ig:ig_armed_forces = { add_modifier = { name = dod_ig_angered months = 36 } }
+		ai_chance = { base = 50 }
+	}
+}
+
+dod_ext.43 = {
+	type = country_event
+	placement = root
+	title = dod_ext.43.t
+	desc = dod_ext.43.d
+	flavor = dod_ext.43.f
+	event_image = { video = "unspecific_politicians_arguing" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+	duration = 3
+
+	trigger = {
+		has_journal_entry = je_dod_savoyard_succession
+		NOT = { has_variable = dod_ext_seen_43 }
+	}
+
+	immediate = {
+		set_variable = dod_ext_seen_43
+	}
+
+	option = {
+		name = dod_ext.43.a
+		default_option = yes
+		change_variable = { name = dod_vittorio_standing add = -2 }
+		ai_chance = { base = 50 }
+	}
+
+	option = {
+		name = dod_ext.43.b
+		change_variable = { name = dod_vittorio_standing add = 2 }
+		ai_chance = { base = 50 }
+	}
+}
+
+dod_ext.44 = {
+	type = country_event
+	placement = root
+	title = dod_ext.44.t
+	desc = dod_ext.44.d
+	flavor = dod_ext.44.f
+	event_image = { video = "unspecific_politicians_arguing" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	option = {
+		name = dod_ext.44.a
+		default_option = yes
+		add_modifier = { name = dod_savoy_stable months = 240 }
+	}
+}
+
+dod_ext.45 = {
+	type = country_event
+	placement = root
+	title = dod_ext.45.t
+	desc = dod_ext.45.d
+	flavor = dod_ext.45.f
+	event_image = { video = "unspecific_military_parade" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	option = {
+		name = dod_ext.45.a
+		default_option = yes
+		create_character = { first_name = "Amedeo" last_name = "di Savoia" ruler = yes age = 34 }
+		add_modifier = { name = dod_duke_amedeo months = 240 }
+	}
+}
+
+dod_ext.46 = {
+	type = country_event
+	placement = root
+	title = dod_ext.46.t
+	desc = dod_ext.46.d
+	flavor = dod_ext.46.f
+	event_image = { video = "unspecific_politicians_arguing" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+	duration = 3
+
+	trigger = {
+		exists = c:SAR
+		NOT = { is_subject_of = c:SAR }
+	}
+
+	option = {
+		name = dod_ext.46.a
+		default_option = yes
+		c:SAR = { create_diplomatic_pact = { country = root type = protectorate } }
+		set_variable = dod_confederate
+		ai_chance = { base = 50 }
+	}
+
+	option = {
+		name = dod_ext.46.b
+		ai_chance = { base = 50 }
+	}
+}

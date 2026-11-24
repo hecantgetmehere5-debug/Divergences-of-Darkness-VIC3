@@ -1,0 +1,798 @@
+namespace = dod_clm
+
+dod_clm.1 = {
+	type = country_event
+	placement = root
+	title = dod_clm.1.t
+	desc = dod_clm.1.d
+	flavor = dod_clm.1.f
+	event_image = { texture = "gfx/event_pictures/dod/zimisceses.dds" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+	duration = 3
+
+	trigger = {
+		this = c:CLM
+		is_at_war = yes
+		has_journal_entry = je_dod_colombian_independence
+		NOT = { has_variable = dod_clm_seen_1 }
+	}
+
+	immediate = {
+		set_variable = dod_clm_seen_1
+	}
+
+	option = {
+		name = dod_clm.1.a
+		default_option = yes
+		add_modifier = { name = dod_colombian_mobilisation months = 36 }
+	}
+}
+
+dod_clm.2 = {
+	type = country_event
+	placement = root
+	title = dod_clm.2.t
+	desc = dod_clm.2.d
+	flavor = dod_clm.2.f
+	event_image = { video = "unspecific_signed_contract" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+	duration = 3
+
+	option = {
+		name = dod_clm.2.a
+		default_option = yes
+		add_journal_entry = { type = je_dod_congress_of_mexico }
+	}
+}
+
+dod_clm.10 = {
+	type = country_event
+	placement = root
+	title = dod_clm.10.t
+	desc = dod_clm.10.d
+	flavor = dod_clm.10.f
+	event_image = { texture = "gfx/event_pictures/dod/colombian_clergy.dds" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+	duration = 3
+
+	trigger = {
+		has_journal_entry = je_dod_congress_of_mexico
+		NOT = { has_variable = dod_clm_seen_10 }
+	}
+
+	immediate = {
+		set_variable = dod_clm_seen_10
+	}
+
+	option = {
+		name = dod_clm.10.a
+		default_option = yes
+		change_variable = { name = dod_colombian_unity add = 2 }
+	}
+
+	option = {
+		name = dod_clm.10.b
+		change_variable = { name = dod_colombian_unity add = -1 }
+	}
+}
+
+dod_clm.11 = {
+	type = country_event
+	placement = root
+	title = dod_clm.11.t
+	desc = dod_clm.11.d
+	flavor = dod_clm.11.f
+	event_image = { texture = "gfx/event_pictures/dod/colombian_military.dds" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+	duration = 3
+
+	trigger = {
+		has_journal_entry = je_dod_congress_of_mexico
+		NOT = { has_variable = dod_clm_seen_11 }
+	}
+
+	immediate = {
+		set_variable = dod_clm_seen_11
+	}
+
+	option = {
+		name = dod_clm.11.a
+		default_option = yes
+		change_variable = { name = dod_colombian_unity add = 2 }
+	}
+
+	option = {
+		name = dod_clm.11.b
+		change_variable = { name = dod_colombian_unity add = -2 }
+	}
+}
+
+dod_clm.12 = {
+	type = country_event
+	placement = root
+	title = dod_clm.12.t
+	desc = dod_clm.12.d
+	flavor = dod_clm.12.f
+	event_image = { video = "unspecific_politicians_arguing" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+	duration = 3
+
+	trigger = {
+		has_journal_entry = je_dod_congress_of_mexico
+		NOT = { has_variable = dod_clm_seen_12 }
+	}
+
+	immediate = {
+		set_variable = dod_clm_seen_12
+	}
+
+	option = {
+		name = dod_clm.12.a
+		default_option = yes
+		change_variable = { name = dod_colombian_unity add = 1 }
+	}
+
+	option = {
+		name = dod_clm.12.b
+		change_variable = { name = dod_colombian_unity add = -1 }
+	}
+}
+
+dod_clm.13 = {
+	type = country_event
+	placement = root
+	title = dod_clm.13.t
+	desc = dod_clm.13.d
+	flavor = dod_clm.13.f
+	event_image = { video = "unspecific_politicians_arguing" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+	duration = 3
+
+	trigger = {
+		has_journal_entry = je_dod_congress_of_mexico
+		NOT = { has_variable = dod_clm_seen_13 }
+	}
+
+	immediate = {
+		set_variable = dod_clm_seen_13
+	}
+
+	option = {
+		name = dod_clm.13.a
+		default_option = yes
+		change_variable = { name = dod_colombian_unity add = -2 }
+		activate_law = law_type:law_slavery_banned
+	}
+
+	option = {
+		name = dod_clm.13.b
+		change_variable = { name = dod_colombian_unity add = 1 }
+	}
+}
+
+dod_clm.14 = {
+	type = country_event
+	placement = root
+	title = dod_clm.14.t
+	desc = dod_clm.14.d
+	flavor = dod_clm.14.f
+	event_image = { video = "unspecific_politicians_arguing" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+	duration = 3
+
+	trigger = {
+		has_journal_entry = je_dod_congress_of_mexico
+		NOT = { has_variable = dod_clm_seen_14 }
+	}
+
+	immediate = {
+		set_variable = dod_clm_seen_14
+	}
+
+	option = {
+		name = dod_clm.14.a
+		default_option = yes
+		change_variable = { name = dod_colombian_unity add = 1 }
+	}
+
+	option = {
+		name = dod_clm.14.b
+		change_variable = { name = dod_colombian_unity add = -1 }
+	}
+}
+
+dod_clm.15 = {
+	type = country_event
+	placement = root
+	title = dod_clm.15.t
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				desc = dod_clm.15.d_united
+				trigger = { var:dod_colombian_unity >= 3 }
+			}
+			triggered_desc = {
+				desc = dod_clm.15.d_partial
+				trigger = { var:dod_colombian_unity >= 0 }
+			}
+			triggered_desc = {
+				desc = dod_clm.15.d_failure
+			}
+		}
+	}
+	flavor = dod_clm.15.f
+	event_image = { video = "unspecific_signed_contract" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+	duration = 3
+
+	option = {
+		name = dod_clm.15.a
+		default_option = yes
+		if = {
+			limit = { var:dod_colombian_unity >= 3 }
+			set_variable = dod_clm_united
+			add_modifier = { name = dod_colombian_unity months = 120 }
+		}
+		else_if = {
+			limit = { var:dod_colombian_unity >= 0 }
+			dod_release_homeland = { TAG = UCA CULTURE = central_american }
+			add_modifier = { name = dod_colombia_divided months = 60 }
+		}
+		else = {
+			dod_release_homeland = { TAG = UCA CULTURE = central_american }
+			dod_release_homeland = { TAG = GRA CULTURE = granadan }
+			dod_release_homeland = { TAG = LST CULTURE = lusitanian }
+			change_tag = MEX
+			add_modifier = { name = dod_colombia_divided months = 120 }
+		}
+	}
+}
+
+dod_clm.20 = {
+	type = country_event
+	placement = root
+	title = dod_clm.20.t
+	desc = dod_clm.20.d
+	flavor = dod_clm.20.f
+	event_image = { texture = "gfx/event_pictures/dod/mier_expedition.dds" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+	duration = 3
+
+	trigger = {
+		this = c:CLM
+		has_variable = dod_clm_united
+		NOT = { has_law = law_type:law_autocracy }
+		game_date >= 1845.1.1
+		NOT = { has_variable = dod_clm_seen_20 }
+	}
+
+	immediate = {
+		set_variable = dod_clm_seen_20
+	}
+
+	option = {
+		name = dod_clm.20.a
+		default_option = yes
+		add_modifier = { name = dod_villa_arrested months = 60 }
+		ai_chance = { base = 50 }
+	}
+
+	option = {
+		name = dod_clm.20.b
+		activate_law = law_type:law_autocracy
+		add_modifier = { name = dod_military_regime months = 120 }
+		ai_chance = { base = 50 }
+	}
+}
+
+dod_clm.21 = {
+	type = country_event
+	placement = root
+	title = dod_clm.21.t
+	desc = dod_clm.21.d
+	flavor = dod_clm.21.f
+	event_image = { video = "europenorthamerica_springtime_of_nations" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+	duration = 3
+
+	trigger = {
+		this = c:CLM
+		has_variable = dod_clm_united
+		has_law = law_type:law_autocracy
+		game_date >= 1855.1.1
+		NOT = { has_variable = dod_clm_seen_21 }
+	}
+
+	immediate = {
+		set_variable = dod_clm_seen_21
+	}
+
+	option = {
+		name = dod_clm.21.a
+		default_option = yes
+		activate_law = law_type:law_parliamentary_republic
+		remove_modifier = dod_military_regime
+		ai_chance = { base = 60 }
+	}
+
+	option = {
+		name = dod_clm.21.b
+		ig:ig_intelligentsia = { add_modifier = { name = dod_colombian_repression months = 60 } }
+		ai_chance = { base = 40 }
+	}
+}
+
+dod_clm.22 = {
+	type = country_event
+	placement = root
+	title = dod_clm.22.t
+	desc = dod_clm.22.d
+	flavor = dod_clm.22.f
+	event_image = { texture = "gfx/event_pictures/dod/lynchburg_1863.dds" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+	duration = 3
+
+	trigger = {
+		this = c:CLM
+		NOT = { has_law = law_type:law_slavery_banned }
+		game_date >= 1840.1.1
+		NOT = { has_variable = dod_clm_seen_22 }
+	}
+
+	immediate = {
+		set_variable = dod_clm_seen_22
+	}
+
+	option = {
+		name = dod_clm.22.a
+		default_option = yes
+		activate_law = law_type:law_slavery_banned
+		ai_chance = { base = 40 }
+	}
+
+	option = {
+		name = dod_clm.22.b
+		set_variable = dod_almasi_revolt
+		ai_chance = { base = 60 }
+	}
+}
+
+dod_clm.23 = {
+	type = country_event
+	placement = root
+	title = dod_clm.23.t
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				desc = dod_clm.23.d_won
+				trigger = { has_variable = dod_almasi_won }
+			}
+			triggered_desc = {
+				desc = dod_clm.23.d_lost
+			}
+		}
+	}
+	flavor = dod_clm.23.f
+	event_image = { texture = "gfx/event_pictures/dod/retreat_brady.dds" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+	duration = 3
+
+	trigger = {
+		this = c:CLM
+		has_variable = dod_almasi_revolt
+	}
+
+	immediate = {
+		random_list = {
+			40 = { set_variable = dod_almasi_won }
+			60 = { }
+		}
+	}
+
+	option = {
+		name = dod_clm.23.a
+		default_option = yes
+		if = {
+			limit = { has_variable = dod_almasi_won }
+			activate_law = law_type:law_slavery_banned
+			add_modifier = { name = dod_almasi_victory months = 60 }
+		}
+		else = {
+			add_modifier = { name = dod_almasi_crushed months = 60 }
+		}
+		remove_variable = dod_almasi_revolt
+		remove_variable = dod_almasi_won
+	}
+}
+
+dod_clm.24 = {
+	type = country_event
+	placement = root
+	title = dod_clm.24.t
+	desc = dod_clm.24.d
+	flavor = dod_clm.24.f
+	event_image = { texture = "gfx/event_pictures/dod/caste_war.dds" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+	duration = 3
+
+	trigger = {
+		OR = {
+			this = c:CLM
+			this = c:MEX
+		}
+		game_date >= 1855.1.1
+		NOT = { exists = c:CMN }
+		any_scope_state = { state_region = { is_homeland = cu:nahua } }
+		NOT = { country_has_primary_culture = cu:nahua }
+		NOT = { has_variable = dod_clm_seen_24 }
+	}
+
+	immediate = {
+		set_variable = dod_clm_seen_24
+	}
+
+	option = {
+		name = dod_clm.24.a
+		default_option = yes
+		add_primary_culture = cu:nahua
+		add_primary_culture = cu:mayan
+		add_primary_culture = cu:zapotec
+		ai_chance = { base = 40 }
+	}
+
+	option = {
+		name = dod_clm.24.b
+		dod_release_homeland = { TAG = CMN CULTURE = nahua }
+		if = {
+			limit = { exists = c:CMN }
+			create_diplomatic_play = {
+				target_country = c:CMN
+				type = dp_annex_war
+			}
+		}
+		ai_chance = { base = 60 }
+	}
+}
+
+dod_clm.25 = {
+	type = country_event
+	placement = root
+	title = dod_clm.25.t
+	desc = dod_clm.25.d
+	flavor = dod_clm.25.f
+	event_image = { texture = "gfx/event_pictures/dod/mexican_castle.dds" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	trigger = {
+		OR = {
+			this = c:CLM
+			this = c:MEX
+		}
+		game_date >= 1860.1.1
+		NOT = { has_variable = dod_clm_seen_25 }
+	}
+
+	immediate = {
+		set_variable = dod_clm_seen_25
+	}
+
+	option = {
+		name = dod_clm.25.a
+		default_option = yes
+		add_modifier = { name = dod_chapultepec months = 60 }
+	}
+}
+
+dod_clm.30 = {
+	type = country_event
+	placement = root
+	title = dod_clm.30.t
+	desc = dod_clm.30.d
+	flavor = dod_clm.30.f
+	event_image = { video = "unspecific_politicians_arguing" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	trigger = {
+		any_scope_state = { state_region = { is_homeland = cu:mayan } }
+		game_date >= 1840.1.1
+		NOT = { has_global_variable = dod_maya_cities }
+	}
+
+	immediate = {
+		set_global_variable = dod_maya_cities
+	}
+
+	option = {
+		name = dod_clm.30.a
+		default_option = yes
+		add_modifier = { name = dod_maya_cities months = 120 }
+	}
+}
+
+dod_clm.31 = {
+	type = country_event
+	placement = root
+	title = dod_clm.31.t
+	desc = dod_clm.31.d
+	flavor = dod_clm.31.f
+	event_image = { texture = "gfx/event_pictures/dod/street_cordova.dds" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+	duration = 3
+
+	trigger = {
+		OR = {
+			country_has_primary_culture = cu:mixe
+			country_has_primary_culture = cu:zapotec
+		}
+		NOT = { has_variable = dod_clm_seen_31 }
+	}
+
+	immediate = {
+		set_variable = dod_clm_seen_31
+	}
+
+	option = {
+		name = dod_clm.31.a
+		default_option = yes
+		add_modifier = { name = dod_cargo_respected months = 120 }
+		ai_chance = { base = 50 }
+	}
+
+	option = {
+		name = dod_clm.31.b
+		add_modifier = { name = dod_cargo_abolished months = 120 }
+		ai_chance = { base = 50 }
+	}
+}
+
+dod_clm.32 = {
+	type = country_event
+	placement = root
+	title = dod_clm.32.t
+	desc = dod_clm.32.d
+	flavor = dod_clm.32.f
+	event_image = { video = "unspecific_politicians_arguing" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	duration = 3
+
+	trigger = {
+		country_has_primary_culture = cu:mixe
+		game_date >= 1850.1.1
+		NOT = { has_variable = dod_clm_seen_32 }
+	}
+
+	immediate = {
+		set_variable = dod_clm_seen_32
+	}
+
+	option = {
+		name = dod_clm.32.a
+		default_option = yes
+		add_modifier = { name = dod_mixe_coffee months = 120 }
+		ai_chance = { base = 60 }
+	}
+
+	option = {
+		name = dod_clm.32.b
+		ai_chance = { base = 40 }
+	}
+}
+
+dod_clm.33 = {
+	type = country_event
+	placement = root
+	title = dod_clm.33.t
+	desc = dod_clm.33.d
+	flavor = dod_clm.33.f
+	event_image = { video = "unspecific_politicians_arguing" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	duration = 3
+
+	trigger = {
+		country_has_primary_culture = cu:totonac
+		game_date >= 1875.1.1
+		NOT = { has_variable = dod_clm_seen_33 }
+	}
+
+	immediate = {
+		set_variable = dod_clm_seen_33
+	}
+
+	option = {
+		name = dod_clm.33.a
+		default_option = yes
+		add_modifier = { name = dod_vanilla_decline months = 60 }
+	}
+}
+
+dod_clm.40 = {
+	type = country_event
+	placement = root
+	title = dod_clm.40.t
+	desc = dod_clm.40.d
+	flavor = dod_clm.40.f
+	event_image = { video = "unspecific_politicians_arguing" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	trigger = {
+		this = c:INC
+		game_date >= 1840.1.1
+		NOT = { has_variable = dod_clm_seen_40 }
+	}
+
+	immediate = {
+		set_variable = dod_clm_seen_40
+	}
+
+	option = {
+		name = dod_clm.40.a
+		default_option = yes
+		create_character = { first_name = "Pachacuti" last_name = "Inca" ruler = yes age = 30 }
+	}
+}
+
+dod_clm.41 = {
+	type = country_event
+	placement = root
+	title = dod_clm.41.t
+	desc = dod_clm.41.d
+	flavor = dod_clm.41.f
+	event_image = { video = "unspecific_politicians_arguing" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	trigger = {
+		this = c:INC
+		has_variable = dod_clm_seen_40
+		NOT = { has_variable = dod_clm_seen_41 }
+	}
+
+	immediate = {
+		set_variable = dod_clm_seen_41
+	}
+
+	option = {
+		name = dod_clm.41.a
+		default_option = yes
+		add_modifier = { name = dod_inca_schools months = 240 }
+	}
+}
+
+dod_clm.42 = {
+	type = country_event
+	placement = root
+	title = dod_clm.42.t
+	desc = dod_clm.42.d
+	flavor = dod_clm.42.f
+	event_image = { video = "unspecific_politicians_arguing" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	duration = 3
+
+	trigger = {
+		this = c:INC
+		has_variable = dod_clm_seen_40
+		any_state = {
+			state_region = { is_homeland = cu:quechua }
+			NOT = { owner = root }
+		}
+		NOT = { has_variable = dod_clm_seen_42 }
+	}
+
+	immediate = {
+		set_variable = dod_clm_seen_42
+	}
+
+	option = {
+		name = dod_clm.42.a
+		default_option = yes
+		change_infamy = 5
+		every_state = {
+			limit = {
+				state_region = { is_homeland = cu:quechua }
+				NOT = { owner = root }
+			}
+			state_region = { add_claim = root }
+		}
+		ai_chance = { base = 70 }
+	}
+
+	option = {
+		name = dod_clm.42.b
+		ai_chance = { base = 30 }
+	}
+}
+
+dod_clm.50 = {
+	type = country_event
+	placement = root
+	title = dod_clm.50.t
+	desc = dod_clm.50.d
+	flavor = dod_clm.50.f
+	event_image = { video = "unspecific_politicians_arguing" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	duration = 3
+
+	trigger = {
+		this = c:AMA
+		is_at_war = no
+		NOT = { has_variable = dod_clm_seen_50 }
+	}
+
+	immediate = {
+		set_variable = dod_clm_seen_50
+	}
+
+	option = {
+		name = dod_clm.50.a
+		default_option = yes
+		change_infamy = 5
+		every_state = {
+			limit = {
+				state_region = { is_homeland = cu:amazonian }
+				NOT = { owner = root }
+				any_neighbouring_state = { owner = root }
+			}
+			state_region = { add_claim = root }
+		}
+		ai_chance = { base = 60 }
+	}
+
+	option = {
+		name = dod_clm.50.b
+		ai_chance = { base = 40 }
+	}
+}
+
+dod_clm.16 = {
+	type = country_event
+	placement = root
+	title = dod_clm.16.t
+	desc = dod_clm.16.d
+	flavor = dod_clm.16.f
+	event_image = { video = "unspecific_signed_contract" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+	duration = 3
+
+	trigger = {
+		exists = c:CLM
+		NOT = { this = c:CLM }
+	}
+
+	option = {
+		name = dod_clm.16.a
+		default_option = yes
+		c:CLM = { annex = root }
+		ai_chance = { base = 50 }
+	}
+
+	option = {
+		name = dod_clm.16.b
+		ai_chance = { base = 50 }
+	}
+}

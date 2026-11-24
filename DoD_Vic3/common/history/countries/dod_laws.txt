@@ -1,0 +1,144 @@
+﻿# Starting laws for the major DoD countries, based on the Vic2 mod and the fan wiki (1836).
+COUNTRIES = {
+	c:DUA ?= {
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_wealth_voting
+		activate_law = law_type:law_state_religion
+		activate_law = law_type:law_cultural_exclusion
+	}
+	c:BRG ?= {
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_census_voting
+		activate_law = law_type:law_freedom_of_conscience
+		activate_law = law_type:law_national_supremacy
+	}
+	c:SCA ?= {
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_landed_voting
+		activate_law = law_type:law_state_religion
+		activate_law = law_type:law_national_supremacy
+	}
+	c:HLR ?= {
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_state_religion
+		activate_law = law_type:law_cultural_exclusion
+	}
+	c:TUR ?= {
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_state_religion
+		activate_law = law_type:law_national_supremacy
+	}
+	c:PLC ?= {
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_landed_voting
+		activate_law = law_type:law_state_religion
+		activate_law = law_type:law_cultural_exclusion
+	}
+	c:SPA ?= {
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_state_religion
+		activate_law = law_type:law_national_supremacy
+	}
+	c:ARA ?= {
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_landed_voting
+		activate_law = law_type:law_state_religion
+		activate_law = law_type:law_cultural_exclusion
+	}
+	c:VEN ?= {
+		activate_law = law_type:law_parliamentary_republic
+		activate_law = law_type:law_oligarchy
+		activate_law = law_type:law_state_religion
+		activate_law = law_type:law_cultural_exclusion
+	}
+	c:TUS ?= {
+		activate_law = law_type:law_parliamentary_republic
+		activate_law = law_type:law_census_voting
+		activate_law = law_type:law_freedom_of_conscience
+		activate_law = law_type:law_national_supremacy
+	}
+	c:CLM ?= {
+		activate_law = law_type:law_presidential_republic
+		activate_law = law_type:law_wealth_voting
+		activate_law = law_type:law_state_religion
+		activate_law = law_type:law_national_supremacy
+		activate_law = law_type:law_legacy_slavery
+	}
+	c:VIN ?= {
+		activate_law = law_type:law_parliamentary_republic
+		activate_law = law_type:law_census_voting
+		activate_law = law_type:law_freedom_of_conscience
+		activate_law = law_type:law_national_supremacy
+	}
+	c:NBG ?= {
+		activate_law = law_type:law_parliamentary_republic
+		activate_law = law_type:law_census_voting
+		activate_law = law_type:law_freedom_of_conscience
+		activate_law = law_type:law_cultural_exclusion
+		activate_law = law_type:law_slavery_banned
+	}
+	c:PLA ?= {
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_landed_voting
+		activate_law = law_type:law_state_religion
+		activate_law = law_type:law_racial_segregation
+		activate_law = law_type:law_legacy_slavery
+	}
+	c:NAN ?= {
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_state_religion
+		activate_law = law_type:law_national_supremacy
+	}
+	c:LOT ?= {
+		activate_law = law_type:law_presidential_republic
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_freedom_of_conscience
+		activate_law = law_type:law_national_supremacy
+	}
+	c:AMA ?= {
+		activate_law = law_type:law_parliamentary_republic
+		activate_law = law_type:law_census_voting
+		activate_law = law_type:law_state_religion
+		activate_law = law_type:law_national_supremacy
+	}
+	c:DNG ?= {
+		activate_law = law_type:law_parliamentary_republic
+		activate_law = law_type:law_census_voting
+		activate_law = law_type:law_freedom_of_conscience
+		activate_law = law_type:law_cultural_exclusion
+	}
+	c:INC ?= {
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_state_religion
+		activate_law = law_type:law_national_supremacy
+	}
+	c:JAP ?= {
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_state_religion
+		activate_law = law_type:law_ethnostate
+	}
+	c:AFS ?= {
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_state_religion
+		activate_law = law_type:law_national_supremacy
+	}
+	c:HUN ?= {
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_landed_voting
+		activate_law = law_type:law_state_religion
+		activate_law = law_type:law_national_supremacy
+	}
+	c:BOH ?= {
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_state_religion
+		activate_law = law_type:law_cultural_exclusion
+	}
+}

@@ -1,0 +1,695 @@
+namespace = dod_ame
+
+dod_ame.1 = {
+	type = country_event
+	placement = root
+	title = dod_ame.1.t
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				desc = dod_ame.1.d_vinlander
+				trigger = { var:dod_conference_people = 1 }
+			}
+			triggered_desc = {
+				desc = dod_ame.1.d_septiman
+				trigger = { var:dod_conference_people = 2 }
+			}
+			triggered_desc = {
+				desc = dod_ame.1.d_plantagenian
+				trigger = { var:dod_conference_people = 3 }
+			}
+			triggered_desc = {
+				desc = dod_ame.1.d_lusitanian
+			}
+		}
+	}
+	flavor = dod_ame.1.f
+	event_image = { video = "unspecific_politicians_arguing" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+	duration = 3
+
+	immediate = {
+		# Wiki: Arcadianism is strongest among the Septimans and weakest in Vinland,
+		# still bitter after the Treaty of Lofby.
+		if = {
+			limit = { var:dod_conference_people = 1 }
+			random_list = {
+				25 = { set_variable = { name = dod_conference_result value = 1 } }
+				35 = { set_variable = { name = dod_conference_result value = 2 } }
+				40 = { set_variable = { name = dod_conference_result value = 3 } }
+			}
+		}
+		else_if = {
+			limit = { var:dod_conference_people = 2 }
+			random_list = {
+				70 = { set_variable = { name = dod_conference_result value = 1 } }
+				25 = { set_variable = { name = dod_conference_result value = 2 } }
+				5 = { set_variable = { name = dod_conference_result value = 3 } }
+			}
+		}
+		else = {
+			random_list = {
+				50 = { set_variable = { name = dod_conference_result value = 1 } }
+				30 = { set_variable = { name = dod_conference_result value = 2 } }
+				20 = { set_variable = { name = dod_conference_result value = 3 } }
+			}
+		}
+	}
+
+	option = {
+		name = dod_ame.1.a
+		trigger = { var:dod_conference_result = 1 }
+		default_option = yes
+		if = {
+			limit = { var:dod_conference_people = 1 }
+			add_primary_culture = cu:vinlander
+		}
+		if = {
+			limit = { var:dod_conference_people = 2 }
+			add_primary_culture = cu:septiman
+		}
+		if = {
+			limit = { var:dod_conference_people = 3 }
+			add_primary_culture = cu:plantagenian
+		}
+		if = {
+			limit = { var:dod_conference_people = 4 }
+			add_primary_culture = cu:lusitanian
+		}
+		change_variable = { name = dod_arcadian_accepted add = 1 }
+	}
+
+	option = {
+		name = dod_ame.1.b
+		trigger = { var:dod_conference_result = 2 }
+		if = {
+			limit = { var:dod_conference_people = 1 }
+			add_primary_culture = cu:vinlander
+		}
+		if = {
+			limit = { var:dod_conference_people = 2 }
+			add_primary_culture = cu:septiman
+		}
+		if = {
+			limit = { var:dod_conference_people = 3 }
+			add_primary_culture = cu:plantagenian
+		}
+		if = {
+			limit = { var:dod_conference_people = 4 }
+			add_primary_culture = cu:lusitanian
+		}
+		change_variable = { name = dod_arcadian_accepted add = 1 }
+		add_modifier = { name = dod_arcadian_concessions months = 60 }
+	}
+
+	option = {
+		name = dod_ame.1.c
+		trigger = { var:dod_conference_result = 2 }
+		add_modifier = { name = dod_arcadian_separatism months = 60 }
+	}
+
+	option = {
+		name = dod_ame.1.opt_d
+		trigger = { var:dod_conference_result = 3 }
+		add_modifier = { name = dod_arcadian_separatism months = 120 }
+	}
+}
+
+dod_ame.2 = {
+	type = country_event
+	placement = root
+	title = dod_ame.2.t
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				desc = dod_ame.2.d_success
+				trigger = { has_variable = dod_congress_success }
+			}
+			triggered_desc = {
+				desc = dod_ame.2.d_failure
+			}
+		}
+	}
+	flavor = dod_ame.2.f
+	event_image = { video = "unspecific_signed_contract" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+	duration = 3
+
+	immediate = {
+		random_list = {
+			60 = { set_variable = dod_congress_success }
+			40 = { }
+		}
+	}
+
+	option = {
+		name = dod_ame.2.a
+		trigger = { has_variable = dod_congress_success }
+		default_option = yes
+		add_modifier = { name = dod_pan_arcadianism months = 240 }
+		set_variable = dod_pan_arcadian
+		add_journal_entry = { type = je_dod_arcadian_hegemony }
+	}
+
+	option = {
+		name = dod_ame.2.b
+		trigger = { NOT = { has_variable = dod_congress_success } }
+		add_modifier = { name = dod_arcadian_separatism months = 120 }
+	}
+}
+
+dod_ame.3 = {
+	type = country_event
+	placement = root
+	title = dod_ame.3.t
+	desc = dod_ame.3.d
+	flavor = dod_ame.3.f
+	event_image = { video = "europenorthamerica_springtime_of_nations" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	trigger = {
+		this = c:ARC
+		has_variable = dod_pan_arcadian
+		NOT = { has_variable = dod_ame_seen_3 }
+	}
+
+	immediate = {
+		set_variable = dod_ame_seen_3
+	}
+
+	option = {
+		name = dod_ame.3.a
+		default_option = yes
+		add_modifier = { name = dod_land_of_the_free months = 120 }
+	}
+}
+
+dod_ame.4 = {
+	type = country_event
+	placement = root
+	title = dod_ame.4.t
+	desc = dod_ame.4.d
+	flavor = dod_ame.4.f
+	event_image = { video = "unspecific_politicians_arguing" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	duration = 3
+
+	option = {
+		name = dod_ame.4.a
+		default_option = yes
+		every_scope_state = {
+			limit = {
+				NOT = { state_region = { is_homeland = cu:qingqiuan } }
+				any_neighbouring_state = { owner = c:ARC }
+			}
+			set_state_owner = c:ARC
+		}
+		ai_chance = { base = 40 }
+	}
+
+	option = {
+		name = dod_ame.4.b
+		c:ARC = { trigger_event = { id = dod_ame.5 days = 3 } }
+		ai_chance = { base = 60 }
+	}
+}
+
+dod_ame.5 = {
+	type = country_event
+	placement = root
+	title = dod_ame.5.t
+	desc = dod_ame.5.d
+	flavor = dod_ame.5.f
+	event_image = { video = "unspecific_military_parade" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+	duration = 3
+
+	option = {
+		name = dod_ame.5.a
+		default_option = yes
+		create_diplomatic_play = {
+			target_country = c:DNG
+			type = dp_humiliation
+		}
+		ai_chance = { base = 70 }
+	}
+
+	option = {
+		name = dod_ame.5.b
+		ai_chance = { base = 30 }
+	}
+}
+
+dod_ame.6 = {
+	type = country_event
+	placement = root
+	title = dod_ame.6.t
+	desc = dod_ame.6.d
+	flavor = dod_ame.6.f
+	event_image = { video = "unspecific_politicians_arguing" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+	duration = 3
+
+	trigger = {
+		this = c:NBG
+		is_at_war = no
+		any_scope_state = { state_region = { is_homeland = cu:iroquois } }
+		NOT = { has_variable = dod_ame_seen_6 }
+	}
+
+	immediate = {
+		set_variable = dod_ame_seen_6
+	}
+
+	option = {
+		name = dod_ame.6.a
+		default_option = yes
+		ai_chance = { base = 50 }
+	}
+
+	option = {
+		name = dod_ame.6.b
+		add_primary_culture = cu:iroquois
+		ai_chance = { base = 50 }
+	}
+}
+
+dod_ame.7 = {
+	type = country_event
+	placement = root
+	title = dod_ame.7.t
+	desc = dod_ame.7.d
+	flavor = dod_ame.7.f
+	event_image = { video = "unspecific_politicians_arguing" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	trigger = {
+		this = c:PLA
+		game_date >= 1847.1.1
+		NOT = { has_law = law_type:law_slavery_banned }
+		NOT = { has_variable = dod_ame_seen_7 }
+	}
+
+	immediate = {
+		set_variable = dod_ame_seen_7
+	}
+
+	option = {
+		name = dod_ame.7.a
+		default_option = yes
+		add_modifier = { name = dod_brown_sugar months = 60 }
+	}
+}
+
+dod_ame.10 = {
+	type = country_event
+	placement = root
+	title = dod_ame.10.t
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				desc = dod_ame.10.d_athesia
+				trigger = { var:dod_purchase_kind = 1 }
+			}
+			triggered_desc = {
+				desc = dod_ame.10.d_habana
+				trigger = { var:dod_purchase_kind = 2 }
+			}
+			triggered_desc = {
+				desc = dod_ame.10.d_ayiti
+			}
+		}
+	}
+	flavor = dod_ame.10.f
+	event_image = { video = "unspecific_politicians_arguing" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	duration = 3
+
+	trigger = {
+		has_variable = dod_purchase_buyer
+	}
+
+	option = {
+		name = dod_ame.10.a
+		default_option = yes
+		if = {
+			limit = { var:dod_purchase_kind = 1 }
+			every_scope_state = {
+				limit = { state_region = { is_homeland = cu:athesian } }
+				set_state_owner = var:dod_purchase_buyer
+			}
+		}
+		else_if = {
+			limit = { var:dod_purchase_kind = 2 }
+			every_scope_state = {
+				limit = { state_region = { is_homeland = cu:caribeno } }
+				set_state_owner = var:dod_purchase_buyer
+			}
+		}
+		else = {
+			every_scope_state = {
+				limit = { state_region = { is_homeland = cu:ayitian } }
+				set_state_owner = var:dod_purchase_buyer
+			}
+		}
+		var:dod_purchase_buyer = { add_modifier = { name = dod_colonial_purchase months = 60 } }
+		remove_variable = dod_purchase_buyer
+		remove_variable = dod_purchase_kind
+		ai_chance = { base = 40 }
+	}
+
+	option = {
+		name = dod_ame.10.b
+		var:dod_purchase_buyer = { trigger_event = { id = dod_ame.11 days = 3 } }
+		remove_variable = dod_purchase_buyer
+		remove_variable = dod_purchase_kind
+		ai_chance = { base = 60 }
+	}
+}
+
+dod_ame.11 = {
+	type = country_event
+	placement = root
+	title = dod_ame.11.t
+	desc = dod_ame.11.d
+	flavor = dod_ame.11.f
+	event_image = { video = "unspecific_politicians_arguing" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	duration = 3
+
+	option = {
+		name = dod_ame.11.a
+		default_option = yes
+		ai_chance = { base = 60 }
+	}
+
+	option = {
+		name = dod_ame.11.b
+		change_infamy = 10
+		ai_chance = { base = 40 }
+	}
+}
+
+dod_ame.20 = {
+	type = country_event
+	placement = root
+	title = dod_ame.20.t
+	desc = dod_ame.20.d
+	flavor = dod_ame.20.f
+	event_image = { video = "unspecific_politicians_arguing" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+	duration = 3
+
+	trigger = {
+		this = c:NAN
+		exists = c:LOT
+	}
+
+	option = {
+		name = dod_ame.20.a
+		default_option = yes
+		create_diplomatic_pact = { country = c:LOT type = alliance }
+		c:LOT = { add_modifier = { name = dod_beornian_friendship months = 120 } }
+		ai_chance = { base = 50 }
+	}
+
+	option = {
+		name = dod_ame.20.b
+		change_relations = { country = c:LOT value = 20 }
+		ai_chance = { base = 35 }
+	}
+
+	option = {
+		name = dod_ame.20.c
+		ai_chance = { base = 15 }
+	}
+}
+
+dod_ame.21 = {
+	type = country_event
+	placement = root
+	title = dod_ame.21.t
+	desc = dod_ame.21.d
+	flavor = dod_ame.21.f
+	event_image = { video = "unspecific_politicians_arguing" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	duration = 3
+
+	trigger = {
+		this = c:AZL
+		is_at_war = no
+		NOT = { has_variable = dod_ame_seen_21 }
+	}
+
+	immediate = {
+		set_variable = dod_ame_seen_21
+	}
+
+	option = {
+		name = dod_ame.21.a
+		default_option = yes
+		every_state = {
+			limit = {
+				NOT = { owner = root }
+				any_neighbouring_state = { owner = root }
+			}
+			state_region = { add_claim = root }
+		}
+		change_infamy = 5
+		ai_chance = { base = 40 }
+	}
+
+	option = {
+		name = dod_ame.21.b
+		every_state = {
+			limit = {
+				state_region = { is_homeland = cu:guarani }
+				NOT = { owner = root }
+			}
+			state_region = { add_claim = root }
+		}
+		ai_chance = { base = 30 }
+	}
+
+	option = {
+		name = dod_ame.21.c
+		change_infamy = 15
+		every_state = {
+			limit = {
+				state_region = {
+					OR = {
+						is_homeland = cu:guarani
+						is_homeland = cu:granadan
+						is_homeland = cu:guianan
+					}
+				}
+				NOT = { owner = root }
+			}
+			state_region = { add_claim = root }
+		}
+		ai_chance = { base = 30 }
+	}
+}
+
+dod_ame.22 = {
+	type = country_event
+	placement = root
+	title = dod_ame.22.t
+	desc = dod_ame.22.d
+	flavor = dod_ame.22.f
+	event_image = { video = "unspecific_politicians_arguing" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+	duration = 3
+
+	option = {
+		name = dod_ame.22.a
+		default_option = yes
+		c:AZL = { annex = root }
+		ai_chance = { base = 40 }
+	}
+
+	option = {
+		name = dod_ame.22.b
+		c:AZL = {
+			set_variable = { name = dod_federation_refuser value = root }
+			trigger_event = { id = dod_ame.23 days = 3 }
+		}
+		ai_chance = { base = 60 }
+	}
+}
+
+dod_ame.23 = {
+	type = country_event
+	placement = root
+	title = dod_ame.23.t
+	desc = dod_ame.23.d
+	flavor = dod_ame.23.f
+	event_image = { video = "unspecific_military_parade" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+	duration = 3
+
+	trigger = {
+		has_variable = dod_federation_refuser
+		var:dod_federation_refuser = { exists = this }
+	}
+
+	option = {
+		name = dod_ame.23.a
+		default_option = yes
+		create_diplomatic_play = {
+			target_country = var:dod_federation_refuser
+			type = dp_annex_war
+		}
+		remove_variable = dod_federation_refuser
+		ai_chance = { base = 60 }
+	}
+
+	option = {
+		name = dod_ame.23.b
+		remove_variable = dod_federation_refuser
+		ai_chance = { base = 40 }
+	}
+}
+
+dod_ame.24 = {
+	type = country_event
+	placement = root
+	title = dod_ame.24.t
+	desc = dod_ame.24.d
+	flavor = dod_ame.24.f
+	event_image = { video = "unspecific_politicians_arguing" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+	duration = 3
+
+	trigger = {
+		this = c:LOT
+		has_law = law_type:law_autocracy
+		game_date >= 1845.1.1
+		NOT = { has_variable = dod_ame_seen_24 }
+	}
+
+	immediate = {
+		set_variable = dod_ame_seen_24
+	}
+
+	option = {
+		name = dod_ame.24.a
+		default_option = yes
+		add_modifier = { name = dod_daigle_rule months = 120 }
+		ai_chance = { base = 40 }
+	}
+
+	option = {
+		name = dod_ame.24.b
+		activate_law = law_type:law_parliamentary_republic
+		ai_chance = { base = 30 }
+	}
+
+	option = {
+		name = dod_ame.24.c
+		activate_law = law_type:law_monarchy
+		ai_chance = { base = 30 }
+	}
+}
+
+dod_ame.25 = {
+	type = country_event
+	placement = root
+	title = dod_ame.25.t
+	desc = dod_ame.25.d
+	flavor = dod_ame.25.f
+	event_image = { texture = "gfx/event_pictures/dod/English_resistance.dds" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+	duration = 3
+
+	trigger = {
+		this = c:NAN
+		exists = c:ENL
+		c:ENL = { is_at_war = yes }
+		NOT = { has_variable = dod_ame_seen_25 }
+	}
+
+	immediate = {
+		set_variable = dod_ame_seen_25
+	}
+
+	option = {
+		name = dod_ame.25.a
+		default_option = yes
+		c:ENL = { add_modifier = { name = dod_beornian_volunteers months = 36 } }
+		change_relations = { country = c:ENL value = 50 }
+		ai_chance = { base = 60 }
+	}
+
+	option = {
+		name = dod_ame.25.b
+		ai_chance = { base = 40 }
+	}
+}
+
+dod_ame.26 = {
+	type = country_event
+	placement = root
+	title = dod_ame.26.t
+	desc = dod_ame.26.d
+	flavor = dod_ame.26.f
+	event_image = { video = "unspecific_politicians_arguing" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	duration = 3
+
+	option = {
+		name = dod_ame.26.a
+		default_option = yes
+		change_relations = { country = c:NAN value = 50 }
+		ai_chance = { base = 60 }
+	}
+
+	option = {
+		name = dod_ame.26.b
+		c:NAN = { trigger_event = { id = dod_ame.27 days = 3 } }
+		ai_chance = { base = 40 }
+	}
+}
+
+dod_ame.27 = {
+	type = country_event
+	placement = root
+	title = dod_ame.27.t
+	desc = dod_ame.27.d
+	flavor = dod_ame.27.f
+	event_image = { video = "unspecific_politicians_arguing" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	duration = 3
+
+	option = {
+		name = dod_ame.27.a
+		default_option = yes
+		change_infamy = 5
+		every_state = {
+			limit = {
+				owner = c:INC
+				any_neighbouring_state = { owner = root }
+			}
+			state_region = { add_claim = root }
+		}
+	}
+}

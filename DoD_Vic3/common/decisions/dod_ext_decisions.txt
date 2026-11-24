@@ -1,0 +1,137 @@
+# Expanded content: Beornia & Savoy
+
+dod_beornian_lotharian_union = {
+	is_shown = {
+		this = c:NAN
+		exists = c:LOT
+		NOT = { has_variable = dod_bl_union }
+	}
+	possible = {
+		is_at_war = no
+		c:LOT = {
+			has_modifier = dod_beornian_friendship
+			NOT = { is_subject_of = root }
+			is_at_war = no
+		}
+	}
+	when_taken = {
+		set_variable = dod_bl_union
+		create_diplomatic_pact = { country = c:LOT type = personal_union }
+		add_modifier = { name = dod_beornian_lotharian_union_mod months = 240 }
+	}
+	ai_chance = { base = 60 }
+}
+
+dod_crown_amedeo = {
+	is_shown = {
+		this = c:SAR
+		has_journal_entry = je_dod_savoyard_succession
+	}
+	possible = {
+		is_at_war = no
+		var:dod_vittorio_standing <= 0
+	}
+	when_taken = {
+		remove_journal_entry = je_dod_savoyard_succession
+		trigger_event = { id = dod_ext.45 }
+	}
+	ai_chance = { base = 30 }
+}
+
+dod_italian_confederation = {
+	is_shown = {
+		this = c:SAR
+		NOT = { has_variable = dod_confederation_proposed }
+		NOT = { exists = c:ITA }
+	}
+	possible = {
+		is_at_war = no
+		NOT = { has_journal_entry = je_dod_savoyard_succession }
+	}
+	when_taken = {
+		set_variable = dod_confederation_proposed
+		add_modifier = { name = dod_italian_league months = 240 }
+		every_country = {
+			limit = {
+				country_has_primary_culture = cu:north_italian
+				NOT = { this = root }
+				country_rank < rank_value:major_power
+				NOT = { is_subject_of = c:ARA }
+				NOT = { is_subject_of = c:ARI }
+				NOT = { is_subject_of = c:DUA }
+			}
+			trigger_event = { id = dod_ext.46 days = 14 }
+		}
+	}
+	ai_chance = { base = 50 }
+}
+
+dod_unite_confederation = {
+	is_shown = {
+		this = c:SAR
+		has_variable = dod_confederation_proposed
+		NOT = { exists = c:ITA }
+	}
+	possible = {
+		is_at_war = no
+		game_date >= 1855.1.1
+		any_country = {
+			count >= 2
+			has_variable = dod_confederate
+			is_subject_of = root
+		}
+	}
+	when_taken = {
+		every_country = {
+			limit = {
+				has_variable = dod_confederate
+				is_subject_of = root
+			}
+			root = { annex = prev }
+		}
+		add_primary_culture = cu:south_italian
+		change_tag = ITA
+	}
+	ai_chance = { base = 80 }
+}
+
+dod_new_italian_wars = {
+	is_shown = {
+		OR = {
+			this = c:SAR
+			AND = {
+				this = c:ITA
+				has_variable = dod_confederation_proposed
+			}
+		}
+		NOT = { has_variable = dod_italian_wars }
+	}
+	possible = {
+		is_at_war = no
+		country_rank >= rank_value:major_power
+	}
+	when_taken = {
+		set_variable = dod_italian_wars
+		change_infamy = 15
+		add_modifier = { name = dod_italian_wars months = 120 }
+		every_state = {
+			limit = {
+				state_region = {
+					OR = {
+						is_homeland = cu:north_italian
+						is_homeland = cu:south_italian
+					}
+				}
+				owner = {
+					OR = {
+						this = c:ARA
+						this = c:ARI
+						this = c:DUA
+					}
+				}
+			}
+			state_region = { add_claim = root }
+		}
+	}
+	ai_chance = { base = 40 }
+}

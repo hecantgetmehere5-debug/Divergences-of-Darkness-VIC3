@@ -1,0 +1,144 @@
+﻿# Starting rulers and heirs named in the fan wiki and the mod's events.
+# FORMAT TO VERIFY against vanilla game/common/history/characters.
+CHARACTERS = {
+	c:DUA ?= {  # Henri X, King of England and France since 1832
+		create_character = {
+			first_name = "Henri"
+			last_name = "Plantagenet"
+			historical = yes
+			birth_date = 1785.3.14
+			ruler = yes
+			interest_group = ig_landowners
+		}
+	}
+	c:DUA ?= {  # Henri, Dauphin of France and Prince of Wales
+		create_character = {
+			first_name = "Henri"
+			last_name = "Plantagenet"
+			historical = yes
+			birth_date = 1815.6.2
+			heir = yes
+			interest_group = ig_landowners
+		}
+	}
+	c:HLR ?= {  # Sigismund V, King of the Germans, son of the Stone Emperor
+		create_character = {
+			first_name = "Zsigmond"
+			last_name = "Jagiellon"
+			historical = yes
+			birth_date = 1811.4.20
+			ruler = yes
+			interest_group = ig_landowners
+		}
+	}
+	c:TUR ?= {  # Suleiman II, the reformer Sultan, at war with his brother Mustafa IV
+		create_character = {
+			first_name = "Suleiman"
+			last_name = "Osmanoglu"
+			historical = yes
+			birth_date = 1785.9.1
+			ruler = yes
+			interest_group = ig_armed_forces
+		}
+	}
+	c:SAR ?= {  # the dissolute young Duke of Savoy
+		create_character = {
+			first_name = "Vittorio Luigi"
+			last_name = "di Savoia"
+			historical = yes
+			birth_date = 1815.1.10
+			ruler = yes
+			interest_group = ig_landowners
+		}
+	}
+	c:LOT ?= {  # dictator of Lotharingia since 1817
+		create_character = {
+			first_name = "Denis"
+			last_name = "d'Aigle"
+			historical = yes
+			birth_date = 1780.5.5
+			ruler = yes
+			interest_group = ig_armed_forces
+		}
+	}
+	c:NBG ?= {  # hero of Waldwisse, Chancellor of the Belgian Confederacy
+		create_character = {
+			first_name = "Louise"
+			last_name = "Geloes-Randwijck"
+			historical = yes
+			birth_date = 1785.8.8
+			ruler = yes
+			interest_group = ig_armed_forces
+		}
+	}
+	c:INC ?= {  # Huayna Capac IV, Sapa Inca
+		create_character = {
+			first_name = "Huayna Capac"
+			last_name = "Inca"
+			historical = yes
+			birth_date = 1790.1.1
+			ruler = yes
+			interest_group = ig_landowners
+		}
+	}
+	c:AFS ?= {  # Firuz II, Shahanshah of the Timurtash Empire
+		create_character = {
+			first_name = "Firuz"
+			last_name = "Timurtash"
+			historical = yes
+			birth_date = 1800.2.2
+			ruler = yes
+			interest_group = ig_landowners
+		}
+	}
+	c:QAJ ?= {  # Amir Rostam Kiya of the Kar-Kiya
+		create_character = {
+			first_name = "Rostam"
+			last_name = "Kiya"
+			historical = yes
+			birth_date = 1800.7.7
+			ruler = yes
+			interest_group = ig_landowners
+		}
+	}
+	c:EGY ?= {  # Muhammad I, founder of the House of Alawiyya
+		create_character = {
+			first_name = "Muhammad"
+			last_name = "Alawiyya"
+			historical = yes
+			birth_date = 1780.3.3
+			ruler = yes
+			interest_group = ig_armed_forces
+		}
+	}
+	c:MAC ?= {  # Alexander I, Aragonese prince crowned at the Conference of Naples
+		create_character = {
+			first_name = "Alexandros"
+			last_name = "Trastamara"
+			historical = yes
+			birth_date = 1800.11.11
+			ruler = yes
+			interest_group = ig_landowners
+		}
+	}
+	c:NAN ?= {  # King Charles of Beornia, married to De Aigle's niece
+		create_character = {
+			first_name = "Charles"
+			last_name = "Sussex"
+			historical = yes
+			birth_date = 1800.4.23
+			ruler = yes
+			interest_group = ig_devout
+		}
+	}
+	c:CHG ?= {  # Galdan Khan of the Dzungars
+		create_character = {
+			first_name = "Galdan"
+			last_name = "Choros"
+			historical = yes
+			birth_date = 1780.1.1
+			ruler = yes
+			interest_group = ig_landowners
+		}
+	}
+}

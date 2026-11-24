@@ -1,0 +1,357 @@
+namespace = dod_east
+
+dod_east.1 = {
+	type = country_event
+	placement = root
+	title = dod_east.1.t
+	desc = dod_east.1.d
+	flavor = dod_east.1.f
+	event_image = { video = "unspecific_military_parade" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+	duration = 3
+
+	trigger = {
+		this = c:TNG
+		exists = c:MIG
+		is_at_war = no
+		game_date >= 1840.1.1
+		NOT = { has_variable = dod_east_seen_1 }
+	}
+
+	immediate = {
+		set_variable = dod_east_seen_1
+	}
+
+	option = {
+		name = dod_east.1.a
+		default_option = yes
+		create_diplomatic_play = {
+			target_country = c:MIG
+			type = dp_annex_war
+		}
+		set_variable = dod_regency_war
+		ai_chance = { base = 70 }
+	}
+
+	option = {
+		name = dod_east.1.b
+		add_modifier = { name = dod_self_strengthening months = 60 }
+		ai_chance = { base = 30 }
+	}
+}
+
+dod_east.2 = {
+	type = country_event
+	placement = root
+	title = dod_east.2.t
+	desc = dod_east.2.d
+	flavor = dod_east.2.f
+	event_image = { video = "unspecific_military_parade" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	trigger = {
+		this = c:TNG
+		has_variable = dod_regency_war
+		is_at_war = no
+		NOT = { exists = c:MIG }
+	}
+
+	option = {
+		name = dod_east.2.a
+		default_option = yes
+		add_modifier = { name = dod_self_strengthening months = 240 }
+		remove_variable = dod_regency_war
+	}
+}
+
+dod_east.3 = {
+	type = country_event
+	placement = root
+	title = dod_east.3.t
+	desc = dod_east.3.d
+	flavor = dod_east.3.f
+	event_image = { video = "unspecific_politicians_arguing" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	trigger = {
+		this = c:MIG
+		is_at_war = no
+		exists = c:TNG
+		c:TNG = { has_variable = dod_regency_war }
+		NOT = { has_variable = dod_east_seen_3 }
+	}
+
+	immediate = {
+		set_variable = dod_east_seen_3
+		c:TNG = { remove_variable = dod_regency_war }
+	}
+
+	option = {
+		name = dod_east.3.a
+		default_option = yes
+		add_modifier = { name = dod_regency_endures months = 120 }
+	}
+}
+
+dod_east.10 = {
+	type = country_event
+	placement = root
+	title = dod_east.10.t
+	desc = dod_east.10.d
+	flavor = dod_east.10.f
+	event_image = { video = "europenorthamerica_springtime_of_nations" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+	duration = 3
+
+	trigger = {
+		this = c:JAP
+		game_date >= 1855.1.1
+		is_at_war = no
+		NOT = { exists = c:KOR }
+		NOT = { has_modifier = dod_korean_autonomy }
+		any_scope_state = { state_region = { is_homeland = cu:korean } }
+		NOT = { has_variable = dod_east_seen_10 }
+	}
+
+	immediate = {
+		set_variable = dod_east_seen_10
+		dod_release_homeland = { TAG = KOR CULTURE = korean }
+	}
+
+	option = {
+		name = dod_east.10.a
+		default_option = yes
+		if = {
+			limit = { exists = c:KOR }
+			create_diplomatic_play = {
+				target_country = c:KOR
+				type = dp_annex_war
+			}
+		}
+		ai_chance = { base = 70 }
+	}
+
+	option = {
+		name = dod_east.10.b
+		add_modifier = { name = dod_enforced_peace months = 60 }
+		ai_chance = { base = 30 }
+	}
+}
+
+dod_east.20 = {
+	type = country_event
+	placement = root
+	title = dod_east.20.t
+	desc = dod_east.20.d
+	flavor = dod_east.20.f
+	event_image = { video = "unspecific_politicians_arguing" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	trigger = {
+		this = c:CHG
+		game_date >= 1840.1.1
+		NOT = { has_variable = dod_east_seen_20 }
+	}
+
+	immediate = {
+		set_variable = dod_east_seen_20
+	}
+
+	option = {
+		name = dod_east.20.a
+		default_option = yes
+		set_variable = dod_stroganov
+		ai_chance = { base = 60 }
+	}
+
+	option = {
+		name = dod_east.20.b
+		ai_chance = { base = 40 }
+	}
+}
+
+dod_east.21 = {
+	type = country_event
+	placement = root
+	title = dod_east.21.t
+	desc = dod_east.21.d
+	flavor = dod_east.21.f
+	event_image = { video = "unspecific_military_parade" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+	duration = 3
+
+	trigger = {
+		this = c:CHG
+		has_variable = dod_stroganov
+		game_date >= 1848.1.1
+		NOT = { has_variable = dod_east_seen_21 }
+	}
+
+	immediate = {
+		set_variable = dod_east_seen_21
+	}
+
+	option = {
+		name = dod_east.21.a
+		default_option = yes
+		add_modifier = { name = dod_asiatic_legions months = 240 }
+		ig:ig_landowners = { add_modifier = { name = dod_ig_angered months = 36 } }
+		ai_chance = { base = 50 }
+	}
+
+	option = {
+		name = dod_east.21.b
+		set_variable = dod_baron_spurned
+		ai_chance = { base = 50 }
+	}
+}
+
+dod_east.22 = {
+	type = country_event
+	placement = root
+	title = dod_east.22.t
+	desc = dod_east.22.d
+	flavor = dod_east.22.f
+	event_image = { video = "europenorthamerica_political_extremism" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+	duration = 3
+
+	trigger = {
+		this = c:CHG
+		has_variable = dod_baron_spurned
+		is_at_war = no
+		game_date >= 1852.1.1
+		NOT = { has_variable = dod_east_seen_22 }
+	}
+
+	immediate = {
+		set_variable = dod_east_seen_22
+	}
+
+	option = {
+		name = dod_east.22.a
+		default_option = yes
+		add_modifier = { name = dod_mad_baron_shame months = 60 }
+		ai_chance = { base = 50 }
+	}
+
+	option = {
+		name = dod_east.22.b
+		trigger = { exists = c:MGL }
+		create_diplomatic_play = {
+			target_country = c:MGL
+			type = dp_make_protectorate
+		}
+		ai_chance = { base = 50 }
+	}
+}
+
+dod_east.30 = {
+	type = country_event
+	placement = root
+	title = dod_east.30.t
+	desc = dod_east.30.d
+	flavor = dod_east.30.f
+	event_image = { video = "unspecific_politicians_arguing" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	trigger = {
+		this = c:CHG
+		exists = c:JAP
+		exists = c:TIB
+		is_at_war = no
+		game_date >= 1860.1.1
+		NOT = { has_variable = dod_east_seen_30 }
+	}
+
+	immediate = {
+		set_variable = dod_east_seen_30
+	}
+
+	option = {
+		name = dod_east.30.a
+		default_option = yes
+		set_variable = dod_kawaguchi
+		c:JAP = { change_relations = { country = root value = 40 } }
+		c:TIB = { trigger_event = { id = dod_east.31 days = 60 } }
+		ai_chance = { base = 60 }
+	}
+
+	option = {
+		name = dod_east.30.b
+		ai_chance = { base = 40 }
+	}
+}
+
+dod_east.31 = {
+	type = country_event
+	placement = root
+	title = dod_east.31.t
+	desc = dod_east.31.d
+	flavor = dod_east.31.f
+	event_image = { video = "unspecific_politicians_arguing" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	option = {
+		name = dod_east.31.a
+		default_option = yes
+		c:JAP = { change_relations = { country = root value = 30 } }
+		c:JAP = { add_modifier = { name = dod_lhasa_monks months = 120 } }
+	}
+}
+
+dod_east.32 = {
+	type = country_event
+	placement = root
+	title = dod_east.32.t
+	desc = dod_east.32.d
+	flavor = dod_east.32.f
+	event_image = { video = "unspecific_military_parade" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+	duration = 3
+
+	trigger = {
+		this = c:JAP
+		exists = c:CHG
+		country_rank >= rank_value:great_power
+		is_at_war = no
+		game_date >= 1870.1.1
+		c:CHG = { NOT = { has_variable = dod_kawaguchi } }
+		NOT = { has_variable = dod_east_seen_32 }
+	}
+
+	immediate = {
+		set_variable = dod_east_seen_32
+	}
+
+	option = {
+		name = dod_east.32.a
+		default_option = yes
+		change_infamy = 10
+		create_diplomatic_play = {
+			target_country = c:CHG
+			type = dp_make_protectorate
+		}
+		ai_chance = { base = 60 }
+	}
+
+	option = {
+		name = dod_east.32.b
+		ai_chance = { base = 40 }
+	}
+}

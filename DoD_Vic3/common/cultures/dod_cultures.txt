@@ -1,0 +1,334 @@
+﻿# Divergences of Darkness: cultures that do not exist in vanilla Victoria 3.
+# FORMAT TO VERIFY: written in the vanilla culture layout (color, religion, traits, graphics, ethnicities).
+# Check trait, graphics and ethnicity names against the vanilla game/common/cultures files before release.
+# Population figures come from the Vic2 mod's 1836 pops (x4 for Vic3 scale); see start_data/.
+
+anglois = {  # Anglo-French elite culture of the Dual Monarchy
+	color = { 120 70 150 }
+	religion = catholic
+	traits = { european_heritage }
+	graphics = european
+	ethnicities = {
+		1 = caucasian
+	}
+}
+
+provencal = {  # Occitan-speaking south of France, Protestant-leaning
+	color = { 200 120 60 }
+	religion = protestant
+	traits = { european_heritage }
+	graphics = european
+	ethnicities = {
+		1 = caucasian
+	}
+}
+
+rheinish = {  # Rhinelanders
+	color = { 110 140 90 }
+	religion = protestant
+	traits = { european_heritage }
+	graphics = european
+	ethnicities = {
+		1 = caucasian
+	}
+}
+
+burgundian = {  # Burgundians of the Low Countries and Lorraine
+	color = { 150 40 60 }
+	religion = protestant
+	traits = { european_heritage }
+	graphics = european
+	ethnicities = {
+		1 = caucasian
+	}
+}
+
+scandinavian = {  # Merged Nordic culture of the Kalmar Union
+	color = { 70 110 170 }
+	religion = protestant
+	traits = { european_heritage }
+	graphics = european
+	ethnicities = {
+		1 = caucasian
+	}
+}
+
+livlandian = {  # Baltic Germans (Elbians of Livonia)
+	color = { 150 150 110 }
+	religion = protestant
+	traits = { european_heritage }
+	graphics = european
+	ethnicities = {
+		1 = caucasian
+	}
+}
+
+vinlander = {  # Scandinavian-descended Arcadians of Vinland
+	color = { 90 130 160 }
+	religion = protestant
+	traits = { european_heritage }
+	graphics = european
+	ethnicities = {
+		1 = caucasian
+	}
+}
+
+septiman = {  # Burgundian-descended Arcadians of the Belgian Confederacy
+	color = { 200 170 60 }
+	religion = protestant
+	traits = { european_heritage }
+	graphics = european
+	ethnicities = {
+		1 = caucasian
+	}
+}
+
+plantagenian = {  # Anglo-French-descended Arcadians of Plantagenia
+	color = { 160 60 80 }
+	religion = catholic
+	traits = { european_heritage }
+	graphics = european
+	ethnicities = {
+		1 = caucasian
+	}
+}
+
+athesian = {  # Venetian-descended settlers of Athesia (Florida)
+	color = { 70 160 150 }
+	religion = catholic
+	traits = { european_heritage }
+	graphics = european
+	ethnicities = {
+		1 = caucasian
+	}
+}
+
+afro_germanic = {  # Afro-Caribbean people of Scandinavia's Caribbean islands (Puerto Rico, Galatia, Guadeloupe)
+	color = { 110 80 50 }
+	religion = protestant
+	traits = { african_heritage }
+	graphics = african
+	ethnicities = {
+		1 = african
+	}
+}
+
+rohnnst = {  # Hunhe Ras / Rohnnst native people
+	color = { 150 100 70 }
+	religion = protestant
+	traits = { indigenous_american_heritage }
+	graphics = native_american
+	ethnicities = {
+		1 = native_american
+	}
+}
+
+lotharian = {  # Burgundian-descended Amerigans of Lotharingia
+	color = { 60 120 110 }
+	religion = protestant
+	traits = { european_heritage }
+	graphics = european
+	ethnicities = {
+		1 = caucasian
+	}
+}
+
+beornian = {  # English Anglican exiles of Beornia
+	color = { 170 40 40 }
+	religion = protestant
+	traits = { european_heritage }
+	graphics = european
+	ethnicities = {
+		1 = caucasian
+	}
+}
+
+amazonian = {  # Anglo-French-descended Amerigans of Amazonie
+	color = { 80 150 70 }
+	religion = catholic
+	traits = { european_heritage }
+	graphics = european
+	ethnicities = {
+		1 = caucasian
+	}
+}
+
+guianan = {  # Settlers of Essequibo
+	color = { 120 160 90 }
+	religion = catholic
+	traits = { european_heritage }
+	graphics = european
+	ethnicities = {
+		1 = caucasian
+	}
+}
+
+granadan = {  # Criollos of New Granada
+	color = { 200 140 40 }
+	religion = catholic
+	traits = { european_heritage }
+	graphics = european
+	ethnicities = {
+		1 = caucasian
+	}
+}
+
+lusitanian = {  # Portuguese-descended Amerigans
+	color = { 60 140 90 }
+	religion = catholic
+	traits = { european_heritage }
+	graphics = european
+	ethnicities = {
+		1 = caucasian
+	}
+}
+
+caribeno = {  # Spanish Caribbean (Cuba)
+	color = { 70 170 190 }
+	religion = catholic
+	traits = { european_heritage }
+	graphics = european
+	ethnicities = {
+		1 = caucasian
+	}
+}
+
+ayitian = {  # People of Sudurhafeyjar (Hispaniola)
+	color = { 90 90 160 }
+	religion = protestant
+	traits = { african_heritage }
+	graphics = african
+	ethnicities = {
+		1 = african
+	}
+}
+
+afro_latino = {  # Afro-Colombians of Gran Colombia
+	color = { 120 90 60 }
+	religion = catholic
+	traits = { african_heritage }
+	graphics = african
+	ethnicities = {
+		1 = african
+	}
+}
+
+patagonian = {  # Native peoples of the uncolonised southern cone (Valdivia, Bariloche)
+	color = { 160 160 120 }
+	religion = animist
+	traits = { indigenous_american_heritage }
+	graphics = native_american
+	ethnicities = {
+		1 = native_american
+	}
+}
+
+qingqiuan = {  # Chinese-descended Arcadians of Qingqiu
+	color = { 190 60 40 }
+	religion = mahayana
+	traits = { east_asian_heritage }
+	graphics = east_asian
+	ethnicities = {
+		1 = east_asian
+	}
+}
+
+ganguan = {  # Chinese-descended settlers of Zhourao (Australia)
+	color = { 200 90 50 }
+	religion = mahayana
+	traits = { east_asian_heritage }
+	graphics = east_asian
+	ethnicities = {
+		1 = east_asian
+	}
+}
+
+kaiganese = {  # Japanese settlers of Kita Kaigan
+	color = { 220 120 120 }
+	religion = shinto
+	traits = { east_asian_heritage }
+	graphics = east_asian
+	ethnicities = {
+		1 = east_asian
+	}
+}
+
+beifaren = {  # Northern Han
+	color = { 200 160 60 }
+	religion = mahayana
+	traits = { east_asian_heritage }
+	graphics = east_asian
+	ethnicities = {
+		1 = east_asian
+	}
+}
+
+nanfaren = {  # Southern Han
+	color = { 180 110 50 }
+	religion = mahayana
+	traits = { east_asian_heritage }
+	graphics = east_asian
+	ethnicities = {
+		1 = east_asian
+	}
+}
+
+tionghoa = {  # Chinese of the East Indies
+	color = { 160 120 70 }
+	religion = mahayana
+	traits = { east_asian_heritage }
+	graphics = east_asian
+	ethnicities = {
+		1 = east_asian
+	}
+}
+
+boer = {  # Dutch-descended Afrikaners of the Cape
+	color = { 170 120 60 }
+	religion = protestant
+	traits = { european_heritage }
+	graphics = european
+	ethnicities = {
+		1 = caucasian
+	}
+}
+
+afro_south_african = {  # Bastaards / Griqua
+	color = { 130 100 70 }
+	religion = protestant
+	traits = { african_heritage }
+	graphics = african
+	ethnicities = {
+		1 = african
+	}
+}
+
+khaliji = {  # Gulf Arabs
+	color = { 170 150 100 }
+	religion = sunni
+	traits = { middle_eastern_heritage }
+	graphics = arabic
+	ethnicities = {
+		1 = middle_eastern
+	}
+}
+
+kunok = {  # Muslim people of the Banat (Temesvar, Novi Sad) in Hungary
+	color = { 110 110 140 }
+	religion = sunni
+	traits = { european_heritage }
+	graphics = european
+	ethnicities = {
+		1 = caucasian
+	}
+}
+
+amazonian_native = {  # Peoples of the Amazon basin
+	color = { 70 120 60 }
+	religion = animist
+	traits = { indigenous_american_heritage }
+	graphics = native_american
+	ethnicities = {
+		1 = native_american
+	}
+}

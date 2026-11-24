@@ -1,0 +1,593 @@
+# Africa & Oceania
+
+dod_boer_unification = {
+	is_shown = {
+		country_has_primary_culture = cu:boer
+		NOT = { exists = c:BTV }
+	}
+	possible = {
+		is_at_war = no
+		any_scope_state = {
+			count >= 3
+			state_region = {
+				is_homeland = cu:boer
+			}
+		}
+	}
+	when_taken = {
+		every_country = {
+			limit = {
+				is_subject_of = root
+				OR = {
+					country_has_primary_culture = cu:boer
+				}
+			}
+			root = { annex = prev }
+		}
+		change_tag = BTV
+	}
+	ai_chance = { base = 100 }
+}
+
+dod_form_south_africa = {
+	is_shown = {
+		OR = {
+			this = c:BTV
+			this = c:BRG
+		}
+		NOT = { exists = c:SAF }
+	}
+	possible = {
+		is_at_war = no
+		any_scope_state = {
+			count >= 3
+			state_region = {
+				is_homeland = cu:boer
+			}
+		}
+		any_scope_state = {
+			count >= 2
+			state_region = {
+				OR = {
+					is_homeland = cu:xhosa
+					is_homeland = cu:zulu
+					is_homeland = cu:sotho
+					is_homeland = cu:tswana
+				}
+			}
+		}
+	}
+	when_taken = {
+		add_primary_culture = cu:boer
+		add_primary_culture = cu:afro_south_african
+		change_tag = SAF
+	}
+	ai_chance = { base = 80 }
+}
+
+dod_bastaard_question = {
+	is_shown = {
+		OR = {
+			this = c:BTV
+			this = c:SAF
+			this = c:BRG
+		}
+		NOT = { country_has_primary_culture = cu:afro_south_african }
+	}
+	possible = {
+		any_scope_state = { state_region = { is_homeland = cu:afro_south_african } }
+	}
+	when_taken = {
+		add_primary_culture = cu:afro_south_african
+	}
+	ai_chance = { base = 60 }
+}
+
+dod_greater_griqualand = {
+	is_shown = {
+		this = c:GRQ
+		NOT = { has_variable = dod_griqualand }
+	}
+	possible = {
+		is_at_war = no
+	}
+	when_taken = {
+		set_variable = dod_griqualand
+		change_infamy = 5
+		every_state = {
+			limit = {
+				state_region = {
+					OR = {
+						is_homeland = cu:khoisan
+						is_homeland = cu:tswana
+					}
+				}
+				NOT = { owner = root }
+			}
+			state_region = { add_claim = root }
+		}
+	}
+	ai_chance = { base = 60 }
+}
+
+dod_kongo_missionaries = {
+	is_shown = {
+		this = c:KON
+		NOT = { has_variable = dod_kongo_missions }
+	}
+	possible = {
+		is_at_war = no
+	}
+	when_taken = {
+		set_variable = dod_kongo_missions
+		add_modifier = { name = dod_catholic_missions months = 240 }
+	}
+	ai_chance = { base = 70 }
+}
+
+dod_kongo_empire = {
+	is_shown = {
+		this = c:KON
+		NOT = { has_variable = dod_kongo_empire }
+	}
+	possible = {
+		is_at_war = no
+		any_scope_state = {
+			count >= 3
+			state_region = {
+				is_homeland = cu:bakongo
+			}
+		}
+	}
+	when_taken = {
+		set_variable = dod_kongo_empire
+		change_infamy = 5
+		every_state = {
+			limit = {
+				state_region = {
+					OR = {
+						is_homeland = cu:bakongo
+						is_homeland = cu:mongo
+						is_homeland = cu:kuba
+					}
+				}
+				NOT = { owner = root }
+			}
+			state_region = { add_claim = root }
+		}
+	}
+	ai_chance = { base = 70 }
+}
+
+dod_kongo_integrate = {
+	is_shown = {
+		this = c:KON
+		NOT = { has_variable = dod_kongo_integrated }
+	}
+	possible = {
+		is_at_war = no
+		has_variable = dod_kongo_empire
+	}
+	when_taken = {
+		set_variable = dod_kongo_integrated
+		if = {
+			limit = { any_scope_state = { state_region = { is_homeland = cu:mongo } } }
+			add_primary_culture = cu:mongo
+		}
+		if = {
+			limit = { any_scope_state = { state_region = { is_homeland = cu:kuba } } }
+			add_primary_culture = cu:kuba
+		}
+		if = {
+			limit = { any_scope_state = { state_region = { is_homeland = cu:luba } } }
+			add_primary_culture = cu:luba
+		}
+		if = {
+			limit = { any_scope_state = { state_region = { is_homeland = cu:lunda } } }
+			add_primary_culture = cu:lunda
+		}
+	}
+	ai_chance = { base = 70 }
+}
+
+dod_dahomey_independence = {
+	is_shown = {
+		this = c:DHY
+		any_country = { root = { is_subject_of = prev } }
+	}
+	possible = {
+		is_at_war = no
+	}
+	when_taken = {
+		random_country = {
+			limit = { root = { is_subject_of = prev } }
+			save_scope_as = dod_dahomey_overlord
+		}
+		create_diplomatic_play = {
+			target_country = scope:dod_dahomey_overlord
+			type = dp_independence
+		}
+	}
+	ai_chance = { base = 40 }
+}
+
+dod_dahomey_expansion = {
+	is_shown = {
+		this = c:DHY
+		NOT = { has_variable = dod_dhy_expansion }
+	}
+	possible = {
+		is_at_war = no
+		NOT = { any_country = { root = { is_subject_of = prev } } }
+	}
+	when_taken = {
+		set_variable = dod_dhy_expansion
+		change_infamy = 5
+		every_state = {
+			limit = {
+				state_region = {
+					OR = {
+						is_homeland = cu:ewe
+						is_homeland = cu:akan
+						is_homeland = cu:yoruba
+					}
+				}
+				NOT = { owner = root }
+			}
+			state_region = { add_claim = root }
+		}
+	}
+	ai_chance = { base = 60 }
+}
+
+dod_dahomey_schools = {
+	is_shown = {
+		this = c:DHY
+		NOT = { has_variable = dod_dhy_schools }
+	}
+	possible = {
+		is_at_war = no
+		game_date >= 1860.1.1
+	}
+	when_taken = {
+		set_variable = dod_dhy_schools
+		add_modifier = { name = dod_african_schools months = 240 }
+	}
+	ai_chance = { base = 70 }
+}
+
+dod_forge_caliphate = {
+	is_shown = {
+		OR = {
+			country_has_primary_culture = cu:fulbe
+			country_has_primary_culture = cu:hausa
+		}
+		NOT = { exists = c:SOK }
+	}
+	possible = {
+		is_at_war = no
+		any_scope_state = {
+			count >= 4
+			state_region = {
+				OR = {
+					is_homeland = cu:fulbe
+					is_homeland = cu:hausa
+				}
+			}
+		}
+	}
+	when_taken = {
+		every_country = {
+			limit = {
+				is_subject_of = root
+				OR = {
+					country_has_primary_culture = cu:fulbe
+					country_has_primary_culture = cu:hausa
+				}
+			}
+			root = { annex = prev }
+		}
+		add_primary_culture = cu:fulbe
+		add_primary_culture = cu:hausa
+		change_tag = SOK
+	}
+	ai_chance = { base = 100 }
+}
+
+dod_restore_solomonic = {
+	is_shown = {
+		OR = {
+			country_has_primary_culture = cu:amhara
+			country_has_primary_culture = cu:tigray
+		}
+		NOT = { exists = c:ETH }
+	}
+	possible = {
+		is_at_war = no
+		any_scope_state = {
+			count >= 3
+			state_region = {
+				OR = {
+					is_homeland = cu:amhara
+					is_homeland = cu:tigray
+				}
+			}
+		}
+	}
+	when_taken = {
+		every_country = {
+			limit = {
+				is_subject_of = root
+				OR = {
+					country_has_primary_culture = cu:amhara
+					country_has_primary_culture = cu:tigray
+				}
+			}
+			root = { annex = prev }
+		}
+		add_primary_culture = cu:amhara
+		add_primary_culture = cu:tigray
+		change_tag = ETH
+	}
+	ai_chance = { base = 100 }
+}
+
+dod_ethiopia_imperial_lands = {
+	is_shown = {
+		this = c:ETH
+		NOT = { has_variable = dod_eth_lands }
+	}
+	possible = {
+		is_at_war = no
+		country_rank >= rank_value:major_power
+	}
+	when_taken = {
+		set_variable = dod_eth_lands
+		change_infamy = 10
+		every_state = {
+			limit = {
+				state_region = {
+					OR = {
+						is_homeland = cu:amhara
+						is_homeland = cu:tigray
+						is_homeland = cu:oromo
+						is_homeland = cu:afar
+						is_homeland = cu:harari
+						is_homeland = cu:kefficho
+					}
+				}
+				NOT = { owner = root }
+			}
+			state_region = { add_claim = root }
+		}
+	}
+	ai_chance = { base = 50 }
+}
+
+dod_liberate_nubia = {
+	is_shown = {
+		this = c:ETH
+		NOT = { has_variable = dod_nubia }
+	}
+	possible = {
+		is_at_war = no
+		has_variable = dod_eth_lands
+	}
+	when_taken = {
+		set_variable = dod_nubia
+		change_infamy = 10
+		every_state = {
+			limit = {
+				state_region = {
+					is_homeland = cu:sudanese
+				}
+				NOT = { owner = root }
+			}
+			state_region = { add_claim = root }
+		}
+	}
+	ai_chance = { base = 40 }
+}
+
+dod_greater_adal = {
+	is_shown = {
+		OR = {
+			this = c:ADA
+			this = c:ABS
+		}
+		NOT = { has_variable = dod_greater_adal }
+	}
+	possible = {
+		is_at_war = no
+	}
+	when_taken = {
+		set_variable = dod_greater_adal
+		change_infamy = 5
+		add_primary_culture = cu:somali
+		add_primary_culture = cu:afar
+		add_primary_culture = cu:harari
+		every_state = {
+			limit = {
+				state_region = {
+					OR = {
+						is_homeland = cu:somali
+						is_homeland = cu:afar
+						is_homeland = cu:harari
+					}
+				}
+				NOT = { owner = root }
+			}
+			state_region = { add_claim = root }
+		}
+	}
+	ai_chance = { base = 60 }
+}
+
+dod_proclaim_abyssinia = {
+	is_shown = {
+		OR = {
+			this = c:ETH
+			this = c:ADA
+		}
+		NOT = { exists = c:ABS }
+	}
+	possible = {
+		is_at_war = no
+		any_scope_state = {
+			count >= 3
+			state_region = {
+				OR = {
+					is_homeland = cu:amhara
+					is_homeland = cu:tigray
+				}
+			}
+		}
+		any_scope_state = {
+			count >= 2
+			state_region = {
+				OR = {
+					is_homeland = cu:somali
+					is_homeland = cu:afar
+					is_homeland = cu:harari
+				}
+			}
+		}
+	}
+	when_taken = {
+		add_primary_culture = cu:amhara
+		add_primary_culture = cu:tigray
+		add_primary_culture = cu:somali
+		add_primary_culture = cu:afar
+		add_primary_culture = cu:harari
+		add_primary_culture = cu:oromo
+		change_tag = ABS
+	}
+	ai_chance = { base = 100 }
+}
+
+dod_organize_new_zealand = {
+	is_shown = {
+		NOT = { exists = c:NZL }
+		any_scope_state = { state_region = { is_homeland = cu:maori } }
+		NOT = { country_has_primary_culture = cu:maori }
+	}
+	possible = {
+		is_at_war = no
+		game_date >= 1860.1.1
+	}
+	when_taken = {
+		dod_release_homeland = { TAG = NZL CULTURE = maori }
+		if = {
+			limit = { exists = c:NZL }
+			create_diplomatic_pact = { country = c:NZL type = dominion }
+		}
+	}
+	ai_chance = { base = 20 }
+}
+
+dod_accept_maoris = {
+	is_shown = {
+		any_scope_state = { state_region = { is_homeland = cu:maori } }
+		NOT = { country_has_primary_culture = cu:maori }
+	}
+	possible = {
+		is_at_war = no
+		game_date >= 1870.1.1
+	}
+	when_taken = {
+		add_primary_culture = cu:maori
+	}
+	ai_chance = { base = 30 }
+}
+
+dod_form_polynesia = {
+	is_shown = {
+		country_has_primary_culture = cu:polynesian
+		NOT = { exists = c:PLY }
+	}
+	possible = {
+		is_at_war = no
+		any_scope_state = {
+			count >= 3
+			state_region = {
+				is_homeland = cu:polynesian
+			}
+		}
+	}
+	when_taken = {
+		every_country = {
+			limit = {
+				is_subject_of = root
+				OR = {
+					country_has_primary_culture = cu:polynesian
+				}
+			}
+			root = { annex = prev }
+		}
+		change_tag = PLY
+	}
+	ai_chance = { base = 100 }
+}
+
+dod_polynesia_micronesians = {
+	is_shown = {
+		this = c:PLY
+		NOT = { has_variable = dod_ply_claims }
+	}
+	possible = {
+		is_at_war = no
+	}
+	when_taken = {
+		set_variable = dod_ply_claims
+		every_state = {
+			limit = {
+				state_region = {
+					OR = {
+						is_homeland = cu:melanesian
+						is_homeland = cu:maori
+					}
+				}
+				NOT = { owner = root }
+			}
+			state_region = { add_claim = root }
+		}
+		if = {
+			limit = { any_scope_state = { state_region = { is_homeland = cu:melanesian } } }
+			add_primary_culture = cu:melanesian
+		}
+		if = {
+			limit = { any_scope_state = { state_region = { is_homeland = cu:maori } } }
+			add_primary_culture = cu:maori
+		}
+	}
+	ai_chance = { base = 60 }
+}
+
+dod_organize_maghreb = {
+	is_shown = {
+		NOT = { country_has_primary_culture = cu:maghrebi }
+		any_scope_state = {
+			count >= 2
+			state_region = { is_homeland = cu:maghrebi }
+		}
+		OR = {
+			NOT = { exists = c:MOR }
+			NOT = { exists = c:LBY }
+		}
+	}
+	possible = {
+		is_at_war = no
+		game_date >= 1870.1.1
+	}
+	when_taken = {
+		if = {
+			limit = { NOT = { exists = c:MOR } }
+			dod_release_homeland = { TAG = MOR CULTURE = maghrebi }
+			if = {
+				limit = { exists = c:MOR }
+				create_diplomatic_pact = { country = c:MOR type = dominion }
+			}
+		}
+	}
+	ai_chance = { base = 20 }
+}

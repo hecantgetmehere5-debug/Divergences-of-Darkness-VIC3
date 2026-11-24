@@ -1,0 +1,539 @@
+# Arcadia & Ameriga
+
+dod_form_arcadia = {
+	is_shown = {
+		OR = {
+			this = c:VIN
+			this = c:NBG
+			this = c:PLA
+		}
+		NOT = { exists = c:ARC }
+	}
+	possible = {
+		is_at_war = no
+		country_rank >= rank_value:major_power
+		any_scope_state = {
+			count >= 2
+			state_region = {
+				OR = {
+					is_homeland = cu:vinlander
+					is_homeland = cu:septiman
+					is_homeland = cu:plantagenian
+				}
+			}
+		}
+	}
+	when_taken = {
+		change_tag = ARC
+		add_journal_entry = { type = je_dod_arcadian_union }
+	}
+	ai_chance = { base = 100 }
+}
+
+dod_arcadian_conference = {
+	is_shown = {
+		this = c:ARC
+		has_journal_entry = je_dod_arcadian_union
+	}
+	possible = {
+		OR = {
+			AND = {
+				NOT = { has_variable = dod_conference_1 }
+				NOT = { country_has_primary_culture = cu:vinlander }
+				any_scope_state = { state_region = { is_homeland = cu:vinlander } }
+			}
+			AND = {
+				NOT = { has_variable = dod_conference_2 }
+				NOT = { country_has_primary_culture = cu:septiman }
+				any_scope_state = { state_region = { is_homeland = cu:septiman } }
+			}
+			AND = {
+				NOT = { has_variable = dod_conference_3 }
+				NOT = { country_has_primary_culture = cu:plantagenian }
+				any_scope_state = { state_region = { is_homeland = cu:plantagenian } }
+			}
+			AND = {
+				NOT = { has_variable = dod_conference_4 }
+				NOT = { country_has_primary_culture = cu:lusitanian }
+				any_scope_state = { state_region = { is_homeland = cu:lusitanian } }
+			}
+		}
+		is_at_war = no
+	}
+	when_taken = {
+		if = {
+			limit = {
+				NOT = { has_variable = dod_conference_1 }
+				NOT = { country_has_primary_culture = cu:vinlander }
+				any_scope_state = { state_region = { is_homeland = cu:vinlander } }
+			}
+			set_variable = dod_conference_1
+			set_variable = { name = dod_conference_people value = 1 }
+		}
+		else_if = {
+			limit = {
+				NOT = { has_variable = dod_conference_2 }
+				NOT = { country_has_primary_culture = cu:septiman }
+				any_scope_state = { state_region = { is_homeland = cu:septiman } }
+			}
+			set_variable = dod_conference_2
+			set_variable = { name = dod_conference_people value = 2 }
+		}
+		else_if = {
+			limit = {
+				NOT = { has_variable = dod_conference_3 }
+				NOT = { country_has_primary_culture = cu:plantagenian }
+				any_scope_state = { state_region = { is_homeland = cu:plantagenian } }
+			}
+			set_variable = dod_conference_3
+			set_variable = { name = dod_conference_people value = 3 }
+		}
+		else_if = {
+			limit = {
+				NOT = { has_variable = dod_conference_4 }
+				NOT = { country_has_primary_culture = cu:lusitanian }
+				any_scope_state = { state_region = { is_homeland = cu:lusitanian } }
+			}
+			set_variable = dod_conference_4
+			set_variable = { name = dod_conference_people value = 4 }
+		}
+		trigger_event = { id = dod_ame.1 days = 30 }
+	}
+	ai_chance = { base = 80 }
+}
+
+dod_continental_congress = {
+	is_shown = {
+		this = c:ARC
+		has_journal_entry = je_dod_arcadian_union
+		NOT = { has_variable = dod_congress_held }
+	}
+	possible = {
+		is_at_war = no
+		var:dod_arcadian_accepted >= 2
+	}
+	when_taken = {
+		set_variable = dod_congress_held
+		trigger_event = { id = dod_ame.2 days = 60 }
+	}
+	ai_chance = { base = 100 }
+}
+
+dod_arcadia_manifest_destiny_vin = {
+	is_shown = {
+		this = c:VIN
+		NOT = { has_variable = dod_manifest_destiny }
+	}
+	possible = {
+		is_at_war = no
+		country_rank >= rank_value:major_power
+	}
+	when_taken = {
+		set_variable = dod_manifest_destiny
+		change_infamy = 10
+		every_state = {
+			limit = {
+				state_region = {
+					OR = {
+						is_homeland = cu:septiman
+						is_homeland = cu:plantagenian
+					}
+				}
+				NOT = { owner = root }
+			}
+			state_region = { add_claim = root }
+		}
+	}
+	ai_chance = { base = 40 }
+}
+
+dod_arcadia_manifest_destiny_nbg = {
+	is_shown = {
+		this = c:NBG
+		NOT = { has_variable = dod_manifest_destiny }
+	}
+	possible = {
+		is_at_war = no
+		country_rank >= rank_value:major_power
+	}
+	when_taken = {
+		set_variable = dod_manifest_destiny
+		change_infamy = 10
+		every_state = {
+			limit = {
+				state_region = {
+					OR = {
+						is_homeland = cu:vinlander
+						is_homeland = cu:plantagenian
+					}
+				}
+				NOT = { owner = root }
+			}
+			state_region = { add_claim = root }
+		}
+	}
+	ai_chance = { base = 40 }
+}
+
+dod_arcadia_manifest_destiny_pla = {
+	is_shown = {
+		this = c:PLA
+		NOT = { has_variable = dod_manifest_destiny }
+	}
+	possible = {
+		is_at_war = no
+		country_rank >= rank_value:major_power
+	}
+	when_taken = {
+		set_variable = dod_manifest_destiny
+		change_infamy = 10
+		every_state = {
+			limit = {
+				state_region = {
+					OR = {
+						is_homeland = cu:vinlander
+						is_homeland = cu:septiman
+					}
+				}
+				NOT = { owner = root }
+			}
+			state_region = { add_claim = root }
+		}
+	}
+	ai_chance = { base = 40 }
+}
+
+dod_arcadia_manifest_destiny_dng = {
+	is_shown = {
+		this = c:DNG
+		NOT = { has_variable = dod_manifest_destiny }
+	}
+	possible = {
+		is_at_war = no
+		country_rank >= rank_value:major_power
+	}
+	when_taken = {
+		set_variable = dod_manifest_destiny
+		change_infamy = 10
+		every_state = {
+			limit = {
+				state_region = {
+					OR = {
+						is_homeland = cu:vinlander
+						is_homeland = cu:plantagenian
+					}
+				}
+				NOT = { owner = root }
+			}
+			state_region = { add_claim = root }
+		}
+	}
+	ai_chance = { base = 40 }
+}
+
+dod_push_west = {
+	is_shown = {
+		this = c:ARC
+		exists = c:DNG
+		NOT = { has_variable = dod_push_west }
+	}
+	possible = {
+		is_at_war = no
+		country_rank >= rank_value:great_power
+	}
+	when_taken = {
+		set_variable = dod_push_west
+		c:DNG = { trigger_event = { id = dod_ame.4 days = 7 } }
+	}
+	ai_chance = { base = 50 }
+}
+
+dod_arcadia_integrate = {
+	is_shown = {
+		OR = {
+			this = c:ARC
+			this = c:VIN
+			this = c:NBG
+			this = c:PLA
+		}
+		NOT = { has_variable = dod_arcadia_integrated }
+	}
+	possible = {
+		is_at_war = no
+		game_date >= 1850.1.1
+	}
+	when_taken = {
+		set_variable = dod_arcadia_integrated
+		if = {
+			limit = { any_scope_state = { state_region = { is_homeland = cu:athesian } } }
+			add_primary_culture = cu:athesian
+		}
+		if = {
+			limit = { any_scope_state = { state_region = { is_homeland = cu:caribeno } } }
+			add_primary_culture = cu:caribeno
+		}
+		if = {
+			limit = { any_scope_state = { state_region = { is_homeland = cu:ayitian } } }
+			add_primary_culture = cu:ayitian
+		}
+		if = {
+			limit = { any_scope_state = { state_region = { is_homeland = cu:afro_germanic } } }
+			add_primary_culture = cu:afro_germanic
+		}
+		if = {
+			limit = { any_scope_state = { state_region = { is_homeland = cu:rohnnst } } }
+			add_primary_culture = cu:rohnnst
+		}
+	}
+	ai_chance = { base = 70 }
+}
+
+dod_purchase_athesia = {
+	is_shown = {
+		OR = {
+			this = c:ARC
+			this = c:PLA
+			this = c:NBG
+			this = c:VIN
+		}
+		NOT = { has_variable = dod_purchase_athesia }
+		any_state = {
+			state_region = { is_homeland = cu:athesian }
+			NOT = { owner = root }
+		}
+	}
+	possible = {
+		is_at_war = no
+		country_rank >= rank_value:major_power
+	}
+	when_taken = {
+		set_variable = dod_purchase_athesia
+		random_state = {
+			limit = {
+				state_region = { is_homeland = cu:athesian }
+				NOT = { owner = root }
+			}
+			owner = {
+				set_variable = { name = dod_purchase_buyer value = root }
+				set_variable = { name = dod_purchase_kind value = 1 }
+				trigger_event = { id = dod_ame.10 days = 7 }
+			}
+		}
+	}
+	ai_chance = { base = 40 }
+}
+
+dod_purchase_habana = {
+	is_shown = {
+		OR = {
+			this = c:ARC
+			this = c:PLA
+			this = c:NBG
+			this = c:KRL
+			this = c:AZL
+		}
+		NOT = { has_variable = dod_purchase_habana }
+		any_state = {
+			state_region = { is_homeland = cu:caribeno }
+			NOT = { owner = root }
+		}
+	}
+	possible = {
+		is_at_war = no
+		country_rank >= rank_value:major_power
+	}
+	when_taken = {
+		set_variable = dod_purchase_habana
+		random_state = {
+			limit = {
+				state_region = { is_homeland = cu:caribeno }
+				NOT = { owner = root }
+			}
+			owner = {
+				set_variable = { name = dod_purchase_buyer value = root }
+				set_variable = { name = dod_purchase_kind value = 2 }
+				trigger_event = { id = dod_ame.10 days = 7 }
+			}
+		}
+	}
+	ai_chance = { base = 40 }
+}
+
+dod_purchase_ayiti = {
+	is_shown = {
+		OR = {
+			this = c:ARC
+			this = c:PLA
+			this = c:NBG
+			this = c:KRL
+			this = c:AZL
+		}
+		NOT = { has_variable = dod_purchase_ayiti }
+		any_state = {
+			state_region = { is_homeland = cu:ayitian }
+			NOT = { owner = root }
+		}
+	}
+	possible = {
+		is_at_war = no
+		country_rank >= rank_value:major_power
+	}
+	when_taken = {
+		set_variable = dod_purchase_ayiti
+		random_state = {
+			limit = {
+				state_region = { is_homeland = cu:ayitian }
+				NOT = { owner = root }
+			}
+			owner = {
+				set_variable = { name = dod_purchase_buyer value = root }
+				set_variable = { name = dod_purchase_kind value = 3 }
+				trigger_event = { id = dod_ame.10 days = 7 }
+			}
+		}
+	}
+	ai_chance = { base = 40 }
+}
+
+dod_lot_statue = {
+	is_shown = {
+		this = c:LOT
+		exists = c:NAN
+		NOT = { has_variable = dod_lot_statue }
+	}
+	possible = {
+		is_at_war = no
+	}
+	when_taken = {
+		set_variable = dod_lot_statue
+		c:NAN = { trigger_event = { id = dod_ame.20 days = 30 } }
+	}
+	ai_chance = { base = 60 }
+}
+
+dod_form_ameriga = {
+	is_shown = {
+		OR = {
+			this = c:AMA
+			this = c:LOT
+		}
+		NOT = { exists = c:AZL }
+	}
+	possible = {
+		is_at_war = no
+		any_scope_state = { state_region = { is_homeland = cu:amazonian } }
+		any_scope_state = { state_region = { is_homeland = cu:lotharian } }
+	}
+	when_taken = {
+		every_country = {
+			limit = {
+				is_subject_of = root
+				OR = {
+					country_has_primary_culture = cu:amazonian
+					country_has_primary_culture = cu:lotharian
+				}
+			}
+			root = { annex = prev }
+		}
+		add_primary_culture = cu:amazonian
+		add_primary_culture = cu:lotharian
+		change_tag = AZL
+		add_modifier = { name = dod_ameriga_federation months = 120 }
+		trigger_event = { id = dod_ame.21 days = 30 }
+	}
+	ai_chance = { base = 100 }
+}
+
+dod_federation_invite = {
+	is_shown = {
+		this = c:AZL
+		NOT = { has_variable = dod_federation_invited }
+	}
+	possible = {
+		is_at_war = no
+	}
+	when_taken = {
+		set_variable = dod_federation_invited
+		every_country = {
+			limit = {
+				OR = {
+					this = c:NAN
+					this = c:EQN
+					this = c:ATL
+				}
+				NOT = { is_subject_of = root }
+			}
+			trigger_event = { id = dod_ame.22 days = 14 }
+		}
+	}
+	ai_chance = { base = 60 }
+}
+
+dod_ameriga_integrate = {
+	is_shown = {
+		this = c:AZL
+		NOT = { has_variable = dod_ameriga_integrated }
+	}
+	possible = {
+		is_at_war = no
+	}
+	when_taken = {
+		set_variable = dod_ameriga_integrated
+		if = {
+			limit = { any_scope_state = { state_region = { is_homeland = cu:beornian } } }
+			add_primary_culture = cu:beornian
+		}
+		if = {
+			limit = { any_scope_state = { state_region = { is_homeland = cu:granadan } } }
+			add_primary_culture = cu:granadan
+		}
+		if = {
+			limit = { any_scope_state = { state_region = { is_homeland = cu:guarani } } }
+			add_primary_culture = cu:guarani
+		}
+		if = {
+			limit = { any_scope_state = { state_region = { is_homeland = cu:guianan } } }
+			add_primary_culture = cu:guianan
+		}
+	}
+	ai_chance = { base = 70 }
+}
+
+dod_beornia_inca_treaty = {
+	is_shown = {
+		this = c:NAN
+		exists = c:INC
+		NOT = { has_variable = dod_inca_treaty }
+	}
+	possible = {
+		is_at_war = no
+	}
+	when_taken = {
+		set_variable = dod_inca_treaty
+		c:INC = { trigger_event = { id = dod_ame.26 days = 14 } }
+	}
+	ai_chance = { base = 50 }
+}
+
+dod_dine_claims = {
+	is_shown = {
+		this = c:DIN
+		NOT = { has_variable = dod_dine_claims }
+	}
+	possible = {
+		is_at_war = no
+	}
+	when_taken = {
+		set_variable = dod_dine_claims
+		every_state = {
+			limit = {
+				state_region = {
+					is_homeland = cu:pueblo
+				}
+				NOT = { owner = root }
+			}
+			state_region = { add_claim = root }
+		}
+	}
+	ai_chance = { base = 60 }
+}

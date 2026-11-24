@@ -1,0 +1,42 @@
+# Italy, Aragon-Italy & Venice-Greece: scripted triggers
+
+dod_is_italian_country = {
+	OR = {
+		country_has_primary_culture = cu:north_italian
+		country_has_primary_culture = cu:south_italian
+		country_has_primary_culture = cu:venetian
+	}
+}
+
+dod_is_italian_state = {
+	state_region = {
+		OR = {
+			is_homeland = cu:north_italian
+			is_homeland = cu:south_italian
+			is_homeland = cu:venetian
+		}
+	}
+}
+
+dod_is_north_italian_state = { state_region = { is_homeland = cu:north_italian } }
+dod_is_south_italian_state = { state_region = { is_homeland = cu:south_italian } }
+dod_is_venetian_state = { state_region = { is_homeland = cu:venetian } }
+dod_is_greek_state = { state_region = { is_homeland = cu:greek } }
+dod_is_french_state = { state_region = { is_homeland = cu:french } }
+dod_is_catalan_state = { state_region = { is_homeland = cu:catalan } }
+
+dod_is_republic = {
+	OR = {
+		has_law = law_type:law_parliamentary_republic
+		has_law = law_type:law_presidential_republic
+		has_law = law_type:law_council_republic
+	}
+}
+
+# An Italian country the Council of Italy can invite
+dod_is_council_guest = {
+	dod_is_italian_country = yes
+	has_global_variable = dod_council_host
+	NOT = { this = global_var:dod_council_host }
+	NOT = { is_subject_of = global_var:dod_council_host }
+}

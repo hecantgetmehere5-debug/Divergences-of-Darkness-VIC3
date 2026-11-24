@@ -1,0 +1,441 @@
+# Gran Colombia, Mexico & the Andes
+
+dod_declare_colombian_independence = {
+	is_shown = {
+		this = c:CLM
+		has_journal_entry = je_dod_colombian_independence
+		NOT = { has_variable = dod_expel_spanish }
+	}
+	possible = {
+		any_state = {
+			owner = {
+				OR = {
+					this = c:SPA
+					this = c:SPC
+				}
+			}
+			state_region = {
+				OR = {
+					is_homeland = cu:mexican
+					is_homeland = cu:central_american
+					is_homeland = cu:granadan
+					is_homeland = cu:caribeno
+				}
+			}
+		}
+	}
+	when_taken = {
+		set_variable = dod_expel_spanish
+		every_state = {
+			limit = {
+				owner = {
+					OR = {
+						this = c:SPA
+						this = c:SPC
+					}
+				}
+				state_region = {
+					OR = {
+						is_homeland = cu:mexican
+						is_homeland = cu:central_american
+						is_homeland = cu:granadan
+						is_homeland = cu:caribeno
+					}
+				}
+			}
+			state_region = { add_claim = root }
+		}
+	}
+	ai_chance = { base = 100 }
+}
+
+dod_treaty_of_habana = {
+	is_shown = {
+		OR = {
+			this = c:SPA
+			this = c:SPC
+		}
+		exists = c:CLM
+		NOT = { has_variable = dod_habana_signed }
+	}
+	possible = {
+		is_at_war = no
+		c:CLM = { NOT = { is_subject_of = root } }
+	}
+	when_taken = {
+		set_variable = dod_habana_signed
+		change_relations = { country = c:CLM value = 50 }
+		add_modifier = { name = dod_colombia_divided months = 60 }
+	}
+	ai_chance = { base = 60 }
+}
+
+dod_colombian_empire = {
+	is_shown = {
+		this = c:CLM
+		has_variable = dod_clm_united
+		NOT = { has_law = law_type:law_monarchy }
+	}
+	possible = {
+		is_at_war = no
+		has_law = law_type:law_autocracy
+	}
+	when_taken = {
+		activate_law = law_type:law_monarchy
+	}
+	ai_chance = { base = 30 }
+}
+
+dod_colombian_claims = {
+	is_shown = {
+		OR = {
+			this = c:CLM
+			this = c:MEX
+		}
+		NOT = { has_variable = dod_colombian_claims }
+	}
+	possible = {
+		is_at_war = no
+		country_rank >= rank_value:major_power
+	}
+	when_taken = {
+		set_variable = dod_colombian_claims
+		change_infamy = 15
+		every_state = {
+			limit = {
+				state_region = {
+					OR = {
+						is_homeland = cu:central_american
+						is_homeland = cu:lusitanian
+						is_homeland = cu:granadan
+						is_homeland = cu:mexican
+					}
+				}
+				NOT = { owner = root }
+			}
+			state_region = { add_claim = root }
+		}
+	}
+	ai_chance = { base = 40 }
+}
+
+dod_colombian_unity_congress = {
+	is_shown = {
+		OR = {
+			this = c:MEX
+			this = c:UCA
+			this = c:GRA
+			this = c:LST
+		}
+		NOT = { exists = c:CLM }
+		NOT = { has_global_variable = dod_second_congress }
+	}
+	possible = {
+		is_at_war = no
+		game_date >= 1860.1.1
+		dod_is_republic = yes
+	}
+	when_taken = {
+		set_global_variable = dod_second_congress
+		every_country = {
+			limit = {
+				OR = {
+					this = c:MEX
+					this = c:UCA
+					this = c:GRA
+					this = c:LST
+				}
+				NOT = { this = root }
+			}
+			save_scope_as = dod_congress_guest
+			root = {
+				set_variable = { name = dod_unity_invitee value = scope:dod_congress_guest }
+			}
+			trigger_event = { id = dod_clm.16 days = 30 }
+		}
+		change_tag = CLM
+	}
+	ai_chance = { base = 50 }
+}
+
+dod_form_mexico = {
+	is_shown = {
+		country_has_primary_culture = cu:mexican
+		NOT = { exists = c:MEX }
+		NOT = { exists = c:CLM }
+	}
+	possible = {
+		is_at_war = no
+		any_scope_state = {
+			count >= 4
+			state_region = {
+				is_homeland = cu:mexican
+			}
+		}
+	}
+	when_taken = {
+		change_tag = MEX
+	}
+	ai_chance = { base = 100 }
+}
+
+dod_form_usca = {
+	is_shown = {
+		country_has_primary_culture = cu:central_american
+		NOT = { exists = c:UCA }
+	}
+	possible = {
+		is_at_war = no
+		any_scope_state = {
+			count >= 3
+			state_region = {
+				is_homeland = cu:central_american
+			}
+		}
+	}
+	when_taken = {
+		every_country = {
+			limit = {
+				is_subject_of = root
+				country_has_primary_culture = cu:central_american
+			}
+			root = { annex = prev }
+		}
+		change_tag = UCA
+	}
+	ai_chance = { base = 100 }
+}
+
+dod_form_granada = {
+	is_shown = {
+		country_has_primary_culture = cu:granadan
+		NOT = { exists = c:GRA }
+	}
+	possible = {
+		is_at_war = no
+		any_scope_state = {
+			count >= 3
+			state_region = {
+				is_homeland = cu:granadan
+			}
+		}
+	}
+	when_taken = {
+		change_tag = GRA
+	}
+	ai_chance = { base = 100 }
+}
+
+dod_reclaim_granada = {
+	is_shown = {
+		this = c:GRA
+		exists = c:INC
+		NOT = { has_variable = dod_reclaim_granada }
+	}
+	possible = {
+		is_at_war = no
+		country_rank >= rank_value:major_power
+	}
+	when_taken = {
+		set_variable = dod_reclaim_granada
+		change_infamy = 10
+		every_state = {
+			limit = {
+				owner = c:INC
+				NOT = { state_region = { is_homeland = cu:quechua } }
+			}
+			state_region = { add_claim = root }
+		}
+	}
+	ai_chance = { base = 50 }
+}
+
+dod_aztec_legacy = {
+	is_shown = {
+		country_has_primary_culture = cu:nahua
+		NOT = { has_variable = dod_aztec_legacy }
+	}
+	possible = {
+		is_at_war = no
+		any_scope_state = {
+			count >= 2
+			state_region = {
+				is_homeland = cu:nahua
+			}
+		}
+	}
+	when_taken = {
+		set_variable = dod_aztec_legacy
+		change_infamy = 10
+		every_state = {
+			limit = {
+				state_region = {
+					OR = {
+						is_homeland = cu:nahua
+						is_homeland = cu:otomi
+						is_homeland = cu:huastec
+						is_homeland = cu:totonac
+						is_homeland = cu:tarascan
+					}
+				}
+				NOT = { owner = root }
+			}
+			state_region = { add_claim = root }
+		}
+	}
+	ai_chance = { base = 60 }
+}
+
+dod_league_of_mayapan = {
+	is_shown = {
+		country_has_primary_culture = cu:mayan
+		NOT = { has_variable = dod_mayapan }
+	}
+	possible = {
+		is_at_war = no
+	}
+	when_taken = {
+		set_variable = dod_mayapan
+		every_state = {
+			limit = {
+				state_region = {
+					OR = {
+						is_homeland = cu:mayan
+						is_homeland = cu:quiche
+					}
+				}
+				NOT = { owner = root }
+			}
+			state_region = { add_claim = root }
+		}
+	}
+	ai_chance = { base = 60 }
+}
+
+dod_zapotec_heritage = {
+	is_shown = {
+		OR = {
+			country_has_primary_culture = cu:zapotec
+			country_has_primary_culture = cu:mixtec
+			country_has_primary_culture = cu:mixe
+		}
+		NOT = { has_variable = dod_zapotec }
+	}
+	possible = {
+		is_at_war = no
+	}
+	when_taken = {
+		set_variable = dod_zapotec
+		every_state = {
+			limit = {
+				state_region = {
+					OR = {
+						is_homeland = cu:zapotec
+						is_homeland = cu:mixtec
+						is_homeland = cu:mixe
+					}
+				}
+				NOT = { owner = root }
+			}
+			state_region = { add_claim = root }
+		}
+	}
+	ai_chance = { base = 60 }
+}
+
+dod_mesoamerican_unity = {
+	is_shown = {
+		OR = {
+			country_has_primary_culture = cu:nahua
+			country_has_primary_culture = cu:mayan
+			country_has_primary_culture = cu:zapotec
+			country_has_primary_culture = cu:mixe
+			country_has_primary_culture = cu:mixtec
+			country_has_primary_culture = cu:otomi
+			country_has_primary_culture = cu:totonac
+			country_has_primary_culture = cu:huastec
+			country_has_primary_culture = cu:tarascan
+			country_has_primary_culture = cu:quiche
+		}
+		NOT = { exists = c:CMN }
+	}
+	possible = {
+		is_at_war = no
+		any_scope_state = {
+			count >= 5
+			state_region = {
+				OR = {
+					is_homeland = cu:nahua
+					is_homeland = cu:mayan
+					is_homeland = cu:zapotec
+					is_homeland = cu:mixe
+					is_homeland = cu:mixtec
+					is_homeland = cu:otomi
+					is_homeland = cu:totonac
+					is_homeland = cu:huastec
+					is_homeland = cu:tarascan
+					is_homeland = cu:quiche
+				}
+			}
+		}
+	}
+	when_taken = {
+		add_primary_culture = cu:nahua
+		add_primary_culture = cu:mayan
+		add_primary_culture = cu:zapotec
+		add_primary_culture = cu:mixe
+		add_primary_culture = cu:mixtec
+		add_primary_culture = cu:otomi
+		add_primary_culture = cu:totonac
+		add_primary_culture = cu:huastec
+		add_primary_culture = cu:tarascan
+		add_primary_culture = cu:quiche
+		change_tag = CMN
+	}
+	ai_chance = { base = 100 }
+}
+
+dod_inca_empire = {
+	is_shown = {
+		this = c:INC
+		NOT = { has_variable = dod_inca_empire }
+	}
+	possible = {
+		is_at_war = no
+		country_rank >= rank_value:major_power
+	}
+	when_taken = {
+		set_variable = dod_inca_empire
+		change_infamy = 15
+		every_state = {
+			limit = {
+				state_region = {
+					OR = {
+						is_homeland = cu:quechua
+						is_homeland = cu:granadan
+						is_homeland = cu:patagonian
+					}
+				}
+				NOT = { owner = root }
+			}
+			state_region = { add_claim = root }
+		}
+	}
+	ai_chance = { base = 40 }
+}
+
+dod_inca_mining = {
+	is_shown = {
+		this = c:INC
+		NOT = { has_variable = dod_inca_mining }
+	}
+	possible = {
+		is_at_war = no
+		game_date >= 1850.1.1
+	}
+	when_taken = {
+		set_variable = dod_inca_mining
+		add_modifier = { name = dod_inca_riches months = 240 }
+	}
+	ai_chance = { base = 70 }
+}
