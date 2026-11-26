@@ -6,7 +6,7 @@ dod_treasure_fleets = {
 }
 
 dod_young_emperor = {
-	icon = "gfx/interface/icons/timed_modifier_icons/modifier_scroll_positive.dds"
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_documents_positive.dds"
 	country_legitimacy_base_add = 5
 }
 
@@ -16,7 +16,7 @@ dod_taiping_zeal = {
 }
 
 dod_open_ports = {
-	icon = "gfx/interface/icons/timed_modifier_icons/modifier_scroll_positive.dds"
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_documents_positive.dds"
 	country_prestige_add = 5
 }
 
@@ -26,22 +26,22 @@ dod_japanese_gunsmiths = {
 }
 
 dod_korean_autonomy = {
-	icon = "gfx/interface/icons/timed_modifier_icons/modifier_scroll_positive.dds"
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_documents_positive.dds"
 	country_legitimacy_base_add = 5
 }
 
 dod_ainu_protection = {
-	icon = "gfx/interface/icons/timed_modifier_icons/modifier_scroll_positive.dds"
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_documents_positive.dds"
 	country_legitimacy_base_add = 3
 }
 
 dod_central_authority = {
-	icon = "gfx/interface/icons/timed_modifier_icons/modifier_scroll_positive.dds"
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_documents_positive.dds"
 	country_authority_add = 25
 }
 
 dod_akbar_tolerance = {
-	icon = "gfx/interface/icons/timed_modifier_icons/modifier_scroll_positive.dds"
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_documents_positive.dds"
 	country_legitimacy_base_add = 10
 }
 
@@ -51,22 +51,22 @@ dod_vijayanagar_glory = {
 }
 
 dod_bengal_trade = {
-	icon = "gfx/interface/icons/timed_modifier_icons/modifier_scroll_positive.dds"
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_documents_positive.dds"
 	country_prestige_add = 5
 }
 
 dod_ceylon_governed = {
-	icon = "gfx/interface/icons/timed_modifier_icons/modifier_scroll_positive.dds"
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_documents_positive.dds"
 	country_legitimacy_base_add = 3
 }
 
 dod_spice_trade = {
-	icon = "gfx/interface/icons/timed_modifier_icons/modifier_scroll_positive.dds"
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_documents_positive.dds"
 	country_prestige_add = 5
 }
 
 dod_christiania_tolerance = {
-	icon = "gfx/interface/icons/timed_modifier_icons/modifier_scroll_positive.dds"
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_documents_positive.dds"
 	country_legitimacy_base_add = 3
 }
 
@@ -76,17 +76,17 @@ dod_zhourao_destiny_mod = {
 }
 
 dod_zhourao_humility = {
-	icon = "gfx/interface/icons/timed_modifier_icons/modifier_scroll_positive.dds"
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_documents_positive.dds"
 	country_legitimacy_base_add = 5
 }
 
 dod_lanfang_kongsi = {
-	icon = "gfx/interface/icons/timed_modifier_icons/modifier_scroll_positive.dds"
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_documents_positive.dds"
 	country_legitimacy_base_add = 10
 }
 
 dod_selon_respected = {
-	icon = "gfx/interface/icons/timed_modifier_icons/modifier_scroll_positive.dds"
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_documents_positive.dds"
 	country_legitimacy_base_add = 3
 }
 
@@ -96,11 +96,11 @@ dod_steppe_tradition = {
 }
 
 dod_steppe_reform = {
-	icon = "gfx/interface/icons/timed_modifier_icons/modifier_book_positive.dds"
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_lightbulb_positive.dds"
 	country_prestige_add = 5
 }
 
 dod_tribal_loyalty = {
-	icon = "gfx/interface/icons/timed_modifier_icons/modifier_scroll_positive.dds"
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_documents_positive.dds"
 	country_legitimacy_base_add = 5
 }

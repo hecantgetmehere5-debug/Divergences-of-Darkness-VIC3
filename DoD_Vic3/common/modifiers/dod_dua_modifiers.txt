@@ -30,7 +30,7 @@ dod_crown_prevails = {
 }
 
 dod_selon_abolished = {
-	icon = "gfx/interface/icons/timed_modifier_icons/modifier_scroll_positive.dds"
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_documents_positive.dds"
 	country_prestige_add = 25
 }
 

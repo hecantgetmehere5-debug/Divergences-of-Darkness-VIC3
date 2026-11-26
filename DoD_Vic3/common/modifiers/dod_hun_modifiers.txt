@@ -1,0 +1,122 @@
+﻿# Hungary storyline: modifiers (ported from the Vic2 mod's Hungary events and decisions)
+
+dod_hun_holy_crown = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds"
+	country_legitimacy_base_add = 15
+	country_prestige_add = 25
+}
+
+dod_hun_humiliated = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_statue_negative.dds"
+	country_prestige_add = -30
+	country_legitimacy_base_add = -5
+}
+
+dod_hun_crown_bowed = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds"
+	country_prestige_add = 25
+}
+
+dod_hun_slovak_autonomy = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_documents_negative.dds"
+	country_authority_add = -50
+}
+
+dod_hun_heist_failed = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_statue_negative.dds"
+	country_prestige_add = -40
+	country_legitimacy_base_add = -10
+}
+
+dod_hun_heist_outrage = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_statue_negative.dds"
+	country_prestige_add = -20
+}
+
+dod_hun_cattle_barons_ended = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_documents_positive.dds"
+	interest_group_ig_landowners_pol_str_mult = -0.15
+}
+
+dod_hun_equality_of_cults = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_documents_positive.dds"
+	country_legitimacy_base_add = 5
+	state_assimilation_mult = -0.1
+}
+
+dod_hun_peasants_emancipated = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_documents_positive.dds"
+	state_pop_qualifications_mult = 0.1
+	interest_group_ig_landowners_pol_str_mult = -0.1
+}
+
+dod_hun_magyarisation = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds"
+	state_assimilation_mult = 0.25
+	country_legitimacy_base_add = -5
+}
+
+dod_hun_nation_of_nations = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
+	country_legitimacy_base_add = 10
+	state_assimilation_mult = -0.15
+}
+
+dod_hun_siculicidium = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_fire_negative.dds"
+	country_legitimacy_base_add = -15
+}
+
+dod_hun_copper_mines = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_coins_positive.dds"
+	building_copper_mine_throughput_add = 0.15
+}
+
+dod_hun_gold_mines = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_coins_positive.dds"
+	building_gold_mine_throughput_add = 0.15
+}
+
+dod_hun_alfold_agriculture = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_coins_positive.dds"
+	building_wheat_farm_throughput_add = 0.1
+	building_livestock_ranch_throughput_add = 0.1
+}
+
+dod_hun_alfold_mining = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_coins_positive.dds"
+	building_iron_mine_throughput_add = 0.1
+	building_coal_mine_throughput_add = 0.1
+}
+
+dod_hun_alfold_balanced = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_coins_positive.dds"
+	building_wheat_farm_throughput_add = 0.05
+	building_iron_mine_throughput_add = 0.05
+}
+
+dod_hun_transylvanian_autonomy = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_documents_negative.dds"
+	country_authority_add = -75
+	country_legitimacy_base_add = 5
+}
+
+dod_hun_croatian_compromise = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_documents_positive.dds"
+	country_legitimacy_base_add = 5
+	country_authority_add = -25
+}
+
+dod_hun_centralised = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
+	country_authority_add = 100
+	country_bureaucracy_add = 50
+	country_prestige_add = 25
+}
+
+dod_hun_turanism = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
+	country_prestige_add = 30
+	unit_offense_mult = 0.05
+	country_infamy_decay_mult = -0.2
+}

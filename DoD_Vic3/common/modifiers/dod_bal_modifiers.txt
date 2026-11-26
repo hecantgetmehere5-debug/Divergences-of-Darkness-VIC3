@@ -17,7 +17,7 @@ dod_ottoman_reconquest = {
 }
 
 dod_sunset_rebellions = {
-	icon = "gfx/interface/icons/timed_modifier_icons/modifier_scroll_positive.dds"
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_documents_positive.dds"
 	country_legitimacy_base_add = 10
 }
 
@@ -38,13 +38,13 @@ dod_magyar_repression = {
 }
 
 dod_tanzimat = {
-	icon = "gfx/interface/icons/timed_modifier_icons/modifier_scroll_positive.dds"
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_documents_positive.dds"
 	country_legitimacy_base_add = 10
 	country_authority_add = 25
 }
 
 dod_tanzimat_extended = {
-	icon = "gfx/interface/icons/timed_modifier_icons/modifier_scroll_positive.dds"
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_documents_positive.dds"
 	country_legitimacy_base_add = 10
 	country_prestige_add = 15
 }

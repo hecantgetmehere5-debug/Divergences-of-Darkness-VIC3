@@ -1,0 +1,105 @@
+﻿# Hungary storyline: journal entries
+#
+#   je_dod_crown_of_st_stephen     -> win back the Holy Crown from Bohemia     (dod_hun.1-9)
+#   je_dod_hungarian_centralisation -> five reforms, then the founding of Budapest (dod_hun.10-20)
+
+je_dod_crown_of_st_stephen = {
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	group = je_group_historical_content
+
+	is_shown_when_inactive = { c:HUN ?= this }
+	possible = { c:HUN ?= this }
+
+	immediate = {
+		trigger_event = { id = dod_hun.1 days = 30 }
+	}
+
+	should_be_pinned_by_default_uninvolved_or_context = yes
+	weight = 1000
+
+	timeout = 3650
+
+	outcome = {
+		header = je_standard_completion_header
+		effect_header = je_standard_on_completion_header
+		conclusion_desc = je_dod_crown_of_st_stephen_completed_desc
+		color = "gold_positive"
+		trigger = { has_variable = dod_hun_crowned }
+	}
+
+	outcome = {
+		header = je_standard_failure_header
+		effect_header = je_standard_on_failure_header
+		conclusion_desc = je_dod_crown_of_st_stephen_failed_desc
+		color = "blue_negative"
+		trigger = { has_variable = dod_hun_no_crown }
+		effect = { add_journal_entry = { type = je_dod_hungarian_centralisation } }
+	}
+
+	outcome = {
+		header = je_standard_failure_header
+		effect_header = je_standard_on_failure_header
+		conclusion_desc = je_dod_crown_of_st_stephen_timeout_desc
+		color = "blue_negative"
+		flags = { timeout }
+		effect = { add_journal_entry = { type = je_dod_hungarian_centralisation } }
+	}
+
+	outcome = {
+		flags = { hidden invalid_outcome }
+		conclusion_desc = je_dod_crown_of_st_stephen_invalid_desc
+		trigger = {
+			OR = {
+				NOT = { c:HUN ?= this }
+				NOT = { exists = c:BOH }
+			}
+		}
+	}
+}
+
+je_dod_hungarian_centralisation = {
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+	group = je_group_historical_content
+
+	is_shown_when_inactive = { c:HUN ?= this }
+	possible = { c:HUN ?= this }
+
+	current_value = {
+		value = root.var:dod_hun_reforms
+	}
+	goal_add_value = {
+		add = 5
+	}
+	progressbar = yes
+
+	immediate = {
+		set_variable = { name = dod_hun_reforms value = 0 }
+	}
+
+	on_monthly_pulse = {
+		random_events = {
+			90 = 0
+			3 = dod_hun.13
+			3 = dod_hun.16
+			3 = dod_hun.17
+		}
+	}
+
+	should_be_pinned_by_default_uninvolved_or_context = yes
+	weight = 900
+
+	outcome = {
+		header = je_standard_completion_header
+		effect_header = je_standard_on_completion_header
+		conclusion_desc = je_dod_hungarian_centralisation_completed_desc
+		color = "gold_positive"
+		trigger = { var:dod_hun_reforms >= 5 }
+		effect = { trigger_event = { id = dod_hun.20 } }
+	}
+
+	outcome = {
+		flags = { hidden invalid_outcome }
+		conclusion_desc = je_dod_hungarian_centralisation_invalid_desc
+		trigger = { NOT = { c:HUN ?= this } }
+	}
+}

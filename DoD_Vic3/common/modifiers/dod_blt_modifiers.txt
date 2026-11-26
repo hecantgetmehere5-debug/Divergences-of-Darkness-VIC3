@@ -6,7 +6,7 @@ dod_commonwealth_dissolved = {
 }
 
 dod_lublin_renewed = {
-	icon = "gfx/interface/icons/timed_modifier_icons/modifier_scroll_positive.dds"
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_documents_positive.dds"
 	country_legitimacy_base_add = 10
 	country_authority_add = 50
 }

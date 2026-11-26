@@ -1,0 +1,191 @@
+﻿# Hungary storyline: decisions, ported from the Vic2 mod's decisions/Hungary.txt.
+# The reforms (dod_hun_reform_*) each count towards je_dod_hungarian_centralisation.
+
+dod_hun_abolish_szekely_privilege = {
+	is_shown = {
+		c:HUN ?= this
+		has_journal_entry = je_dod_hungarian_centralisation
+		NOT = { has_variable = dod_hun_szekely_abolished }
+	}
+	possible = { is_at_war = no }
+	when_taken = {
+		set_variable = dod_hun_szekely_abolished
+		change_variable = { name = dod_hun_reforms add = 1 }
+		trigger_event = { id = dod_hun.10 days = 30 }
+		trigger_event = { id = dod_hun.12 days = 365 }
+	}
+	ai_chance = { value = 50 }
+}
+
+dod_hun_end_cattle_barons = {
+	is_shown = {
+		c:HUN ?= this
+		has_journal_entry = je_dod_hungarian_centralisation
+		NOT = { has_variable = dod_hun_cattle_barons }
+	}
+	possible = { is_at_war = no }
+	when_taken = {
+		set_variable = dod_hun_cattle_barons
+		change_variable = { name = dod_hun_reforms add = 1 }
+		add_modifier = { name = dod_hun_cattle_barons_ended months = 120 }
+		trigger_event = { id = dod_hun.13 days = 60 }
+	}
+	ai_chance = { value = 50 }
+}
+
+dod_hun_declare_equality_of_cults = {
+	is_shown = {
+		c:HUN ?= this
+		has_journal_entry = je_dod_hungarian_centralisation
+		NOT = { has_variable = dod_hun_equality_of_cults }
+	}
+	possible = { is_at_war = no }
+	when_taken = {
+		set_variable = dod_hun_equality_of_cults
+		change_variable = { name = dod_hun_reforms add = 1 }
+		add_modifier = { name = dod_hun_equality_of_cults months = 120 }
+	}
+	ai_chance = { value = 50 }
+}
+
+dod_hun_limit_seigneurial_rights = {
+	is_shown = {
+		c:HUN ?= this
+		has_journal_entry = je_dod_hungarian_centralisation
+		NOT = { has_variable = dod_hun_seigneurial_limited }
+	}
+	possible = { is_at_war = no }
+	when_taken = {
+		set_variable = dod_hun_seigneurial_limited
+		change_variable = { name = dod_hun_reforms add = 1 }
+		every_scope_state = {
+			limit = { is_incorporated = yes }
+			add_radicals = { value = small_radicals strata = upper }
+			add_loyalists = { value = small_radicals strata = lower }
+		}
+	}
+	ai_chance = { value = 50 }
+}
+
+dod_hun_emancipate_peasantry = {
+	is_shown = {
+		c:HUN ?= this
+		has_variable = dod_hun_seigneurial_limited
+		NOT = { has_variable = dod_hun_peasants_emancipated }
+	}
+	possible = {
+		is_at_war = no
+		NOT = { has_law_or_variant = law_type:law_serfdom }
+	}
+	when_taken = {
+		set_variable = dod_hun_peasants_emancipated
+		change_variable = { name = dod_hun_reforms add = 1 }
+		add_modifier = { name = dod_hun_peasants_emancipated months = 240 }
+	}
+	ai_chance = { value = 50 }
+}
+
+dod_hun_abolish_saxon_university = {
+	is_shown = {
+		c:HUN ?= this
+		has_journal_entry = je_dod_hungarian_centralisation
+		NOT = { has_variable = dod_hun_saxon_university }
+	}
+	possible = { is_at_war = no }
+	when_taken = {
+		set_variable = dod_hun_saxon_university
+		change_variable = { name = dod_hun_reforms add = 1 }
+		trigger_event = { id = dod_hun.14 days = 60 }
+	}
+	ai_chance = { value = 40 }
+}
+
+dod_hun_magyarise_the_vlachs = {
+	is_shown = {
+		c:HUN ?= this
+		has_journal_entry = je_dod_hungarian_centralisation
+		NOT = { has_variable = dod_hun_vlachs_policy }
+	}
+	possible = { is_at_war = no }
+	when_taken = {
+		set_variable = dod_hun_vlachs_policy
+		change_variable = { name = dod_hun_reforms add = 1 }
+		add_modifier = { name = dod_hun_magyarisation months = 120 }
+		trigger_event = { id = dod_hun.15 days = 180 }
+	}
+	ai_chance = { value = 25 }
+}
+
+dod_hun_integrate_the_vlachs = {
+	is_shown = {
+		c:HUN ?= this
+		has_journal_entry = je_dod_hungarian_centralisation
+		NOT = { has_variable = dod_hun_vlachs_policy }
+	}
+	possible = { is_at_war = no }
+	when_taken = {
+		set_variable = dod_hun_vlachs_policy
+		change_variable = { name = dod_hun_reforms add = 1 }
+		add_modifier = { name = dod_hun_nation_of_nations months = 120 }
+	}
+	ai_chance = { value = 25 }
+}
+
+dod_hun_reclaim_croatia = {
+	is_shown = {
+		c:HUN ?= this
+		has_variable = dod_hun_crowned
+		exists = c:CRO
+		NOT = { owns_entire_state_region = STATE_CROATIA }
+		NOT = { has_variable = dod_hun_croatia_claimed }
+	}
+	possible = {
+		is_at_war = no
+		country_rank >= rank_value:major_power
+	}
+	when_taken = {
+		set_variable = dod_hun_croatia_claimed
+		s:STATE_CROATIA = { add_claim = root }
+		s:STATE_SLAVONIA = { add_claim = root }
+		s:STATE_BOSNIA = { add_claim = root }
+		change_relations = { country = c:CRO value = -30 }
+	}
+	ai_chance = { value = 30 }
+}
+
+dod_hun_croatian_compromise = {
+	is_shown = {
+		c:HUN ?= this
+		owns_entire_state_region = STATE_CROATIA
+		NOT = { has_variable = dod_hun_croatian_compromise }
+	}
+	possible = { is_at_war = no }
+	when_taken = {
+		set_variable = dod_hun_croatian_compromise
+		add_modifier = { name = dod_hun_croatian_compromise months = 240 }
+		every_scope_state = {
+			limit = { state_region = s:STATE_CROATIA }
+			add_loyalists = { value = medium_radicals }
+		}
+	}
+	ai_chance = { value = 50 }
+}
+
+dod_hun_ultimatum_for_oltenia = {
+	is_shown = {
+		c:HUN ?= this
+		has_variable = dod_hun_centralised
+		exists = c:WAL
+		NOT = { has_variable = dod_hun_oltenia_claimed }
+	}
+	possible = {
+		is_at_war = no
+		country_rank >= rank_value:major_power
+	}
+	when_taken = {
+		set_variable = dod_hun_oltenia_claimed
+		s:STATE_WALLACHIA = { add_claim = root }
+		create_incident = { country = c:WAL value = 20 }
+	}
+	ai_chance = { value = 20 }
+}

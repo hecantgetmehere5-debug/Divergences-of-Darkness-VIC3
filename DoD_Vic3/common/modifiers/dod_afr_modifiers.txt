@@ -1,7 +1,7 @@
 ﻿# Africa & Oceania: modifiers
 
 dod_vereeniging = {
-	icon = "gfx/interface/icons/timed_modifier_icons/modifier_scroll_positive.dds"
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_documents_positive.dds"
 	country_legitimacy_base_add = 10
 }
 
@@ -11,7 +11,7 @@ dod_highland_forts = {
 }
 
 dod_oromo_war = {
-	icon = "gfx/interface/icons/timed_modifier_icons/modifier_scroll_negative.dds"
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_documents_negative.dds"
 	interest_group_approval_add = -1
 }
 
@@ -27,12 +27,12 @@ dod_kongo_revival = {
 }
 
 dod_african_schools = {
-	icon = "gfx/interface/icons/timed_modifier_icons/modifier_book_positive.dds"
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_lightbulb_positive.dds"
 	country_prestige_add = 10
 }
 
 dod_catholic_missions = {
-	icon = "gfx/interface/icons/timed_modifier_icons/modifier_book_positive.dds"
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_lightbulb_positive.dds"
 	country_legitimacy_base_add = 5
 	country_prestige_add = 5
 }

@@ -1,7 +1,7 @@
 ﻿# Holy Roman Empire storyline: modifiers
 
 dod_imperial_guarantees = {
-	icon = "gfx/interface/icons/timed_modifier_icons/modifier_scroll_positive.dds"
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_documents_positive.dds"
 	country_authority_add = -50
 	country_legitimacy_base_add = 5
 }
@@ -13,7 +13,7 @@ dod_imperial_hegemony = {
 }
 
 dod_federal_reich = {
-	icon = "gfx/interface/icons/timed_modifier_icons/modifier_scroll_positive.dds"
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_documents_positive.dds"
 	country_legitimacy_base_add = 10
 	country_prestige_add = 25
 }
@@ -52,7 +52,7 @@ dod_bohemian_victory = {
 }
 
 dod_bohemian_rhapsody = {
-	icon = "gfx/interface/icons/timed_modifier_icons/modifier_book_positive.dds"
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_lightbulb_positive.dds"
 	country_prestige_add = 10
 }
 
@@ -64,7 +64,7 @@ dod_imperial_jubilee = {
 
 # Elbian Confederation
 dod_elbian_confederation_founded = {
-	icon = "gfx/interface/icons/timed_modifier_icons/modifier_scroll_positive.dds"
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_documents_positive.dds"
 	country_legitimacy_base_add = 10
 	country_prestige_add = 25
 }

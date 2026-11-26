@@ -38,28 +38,15 @@ storyline,vic2_file,kind,vic2_id,title
 1. Holy Roman Empire & Central Europe,HRE - 410000.txt,ev,410081,Livonia Refuses Annexation
 1. Holy Roman Empire & Central Europe,HRE - 410000.txt,ev,410083,Baltenland Refuses Annexation
 1. Holy Roman Empire & Central Europe,HRE - 410000.txt,ev,410084,Elbian Agitation in the Livonian Provinces
-1. Holy Roman Empire & Central Europe,Hungary -26540X.txt,ev,265401,An Hungarian Envoy
-1. Holy Roman Empire & Central Europe,Hungary -26540X.txt,ev,265402,The Bohemian Answer
-1. Holy Roman Empire & Central Europe,Hungary -26540X.txt,ev,265403,The Bohemian Answer
 1. Holy Roman Empire & Central Europe,Hungary -26540X.txt,ev,265404,Humiliation of Hungary
 1. Holy Roman Empire & Central Europe,Hungary -26540X.txt,ev,265405,End of negotiations
-1. Holy Roman Empire & Central Europe,Hungary -26540X.txt,ev,265406,The Bohemian Answer
 1. Holy Roman Empire & Central Europe,Hungary -26540X.txt,ev,265407,The New Duchy of Nitra
-1. Holy Roman Empire & Central Europe,Hungary -26540X.txt,ev,265408,The Bohemian Answer
-1. Holy Roman Empire & Central Europe,Hungary -26540X.txt,ev,265409,Prague Heist!
-1. Holy Roman Empire & Central Europe,Hungary -26540X.txt,ev,265410,Heist Failure
-1. Holy Roman Empire & Central Europe,Hungary -26540X.txt,ev,265411,Coronation of Gabor I
 1. Holy Roman Empire & Central Europe,Hungary -26540X.txt,ev,265412,Defeat
 1. Holy Roman Empire & Central Europe,Hungary -26540X.txt,ev,265413,The Fall of Buda
 1. Holy Roman Empire & Central Europe,Hungary -26540X.txt,ev,265414,Victory!
 1. Holy Roman Empire & Central Europe,Hungary -26540X.txt,ev,265415,The Legacy of Madjaristan
-1. Holy Roman Empire & Central Europe,Hungary -26540X.txt,ev,265416,The Centralisation of Hungary
 1. Holy Roman Empire & Central Europe,Hungary -26540X.txt,ev,265417,The Csíkszentdomokos Copper Mine
 1. Holy Roman Empire & Central Europe,Hungary -26540X.txt,ev,265418,Unrest in the Székelyföld
-1. Holy Roman Empire & Central Europe,Hungary -26540X.txt,ev,265419,The Siculicidium
-1. Holy Roman Empire & Central Europe,Hungary -26540X.txt,ev,265420,Develop the Great Hungarian Plain
-1. Holy Roman Empire & Central Europe,Hungary -26540X.txt,ev,265421,The Magyar Debate
-1. Holy Roman Empire & Central Europe,Hungary -26540X.txt,ev,265422,The Situation of the Saxons
 1. Holy Roman Empire & Central Europe,Hungary -26540X.txt,ev,265423,The Allgemeiner Deutscher Schutzverband
 1. Holy Roman Empire & Central Europe,Hungary -26540X.txt,ev,265424,The Hungarian Counter-Argument
 1. Holy Roman Empire & Central Europe,Hungary -26540X.txt,ev,265425,$FROMCOUNTRY$ demands an end to Magyarisation
@@ -69,7 +56,6 @@ storyline,vic2_file,kind,vic2_id,title
 1. Holy Roman Empire & Central Europe,Hungary -26540X.txt,ev,265429,Ultimatum to Free the Saxons
 1. Holy Roman Empire & Central Europe,Hungary -26540X.txt,ev,265430,War in the East
 1. Holy Roman Empire & Central Europe,Hungary -26540X.txt,ev,265431,The Magyar Tyranny Comes to an End
-1. Holy Roman Empire & Central Europe,Hungary -26540X.txt,ev,265432,Trouble in Transylvania
 1. Holy Roman Empire & Central Europe,Hungary -26540X.txt,ev,265433,The Union of the Three Nations
 1. Holy Roman Empire & Central Europe,Hungary -26540X.txt,ev,265434,The Maelstrom of War Engulfs Transylvania
 1. Holy Roman Empire & Central Europe,Hungary -26540X.txt,ev,265435,Peace Prevails in Transylvania
@@ -83,13 +69,11 @@ storyline,vic2_file,kind,vic2_id,title
 1. Holy Roman Empire & Central Europe,Hungary -26540X.txt,ev,265443,Western Erdély Liberated!
 1. Holy Roman Empire & Central Europe,Hungary -26540X.txt,ev,265444,Eastern Transylvania Liberated!
 1. Holy Roman Empire & Central Europe,Hungary -26540X.txt,ev,265445,Eastern Erdély Liberated!
-1. Holy Roman Empire & Central Europe,Hungary -26540X.txt,ev,265446,Balkan Ambitions
 1. Holy Roman Empire & Central Europe,Hungary -26540X.txt,ev,265447,The Magyarisation of Serbia
 1. Holy Roman Empire & Central Europe,Hungary -26540X.txt,ev,265448,Northern Serbia Liberated!
 1. Holy Roman Empire & Central Europe,Hungary -26540X.txt,ev,265449,Vlorë for Kosovë
 1. Holy Roman Empire & Central Europe,Hungary -26540X.txt,ev,265450,The Albanians Agree to Cede Vlorë
 1. Holy Roman Empire & Central Europe,Hungary -26540X.txt,ev,265451,The Albanians Refuse to Cede Vlorë
-1. Holy Roman Empire & Central Europe,Hungary -26540X.txt,ev,265452,Ultimatum for Oltenia
 1. Holy Roman Empire & Central Europe,Hungary -26540X.txt,ev,265453,The Romanians Surrender Oltenia
 1. Holy Roman Empire & Central Europe,Hungary -26540X.txt,ev,265454,The Cisalutanian War
 1. Holy Roman Empire & Central Europe,Hungary -26540X.txt,ev,265455,The Collapse of the United Principalities
@@ -99,32 +83,20 @@ storyline,vic2_file,kind,vic2_id,title
 1. Holy Roman Empire & Central Europe,Hungary -26540X.txt,ev,265459,Negotations over Moldavia Break Down
 1. Holy Roman Empire & Central Europe,Hungary -26540X.txt,ev,265460,The Slovakian Betrayal
 1. Holy Roman Empire & Central Europe,Hungary -26540X.txt,ev,265461,Slovakia Liberated!
-1. Holy Roman Empire & Central Europe,Hungary -26540X.txt,ev,265462,The Founding of Budapest
-1. Holy Roman Empire & Central Europe,Hungary -26540X.txt,ev,265463,The Sacaramb Gold Mines
 1. Holy Roman Empire & Central Europe,Hungary -26540X.txt,ev,265464,The End of the Union of Three Nations
 1. Holy Roman Empire & Central Europe,Hungary.txt,dec,holy_crown_HUN,The Crown of San Stephen
 1. Holy Roman Empire & Central Europe,Hungary.txt,dec,HUN_prague,Force the Bohemians to Surrender
 1. Holy Roman Empire & Central Europe,Hungary.txt,dec,BOH_buda,Force the Hungarians to Surrender
-1. Holy Roman Empire & Central Europe,Hungary.txt,dec,reclaim_croatia,Reclaim Croatia
-1. Holy Roman Empire & Central Europe,Hungary.txt,dec,croatian_compromise,The Croatian Compromise
 1. Holy Roman Empire & Central Europe,Hungary.txt,dec,independent_SLO,Independent Slovenia
 1. Holy Roman Empire & Central Europe,Hungary.txt,dec,accept_SLO,Integrating Slovenia
-1. Holy Roman Empire & Central Europe,Hungary.txt,dec,abolish_szekely_privilege,Abolish the Szekely Privilege
-1. Holy Roman Empire & Central Europe,Hungary.txt,dec,end_cattle_barons,The End of the Cattle Barons
-1. Holy Roman Empire & Central Europe,Hungary.txt,dec,declare_equality_cults,Declare the Equality of Cults
 1. Holy Roman Empire & Central Europe,Hungary.txt,dec,limit_signeural_rights,Limit the Signeural Rights
-1. Holy Roman Empire & Central Europe,Hungary.txt,dec,hungary_emancipation,Emancipate the Peasantry
 1. Holy Roman Empire & Central Europe,Hungary.txt,dec,force_concivilitaet,Force the Concivilität in the Königsboden
 1. Holy Roman Empire & Central Europe,Hungary.txt,dec,recognise_saxon_nation,Recognise the Saxon Nation
 1. Holy Roman Empire & Central Europe,Hungary.txt,dec,integrate_kunok,Integrate the Kunok
-1. Holy Roman Empire & Central Europe,Hungary.txt,dec,abolish_saxon_university,Abolish the Saxon University
-1. Holy Roman Empire & Central Europe,Hungary.txt,dec,magyarise_vlachs,Magyarise the Vlachs
 1. Holy Roman Empire & Central Europe,Hungary.txt,dec,magyarise_kunok,Magyarise the Kunok
-1. Holy Roman Empire & Central Europe,Hungary.txt,dec,transylvania_integrate_romanians,Integrate the Vlachs
 1. Holy Roman Empire & Central Europe,Hungary.txt,dec,form_transcarpathia,The Hungarian-Romanian Union
 1. Holy Roman Empire & Central Europe,Hungary.txt,dec,dominate_south_slavs,Dominate the South Slavs
 1. Holy Roman Empire & Central Europe,Hungary.txt,dec,albanian_protectorate,The Albanian Protectorate
-1. Holy Roman Empire & Central Europe,Hungary.txt,dec,ultimatum_oltenia,Ultimatum for Oltenia
 1. Holy Roman Empire & Central Europe,FRA-CZH - 598XXX.txt,ev,598000,Bridge over Salzach
 1. Holy Roman Empire & Central Europe,FRA-CZH - 598XXX.txt,ev,598001,Partition of Venice
 1. Holy Roman Empire & Central Europe,FRA-CZH - 598XXX.txt,ev,598002,EVTNAME598002

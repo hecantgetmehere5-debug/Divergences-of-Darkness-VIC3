@@ -1,7 +1,7 @@
 ﻿# Americas flavour: modifiers
 
 dod_neuwelt_hansa = {
-	icon = "gfx/interface/icons/timed_modifier_icons/modifier_scroll_positive.dds"
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_documents_positive.dds"
 	country_prestige_add = 10
 }
 
@@ -11,7 +11,7 @@ dod_republican_spirit = {
 }
 
 dod_dubenson_memoirs = {
-	icon = "gfx/interface/icons/timed_modifier_icons/modifier_book_positive.dds"
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_lightbulb_positive.dds"
 	country_prestige_add = 5
 }
 
@@ -21,7 +21,7 @@ dod_brest_anniversary = {
 }
 
 dod_native_treaties = {
-	icon = "gfx/interface/icons/timed_modifier_icons/modifier_scroll_positive.dds"
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_documents_positive.dds"
 	country_legitimacy_base_add = 5
 }
 
@@ -31,13 +31,13 @@ dod_yongle = {
 }
 
 dod_qingqiu_autonomy = {
-	icon = "gfx/interface/icons/timed_modifier_icons/modifier_scroll_positive.dds"
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_documents_positive.dds"
 	country_legitimacy_base_add = 5
 	country_authority_add = -25
 }
 
 dod_qingqiu_unity = {
-	icon = "gfx/interface/icons/timed_modifier_icons/modifier_scroll_positive.dds"
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_documents_positive.dds"
 	country_authority_add = 25
 }
 
@@ -47,7 +47,7 @@ dod_kaiganese_pride = {
 }
 
 dod_seminole_memory = {
-	icon = "gfx/interface/icons/timed_modifier_icons/modifier_scroll_positive.dds"
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_documents_positive.dds"
 	country_legitimacy_base_add = 5
 }
 
@@ -72,12 +72,12 @@ dod_tribute_ended = {
 }
 
 dod_inca_council = {
-	icon = "gfx/interface/icons/timed_modifier_icons/modifier_scroll_positive.dds"
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_documents_positive.dds"
 	country_legitimacy_base_add = 5
 }
 
 dod_mapuche_peace = {
-	icon = "gfx/interface/icons/timed_modifier_icons/modifier_scroll_positive.dds"
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_documents_positive.dds"
 	country_legitimacy_base_add = 3
 }
 
@@ -97,6 +97,6 @@ dod_amazonian_pride = {
 }
 
 dod_colony_investment = {
-	icon = "gfx/interface/icons/timed_modifier_icons/modifier_scroll_positive.dds"
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_documents_positive.dds"
 	country_prestige_add = 3
 }

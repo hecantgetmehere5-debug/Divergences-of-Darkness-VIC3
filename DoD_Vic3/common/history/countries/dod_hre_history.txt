@@ -2,6 +2,9 @@
 	c:BOH ?= {  # Bohemia plays the HRE storyline and becomes HLR through the Prague Proclamation
 		add_journal_entry = { type = je_dod_prague_proclamation }
 	}
+	c:HUN ?= {  # Hungary: the Crown of Saint Stephen, then centralisation
+		add_journal_entry = { type = je_dod_crown_of_st_stephen }
+	}
 	c:CAE ?= {
 		add_journal_entry = { type = je_dod_elbian_unity }
 	}

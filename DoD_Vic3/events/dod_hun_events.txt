@@ -1,0 +1,576 @@
+﻿namespace = dod_hun
+
+# Hungary storyline, ported from the Vic2 mod's Hungary events (2654XX).
+#   dod_hun.1-9    the Crown of Saint Stephen (with Bohemia)
+#   dod_hun.10-17  centralisation: the Szekelys, the Saxons, Transylvania, the economy
+#   dod_hun.18-20  Turanism and the founding of Budapest
+
+# The Crown of Saint Stephen
+dod_hun.1 = {
+	type = country_event
+	placement = root
+	title = dod_hun.1.t
+	desc = dod_hun.1.d
+	flavor = dod_hun.1.f
+	event_image = { video = "votp_monarch_holding_court" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	option = {
+		name = dod_hun.1.a
+		default_option = yes
+		c:BOH ?= { trigger_event = { id = dod_hun.2 days = 7 } }
+		ai_chance = { base = 90 }
+	}
+
+	option = {
+		name = dod_hun.1.b
+		set_variable = dod_hun_no_crown
+		ai_chance = { base = 10 }
+	}
+}
+
+# A Hungarian Envoy (Bohemia)
+dod_hun.2 = {
+	type = country_event
+	placement = root
+	title = dod_hun.2.t
+	desc = dod_hun.2.d
+	flavor = dod_hun.2.f
+	event_image = { video = "unspecific_signed_contract" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	option = {
+		name = dod_hun.2.a
+		change_relations = { country = c:HUN value = 30 }
+		c:HUN ?= { trigger_event = { id = dod_hun.3 days = 14 } }
+		ai_chance = { base = 25 }
+	}
+
+	option = {
+		name = dod_hun.2.b
+		default_option = yes
+		c:HUN ?= { trigger_event = { id = dod_hun.4 days = 14 } }
+		ai_chance = { base = 35 }
+	}
+
+	option = {
+		name = dod_hun.2.c
+		c:HUN ?= { trigger_event = { id = dod_hun.5 days = 14 } }
+		ai_chance = { base = 20 }
+	}
+
+	option = {
+		name = dod_hun.2.e
+		change_relations = { country = c:HUN value = -30 }
+		c:HUN ?= { trigger_event = { id = dod_hun.6 days = 14 } }
+		ai_chance = { base = 20 }
+	}
+}
+
+# Coronation of Gabor I
+dod_hun.3 = {
+	type = country_event
+	placement = root
+	title = dod_hun.3.t
+	desc = dod_hun.3.d
+	flavor = dod_hun.3.f
+	event_image = { video = "votp_monarch_holding_court" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	immediate = {
+		set_variable = dod_hun_crowned
+		set_global_variable = dod_hun_crown_in_buda
+	}
+
+	option = {
+		name = dod_hun.3.a
+		default_option = yes
+		add_modifier = { name = dod_hun_holy_crown months = 120 }
+		add_journal_entry = { type = je_dod_hungarian_centralisation }
+	}
+}
+
+# The Bohemian Answer: kneel in Prague
+dod_hun.4 = {
+	type = country_event
+	placement = root
+	title = dod_hun.4.t
+	desc = dod_hun.4.d
+	flavor = dod_hun.4.f
+	event_image = { video = "ip4_abdication" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	option = {
+		name = dod_hun.4.a
+		default_option = yes
+		add_modifier = { name = dod_hun_humiliated months = 60 }
+		c:BOH ?= { add_modifier = { name = dod_hun_crown_bowed months = 60 } }
+		trigger_event = { id = dod_hun.3 days = 30 }
+		ai_chance = { base = 50 }
+	}
+
+	option = {
+		name = dod_hun.4.b
+		trigger_event = { id = dod_hun.7 days = 30 }
+		ai_chance = { base = 30 }
+	}
+
+	option = {
+		name = dod_hun.4.c
+		set_variable = dod_hun_no_crown
+		ai_chance = { base = 20 }
+	}
+}
+
+# The Bohemian Answer: the Duchy of Nitra
+dod_hun.5 = {
+	type = country_event
+	placement = root
+	title = dod_hun.5.t
+	desc = dod_hun.5.d
+	flavor = dod_hun.5.f
+	event_image = { video = "unspecific_signed_contract" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	duration = 3
+
+	option = {
+		name = dod_hun.5.a
+		default_option = yes
+		add_modifier = { name = dod_hun_slovak_autonomy months = 120 }
+		s:STATE_SLOVAKIA = { add_claim = c:BOH }
+		trigger_event = { id = dod_hun.3 days = 30 }
+		ai_chance = { base = 40 }
+	}
+
+	option = {
+		name = dod_hun.5.b
+		trigger_event = { id = dod_hun.7 days = 30 }
+		ai_chance = { base = 40 }
+	}
+
+	option = {
+		name = dod_hun.5.c
+		set_variable = dod_hun_no_crown
+		ai_chance = { base = 20 }
+	}
+}
+
+# The Bohemian Answer: refused
+dod_hun.6 = {
+	type = country_event
+	placement = root
+	title = dod_hun.6.t
+	desc = dod_hun.6.d
+	flavor = dod_hun.6.f
+	event_image = { video = "unspecific_politicians_arguing" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	option = {
+		name = dod_hun.6.a
+		default_option = yes
+		trigger_event = { id = dod_hun.7 days = 60 }
+		ai_chance = { base = 60 }
+	}
+
+	option = {
+		name = dod_hun.6.b
+		set_variable = dod_hun_no_crown
+		ai_chance = { base = 40 }
+	}
+}
+
+# The plot to steal the Crown
+dod_hun.7 = {
+	type = country_event
+	placement = root
+	title = dod_hun.7.t
+	desc = dod_hun.7.d
+	flavor = dod_hun.7.f
+	event_image = { video = "votp_conspiring" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	duration = 3
+
+	option = {
+		name = dod_hun.7.a
+		default_option = yes
+		random_list = {
+			50 = {
+				trigger_event = { id = dod_hun.3 days = 7 }
+				c:BOH ?= { trigger_event = { id = dod_hun.8 days = 7 } }
+			}
+			50 = {
+				trigger_event = { id = dod_hun.9 days = 7 }
+			}
+		}
+	}
+}
+
+# Prague Heist! (Bohemia)
+dod_hun.8 = {
+	type = country_event
+	placement = root
+	title = dod_hun.8.t
+	desc = dod_hun.8.d
+	flavor = dod_hun.8.f
+	event_image = { video = "ip3_police_raid" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+	duration = 3
+
+	option = {
+		name = dod_hun.8.a
+		default_option = yes
+		add_modifier = { name = dod_hun_heist_outrage months = 60 }
+		change_relations = { country = c:HUN value = -50 }
+	}
+}
+
+# Heist failure
+dod_hun.9 = {
+	type = country_event
+	placement = root
+	title = dod_hun.9.t
+	desc = dod_hun.9.d
+	flavor = dod_hun.9.f
+	event_image = { video = "votp_prison" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+	duration = 3
+
+	immediate = {
+		set_variable = dod_hun_no_crown
+	}
+
+	option = {
+		name = dod_hun.9.a
+		default_option = yes
+		add_modifier = { name = dod_hun_heist_failed months = 60 }
+		change_relations = { country = c:BOH value = -40 }
+	}
+}
+
+# Unrest in the Szekelyfold
+dod_hun.10 = {
+	type = country_event
+	placement = root
+	title = dod_hun.10.t
+	desc = dod_hun.10.d
+	flavor = dod_hun.10.f
+	event_image = { video = "africa_public_protest" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+	duration = 3
+
+	option = {
+		name = dod_hun.10.a
+		default_option = yes
+		random_list = {
+			60 = { trigger_event = { id = dod_hun.11 days = 30 } }
+			40 = { }
+		}
+		ai_chance = { base = 50 }
+	}
+
+	option = {
+		name = dod_hun.10.b
+		every_scope_state = {
+			limit = {
+				OR = {
+					state_region = s:STATE_NORTHERN_TRANSYLVANIA
+					state_region = s:STATE_SOUTHERN_TRANSYLVANIA
+				}
+			}
+			add_radicals = { value = medium_radicals }
+		}
+		ai_chance = { base = 50 }
+	}
+}
+
+# The Siculicidium
+dod_hun.11 = {
+	type = country_event
+	placement = root
+	title = dod_hun.11.t
+	desc = dod_hun.11.d
+	flavor = dod_hun.11.f
+	event_image = { video = "africa_soldiers_breaking_protest" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+	duration = 3
+
+	option = {
+		name = dod_hun.11.a
+		default_option = yes
+		add_modifier = { name = dod_hun_siculicidium months = 60 }
+		every_scope_state = {
+			limit = {
+				OR = {
+					state_region = s:STATE_NORTHERN_TRANSYLVANIA
+					state_region = s:STATE_SOUTHERN_TRANSYLVANIA
+				}
+			}
+			add_radicals = { value = large_radicals }
+		}
+	}
+}
+
+# The Csikszentdomokos Copper Mine
+dod_hun.12 = {
+	type = country_event
+	placement = root
+	title = dod_hun.12.t
+	desc = dod_hun.12.d
+	flavor = dod_hun.12.f
+	event_image = { video = "ip4_mining_scene" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	duration = 3
+
+	trigger = {
+		has_variable = dod_hun_szekely_abolished
+		NOT = { has_variable = dod_hun_copper_done }
+	}
+
+	immediate = { set_variable = dod_hun_copper_done }
+
+	option = {
+		name = dod_hun.12.a
+		default_option = yes
+		add_modifier = { name = dod_hun_copper_mines months = 240 }
+	}
+
+	option = {
+		name = dod_hun.12.b
+		every_scope_state = {
+			limit = { state_region = s:STATE_SOUTHERN_TRANSYLVANIA }
+			add_loyalists = { value = small_radicals }
+		}
+	}
+}
+
+# Develop the Great Hungarian Plain
+dod_hun.13 = {
+	type = country_event
+	placement = root
+	title = dod_hun.13.t
+	desc = dod_hun.13.d
+	flavor = dod_hun.13.f
+	event_image = { video = "africa_prosperous_farm" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	duration = 3
+
+	trigger = { NOT = { has_variable = dod_hun_alfold_done } }
+
+	immediate = { set_variable = dod_hun_alfold_done }
+
+	option = {
+		name = dod_hun.13.a
+		default_option = yes
+		add_modifier = { name = dod_hun_alfold_agriculture months = 240 }
+	}
+
+	option = {
+		name = dod_hun.13.b
+		add_modifier = { name = dod_hun_alfold_mining months = 240 }
+	}
+
+	option = {
+		name = dod_hun.13.c
+		add_modifier = { name = dod_hun_alfold_balanced months = 240 }
+	}
+}
+
+# The Situation of the Saxons
+dod_hun.14 = {
+	type = country_event
+	placement = root
+	title = dod_hun.14.t
+	desc = dod_hun.14.d
+	flavor = dod_hun.14.f
+	event_image = { video = "unspecific_politicians_arguing" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+	duration = 3
+
+	option = {
+		name = dod_hun.14.a
+		default_option = yes
+		add_modifier = { name = dod_hun_nation_of_nations months = 120 }
+		ai_chance = { base = 50 }
+	}
+
+	option = {
+		name = dod_hun.14.b
+		add_modifier = { name = dod_hun_magyarisation months = 120 }
+		random_list = {
+			50 = { trigger_event = { id = dod_hun.15 days = 180 } }
+			50 = { }
+		}
+		ai_chance = { base = 50 }
+	}
+}
+
+# Trouble in Transylvania
+dod_hun.15 = {
+	type = country_event
+	placement = root
+	title = dod_hun.15.t
+	desc = dod_hun.15.d
+	flavor = dod_hun.15.f
+	event_image = { video = "votp_barricade" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+	duration = 3
+
+	trigger = { NOT = { has_variable = dod_hun_transylvania_done } }
+
+	immediate = { set_variable = dod_hun_transylvania_done }
+
+	option = {
+		name = dod_hun.15.a
+		default_option = yes
+		every_scope_state = {
+			limit = {
+				OR = {
+					state_region = s:STATE_NORTHERN_TRANSYLVANIA
+					state_region = s:STATE_SOUTHERN_TRANSYLVANIA
+				}
+			}
+			add_radicals = { value = large_radicals }
+		}
+		ai_chance = { base = 50 }
+	}
+
+	option = {
+		name = dod_hun.15.b
+		add_modifier = { name = dod_hun_transylvanian_autonomy months = 120 }
+		ai_chance = { base = 50 }
+	}
+}
+
+# The Sacaramb Gold Mines
+dod_hun.16 = {
+	type = country_event
+	placement = root
+	title = dod_hun.16.t
+	desc = dod_hun.16.d
+	flavor = dod_hun.16.f
+	event_image = { video = "europenorthamerica_gold_prospectors" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	duration = 3
+
+	trigger = { NOT = { has_variable = dod_hun_gold_done } }
+
+	immediate = { set_variable = dod_hun_gold_done }
+
+	option = {
+		name = dod_hun.16.a
+		default_option = yes
+		add_modifier = { name = dod_hun_gold_mines months = 240 }
+	}
+
+	option = {
+		name = dod_hun.16.b
+		add_modifier = { name = dod_hun_alfold_agriculture months = 120 }
+	}
+}
+
+# The Magyar Debate
+dod_hun.17 = {
+	type = country_event
+	placement = root
+	title = dod_hun.17.t
+	desc = dod_hun.17.d
+	flavor = dod_hun.17.f
+	event_image = { video = "asia_politician_parliament_motion" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+	duration = 3
+
+	trigger = {
+		owns_entire_state_region = STATE_CROATIA
+		NOT = { has_variable = dod_hun_magyar_debate_done }
+	}
+
+	immediate = { set_variable = dod_hun_magyar_debate_done }
+
+	option = {
+		name = dod_hun.17.a
+		default_option = yes
+		add_modifier = { name = dod_hun_nation_of_nations months = 120 }
+	}
+
+	option = {
+		name = dod_hun.17.b
+		add_modifier = { name = dod_hun_magyarisation months = 120 }
+		every_scope_state = {
+			limit = { state_region = s:STATE_CROATIA }
+			add_radicals = { value = medium_radicals }
+		}
+	}
+}
+
+# Balkan Ambitions: Turanism
+dod_hun.18 = {
+	type = country_event
+	placement = root
+	title = dod_hun.18.t
+	desc = dod_hun.18.d
+	flavor = dod_hun.18.f
+	event_image = { video = "europenorthamerica_political_extremism" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	duration = 3
+
+	option = {
+		name = dod_hun.18.a
+		default_option = yes
+		add_modifier = { name = dod_hun_nation_of_nations months = 60 }
+		ai_chance = { base = 50 }
+	}
+
+	option = {
+		name = dod_hun.18.b
+		set_variable = dod_hun_turanist
+		add_modifier = { name = dod_hun_turanism months = 240 }
+		s:STATE_WESTERN_SERBIA = { add_claim = root }
+		s:STATE_EASTERN_SERBIA = { add_claim = root }
+		ai_chance = { base = 50 }
+	}
+}
+
+# The Founding of Budapest
+dod_hun.20 = {
+	type = country_event
+	placement = root
+	title = dod_hun.20.t
+	desc = dod_hun.20.d
+	flavor = dod_hun.20.f
+	event_image = { video = "unspecific_ruler_speaking_to_people" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	duration = 3
+
+	immediate = { set_variable = dod_hun_centralised }
+
+	option = {
+		name = dod_hun.20.a
+		default_option = yes
+		add_modifier = { name = dod_hun_centralised months = 240 }
+		trigger_event = { id = dod_hun.18 days = 365 }
+	}
+}

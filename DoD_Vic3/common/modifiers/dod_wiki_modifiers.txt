@@ -12,17 +12,17 @@ dod_stone_emperor_centenary = {
 }
 
 dod_german_dreams = {
-	icon = "gfx/interface/icons/timed_modifier_icons/modifier_book_positive.dds"
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_lightbulb_positive.dds"
 	country_prestige_add = 3
 }
 
 dod_treaty_of_rome = {
-	icon = "gfx/interface/icons/timed_modifier_icons/modifier_scroll_positive.dds"
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_documents_positive.dds"
 	country_legitimacy_base_add = 5
 }
 
 dod_valois_grievance = {
-	icon = "gfx/interface/icons/timed_modifier_icons/modifier_scroll_negative.dds"
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_documents_negative.dds"
 	country_prestige_add = 5
 }
 
@@ -32,7 +32,7 @@ dod_burgundian_jubilee = {
 }
 
 dod_lofby_forgiven = {
-	icon = "gfx/interface/icons/timed_modifier_icons/modifier_scroll_positive.dds"
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_documents_positive.dds"
 	country_legitimacy_base_add = 5
 }
 
@@ -52,6 +52,6 @@ dod_zheng_he = {
 }
 
 dod_saadi_end = {
-	icon = "gfx/interface/icons/timed_modifier_icons/modifier_scroll_positive.dds"
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_documents_positive.dds"
 	country_prestige_add = 3
 }

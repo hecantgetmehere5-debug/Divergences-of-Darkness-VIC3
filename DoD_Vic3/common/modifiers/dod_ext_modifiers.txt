@@ -7,7 +7,7 @@ dod_emancipation = {
 }
 
 dod_planter_victory = {
-	icon = "gfx/interface/icons/timed_modifier_icons/modifier_scroll_negative.dds"
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_documents_negative.dds"
 	country_prestige_add = -15
 }
 
@@ -17,7 +17,7 @@ dod_peoples_king = {
 }
 
 dod_crown_humbled = {
-	icon = "gfx/interface/icons/timed_modifier_icons/modifier_scroll_negative.dds"
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_documents_negative.dds"
 	country_legitimacy_base_add = -10
 	country_authority_add = -50
 }
@@ -29,18 +29,18 @@ dod_arcadian_hegemony = {
 }
 
 dod_king_swore = {
-	icon = "gfx/interface/icons/timed_modifier_icons/modifier_scroll_positive.dds"
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_documents_positive.dds"
 	country_legitimacy_base_add = 10
 	country_authority_add = -25
 }
 
 dod_communion_settled = {
-	icon = "gfx/interface/icons/timed_modifier_icons/modifier_scroll_positive.dds"
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_documents_positive.dds"
 	country_legitimacy_base_add = 15
 }
 
 dod_communion_broken = {
-	icon = "gfx/interface/icons/timed_modifier_icons/modifier_scroll_negative.dds"
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_documents_negative.dds"
 	country_legitimacy_base_add = -10
 }
 
@@ -50,7 +50,7 @@ dod_beornian_lotharian_union_mod = {
 }
 
 dod_savoy_stable = {
-	icon = "gfx/interface/icons/timed_modifier_icons/modifier_scroll_positive.dds"
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_documents_positive.dds"
 	country_legitimacy_base_add = 10
 }
 
