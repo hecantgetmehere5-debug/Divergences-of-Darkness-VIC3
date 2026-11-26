@@ -152,6 +152,7 @@ images/             Pictures for this page
 - [x] Starting wars (the nine wars running in the Vic2 1836 start)
 - [x] Starting economy (vanilla 1836 buildings rescaled to the DoD map and owners)
 - [x] Starting technology, mixed armies and navies
+- [x] DoD rulers in place of vanilla's, plus 280 generals and admirals from the Vic2 mod
 - [ ] First in-game load and bug fixing
 - [ ] Political movements (drafted in `_unverified/`)
 - [ ] Custom art for events written new for Vic3

@@ -1,5 +1,6 @@
 ﻿# Starting rulers and heirs named in the fan wiki and the mod's events.
-# FORMAT TO VERIFY against vanilla game/common/history/characters.
+# Format checked against vanilla 1.13 character templates. Tags here never keep vanilla characters
+# (see tools/vic3_characters.py).
 CHARACTERS = {
 	c:DUA ?= {  # Henri X, King of England and France since 1832
 		create_character = {
