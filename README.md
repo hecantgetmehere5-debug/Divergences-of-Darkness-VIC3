@@ -149,7 +149,8 @@ images/             Pictures for this page
 - [x] Cultures, religions, starting laws, subjects and rulers
 - [x] Vic2 start data extracted (owners, pops, place names)
 - [x] **Map layer (first pass):** Vic3 states, populations, capitals, basic buildings and armies, generated from the Vic2 1836 start
-- [ ] Starting wars, full economy, navies
+- [x] Starting wars (the nine wars running in the Vic2 1836 start)
+- [ ] Full economy, navies
 - [ ] First in-game load and bug fixing
 - [ ] Political movements (drafted in `_unverified/`)
 - [ ] Custom art for events written new for Vic3

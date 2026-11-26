@@ -1,0 +1,124 @@
+# Wars running on 1 January 1836, from the Vic2 mod's history/wars.
+# Vic2 "civil_war" goals become annex wars; "conquest" against a whole country also becomes an annex war.
+# Left out: the Ottoman restoration of Tripoli (it starts 1836.1.2, after the game start).
+
+DIPLOMATIC_PLAYS = {
+	# Colombian War of Independence: the Spanish counter-invasion after Havana (1832)
+	c:SPA ?= {
+		create_diplomatic_play = {
+			name = dod_colombian_war_of_independence
+			target_state = c:CLM.capital
+			war = yes
+			type = dp_annex_war
+		}
+	}
+
+	# Egyptian Uprising: the Porte and the Hafsids against Muhammad I
+	c:TUR ?= {
+		create_diplomatic_play = {
+			name = dod_egyptian_uprising
+			target_state = c:EGY.capital
+			war = yes
+			type = dp_annex_war
+			add_war_goal = {
+				holder = c:EGY
+				type = conquer_state
+				target_state = s:STATE_SINAI.region_state:TUR
+			}
+		}
+		random_diplomatic_play = {
+			limit = { any_scope_play_involved = { c:EGY ?= this } }
+			add_initiator_backers = { c:TUN }
+		}
+	}
+	c:TUN ?= {
+		random_diplomatic_play = {
+			limit = { any_scope_play_involved = { c:EGY ?= this } }
+			add_war_goal = {
+				holder = c:TUN
+				type = conquer_state
+				target_state = s:STATE_LIBYA.region_state:EGY
+			}
+		}
+	}
+
+	# Revolt of the Albanian Beys
+	c:TUR ?= {
+		create_diplomatic_play = {
+			name = dod_revolt_of_the_albanian_beys
+			target_state = c:ALB.capital
+			war = yes
+			type = dp_annex_war
+		}
+	}
+
+	# Macedonian Uprising (1835)
+	c:TUR ?= {
+		create_diplomatic_play = {
+			name = dod_macedonian_uprising
+			target_state = c:MAC.capital
+			war = yes
+			type = dp_annex_war
+			add_war_goal = {
+				holder = c:MAC
+				type = conquer_state
+				target_state = s:STATE_WESTERN_THRACE.region_state:TUR
+			}
+		}
+	}
+
+	# Ethiopian Civil War: Amatsa, Ethiopia and Adal all at war with each other
+	c:AMT ?= {
+		create_diplomatic_play = {
+			name = dod_ethiopian_civil_war
+			target_state = c:ETH.capital
+			war = yes
+			type = dp_annex_war
+		}
+	}
+	c:AMT ?= {
+		create_diplomatic_play = {
+			name = dod_ethiopian_civil_war_adal
+			target_state = c:ADA.capital
+			war = yes
+			type = dp_annex_war
+			add_war_goal = {
+				holder = c:ADA
+				type = conquer_state
+				target_state = s:STATE_ERITREA.region_state:AMT
+			}
+		}
+	}
+	c:ETH ?= {
+		create_diplomatic_play = {
+			name = dod_ethiopian_civil_war_ethiopia
+			target_state = c:ADA.capital
+			war = yes
+			type = dp_annex_war
+		}
+	}
+
+	# Joseon Fight for Freedom: Japan against Korea, with Manchu China backing Korea
+	c:JAP ?= {
+		create_diplomatic_play = {
+			name = dod_joseon_fight_for_freedom
+			target_state = c:KOR.capital
+			war = yes
+			type = dp_annex_war
+		}
+		random_diplomatic_play = {
+			limit = { any_scope_play_involved = { c:KOR ?= this } }
+			add_target_backers = { c:MCK }
+		}
+	}
+
+	# Phoenix Invasion: Tungning against the Ming
+	c:TNG ?= {
+		create_diplomatic_play = {
+			name = dod_phoenix_invasion
+			target_state = c:MIG.capital
+			war = yes
+			type = dp_annex_war
+		}
+	}
+}
