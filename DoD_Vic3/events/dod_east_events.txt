@@ -1,4 +1,4 @@
-namespace = dod_east
+﻿namespace = dod_east
 
 dod_east.1 = {
 	type = country_event
@@ -6,7 +6,7 @@ dod_east.1 = {
 	title = dod_east.1.t
 	desc = dod_east.1.d
 	flavor = dod_east.1.f
-	event_image = { video = "unspecific_military_parade" }
+	event_image = { video = "ep2_important_japanese_men_negotiating" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_military.dds"
 	duration = 3
@@ -47,7 +47,7 @@ dod_east.2 = {
 	title = dod_east.2.t
 	desc = dod_east.2.d
 	flavor = dod_east.2.f
-	event_image = { video = "unspecific_military_parade" }
+	event_image = { video = "ep2_important_japanese_men_negotiating" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
 	duration = 3
@@ -73,7 +73,7 @@ dod_east.3 = {
 	title = dod_east.3.t
 	desc = dod_east.3.d
 	flavor = dod_east.3.f
-	event_image = { video = "unspecific_politicians_arguing" }
+	event_image = { video = "ep2_japanese_artillery" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
 	duration = 3
@@ -104,7 +104,7 @@ dod_east.10 = {
 	title = dod_east.10.t
 	desc = dod_east.10.d
 	flavor = dod_east.10.f
-	event_image = { video = "europenorthamerica_springtime_of_nations" }
+	event_image = { video = "ep2_important_japanese_men_negotiating" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_military.dds"
 	duration = 3
@@ -150,7 +150,7 @@ dod_east.20 = {
 	title = dod_east.20.t
 	desc = dod_east.20.d
 	flavor = dod_east.20.f
-	event_image = { video = "unspecific_politicians_arguing" }
+	event_image = { video = "ep2_important_japanese_men_negotiating" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
 	duration = 3
@@ -184,7 +184,7 @@ dod_east.21 = {
 	title = dod_east.21.t
 	desc = dod_east.21.d
 	flavor = dod_east.21.f
-	event_image = { video = "unspecific_military_parade" }
+	event_image = { video = "ep2_japanese_cityscape" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_military.dds"
 	duration = 3
@@ -221,7 +221,7 @@ dod_east.22 = {
 	title = dod_east.22.t
 	desc = dod_east.22.d
 	flavor = dod_east.22.f
-	event_image = { video = "europenorthamerica_political_extremism" }
+	event_image = { video = "ep2_important_japanese_men_negotiating" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_military.dds"
 	duration = 3
@@ -262,7 +262,7 @@ dod_east.30 = {
 	title = dod_east.30.t
 	desc = dod_east.30.d
 	flavor = dod_east.30.f
-	event_image = { video = "unspecific_politicians_arguing" }
+	event_image = { video = "ep2_japanese_artillery" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
 	duration = 3
@@ -301,7 +301,7 @@ dod_east.31 = {
 	title = dod_east.31.t
 	desc = dod_east.31.d
 	flavor = dod_east.31.f
-	event_image = { video = "unspecific_politicians_arguing" }
+	event_image = { video = "ip2_india_urban_scene" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
 	duration = 3
@@ -320,7 +320,7 @@ dod_east.32 = {
 	title = dod_east.32.t
 	desc = dod_east.32.d
 	flavor = dod_east.32.f
-	event_image = { video = "unspecific_military_parade" }
+	event_image = { video = "europenorthamerica_springtime_of_nations" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_military.dds"
 	duration = 3

@@ -113,9 +113,7 @@ DoD_Vic3/           The Victoria 3 mod itself
   common/           Journal entries, decisions, modifiers, cultures, religions, history, ...
   events/           All events, one file per storyline
   gfx/              Flags (coats of arms) and event pictures
-  localization/     English, French, German, Spanish
-  _unverified/      Drafts not loaded by the game (political movements)
-tools/              Python scripts that convert and check the mod
+  localization/     English, French, German, Spanishtools/              Python scripts that convert and check the mod
 start_data/         The Vic2 1836 start (owners, pops, place names) and its link to the Vic3 map
 docs/               Port plan, gaps list and lore research notes
 images/             Pictures for this page
@@ -163,7 +161,7 @@ images/             Pictures for this page
 - [x] Starting technology, mixed armies and navies
 - [x] DoD rulers in place of vanilla's, plus 280 generals and admirals from the Vic2 mod
 - [ ] First in-game load and bug fixing
-- [ ] Political movements (drafted in `_unverified/`)
+- [x] Political movements (Parishers, Arcadianism, Sons of Harold, Sons of Saint Louis, Carbonari)
 - [ ] Custom art for events written new for Vic3
 
 ---

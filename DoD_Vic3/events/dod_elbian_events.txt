@@ -1,4 +1,4 @@
-namespace = dod_elb
+﻿namespace = dod_elb
 
 dod_elb.1 = {
 	type = country_event
@@ -48,7 +48,7 @@ dod_elb.2 = {
 	title = dod_elb.2.t
 	desc = dod_elb.2.d
 	flavor = dod_elb.2.f
-	event_image = { video = "unspecific_politicians_arguing" }
+	event_image = { video = "europenorthamerica_capitalists_meeting" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_map.dds"
 	duration = 3
@@ -103,7 +103,7 @@ dod_elb.10 = {
 	title = dod_elb.10.t
 	desc = dod_elb.10.d
 	flavor = dod_elb.10.f
-	event_image = { video = "unspecific_signed_contract" }
+	event_image = { video = "europenorthamerica_rich_and_poor" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_map.dds"
 	duration = 3
@@ -193,7 +193,7 @@ dod_elb.12 = {
 	title = dod_elb.12.t
 	desc = dod_elb.12.d
 	flavor = dod_elb.12.f
-	event_image = { video = "unspecific_military_parade" }
+	event_image = { video = "ep1_power_blocs" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_military.dds"
 	duration = 3
@@ -228,7 +228,7 @@ dod_elb.15 = {
 	title = dod_elb.15.t
 	desc = dod_elb.15.d
 	flavor = dod_elb.15.f
-	event_image = { video = "unspecific_signed_contract" }
+	event_image = { video = "unspecific_politicians_arguing" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_map.dds"
 	duration = 3
@@ -245,7 +245,7 @@ dod_elb.20 = {
 	title = dod_elb.20.t
 	desc = dod_elb.20.d
 	flavor = dod_elb.20.f
-	event_image = { video = "europenorthamerica_political_extremism" }
+	event_image = { video = "votp_conspiring" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_protest.dds"
 	duration = 3
@@ -412,7 +412,7 @@ dod_elb.31 = {
 	title = dod_elb.31.t
 	desc = dod_elb.31.d
 	flavor = dod_elb.31.f
-	event_image = { video = "unspecific_military_parade" }
+	event_image = { video = "europenorthamerica_rich_and_poor" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_military.dds"
 	duration = 3
@@ -430,7 +430,7 @@ dod_elb.32 = {
 	title = dod_elb.32.t
 	desc = dod_elb.32.d
 	flavor = dod_elb.32.f
-	event_image = { video = "europenorthamerica_political_extremism" }
+	event_image = { video = "europenorthamerica_springtime_of_nations" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
 	duration = 3
@@ -502,7 +502,7 @@ dod_elb.41 = {
 	title = dod_elb.41.t
 	desc = dod_elb.41.d
 	flavor = dod_elb.41.f
-	event_image = { video = "unspecific_military_parade" }
+	event_image = { video = "unspecific_politicians_arguing" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_military.dds"
 	duration = 3
@@ -520,7 +520,7 @@ dod_elb.42 = {
 	title = dod_elb.42.t
 	desc = dod_elb.42.d
 	flavor = dod_elb.42.f
-	event_image = { video = "europenorthamerica_political_extremism" }
+	event_image = { video = "unspecific_ruler_speaking_to_people" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
 	duration = 3

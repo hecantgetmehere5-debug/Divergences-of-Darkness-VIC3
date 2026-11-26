@@ -1,4 +1,4 @@
-namespace = dod_arc
+﻿namespace = dod_arc
 
 dod_arc.1 = {
 	type = country_event
@@ -12,7 +12,7 @@ dod_arc.1 = {
 		}
 	}
 	flavor = dod_arc.1.f
-	event_image = { video = "unspecific_politicians_arguing" }
+	event_image = { video = "middleeast_jungle_expedition" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_scales.dds"
 	duration = 3
@@ -46,7 +46,7 @@ dod_arc.2 = {
 	title = dod_arc.2.t
 	desc = dod_arc.2.d
 	flavor = dod_arc.2.f
-	event_image = { video = "unspecific_politicians_arguing" }
+	event_image = { video = "unspecific_signed_contract" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_scales.dds"
 	duration = 3
@@ -72,7 +72,7 @@ dod_arc.10 = {
 	title = dod_arc.10.t
 	desc = dod_arc.10.d
 	flavor = dod_arc.10.f
-	event_image = { video = "unspecific_politicians_arguing" }
+	event_image = { video = "africa_desert_expedition" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_map.dds"
 	duration = 3
@@ -94,7 +94,7 @@ dod_arc.11 = {
 	title = dod_arc.11.t
 	desc = dod_arc.11.d
 	flavor = dod_arc.11.f
-	event_image = { video = "unspecific_politicians_arguing" }
+	event_image = { video = "middleeast_jungle_expedition" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_map.dds"
 	duration = 3
@@ -124,7 +124,7 @@ dod_arc.12 = {
 	title = dod_arc.12.t
 	desc = dod_arc.12.d
 	flavor = dod_arc.12.f
-	event_image = { video = "unspecific_politicians_arguing" }
+	event_image = { video = "middleeast_jungle_expedition" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_map.dds"
 	duration = 3
@@ -237,7 +237,7 @@ dod_arc.16 = {
 	title = dod_arc.16.t
 	desc = dod_arc.16.d
 	flavor = dod_arc.16.f
-	event_image = { video = "unspecific_politicians_arguing" }
+	event_image = { video = "europenorthamerica_art_gallery" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_scales.dds"
 	duration = 3
@@ -287,7 +287,7 @@ dod_arc.20 = {
 		}
 	}
 	flavor = dod_arc.20.f
-	event_image = { video = "europenorthamerica_springtime_of_nations" }
+	event_image = { video = "ip4_abdication" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
 	duration = 3
@@ -314,7 +314,7 @@ dod_arc.21 = {
 	title = dod_arc.21.t
 	desc = dod_arc.21.d
 	flavor = dod_arc.21.f
-	event_image = { video = "unspecific_politicians_arguing" }
+	event_image = { video = "europenorthamerica_art_gallery" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
 	duration = 3
@@ -350,7 +350,7 @@ dod_arc.22 = {
 	title = dod_arc.22.t
 	desc = dod_arc.22.d
 	flavor = dod_arc.22.f
-	event_image = { video = "unspecific_politicians_arguing" }
+	event_image = { video = "middleeast_jungle_expedition" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_scales.dds"
 	duration = 3
@@ -424,7 +424,7 @@ dod_arc.32 = {
 	title = dod_arc.32.t
 	desc = dod_arc.32.d
 	flavor = dod_arc.32.f
-	event_image = { video = "unspecific_politicians_arguing" }
+	event_image = { video = "africa_desert_expedition" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
 	duration = 3

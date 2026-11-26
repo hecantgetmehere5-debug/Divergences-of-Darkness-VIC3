@@ -1,4 +1,4 @@
-namespace = dod_afr
+﻿namespace = dod_afr
 
 dod_afr.1 = {
 	type = country_event
@@ -51,7 +51,7 @@ dod_afr.2 = {
 	title = dod_afr.2.t
 	desc = dod_afr.2.d
 	flavor = dod_afr.2.f
-	event_image = { video = "unspecific_politicians_arguing" }
+	event_image = { video = "africa_city_center" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_map.dds"
 	duration = 3
@@ -79,7 +79,7 @@ dod_afr.3 = {
 	title = dod_afr.3.t
 	desc = dod_afr.3.d
 	flavor = dod_afr.3.f
-	event_image = { video = "unspecific_military_parade" }
+	event_image = { video = "africa_city_center" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_military.dds"
 	duration = 3
@@ -113,7 +113,7 @@ dod_afr.4 = {
 	title = dod_afr.4.t
 	desc = dod_afr.4.d
 	flavor = dod_afr.4.f
-	event_image = { video = "unspecific_politicians_arguing" }
+	event_image = { video = "africa_construction_colony" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_map.dds"
 	duration = 3
@@ -159,7 +159,7 @@ dod_afr.5 = {
 	title = dod_afr.5.t
 	desc = dod_afr.5.d
 	flavor = dod_afr.5.f
-	event_image = { video = "unspecific_signed_contract" }
+	event_image = { video = "southamerica_war_civilians" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_scales.dds"
 	duration = 3
@@ -233,7 +233,7 @@ dod_afr.11 = {
 	title = dod_afr.11.t
 	desc = dod_afr.11.d
 	flavor = dod_afr.11.f
-	event_image = { video = "europenorthamerica_springtime_of_nations" }
+	event_image = { video = "votp_barricade" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_protest.dds"
 	duration = 3
@@ -273,7 +273,7 @@ dod_afr.12 = {
 	title = dod_afr.12.t
 	desc = dod_afr.12.d
 	flavor = dod_afr.12.f
-	event_image = { video = "unspecific_military_parade" }
+	event_image = { video = "europenorthamerica_art_gallery" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
 	duration = 3
@@ -302,7 +302,7 @@ dod_afr.20 = {
 	title = dod_afr.20.t
 	desc = dod_afr.20.d
 	flavor = dod_afr.20.f
-	event_image = { video = "unspecific_politicians_arguing" }
+	event_image = { video = "africa_animism" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
 	duration = 3
@@ -380,7 +380,7 @@ dod_afr.22 = {
 	title = dod_afr.22.t
 	desc = dod_afr.22.d
 	flavor = dod_afr.22.f
-	event_image = { video = "unspecific_politicians_arguing" }
+	event_image = { video = "unspecific_ruler_speaking_to_people" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
 	duration = 3
@@ -426,7 +426,7 @@ dod_afr.30 = {
 	title = dod_afr.30.t
 	desc = dod_afr.30.d
 	flavor = dod_afr.30.f
-	event_image = { video = "unspecific_politicians_arguing" }
+	event_image = { video = "africa_diplomats_negotiating" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_scales.dds"
 	duration = 3

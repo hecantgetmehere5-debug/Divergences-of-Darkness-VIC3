@@ -1,4 +1,4 @@
-namespace = dod_lore
+﻿namespace = dod_lore
 
 dod_lore.100 = {
 	type = country_event
@@ -6,7 +6,7 @@ dod_lore.100 = {
 	title = dod_lore.100.t
 	desc = dod_lore.100.d
 	flavor = dod_lore.flavor
-	event_image = { video = "unspecific_signed_contract" }
+	event_image = { video = "europenorthamerica_before_the_battle" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
 	duration = 3
@@ -27,7 +27,7 @@ dod_lore.101 = {
 	title = dod_lore.101.t
 	desc = dod_lore.101.d
 	flavor = dod_lore.flavor
-	event_image = { video = "unspecific_signed_contract" }
+	event_image = { video = "europenorthamerica_before_the_battle" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
 	duration = 3
@@ -48,7 +48,7 @@ dod_lore.102 = {
 	title = dod_lore.102.t
 	desc = dod_lore.102.d
 	flavor = dod_lore.flavor
-	event_image = { video = "unspecific_signed_contract" }
+	event_image = { video = "unspecific_ruler_speaking_to_people" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
 	duration = 3
@@ -69,7 +69,7 @@ dod_lore.103 = {
 	title = dod_lore.103.t
 	desc = dod_lore.103.d
 	flavor = dod_lore.flavor
-	event_image = { video = "unspecific_signed_contract" }
+	event_image = { video = "ip4_abdication" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
 	duration = 3
@@ -90,7 +90,7 @@ dod_lore.104 = {
 	title = dod_lore.104.t
 	desc = dod_lore.104.d
 	flavor = dod_lore.flavor
-	event_image = { video = "unspecific_signed_contract" }
+	event_image = { video = "unspecific_military_parade" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
 	duration = 3
@@ -111,7 +111,7 @@ dod_lore.105 = {
 	title = dod_lore.105.t
 	desc = dod_lore.105.d
 	flavor = dod_lore.flavor
-	event_image = { video = "unspecific_signed_contract" }
+	event_image = { video = "unspecific_ruler_speaking_to_people" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
 	duration = 3
@@ -132,7 +132,7 @@ dod_lore.106 = {
 	title = dod_lore.106.t
 	desc = dod_lore.106.d
 	flavor = dod_lore.flavor
-	event_image = { video = "unspecific_signed_contract" }
+	event_image = { video = "unspecific_military_parade" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
 	duration = 3
@@ -153,7 +153,7 @@ dod_lore.107 = {
 	title = dod_lore.107.t
 	desc = dod_lore.107.d
 	flavor = dod_lore.flavor
-	event_image = { video = "unspecific_signed_contract" }
+	event_image = { video = "southamerica_war_civilians" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
 	duration = 3
@@ -169,7 +169,7 @@ dod_lore.113 = {
 	title = dod_lore.113.t
 	desc = dod_lore.113.d
 	flavor = dod_lore.flavor
-	event_image = { video = "unspecific_signed_contract" }
+	event_image = { video = "unspecific_military_parade" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
 	duration = 3
@@ -190,7 +190,7 @@ dod_lore.114 = {
 	title = dod_lore.114.t
 	desc = dod_lore.114.d
 	flavor = dod_lore.flavor
-	event_image = { video = "unspecific_signed_contract" }
+	event_image = { video = "ip4_abdication" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
 	duration = 3
@@ -211,7 +211,7 @@ dod_lore.115 = {
 	title = dod_lore.115.t
 	desc = dod_lore.115.d
 	flavor = dod_lore.flavor
-	event_image = { video = "unspecific_signed_contract" }
+	event_image = { video = "southamerica_war_civilians" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
 	duration = 3
@@ -232,7 +232,7 @@ dod_lore.116 = {
 	title = dod_lore.116.t
 	desc = dod_lore.116.d
 	flavor = dod_lore.flavor
-	event_image = { video = "unspecific_signed_contract" }
+	event_image = { video = "europenorthamerica_before_the_battle" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
 	duration = 3
@@ -253,7 +253,7 @@ dod_lore.117 = {
 	title = dod_lore.117.t
 	desc = dod_lore.117.d
 	flavor = dod_lore.flavor
-	event_image = { video = "unspecific_signed_contract" }
+	event_image = { video = "ep1_power_blocs" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
 	duration = 3
@@ -274,7 +274,7 @@ dod_lore.118 = {
 	title = dod_lore.118.t
 	desc = dod_lore.118.d
 	flavor = dod_lore.flavor
-	event_image = { video = "unspecific_signed_contract" }
+	event_image = { video = "unspecific_military_parade" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
 	duration = 3
@@ -290,7 +290,7 @@ dod_lore.124 = {
 	title = dod_lore.124.t
 	desc = dod_lore.124.d
 	flavor = dod_lore.flavor
-	event_image = { video = "unspecific_signed_contract" }
+	event_image = { video = "unspecific_naval_battle" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
 	duration = 3
@@ -311,7 +311,7 @@ dod_lore.125 = {
 	title = dod_lore.125.t
 	desc = dod_lore.125.d
 	flavor = dod_lore.flavor
-	event_image = { video = "unspecific_signed_contract" }
+	event_image = { video = "europenorthamerica_before_the_battle" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
 	duration = 3
@@ -332,7 +332,7 @@ dod_lore.126 = {
 	title = dod_lore.126.t
 	desc = dod_lore.126.d
 	flavor = dod_lore.flavor
-	event_image = { video = "unspecific_signed_contract" }
+	event_image = { video = "unspecific_military_parade" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
 	duration = 3
@@ -353,7 +353,7 @@ dod_lore.127 = {
 	title = dod_lore.127.t
 	desc = dod_lore.127.d
 	flavor = dod_lore.flavor
-	event_image = { video = "unspecific_signed_contract" }
+	event_image = { video = "ep1_clandestine_meeting" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
 	duration = 3
@@ -374,7 +374,7 @@ dod_lore.128 = {
 	title = dod_lore.128.t
 	desc = dod_lore.128.d
 	flavor = dod_lore.flavor
-	event_image = { video = "unspecific_signed_contract" }
+	event_image = { video = "unspecific_ruler_speaking_to_people" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
 	duration = 3
@@ -395,7 +395,7 @@ dod_lore.129 = {
 	title = dod_lore.129.t
 	desc = dod_lore.129.d
 	flavor = dod_lore.flavor
-	event_image = { video = "unspecific_signed_contract" }
+	event_image = { video = "unspecific_military_parade" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
 	duration = 3
@@ -416,7 +416,7 @@ dod_lore.130 = {
 	title = dod_lore.130.t
 	desc = dod_lore.130.d
 	flavor = dod_lore.flavor
-	event_image = { video = "unspecific_signed_contract" }
+	event_image = { video = "unspecific_military_parade" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
 	duration = 3
@@ -437,7 +437,7 @@ dod_lore.131 = {
 	title = dod_lore.131.t
 	desc = dod_lore.131.d
 	flavor = dod_lore.flavor
-	event_image = { video = "unspecific_signed_contract" }
+	event_image = { video = "southamerica_war_civilians" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
 	duration = 3
@@ -458,7 +458,7 @@ dod_lore.132 = {
 	title = dod_lore.132.t
 	desc = dod_lore.132.d
 	flavor = dod_lore.flavor
-	event_image = { video = "unspecific_signed_contract" }
+	event_image = { video = "europenorthamerica_before_the_battle" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
 	duration = 3
@@ -479,7 +479,7 @@ dod_lore.133 = {
 	title = dod_lore.133.t
 	desc = dod_lore.133.d
 	flavor = dod_lore.flavor
-	event_image = { video = "unspecific_signed_contract" }
+	event_image = { video = "unspecific_military_parade" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
 	duration = 3
@@ -495,7 +495,7 @@ dod_lore.139 = {
 	title = dod_lore.139.t
 	desc = dod_lore.139.d
 	flavor = dod_lore.flavor
-	event_image = { video = "unspecific_signed_contract" }
+	event_image = { video = "southamerica_war_civilians" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
 	duration = 3
@@ -516,7 +516,7 @@ dod_lore.140 = {
 	title = dod_lore.140.t
 	desc = dod_lore.140.d
 	flavor = dod_lore.flavor
-	event_image = { video = "unspecific_signed_contract" }
+	event_image = { video = "ep2_active_shipyard" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
 	duration = 3
@@ -537,7 +537,7 @@ dod_lore.141 = {
 	title = dod_lore.141.t
 	desc = dod_lore.141.d
 	flavor = dod_lore.flavor
-	event_image = { video = "unspecific_signed_contract" }
+	event_image = { video = "europenorthamerica_before_the_battle" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
 	duration = 3
@@ -558,7 +558,7 @@ dod_lore.142 = {
 	title = dod_lore.142.t
 	desc = dod_lore.142.d
 	flavor = dod_lore.flavor
-	event_image = { video = "unspecific_signed_contract" }
+	event_image = { video = "unspecific_ruler_speaking_to_people" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
 	duration = 3
@@ -579,7 +579,7 @@ dod_lore.143 = {
 	title = dod_lore.143.t
 	desc = dod_lore.143.d
 	flavor = dod_lore.flavor
-	event_image = { video = "unspecific_signed_contract" }
+	event_image = { video = "europenorthamerica_before_the_battle" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
 	duration = 3
@@ -600,7 +600,7 @@ dod_lore.144 = {
 	title = dod_lore.144.t
 	desc = dod_lore.144.d
 	flavor = dod_lore.flavor
-	event_image = { video = "unspecific_signed_contract" }
+	event_image = { video = "southamerica_war_civilians" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
 	duration = 3
@@ -621,7 +621,7 @@ dod_lore.145 = {
 	title = dod_lore.145.t
 	desc = dod_lore.145.d
 	flavor = dod_lore.flavor
-	event_image = { video = "unspecific_signed_contract" }
+	event_image = { video = "unspecific_military_parade" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
 	duration = 3
@@ -642,7 +642,7 @@ dod_lore.146 = {
 	title = dod_lore.146.t
 	desc = dod_lore.146.d
 	flavor = dod_lore.flavor
-	event_image = { video = "unspecific_signed_contract" }
+	event_image = { video = "unspecific_military_parade" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
 	duration = 3
@@ -663,7 +663,7 @@ dod_lore.147 = {
 	title = dod_lore.147.t
 	desc = dod_lore.147.d
 	flavor = dod_lore.flavor
-	event_image = { video = "unspecific_signed_contract" }
+	event_image = { video = "asia_union_leader" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
 	duration = 3
@@ -679,7 +679,7 @@ dod_lore.153 = {
 	title = dod_lore.153.t
 	desc = dod_lore.153.d
 	flavor = dod_lore.flavor
-	event_image = { video = "unspecific_signed_contract" }
+	event_image = { video = "southamerica_war_civilians" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
 	duration = 3
@@ -700,7 +700,7 @@ dod_lore.154 = {
 	title = dod_lore.154.t
 	desc = dod_lore.154.d
 	flavor = dod_lore.flavor
-	event_image = { video = "unspecific_signed_contract" }
+	event_image = { video = "southamerica_war_civilians" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
 	duration = 3
@@ -721,7 +721,7 @@ dod_lore.155 = {
 	title = dod_lore.155.t
 	desc = dod_lore.155.d
 	flavor = dod_lore.flavor
-	event_image = { video = "unspecific_signed_contract" }
+	event_image = { video = "unspecific_military_parade" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
 	duration = 3
@@ -742,7 +742,7 @@ dod_lore.156 = {
 	title = dod_lore.156.t
 	desc = dod_lore.156.d
 	flavor = dod_lore.flavor
-	event_image = { video = "unspecific_signed_contract" }
+	event_image = { video = "europenorthamerica_before_the_battle" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
 	duration = 3
@@ -763,7 +763,7 @@ dod_lore.157 = {
 	title = dod_lore.157.t
 	desc = dod_lore.157.d
 	flavor = dod_lore.flavor
-	event_image = { video = "unspecific_signed_contract" }
+	event_image = { video = "europenorthamerica_before_the_battle" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
 	duration = 3
@@ -784,7 +784,7 @@ dod_lore.158 = {
 	title = dod_lore.158.t
 	desc = dod_lore.158.d
 	flavor = dod_lore.flavor
-	event_image = { video = "unspecific_signed_contract" }
+	event_image = { video = "ip4_abdication" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
 	duration = 3
@@ -805,7 +805,7 @@ dod_lore.159 = {
 	title = dod_lore.159.t
 	desc = dod_lore.159.d
 	flavor = dod_lore.flavor
-	event_image = { video = "unspecific_signed_contract" }
+	event_image = { video = "unspecific_military_parade" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
 	duration = 3
@@ -821,7 +821,7 @@ dod_lore.165 = {
 	title = dod_lore.165.t
 	desc = dod_lore.165.d
 	flavor = dod_lore.flavor
-	event_image = { video = "unspecific_signed_contract" }
+	event_image = { video = "europenorthamerica_before_the_battle" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
 	duration = 3
@@ -842,7 +842,7 @@ dod_lore.166 = {
 	title = dod_lore.166.t
 	desc = dod_lore.166.d
 	flavor = dod_lore.flavor
-	event_image = { video = "unspecific_signed_contract" }
+	event_image = { video = "unspecific_naval_battle" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
 	duration = 3
@@ -863,7 +863,7 @@ dod_lore.167 = {
 	title = dod_lore.167.t
 	desc = dod_lore.167.d
 	flavor = dod_lore.flavor
-	event_image = { video = "unspecific_signed_contract" }
+	event_image = { video = "ep1_power_blocs" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
 	duration = 3
@@ -884,7 +884,7 @@ dod_lore.168 = {
 	title = dod_lore.168.t
 	desc = dod_lore.168.d
 	flavor = dod_lore.flavor
-	event_image = { video = "unspecific_signed_contract" }
+	event_image = { video = "europenorthamerica_before_the_battle" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
 	duration = 3
@@ -905,7 +905,7 @@ dod_lore.169 = {
 	title = dod_lore.169.t
 	desc = dod_lore.169.d
 	flavor = dod_lore.flavor
-	event_image = { video = "unspecific_signed_contract" }
+	event_image = { video = "southamerica_war_civilians" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
 	duration = 3
@@ -926,7 +926,7 @@ dod_lore.170 = {
 	title = dod_lore.170.t
 	desc = dod_lore.170.d
 	flavor = dod_lore.flavor
-	event_image = { video = "unspecific_signed_contract" }
+	event_image = { video = "southamerica_war_civilians" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
 	duration = 3
@@ -947,7 +947,7 @@ dod_lore.171 = {
 	title = dod_lore.171.t
 	desc = dod_lore.171.d
 	flavor = dod_lore.flavor
-	event_image = { video = "unspecific_signed_contract" }
+	event_image = { video = "ep1_power_blocs" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
 	duration = 3
@@ -963,7 +963,7 @@ dod_lore.177 = {
 	title = dod_lore.177.t
 	desc = dod_lore.177.d
 	flavor = dod_lore.flavor
-	event_image = { video = "unspecific_signed_contract" }
+	event_image = { video = "europenorthamerica_before_the_battle" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
 	duration = 3
@@ -984,7 +984,7 @@ dod_lore.178 = {
 	title = dod_lore.178.t
 	desc = dod_lore.178.d
 	flavor = dod_lore.flavor
-	event_image = { video = "unspecific_signed_contract" }
+	event_image = { video = "africa_public_protest" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
 	duration = 3
@@ -1005,7 +1005,7 @@ dod_lore.179 = {
 	title = dod_lore.179.t
 	desc = dod_lore.179.d
 	flavor = dod_lore.flavor
-	event_image = { video = "unspecific_signed_contract" }
+	event_image = { video = "europenorthamerica_before_the_battle" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
 	duration = 3
@@ -1026,7 +1026,7 @@ dod_lore.180 = {
 	title = dod_lore.180.t
 	desc = dod_lore.180.d
 	flavor = dod_lore.flavor
-	event_image = { video = "unspecific_signed_contract" }
+	event_image = { video = "europenorthamerica_before_the_battle" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
 	duration = 3
@@ -1047,7 +1047,7 @@ dod_lore.181 = {
 	title = dod_lore.181.t
 	desc = dod_lore.181.d
 	flavor = dod_lore.flavor
-	event_image = { video = "unspecific_signed_contract" }
+	event_image = { video = "votp_barricade" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
 	duration = 3
@@ -1068,7 +1068,7 @@ dod_lore.182 = {
 	title = dod_lore.182.t
 	desc = dod_lore.182.d
 	flavor = dod_lore.flavor
-	event_image = { video = "unspecific_signed_contract" }
+	event_image = { video = "unspecific_military_parade" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
 	duration = 3
@@ -1089,7 +1089,7 @@ dod_lore.183 = {
 	title = dod_lore.183.t
 	desc = dod_lore.183.d
 	flavor = dod_lore.flavor
-	event_image = { video = "unspecific_signed_contract" }
+	event_image = { video = "unspecific_military_parade" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
 	duration = 3
@@ -1110,7 +1110,7 @@ dod_lore.184 = {
 	title = dod_lore.184.t
 	desc = dod_lore.184.d
 	flavor = dod_lore.flavor
-	event_image = { video = "unspecific_signed_contract" }
+	event_image = { video = "asia_westerners_arriving" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
 	duration = 3
@@ -1131,7 +1131,7 @@ dod_lore.185 = {
 	title = dod_lore.185.t
 	desc = dod_lore.185.d
 	flavor = dod_lore.flavor
-	event_image = { video = "unspecific_signed_contract" }
+	event_image = { video = "middleeast_islam" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
 	duration = 3
@@ -1152,7 +1152,7 @@ dod_lore.186 = {
 	title = dod_lore.186.t
 	desc = dod_lore.186.d
 	flavor = dod_lore.flavor
-	event_image = { video = "unspecific_signed_contract" }
+	event_image = { video = "unspecific_military_parade" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
 	duration = 3
@@ -1168,7 +1168,7 @@ dod_lore.192 = {
 	title = dod_lore.192.t
 	desc = dod_lore.192.d
 	flavor = dod_lore.flavor
-	event_image = { video = "unspecific_signed_contract" }
+	event_image = { video = "unspecific_ruler_speaking_to_people" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
 	duration = 3
@@ -1189,7 +1189,7 @@ dod_lore.193 = {
 	title = dod_lore.193.t
 	desc = dod_lore.193.d
 	flavor = dod_lore.flavor
-	event_image = { video = "unspecific_signed_contract" }
+	event_image = { video = "votp_barricade" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
 	duration = 3
@@ -1210,7 +1210,7 @@ dod_lore.194 = {
 	title = dod_lore.194.t
 	desc = dod_lore.194.d
 	flavor = dod_lore.flavor
-	event_image = { video = "unspecific_signed_contract" }
+	event_image = { video = "asia_politician_parliament_motion" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
 	duration = 3
@@ -1231,7 +1231,7 @@ dod_lore.195 = {
 	title = dod_lore.195.t
 	desc = dod_lore.195.d
 	flavor = dod_lore.flavor
-	event_image = { video = "unspecific_signed_contract" }
+	event_image = { video = "southamerica_war_civilians" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
 	duration = 3
@@ -1252,7 +1252,7 @@ dod_lore.196 = {
 	title = dod_lore.196.t
 	desc = dod_lore.196.d
 	flavor = dod_lore.flavor
-	event_image = { video = "unspecific_signed_contract" }
+	event_image = { video = "africa_construction_colony" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
 	duration = 3
@@ -1273,7 +1273,7 @@ dod_lore.197 = {
 	title = dod_lore.197.t
 	desc = dod_lore.197.d
 	flavor = dod_lore.flavor
-	event_image = { video = "unspecific_signed_contract" }
+	event_image = { video = "unspecific_ruler_speaking_to_people" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
 	duration = 3
@@ -1294,7 +1294,7 @@ dod_lore.198 = {
 	title = dod_lore.198.t
 	desc = dod_lore.198.d
 	flavor = dod_lore.flavor
-	event_image = { video = "unspecific_signed_contract" }
+	event_image = { video = "ep2_active_shipyard" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
 	duration = 3
@@ -1315,7 +1315,7 @@ dod_lore.199 = {
 	title = dod_lore.199.t
 	desc = dod_lore.199.d
 	flavor = dod_lore.flavor
-	event_image = { video = "unspecific_signed_contract" }
+	event_image = { video = "unspecific_ruler_speaking_to_people" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
 	duration = 3
@@ -1336,7 +1336,7 @@ dod_lore.200 = {
 	title = dod_lore.200.t
 	desc = dod_lore.200.d
 	flavor = dod_lore.flavor
-	event_image = { video = "unspecific_signed_contract" }
+	event_image = { video = "southamerica_war_civilians" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
 	duration = 3
@@ -1357,7 +1357,7 @@ dod_lore.201 = {
 	title = dod_lore.201.t
 	desc = dod_lore.201.d
 	flavor = dod_lore.flavor
-	event_image = { video = "unspecific_signed_contract" }
+	event_image = { video = "unspecific_ruler_speaking_to_people" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
 	duration = 3
@@ -1373,7 +1373,7 @@ dod_lore.207 = {
 	title = dod_lore.207.t
 	desc = dod_lore.207.d
 	flavor = dod_lore.flavor
-	event_image = { video = "unspecific_signed_contract" }
+	event_image = { video = "africa_public_protest" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
 	duration = 3
@@ -1394,7 +1394,7 @@ dod_lore.208 = {
 	title = dod_lore.208.t
 	desc = dod_lore.208.d
 	flavor = dod_lore.flavor
-	event_image = { video = "unspecific_signed_contract" }
+	event_image = { video = "southamerica_war_civilians" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
 	duration = 3
@@ -1415,7 +1415,7 @@ dod_lore.209 = {
 	title = dod_lore.209.t
 	desc = dod_lore.209.d
 	flavor = dod_lore.flavor
-	event_image = { video = "unspecific_signed_contract" }
+	event_image = { video = "unspecific_military_parade" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
 	duration = 3
@@ -1436,7 +1436,7 @@ dod_lore.210 = {
 	title = dod_lore.210.t
 	desc = dod_lore.210.d
 	flavor = dod_lore.flavor
-	event_image = { video = "unspecific_signed_contract" }
+	event_image = { video = "southamerica_war_civilians" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
 	duration = 3
@@ -1457,7 +1457,7 @@ dod_lore.211 = {
 	title = dod_lore.211.t
 	desc = dod_lore.211.d
 	flavor = dod_lore.flavor
-	event_image = { video = "unspecific_signed_contract" }
+	event_image = { video = "europenorthamerica_before_the_battle" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
 	duration = 3
@@ -1478,7 +1478,7 @@ dod_lore.212 = {
 	title = dod_lore.212.t
 	desc = dod_lore.212.d
 	flavor = dod_lore.flavor
-	event_image = { video = "unspecific_signed_contract" }
+	event_image = { video = "europenorthamerica_gold_prospectors" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
 	duration = 3
@@ -1499,7 +1499,7 @@ dod_lore.213 = {
 	title = dod_lore.213.t
 	desc = dod_lore.213.d
 	flavor = dod_lore.flavor
-	event_image = { video = "unspecific_signed_contract" }
+	event_image = { video = "unspecific_military_parade" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
 	duration = 3
@@ -1520,7 +1520,7 @@ dod_lore.214 = {
 	title = dod_lore.214.t
 	desc = dod_lore.214.d
 	flavor = dod_lore.flavor
-	event_image = { video = "unspecific_signed_contract" }
+	event_image = { video = "unspecific_ruler_speaking_to_people" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
 	duration = 3
@@ -1541,7 +1541,7 @@ dod_lore.215 = {
 	title = dod_lore.215.t
 	desc = dod_lore.215.d
 	flavor = dod_lore.flavor
-	event_image = { video = "unspecific_signed_contract" }
+	event_image = { video = "europenorthamerica_before_the_battle" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
 	duration = 3
@@ -1562,7 +1562,7 @@ dod_lore.216 = {
 	title = dod_lore.216.t
 	desc = dod_lore.216.d
 	flavor = dod_lore.flavor
-	event_image = { video = "unspecific_signed_contract" }
+	event_image = { video = "ip4_university_lecture" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
 	duration = 3
@@ -1578,7 +1578,7 @@ dod_lore.222 = {
 	title = dod_lore.222.t
 	desc = dod_lore.222.d
 	flavor = dod_lore.flavor
-	event_image = { video = "unspecific_signed_contract" }
+	event_image = { video = "unspecific_military_parade" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
 	duration = 3
@@ -1599,7 +1599,7 @@ dod_lore.223 = {
 	title = dod_lore.223.t
 	desc = dod_lore.223.d
 	flavor = dod_lore.flavor
-	event_image = { video = "unspecific_signed_contract" }
+	event_image = { video = "unspecific_military_parade" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
 	duration = 3
@@ -1620,7 +1620,7 @@ dod_lore.224 = {
 	title = dod_lore.224.t
 	desc = dod_lore.224.d
 	flavor = dod_lore.flavor
-	event_image = { video = "unspecific_signed_contract" }
+	event_image = { video = "europenorthamerica_before_the_battle" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
 	duration = 3
@@ -1641,7 +1641,7 @@ dod_lore.225 = {
 	title = dod_lore.225.t
 	desc = dod_lore.225.d
 	flavor = dod_lore.flavor
-	event_image = { video = "unspecific_signed_contract" }
+	event_image = { video = "southamerica_war_civilians" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
 	duration = 3
@@ -1662,7 +1662,7 @@ dod_lore.226 = {
 	title = dod_lore.226.t
 	desc = dod_lore.226.d
 	flavor = dod_lore.flavor
-	event_image = { video = "unspecific_signed_contract" }
+	event_image = { video = "unspecific_military_parade" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
 	duration = 3
@@ -1683,7 +1683,7 @@ dod_lore.227 = {
 	title = dod_lore.227.t
 	desc = dod_lore.227.d
 	flavor = dod_lore.flavor
-	event_image = { video = "unspecific_signed_contract" }
+	event_image = { video = "southamerica_war_civilians" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
 	duration = 3
@@ -1704,7 +1704,7 @@ dod_lore.228 = {
 	title = dod_lore.228.t
 	desc = dod_lore.228.d
 	flavor = dod_lore.flavor
-	event_image = { video = "unspecific_signed_contract" }
+	event_image = { video = "unspecific_military_parade" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
 	duration = 3
@@ -1725,7 +1725,7 @@ dod_lore.229 = {
 	title = dod_lore.229.t
 	desc = dod_lore.229.d
 	flavor = dod_lore.flavor
-	event_image = { video = "unspecific_signed_contract" }
+	event_image = { video = "southamerica_election" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
 	duration = 3
@@ -1746,7 +1746,7 @@ dod_lore.230 = {
 	title = dod_lore.230.t
 	desc = dod_lore.230.d
 	flavor = dod_lore.flavor
-	event_image = { video = "unspecific_signed_contract" }
+	event_image = { video = "europenorthamerica_before_the_battle" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
 	duration = 3
@@ -1767,7 +1767,7 @@ dod_lore.231 = {
 	title = dod_lore.231.t
 	desc = dod_lore.231.d
 	flavor = dod_lore.flavor
-	event_image = { video = "unspecific_signed_contract" }
+	event_image = { video = "ep1_transfer_of_authority" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
 	duration = 3
@@ -1783,7 +1783,7 @@ dod_lore.237 = {
 	title = dod_lore.237.t
 	desc = dod_lore.237.d
 	flavor = dod_lore.flavor
-	event_image = { video = "unspecific_signed_contract" }
+	event_image = { video = "ip4_abdication" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
 	duration = 3
@@ -1804,7 +1804,7 @@ dod_lore.238 = {
 	title = dod_lore.238.t
 	desc = dod_lore.238.d
 	flavor = dod_lore.flavor
-	event_image = { video = "unspecific_signed_contract" }
+	event_image = { video = "ep2_intellectual_writer" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
 	duration = 3
@@ -1825,7 +1825,7 @@ dod_lore.239 = {
 	title = dod_lore.239.t
 	desc = dod_lore.239.d
 	flavor = dod_lore.flavor
-	event_image = { video = "unspecific_signed_contract" }
+	event_image = { video = "southamerica_war_civilians" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
 	duration = 3
@@ -1846,7 +1846,7 @@ dod_lore.240 = {
 	title = dod_lore.240.t
 	desc = dod_lore.240.d
 	flavor = dod_lore.flavor
-	event_image = { video = "unspecific_signed_contract" }
+	event_image = { video = "unspecific_military_parade" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
 	duration = 3
@@ -1867,7 +1867,7 @@ dod_lore.241 = {
 	title = dod_lore.241.t
 	desc = dod_lore.241.d
 	flavor = dod_lore.flavor
-	event_image = { video = "unspecific_signed_contract" }
+	event_image = { video = "europenorthamerica_before_the_battle" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
 	duration = 3
@@ -1888,7 +1888,7 @@ dod_lore.242 = {
 	title = dod_lore.242.t
 	desc = dod_lore.242.d
 	flavor = dod_lore.flavor
-	event_image = { video = "unspecific_signed_contract" }
+	event_image = { video = "southamerica_christianity" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
 	duration = 3
@@ -1909,7 +1909,7 @@ dod_lore.243 = {
 	title = dod_lore.243.t
 	desc = dod_lore.243.d
 	flavor = dod_lore.flavor
-	event_image = { video = "unspecific_signed_contract" }
+	event_image = { video = "votp_agitator_speaking" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
 	duration = 3
@@ -1930,7 +1930,7 @@ dod_lore.244 = {
 	title = dod_lore.244.t
 	desc = dod_lore.244.d
 	flavor = dod_lore.flavor
-	event_image = { video = "unspecific_signed_contract" }
+	event_image = { video = "southamerica_war_civilians" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
 	duration = 3
@@ -1946,7 +1946,7 @@ dod_lore.250 = {
 	title = dod_lore.250.t
 	desc = dod_lore.250.d
 	flavor = dod_lore.flavor
-	event_image = { video = "unspecific_signed_contract" }
+	event_image = { video = "ep1_transfer_of_authority" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
 	duration = 3
@@ -1967,7 +1967,7 @@ dod_lore.251 = {
 	title = dod_lore.251.t
 	desc = dod_lore.251.d
 	flavor = dod_lore.flavor
-	event_image = { video = "unspecific_signed_contract" }
+	event_image = { video = "southamerica_election" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
 	duration = 3
@@ -1988,7 +1988,7 @@ dod_lore.252 = {
 	title = dod_lore.252.t
 	desc = dod_lore.252.d
 	flavor = dod_lore.flavor
-	event_image = { video = "unspecific_signed_contract" }
+	event_image = { video = "unspecific_ruler_speaking_to_people" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
 	duration = 3
@@ -2009,7 +2009,7 @@ dod_lore.253 = {
 	title = dod_lore.253.t
 	desc = dod_lore.253.d
 	flavor = dod_lore.flavor
-	event_image = { video = "unspecific_signed_contract" }
+	event_image = { video = "southamerica_war_civilians" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
 	duration = 3
@@ -2030,7 +2030,7 @@ dod_lore.254 = {
 	title = dod_lore.254.t
 	desc = dod_lore.254.d
 	flavor = dod_lore.flavor
-	event_image = { video = "unspecific_signed_contract" }
+	event_image = { video = "europenorthamerica_before_the_battle" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
 	duration = 3
@@ -2051,7 +2051,7 @@ dod_lore.255 = {
 	title = dod_lore.255.t
 	desc = dod_lore.255.d
 	flavor = dod_lore.flavor
-	event_image = { video = "unspecific_signed_contract" }
+	event_image = { video = "unspecific_military_parade" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
 	duration = 3
@@ -2067,7 +2067,7 @@ dod_lore.261 = {
 	title = dod_lore.261.t
 	desc = dod_lore.261.d
 	flavor = dod_lore.flavor
-	event_image = { video = "unspecific_signed_contract" }
+	event_image = { video = "ip4_colonial_exploitation_going_well" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
 	duration = 3
@@ -2088,7 +2088,7 @@ dod_lore.262 = {
 	title = dod_lore.262.t
 	desc = dod_lore.262.d
 	flavor = dod_lore.flavor
-	event_image = { video = "unspecific_signed_contract" }
+	event_image = { video = "asia_union_leader" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
 	duration = 3
@@ -2109,7 +2109,7 @@ dod_lore.263 = {
 	title = dod_lore.263.t
 	desc = dod_lore.263.d
 	flavor = dod_lore.flavor
-	event_image = { video = "unspecific_signed_contract" }
+	event_image = { video = "unspecific_military_parade" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
 	duration = 3
@@ -2130,7 +2130,7 @@ dod_lore.264 = {
 	title = dod_lore.264.t
 	desc = dod_lore.264.d
 	flavor = dod_lore.flavor
-	event_image = { video = "unspecific_signed_contract" }
+	event_image = { video = "votp_monarch_holding_court" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
 	duration = 3
@@ -2151,7 +2151,7 @@ dod_lore.265 = {
 	title = dod_lore.265.t
 	desc = dod_lore.265.d
 	flavor = dod_lore.flavor
-	event_image = { video = "unspecific_signed_contract" }
+	event_image = { video = "southamerica_war_civilians" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
 	duration = 3
@@ -2172,7 +2172,7 @@ dod_lore.266 = {
 	title = dod_lore.266.t
 	desc = dod_lore.266.d
 	flavor = dod_lore.flavor
-	event_image = { video = "unspecific_signed_contract" }
+	event_image = { video = "europenorthamerica_before_the_battle" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
 	duration = 3
@@ -2193,7 +2193,7 @@ dod_lore.267 = {
 	title = dod_lore.267.t
 	desc = dod_lore.267.d
 	flavor = dod_lore.flavor
-	event_image = { video = "unspecific_signed_contract" }
+	event_image = { video = "asia_westerners_arriving" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
 	duration = 3
@@ -2235,7 +2235,7 @@ dod_lore.269 = {
 	title = dod_lore.269.t
 	desc = dod_lore.269.d
 	flavor = dod_lore.flavor
-	event_image = { video = "unspecific_signed_contract" }
+	event_image = { video = "votp_monarch_holding_court" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
 	duration = 3
@@ -2256,7 +2256,7 @@ dod_lore.270 = {
 	title = dod_lore.270.t
 	desc = dod_lore.270.d
 	flavor = dod_lore.flavor
-	event_image = { video = "unspecific_signed_contract" }
+	event_image = { video = "southamerica_war_civilians" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
 	duration = 3
@@ -2277,7 +2277,7 @@ dod_lore.271 = {
 	title = dod_lore.271.t
 	desc = dod_lore.271.d
 	flavor = dod_lore.flavor
-	event_image = { video = "unspecific_signed_contract" }
+	event_image = { video = "europenorthamerica_springtime_of_nations" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
 	duration = 3
@@ -2298,7 +2298,7 @@ dod_lore.272 = {
 	title = dod_lore.272.t
 	desc = dod_lore.272.d
 	flavor = dod_lore.flavor
-	event_image = { video = "unspecific_signed_contract" }
+	event_image = { video = "unspecific_military_parade" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
 	duration = 3
@@ -2314,7 +2314,7 @@ dod_lore.278 = {
 	title = dod_lore.278.t
 	desc = dod_lore.278.d
 	flavor = dod_lore.flavor
-	event_image = { video = "unspecific_signed_contract" }
+	event_image = { video = "europenorthamerica_before_the_battle" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
 	duration = 3

@@ -1,4 +1,4 @@
-namespace = dod_cong
+﻿namespace = dod_cong
 
 dod_cong.1 = {
 	type = country_event
@@ -79,7 +79,7 @@ dod_cong.1 = {
 		}
 	}
 	flavor = dod_cong.1.f
-	event_image = { video = "unspecific_signed_contract" }
+	event_image = { video = "unspecific_military_parade" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_scales.dds"
 	duration = 3

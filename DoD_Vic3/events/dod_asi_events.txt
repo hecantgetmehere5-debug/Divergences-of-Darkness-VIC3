@@ -1,4 +1,4 @@
-namespace = dod_asi
+﻿namespace = dod_asi
 
 dod_asi.1 = {
 	type = country_event
@@ -6,7 +6,7 @@ dod_asi.1 = {
 	title = dod_asi.1.t
 	desc = dod_asi.1.d
 	flavor = dod_asi.1.f
-	event_image = { video = "unspecific_politicians_arguing" }
+	event_image = { video = "ep2_important_japanese_men_negotiating" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_scales.dds"
 	duration = 3
@@ -31,7 +31,7 @@ dod_asi.2 = {
 	title = dod_asi.2.t
 	desc = dod_asi.2.d
 	flavor = dod_asi.2.f
-	event_image = { video = "unspecific_military_parade" }
+	event_image = { video = "asia_sepoy_mutiny" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_military.dds"
 	duration = 3
@@ -58,7 +58,7 @@ dod_asi.3 = {
 	title = dod_asi.3.t
 	desc = dod_asi.3.d
 	flavor = dod_asi.3.f
-	event_image = { video = "unspecific_military_parade" }
+	event_image = { video = "asia_sepoy_mutiny" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
 	duration = 3
@@ -86,7 +86,7 @@ dod_asi.4 = {
 	title = dod_asi.4.t
 	desc = dod_asi.4.d
 	flavor = dod_asi.4.f
-	event_image = { video = "unspecific_politicians_arguing" }
+	event_image = { video = "ip2_india_urban_scene" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_scales.dds"
 	duration = 3
@@ -110,7 +110,7 @@ dod_asi.5 = {
 	title = dod_asi.5.t
 	desc = dod_asi.5.d
 	flavor = dod_asi.5.f
-	event_image = { video = "unspecific_politicians_arguing" }
+	event_image = { video = "ep2_japanese_artillery" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_map.dds"
 	duration = 3
@@ -258,7 +258,7 @@ dod_asi.10 = {
 	title = dod_asi.10.t
 	desc = dod_asi.10.d
 	flavor = dod_asi.10.f
-	event_image = { video = "unspecific_politicians_arguing" }
+	event_image = { video = "asia_sepoy_mutiny" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_scales.dds"
 	duration = 3
@@ -290,7 +290,7 @@ dod_asi.11 = {
 	title = dod_asi.11.t
 	desc = dod_asi.11.d
 	flavor = dod_asi.11.f
-	event_image = { video = "unspecific_military_parade" }
+	event_image = { video = "ep2_important_japanese_men_negotiating" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_military.dds"
 	duration = 3
@@ -561,7 +561,7 @@ dod_asi.24 = {
 	title = dod_asi.24.t
 	desc = dod_asi.24.d
 	flavor = dod_asi.24.f
-	event_image = { video = "unspecific_politicians_arguing" }
+	event_image = { video = "ep2_intellectual_writer" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
 	duration = 3

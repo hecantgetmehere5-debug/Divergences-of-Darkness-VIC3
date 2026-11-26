@@ -1,4 +1,4 @@
-namespace = dod_asf
+﻿namespace = dod_asf
 
 dod_asf.1 = {
 	type = country_event
@@ -6,7 +6,7 @@ dod_asf.1 = {
 	title = dod_asf.1.t
 	desc = dod_asf.1.d
 	flavor = dod_asf.1.f
-	event_image = { video = "unspecific_politicians_arguing" }
+	event_image = { video = "asia_hinduism_sikhism" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_map.dds"
 	duration = 3
@@ -45,7 +45,7 @@ dod_asf.2 = {
 	title = dod_asf.2.t
 	desc = dod_asf.2.d
 	flavor = dod_asf.2.f
-	event_image = { video = "unspecific_politicians_arguing" }
+	event_image = { video = "ep2_important_japanese_men_negotiating" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
 	duration = 3
@@ -79,7 +79,7 @@ dod_asf.3 = {
 	title = dod_asf.3.t
 	desc = dod_asf.3.d
 	flavor = dod_asf.3.f
-	event_image = { video = "unspecific_politicians_arguing" }
+	event_image = { video = "asia_hinduism_sikhism" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
 	duration = 3
@@ -114,7 +114,7 @@ dod_asf.4 = {
 	title = dod_asf.4.t
 	desc = dod_asf.4.d
 	flavor = dod_asf.4.f
-	event_image = { video = "unspecific_politicians_arguing" }
+	event_image = { video = "europenorthamerica_capitalists_meeting" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_scales.dds"
 	duration = 3
@@ -149,7 +149,7 @@ dod_asf.10 = {
 	title = dod_asf.10.t
 	desc = dod_asf.10.d
 	flavor = dod_asf.10.f
-	event_image = { video = "unspecific_military_parade" }
+	event_image = { video = "ep2_japanese_cityscape" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_military.dds"
 	duration = 3
@@ -176,7 +176,7 @@ dod_asf.11 = {
 	title = dod_asf.11.t
 	desc = dod_asf.11.d
 	flavor = dod_asf.11.f
-	event_image = { video = "unspecific_politicians_arguing" }
+	event_image = { video = "ep2_japanese_cityscape" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_scales.dds"
 	duration = 3
@@ -211,7 +211,7 @@ dod_asf.12 = {
 	title = dod_asf.12.t
 	desc = dod_asf.12.d
 	flavor = dod_asf.12.f
-	event_image = { video = "unspecific_politicians_arguing" }
+	event_image = { video = "asia_westerners_arriving" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_map.dds"
 	duration = 3
@@ -245,7 +245,7 @@ dod_asf.13 = {
 	title = dod_asf.13.t
 	desc = dod_asf.13.d
 	flavor = dod_asf.13.f
-	event_image = { video = "unspecific_politicians_arguing" }
+	event_image = { video = "ep2_japanese_cityscape" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
 	duration = 3
@@ -283,7 +283,7 @@ dod_asf.20 = {
 	title = dod_asf.20.t
 	desc = dod_asf.20.d
 	flavor = dod_asf.20.f
-	event_image = { video = "unspecific_politicians_arguing" }
+	event_image = { video = "ip2_india_urban_scene" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
 	duration = 3
@@ -317,7 +317,7 @@ dod_asf.21 = {
 	title = dod_asf.21.t
 	desc = dod_asf.21.d
 	flavor = dod_asf.21.f
-	event_image = { video = "unspecific_politicians_arguing" }
+	event_image = { video = "unspecific_world_fair" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
 	duration = 3
@@ -344,7 +344,7 @@ dod_asf.22 = {
 	title = dod_asf.22.t
 	desc = dod_asf.22.d
 	flavor = dod_asf.22.f
-	event_image = { video = "unspecific_politicians_arguing" }
+	event_image = { video = "ip2_india_urban_scene" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_scales.dds"
 	duration = 3
@@ -377,7 +377,7 @@ dod_asf.23 = {
 	title = dod_asf.23.t
 	desc = dod_asf.23.d
 	flavor = dod_asf.23.f
-	event_image = { video = "unspecific_politicians_arguing" }
+	event_image = { video = "ep2_important_japanese_men_negotiating" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_map.dds"
 	duration = 3
@@ -411,7 +411,7 @@ dod_asf.30 = {
 	title = dod_asf.30.t
 	desc = dod_asf.30.d
 	flavor = dod_asf.30.f
-	event_image = { video = "unspecific_politicians_arguing" }
+	event_image = { video = "asia_farmers_market" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_map.dds"
 	duration = 3
@@ -448,7 +448,7 @@ dod_asf.31 = {
 	title = dod_asf.31.t
 	desc = dod_asf.31.d
 	flavor = dod_asf.31.f
-	event_image = { video = "unspecific_politicians_arguing" }
+	event_image = { video = "ep2_important_japanese_men_negotiating" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_scales.dds"
 	duration = 3
@@ -482,7 +482,7 @@ dod_asf.32 = {
 	title = dod_asf.32.t
 	desc = dod_asf.32.d
 	flavor = dod_asf.32.f
-	event_image = { video = "unspecific_politicians_arguing" }
+	event_image = { video = "middleeast_jungle_expedition" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
 	duration = 3
@@ -516,7 +516,7 @@ dod_asf.33 = {
 	title = dod_asf.33.t
 	desc = dod_asf.33.d
 	flavor = dod_asf.33.f
-	event_image = { video = "unspecific_politicians_arguing" }
+	event_image = { video = "asia_politician_parliament_motion" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
 	duration = 3
@@ -543,7 +543,7 @@ dod_asf.34 = {
 	title = dod_asf.34.t
 	desc = dod_asf.34.d
 	flavor = dod_asf.34.f
-	event_image = { video = "unspecific_politicians_arguing" }
+	event_image = { video = "ep2_japanese_artillery" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_scales.dds"
 	duration = 3
@@ -576,7 +576,7 @@ dod_asf.40 = {
 	title = dod_asf.40.t
 	desc = dod_asf.40.d
 	flavor = dod_asf.40.f
-	event_image = { video = "unspecific_politicians_arguing" }
+	event_image = { video = "ep2_important_japanese_men_negotiating" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
 	duration = 3
@@ -610,7 +610,7 @@ dod_asf.41 = {
 	title = dod_asf.41.t
 	desc = dod_asf.41.d
 	flavor = dod_asf.41.f
-	event_image = { video = "unspecific_politicians_arguing" }
+	event_image = { video = "ip2_india_urban_scene" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
 	duration = 3

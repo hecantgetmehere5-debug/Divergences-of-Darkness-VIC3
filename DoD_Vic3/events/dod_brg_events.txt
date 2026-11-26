@@ -1,4 +1,4 @@
-namespace = dod_brg
+﻿namespace = dod_brg
 
 dod_brg.1 = {
 	type = country_event
@@ -44,7 +44,7 @@ dod_brg.2 = {
 	title = dod_brg.2.t
 	desc = dod_brg.2.d
 	flavor = dod_brg.2.f
-	event_image = { video = "unspecific_politicians_arguing" }
+	event_image = { video = "unspecific_ruler_speaking_to_people" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_map.dds"
 	duration = 3
@@ -69,7 +69,7 @@ dod_brg.3 = {
 	title = dod_brg.3.t
 	desc = dod_brg.3.d
 	flavor = dod_brg.3.f
-	event_image = { video = "unspecific_military_parade" }
+	event_image = { video = "europenorthamerica_before_the_battle" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_military.dds"
 	duration = 3
@@ -106,7 +106,7 @@ dod_brg.5 = {
 		}
 	}
 	flavor = dod_brg.5.f
-	event_image = { video = "unspecific_signed_contract" }
+	event_image = { video = "ep1_power_blocs" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_map.dds"
 	duration = 3

@@ -1,4 +1,4 @@
-namespace = dod_ame
+﻿namespace = dod_ame
 
 dod_ame.1 = {
 	type = country_event
@@ -24,7 +24,7 @@ dod_ame.1 = {
 		}
 	}
 	flavor = dod_ame.1.f
-	event_image = { video = "unspecific_politicians_arguing" }
+	event_image = { video = "europenorthamerica_rich_and_poor" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_scales.dds"
 	duration = 3
@@ -166,7 +166,7 @@ dod_ame.3 = {
 	title = dod_ame.3.t
 	desc = dod_ame.3.d
 	flavor = dod_ame.3.f
-	event_image = { video = "europenorthamerica_springtime_of_nations" }
+	event_image = { video = "europenorthamerica_american_civil_war" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
 	duration = 3
@@ -194,7 +194,7 @@ dod_ame.4 = {
 	title = dod_ame.4.t
 	desc = dod_ame.4.d
 	flavor = dod_ame.4.f
-	event_image = { video = "unspecific_politicians_arguing" }
+	event_image = { video = "europenorthamerica_american_civil_war" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_map.dds"
 	duration = 3
@@ -225,7 +225,7 @@ dod_ame.5 = {
 	title = dod_ame.5.t
 	desc = dod_ame.5.d
 	flavor = dod_ame.5.f
-	event_image = { video = "unspecific_military_parade" }
+	event_image = { video = "europenorthamerica_native_american" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_military.dds"
 	duration = 3
@@ -252,7 +252,7 @@ dod_ame.6 = {
 	title = dod_ame.6.t
 	desc = dod_ame.6.d
 	flavor = dod_ame.6.f
-	event_image = { video = "unspecific_politicians_arguing" }
+	event_image = { video = "europenorthamerica_american_civil_war" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_scales.dds"
 	duration = 3
@@ -287,7 +287,7 @@ dod_ame.7 = {
 	title = dod_ame.7.t
 	desc = dod_ame.7.d
 	flavor = dod_ame.7.f
-	event_image = { video = "unspecific_politicians_arguing" }
+	event_image = { video = "southamerica_slave_chains" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
 	duration = 3
@@ -330,7 +330,7 @@ dod_ame.10 = {
 		}
 	}
 	flavor = dod_ame.10.f
-	event_image = { video = "unspecific_politicians_arguing" }
+	event_image = { video = "europenorthamerica_native_american" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_map.dds"
 	duration = 3
@@ -383,7 +383,7 @@ dod_ame.11 = {
 	title = dod_ame.11.t
 	desc = dod_ame.11.d
 	flavor = dod_ame.11.f
-	event_image = { video = "unspecific_politicians_arguing" }
+	event_image = { video = "ep1_printing_press" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_map.dds"
 	duration = 3
@@ -407,7 +407,7 @@ dod_ame.20 = {
 	title = dod_ame.20.t
 	desc = dod_ame.20.d
 	flavor = dod_ame.20.f
-	event_image = { video = "unspecific_politicians_arguing" }
+	event_image = { video = "ip4_abdication" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_scales.dds"
 	duration = 3
@@ -443,7 +443,7 @@ dod_ame.21 = {
 	title = dod_ame.21.t
 	desc = dod_ame.21.d
 	flavor = dod_ame.21.f
-	event_image = { video = "unspecific_politicians_arguing" }
+	event_image = { video = "votp_realist_household" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_map.dds"
 	duration = 3
@@ -510,7 +510,7 @@ dod_ame.22 = {
 	title = dod_ame.22.t
 	desc = dod_ame.22.d
 	flavor = dod_ame.22.f
-	event_image = { video = "unspecific_politicians_arguing" }
+	event_image = { video = "europenorthamerica_springtime_of_nations" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_scales.dds"
 	duration = 3
@@ -538,7 +538,7 @@ dod_ame.23 = {
 	title = dod_ame.23.t
 	desc = dod_ame.23.d
 	flavor = dod_ame.23.f
-	event_image = { video = "unspecific_military_parade" }
+	event_image = { video = "votp_realist_household" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_military.dds"
 	duration = 3
@@ -572,7 +572,7 @@ dod_ame.24 = {
 	title = dod_ame.24.t
 	desc = dod_ame.24.d
 	flavor = dod_ame.24.f
-	event_image = { video = "unspecific_politicians_arguing" }
+	event_image = { video = "europenorthamerica_springtime_of_nations" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_scales.dds"
 	duration = 3
@@ -650,7 +650,7 @@ dod_ame.26 = {
 	title = dod_ame.26.t
 	desc = dod_ame.26.d
 	flavor = dod_ame.26.f
-	event_image = { video = "unspecific_politicians_arguing" }
+	event_image = { video = "ep1_transfer_of_authority" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_map.dds"
 	duration = 3
@@ -675,7 +675,7 @@ dod_ame.27 = {
 	title = dod_ame.27.t
 	desc = dod_ame.27.d
 	flavor = dod_ame.27.f
-	event_image = { video = "unspecific_politicians_arguing" }
+	event_image = { video = "unspecific_signed_contract" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_map.dds"
 	duration = 3

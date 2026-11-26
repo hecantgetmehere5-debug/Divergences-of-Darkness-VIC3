@@ -1,4 +1,4 @@
-namespace = dod_wld
+﻿namespace = dod_wld
 
 dod_wld.1 = {
 	type = country_event
@@ -28,7 +28,7 @@ dod_wld.1 = {
 		}
 	}
 	flavor = dod_wld.1.f
-	event_image = { video = "unspecific_politicians_arguing" }
+	event_image = { video = "unspecific_military_parade" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
 	duration = 3
@@ -63,7 +63,7 @@ dod_wld.2 = {
 	title = dod_wld.2.t
 	desc = dod_wld.2.d
 	flavor = dod_wld.2.f
-	event_image = { video = "unspecific_military_parade" }
+	event_image = { video = "ip2_cross_cultural_festival" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
 	duration = 3
@@ -98,7 +98,7 @@ dod_wld.3 = {
 	title = dod_wld.3.t
 	desc = dod_wld.3.d
 	flavor = dod_wld.3.f
-	event_image = { video = "unspecific_military_parade" }
+	event_image = { video = "ip2_cross_cultural_festival" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
 	duration = 3
@@ -123,7 +123,7 @@ dod_wld.4 = {
 	title = dod_wld.4.t
 	desc = dod_wld.4.d
 	flavor = dod_wld.4.f
-	event_image = { video = "europenorthamerica_springtime_of_nations" }
+	event_image = { video = "unspecific_trains" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
 	duration = 3
@@ -159,7 +159,7 @@ dod_wld.5 = {
 	title = dod_wld.5.t
 	desc = dod_wld.5.d
 	flavor = dod_wld.5.f
-	event_image = { video = "unspecific_politicians_arguing" }
+	event_image = { video = "unspecific_world_fair" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
 	duration = 3
@@ -186,7 +186,7 @@ dod_wld.10 = {
 	title = dod_wld.10.t
 	desc = dod_wld.10.d
 	flavor = dod_wld.10.f
-	event_image = { video = "unspecific_politicians_arguing" }
+	event_image = { video = "votp_monarch_holding_court" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
 	duration = 3
@@ -220,7 +220,7 @@ dod_wld.11 = {
 	title = dod_wld.11.t
 	desc = dod_wld.11.d
 	flavor = dod_wld.11.f
-	event_image = { video = "unspecific_politicians_arguing" }
+	event_image = { video = "votp_monarch_holding_court" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
 	duration = 3
@@ -243,7 +243,7 @@ dod_wld.12 = {
 	title = dod_wld.12.t
 	desc = dod_wld.12.d
 	flavor = dod_wld.12.f
-	event_image = { video = "europenorthamerica_political_extremism" }
+	event_image = { video = "europenorthamerica_springtime_of_nations" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_protest.dds"
 	duration = 3
@@ -279,7 +279,7 @@ dod_wld.20 = {
 	title = dod_wld.20.t
 	desc = dod_wld.20.d
 	flavor = dod_wld.20.f
-	event_image = { video = "europenorthamerica_springtime_of_nations" }
+	event_image = { video = "unspecific_politicians_arguing" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_protest.dds"
 	duration = 3
@@ -344,7 +344,7 @@ dod_wld.22 = {
 	title = dod_wld.22.t
 	desc = dod_wld.22.d
 	flavor = dod_wld.22.f
-	event_image = { video = "europenorthamerica_political_extremism" }
+	event_image = { video = "africa_public_protest" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_protest.dds"
 	duration = 3
@@ -379,7 +379,7 @@ dod_wld.23 = {
 	title = dod_wld.23.t
 	desc = dod_wld.23.d
 	flavor = dod_wld.23.f
-	event_image = { video = "unspecific_politicians_arguing" }
+	event_image = { video = "unspecific_ruler_speaking_to_people" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
 	duration = 3
@@ -413,7 +413,7 @@ dod_wld.30 = {
 	title = dod_wld.30.t
 	desc = dod_wld.30.d
 	flavor = dod_wld.30.f
-	event_image = { video = "unspecific_politicians_arguing" }
+	event_image = { video = "votp_hostile_court" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
 	duration = 3
@@ -447,7 +447,7 @@ dod_wld.31 = {
 	title = dod_wld.31.t
 	desc = dod_wld.31.d
 	flavor = dod_wld.31.f
-	event_image = { video = "unspecific_politicians_arguing" }
+	event_image = { video = "unspecific_devastation" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_protest.dds"
 	duration = 3
@@ -477,7 +477,7 @@ dod_wld.32 = {
 	title = dod_wld.32.t
 	desc = dod_wld.32.d
 	flavor = dod_wld.32.f
-	event_image = { video = "unspecific_politicians_arguing" }
+	event_image = { video = "votp_realist_household" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
 	duration = 3
@@ -514,7 +514,7 @@ dod_wld.33 = {
 	title = dod_wld.33.t
 	desc = dod_wld.33.d
 	flavor = dod_wld.33.f
-	event_image = { video = "unspecific_politicians_arguing" }
+	event_image = { video = "southamerica_public_figure_assassination" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_protest.dds"
 	duration = 3
@@ -574,7 +574,7 @@ dod_wld.41 = {
 	title = dod_wld.41.t
 	desc = dod_wld.41.d
 	flavor = dod_wld.41.f
-	event_image = { video = "unspecific_politicians_arguing" }
+	event_image = { video = "asia_dead_cattle_poor_harvest" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_map.dds"
 	duration = 3
@@ -614,7 +614,7 @@ dod_wld.42 = {
 	title = dod_wld.42.t
 	desc = dod_wld.42.d
 	flavor = dod_wld.42.f
-	event_image = { video = "unspecific_politicians_arguing" }
+	event_image = { video = "votp_agitators_sneaking" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_protest.dds"
 	duration = 3
@@ -684,7 +684,7 @@ dod_wld.50 = {
 	title = dod_wld.50.t
 	desc = dod_wld.50.d
 	flavor = dod_wld.50.f
-	event_image = { video = "europenorthamerica_political_extremism" }
+	event_image = { video = "asia_union_leader" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_protest.dds"
 	duration = 3
@@ -722,7 +722,7 @@ dod_wld.51 = {
 	title = dod_wld.51.t
 	desc = dod_wld.51.d
 	flavor = dod_wld.51.f
-	event_image = { video = "unspecific_politicians_arguing" }
+	event_image = { video = "europenorthamerica_springtime_of_nations" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
 	duration = 3
@@ -757,7 +757,7 @@ dod_wld.52 = {
 	title = dod_wld.52.t
 	desc = dod_wld.52.d
 	flavor = dod_wld.52.f
-	event_image = { video = "unspecific_politicians_arguing" }
+	event_image = { video = "middleeast_islam" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
 	duration = 3
@@ -829,7 +829,7 @@ dod_wld.61 = {
 	title = dod_wld.61.t
 	desc = dod_wld.61.d
 	flavor = dod_wld.61.f
-	event_image = { video = "unspecific_politicians_arguing" }
+	event_image = { video = "ip3_police_raid" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_protest.dds"
 	duration = 3
@@ -856,7 +856,7 @@ dod_wld.62 = {
 	title = dod_wld.62.t
 	desc = dod_wld.62.d
 	flavor = dod_wld.62.f
-	event_image = { video = "unspecific_politicians_arguing" }
+	event_image = { video = "votp_prison" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
 	duration = 3
@@ -921,7 +921,7 @@ dod_wld.71 = {
 	title = dod_wld.71.t
 	desc = dod_wld.71.d
 	flavor = dod_wld.71.f
-	event_image = { video = "unspecific_politicians_arguing" }
+	event_image = { video = "votp_agitator_speaking" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_protest.dds"
 	duration = 3
@@ -950,7 +950,7 @@ dod_wld.72 = {
 	title = dod_wld.72.t
 	desc = dod_wld.72.d
 	flavor = dod_wld.72.f
-	event_image = { video = "unspecific_politicians_arguing" }
+	event_image = { video = "asia_union_leader" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
 	duration = 3
@@ -1034,7 +1034,7 @@ dod_wld.90 = {
 	title = dod_wld.90.t
 	desc = dod_wld.90.d
 	flavor = dod_wld.90.f
-	event_image = { video = "unspecific_politicians_arguing" }
+	event_image = { video = "unspecific_devastation" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_map.dds"
 	duration = 3
@@ -1058,7 +1058,7 @@ dod_wld.91 = {
 	title = dod_wld.91.t
 	desc = dod_wld.91.d
 	flavor = dod_wld.91.f
-	event_image = { video = "unspecific_politicians_arguing" }
+	event_image = { video = "votp_realist_household" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_map.dds"
 	duration = 3
@@ -1082,7 +1082,7 @@ dod_wld.92 = {
 	title = dod_wld.92.t
 	desc = dod_wld.92.d
 	flavor = dod_wld.92.f
-	event_image = { video = "unspecific_politicians_arguing" }
+	event_image = { video = "europenorthamerica_rich_and_poor" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_map.dds"
 	duration = 3
@@ -1112,7 +1112,7 @@ dod_wld.93 = {
 	title = dod_wld.93.t
 	desc = dod_wld.93.d
 	flavor = dod_wld.93.f
-	event_image = { video = "unspecific_politicians_arguing" }
+	event_image = { video = "votp_realist_household" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_map.dds"
 	duration = 3
@@ -1142,7 +1142,7 @@ dod_wld.94 = {
 	title = dod_wld.94.t
 	desc = dod_wld.94.d
 	flavor = dod_wld.94.f
-	event_image = { video = "unspecific_politicians_arguing" }
+	event_image = { video = "unspecific_fire" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_map.dds"
 	duration = 3
@@ -1198,7 +1198,7 @@ dod_wld.100 = {
 	title = dod_wld.100.t
 	desc = dod_wld.100.d
 	flavor = dod_wld.100.f
-	event_image = { video = "unspecific_politicians_arguing" }
+	event_image = { video = "asia_farmers_market" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_scales.dds"
 	duration = 3
@@ -1239,7 +1239,7 @@ dod_wld.101 = {
 	title = dod_wld.101.t
 	desc = dod_wld.101.d
 	flavor = dod_wld.101.f
-	event_image = { video = "unspecific_politicians_arguing" }
+	event_image = { video = "asia_farmers_market" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_scales.dds"
 	duration = 3
@@ -1263,7 +1263,7 @@ dod_wld.102 = {
 	title = dod_wld.102.t
 	desc = dod_wld.102.d
 	flavor = dod_wld.102.f
-	event_image = { video = "unspecific_politicians_arguing" }
+	event_image = { video = "asia_politician_parliament_motion" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_scales.dds"
 	duration = 3
@@ -1298,7 +1298,7 @@ dod_wld.110 = {
 	title = dod_wld.110.t
 	desc = dod_wld.110.d
 	flavor = dod_wld.110.f
-	event_image = { video = "unspecific_politicians_arguing" }
+	event_image = { video = "unspecific_fire" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_protest.dds"
 	duration = 3

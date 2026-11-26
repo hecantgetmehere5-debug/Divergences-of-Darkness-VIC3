@@ -1,4 +1,4 @@
-namespace = dod_hre
+﻿namespace = dod_hre
 
 # =====================================================================
 # Part 1: The Prague Proclamation
@@ -11,7 +11,7 @@ dod_hre.1 = {
 	title = dod_hre.1.t
 	desc = dod_hre.1.d
 	flavor = dod_hre.1.f
-	event_image = { video = "unspecific_signed_contract" }
+	event_image = { video = "unspecific_ruler_speaking_to_people" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_scales.dds"
 	duration = 3
@@ -61,7 +61,7 @@ dod_hre.10 = {
 		}
 	}
 	flavor = dod_hre.10.f
-	event_image = { video = "unspecific_politicians_arguing" }
+	event_image = { video = "unspecific_ruler_speaking_to_people" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_scales.dds"
 	duration = 3
@@ -153,7 +153,7 @@ dod_hre.20 = {
 		}
 	}
 	flavor = dod_hre.20.f
-	event_image = { video = "europenorthamerica_political_extremism" }
+	event_image = { video = "europenorthamerica_before_the_battle" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_scales.dds"
 	duration = 3
@@ -216,7 +216,7 @@ dod_hre.30 = {
 	title = dod_hre.30.t
 	desc = dod_hre.30.d
 	flavor = dod_hre.30.f
-	event_image = { video = "unspecific_military_parade" }
+	event_image = { video = "europenorthamerica_before_the_battle" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_military.dds"
 	duration = 3
@@ -255,7 +255,7 @@ dod_hre.31 = {
 	title = dod_hre.31.t
 	desc = dod_hre.31.d
 	flavor = dod_hre.31.f
-	event_image = { video = "unspecific_politicians_arguing" }
+	event_image = { video = "southamerica_war_civilians" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_military.dds"
 	duration = 3
@@ -302,7 +302,7 @@ dod_hre.32 = {
 	title = dod_hre.32.t
 	desc = dod_hre.32.d
 	flavor = dod_hre.32.f
-	event_image = { video = "unspecific_military_parade" }
+	event_image = { video = "ip4_abdication" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_military.dds"
 	duration = 3
@@ -337,7 +337,7 @@ dod_hre.40 = {
 	title = dod_hre.40.t
 	desc = dod_hre.40.d
 	flavor = dod_hre.40.f
-	event_image = { video = "europenorthamerica_springtime_of_nations" }
+	event_image = { video = "ip4_abdication" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
 	duration = 3
@@ -465,7 +465,7 @@ dod_hre.52 = {
 	title = dod_hre.52.t
 	desc = dod_hre.52.d
 	flavor = dod_hre.52.f
-	event_image = { video = "unspecific_signed_contract" }
+	event_image = { video = "votp_barricade" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
 	duration = 3
@@ -484,7 +484,7 @@ dod_hre.54 = {
 	title = dod_hre.54.t
 	desc = dod_hre.54.d
 	flavor = dod_hre.54.f
-	event_image = { video = "europenorthamerica_springtime_of_nations" }
+	event_image = { video = "europenorthamerica_before_the_battle" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_military.dds"
 	duration = 3
@@ -597,7 +597,7 @@ dod_hre.58 = {
 	title = dod_hre.58.t
 	desc = dod_hre.58.d
 	flavor = dod_hre.58.f
-	event_image = { video = "europenorthamerica_political_extremism" }
+	event_image = { video = "votp_realist_household" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_military.dds"
 	duration = 3
@@ -616,7 +616,7 @@ dod_hre.59 = {
 	title = dod_hre.59.t
 	desc = dod_hre.59.d
 	flavor = dod_hre.59.f
-	event_image = { video = "unspecific_military_parade" }
+	event_image = { video = "africa_public_protest" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_military.dds"
 	duration = 3
@@ -635,7 +635,7 @@ dod_hre.60 = {
 	title = dod_hre.60.t
 	desc = dod_hre.60.d
 	flavor = dod_hre.60.f
-	event_image = { video = "unspecific_signed_contract" }
+	event_image = { video = "southamerica_war_civilians" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_scales.dds"
 	duration = 3
@@ -704,7 +704,7 @@ dod_hre.71 = {
 	title = dod_hre.71.t
 	desc = dod_hre.71.d
 	flavor = dod_hre.71.f
-	event_image = { video = "unspecific_military_parade" }
+	event_image = { video = "unspecific_ruler_speaking_to_people" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
 	duration = 3

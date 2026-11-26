@@ -1,4 +1,4 @@
-namespace = dod_rail
+﻿namespace = dod_rail
 
 dod_rail.1 = {
 	type = country_event
@@ -6,7 +6,7 @@ dod_rail.1 = {
 	title = dod_rail.1.t
 	desc = dod_rail.1.d
 	flavor = dod_rail.1.f
-	event_image = { video = "unspecific_military_parade" }
+	event_image = { video = "southamerica_war_civilians" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_military.dds"
 	duration = 3
@@ -45,7 +45,7 @@ dod_rail.2 = {
 	title = dod_rail.2.t
 	desc = dod_rail.2.d
 	flavor = dod_rail.2.f
-	event_image = { video = "unspecific_military_parade" }
+	event_image = { video = "southamerica_war_civilians" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_military.dds"
 	duration = 3
@@ -88,7 +88,7 @@ dod_rail.3 = {
 	title = dod_rail.3.t
 	desc = dod_rail.3.d
 	flavor = dod_rail.3.f
-	event_image = { video = "unspecific_military_parade" }
+	event_image = { video = "southamerica_war_civilians" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_military.dds"
 	duration = 3
@@ -127,7 +127,7 @@ dod_rail.4 = {
 	title = dod_rail.4.t
 	desc = dod_rail.4.d
 	flavor = dod_rail.4.f
-	event_image = { video = "unspecific_military_parade" }
+	event_image = { video = "europenorthamerica_springtime_of_nations" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_military.dds"
 	duration = 3
@@ -205,7 +205,7 @@ dod_rail.10 = {
 	title = dod_rail.10.t
 	desc = dod_rail.10.d
 	flavor = dod_rail.10.f
-	event_image = { video = "unspecific_politicians_arguing" }
+	event_image = { video = "unspecific_ruler_speaking_to_people" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_map.dds"
 	duration = 3
@@ -257,7 +257,7 @@ dod_rail.11 = {
 	title = dod_rail.11.t
 	desc = dod_rail.11.d
 	flavor = dod_rail.11.f
-	event_image = { video = "unspecific_politicians_arguing" }
+	event_image = { video = "unspecific_ruler_speaking_to_people" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
 	duration = 3

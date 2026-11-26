@@ -1,4 +1,4 @@
-namespace = dod_per
+﻿namespace = dod_per
 
 dod_per.1 = {
 	type = country_event
@@ -284,7 +284,7 @@ dod_per.10 = {
 	title = dod_per.10.t
 	desc = dod_per.10.d
 	flavor = dod_per.10.f
-	event_image = { video = "unspecific_politicians_arguing" }
+	event_image = { video = "middleeast_battlefield_trenches" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_map.dds"
 	duration = 3
@@ -338,7 +338,7 @@ dod_per.21 = {
 	title = dod_per.21.t
 	desc = dod_per.21.d
 	flavor = dod_per.21.f
-	event_image = { video = "europenorthamerica_political_extremism" }
+	event_image = { video = "ep1_central_asian_city" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_protest.dds"
 	duration = 3
@@ -414,7 +414,7 @@ dod_per.23 = {
 		}
 	}
 	flavor = dod_per.23.f
-	event_image = { video = "europenorthamerica_political_extremism" }
+	event_image = { video = "middleeast_battlefield_trenches" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_military.dds"
 	duration = 3
@@ -446,7 +446,7 @@ dod_per.24 = {
 	title = dod_per.24.t
 	desc = dod_per.24.d
 	flavor = dod_per.24.f
-	event_image = { video = "unspecific_politicians_arguing" }
+	event_image = { video = "ep1_transfer_of_authority" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_scales.dds"
 	duration = 3
@@ -557,7 +557,7 @@ dod_per.32 = {
 	title = dod_per.32.t
 	desc = dod_per.32.d
 	flavor = dod_per.32.f
-	event_image = { video = "unspecific_politicians_arguing" }
+	event_image = { video = "ep1_persian_court" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_scales.dds"
 	duration = 3
@@ -753,7 +753,7 @@ dod_per.51 = {
 	title = dod_per.51.t
 	desc = dod_per.51.d
 	flavor = dod_per.51.f
-	event_image = { video = "unspecific_politicians_arguing" }
+	event_image = { video = "africa_public_protest" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_map.dds"
 	duration = 3
@@ -794,7 +794,7 @@ dod_per.52 = {
 	title = dod_per.52.t
 	desc = dod_per.52.d
 	flavor = dod_per.52.f
-	event_image = { video = "unspecific_politicians_arguing" }
+	event_image = { video = "middleeast_battlefield_trenches" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_map.dds"
 	duration = 3
@@ -819,7 +819,7 @@ dod_per.53 = {
 	title = dod_per.53.t
 	desc = dod_per.53.d
 	flavor = dod_per.53.f
-	event_image = { video = "unspecific_military_parade" }
+	event_image = { video = "middleeast_middleclass_cafe" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_military.dds"
 	duration = 3
@@ -850,7 +850,7 @@ dod_per.54 = {
 	title = dod_per.54.t
 	desc = dod_per.54.d
 	flavor = dod_per.54.f
-	event_image = { video = "unspecific_military_parade" }
+	event_image = { video = "ep1_persian_court" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_military.dds"
 	duration = 3
@@ -961,7 +961,7 @@ dod_per.70 = {
 	title = dod_per.70.t
 	desc = dod_per.70.d
 	flavor = dod_per.70.f
-	event_image = { video = "unspecific_politicians_arguing" }
+	event_image = { video = "europenorthamerica_art_gallery" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
 	duration = 3

@@ -1,4 +1,4 @@
-namespace = dod_blt
+﻿namespace = dod_blt
 
 dod_blt.2 = {
 	type = country_event
@@ -6,7 +6,7 @@ dod_blt.2 = {
 	title = dod_blt.2.t
 	desc = dod_blt.2.d
 	flavor = dod_blt.2.f
-	event_image = { video = "unspecific_politicians_arguing" }
+	event_image = { video = "europenorthamerica_before_the_battle" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_map.dds"
 	duration = 3
@@ -39,7 +39,7 @@ dod_blt.3 = {
 	title = dod_blt.3.t
 	desc = dod_blt.3.d
 	flavor = dod_blt.3.f
-	event_image = { video = "unspecific_politicians_arguing" }
+	event_image = { video = "votp_realist_household" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_scales.dds"
 	duration = 3
@@ -74,7 +74,7 @@ dod_blt.5 = {
 	title = dod_blt.5.t
 	desc = dod_blt.5.d
 	flavor = dod_blt.5.f
-	event_image = { video = "europenorthamerica_political_extremism" }
+	event_image = { video = "asia_politician_parliament_motion" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_map.dds"
 	duration = 3
@@ -116,7 +116,7 @@ dod_blt.6 = {
 	title = dod_blt.6.t
 	desc = dod_blt.6.d
 	flavor = dod_blt.6.f
-	event_image = { video = "unspecific_politicians_arguing" }
+	event_image = { video = "europenorthamerica_springtime_of_nations" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_scales.dds"
 	duration = 3
@@ -183,7 +183,7 @@ dod_blt.8 = {
 	title = dod_blt.8.t
 	desc = dod_blt.8.d
 	flavor = dod_blt.8.f
-	event_image = { video = "europenorthamerica_political_extremism" }
+	event_image = { video = "votp_hostile_court" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
 	duration = 3

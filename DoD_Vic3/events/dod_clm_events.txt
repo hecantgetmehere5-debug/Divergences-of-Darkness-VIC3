@@ -1,4 +1,4 @@
-namespace = dod_clm
+﻿namespace = dod_clm
 
 dod_clm.1 = {
 	type = country_event
@@ -35,7 +35,7 @@ dod_clm.2 = {
 	title = dod_clm.2.t
 	desc = dod_clm.2.d
 	flavor = dod_clm.2.f
-	event_image = { video = "unspecific_signed_contract" }
+	event_image = { video = "europenorthamerica_before_the_battle" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_scales.dds"
 	duration = 3
@@ -117,7 +117,7 @@ dod_clm.12 = {
 	title = dod_clm.12.t
 	desc = dod_clm.12.d
 	flavor = dod_clm.12.f
-	event_image = { video = "unspecific_politicians_arguing" }
+	event_image = { video = "europenorthamerica_before_the_battle" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_scales.dds"
 	duration = 3
@@ -149,7 +149,7 @@ dod_clm.13 = {
 	title = dod_clm.13.t
 	desc = dod_clm.13.d
 	flavor = dod_clm.13.f
-	event_image = { video = "unspecific_politicians_arguing" }
+	event_image = { video = "southamerica_slave_chains" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_scales.dds"
 	duration = 3
@@ -182,7 +182,7 @@ dod_clm.14 = {
 	title = dod_clm.14.t
 	desc = dod_clm.14.d
 	flavor = dod_clm.14.f
-	event_image = { video = "unspecific_politicians_arguing" }
+	event_image = { video = "unspecific_signed_contract" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_scales.dds"
 	duration = 3
@@ -300,7 +300,7 @@ dod_clm.21 = {
 	title = dod_clm.21.t
 	desc = dod_clm.21.d
 	flavor = dod_clm.21.f
-	event_image = { video = "europenorthamerica_springtime_of_nations" }
+	event_image = { video = "rp1_social_banditry" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_protest.dds"
 	duration = 3
@@ -504,7 +504,7 @@ dod_clm.30 = {
 	title = dod_clm.30.t
 	desc = dod_clm.30.d
 	flavor = dod_clm.30.f
-	event_image = { video = "unspecific_politicians_arguing" }
+	event_image = { video = "europenorthamerica_art_gallery" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
 	duration = 3
@@ -569,7 +569,7 @@ dod_clm.32 = {
 	title = dod_clm.32.t
 	desc = dod_clm.32.d
 	flavor = dod_clm.32.f
-	event_image = { video = "unspecific_politicians_arguing" }
+	event_image = { video = "rp1_brazilian_city" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_map.dds"
 	duration = 3
@@ -603,7 +603,7 @@ dod_clm.33 = {
 	title = dod_clm.33.t
 	desc = dod_clm.33.d
 	flavor = dod_clm.33.f
-	event_image = { video = "unspecific_politicians_arguing" }
+	event_image = { video = "europenorthamerica_gold_prospectors" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_map.dds"
 	duration = 3
@@ -631,7 +631,7 @@ dod_clm.40 = {
 	title = dod_clm.40.t
 	desc = dod_clm.40.d
 	flavor = dod_clm.40.f
-	event_image = { video = "unspecific_politicians_arguing" }
+	event_image = { video = "ip4_abdication" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
 	duration = 3
@@ -659,7 +659,7 @@ dod_clm.41 = {
 	title = dod_clm.41.t
 	desc = dod_clm.41.d
 	flavor = dod_clm.41.f
-	event_image = { video = "unspecific_politicians_arguing" }
+	event_image = { video = "rp1_brazilian_city" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
 	duration = 3
@@ -687,7 +687,7 @@ dod_clm.42 = {
 	title = dod_clm.42.t
 	desc = dod_clm.42.d
 	flavor = dod_clm.42.f
-	event_image = { video = "unspecific_politicians_arguing" }
+	event_image = { video = "rp1_brazilian_city" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_map.dds"
 	duration = 3
@@ -732,7 +732,7 @@ dod_clm.50 = {
 	title = dod_clm.50.t
 	desc = dod_clm.50.d
 	flavor = dod_clm.50.f
-	event_image = { video = "unspecific_politicians_arguing" }
+	event_image = { video = "asia_farmers_market" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_map.dds"
 	duration = 3
@@ -774,7 +774,7 @@ dod_clm.16 = {
 	title = dod_clm.16.t
 	desc = dod_clm.16.d
 	flavor = dod_clm.16.f
-	event_image = { video = "unspecific_signed_contract" }
+	event_image = { video = "ep1_power_blocs" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_scales.dds"
 	duration = 3

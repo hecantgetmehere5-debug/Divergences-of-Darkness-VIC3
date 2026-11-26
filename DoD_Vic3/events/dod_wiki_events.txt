@@ -1,4 +1,4 @@
-namespace = dod_wiki
+﻿namespace = dod_wiki
 
 dod_wiki.1 = {
 	type = country_event
@@ -6,7 +6,7 @@ dod_wiki.1 = {
 	title = dod_wiki.1.t
 	desc = dod_wiki.1.d
 	flavor = dod_wiki.1.f
-	event_image = { video = "unspecific_military_parade" }
+	event_image = { video = "europenorthamerica_before_the_battle" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
 	duration = 3
@@ -38,7 +38,7 @@ dod_wiki.2 = {
 	title = dod_wiki.2.t
 	desc = dod_wiki.2.d
 	flavor = dod_wiki.2.f
-	event_image = { video = "unspecific_politicians_arguing" }
+	event_image = { video = "europenorthamerica_before_the_battle" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
 	duration = 3
@@ -109,7 +109,7 @@ dod_wiki.4 = {
 	title = dod_wiki.4.t
 	desc = dod_wiki.4.d
 	flavor = dod_wiki.4.f
-	event_image = { video = "unspecific_politicians_arguing" }
+	event_image = { video = "unspecific_ruler_speaking_to_people" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_scales.dds"
 	duration = 3
@@ -147,7 +147,7 @@ dod_wiki.5 = {
 	title = dod_wiki.5.t
 	desc = dod_wiki.5.d
 	flavor = dod_wiki.5.f
-	event_image = { video = "unspecific_military_parade" }
+	event_image = { video = "ip4_abdication" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
 	duration = 3
@@ -175,7 +175,7 @@ dod_wiki.6 = {
 	title = dod_wiki.6.t
 	desc = dod_wiki.6.d
 	flavor = dod_wiki.6.f
-	event_image = { video = "unspecific_politicians_arguing" }
+	event_image = { video = "ep1_transfer_of_authority" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_scales.dds"
 	duration = 3
@@ -216,7 +216,7 @@ dod_wiki.7 = {
 	title = dod_wiki.7.t
 	desc = dod_wiki.7.d
 	flavor = dod_wiki.7.f
-	event_image = { video = "unspecific_politicians_arguing" }
+	event_image = { video = "ep1_transfer_of_authority" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
 	duration = 3
@@ -244,7 +244,7 @@ dod_wiki.8 = {
 	title = dod_wiki.8.t
 	desc = dod_wiki.8.d
 	flavor = dod_wiki.8.f
-	event_image = { video = "unspecific_politicians_arguing" }
+	event_image = { video = "ip4_abdication" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_map.dds"
 	duration = 3
@@ -276,7 +276,7 @@ dod_wiki.9 = {
 	title = dod_wiki.9.t
 	desc = dod_wiki.9.d
 	flavor = dod_wiki.9.f
-	event_image = { video = "unspecific_politicians_arguing" }
+	event_image = { video = "ep2_active_shipyard" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_map.dds"
 	duration = 3
@@ -307,7 +307,7 @@ dod_wiki.10 = {
 	title = dod_wiki.10.t
 	desc = dod_wiki.10.d
 	flavor = dod_wiki.10.f
-	event_image = { video = "unspecific_politicians_arguing" }
+	event_image = { video = "votp_monarch_holding_court" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
 	duration = 3

@@ -1,4 +1,4 @@
-namespace = dod_rus
+﻿namespace = dod_rus
 
 dod_rus.1 = {
 	type = country_event
@@ -6,7 +6,7 @@ dod_rus.1 = {
 	title = dod_rus.1.t
 	desc = dod_rus.1.d
 	flavor = dod_rus.1.f
-	event_image = { video = "unspecific_politicians_arguing" }
+	event_image = { video = "votp_garibaldi" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_scales.dds"
 	duration = 3
@@ -40,7 +40,7 @@ dod_rus.6 = {
 	title = dod_rus.6.t
 	desc = dod_rus.6.d
 	flavor = dod_rus.6.f
-	event_image = { video = "unspecific_military_parade" }
+	event_image = { video = "europenorthamerica_russian_serfs" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_military.dds"
 	duration = 3
@@ -75,7 +75,7 @@ dod_rus.2 = {
 	title = dod_rus.2.t
 	desc = dod_rus.2.d
 	flavor = dod_rus.2.f
-	event_image = { video = "unspecific_military_parade" }
+	event_image = { video = "votp_garibaldi" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
 	duration = 3
@@ -105,7 +105,7 @@ dod_rus.3 = {
 	title = dod_rus.3.t
 	desc = dod_rus.3.d
 	flavor = dod_rus.3.f
-	event_image = { video = "unspecific_politicians_arguing" }
+	event_image = { video = "asia_farmers_market" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_map.dds"
 	duration = 3
@@ -162,7 +162,7 @@ dod_rus.5 = {
 	title = dod_rus.5.t
 	desc = dod_rus.5.d
 	flavor = dod_rus.5.f
-	event_image = { video = "unspecific_politicians_arguing" }
+	event_image = { video = "europenorthamerica_russian_serfs" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_map.dds"
 	duration = 3
@@ -228,7 +228,7 @@ dod_rus.7 = {
 	title = dod_rus.7.t
 	desc = dod_rus.7.d
 	flavor = dod_rus.7.f
-	event_image = { video = "unspecific_politicians_arguing" }
+	event_image = { video = "unspecific_signed_contract" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_scales.dds"
 	duration = 3
@@ -292,7 +292,7 @@ dod_rus.9 = {
 	title = dod_rus.9.t
 	desc = dod_rus.9.d
 	flavor = dod_rus.9.f
-	event_image = { video = "unspecific_politicians_arguing" }
+	event_image = { video = "africa_desert_expedition" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_scales.dds"
 	duration = 3
@@ -366,7 +366,7 @@ dod_rus.12 = {
 	title = dod_rus.12.t
 	desc = dod_rus.12.d
 	flavor = dod_rus.12.f
-	event_image = { video = "unspecific_military_parade" }
+	event_image = { video = "ep1_cossacks" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_military.dds"
 	duration = 3
@@ -461,7 +461,7 @@ dod_rus.15 = {
 	title = dod_rus.15.t
 	desc = dod_rus.15.d
 	flavor = dod_rus.15.f
-	event_image = { video = "unspecific_politicians_arguing" }
+	event_image = { video = "europenorthamerica_russian_serfs" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
 	duration = 3
@@ -488,7 +488,7 @@ dod_rus.16 = {
 	title = dod_rus.16.t
 	desc = dod_rus.16.d
 	flavor = dod_rus.16.f
-	event_image = { video = "unspecific_politicians_arguing" }
+	event_image = { video = "europenorthamerica_capitalists_meeting" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_scales.dds"
 	duration = 3
@@ -515,7 +515,7 @@ dod_rus.17 = {
 	title = dod_rus.17.t
 	desc = dod_rus.17.d
 	flavor = dod_rus.17.f
-	event_image = { video = "unspecific_military_parade" }
+	event_image = { video = "unspecific_ruler_speaking_to_people" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_military.dds"
 	duration = 3
@@ -554,7 +554,7 @@ dod_rus.18 = {
 	title = dod_rus.18.t
 	desc = dod_rus.18.d
 	flavor = dod_rus.18.f
-	event_image = { video = "unspecific_military_parade" }
+	event_image = { video = "ep1_cossacks" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_military.dds"
 	duration = 3
