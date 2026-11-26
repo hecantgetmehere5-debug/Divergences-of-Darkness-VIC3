@@ -1,4 +1,4 @@
-COUNTRIES = {
+﻿COUNTRIES = {
 	c:HLR ?= {
 		add_journal_entry = { type = je_dod_prague_proclamation }
 	}

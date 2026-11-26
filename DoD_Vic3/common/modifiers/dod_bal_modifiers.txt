@@ -1,4 +1,4 @@
-# Balkans & the Ottoman fall: modifiers
+﻿# Balkans & the Ottoman fall: modifiers
 
 dod_janissaries_defeated = {
 	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"

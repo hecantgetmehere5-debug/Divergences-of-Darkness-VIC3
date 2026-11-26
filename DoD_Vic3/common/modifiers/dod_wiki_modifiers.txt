@@ -1,4 +1,4 @@
-# Wiki lore events: modifiers
+﻿# Wiki lore events: modifiers
 
 dod_opa_stein = {
 	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"

@@ -1,4 +1,4 @@
-# Arcadia & Ameriga
+﻿# Arcadia & Ameriga
 
 dod_form_arcadia = {
 	is_shown = {
@@ -27,7 +27,7 @@ dod_form_arcadia = {
 		change_tag = ARC
 		add_journal_entry = { type = je_dod_arcadian_union }
 	}
-	ai_chance = { base = 100 }
+	ai_chance = { value = 100 }
 }
 
 dod_arcadian_conference = {
@@ -99,7 +99,7 @@ dod_arcadian_conference = {
 		}
 		trigger_event = { id = dod_ame.1 days = 30 }
 	}
-	ai_chance = { base = 80 }
+	ai_chance = { value = 80 }
 }
 
 dod_continental_congress = {
@@ -116,7 +116,7 @@ dod_continental_congress = {
 		set_variable = dod_congress_held
 		trigger_event = { id = dod_ame.2 days = 60 }
 	}
-	ai_chance = { base = 100 }
+	ai_chance = { value = 100 }
 }
 
 dod_arcadia_manifest_destiny_vin = {
@@ -144,7 +144,7 @@ dod_arcadia_manifest_destiny_vin = {
 			state_region = { add_claim = root }
 		}
 	}
-	ai_chance = { base = 40 }
+	ai_chance = { value = 40 }
 }
 
 dod_arcadia_manifest_destiny_nbg = {
@@ -172,7 +172,7 @@ dod_arcadia_manifest_destiny_nbg = {
 			state_region = { add_claim = root }
 		}
 	}
-	ai_chance = { base = 40 }
+	ai_chance = { value = 40 }
 }
 
 dod_arcadia_manifest_destiny_pla = {
@@ -200,7 +200,7 @@ dod_arcadia_manifest_destiny_pla = {
 			state_region = { add_claim = root }
 		}
 	}
-	ai_chance = { base = 40 }
+	ai_chance = { value = 40 }
 }
 
 dod_arcadia_manifest_destiny_dng = {
@@ -228,7 +228,7 @@ dod_arcadia_manifest_destiny_dng = {
 			state_region = { add_claim = root }
 		}
 	}
-	ai_chance = { base = 40 }
+	ai_chance = { value = 40 }
 }
 
 dod_push_west = {
@@ -245,7 +245,7 @@ dod_push_west = {
 		set_variable = dod_push_west
 		c:DNG = { trigger_event = { id = dod_ame.4 days = 7 } }
 	}
-	ai_chance = { base = 50 }
+	ai_chance = { value = 50 }
 }
 
 dod_arcadia_integrate = {
@@ -285,7 +285,7 @@ dod_arcadia_integrate = {
 			add_primary_culture = cu:rohnnst
 		}
 	}
-	ai_chance = { base = 70 }
+	ai_chance = { value = 70 }
 }
 
 dod_purchase_athesia = {
@@ -320,7 +320,7 @@ dod_purchase_athesia = {
 			}
 		}
 	}
-	ai_chance = { base = 40 }
+	ai_chance = { value = 40 }
 }
 
 dod_purchase_habana = {
@@ -356,7 +356,7 @@ dod_purchase_habana = {
 			}
 		}
 	}
-	ai_chance = { base = 40 }
+	ai_chance = { value = 40 }
 }
 
 dod_purchase_ayiti = {
@@ -392,7 +392,7 @@ dod_purchase_ayiti = {
 			}
 		}
 	}
-	ai_chance = { base = 40 }
+	ai_chance = { value = 40 }
 }
 
 dod_lot_statue = {
@@ -408,7 +408,7 @@ dod_lot_statue = {
 		set_variable = dod_lot_statue
 		c:NAN = { trigger_event = { id = dod_ame.20 days = 30 } }
 	}
-	ai_chance = { base = 60 }
+	ai_chance = { value = 60 }
 }
 
 dod_form_ameriga = {
@@ -441,7 +441,7 @@ dod_form_ameriga = {
 		add_modifier = { name = dod_ameriga_federation months = 120 }
 		trigger_event = { id = dod_ame.21 days = 30 }
 	}
-	ai_chance = { base = 100 }
+	ai_chance = { value = 100 }
 }
 
 dod_federation_invite = {
@@ -466,7 +466,7 @@ dod_federation_invite = {
 			trigger_event = { id = dod_ame.22 days = 14 }
 		}
 	}
-	ai_chance = { base = 60 }
+	ai_chance = { value = 60 }
 }
 
 dod_ameriga_integrate = {
@@ -496,7 +496,7 @@ dod_ameriga_integrate = {
 			add_primary_culture = cu:guianan
 		}
 	}
-	ai_chance = { base = 70 }
+	ai_chance = { value = 70 }
 }
 
 dod_beornia_inca_treaty = {
@@ -512,7 +512,7 @@ dod_beornia_inca_treaty = {
 		set_variable = dod_inca_treaty
 		c:INC = { trigger_event = { id = dod_ame.26 days = 14 } }
 	}
-	ai_chance = { base = 50 }
+	ai_chance = { value = 50 }
 }
 
 dod_dine_claims = {
@@ -535,5 +535,5 @@ dod_dine_claims = {
 			state_region = { add_claim = root }
 		}
 	}
-	ai_chance = { base = 60 }
+	ai_chance = { value = 60 }
 }

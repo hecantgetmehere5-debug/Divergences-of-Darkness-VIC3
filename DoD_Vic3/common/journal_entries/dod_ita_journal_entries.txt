@@ -1,4 +1,4 @@
-# Italy, Aragon-Italy & Venice-Greece: journal entries
+﻿# Italy, Aragon-Italy & Venice-Greece: journal entries
 #
 #   je_dod_council_of_italy -> host invites the Italian states; results after a year (dod_ita.15)
 #   je_dod_greek_question   -> Venice keeps Greek unrest down, or faces the Council of Athens
@@ -41,12 +41,21 @@ je_dod_council_of_italy = {
 
 	timeout = 365
 
-	on_timeout = {
-		trigger_event = { id = dod_ita.15 }
-	}
 
-	should_be_pinned_by_default = yes
+	should_be_pinned_by_default_uninvolved_or_context = yes
 	weight = 1000
+
+	outcome = {
+		header = je_standard_failure_header
+		effect_header = je_standard_on_failure_header
+		conclusion_desc = je_dod_council_of_italy_timeout_desc
+		color = "blue_negative"
+		flags = { timeout }
+		effect = {
+				trigger_event = { id = dod_ita.15 }
+	
+		}
+	}
 }
 
 je_dod_greek_question = {
@@ -77,26 +86,49 @@ je_dod_greek_question = {
 		}
 	}
 
-	complete = {
-		country_has_primary_culture = cu:greek
-	}
 
-	fail = {
-		var:dod_greek_unrest >= 100
-	}
 
-	on_fail = {
-		trigger_event = { id = dod_ita.60 }
-	}
 
-	invalid = {
-		NOT = {
-			any_scope_state = { dod_is_greek_state = yes }
+
+	should_be_pinned_by_default_uninvolved_or_context = yes
+	weight = 1000
+
+	outcome = {
+		header = je_standard_completion_header
+		effect_header = je_standard_on_completion_header
+		conclusion_desc = je_dod_greek_question_completed_desc
+		color = "gold_positive"
+		trigger = {
+				country_has_primary_culture = cu:greek
+	
 		}
 	}
 
-	should_be_pinned_by_default = yes
-	weight = 1000
+	outcome = {
+		header = je_standard_failure_header
+		effect_header = je_standard_on_failure_header
+		conclusion_desc = je_dod_greek_question_failed_desc
+		color = "blue_negative"
+		trigger = {
+				var:dod_greek_unrest >= 100
+	
+		}
+		effect = {
+				trigger_event = { id = dod_ita.60 }
+	
+		}
+	}
+
+	outcome = {
+		flags = { hidden invalid_outcome }
+		conclusion_desc = je_dod_greek_question_invalid_desc
+		trigger = {
+				NOT = {
+					any_scope_state = { dod_is_greek_state = yes }
+				}
+	
+		}
+	}
 }
 
 je_dod_greek_war = {
@@ -107,25 +139,43 @@ je_dod_greek_war = {
 		set_variable = { name = dod_greek_war_grace days = 365 }
 	}
 
-	complete = {
-		is_at_war = no
-		NOT = { exists = c:GRE }
-	}
 
-	on_complete = {
-		trigger_event = { id = dod_ita.65 }
-	}
 
-	fail = {
-		exists = c:GRE
-		is_at_war = no
-		NOT = { has_variable = dod_greek_war_grace }
-	}
 
-	on_fail = {
-		trigger_event = { id = dod_ita.66 }
-	}
 
-	should_be_pinned_by_default = yes
+	should_be_pinned_by_default_uninvolved_or_context = yes
 	weight = 1000
+
+	outcome = {
+		header = je_standard_completion_header
+		effect_header = je_standard_on_completion_header
+		conclusion_desc = je_dod_greek_war_completed_desc
+		color = "gold_positive"
+		trigger = {
+				is_at_war = no
+				NOT = { exists = c:GRE }
+	
+		}
+		effect = {
+				trigger_event = { id = dod_ita.65 }
+	
+		}
+	}
+
+	outcome = {
+		header = je_standard_failure_header
+		effect_header = je_standard_on_failure_header
+		conclusion_desc = je_dod_greek_war_failed_desc
+		color = "blue_negative"
+		trigger = {
+				exists = c:GRE
+				is_at_war = no
+				NOT = { has_variable = dod_greek_war_grace }
+	
+		}
+		effect = {
+				trigger_event = { id = dod_ita.66 }
+	
+		}
+	}
 }

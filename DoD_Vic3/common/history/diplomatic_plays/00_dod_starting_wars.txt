@@ -1,4 +1,4 @@
-# Wars running on 1 January 1836, from the Vic2 mod's history/wars.
+﻿# Wars running on 1 January 1836, from the Vic2 mod's history/wars.
 # Vic2 "civil_war" goals become annex wars; "conquest" against a whole country also becomes an annex war.
 # Left out: the Ottoman restoration of Tripoli (it starts 1836.1.2, after the game start).
 

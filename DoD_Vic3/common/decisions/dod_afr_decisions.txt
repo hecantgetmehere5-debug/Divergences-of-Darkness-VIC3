@@ -1,4 +1,4 @@
-# Africa & Oceania
+﻿# Africa & Oceania
 
 dod_boer_unification = {
 	is_shown = {
@@ -26,7 +26,7 @@ dod_boer_unification = {
 		}
 		change_tag = BTV
 	}
-	ai_chance = { base = 100 }
+	ai_chance = { value = 100 }
 }
 
 dod_form_south_africa = {
@@ -62,7 +62,7 @@ dod_form_south_africa = {
 		add_primary_culture = cu:afro_south_african
 		change_tag = SAF
 	}
-	ai_chance = { base = 80 }
+	ai_chance = { value = 80 }
 }
 
 dod_bastaard_question = {
@@ -80,7 +80,7 @@ dod_bastaard_question = {
 	when_taken = {
 		add_primary_culture = cu:afro_south_african
 	}
-	ai_chance = { base = 60 }
+	ai_chance = { value = 60 }
 }
 
 dod_greater_griqualand = {
@@ -107,7 +107,7 @@ dod_greater_griqualand = {
 			state_region = { add_claim = root }
 		}
 	}
-	ai_chance = { base = 60 }
+	ai_chance = { value = 60 }
 }
 
 dod_kongo_missionaries = {
@@ -122,7 +122,7 @@ dod_kongo_missionaries = {
 		set_variable = dod_kongo_missions
 		add_modifier = { name = dod_catholic_missions months = 240 }
 	}
-	ai_chance = { base = 70 }
+	ai_chance = { value = 70 }
 }
 
 dod_kongo_empire = {
@@ -156,7 +156,7 @@ dod_kongo_empire = {
 			state_region = { add_claim = root }
 		}
 	}
-	ai_chance = { base = 70 }
+	ai_chance = { value = 70 }
 }
 
 dod_kongo_integrate = {
@@ -187,7 +187,7 @@ dod_kongo_integrate = {
 			add_primary_culture = cu:lunda
 		}
 	}
-	ai_chance = { base = 70 }
+	ai_chance = { value = 70 }
 }
 
 dod_dahomey_independence = {
@@ -208,7 +208,7 @@ dod_dahomey_independence = {
 			type = dp_independence
 		}
 	}
-	ai_chance = { base = 40 }
+	ai_chance = { value = 40 }
 }
 
 dod_dahomey_expansion = {
@@ -237,7 +237,7 @@ dod_dahomey_expansion = {
 			state_region = { add_claim = root }
 		}
 	}
-	ai_chance = { base = 60 }
+	ai_chance = { value = 60 }
 }
 
 dod_dahomey_schools = {
@@ -253,7 +253,7 @@ dod_dahomey_schools = {
 		set_variable = dod_dhy_schools
 		add_modifier = { name = dod_african_schools months = 240 }
 	}
-	ai_chance = { base = 70 }
+	ai_chance = { value = 70 }
 }
 
 dod_forge_caliphate = {
@@ -291,7 +291,7 @@ dod_forge_caliphate = {
 		add_primary_culture = cu:hausa
 		change_tag = SOK
 	}
-	ai_chance = { base = 100 }
+	ai_chance = { value = 100 }
 }
 
 dod_restore_solomonic = {
@@ -329,7 +329,7 @@ dod_restore_solomonic = {
 		add_primary_culture = cu:tigray
 		change_tag = ETH
 	}
-	ai_chance = { base = 100 }
+	ai_chance = { value = 100 }
 }
 
 dod_ethiopia_imperial_lands = {
@@ -361,7 +361,7 @@ dod_ethiopia_imperial_lands = {
 			state_region = { add_claim = root }
 		}
 	}
-	ai_chance = { base = 50 }
+	ai_chance = { value = 50 }
 }
 
 dod_liberate_nubia = {
@@ -386,7 +386,7 @@ dod_liberate_nubia = {
 			state_region = { add_claim = root }
 		}
 	}
-	ai_chance = { base = 40 }
+	ai_chance = { value = 40 }
 }
 
 dod_greater_adal = {
@@ -420,7 +420,7 @@ dod_greater_adal = {
 			state_region = { add_claim = root }
 		}
 	}
-	ai_chance = { base = 60 }
+	ai_chance = { value = 60 }
 }
 
 dod_proclaim_abyssinia = {
@@ -462,7 +462,7 @@ dod_proclaim_abyssinia = {
 		add_primary_culture = cu:oromo
 		change_tag = ABS
 	}
-	ai_chance = { base = 100 }
+	ai_chance = { value = 100 }
 }
 
 dod_organize_new_zealand = {
@@ -482,7 +482,7 @@ dod_organize_new_zealand = {
 			create_diplomatic_pact = { country = c:NZL type = dominion }
 		}
 	}
-	ai_chance = { base = 20 }
+	ai_chance = { value = 20 }
 }
 
 dod_accept_maoris = {
@@ -497,7 +497,7 @@ dod_accept_maoris = {
 	when_taken = {
 		add_primary_culture = cu:maori
 	}
-	ai_chance = { base = 30 }
+	ai_chance = { value = 30 }
 }
 
 dod_form_polynesia = {
@@ -526,7 +526,7 @@ dod_form_polynesia = {
 		}
 		change_tag = PLY
 	}
-	ai_chance = { base = 100 }
+	ai_chance = { value = 100 }
 }
 
 dod_polynesia_micronesians = {
@@ -560,7 +560,7 @@ dod_polynesia_micronesians = {
 			add_primary_culture = cu:maori
 		}
 	}
-	ai_chance = { base = 60 }
+	ai_chance = { value = 60 }
 }
 
 dod_organize_maghreb = {
@@ -589,5 +589,5 @@ dod_organize_maghreb = {
 			}
 		}
 	}
-	ai_chance = { base = 20 }
+	ai_chance = { value = 20 }
 }

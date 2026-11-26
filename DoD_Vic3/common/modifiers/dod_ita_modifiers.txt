@@ -1,4 +1,4 @@
-# Italy, Aragon-Italy & Venice-Greece: modifiers
+﻿# Italy, Aragon-Italy & Venice-Greece: modifiers
 
 dod_italy_united = {
 	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"

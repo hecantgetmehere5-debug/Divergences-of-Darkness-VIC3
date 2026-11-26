@@ -1,4 +1,4 @@
-# The Histories of the World: each nation can read its own history, as in the Vic2 mod
+﻿# The Histories of the World: each nation can read its own history, as in the Vic2 mod
 
 dod_history_0 = {
 	is_shown = {
@@ -10,7 +10,7 @@ dod_history_0 = {
 	when_taken = {
 		trigger_event = { id = dod_lore.100 }
 	}
-	ai_chance = { base = 0 }
+	ai_chance = { value = 0 }
 }
 
 dod_history_1 = {
@@ -26,7 +26,7 @@ dod_history_1 = {
 	when_taken = {
 		trigger_event = { id = dod_lore.113 }
 	}
-	ai_chance = { base = 0 }
+	ai_chance = { value = 0 }
 }
 
 dod_history_2 = {
@@ -39,7 +39,7 @@ dod_history_2 = {
 	when_taken = {
 		trigger_event = { id = dod_lore.124 }
 	}
-	ai_chance = { base = 0 }
+	ai_chance = { value = 0 }
 }
 
 dod_history_3 = {
@@ -52,7 +52,7 @@ dod_history_3 = {
 	when_taken = {
 		trigger_event = { id = dod_lore.139 }
 	}
-	ai_chance = { base = 0 }
+	ai_chance = { value = 0 }
 }
 
 dod_history_4 = {
@@ -69,7 +69,7 @@ dod_history_4 = {
 	when_taken = {
 		trigger_event = { id = dod_lore.153 }
 	}
-	ai_chance = { base = 0 }
+	ai_chance = { value = 0 }
 }
 
 dod_history_5 = {
@@ -85,7 +85,7 @@ dod_history_5 = {
 	when_taken = {
 		trigger_event = { id = dod_lore.165 }
 	}
-	ai_chance = { base = 0 }
+	ai_chance = { value = 0 }
 }
 
 dod_history_6 = {
@@ -98,7 +98,7 @@ dod_history_6 = {
 	when_taken = {
 		trigger_event = { id = dod_lore.177 }
 	}
-	ai_chance = { base = 0 }
+	ai_chance = { value = 0 }
 }
 
 dod_history_7 = {
@@ -114,7 +114,7 @@ dod_history_7 = {
 	when_taken = {
 		trigger_event = { id = dod_lore.192 }
 	}
-	ai_chance = { base = 0 }
+	ai_chance = { value = 0 }
 }
 
 dod_history_8 = {
@@ -130,7 +130,7 @@ dod_history_8 = {
 	when_taken = {
 		trigger_event = { id = dod_lore.207 }
 	}
-	ai_chance = { base = 0 }
+	ai_chance = { value = 0 }
 }
 
 dod_history_9 = {
@@ -143,7 +143,7 @@ dod_history_9 = {
 	when_taken = {
 		trigger_event = { id = dod_lore.222 }
 	}
-	ai_chance = { base = 0 }
+	ai_chance = { value = 0 }
 }
 
 dod_history_10 = {
@@ -156,7 +156,7 @@ dod_history_10 = {
 	when_taken = {
 		trigger_event = { id = dod_lore.237 }
 	}
-	ai_chance = { base = 0 }
+	ai_chance = { value = 0 }
 }
 
 dod_history_11 = {
@@ -172,7 +172,7 @@ dod_history_11 = {
 	when_taken = {
 		trigger_event = { id = dod_lore.250 }
 	}
-	ai_chance = { base = 0 }
+	ai_chance = { value = 0 }
 }
 
 dod_history_12 = {
@@ -188,7 +188,7 @@ dod_history_12 = {
 	when_taken = {
 		trigger_event = { id = dod_lore.261 }
 	}
-	ai_chance = { base = 0 }
+	ai_chance = { value = 0 }
 }
 
 dod_history_13 = {
@@ -204,5 +204,5 @@ dod_history_13 = {
 	when_taken = {
 		trigger_event = { id = dod_lore.278 }
 	}
-	ai_chance = { base = 0 }
+	ai_chance = { value = 0 }
 }

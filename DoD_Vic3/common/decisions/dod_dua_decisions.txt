@@ -1,4 +1,4 @@
-# Dual Monarchy, Britain, Beornia, Batavia, Burgundy & the Treaty of Selon
+﻿# Dual Monarchy, Britain, Beornia, Batavia, Burgundy & the Treaty of Selon
 
 # ---------------------------------------------------------------------
 # Dual Monarchy: integrating minorities once the Anglois ideal is accepted
@@ -18,7 +18,7 @@ dod_integrate_provencal = {
 	when_taken = {
 		add_primary_culture = cu:provencal
 	}
-	ai_chance = { base = 50 }
+	ai_chance = { value = 50 }
 }
 
 dod_integrate_irish = {
@@ -34,7 +34,7 @@ dod_integrate_irish = {
 	when_taken = {
 		add_primary_culture = cu:irish
 	}
-	ai_chance = { base = 50 }
+	ai_chance = { value = 50 }
 }
 
 dod_integrate_scottish = {
@@ -55,7 +55,7 @@ dod_integrate_scottish = {
 	when_taken = {
 		add_primary_culture = cu:scottish
 	}
-	ai_chance = { base = 50 }
+	ai_chance = { value = 50 }
 }
 
 dod_integrate_basque = {
@@ -70,7 +70,7 @@ dod_integrate_basque = {
 	when_taken = {
 		add_primary_culture = cu:basque
 	}
-	ai_chance = { base = 50 }
+	ai_chance = { value = 50 }
 }
 
 # ---------------------------------------------------------------------
@@ -99,7 +99,7 @@ dod_reclaim_england = {
 			state_region = { add_claim = root }
 		}
 	}
-	ai_chance = { base = 50 }
+	ai_chance = { value = 50 }
 }
 
 dod_reclaim_occitania = {
@@ -124,7 +124,7 @@ dod_reclaim_occitania = {
 			state_region = { add_claim = root }
 		}
 	}
-	ai_chance = { base = 50 }
+	ai_chance = { value = 50 }
 }
 
 dod_reclaim_ireland = {
@@ -149,7 +149,7 @@ dod_reclaim_ireland = {
 			state_region = { add_claim = root }
 		}
 	}
-	ai_chance = { base = 50 }
+	ai_chance = { value = 50 }
 }
 
 # ---------------------------------------------------------------------
@@ -184,7 +184,7 @@ dod_act_of_union = {
 		change_tag = ENG
 		add_modifier = { name = dod_act_of_union_mod months = 120 }
 	}
-	ai_chance = { base = 100 }
+	ai_chance = { value = 100 }
 }
 
 # ---------------------------------------------------------------------
@@ -211,7 +211,7 @@ dod_beornia_claim_england = {
 			state_region = { add_claim = root }
 		}
 	}
-	ai_chance = { base = 50 }
+	ai_chance = { value = 50 }
 }
 
 dod_beornia_eternal_england = {
@@ -233,7 +233,7 @@ dod_beornia_eternal_england = {
 		add_primary_culture = cu:english
 		change_tag = ENL
 	}
-	ai_chance = { base = 100 }
+	ai_chance = { value = 100 }
 }
 
 dod_beornia_holy_britannia = {
@@ -252,7 +252,7 @@ dod_beornia_holy_britannia = {
 		set_variable = dod_holy_britannia
 		change_tag = HBE
 	}
-	ai_chance = { base = 30 }
+	ai_chance = { value = 30 }
 }
 
 # ---------------------------------------------------------------------
@@ -279,7 +279,7 @@ dod_batavia_claim_netherlands = {
 			state_region = { add_claim = root }
 		}
 	}
-	ai_chance = { base = 50 }
+	ai_chance = { value = 50 }
 }
 
 dod_batavia_free_state = {
@@ -301,7 +301,7 @@ dod_batavia_free_state = {
 		add_primary_culture = cu:dutch
 		change_tag = NET
 	}
-	ai_chance = { base = 100 }
+	ai_chance = { value = 100 }
 }
 
 # ---------------------------------------------------------------------
@@ -323,7 +323,7 @@ dod_burgundy_rhineland = {
 	when_taken = {
 		add_primary_culture = cu:rheinish
 	}
-	ai_chance = { base = 100 }
+	ai_chance = { value = 100 }
 }
 
 dod_fall_of_burgundy = {
@@ -347,7 +347,7 @@ dod_fall_of_burgundy = {
 		add_primary_culture = cu:boer
 		change_tag = SAF
 	}
-	ai_chance = { base = 100 }
+	ai_chance = { value = 100 }
 }
 
 # ---------------------------------------------------------------------
@@ -386,5 +386,5 @@ dod_abolish_selon = {
 			trigger_event = { id = dod_brg.5 }
 		}
 	}
-	ai_chance = { base = 30 }
+	ai_chance = { value = 30 }
 }

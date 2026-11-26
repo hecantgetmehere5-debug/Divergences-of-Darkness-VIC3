@@ -1,4 +1,4 @@
-# Archaeology: exploration-style excavation journal entry
+﻿# Archaeology: exploration-style excavation journal entry
 # Works like vanilla exploration journal entries: a progress bar, monthly
 # setbacks and finds, and a great discovery at the end.
 
@@ -37,36 +37,45 @@ je_dod_excavation = {
 		}
 	}
 
-	complete = {
-		var:dod_dig_progress >= 12
-	}
 
-	on_complete = {
-		if = {
-			limit = { var:dod_dig_site = 1 }
-			set_global_variable = dod_site_found_1
-		}
-		if = {
-			limit = { var:dod_dig_site = 2 }
-			set_global_variable = dod_site_found_2
-		}
-		if = {
-			limit = { var:dod_dig_site = 3 }
-			set_global_variable = dod_site_found_3
-		}
-		if = {
-			limit = { var:dod_dig_site = 4 }
-			set_global_variable = dod_site_found_4
-		}
-		if = {
-			limit = { var:dod_dig_site = 5 }
-			set_global_variable = dod_site_found_5
-		}
-		trigger_event = { id = dod_arc.20 }
-	}
 
 	timeout = 3650
 
-	should_be_pinned_by_default = yes
+	should_be_pinned_by_default_uninvolved_or_context = yes
 	weight = 500
+
+	outcome = {
+		header = je_standard_completion_header
+		effect_header = je_standard_on_completion_header
+		conclusion_desc = je_dod_excavation_completed_desc
+		color = "gold_positive"
+		trigger = {
+				var:dod_dig_progress >= 12
+	
+		}
+		effect = {
+				if = {
+					limit = { var:dod_dig_site = 1 }
+					set_global_variable = dod_site_found_1
+				}
+				if = {
+					limit = { var:dod_dig_site = 2 }
+					set_global_variable = dod_site_found_2
+				}
+				if = {
+					limit = { var:dod_dig_site = 3 }
+					set_global_variable = dod_site_found_3
+				}
+				if = {
+					limit = { var:dod_dig_site = 4 }
+					set_global_variable = dod_site_found_4
+				}
+				if = {
+					limit = { var:dod_dig_site = 5 }
+					set_global_variable = dod_site_found_5
+				}
+				trigger_event = { id = dod_arc.20 }
+	
+		}
+	}
 }

@@ -1,4 +1,4 @@
-# Gran Colombia, Mexico & the Andes: modifiers
+﻿# Gran Colombia, Mexico & the Andes: modifiers
 
 dod_colombian_mobilisation = {
 	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"

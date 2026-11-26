@@ -1,4 +1,4 @@
-# Asia flavour: modifiers
+﻿# Asia flavour: modifiers
 
 dod_treasure_fleets = {
 	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"

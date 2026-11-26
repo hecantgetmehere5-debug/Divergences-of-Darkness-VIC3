@@ -1,4 +1,4 @@
-# Gran Colombia, Mexico & the Andes
+﻿# Gran Colombia, Mexico & the Andes
 
 dod_declare_colombian_independence = {
 	is_shown = {
@@ -46,7 +46,7 @@ dod_declare_colombian_independence = {
 			state_region = { add_claim = root }
 		}
 	}
-	ai_chance = { base = 100 }
+	ai_chance = { value = 100 }
 }
 
 dod_treaty_of_habana = {
@@ -67,7 +67,7 @@ dod_treaty_of_habana = {
 		change_relations = { country = c:CLM value = 50 }
 		add_modifier = { name = dod_colombia_divided months = 60 }
 	}
-	ai_chance = { base = 60 }
+	ai_chance = { value = 60 }
 }
 
 dod_colombian_empire = {
@@ -83,7 +83,7 @@ dod_colombian_empire = {
 	when_taken = {
 		activate_law = law_type:law_monarchy
 	}
-	ai_chance = { base = 30 }
+	ai_chance = { value = 30 }
 }
 
 dod_colombian_claims = {
@@ -116,7 +116,7 @@ dod_colombian_claims = {
 			state_region = { add_claim = root }
 		}
 	}
-	ai_chance = { base = 40 }
+	ai_chance = { value = 40 }
 }
 
 dod_colombian_unity_congress = {
@@ -155,7 +155,7 @@ dod_colombian_unity_congress = {
 		}
 		change_tag = CLM
 	}
-	ai_chance = { base = 50 }
+	ai_chance = { value = 50 }
 }
 
 dod_form_mexico = {
@@ -176,7 +176,7 @@ dod_form_mexico = {
 	when_taken = {
 		change_tag = MEX
 	}
-	ai_chance = { base = 100 }
+	ai_chance = { value = 100 }
 }
 
 dod_form_usca = {
@@ -203,7 +203,7 @@ dod_form_usca = {
 		}
 		change_tag = UCA
 	}
-	ai_chance = { base = 100 }
+	ai_chance = { value = 100 }
 }
 
 dod_form_granada = {
@@ -223,7 +223,7 @@ dod_form_granada = {
 	when_taken = {
 		change_tag = GRA
 	}
-	ai_chance = { base = 100 }
+	ai_chance = { value = 100 }
 }
 
 dod_reclaim_granada = {
@@ -247,7 +247,7 @@ dod_reclaim_granada = {
 			state_region = { add_claim = root }
 		}
 	}
-	ai_chance = { base = 50 }
+	ai_chance = { value = 50 }
 }
 
 dod_aztec_legacy = {
@@ -283,7 +283,7 @@ dod_aztec_legacy = {
 			state_region = { add_claim = root }
 		}
 	}
-	ai_chance = { base = 60 }
+	ai_chance = { value = 60 }
 }
 
 dod_league_of_mayapan = {
@@ -309,7 +309,7 @@ dod_league_of_mayapan = {
 			state_region = { add_claim = root }
 		}
 	}
-	ai_chance = { base = 60 }
+	ai_chance = { value = 60 }
 }
 
 dod_zapotec_heritage = {
@@ -340,7 +340,7 @@ dod_zapotec_heritage = {
 			state_region = { add_claim = root }
 		}
 	}
-	ai_chance = { base = 60 }
+	ai_chance = { value = 60 }
 }
 
 dod_mesoamerican_unity = {
@@ -392,7 +392,7 @@ dod_mesoamerican_unity = {
 		add_primary_culture = cu:quiche
 		change_tag = CMN
 	}
-	ai_chance = { base = 100 }
+	ai_chance = { value = 100 }
 }
 
 dod_inca_empire = {
@@ -421,7 +421,7 @@ dod_inca_empire = {
 			state_region = { add_claim = root }
 		}
 	}
-	ai_chance = { base = 40 }
+	ai_chance = { value = 40 }
 }
 
 dod_inca_mining = {
@@ -437,5 +437,5 @@ dod_inca_mining = {
 		set_variable = dod_inca_mining
 		add_modifier = { name = dod_inca_riches months = 240 }
 	}
-	ai_chance = { base = 70 }
+	ai_chance = { value = 70 }
 }

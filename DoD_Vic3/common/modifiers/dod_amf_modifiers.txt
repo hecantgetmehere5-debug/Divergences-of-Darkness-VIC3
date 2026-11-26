@@ -1,4 +1,4 @@
-# Americas flavour: modifiers
+﻿# Americas flavour: modifiers
 
 dod_neuwelt_hansa = {
 	icon = "gfx/interface/icons/timed_modifier_icons/modifier_scroll_positive.dds"

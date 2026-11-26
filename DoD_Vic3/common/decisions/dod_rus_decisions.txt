@@ -1,4 +1,4 @@
-# Russia, the Steppe & the Caucasus
+﻿# Russia, the Steppe & the Caucasus
 
 dod_form_russia = {
 	is_shown = {
@@ -24,7 +24,7 @@ dod_form_russia = {
 			trigger_event = { id = dod_rus.1 days = 7 }
 		}
 	}
-	ai_chance = { base = 100 }
+	ai_chance = { value = 100 }
 }
 
 dod_rus_west_focus = {
@@ -41,7 +41,7 @@ dod_rus_west_focus = {
 		change_infamy = 5
 		trigger_event = { id = dod_rus.5 }
 	}
-	ai_chance = { base = 50 }
+	ai_chance = { value = 50 }
 }
 
 dod_rus_wild_lands = {
@@ -71,7 +71,7 @@ dod_rus_wild_lands = {
 			state_region = { add_claim = root }
 		}
 	}
-	ai_chance = { base = 50 }
+	ai_chance = { value = 50 }
 }
 
 dod_rus_siberia = {
@@ -94,7 +94,7 @@ dod_rus_siberia = {
 			state_region = { add_claim = root }
 		}
 	}
-	ai_chance = { base = 60 }
+	ai_chance = { value = 60 }
 }
 
 dod_rus_mongolia = {
@@ -112,7 +112,7 @@ dod_rus_mongolia = {
 		set_variable = dod_mongolia_offer
 		c:MGL = { trigger_event = { id = dod_rus.7 days = 7 } }
 	}
-	ai_chance = { base = 50 }
+	ai_chance = { value = 50 }
 }
 
 dod_rus_integrate = {
@@ -175,7 +175,7 @@ dod_rus_integrate = {
 			add_primary_culture = cu:finnish
 		}
 	}
-	ai_chance = { base = 60 }
+	ai_chance = { value = 60 }
 }
 
 dod_form_tatarstan = {
@@ -217,7 +217,7 @@ dod_form_tatarstan = {
 		add_primary_culture = cu:tatar
 		change_tag = TAR
 	}
-	ai_chance = { base = 100 }
+	ai_chance = { value = 100 }
 }
 
 dod_tar_sedentarize = {
@@ -232,7 +232,7 @@ dod_tar_sedentarize = {
 		set_variable = dod_sedentarized
 		add_modifier = { name = dod_sedentarisation months = 240 }
 	}
-	ai_chance = { base = 60 }
+	ai_chance = { value = 60 }
 }
 
 dod_tar_krymchak = {
@@ -249,7 +249,7 @@ dod_tar_krymchak = {
 	when_taken = {
 		add_primary_culture = cu:krymchak
 	}
-	ai_chance = { base = 40 }
+	ai_chance = { value = 40 }
 }
 
 dod_cir_break_yoke = {
@@ -267,7 +267,7 @@ dod_cir_break_yoke = {
 			type = dp_independence
 		}
 	}
-	ai_chance = { base = 40 }
+	ai_chance = { value = 40 }
 }
 
 dod_cir_integrate = {
@@ -306,7 +306,7 @@ dod_cir_integrate = {
 			add_primary_culture = cu:astrakhani
 		}
 	}
-	ai_chance = { base = 80 }
+	ai_chance = { value = 80 }
 }
 
 dod_cir_inal = {
@@ -335,7 +335,7 @@ dod_cir_inal = {
 			state_region = { add_claim = root }
 		}
 	}
-	ai_chance = { base = 50 }
+	ai_chance = { value = 50 }
 }
 
 dod_geo_rebel = {
@@ -353,7 +353,7 @@ dod_geo_rebel = {
 			type = dp_independence
 		}
 	}
-	ai_chance = { base = 40 }
+	ai_chance = { value = 40 }
 }
 
 dod_form_georgia = {
@@ -374,7 +374,7 @@ dod_form_georgia = {
 	when_taken = {
 		change_tag = GEO
 	}
-	ai_chance = { base = 100 }
+	ai_chance = { value = 100 }
 }
 
 dod_geo_tamar = {
@@ -403,7 +403,7 @@ dod_geo_tamar = {
 			state_region = { add_claim = root }
 		}
 	}
-	ai_chance = { base = 40 }
+	ai_chance = { value = 40 }
 }
 
 dod_geo_armenians = {
@@ -417,7 +417,7 @@ dod_geo_armenians = {
 	when_taken = {
 		add_primary_culture = cu:armenian
 	}
-	ai_chance = { base = 80 }
+	ai_chance = { value = 80 }
 }
 
 dod_form_transcaucasia = {
@@ -441,7 +441,7 @@ dod_form_transcaucasia = {
 		add_primary_culture = cu:azerbaijani
 		change_tag = TCA
 	}
-	ai_chance = { base = 100 }
+	ai_chance = { value = 100 }
 }
 
 dod_tca_north_caucasus = {
@@ -472,7 +472,7 @@ dod_tca_north_caucasus = {
 			state_region = { add_claim = root }
 		}
 	}
-	ai_chance = { base = 50 }
+	ai_chance = { value = 50 }
 }
 
 dod_tca_embrace = {
@@ -523,7 +523,7 @@ dod_tca_embrace = {
 			add_primary_culture = cu:ossetian
 		}
 	}
-	ai_chance = { base = 80 }
+	ai_chance = { value = 80 }
 }
 
 dod_form_kazakhstan = {
@@ -543,7 +543,7 @@ dod_form_kazakhstan = {
 	when_taken = {
 		change_tag = KZH
 	}
-	ai_chance = { base = 100 }
+	ai_chance = { value = 100 }
 }
 
 dod_form_kyrgyzstan = {
@@ -563,5 +563,5 @@ dod_form_kyrgyzstan = {
 	when_taken = {
 		change_tag = KYR
 	}
-	ai_chance = { base = 100 }
+	ai_chance = { value = 100 }
 }

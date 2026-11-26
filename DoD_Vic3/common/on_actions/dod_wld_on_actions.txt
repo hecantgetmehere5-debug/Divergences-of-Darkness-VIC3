@@ -1,4 +1,4 @@
-# World flavour: one random flavour event per country per year at most
+﻿# World flavour: one random flavour event per country per year at most
 
 on_yearly_pulse_country = {
 	on_actions = {

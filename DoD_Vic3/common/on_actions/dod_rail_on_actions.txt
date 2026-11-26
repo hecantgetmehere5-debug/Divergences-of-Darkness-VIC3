@@ -1,4 +1,4 @@
-# Railroading: the 1836 opening conflicts described by the wiki history.
+﻿# Railroading: the 1836 opening conflicts described by the wiki history.
 # Each event checks its own date and guard, so it only fires once, early in 1836.
 on_monthly_pulse_country = {
 	events = {

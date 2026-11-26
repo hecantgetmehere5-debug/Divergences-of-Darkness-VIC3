@@ -1,4 +1,4 @@
-# Baltic, Scandinavia & Poland-Lithuania
+﻿# Baltic, Scandinavia & Poland-Lithuania
 
 dod_abolish_courland = {
 	is_shown = {
@@ -12,7 +12,7 @@ dod_abolish_courland = {
 	when_taken = {
 		annex = c:KRL
 	}
-	ai_chance = { base = 60 }
+	ai_chance = { value = 60 }
 }
 
 dod_annex_kurland = {
@@ -33,7 +33,7 @@ dod_annex_kurland = {
 			type = dp_annex_war
 		}
 	}
-	ai_chance = { base = 30 }
+	ai_chance = { value = 30 }
 }
 
 dod_dominium_maris_baltici = {
@@ -63,7 +63,7 @@ dod_dominium_maris_baltici = {
 			state_region = { add_claim = root }
 		}
 	}
-	ai_chance = { base = 50 }
+	ai_chance = { value = 50 }
 }
 
 dod_take_lithuania = {
@@ -101,7 +101,7 @@ dod_take_lithuania = {
 			state_region = { add_claim = root }
 		}
 	}
-	ai_chance = { base = 50 }
+	ai_chance = { value = 50 }
 }
 
 dod_nordtyskland = {
@@ -118,7 +118,7 @@ dod_nordtyskland = {
 	when_taken = {
 		add_primary_culture = cu:north_german
 	}
-	ai_chance = { base = 100 }
+	ai_chance = { value = 100 }
 }
 
 dod_plc_act_of_union = {
@@ -135,7 +135,7 @@ dod_plc_act_of_union = {
 		add_primary_culture = cu:lithuanian
 		add_modifier = { name = dod_lublin_renewed months = 240 }
 	}
-	ai_chance = { base = 80 }
+	ai_chance = { value = 80 }
 }
 
 dod_plc_baltic_peoples = {
@@ -158,7 +158,7 @@ dod_plc_baltic_peoples = {
 		add_primary_culture = cu:latvian
 		add_primary_culture = cu:estonian
 	}
-	ai_chance = { base = 100 }
+	ai_chance = { value = 100 }
 }
 
 dod_plc_hadiach = {
@@ -181,7 +181,7 @@ dod_plc_hadiach = {
 		add_primary_culture = cu:ruthenian
 		add_primary_culture = cu:byelorussian
 	}
-	ai_chance = { base = 100 }
+	ai_chance = { value = 100 }
 }
 
 dod_romanian_transnistria = {
@@ -211,7 +211,7 @@ dod_romanian_transnistria = {
 			state_region = { add_claim = root }
 		}
 	}
-	ai_chance = { base = 50 }
+	ai_chance = { value = 50 }
 }
 
 dod_rus_cossacks = {
@@ -230,7 +230,7 @@ dod_rus_cossacks = {
 		set_variable = dod_rus_cossacks
 		c:UKR = { trigger_event = { id = dod_blt.3 days = 7 } }
 	}
-	ai_chance = { base = 50 }
+	ai_chance = { value = 50 }
 }
 
 dod_rus_annex_ruthenia = {
@@ -260,7 +260,7 @@ dod_rus_annex_ruthenia = {
 		}
 		add_primary_culture = cu:ruthenian
 	}
-	ai_chance = { base = 60 }
+	ai_chance = { value = 60 }
 }
 
 dod_livonian_confederation = {
@@ -278,7 +278,7 @@ dod_livonian_confederation = {
 		add_primary_culture = cu:latvian
 		add_primary_culture = cu:livlandian
 	}
-	ai_chance = { base = 100 }
+	ai_chance = { value = 100 }
 }
 
 dod_reform_grand_duchy = {
@@ -311,5 +311,5 @@ dod_reform_grand_duchy = {
 			state_region = { add_claim = root }
 		}
 	}
-	ai_chance = { base = 80 }
+	ai_chance = { value = 80 }
 }

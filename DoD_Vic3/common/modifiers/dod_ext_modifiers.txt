@@ -1,4 +1,4 @@
-# Expanded content: modifiers
+﻿# Expanded content: modifiers
 
 dod_emancipation = {
 	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"

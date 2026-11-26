@@ -1,4 +1,4 @@
-# Holy Roman Empire storyline: scripted effects
+﻿# Holy Roman Empire storyline: scripted effects
 # All run in the scope of the answering prince.
 
 dod_hre_count_accept = {

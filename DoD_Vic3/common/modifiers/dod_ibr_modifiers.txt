@@ -1,4 +1,4 @@
-# Iberia: modifiers
+﻿# Iberia: modifiers
 
 dod_mancomunidad = {
 	icon = "gfx/interface/icons/timed_modifier_icons/modifier_scroll_positive.dds"

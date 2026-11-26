@@ -1,4 +1,4 @@
-# Italy, Aragon-Italy, the Valois & Venice-Greece
+﻿# Italy, Aragon-Italy, the Valois & Venice-Greece
 
 dod_call_council_of_italy = {
 	is_shown = {
@@ -21,7 +21,7 @@ dod_call_council_of_italy = {
 	when_taken = {
 		add_journal_entry = { type = je_dod_council_of_italy }
 	}
-	ai_chance = { base = 50 }
+	ai_chance = { value = 50 }
 }
 
 dod_form_italy = {
@@ -39,7 +39,7 @@ dod_form_italy = {
 	when_taken = {
 		change_tag = ITA
 	}
-	ai_chance = { base = 100 }
+	ai_chance = { value = 100 }
 }
 
 dod_italia_irredenta = {
@@ -62,7 +62,7 @@ dod_italia_irredenta = {
 			state_region = { add_claim = root }
 		}
 	}
-	ai_chance = { base = 50 }
+	ai_chance = { value = 50 }
 }
 
 # ---------------------------------------------------------------------
@@ -97,7 +97,7 @@ dod_proclaim_aragon_italy = {
 			trigger_event = { id = dod_ita.40 days = 7 }
 		}
 	}
-	ai_chance = { base = 100 }
+	ai_chance = { value = 100 }
 }
 
 dod_end_north_italian_autonomy = {
@@ -119,7 +119,7 @@ dod_end_north_italian_autonomy = {
 	when_taken = {
 		trigger_event = { id = dod_ita.41 }
 	}
-	ai_chance = { base = 30 }
+	ai_chance = { value = 30 }
 }
 
 dod_provencal_catalan_brotherhood = {
@@ -146,7 +146,7 @@ dod_provencal_catalan_brotherhood = {
 		}
 		c:PRV ?= { trigger_event = { id = dod_ita.44 days = 7 } }
 	}
-	ai_chance = { base = 30 }
+	ai_chance = { value = 30 }
 }
 
 # ---------------------------------------------------------------------
@@ -172,7 +172,7 @@ dod_valois_restore_italy = {
 		add_primary_culture = cu:south_italian
 		change_tag = ITA
 	}
-	ai_chance = { base = 100 }
+	ai_chance = { value = 100 }
 }
 
 dod_valois_challenge_usurpers = {
@@ -205,7 +205,7 @@ dod_valois_challenge_usurpers = {
 			state_region = { add_claim = root }
 		}
 	}
-	ai_chance = { base = 50 }
+	ai_chance = { value = 50 }
 }
 
 dod_valois_transalpina = {
@@ -228,7 +228,7 @@ dod_valois_transalpina = {
 		add_modifier = { name = dod_transalpina months = 120 }
 		trigger_event = { id = dod_ita.56 }
 	}
-	ai_chance = { base = 100 }
+	ai_chance = { value = 100 }
 }
 
 # ---------------------------------------------------------------------
@@ -250,7 +250,7 @@ dod_form_greece = {
 	when_taken = {
 		change_tag = GRE
 	}
-	ai_chance = { base = 100 }
+	ai_chance = { value = 100 }
 }
 
 dod_megali_idea = {
@@ -273,7 +273,7 @@ dod_megali_idea = {
 			state_region = { add_claim = root }
 		}
 	}
-	ai_chance = { base = 50 }
+	ai_chance = { value = 50 }
 }
 
 dod_enosis_complete = {
@@ -294,5 +294,5 @@ dod_enosis_complete = {
 		set_variable = dod_enosis_done
 		trigger_event = { id = dod_ita.79 }
 	}
-	ai_chance = { base = 100 }
+	ai_chance = { value = 100 }
 }

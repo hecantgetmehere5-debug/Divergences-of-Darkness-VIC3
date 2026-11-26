@@ -1,4 +1,4 @@
-# The Elbian Confederation: a liberal union of Bohemians and Elbians,
+﻿# The Elbian Confederation: a liberal union of Bohemians and Elbians,
 # founded by a Bohemian-led state that holds the North German lands.
 dod_form_elbian_confederation = {
 	is_shown = {
@@ -36,6 +36,6 @@ dod_form_elbian_confederation = {
 	}
 
 	ai_chance = {
-		base = 50
+		value = 50
 	}
 }

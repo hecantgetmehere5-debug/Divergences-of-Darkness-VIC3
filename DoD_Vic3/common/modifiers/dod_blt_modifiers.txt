@@ -1,4 +1,4 @@
-# Baltic: modifiers
+﻿# Baltic: modifiers
 
 dod_commonwealth_dissolved = {
 	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds"

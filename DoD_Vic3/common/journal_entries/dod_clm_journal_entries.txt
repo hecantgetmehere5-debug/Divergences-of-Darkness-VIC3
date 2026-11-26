@@ -1,4 +1,4 @@
-# Gran Colombia, Mexico & the Andes: journal entries
+﻿# Gran Colombia, Mexico & the Andes: journal entries
 
 je_dod_colombian_independence = {
 	icon = "gfx/interface/icons/event_icons/event_military.dds"
@@ -11,38 +11,53 @@ je_dod_colombian_independence = {
 		set_variable = { name = dod_colombian_war_grace days = 180 }
 	}
 
-	complete = {
-		is_at_war = no
-		NOT = { has_variable = dod_colombian_war_grace }
-		NOT = {
-			any_state = {
-				owner = {
-					OR = {
-						this = c:SPA
-						this = c:SPC
+
+
+
+	should_be_pinned_by_default_uninvolved_or_context = yes
+	weight = 1000
+
+	outcome = {
+		header = je_standard_completion_header
+		effect_header = je_standard_on_completion_header
+		conclusion_desc = je_dod_colombian_independence_completed_desc
+		color = "gold_positive"
+		trigger = {
+				is_at_war = no
+				NOT = { has_variable = dod_colombian_war_grace }
+				NOT = {
+					any_state = {
+						owner = {
+							OR = {
+								this = c:SPA
+								this = c:SPC
+							}
+						}
+						state_region = {
+							OR = {
+								is_homeland = cu:mexican
+								is_homeland = cu:central_american
+								is_homeland = cu:granadan
+							}
+						}
 					}
 				}
-				state_region = {
-					OR = {
-						is_homeland = cu:mexican
-						is_homeland = cu:central_american
-						is_homeland = cu:granadan
-					}
-				}
-			}
+	
+		}
+		effect = {
+				trigger_event = { id = dod_clm.2 }
+	
 		}
 	}
 
-	on_complete = {
-		trigger_event = { id = dod_clm.2 }
+	outcome = {
+		flags = { hidden invalid_outcome }
+		conclusion_desc = je_dod_colombian_independence_invalid_desc
+		trigger = {
+				NOT = { this = c:CLM }
+	
+		}
 	}
-
-	invalid = {
-		NOT = { this = c:CLM }
-	}
-
-	should_be_pinned_by_default = yes
-	weight = 1000
 }
 
 je_dod_congress_of_mexico = {
@@ -74,10 +89,19 @@ je_dod_congress_of_mexico = {
 
 	timeout = 365
 
-	on_timeout = {
-		trigger_event = { id = dod_clm.15 }
-	}
 
-	should_be_pinned_by_default = yes
+	should_be_pinned_by_default_uninvolved_or_context = yes
 	weight = 1000
+
+	outcome = {
+		header = je_standard_failure_header
+		effect_header = je_standard_on_failure_header
+		conclusion_desc = je_dod_congress_of_mexico_timeout_desc
+		color = "blue_negative"
+		flags = { timeout }
+		effect = {
+				trigger_event = { id = dod_clm.15 }
+	
+		}
+	}
 }

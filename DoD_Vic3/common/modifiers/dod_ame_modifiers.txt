@@ -1,4 +1,4 @@
-# Arcadia & Ameriga: modifiers
+﻿# Arcadia & Ameriga: modifiers
 
 dod_arcadian_concessions = {
 	icon = "gfx/interface/icons/timed_modifier_icons/modifier_scroll_negative.dds"

@@ -1,4 +1,4 @@
-# Africa & Oceania: modifiers
+﻿# Africa & Oceania: modifiers
 
 dod_vereeniging = {
 	icon = "gfx/interface/icons/timed_modifier_icons/modifier_scroll_positive.dds"

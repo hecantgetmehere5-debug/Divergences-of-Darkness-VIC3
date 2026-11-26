@@ -1,4 +1,4 @@
-# Holy Roman Empire storyline: journal entries
+﻿# Holy Roman Empire storyline: journal entries
 #
 # Flow:
 #   je_dod_prague_proclamation   -> conditions to issue the Proclamation       (dod_hre.1)
@@ -19,37 +19,61 @@ je_dod_prague_proclamation = {
 		this = c:HLR
 	}
 
-	complete = {
-		is_at_war = no
-		country_rank >= rank_value:great_power
-		any_country = {
-			dod_is_free_prince = yes
-		}
-	}
 
-	on_complete = {
-		trigger_event = { id = dod_hre.1 }
-	}
 
 	# Wiki: the window to form the Empire closes in the late 1840s.
-	fail = {
-		game_date >= 1849.1.1
-	}
 
-	on_fail = {
-		trigger_event = { id = dod_rail.11 }
-	}
 
-	invalid = {
-		NOT = {
-			any_country = {
-				dod_is_free_prince = yes
-			}
+
+	should_be_pinned_by_default_uninvolved_or_context = yes
+	weight = 1000
+
+	outcome = {
+		header = je_standard_completion_header
+		effect_header = je_standard_on_completion_header
+		conclusion_desc = je_dod_prague_proclamation_completed_desc
+		color = "gold_positive"
+		trigger = {
+				is_at_war = no
+				country_rank >= rank_value:great_power
+				any_country = {
+					dod_is_free_prince = yes
+				}
+	
+		}
+		effect = {
+				trigger_event = { id = dod_hre.1 }
+	
 		}
 	}
 
-	should_be_pinned_by_default = yes
-	weight = 1000
+	outcome = {
+		header = je_standard_failure_header
+		effect_header = je_standard_on_failure_header
+		conclusion_desc = je_dod_prague_proclamation_failed_desc
+		color = "blue_negative"
+		trigger = {
+				game_date >= 1849.1.1
+	
+		}
+		effect = {
+				trigger_event = { id = dod_rail.11 }
+	
+		}
+	}
+
+	outcome = {
+		flags = { hidden invalid_outcome }
+		conclusion_desc = je_dod_prague_proclamation_invalid_desc
+		trigger = {
+				NOT = {
+					any_country = {
+						dod_is_free_prince = yes
+					}
+				}
+	
+		}
+	}
 }
 
 je_dod_imperial_diets = {
@@ -69,30 +93,28 @@ je_dod_imperial_diets = {
 
 	timeout = 180
 
-	on_timeout = {
-		trigger_event = { id = dod_hre.20 }
-	}
 
-	should_be_pinned_by_default = yes
+	should_be_pinned_by_default_uninvolved_or_context = yes
 	weight = 1000
+
+	outcome = {
+		header = je_standard_failure_header
+		effect_header = je_standard_on_failure_header
+		conclusion_desc = je_dod_imperial_diets_timeout_desc
+		color = "blue_negative"
+		flags = { timeout }
+		effect = {
+				trigger_event = { id = dod_hre.20 }
+	
+		}
+	}
 }
 
 je_dod_submission_or_conquest = {
 	icon = "gfx/interface/icons/event_icons/event_military.dds"
 	group = je_group_historical_content
 
-	complete = {
-		is_at_war = no
-		NOT = {
-			any_country = {
-				dod_is_free_prince = yes
-			}
-		}
-	}
 
-	on_complete = {
-		trigger_event = { id = dod_hre.40 }
-	}
 
 	on_monthly_pulse = {
 		random_events = {
@@ -103,12 +125,41 @@ je_dod_submission_or_conquest = {
 
 	timeout = 3650
 
-	on_timeout = {
-		add_modifier = { name = dod_princes_endure months = 120 }
+
+	should_be_pinned_by_default_uninvolved_or_context = yes
+	weight = 1000
+
+	outcome = {
+		header = je_standard_completion_header
+		effect_header = je_standard_on_completion_header
+		conclusion_desc = je_dod_submission_or_conquest_completed_desc
+		color = "gold_positive"
+		trigger = {
+				is_at_war = no
+				NOT = {
+					any_country = {
+						dod_is_free_prince = yes
+					}
+				}
+	
+		}
+		effect = {
+				trigger_event = { id = dod_hre.40 }
+	
+		}
 	}
 
-	should_be_pinned_by_default = yes
-	weight = 1000
+	outcome = {
+		header = je_standard_failure_header
+		effect_header = je_standard_on_failure_header
+		conclusion_desc = je_dod_submission_or_conquest_timeout_desc
+		color = "blue_negative"
+		flags = { timeout }
+		effect = {
+				add_modifier = { name = dod_princes_endure months = 120 }
+	
+		}
+	}
 }
 
 je_dod_bohemian_question = {
@@ -149,35 +200,59 @@ je_dod_bohemian_question = {
 		}
 	}
 
-	complete = {
-		OR = {
-			country_has_primary_culture = cu:czech
-			has_law = law_type:law_multicultural
-		}
-	}
 
-	on_complete = {
-		trigger_event = { id = dod_hre.52 }
-	}
 
-	fail = {
-		var:dod_bohemian_unrest >= 100
-	}
 
-	on_fail = {
-		trigger_event = { id = dod_hre.54 }
-	}
 
-	invalid = {
-		NOT = {
-			any_scope_state = {
-				dod_is_bohemian_state = yes
-			}
-		}
-	}
 
-	should_be_pinned_by_default = yes
+	should_be_pinned_by_default_uninvolved_or_context = yes
 	weight = 1000
+
+	outcome = {
+		header = je_standard_completion_header
+		effect_header = je_standard_on_completion_header
+		conclusion_desc = je_dod_bohemian_question_completed_desc
+		color = "gold_positive"
+		trigger = {
+				OR = {
+					country_has_primary_culture = cu:czech
+					has_law = law_type:law_multicultural
+				}
+	
+		}
+		effect = {
+				trigger_event = { id = dod_hre.52 }
+	
+		}
+	}
+
+	outcome = {
+		header = je_standard_failure_header
+		effect_header = je_standard_on_failure_header
+		conclusion_desc = je_dod_bohemian_question_failed_desc
+		color = "blue_negative"
+		trigger = {
+				var:dod_bohemian_unrest >= 100
+	
+		}
+		effect = {
+				trigger_event = { id = dod_hre.54 }
+	
+		}
+	}
+
+	outcome = {
+		flags = { hidden invalid_outcome }
+		conclusion_desc = je_dod_bohemian_question_invalid_desc
+		trigger = {
+				NOT = {
+					any_scope_state = {
+						dod_is_bohemian_state = yes
+					}
+				}
+	
+		}
+	}
 }
 
 je_dod_war_for_bohemia = {
@@ -188,29 +263,47 @@ je_dod_war_for_bohemia = {
 		set_variable = { name = dod_bohemian_war_grace days = 365 }
 	}
 
-	complete = {
-		NOT = { exists = c:BOH }
-	}
 
-	on_complete = {
-		trigger_event = { id = dod_hre.59 }
-	}
 
-	fail = {
-		exists = c:BOH
-		is_at_war = no
-		NOT = { has_variable = dod_bohemian_war_grace }
-	}
 
-	on_fail = {
-		trigger_event = { id = dod_hre.58 }
-		c:BOH = {
-			trigger_event = { id = dod_hre.60 }
+
+	should_be_pinned_by_default_uninvolved_or_context = yes
+	weight = 1000
+
+	outcome = {
+		header = je_standard_completion_header
+		effect_header = je_standard_on_completion_header
+		conclusion_desc = je_dod_war_for_bohemia_completed_desc
+		color = "gold_positive"
+		trigger = {
+				NOT = { exists = c:BOH }
+	
+		}
+		effect = {
+				trigger_event = { id = dod_hre.59 }
+	
 		}
 	}
 
-	should_be_pinned_by_default = yes
-	weight = 1000
+	outcome = {
+		header = je_standard_failure_header
+		effect_header = je_standard_on_failure_header
+		conclusion_desc = je_dod_war_for_bohemia_failed_desc
+		color = "blue_negative"
+		trigger = {
+				exists = c:BOH
+				is_at_war = no
+				NOT = { has_variable = dod_bohemian_war_grace }
+	
+		}
+		effect = {
+				trigger_event = { id = dod_hre.58 }
+				c:BOH = {
+					trigger_event = { id = dod_hre.60 }
+				}
+	
+		}
+	}
 }
 
 # ---------------------------------------------------------------------
@@ -224,17 +317,7 @@ je_dod_elbian_unity = {
 	icon = "gfx/interface/icons/event_icons/event_map.dds"
 	group = je_group_historical_content
 
-	complete = {
-		is_at_war = no
-		NOT = {
-			any_country = { dod_is_baltic_elbian_country = yes }
-		}
-	}
 
-	on_complete = {
-		set_variable = dod_baltic_integrated
-		trigger_event = { id = dod_elb.15 }
-	}
 
 	on_monthly_pulse = {
 		random_events = {
@@ -243,12 +326,37 @@ je_dod_elbian_unity = {
 		}
 	}
 
-	invalid = {
-		NOT = { this = c:CAE }
+
+	should_be_pinned_by_default_uninvolved_or_context = yes
+	weight = 1000
+
+	outcome = {
+		header = je_standard_completion_header
+		effect_header = je_standard_on_completion_header
+		conclusion_desc = je_dod_elbian_unity_completed_desc
+		color = "gold_positive"
+		trigger = {
+				is_at_war = no
+				NOT = {
+					any_country = { dod_is_baltic_elbian_country = yes }
+				}
+	
+		}
+		effect = {
+				set_variable = dod_baltic_integrated
+				trigger_event = { id = dod_elb.15 }
+	
+		}
 	}
 
-	should_be_pinned_by_default = yes
-	weight = 1000
+	outcome = {
+		flags = { hidden invalid_outcome }
+		conclusion_desc = je_dod_elbian_unity_invalid_desc
+		trigger = {
+				NOT = { this = c:CAE }
+	
+		}
+	}
 }
 
 je_dod_elbian_secession_war = {
@@ -259,26 +367,44 @@ je_dod_elbian_secession_war = {
 		set_variable = { name = dod_secession_war_grace days = 365 }
 	}
 
-	complete = {
-		NOT = { exists = c:NGF }
-	}
 
-	on_complete = {
-		trigger_event = { id = dod_elb.31 }
-	}
 
-	fail = {
-		exists = c:NGF
-		is_at_war = no
-		NOT = { has_variable = dod_secession_war_grace }
-	}
 
-	on_fail = {
-		trigger_event = { id = dod_elb.32 }
-	}
 
-	should_be_pinned_by_default = yes
+	should_be_pinned_by_default_uninvolved_or_context = yes
 	weight = 1000
+
+	outcome = {
+		header = je_standard_completion_header
+		effect_header = je_standard_on_completion_header
+		conclusion_desc = je_dod_elbian_secession_war_completed_desc
+		color = "gold_positive"
+		trigger = {
+				NOT = { exists = c:NGF }
+	
+		}
+		effect = {
+				trigger_event = { id = dod_elb.31 }
+	
+		}
+	}
+
+	outcome = {
+		header = je_standard_failure_header
+		effect_header = je_standard_on_failure_header
+		conclusion_desc = je_dod_elbian_secession_war_failed_desc
+		color = "blue_negative"
+		trigger = {
+				exists = c:NGF
+				is_at_war = no
+				NOT = { has_variable = dod_secession_war_grace }
+	
+		}
+		effect = {
+				trigger_event = { id = dod_elb.32 }
+	
+		}
+	}
 }
 
 je_dod_bohemian_secession_war = {
@@ -289,24 +415,42 @@ je_dod_bohemian_secession_war = {
 		set_variable = { name = dod_secession_war_grace days = 365 }
 	}
 
-	complete = {
-		NOT = { exists = c:BOH }
-	}
 
-	on_complete = {
-		trigger_event = { id = dod_elb.41 }
-	}
 
-	fail = {
-		exists = c:BOH
-		is_at_war = no
-		NOT = { has_variable = dod_secession_war_grace }
-	}
 
-	on_fail = {
-		trigger_event = { id = dod_elb.42 }
-	}
 
-	should_be_pinned_by_default = yes
+	should_be_pinned_by_default_uninvolved_or_context = yes
 	weight = 1000
+
+	outcome = {
+		header = je_standard_completion_header
+		effect_header = je_standard_on_completion_header
+		conclusion_desc = je_dod_bohemian_secession_war_completed_desc
+		color = "gold_positive"
+		trigger = {
+				NOT = { exists = c:BOH }
+	
+		}
+		effect = {
+				trigger_event = { id = dod_elb.41 }
+	
+		}
+	}
+
+	outcome = {
+		header = je_standard_failure_header
+		effect_header = je_standard_on_failure_header
+		conclusion_desc = je_dod_bohemian_secession_war_failed_desc
+		color = "blue_negative"
+		trigger = {
+				exists = c:BOH
+				is_at_war = no
+				NOT = { has_variable = dod_secession_war_grace }
+	
+		}
+		effect = {
+				trigger_event = { id = dod_elb.42 }
+	
+		}
+	}
 }

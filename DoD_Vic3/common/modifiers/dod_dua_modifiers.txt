@@ -1,4 +1,4 @@
-# Dual Monarchy & Britain: modifiers
+﻿# Dual Monarchy & Britain: modifiers
 
 dod_anglois_censorship = {
 	icon = "gfx/interface/icons/timed_modifier_icons/modifier_fist_negative.dds"

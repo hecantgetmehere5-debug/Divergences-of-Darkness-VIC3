@@ -1,4 +1,4 @@
-# Persia & the Middle East
+﻿# Persia & the Middle East
 
 dod_unite_iran = {
 	is_shown = {
@@ -24,7 +24,7 @@ dod_unite_iran = {
 		}
 		change_tag = PER
 	}
-	ai_chance = { base = 100 }
+	ai_chance = { value = 100 }
 }
 
 dod_iranshahr = {
@@ -55,7 +55,7 @@ dod_iranshahr = {
 			state_region = { add_claim = root }
 		}
 	}
-	ai_chance = { base = 50 }
+	ai_chance = { value = 50 }
 }
 
 dod_reclaim_mawarannahr = {
@@ -83,7 +83,7 @@ dod_reclaim_mawarannahr = {
 			state_region = { add_claim = root }
 		}
 	}
-	ai_chance = { base = 50 }
+	ai_chance = { value = 50 }
 }
 
 dod_revoke_karabakh = {
@@ -114,7 +114,7 @@ dod_revoke_karabakh = {
 			state_region = { add_claim = root }
 		}
 	}
-	ai_chance = { base = 50 }
+	ai_chance = { value = 50 }
 }
 
 dod_iran_armenians = {
@@ -132,7 +132,7 @@ dod_iran_armenians = {
 	when_taken = {
 		add_primary_culture = cu:armenian
 	}
-	ai_chance = { base = 60 }
+	ai_chance = { value = 60 }
 }
 
 dod_settle_nomads = {
@@ -148,7 +148,7 @@ dod_settle_nomads = {
 		set_variable = dod_settled
 		add_modifier = { name = dod_settled_tribes months = 240 }
 	}
-	ai_chance = { base = 70 }
+	ai_chance = { value = 70 }
 }
 
 dod_avenge_karbala = {
@@ -175,7 +175,7 @@ dod_avenge_karbala = {
 			state_region = { add_claim = root }
 		}
 	}
-	ai_chance = { base = 40 }
+	ai_chance = { value = 40 }
 }
 
 dod_lahijan_tea = {
@@ -191,7 +191,7 @@ dod_lahijan_tea = {
 		set_variable = dod_tea
 		add_modifier = { name = dod_tea_plantations months = 240 }
 	}
-	ai_chance = { base = 70 }
+	ai_chance = { value = 70 }
 }
 
 dod_kk_modern_army = {
@@ -207,7 +207,7 @@ dod_kk_modern_army = {
 		set_variable = dod_kk_army
 		add_modifier = { name = dod_western_army months = 240 }
 	}
-	ai_chance = { base = 70 }
+	ai_chance = { value = 70 }
 }
 
 dod_irq_shield = {
@@ -232,7 +232,7 @@ dod_irq_shield = {
 			state_region = { add_claim = root }
 		}
 	}
-	ai_chance = { base = 50 }
+	ai_chance = { value = 50 }
 }
 
 dod_irq_persian_dream = {
@@ -261,7 +261,7 @@ dod_irq_persian_dream = {
 			state_region = { add_claim = root }
 		}
 	}
-	ai_chance = { base = 30 }
+	ai_chance = { value = 30 }
 }
 
 dod_arab_sharia = {
@@ -281,7 +281,7 @@ dod_arab_sharia = {
 		set_variable = dod_arab_religion
 		add_modifier = { name = dod_sharia_law months = 240 }
 	}
-	ai_chance = { base = 50 }
+	ai_chance = { value = 50 }
 }
 
 dod_arab_secular = {
@@ -302,7 +302,7 @@ dod_arab_secular = {
 		set_variable = dod_arab_religion
 		add_modifier = { name = dod_secular_society months = 240 }
 	}
-	ai_chance = { base = 20 }
+	ai_chance = { value = 20 }
 }
 
 dod_arab_nationalism = {
@@ -325,7 +325,7 @@ dod_arab_nationalism = {
 		add_primary_culture = cu:khaliji
 		add_primary_culture = cu:mashriqi
 	}
-	ai_chance = { base = 50 }
+	ai_chance = { value = 50 }
 }
 
 dod_restore_rashids = {
@@ -340,7 +340,7 @@ dod_restore_rashids = {
 	when_taken = {
 		change_tag = NEJ
 	}
-	ai_chance = { base = 100 }
+	ai_chance = { value = 100 }
 }
 
 dod_claim_caliphate = {
@@ -357,7 +357,7 @@ dod_claim_caliphate = {
 		add_modifier = { name = dod_caliph months = 240 }
 		c:TUR ?= { trigger_event = { id = dod_per.54 days = 14 } }
 	}
-	ai_chance = { base = 60 }
+	ai_chance = { value = 60 }
 }
 
 dod_form_uar = {
@@ -408,7 +408,7 @@ dod_form_uar = {
 			state_region = { add_claim = root }
 		}
 	}
-	ai_chance = { base = 100 }
+	ai_chance = { value = 100 }
 }
 
 dod_form_kurdistan = {
@@ -435,5 +435,5 @@ dod_form_kurdistan = {
 		}
 		change_tag = KUR
 	}
-	ai_chance = { base = 100 }
+	ai_chance = { value = 100 }
 }

@@ -1,4 +1,4 @@
-# Holy Roman Empire storyline: modifiers
+﻿# Holy Roman Empire storyline: modifiers
 
 dod_imperial_guarantees = {
 	icon = "gfx/interface/icons/timed_modifier_icons/modifier_scroll_positive.dds"

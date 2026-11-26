@@ -1,4 +1,4 @@
-# Italy, Aragon-Italy & Venice-Greece: scripted triggers
+﻿# Italy, Aragon-Italy & Venice-Greece: scripted triggers
 
 dod_is_italian_country = {
 	OR = {

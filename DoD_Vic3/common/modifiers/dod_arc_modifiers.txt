@@ -1,4 +1,4 @@
-# Archaeology: modifiers
+﻿# Archaeology: modifiers
 
 dod_archaeology_society_mod = {
 	icon = "gfx/interface/icons/timed_modifier_icons/modifier_book_positive.dds"

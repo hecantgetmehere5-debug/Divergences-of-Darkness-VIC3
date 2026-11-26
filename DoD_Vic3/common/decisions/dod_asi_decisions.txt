@@ -1,4 +1,4 @@
-# East, Southeast & South Asia
+﻿# East, Southeast & South Asia
 
 dod_seoul_treaty = {
 	is_shown = {
@@ -15,7 +15,7 @@ dod_seoul_treaty = {
 		set_variable = dod_seoul_treaty
 		c:KOR = { trigger_event = { id = dod_asi.1 days = 7 } }
 	}
-	ai_chance = { base = 60 }
+	ai_chance = { value = 60 }
 }
 
 dod_hawaii_offer = {
@@ -32,7 +32,7 @@ dod_hawaii_offer = {
 		set_variable = dod_hawaii_offer
 		c:HAW = { trigger_event = { id = dod_asi.4 days = 7 } }
 	}
-	ai_chance = { base = 50 }
+	ai_chance = { value = 50 }
 }
 
 dod_ainu_protectorate = {
@@ -55,7 +55,7 @@ dod_ainu_protectorate = {
 			root = { annex = prev }
 		}
 	}
-	ai_chance = { base = 70 }
+	ai_chance = { value = 70 }
 }
 
 dod_integrate_kaiganese = {
@@ -69,7 +69,7 @@ dod_integrate_kaiganese = {
 	when_taken = {
 		add_primary_culture = cu:kaiganese
 	}
-	ai_chance = { base = 70 }
+	ai_chance = { value = 70 }
 }
 
 dod_unequal_treaty_decision = {
@@ -107,7 +107,7 @@ dod_unequal_treaty_decision = {
 			trigger_event = { id = dod_asi.10 days = 7 }
 		}
 	}
-	ai_chance = { base = 30 }
+	ai_chance = { value = 30 }
 }
 
 dod_zhourao_destiny = {
@@ -129,7 +129,7 @@ dod_zhourao_destiny = {
 			state_region = { add_claim = root }
 		}
 	}
-	ai_chance = { base = 50 }
+	ai_chance = { value = 50 }
 }
 
 dod_zhourao_tributaries = {
@@ -146,7 +146,7 @@ dod_zhourao_tributaries = {
 			root = { annex = prev }
 		}
 	}
-	ai_chance = { base = 40 }
+	ai_chance = { value = 40 }
 }
 
 dod_indochina_old_borders = {
@@ -174,7 +174,7 @@ dod_indochina_old_borders = {
 			state_region = { add_claim = root }
 		}
 	}
-	ai_chance = { base = 50 }
+	ai_chance = { value = 50 }
 }
 
 dod_khmer_peninsula = {
@@ -202,7 +202,7 @@ dod_khmer_peninsula = {
 			state_region = { add_claim = root }
 		}
 	}
-	ai_chance = { base = 50 }
+	ai_chance = { value = 50 }
 }
 
 dod_form_nusantara = {
@@ -235,7 +235,7 @@ dod_form_nusantara = {
 		add_primary_culture = cu:balinese
 		change_tag = NUS
 	}
-	ai_chance = { base = 100 }
+	ai_chance = { value = 100 }
 }
 
 dod_greater_nusantara = {
@@ -268,7 +268,7 @@ dod_greater_nusantara = {
 			state_region = { add_claim = root }
 		}
 	}
-	ai_chance = { base = 50 }
+	ai_chance = { value = 50 }
 }
 
 dod_form_dravida = {
@@ -302,7 +302,7 @@ dod_form_dravida = {
 		add_primary_culture = cu:malayalam
 		change_tag = DRA
 	}
-	ai_chance = { base = 100 }
+	ai_chance = { value = 100 }
 }
 
 dod_form_bharata = {
@@ -345,7 +345,7 @@ dod_form_bharata = {
 		add_primary_culture = cu:oriya
 		change_tag = BHA
 	}
-	ai_chance = { base = 100 }
+	ai_chance = { value = 100 }
 }
 
 dod_form_rajputana = {
@@ -365,7 +365,7 @@ dod_form_rajputana = {
 	when_taken = {
 		change_tag = RAJ
 	}
-	ai_chance = { base = 100 }
+	ai_chance = { value = 100 }
 }
 
 dod_gate_of_india = {
@@ -394,7 +394,7 @@ dod_gate_of_india = {
 			state_region = { add_claim = root }
 		}
 	}
-	ai_chance = { base = 40 }
+	ai_chance = { value = 40 }
 }
 
 dod_organize_christiania = {
@@ -414,7 +414,7 @@ dod_organize_christiania = {
 			create_diplomatic_pact = { country = c:CHR type = dominion }
 		}
 	}
-	ai_chance = { base = 20 }
+	ai_chance = { value = 20 }
 }
 
 dod_form_india = {
@@ -493,5 +493,5 @@ dod_form_india = {
 		}
 		change_tag = HND
 	}
-	ai_chance = { base = 100 }
+	ai_chance = { value = 100 }
 }

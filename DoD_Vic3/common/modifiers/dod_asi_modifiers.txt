@@ -1,4 +1,4 @@
-# East, Southeast & South Asia: modifiers
+﻿# East, Southeast & South Asia: modifiers
 
 dod_rising_sun = {
 	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"

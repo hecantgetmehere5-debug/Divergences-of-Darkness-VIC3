@@ -1,4 +1,4 @@
-# Persia & the Middle East: modifiers
+﻿# Persia & the Middle East: modifiers
 
 dod_soyurghal_curbed = {
 	icon = "gfx/interface/icons/timed_modifier_icons/modifier_scroll_positive.dds"

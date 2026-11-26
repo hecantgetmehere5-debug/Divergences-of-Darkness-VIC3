@@ -1,4 +1,4 @@
-# East Asian chains: modifiers
+﻿# East Asian chains: modifiers
 
 dod_self_strengthening = {
 	icon = "gfx/interface/icons/timed_modifier_icons/modifier_scroll_positive.dds"

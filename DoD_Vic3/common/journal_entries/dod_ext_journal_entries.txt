@@ -1,4 +1,4 @@
-# Expanded content: Plantagenia, Arcadia, Beornia, Savoy
+﻿# Expanded content: Plantagenia, Arcadia, Beornia, Savoy
 
 je_dod_plantagenian_slavery = {
 	icon = "gfx/interface/icons/event_icons/event_protest.dds"
@@ -37,33 +37,57 @@ je_dod_plantagenian_slavery = {
 		}
 	}
 
-	complete = {
-		has_law = law_type:law_slavery_banned
-	}
 
-	on_complete = {
-		trigger_event = { id = dod_ext.5 }
-	}
 
-	fail = {
-		var:dod_planter_resistance >= 100
-	}
 
-	on_fail = {
-		trigger_event = { id = dod_ext.6 }
-	}
 
-	invalid = {
-		NOT = {
-			OR = {
-				this = c:PLA
-				this = c:ARC
-			}
+
+	should_be_pinned_by_default_uninvolved_or_context = yes
+	weight = 1000
+
+	outcome = {
+		header = je_standard_completion_header
+		effect_header = je_standard_on_completion_header
+		conclusion_desc = je_dod_plantagenian_slavery_completed_desc
+		color = "gold_positive"
+		trigger = {
+				has_law = law_type:law_slavery_banned
+	
+		}
+		effect = {
+				trigger_event = { id = dod_ext.5 }
+	
 		}
 	}
 
-	should_be_pinned_by_default = yes
-	weight = 1000
+	outcome = {
+		header = je_standard_failure_header
+		effect_header = je_standard_on_failure_header
+		conclusion_desc = je_dod_plantagenian_slavery_failed_desc
+		color = "blue_negative"
+		trigger = {
+				var:dod_planter_resistance >= 100
+	
+		}
+		effect = {
+				trigger_event = { id = dod_ext.6 }
+	
+		}
+	}
+
+	outcome = {
+		flags = { hidden invalid_outcome }
+		conclusion_desc = je_dod_plantagenian_slavery_invalid_desc
+		trigger = {
+				NOT = {
+					OR = {
+						this = c:PLA
+						this = c:ARC
+					}
+				}
+	
+		}
+	}
 }
 
 je_dod_cowboy_king = {
@@ -85,59 +109,92 @@ je_dod_cowboy_king = {
 		}
 	}
 
-	complete = {
-		var:dod_crown_standing >= 6
-	}
 
-	on_complete = {
-		trigger_event = { id = dod_ext.16 }
-	}
 
-	fail = {
-		var:dod_crown_standing <= -5
-	}
 
-	on_fail = {
-		trigger_event = { id = dod_ext.17 }
-	}
 
 	timeout = 3650
 
-	should_be_pinned_by_default = yes
+	should_be_pinned_by_default_uninvolved_or_context = yes
 	weight = 500
+
+	outcome = {
+		header = je_standard_completion_header
+		effect_header = je_standard_on_completion_header
+		conclusion_desc = je_dod_cowboy_king_completed_desc
+		color = "gold_positive"
+		trigger = {
+				var:dod_crown_standing >= 6
+	
+		}
+		effect = {
+				trigger_event = { id = dod_ext.16 }
+	
+		}
+	}
+
+	outcome = {
+		header = je_standard_failure_header
+		effect_header = je_standard_on_failure_header
+		conclusion_desc = je_dod_cowboy_king_failed_desc
+		color = "blue_negative"
+		trigger = {
+				var:dod_crown_standing <= -5
+	
+		}
+		effect = {
+				trigger_event = { id = dod_ext.17 }
+	
+		}
+	}
 }
 
 je_dod_arcadian_hegemony = {
 	icon = "gfx/interface/icons/event_icons/event_map.dds"
 	group = je_group_historical_content
 
-	complete = {
-		country_rank >= rank_value:great_power
-		NOT = {
-			any_state = {
-				state_region = {
-					OR = {
-						is_homeland = cu:vinlander
-						is_homeland = cu:septiman
-						is_homeland = cu:plantagenian
-						is_homeland = cu:lusitanian
+
+
+
+	should_be_pinned_by_default_uninvolved_or_context = yes
+	weight = 1000
+
+	outcome = {
+		header = je_standard_completion_header
+		effect_header = je_standard_on_completion_header
+		conclusion_desc = je_dod_arcadian_hegemony_completed_desc
+		color = "gold_positive"
+		trigger = {
+				country_rank >= rank_value:great_power
+				NOT = {
+					any_state = {
+						state_region = {
+							OR = {
+								is_homeland = cu:vinlander
+								is_homeland = cu:septiman
+								is_homeland = cu:plantagenian
+								is_homeland = cu:lusitanian
+							}
+						}
+						NOT = { owner = root }
 					}
 				}
-				NOT = { owner = root }
-			}
+	
+		}
+		effect = {
+				trigger_event = { id = dod_ext.20 }
+	
 		}
 	}
 
-	on_complete = {
-		trigger_event = { id = dod_ext.20 }
+	outcome = {
+		flags = { hidden invalid_outcome }
+		conclusion_desc = je_dod_arcadian_hegemony_invalid_desc
+		trigger = {
+				NOT = { this = c:ARC }
+	
+		}
 	}
-
-	invalid = {
-		NOT = { this = c:ARC }
-	}
-
-	should_be_pinned_by_default = yes
-	weight = 1000
 }
 
 je_dod_beornian_communion = {
@@ -166,33 +223,57 @@ je_dod_beornian_communion = {
 		}
 	}
 
-	complete = {
-		var:dod_communion_unity >= 8
-	}
 
-	on_complete = {
-		trigger_event = { id = dod_ext.34 }
-	}
 
-	fail = {
-		var:dod_communion_unity <= -8
-	}
 
-	on_fail = {
-		trigger_event = { id = dod_ext.35 }
-	}
 
-	invalid = {
-		NOT = {
-			OR = {
-				this = c:NAN
-				this = c:HBE
-			}
+
+	should_be_pinned_by_default_uninvolved_or_context = yes
+	weight = 1000
+
+	outcome = {
+		header = je_standard_completion_header
+		effect_header = je_standard_on_completion_header
+		conclusion_desc = je_dod_beornian_communion_completed_desc
+		color = "gold_positive"
+		trigger = {
+				var:dod_communion_unity >= 8
+	
+		}
+		effect = {
+				trigger_event = { id = dod_ext.34 }
+	
 		}
 	}
 
-	should_be_pinned_by_default = yes
-	weight = 1000
+	outcome = {
+		header = je_standard_failure_header
+		effect_header = je_standard_on_failure_header
+		conclusion_desc = je_dod_beornian_communion_failed_desc
+		color = "blue_negative"
+		trigger = {
+				var:dod_communion_unity <= -8
+	
+		}
+		effect = {
+				trigger_event = { id = dod_ext.35 }
+	
+		}
+	}
+
+	outcome = {
+		flags = { hidden invalid_outcome }
+		conclusion_desc = je_dod_beornian_communion_invalid_desc
+		trigger = {
+				NOT = {
+					OR = {
+						this = c:NAN
+						this = c:HBE
+					}
+				}
+	
+		}
+	}
 }
 
 je_dod_savoyard_succession = {
@@ -221,26 +302,50 @@ je_dod_savoyard_succession = {
 		}
 	}
 
-	complete = {
-		var:dod_vittorio_standing >= 5
-	}
 
-	on_complete = {
-		trigger_event = { id = dod_ext.44 }
-	}
 
-	fail = {
-		var:dod_vittorio_standing <= -5
-	}
 
-	on_fail = {
-		trigger_event = { id = dod_ext.45 }
-	}
 
-	invalid = {
-		NOT = { this = c:SAR }
-	}
 
-	should_be_pinned_by_default = yes
+	should_be_pinned_by_default_uninvolved_or_context = yes
 	weight = 1000
+
+	outcome = {
+		header = je_standard_completion_header
+		effect_header = je_standard_on_completion_header
+		conclusion_desc = je_dod_savoyard_succession_completed_desc
+		color = "gold_positive"
+		trigger = {
+				var:dod_vittorio_standing >= 5
+	
+		}
+		effect = {
+				trigger_event = { id = dod_ext.44 }
+	
+		}
+	}
+
+	outcome = {
+		header = je_standard_failure_header
+		effect_header = je_standard_on_failure_header
+		conclusion_desc = je_dod_savoyard_succession_failed_desc
+		color = "blue_negative"
+		trigger = {
+				var:dod_vittorio_standing <= -5
+	
+		}
+		effect = {
+				trigger_event = { id = dod_ext.45 }
+	
+		}
+	}
+
+	outcome = {
+		flags = { hidden invalid_outcome }
+		conclusion_desc = je_dod_savoyard_succession_invalid_desc
+		trigger = {
+				NOT = { this = c:SAR }
+	
+		}
+	}
 }

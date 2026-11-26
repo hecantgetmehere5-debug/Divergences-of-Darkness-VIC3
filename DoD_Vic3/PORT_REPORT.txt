@@ -1,4 +1,4 @@
-Localisation: 32763 keys written, 6696 duplicates skipped, 8 invalid keys skipped, 3239 lines use Vic2 $VARS$ (need rewriting).
+﻿Localisation: 32763 keys written, 6696 duplicates skipped, 8 invalid keys skipped, 3239 lines use Vic2 $VARS$ (need rewriting).
 
 Countries: 586 definitions written; 0 without history files ().
 

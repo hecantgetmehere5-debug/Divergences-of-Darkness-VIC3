@@ -1,4 +1,4 @@
-on_yearly_pulse_country = {
+﻿on_yearly_pulse_country = {
 	events = {
 		dod_hre.70	# Bohemian Rhapsody
 		dod_hre.71	# 1100th anniversary of the Empire

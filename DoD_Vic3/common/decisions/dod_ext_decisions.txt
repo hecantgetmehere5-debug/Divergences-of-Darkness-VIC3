@@ -1,4 +1,4 @@
-# Expanded content: Beornia & Savoy
+﻿# Expanded content: Beornia & Savoy
 
 dod_beornian_lotharian_union = {
 	is_shown = {
@@ -19,7 +19,7 @@ dod_beornian_lotharian_union = {
 		create_diplomatic_pact = { country = c:LOT type = personal_union }
 		add_modifier = { name = dod_beornian_lotharian_union_mod months = 240 }
 	}
-	ai_chance = { base = 60 }
+	ai_chance = { value = 60 }
 }
 
 dod_crown_amedeo = {
@@ -35,7 +35,7 @@ dod_crown_amedeo = {
 		remove_journal_entry = je_dod_savoyard_succession
 		trigger_event = { id = dod_ext.45 }
 	}
-	ai_chance = { base = 30 }
+	ai_chance = { value = 30 }
 }
 
 dod_italian_confederation = {
@@ -63,7 +63,7 @@ dod_italian_confederation = {
 			trigger_event = { id = dod_ext.46 days = 14 }
 		}
 	}
-	ai_chance = { base = 50 }
+	ai_chance = { value = 50 }
 }
 
 dod_unite_confederation = {
@@ -92,7 +92,7 @@ dod_unite_confederation = {
 		add_primary_culture = cu:south_italian
 		change_tag = ITA
 	}
-	ai_chance = { base = 80 }
+	ai_chance = { value = 80 }
 }
 
 dod_new_italian_wars = {
@@ -133,5 +133,5 @@ dod_new_italian_wars = {
 			state_region = { add_claim = root }
 		}
 	}
-	ai_chance = { base = 40 }
+	ai_chance = { value = 40 }
 }

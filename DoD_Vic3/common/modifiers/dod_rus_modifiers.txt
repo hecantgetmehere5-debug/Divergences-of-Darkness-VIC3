@@ -1,4 +1,4 @@
-# Russia, the Steppe & the Caucasus: modifiers
+﻿# Russia, the Steppe & the Caucasus: modifiers
 
 dod_russian_unity = {
 	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"

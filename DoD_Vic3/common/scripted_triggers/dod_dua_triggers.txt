@@ -1,4 +1,4 @@
-# Dual Monarchy & Britain: scripted triggers
+﻿# Dual Monarchy & Britain: scripted triggers
 
 dod_dua_french_path = { has_variable = dod_path_french }
 dod_dua_english_path = { has_variable = dod_path_english }

@@ -1,4 +1,4 @@
-# Iberia: the Iberian Union, the Hispanic Commonwealth & Navarre
+﻿# Iberia: the Iberian Union, the Hispanic Commonwealth & Navarre
 
 dod_propose_iberian_union = {
 	is_shown = {
@@ -26,7 +26,7 @@ dod_propose_iberian_union = {
 		}
 		c:CAT ?= { trigger_event = { id = dod_ibr.2 days = 7 } }
 	}
-	ai_chance = { base = 50 }
+	ai_chance = { value = 50 }
 }
 
 dod_integrate_catalans = {
@@ -42,7 +42,7 @@ dod_integrate_catalans = {
 	when_taken = {
 		add_primary_culture = cu:catalan
 	}
-	ai_chance = { base = 100 }
+	ai_chance = { value = 100 }
 }
 
 dod_unify_navarra = {
@@ -70,7 +70,7 @@ dod_unify_navarra = {
 		}
 		add_primary_culture = cu:basque
 	}
-	ai_chance = { base = 100 }
+	ai_chance = { value = 100 }
 }
 
 dod_form_mancomunidad = {
@@ -114,7 +114,7 @@ dod_form_mancomunidad = {
 		change_tag = SPC
 		trigger_event = { id = dod_ibr.5 }
 	}
-	ai_chance = { base = 50 }
+	ai_chance = { value = 50 }
 }
 
 dod_iberian_cooperation = {
@@ -134,7 +134,7 @@ dod_iberian_cooperation = {
 		c:ARA ?= { trigger_event = { id = dod_ibr.7 days = 7 } }
 		c:ARI ?= { trigger_event = { id = dod_ibr.7 days = 7 } }
 	}
-	ai_chance = { base = 50 }
+	ai_chance = { value = 50 }
 }
 
 dod_greater_euskadia = {
@@ -163,5 +163,5 @@ dod_greater_euskadia = {
 			state_region = { add_claim = root }
 		}
 	}
-	ai_chance = { base = 50 }
+	ai_chance = { value = 50 }
 }

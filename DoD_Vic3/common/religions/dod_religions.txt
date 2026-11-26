@@ -1,18 +1,13 @@
-﻿# Divergences of Darkness: religions that do not exist in vanilla Victoria 3.
-# FORMAT TO VERIFY against vanilla game/common/religions (texture path, trait names).
+﻿# Divergences of Darkness: religions that do not exist in vanilla Victoria 3 (1.13 layout).
 
 taiping = {  # The faith of the Taiping Heavenly Kingdom
-	texture = "gfx/interface/icons/religion_icons/protestant.dds"
-	traits = {
-		christian
-	}
-	color = { 200 60 40 }
+	icon = "gfx/interface/icons/religion_icons/protestant.dds"
+	heritage = heritage_christian
+	color = { 0.78 0.24 0.16 }
 }
 
 inti = {  # The Inca sun faith of Tawantinsuyu
-	texture = "gfx/interface/icons/religion_icons/animist.dds"
-	traits = {
-		pagan
-	}
-	color = { 230 180 40 }
+	icon = "gfx/interface/icons/religion_icons/animist.dds"
+	heritage = heritage_indigenous
+	color = { 0.9 0.7 0.16 }
 }

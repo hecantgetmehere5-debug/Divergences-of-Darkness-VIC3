@@ -1,4 +1,4 @@
-# Balkans & the Ottoman fall
+﻿# Balkans & the Ottoman fall
 
 dod_tanzimat_1 = {
 	is_shown = {
@@ -13,7 +13,7 @@ dod_tanzimat_1 = {
 		set_variable = dod_tanzimat_1
 		add_modifier = { name = dod_tanzimat months = 240 }
 	}
-	ai_chance = { base = 50 }
+	ai_chance = { value = 50 }
 }
 
 dod_tanzimat_2 = {
@@ -31,7 +31,7 @@ dod_tanzimat_2 = {
 		set_variable = dod_tanzimat_2
 		add_modifier = { name = dod_tanzimat_extended months = 240 }
 	}
-	ai_chance = { base = 50 }
+	ai_chance = { value = 50 }
 }
 
 dod_reclaim_macedonia = {
@@ -60,7 +60,7 @@ dod_reclaim_macedonia = {
 			state_region = { add_claim = root }
 		}
 	}
-	ai_chance = { base = 30 }
+	ai_chance = { value = 30 }
 }
 
 dod_reclaim_illyria = {
@@ -85,7 +85,7 @@ dod_reclaim_illyria = {
 			state_region = { add_claim = root }
 		}
 	}
-	ai_chance = { base = 20 }
+	ai_chance = { value = 20 }
 }
 
 dod_reclaim_madjaristan = {
@@ -109,7 +109,7 @@ dod_reclaim_madjaristan = {
 			state_region = { add_claim = root }
 		}
 	}
-	ai_chance = { base = 10 }
+	ai_chance = { value = 10 }
 }
 
 dod_reclaim_shirvan = {
@@ -134,7 +134,7 @@ dod_reclaim_shirvan = {
 			state_region = { add_claim = root }
 		}
 	}
-	ai_chance = { base = 10 }
+	ai_chance = { value = 10 }
 }
 
 dod_egyptian_levant = {
@@ -159,7 +159,7 @@ dod_egyptian_levant = {
 			state_region = { add_claim = root }
 		}
 	}
-	ai_chance = { base = 50 }
+	ai_chance = { value = 50 }
 }
 
 # ---------------------------------------------------------------------
@@ -197,7 +197,7 @@ dod_form_yugoslavia = {
 		add_primary_culture = cu:bosniak
 		change_tag = YUG
 	}
-	ai_chance = { base = 100 }
+	ai_chance = { value = 100 }
 }
 
 dod_yug_claim_albania = {
@@ -217,7 +217,7 @@ dod_yug_claim_albania = {
 			state_region = { add_claim = root }
 		}
 	}
-	ai_chance = { base = 30 }
+	ai_chance = { value = 30 }
 }
 
 dod_yug_claim_bulgaria = {
@@ -238,7 +238,7 @@ dod_yug_claim_bulgaria = {
 			state_region = { add_claim = root }
 		}
 	}
-	ai_chance = { base = 30 }
+	ai_chance = { value = 30 }
 }
 
 dod_yug_claim_serbian_empire = {
@@ -262,7 +262,7 @@ dod_yug_claim_serbian_empire = {
 			state_region = { add_claim = root }
 		}
 	}
-	ai_chance = { base = 20 }
+	ai_chance = { value = 20 }
 }
 
 # ---------------------------------------------------------------------
@@ -293,7 +293,7 @@ dod_mac_restore = {
 			state_region = { add_claim = root }
 		}
 	}
-	ai_chance = { base = 60 }
+	ai_chance = { value = 60 }
 }
 
 dod_mac_alexander = {
@@ -318,7 +318,7 @@ dod_mac_alexander = {
 			state_region = { add_claim = root }
 		}
 	}
-	ai_chance = { base = 30 }
+	ai_chance = { value = 30 }
 }
 
 dod_mac_align_yugoslavia = {
@@ -345,7 +345,7 @@ dod_mac_align_yugoslavia = {
 			state_region = { add_claim = root }
 		}
 	}
-	ai_chance = { base = 40 }
+	ai_chance = { value = 40 }
 }
 
 dod_mac_hegemonia = {
@@ -365,7 +365,7 @@ dod_mac_hegemonia = {
 			type = dp_annex_war
 		}
 	}
-	ai_chance = { base = 20 }
+	ai_chance = { value = 20 }
 }
 
 # ---------------------------------------------------------------------
@@ -387,7 +387,7 @@ dod_form_romania = {
 	when_taken = {
 		change_tag = ROM
 	}
-	ai_chance = { base = 100 }
+	ai_chance = { value = 100 }
 }
 
 dod_unite_with_romania = {
@@ -403,5 +403,5 @@ dod_unite_with_romania = {
 	when_taken = {
 		c:ROM = { annex = root }
 	}
-	ai_chance = { base = 50 }
+	ai_chance = { value = 50 }
 }

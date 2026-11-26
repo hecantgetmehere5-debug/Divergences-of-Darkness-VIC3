@@ -1,4 +1,4 @@
-# Holy Roman Empire storyline: scripted triggers
+﻿# Holy Roman Empire storyline: scripted triggers
 
 # A German prince the Emperor can bring into the Reich
 dod_is_imperial_prince = {

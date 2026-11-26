@@ -1,4 +1,4 @@
-# Archaeology
+﻿# Archaeology
 
 dod_archaeological_society = {
 	is_shown = {
@@ -13,7 +13,7 @@ dod_archaeological_society = {
 		set_variable = dod_archaeology_society
 		add_modifier = { name = dod_archaeology_society_mod months = 600 }
 	}
-	ai_chance = { base = 40 }
+	ai_chance = { value = 40 }
 }
 
 dod_dig_maya = {
@@ -42,7 +42,7 @@ dod_dig_maya = {
 			}
 		}
 	}
-	ai_chance = { base = 40 }
+	ai_chance = { value = 40 }
 }
 
 dod_dig_mesopotamia = {
@@ -71,7 +71,7 @@ dod_dig_mesopotamia = {
 			}
 		}
 	}
-	ai_chance = { base = 40 }
+	ai_chance = { value = 40 }
 }
 
 dod_dig_mycenae = {
@@ -100,7 +100,7 @@ dod_dig_mycenae = {
 			}
 		}
 	}
-	ai_chance = { base = 40 }
+	ai_chance = { value = 40 }
 }
 
 dod_dig_knossos = {
@@ -130,7 +130,7 @@ dod_dig_knossos = {
 			}
 		}
 	}
-	ai_chance = { base = 40 }
+	ai_chance = { value = 40 }
 }
 
 dod_dig_troy = {
@@ -159,5 +159,5 @@ dod_dig_troy = {
 			}
 		}
 	}
-	ai_chance = { base = 40 }
+	ai_chance = { value = 40 }
 }

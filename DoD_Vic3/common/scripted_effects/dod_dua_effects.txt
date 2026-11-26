@@ -1,4 +1,4 @@
-# Dual Monarchy: shift the three Anglois Dilemma meters.
+﻿# Dual Monarchy: shift the three Anglois Dilemma meters.
 # Usage: dod_dua_shift = { ENGLISH = 5 FRENCH = -5 ACCEPT = 5 }
 dod_dua_shift = {
 	change_variable = { name = dod_english_unrest add = $ENGLISH$ }
