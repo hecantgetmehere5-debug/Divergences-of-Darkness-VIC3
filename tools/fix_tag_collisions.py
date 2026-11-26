@@ -73,6 +73,55 @@ for sub, drop in (("country_definitions", mod_tags), ("flag_definitions", mod_ta
         total += strip_file(f, MOD / "common" / sub / f.name, drop)
     print(f"{sub}: removed {total} vanilla definitions of DoD tags")
 
+# vanilla history for tags that are a different country in DoD (different capital): drop their
+# c:TAG blocks so e.g. Burgundy (BRG) doesn't get Borgu's laws, techs, literacy and parties
+dod_cap = {}
+for f in (MOD / "common/country_definitions").glob("dod_*.txt"):
+    for k, s, e in blocks(f.read_text(encoding="utf-8-sig")):
+        c = re.search(r"^\s*capital\s*=\s*(STATE_\w+)", f.read_text(encoding="utf-8-sig")[s:e], re.M)
+        if c:
+            dod_cap[k] = c.group(1)
+van_cap = {}
+for f in (V3 / "common/country_definitions").glob("*.txt"):
+    t = f.read_text(encoding="utf-8-sig")
+    for k, s, e in blocks(t):
+        c = re.search(r"capital\s*=\s*(STATE_\w+)", t[s:e])
+        if c:
+            van_cap[k] = c.group(1)
+different = {t for t in mod_tags if t in van_cap and dod_cap.get(t) != van_cap[t]}
+(MOD / "common/history/countries/dod_00_different_tags.txt").write_text(
+    "# Tags that are a different country in DoD than in vanilla (written by tools/fix_tag_collisions.py).\n"
+    "# Vanilla history for these is removed by the override files in this folder and its siblings.\n"
+    "# " + " ".join(sorted(different)) + "\n", encoding="utf-8-sig")
+TAGBLOCK = re.compile(r"c:([A-Z0-9]{3})\s*\??=\s*\{")
+for sub in ("countries", "population", "governments", "government_setup", "ai"):
+    removed = files = 0
+    for f in sorted((V3 / "common/history" / sub).glob("*.txt")):
+        text = f.read_text(encoding="utf-8-sig")
+        out, pos, i, n = [], 0, 0, 0
+        while True:
+            m = TAGBLOCK.search(text, i)
+            if not m:
+                break
+            j, d = m.end(), 1
+            while d and j < len(text):
+                if text[j] == "#":
+                    j = text.find("\n", j)
+                    continue
+                d += {"{": 1, "}": -1}.get(text[j], 0)
+                j += 1
+            if m.group(1) in different:
+                out.append(text[pos:m.start()])
+                pos, n = j, n + 1
+            i = j
+        if n:
+            out.append(text[pos:])
+            dst = MOD / "common/history" / sub / f.name
+            dst.parent.mkdir(parents=True, exist_ok=True)
+            dst.write_text(HEADER + "".join(out), encoding="utf-8-sig")
+            removed, files = removed + n, files + 1
+    print(f"history/{sub}: removed {removed} blocks of {len(different)} different-country tags in {files} files")
+
 # names
 for lang in ("english", "french", "german", "spanish"):
     van = set()

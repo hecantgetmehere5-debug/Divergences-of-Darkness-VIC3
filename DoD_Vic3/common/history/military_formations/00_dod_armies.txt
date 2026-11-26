@@ -65,7 +65,7 @@ MILITARY_FORMATIONS = {
 			type = army
 			hq_region = sr:region_northeast_asia
 			combat_unit = {
-				type = unit_type:combat_unit_type_irregular_infantry
+				type = unit_type:combat_unit_type_line_infantry
 				state_region = s:STATE_OKHOTSK
 				count = 1
 			}
@@ -308,12 +308,17 @@ MILITARY_FORMATIONS = {
 			type = army
 			hq_region = sr:region_north_india
 			combat_unit = {
-				type = unit_type:combat_unit_type_irregular_infantry
+				type = unit_type:combat_unit_type_line_infantry
 				state_region = s:STATE_WEST_BENGAL
-				count = 17
+				count = 15
 			}
 			combat_unit = {
-				type = unit_type:combat_unit_type_hussars
+				type = unit_type:combat_unit_type_dragoons
+				state_region = s:STATE_WEST_BENGAL
+				count = 2
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_cannon_artillery
 				state_region = s:STATE_WEST_BENGAL
 				count = 2
 			}
@@ -395,7 +400,7 @@ MILITARY_FORMATIONS = {
 			type = army
 			hq_region = sr:region_central_europe
 			combat_unit = {
-				type = unit_type:combat_unit_type_irregular_infantry
+				type = unit_type:combat_unit_type_line_infantry
 				state_region = s:STATE_FRANCONIA
 				count = 1
 			}
@@ -460,12 +465,17 @@ MILITARY_FORMATIONS = {
 			type = army
 			hq_region = sr:region_western_europe
 			combat_unit = {
-				type = unit_type:combat_unit_type_irregular_infantry
+				type = unit_type:combat_unit_type_line_infantry
 				state_region = s:STATE_FLANDERS
-				count = 16
+				count = 14
 			}
 			combat_unit = {
-				type = unit_type:combat_unit_type_hussars
+				type = unit_type:combat_unit_type_dragoons
+				state_region = s:STATE_FLANDERS
+				count = 2
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_cannon_artillery
 				state_region = s:STATE_FLANDERS
 				count = 2
 			}
@@ -474,8 +484,12 @@ MILITARY_FORMATIONS = {
 			type = fleet
 			hq_region = sr:region_western_europe
 			ship = {
+				type = ship_type:ship_type_ship_of_the_line
+				count = 10
+			}
+			ship = {
 				type = ship_type:ship_type_frigate
-				count = 40
+				count = 30
 			}
 		}
 	}
@@ -2183,12 +2197,17 @@ MILITARY_FORMATIONS = {
 			combat_unit = {
 				type = unit_type:combat_unit_type_irregular_infantry
 				state_region = s:STATE_FORMOSA
-				count = 14
+				count = 13
 			}
 			combat_unit = {
 				type = unit_type:combat_unit_type_hussars
 				state_region = s:STATE_FORMOSA
 				count = 2
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_cannon_artillery
+				state_region = s:STATE_FORMOSA
+				count = 1
 			}
 		}
 		create_military_formation = {

@@ -1,0 +1,4 @@
+﻿# DoD override of the vanilla file of the same name: vanilla content minus the tags DoD redefines.
+COUNTRIES = {
+	
+}

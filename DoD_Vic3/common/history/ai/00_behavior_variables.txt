@@ -1,0 +1,16 @@
+﻿# DoD override of the vanilla file of the same name: vanilla content minus the tags DoD redefines.
+AI = {
+	# Set historical tendencies for Ottomans vs Egypt
+	c:GBR ?= {
+		set_variable = veiled_protectorate_support_ottomans
+	}
+	c:AUS ?= {
+		set_variable = veiled_protectorate_support_ottomans
+	}
+	
+	
+}
+
+
+
+

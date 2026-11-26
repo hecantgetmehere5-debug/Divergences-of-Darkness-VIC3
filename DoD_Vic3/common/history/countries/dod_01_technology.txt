@@ -4,6 +4,7 @@ COUNTRIES = {
 	c:ADW ?= { effect_starting_technology_tier_5_tech = yes }
 	c:AFG ?= { effect_starting_technology_tier_4_tech = yes }
 	c:AFS ?= { effect_starting_technology_tier_4_tech = yes }
+	c:AIN ?= { effect_starting_technology_tier_3_tech = yes }
 	c:AJU ?= { effect_starting_technology_tier_5_tech = yes }
 	c:ALB ?= { effect_starting_technology_tier_4_tech = yes }
 	c:ALH ?= { effect_starting_technology_tier_4_tech = yes }
@@ -17,13 +18,21 @@ COUNTRIES = {
 	c:AZB ?= { effect_starting_technology_tier_3_tech = yes }
 	c:BDN ?= { effect_starting_technology_tier_4_tech = yes }
 	c:BEG ?= { effect_starting_technology_tier_1_tech = yes }
+	c:BEN ?= { effect_starting_technology_tier_2_tech = yes }
 	c:BHT ?= { effect_starting_technology_tier_4_tech = yes }
 	c:BLR ?= { effect_starting_technology_tier_3_tech = yes }
+	c:BMB ?= { effect_starting_technology_tier_2_tech = yes }
 	c:BOH ?= { effect_starting_technology_tier_2_tech = yes }
+	c:BRG ?= { effect_starting_technology_tier_1_tech = yes }
 	c:BSH ?= { effect_starting_technology_tier_6_tech = yes }
 	c:BTL ?= { effect_starting_technology_tier_4_tech = yes }
+	c:BUR ?= { effect_starting_technology_tier_4_tech = yes }
 	c:CHG ?= { effect_starting_technology_tier_4_tech = yes }
+	c:CHP ?= { effect_starting_technology_tier_4_tech = yes }
+	c:CIR ?= { effect_starting_technology_tier_3_tech = yes }
+	c:CLM ?= { effect_starting_technology_tier_3_tech = yes }
 	c:CRI ?= { effect_starting_technology_tier_3_tech = yes }
+	c:DAI ?= { effect_starting_technology_tier_4_tech = yes }
 	c:DAR ?= { effect_starting_technology_tier_5_tech = yes }
 	c:DHY ?= { effect_starting_technology_tier_5_tech = yes }
 	c:DNG ?= { effect_starting_technology_tier_3_tech = yes }
@@ -39,6 +48,7 @@ COUNTRIES = {
 	c:GAN ?= { effect_starting_technology_tier_2_tech = yes }
 	c:GEN ?= { effect_starting_technology_tier_2_tech = yes }
 	c:GRQ ?= { effect_starting_technology_tier_7_tech = yes }
+	c:HAN ?= { effect_starting_technology_tier_2_tech = yes }
 	c:HHR ?= { effect_starting_technology_tier_2_tech = yes }
 	c:HIL ?= { effect_starting_technology_tier_2_tech = yes }
 	c:ILO ?= { effect_starting_technology_tier_6_tech = yes }
@@ -46,11 +56,15 @@ COUNTRIES = {
 	c:INC ?= { effect_starting_technology_tier_3_tech = yes }
 	c:IRQ ?= { effect_starting_technology_tier_4_tech = yes }
 	c:JAV ?= { effect_starting_technology_tier_2_tech = yes }
+	c:KAN ?= { effect_starting_technology_tier_5_tech = yes }
 	c:KLM ?= { effect_starting_technology_tier_4_tech = yes }
 	c:KMY ?= { effect_starting_technology_tier_3_tech = yes }
+	c:KNO ?= { effect_starting_technology_tier_5_tech = yes }
+	c:KON ?= { effect_starting_technology_tier_5_tech = yes }
 	c:KRL ?= { effect_starting_technology_tier_2_tech = yes }
 	c:KUB ?= { effect_starting_technology_tier_6_tech = yes }
 	c:KZB ?= { effect_starting_technology_tier_6_tech = yes }
+	c:LBA ?= { effect_starting_technology_tier_6_tech = yes }
 	c:LFG ?= { effect_starting_technology_tier_2_tech = yes }
 	c:LIT ?= { effect_starting_technology_tier_3_tech = yes }
 	c:LOA ?= { effect_starting_technology_tier_7_tech = yes }
@@ -63,6 +77,7 @@ COUNTRIES = {
 	c:MAT ?= { effect_starting_technology_tier_6_tech = yes }
 	c:MCK ?= { effect_starting_technology_tier_4_tech = yes }
 	c:MDR ?= { effect_starting_technology_tier_2_tech = yes }
+	c:MGH ?= { effect_starting_technology_tier_4_tech = yes }
 	c:MIG ?= { effect_starting_technology_tier_4_tech = yes }
 	c:MKS ?= { effect_starting_technology_tier_7_tech = yes }
 	c:MNG ?= { effect_starting_technology_tier_7_tech = yes }
@@ -79,6 +94,7 @@ COUNTRIES = {
 	c:PLA ?= { effect_starting_technology_tier_1_tech = yes }
 	c:PLC ?= { effect_starting_technology_tier_2_tech = yes }
 	c:PLM ?= { effect_starting_technology_tier_2_tech = yes }
+	c:PRU ?= { effect_starting_technology_tier_1_tech = yes }
 	c:PRV ?= { effect_starting_technology_tier_1_tech = yes }
 	c:PSV ?= { effect_starting_technology_tier_3_tech = yes }
 	c:QAJ ?= { effect_starting_technology_tier_4_tech = yes }
@@ -90,8 +106,10 @@ COUNTRIES = {
 	c:SIB ?= { effect_starting_technology_tier_3_tech = yes }
 	c:SRN ?= { effect_starting_technology_tier_4_tech = yes }
 	c:SUA ?= { effect_starting_technology_tier_6_tech = yes }
+	c:SUL ?= { effect_starting_technology_tier_4_tech = yes }
 	c:TAI ?= { effect_starting_technology_tier_4_tech = yes }
 	c:THU ?= { effect_starting_technology_tier_2_tech = yes }
+	c:TNG ?= { effect_starting_technology_tier_4_tech = yes }
 	c:TON ?= { effect_starting_technology_tier_3_tech = yes }
 	c:TUI ?= { effect_starting_technology_tier_7_tech = yes }
 	c:UKR ?= { effect_starting_technology_tier_3_tech = yes }
@@ -100,4 +118,5 @@ COUNTRIES = {
 	c:VIN ?= { effect_starting_technology_tier_2_tech = yes }
 	c:WZB ?= { effect_starting_technology_tier_2_tech = yes }
 	c:YEM ?= { effect_starting_technology_tier_4_tech = yes }
+	c:ZND ?= { effect_starting_technology_tier_4_tech = yes }
 }

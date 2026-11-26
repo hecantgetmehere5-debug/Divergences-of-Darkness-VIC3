@@ -135,6 +135,7 @@ images/             Pictures for this page
 | `tools/vic3_deployments.py` | Starts the attackers of the 1836 wars mobilised on their fronts |
 | `tools/vic3_movements.py` | DoD political movements, built on the closest vanilla movement |
 | `tools/pick_event_pictures.py` | Matches a vanilla picture to each event written new for Vic3 |
+| `tools/dod_recommended.py` | The recommended countries and their descriptions on the game-setup screen |
 | `tools/fix_tag_collisions.py` | Makes the DoD name, definition and flag win where vanilla uses the same tag |
 | `tools/fix_cultures.py`, `tools/fix_journal_entries.py` | Bring cultures and journal entries to the Vic3 1.13 layout |
 | `tools/audit.py` | Static audit: undefined tags, cultures, variables and scopes, duplicate keys, broken text |
