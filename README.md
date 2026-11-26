@@ -31,7 +31,7 @@ By 1836 the world looks nothing like ours. The Plantagenets rule from Paris, a B
 This repository is a **Victoria 3 port** of the Victoria 2 mod. It isn't a line-by-line translation: every storyline has been **rebuilt with Victoria 3's own systems** (journal entries, diplomatic plays, interest groups, laws), keeping the original story, characters and text.
 
 > [!IMPORTANT]
-> **Status: pre-alpha, not yet playable.** All the storyline script exists, but the **map layer** (Vic3 states, populations, capitals and buildings) still needs the Victoria 3 game files to build. The mod has also **not been loaded in-game yet**, so expect script errors on the first run. See [Roadmap](#roadmap).
+> **Status: pre-alpha, not yet playable.** All the storyline script and the 1836 start (map, pops, economy, armies, wars and characters) now exist, built against the Victoria 3 1.13 game files. The mod has **not been loaded in-game yet**, so expect script errors on the first run. See [Roadmap](#roadmap).
 
 ---
 
@@ -71,6 +71,10 @@ This repository is a **Victoria 3 port** of the Victoria 2 mod. It isn't a line-
 | **2,864 flags** | Ported from the original, including republic, communist and fascist variants |
 | **33 cultures, 2 religions** | Anglois, Burgundian, Vinlander, Septiman, Beornian, Qingqiuan and more, plus the Taiping and Inti faiths |
 | **14 starting rulers** | From Henri X and Sigismund V to Huayna Capac IV and Galdan Khan |
+| **280 commanders** | The original mod's starting generals and admirals |
+| **649 states, 1.09 billion pops** | The Vic2 1836 map rebuilt on Vic3 states, with split states, homelands and claims |
+| **~10,500 building levels** | A starting economy for every country |
+| **183 armies, 33 fleets** | Plus starting technology and the nine wars running in 1836 |
 | **42,000+ text entries** | English, plus partial French, German and Spanish |
 | **84 original event pictures** | Restored from the Vic2 mod |
 
@@ -112,7 +116,7 @@ DoD_Vic3/           The Victoria 3 mod itself
   localization/     English, French, German, Spanish
   _unverified/      Drafts not loaded by the game (political movements)
 tools/              Python scripts that convert and check the mod
-start_data/         The Vic2 1836 start (owners, pops, place names), ready for the Vic3 map
+start_data/         The Vic2 1836 start (owners, pops, place names) and its link to the Vic3 map
 docs/               Port plan, gaps list and lore research notes
 images/             Pictures for this page
 ```
@@ -125,6 +129,11 @@ images/             Pictures for this page
 | `tools/port_event_pictures.py` | Restores the original event pictures, matched by event title |
 | `tools/port_translations.py` | Converts the French, German and Spanish text |
 | `tools/vic2_start_data.py` | Extracts the 1836 start: province owners, populations by culture and religion, diplomacy |
+| `tools/vic3_map_link.py` | Links every Vic3 land province to the Vic2 province on the same ground |
+| `tools/vic3_start_setup.py` | Builds states, pops and capitals from that link |
+| `tools/vic3_military.py` | Starting technology, armies and fleets |
+| `tools/vic3_economy.py` | Starting buildings, rescaled from vanilla's 1836 economy |
+| `tools/vic3_characters.py` | Rulers and commanders |
 | `tools/audit.py` | Static audit: undefined tags, cultures, variables and scopes, duplicate keys, broken text |
 
 ---
@@ -149,7 +158,10 @@ images/             Pictures for this page
 - [x] Cultures, religions, starting laws, subjects and rulers
 - [x] Vic2 start data extracted (owners, pops, place names)
 - [x] **Map layer (first pass):** Vic3 states, populations, capitals, basic buildings and armies, generated from the Vic2 1836 start
-- [ ] Starting wars, full economy, navies
+- [x] Starting wars (the nine wars running in the Vic2 1836 start)
+- [x] Starting economy (vanilla 1836 buildings rescaled to the DoD map and owners)
+- [x] Starting technology, mixed armies and navies
+- [x] DoD rulers in place of vanilla's, plus 280 generals and admirals from the Vic2 mod
 - [ ] First in-game load and bug fixing
 - [ ] Political movements (drafted in `_unverified/`)
 - [ ] Custom art for events written new for Vic3

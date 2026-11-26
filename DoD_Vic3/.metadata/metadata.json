@@ -25,7 +25,8 @@
                                                    "common/history/treaties",
                                                    "common/history/production_methods",
                                                    "common/history/lobbies",
-                                                   "common/history/conscription"
+                                                   "common/history/conscription",
+                                                   "common/history/characters"
                                                ]
                          }
 }
