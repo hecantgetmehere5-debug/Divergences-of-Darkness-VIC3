@@ -110,7 +110,9 @@ for m in re.finditer(r"s:(STATE_\w+) = \{(.*?)\n\t\}", t, re.S):
 cd = (MOD / "common/country_definitions/dod_countries.txt").read_text(encoding="utf-8-sig")
 capital = {m.group(1): c.group(1) for m in re.finditer(r"^(\w{3}) = \{(.*?)^\}", cd, re.S | re.M)
            if (c := re.search(r"^\s*capital = (STATE_\w+)", m.group(2), re.M))}
-armies = dict(re.findall(r"c:(\w+) \?= \{.*?count = (\d+)", (MOD / "common/history/military_formations/00_dod_armies.txt").read_text(encoding="utf-8-sig"), re.S))
+armies = collections.Counter()
+for m in re.finditer(r"c:(\w+) \?= \{(.*?)\n\t\}", (MOD / "common/history/military_formations/00_dod_armies.txt").read_text(encoding="utf-8-sig"), re.S):
+    armies[m.group(1)] += sum(int(c) for c in re.findall(r"unit_type:\w+\s*state_region = s:\w+\s*count = (\d+)", m.group(2)))
 tag_pop = collections.Counter()
 for st, d in dpop.items():
     for tg, n in d.items():

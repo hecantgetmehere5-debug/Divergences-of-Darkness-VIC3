@@ -9961,7 +9961,7 @@ BUILDINGS = {
 		region_state:TAI = {
 			create_building = {
 				building = "building_barrack"
-				add_ownership = { country = { country = "c:TAI" levels = 40 } }
+				add_ownership = { country = { country = "c:TAI" levels = 60 } }
 				reserves = 1
 			}
 			create_building = {
@@ -19336,7 +19336,7 @@ BUILDINGS = {
 		region_state:MCK = {
 			create_building = {
 				building = "building_barrack"
-				add_ownership = { country = { country = "c:MCK" levels = 40 } }
+				add_ownership = { country = { country = "c:MCK" levels = 60 } }
 				reserves = 1
 			}
 			create_building = {
