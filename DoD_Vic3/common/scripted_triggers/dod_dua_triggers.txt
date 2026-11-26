@@ -6,7 +6,7 @@ dod_dua_anglois_path = { has_variable = dod_path_anglois }
 
 # The Anglois Dilemma is running and no revolution has broken out
 dod_dua_dilemma_active = {
-	this = c:DUA
+	c:DUA ?= this
 	has_journal_entry = je_dod_anglois_dilemma
 }
 

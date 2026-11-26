@@ -81,8 +81,8 @@ je_dod_plantagenian_slavery = {
 		trigger = {
 				NOT = {
 					OR = {
-						this = c:PLA
-						this = c:ARC
+						c:PLA ?= this
+						c:ARC ?= this
 					}
 				}
 	
@@ -191,7 +191,7 @@ je_dod_arcadian_hegemony = {
 		flags = { hidden invalid_outcome }
 		conclusion_desc = je_dod_arcadian_hegemony_invalid_desc
 		trigger = {
-				NOT = { this = c:ARC }
+				NOT = { c:ARC ?= this }
 	
 		}
 	}
@@ -267,8 +267,8 @@ je_dod_beornian_communion = {
 		trigger = {
 				NOT = {
 					OR = {
-						this = c:NAN
-						this = c:HBE
+						c:NAN ?= this
+						c:HBE ?= this
 					}
 				}
 	
@@ -344,7 +344,7 @@ je_dod_savoyard_succession = {
 		flags = { hidden invalid_outcome }
 		conclusion_desc = je_dod_savoyard_succession_invalid_desc
 		trigger = {
-				NOT = { this = c:SAR }
+				NOT = { c:SAR ?= this }
 	
 		}
 	}

@@ -13,8 +13,8 @@ dod_wiki.1 = {
 
 	trigger = {
 		OR = {
-			this = c:HLR
-			this = c:BOH
+			c:HLR ?= this
+			c:BOH ?= this
 		}
 		is_at_war = yes
 		game_date >= 1840.1.1
@@ -45,8 +45,8 @@ dod_wiki.2 = {
 
 	trigger = {
 		OR = {
-			this = c:HLR
-			this = c:BOH
+			c:HLR ?= this
+			c:BOH ?= this
 		}
 		game_date >= 1921.1.1
 		NOT = { has_global_variable = dod_stone_centenary }
@@ -79,7 +79,7 @@ dod_wiki.3 = {
 			country_has_primary_culture = cu:north_german
 			country_has_primary_culture = cu:south_german
 			country_has_primary_culture = cu:rheinish
-			this = c:HLR
+			c:HLR ?= this
 		}
 		game_date >= 1845.1.1
 		NOT = { has_global_variable = dod_ein_deutschland }
@@ -116,8 +116,8 @@ dod_wiki.4 = {
 
 	trigger = {
 		OR = {
-			this = c:DUA
-			this = c:PRV
+			c:DUA ?= this
+			c:PRV ?= this
 		}
 		game_date >= 1848.1.1
 		NOT = { has_global_variable = dod_treaty_rome }
@@ -129,14 +129,14 @@ dod_wiki.4 = {
 
 	option = {
 		name = dod_wiki.4.a
-		trigger = { this = c:DUA }
+		trigger = { c:DUA ?= this }
 		default_option = yes
 		add_modifier = { name = dod_treaty_of_rome months = 60 }
 	}
 
 	option = {
 		name = dod_wiki.4.b
-		trigger = { NOT = { this = c:DUA } }
+		trigger = { NOT = { c:DUA ?= this } }
 		add_modifier = { name = dod_valois_grievance months = 60 }
 	}
 }
@@ -153,7 +153,7 @@ dod_wiki.5 = {
 	duration = 3
 
 	trigger = {
-		this = c:BRG
+		c:BRG ?= this
 		game_date >= 1884.1.1
 		NOT = { has_global_variable = dod_brg_400 }
 	}
@@ -181,7 +181,7 @@ dod_wiki.6 = {
 	duration = 3
 
 	trigger = {
-		this = c:VIN
+		c:VIN ?= this
 		game_date >= 1840.1.1
 		NOT = { has_global_variable = dod_baudissin }
 	}
@@ -222,7 +222,7 @@ dod_wiki.7 = {
 	duration = 3
 
 	trigger = {
-		this = c:NBG
+		c:NBG ?= this
 		game_date >= 1850.1.1
 		NOT = { has_global_variable = dod_geloes }
 	}
@@ -251,9 +251,9 @@ dod_wiki.8 = {
 
 	trigger = {
 		OR = {
-			this = c:DUA
-			this = c:PLA
-			this = c:ARC
+			c:DUA ?= this
+			c:PLA ?= this
+			c:ARC ?= this
 		}
 		game_date >= 1890.1.1
 		NOT = { has_global_variable = dod_columbus }
@@ -283,8 +283,8 @@ dod_wiki.9 = {
 
 	trigger = {
 		OR = {
-			this = c:DNG
-			this = c:GAN
+			c:DNG ?= this
+			c:GAN ?= this
 		}
 		game_date >= 1880.1.1
 		NOT = { has_global_variable = dod_zheng_he }
@@ -314,8 +314,8 @@ dod_wiki.10 = {
 
 	trigger = {
 		OR = {
-			this = c:SPA
-			this = c:DUA
+			c:SPA ?= this
+			c:DUA ?= this
 		}
 		game_date >= 1836.6.1
 		NOT = { has_global_variable = dod_saadi }

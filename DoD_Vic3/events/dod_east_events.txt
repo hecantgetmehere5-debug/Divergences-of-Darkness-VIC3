@@ -12,7 +12,7 @@ dod_east.1 = {
 	duration = 3
 
 	trigger = {
-		this = c:TNG
+		c:TNG ?= this
 		exists = c:MIG
 		is_at_war = no
 		game_date >= 1840.1.1
@@ -53,7 +53,7 @@ dod_east.2 = {
 	duration = 3
 
 	trigger = {
-		this = c:TNG
+		c:TNG ?= this
 		has_variable = dod_regency_war
 		is_at_war = no
 		NOT = { exists = c:MIG }
@@ -79,7 +79,7 @@ dod_east.3 = {
 	duration = 3
 
 	trigger = {
-		this = c:MIG
+		c:MIG ?= this
 		is_at_war = no
 		exists = c:TNG
 		c:TNG = { has_variable = dod_regency_war }
@@ -110,7 +110,7 @@ dod_east.10 = {
 	duration = 3
 
 	trigger = {
-		this = c:JAP
+		c:JAP ?= this
 		game_date >= 1855.1.1
 		is_at_war = no
 		NOT = { exists = c:KOR }
@@ -156,7 +156,7 @@ dod_east.20 = {
 	duration = 3
 
 	trigger = {
-		this = c:CHG
+		c:CHG ?= this
 		game_date >= 1840.1.1
 		NOT = { has_variable = dod_east_seen_20 }
 	}
@@ -190,7 +190,7 @@ dod_east.21 = {
 	duration = 3
 
 	trigger = {
-		this = c:CHG
+		c:CHG ?= this
 		has_variable = dod_stroganov
 		game_date >= 1848.1.1
 		NOT = { has_variable = dod_east_seen_21 }
@@ -227,7 +227,7 @@ dod_east.22 = {
 	duration = 3
 
 	trigger = {
-		this = c:CHG
+		c:CHG ?= this
 		has_variable = dod_baron_spurned
 		is_at_war = no
 		game_date >= 1852.1.1
@@ -268,7 +268,7 @@ dod_east.30 = {
 	duration = 3
 
 	trigger = {
-		this = c:CHG
+		c:CHG ?= this
 		exists = c:JAP
 		exists = c:TIB
 		is_at_war = no
@@ -326,7 +326,7 @@ dod_east.32 = {
 	duration = 3
 
 	trigger = {
-		this = c:JAP
+		c:JAP ?= this
 		exists = c:CHG
 		country_rank >= rank_value:great_power
 		is_at_war = no

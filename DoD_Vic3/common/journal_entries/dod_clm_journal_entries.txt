@@ -29,8 +29,8 @@ je_dod_colombian_independence = {
 					any_state = {
 						owner = {
 							OR = {
-								this = c:SPA
-								this = c:SPC
+								c:SPA ?= this
+								c:SPC ?= this
 							}
 						}
 						state_region = {
@@ -54,7 +54,7 @@ je_dod_colombian_independence = {
 		flags = { hidden invalid_outcome }
 		conclusion_desc = je_dod_colombian_independence_invalid_desc
 		trigger = {
-				NOT = { this = c:CLM }
+				NOT = { c:CLM ?= this }
 	
 		}
 	}

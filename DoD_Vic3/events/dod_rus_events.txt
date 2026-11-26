@@ -14,7 +14,7 @@ dod_rus.1 = {
 	trigger = {
 		exists = c:RUS
 		country_has_primary_culture = cu:russian
-		NOT = { this = c:RUS }
+		NOT = { c:RUS ?= this }
 	}
 
 	option = {
@@ -81,7 +81,7 @@ dod_rus.2 = {
 	duration = 3
 
 	trigger = {
-		this = c:RUS
+		c:RUS ?= this
 		is_at_war = no
 		NOT = { exists = c:MUS }
 		NOT = { exists = c:NOV }
@@ -111,7 +111,7 @@ dod_rus.3 = {
 	duration = 3
 
 	trigger = {
-		this = c:RUS
+		c:RUS ?= this
 		is_at_war = no
 		country_rank >= rank_value:great_power
 		NOT = { exists = c:TAR }
@@ -143,7 +143,7 @@ dod_rus.4 = {
 	duration = 3
 
 	trigger = {
-		this = c:RUS
+		c:RUS ?= this
 		is_at_war = no
 		exists = c:NOV
 		c:NOV = { is_subject_of = root }
@@ -259,7 +259,7 @@ dod_rus.8 = {
 	duration = 3
 
 	trigger = {
-		this = c:NOV
+		c:NOV ?= this
 		is_at_war = no
 		exists = c:MUS
 		exists = c:SCA
@@ -373,17 +373,17 @@ dod_rus.12 = {
 
 	trigger = {
 		OR = {
-			this = c:NOG
-			this = c:ASK
-			this = c:CRI
-			this = c:SIB
+			c:NOG ?= this
+			c:ASK ?= this
+			c:CRI ?= this
+			c:SIB ?= this
 		}
 		is_at_war = yes
 		any_country = {
 			OR = {
-				this = c:MUS
-				this = c:NOV
-				this = c:RUS
+				c:MUS ?= this
+				c:NOV ?= this
+				c:RUS ?= this
 			}
 			is_at_war = yes
 		}
@@ -409,7 +409,7 @@ dod_rus.13 = {
 	duration = 3
 
 	trigger = {
-		this = c:CRI
+		c:CRI ?= this
 		NOT = { has_variable = dod_rus_seen_13 }
 	}
 

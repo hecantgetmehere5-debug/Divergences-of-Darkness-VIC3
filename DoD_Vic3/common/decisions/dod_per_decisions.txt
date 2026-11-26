@@ -29,7 +29,7 @@ dod_unite_iran = {
 
 dod_iranshahr = {
 	is_shown = {
-		this = c:PER
+		c:PER ?= this
 		NOT = { has_variable = dod_iranshahr }
 	}
 	possible = {
@@ -60,7 +60,7 @@ dod_iranshahr = {
 
 dod_reclaim_mawarannahr = {
 	is_shown = {
-		this = c:AFS
+		c:AFS ?= this
 		NOT = { has_variable = dod_mawarannahr }
 	}
 	possible = {
@@ -89,8 +89,8 @@ dod_reclaim_mawarannahr = {
 dod_revoke_karabakh = {
 	is_shown = {
 		OR = {
-			this = c:AFS
-			this = c:PER
+			c:AFS ?= this
+			c:PER ?= this
 		}
 		NOT = { has_variable = dod_karabakh }
 	}
@@ -120,9 +120,9 @@ dod_revoke_karabakh = {
 dod_iran_armenians = {
 	is_shown = {
 		OR = {
-			this = c:AFS
-			this = c:PER
-			this = c:QAJ
+			c:AFS ?= this
+			c:PER ?= this
+			c:QAJ ?= this
 		}
 		NOT = { country_has_primary_culture = cu:armenian }
 	}
@@ -137,7 +137,7 @@ dod_iran_armenians = {
 
 dod_settle_nomads = {
 	is_shown = {
-		this = c:ZND
+		c:ZND ?= this
 		NOT = { has_variable = dod_settled }
 	}
 	possible = {
@@ -154,8 +154,8 @@ dod_settle_nomads = {
 dod_avenge_karbala = {
 	is_shown = {
 		OR = {
-			this = c:ZND
-			this = c:PER
+			c:ZND ?= this
+			c:PER ?= this
 		}
 		NOT = { has_variable = dod_karbala }
 	}
@@ -180,7 +180,7 @@ dod_avenge_karbala = {
 
 dod_lahijan_tea = {
 	is_shown = {
-		this = c:QAJ
+		c:QAJ ?= this
 		NOT = { has_variable = dod_tea }
 	}
 	possible = {
@@ -196,7 +196,7 @@ dod_lahijan_tea = {
 
 dod_kk_modern_army = {
 	is_shown = {
-		this = c:QAJ
+		c:QAJ ?= this
 		NOT = { has_variable = dod_kk_army }
 	}
 	possible = {
@@ -212,7 +212,7 @@ dod_kk_modern_army = {
 
 dod_irq_shield = {
 	is_shown = {
-		this = c:IRQ
+		c:IRQ ?= this
 		NOT = { has_variable = dod_irq_shield }
 	}
 	possible = {
@@ -237,7 +237,7 @@ dod_irq_shield = {
 
 dod_irq_persian_dream = {
 	is_shown = {
-		this = c:IRQ
+		c:IRQ ?= this
 		NOT = { has_variable = dod_irq_persia }
 	}
 	possible = {
@@ -330,7 +330,7 @@ dod_arab_nationalism = {
 
 dod_restore_rashids = {
 	is_shown = {
-		this = c:ALH
+		c:ALH ?= this
 		NOT = { exists = c:NEJ }
 	}
 	possible = {
@@ -345,7 +345,7 @@ dod_restore_rashids = {
 
 dod_claim_caliphate = {
 	is_shown = {
-		this = c:NEJ
+		c:NEJ ?= this
 		NOT = { has_variable = dod_caliph }
 	}
 	possible = {

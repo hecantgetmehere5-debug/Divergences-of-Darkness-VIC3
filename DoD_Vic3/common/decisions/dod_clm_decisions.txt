@@ -2,7 +2,7 @@
 
 dod_declare_colombian_independence = {
 	is_shown = {
-		this = c:CLM
+		c:CLM ?= this
 		has_journal_entry = je_dod_colombian_independence
 		NOT = { has_variable = dod_expel_spanish }
 	}
@@ -10,8 +10,8 @@ dod_declare_colombian_independence = {
 		any_state = {
 			owner = {
 				OR = {
-					this = c:SPA
-					this = c:SPC
+					c:SPA ?= this
+					c:SPC ?= this
 				}
 			}
 			state_region = {
@@ -30,8 +30,8 @@ dod_declare_colombian_independence = {
 			limit = {
 				owner = {
 					OR = {
-						this = c:SPA
-						this = c:SPC
+						c:SPA ?= this
+						c:SPC ?= this
 					}
 				}
 				state_region = {
@@ -52,8 +52,8 @@ dod_declare_colombian_independence = {
 dod_treaty_of_habana = {
 	is_shown = {
 		OR = {
-			this = c:SPA
-			this = c:SPC
+			c:SPA ?= this
+			c:SPC ?= this
 		}
 		exists = c:CLM
 		NOT = { has_variable = dod_habana_signed }
@@ -72,7 +72,7 @@ dod_treaty_of_habana = {
 
 dod_colombian_empire = {
 	is_shown = {
-		this = c:CLM
+		c:CLM ?= this
 		has_variable = dod_clm_united
 		NOT = { has_law = law_type:law_monarchy }
 	}
@@ -89,8 +89,8 @@ dod_colombian_empire = {
 dod_colombian_claims = {
 	is_shown = {
 		OR = {
-			this = c:CLM
-			this = c:MEX
+			c:CLM ?= this
+			c:MEX ?= this
 		}
 		NOT = { has_variable = dod_colombian_claims }
 	}
@@ -122,10 +122,10 @@ dod_colombian_claims = {
 dod_colombian_unity_congress = {
 	is_shown = {
 		OR = {
-			this = c:MEX
-			this = c:UCA
-			this = c:GRA
-			this = c:LST
+			c:MEX ?= this
+			c:UCA ?= this
+			c:GRA ?= this
+			c:LST ?= this
 		}
 		NOT = { exists = c:CLM }
 		NOT = { has_global_variable = dod_second_congress }
@@ -140,10 +140,10 @@ dod_colombian_unity_congress = {
 		every_country = {
 			limit = {
 				OR = {
-					this = c:MEX
-					this = c:UCA
-					this = c:GRA
-					this = c:LST
+					c:MEX ?= this
+					c:UCA ?= this
+					c:GRA ?= this
+					c:LST ?= this
 				}
 				NOT = { this = root }
 			}
@@ -228,7 +228,7 @@ dod_form_granada = {
 
 dod_reclaim_granada = {
 	is_shown = {
-		this = c:GRA
+		c:GRA ?= this
 		exists = c:INC
 		NOT = { has_variable = dod_reclaim_granada }
 	}
@@ -397,7 +397,7 @@ dod_mesoamerican_unity = {
 
 dod_inca_empire = {
 	is_shown = {
-		this = c:INC
+		c:INC ?= this
 		NOT = { has_variable = dod_inca_empire }
 	}
 	possible = {
@@ -426,7 +426,7 @@ dod_inca_empire = {
 
 dod_inca_mining = {
 	is_shown = {
-		this = c:INC
+		c:INC ?= this
 		NOT = { has_variable = dod_inca_mining }
 	}
 	possible = {

@@ -12,7 +12,7 @@ dod_elb.1 = {
 	duration = 3
 
 	trigger = {
-		this = c:CAE
+		c:CAE ?= this
 		game_date >= 1850.1.1
 		is_at_war = no
 		exists = c:ASH
@@ -143,11 +143,11 @@ dod_elb.11 = {
 		first_valid = {
 			triggered_desc = {
 				desc = dod_elb.11.d_courland
-				trigger = { this = c:KRL }
+				trigger = { c:KRL ?= this }
 			}
 			triggered_desc = {
 				desc = dod_elb.11.d_livonia
-				trigger = { this = c:LAT }
+				trigger = { c:LAT ?= this }
 			}
 			triggered_desc = {
 				desc = dod_elb.11.d_baltenland
@@ -251,7 +251,7 @@ dod_elb.20 = {
 	duration = 3
 
 	trigger = {
-		NOT = { this = c:CAE }
+		NOT = { c:CAE ?= this }
 		exists = c:CAE
 		c:CAE = { NOT = { dod_is_authoritarian = yes } }
 		any_scope_state = { dod_is_baltic_elbian_state = yes }
@@ -325,7 +325,7 @@ dod_elb.22 = {
 	duration = 3
 
 	trigger = {
-		this = c:CAE
+		c:CAE ?= this
 		has_variable = dod_baltic_claims
 		NOT = { exists = c:BLT }
 		NOT = { dod_is_authoritarian = yes }
@@ -369,7 +369,7 @@ dod_elb.30 = {
 	duration = 3
 
 	trigger = {
-		this = c:CAE
+		c:CAE ?= this
 		dod_is_authoritarian = yes
 		is_at_war = no
 		NOT = { exists = c:NGF }
@@ -459,7 +459,7 @@ dod_elb.40 = {
 	duration = 3
 
 	trigger = {
-		this = c:CAE
+		c:CAE ?= this
 		has_variable = dod_baltic_integrated
 		is_at_war = no
 		NOT = { exists = c:BOH }

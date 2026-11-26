@@ -1,0 +1,233 @@
+﻿# Starting alliances from the Vic2 mod's diplomacy history. Vic3 1.13 makes alliances treaties.
+TREATIES = {
+	create_treaty = {
+		first_country = c:DNG
+		second_country = c:INC
+		is_draft = no
+		entered_into_force_on = 1836.1.1
+		binding_period = { years = 10 }
+		articles_to_create = {
+			{ article = alliance }
+		}
+	}
+	create_treaty = {
+		first_country = c:MCK
+		second_country = c:MGL
+		is_draft = no
+		entered_into_force_on = 1836.1.1
+		binding_period = { years = 10 }
+		articles_to_create = {
+			{ article = alliance }
+		}
+	}
+	create_treaty = {
+		first_country = c:JAI
+		second_country = c:JAS
+		is_draft = no
+		entered_into_force_on = 1836.1.1
+		binding_period = { years = 10 }
+		articles_to_create = {
+			{ article = alliance }
+		}
+	}
+	create_treaty = {
+		first_country = c:JAI
+		second_country = c:JOD
+		is_draft = no
+		entered_into_force_on = 1836.1.1
+		binding_period = { years = 10 }
+		articles_to_create = {
+			{ article = alliance }
+		}
+	}
+	create_treaty = {
+		first_country = c:JAI
+		second_country = c:MEW
+		is_draft = no
+		entered_into_force_on = 1836.1.1
+		binding_period = { years = 10 }
+		articles_to_create = {
+			{ article = alliance }
+		}
+	}
+	create_treaty = {
+		first_country = c:JAI
+		second_country = c:BIK
+		is_draft = no
+		entered_into_force_on = 1836.1.1
+		binding_period = { years = 10 }
+		articles_to_create = {
+			{ article = alliance }
+		}
+	}
+	create_treaty = {
+		first_country = c:ARA
+		second_country = c:VEN
+		is_draft = no
+		entered_into_force_on = 1836.1.1
+		binding_period = { years = 10 }
+		articles_to_create = {
+			{ article = alliance }
+		}
+	}
+	create_treaty = {
+		first_country = c:DUA
+		second_country = c:SPA
+		is_draft = no
+		entered_into_force_on = 1836.1.1
+		binding_period = { years = 10 }
+		articles_to_create = {
+			{ article = alliance }
+		}
+	}
+	create_treaty = {
+		first_country = c:SPA
+		second_country = c:VIJ
+		is_draft = no
+		entered_into_force_on = 1836.1.1
+		binding_period = { years = 10 }
+		articles_to_create = {
+			{ article = alliance }
+		}
+	}
+	create_treaty = {
+		first_country = c:HUN
+		second_country = c:PLC
+		is_draft = no
+		entered_into_force_on = 1836.1.1
+		binding_period = { years = 10 }
+		articles_to_create = {
+			{ article = alliance }
+		}
+	}
+	create_treaty = {
+		first_country = c:PLC
+		second_country = c:MOL
+		is_draft = no
+		entered_into_force_on = 1836.1.1
+		binding_period = { years = 10 }
+		articles_to_create = {
+			{ article = alliance }
+		}
+	}
+	create_treaty = {
+		first_country = c:SCA
+		second_country = c:BRG
+		is_draft = no
+		entered_into_force_on = 1836.1.1
+		binding_period = { years = 10 }
+		articles_to_create = {
+			{ article = alliance }
+		}
+	}
+	create_treaty = {
+		first_country = c:LOT
+		second_country = c:NAN
+		is_draft = no
+		entered_into_force_on = 1836.1.1
+		binding_period = { years = 10 }
+		articles_to_create = {
+			{ article = alliance }
+		}
+	}
+	create_treaty = {
+		first_country = c:TUR
+		second_country = c:CRI
+		is_draft = no
+		entered_into_force_on = 1836.1.1
+		binding_period = { years = 10 }
+		articles_to_create = {
+			{ article = alliance }
+		}
+	}
+	create_treaty = {
+		first_country = c:TUR
+		second_country = c:ASK
+		is_draft = no
+		entered_into_force_on = 1836.1.1
+		binding_period = { years = 10 }
+		articles_to_create = {
+			{ article = alliance }
+		}
+	}
+	create_treaty = {
+		first_country = c:OMA
+		second_country = c:YEM
+		is_draft = no
+		entered_into_force_on = 1836.1.1
+		binding_period = { years = 10 }
+		articles_to_create = {
+			{ article = alliance }
+		}
+	}
+	create_treaty = {
+		first_country = c:FUN
+		second_country = c:YEM
+		is_draft = no
+		entered_into_force_on = 1836.1.1
+		binding_period = { years = 10 }
+		articles_to_create = {
+			{ article = alliance }
+		}
+	}
+	create_treaty = {
+		first_country = c:TRN
+		second_country = c:LWE
+		is_draft = no
+		entered_into_force_on = 1836.1.1
+		binding_period = { years = 10 }
+		articles_to_create = {
+			{ article = alliance }
+		}
+	}
+	create_treaty = {
+		first_country = c:TRN
+		second_country = c:NFL
+		is_draft = no
+		entered_into_force_on = 1836.1.1
+		binding_period = { years = 10 }
+		articles_to_create = {
+			{ article = alliance }
+		}
+	}
+	create_treaty = {
+		first_country = c:LWE
+		second_country = c:NFL
+		is_draft = no
+		entered_into_force_on = 1836.1.1
+		binding_period = { years = 10 }
+		articles_to_create = {
+			{ article = alliance }
+		}
+	}
+	create_treaty = {
+		first_country = c:TUR
+		second_country = c:HDJ
+		is_draft = no
+		entered_into_force_on = 1836.1.1
+		binding_period = { years = 10 }
+		articles_to_create = {
+			{ article = alliance }
+		}
+	}
+	create_treaty = {
+		first_country = c:HUN
+		second_country = c:WAL
+		is_draft = no
+		entered_into_force_on = 1836.1.1
+		binding_period = { years = 10 }
+		articles_to_create = {
+			{ article = alliance }
+		}
+	}
+	create_treaty = {
+		first_country = c:MCK
+		second_country = c:KOR
+		is_draft = no
+		entered_into_force_on = 1836.1.1
+		binding_period = { years = 10 }
+		articles_to_create = {
+			{ article = alliance }
+		}
+	}
+}

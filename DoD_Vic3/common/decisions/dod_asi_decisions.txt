@@ -2,7 +2,7 @@
 
 dod_seoul_treaty = {
 	is_shown = {
-		this = c:JAP
+		c:JAP ?= this
 		exists = c:KOR
 		NOT = { has_variable = dod_seoul_treaty }
 	}
@@ -20,7 +20,7 @@ dod_seoul_treaty = {
 
 dod_hawaii_offer = {
 	is_shown = {
-		this = c:JAP
+		c:JAP ?= this
 		exists = c:HAW
 		NOT = { has_variable = dod_hawaii_offer }
 	}
@@ -37,7 +37,7 @@ dod_hawaii_offer = {
 
 dod_ainu_protectorate = {
 	is_shown = {
-		this = c:JAP
+		c:JAP ?= this
 		any_country = {
 			country_has_primary_culture = cu:ainu
 			is_subject_of = root
@@ -60,7 +60,7 @@ dod_ainu_protectorate = {
 
 dod_integrate_kaiganese = {
 	is_shown = {
-		this = c:JAP
+		c:JAP ?= this
 		NOT = { country_has_primary_culture = cu:kaiganese }
 	}
 	possible = {
@@ -75,16 +75,16 @@ dod_integrate_kaiganese = {
 dod_unequal_treaty_decision = {
 	is_shown = {
 		country_rank >= rank_value:great_power
-		NOT = { OR = { 	this = c:CHI 	this = c:MIG 	this = c:TNG } }
+		NOT = { OR = { 	c:CHI ?= this 	c:MIG ?= this 	c:TNG ?= this } }
 		NOT = { has_variable = dod_unequal_treaty_sent }
 	}
 	possible = {
 		is_at_war = no
 		any_country = {
 			OR = {
-				this = c:CHI
-				this = c:MIG
-				this = c:TNG
+				c:CHI ?= this
+				c:MIG ?= this
+				c:TNG ?= this
 			}
 			NOT = { has_variable = dod_treaty_demander }
 			NOT = { has_modifier = dod_unequal_treaty }
@@ -95,9 +95,9 @@ dod_unequal_treaty_decision = {
 		random_country = {
 			limit = {
 				OR = {
-					this = c:CHI
-					this = c:MIG
-					this = c:TNG
+					c:CHI ?= this
+					c:MIG ?= this
+					c:TNG ?= this
 				}
 				NOT = { has_variable = dod_treaty_demander }
 				NOT = { has_modifier = dod_unequal_treaty }
@@ -112,7 +112,7 @@ dod_unequal_treaty_decision = {
 
 dod_zhourao_destiny = {
 	is_shown = {
-		this = c:GAN
+		c:GAN ?= this
 		NOT = { has_variable = dod_zhourao_destiny }
 	}
 	possible = {
@@ -134,7 +134,7 @@ dod_zhourao_destiny = {
 
 dod_zhourao_tributaries = {
 	is_shown = {
-		this = c:GAN
+		c:GAN ?= this
 		any_country = { is_subject_of = root }
 	}
 	possible = {
@@ -151,7 +151,7 @@ dod_zhourao_tributaries = {
 
 dod_indochina_old_borders = {
 	is_shown = {
-		this = c:DAI
+		c:DAI ?= this
 		NOT = { has_variable = dod_dai_borders }
 	}
 	possible = {
@@ -179,7 +179,7 @@ dod_indochina_old_borders = {
 
 dod_khmer_peninsula = {
 	is_shown = {
-		this = c:SIA
+		c:SIA ?= this
 		NOT = { has_variable = dod_sia_peninsula }
 	}
 	possible = {
@@ -240,7 +240,7 @@ dod_form_nusantara = {
 
 dod_greater_nusantara = {
 	is_shown = {
-		this = c:NUS
+		c:NUS ?= this
 		NOT = { has_variable = dod_greater_nusantara }
 	}
 	possible = {
@@ -370,7 +370,7 @@ dod_form_rajputana = {
 
 dod_gate_of_india = {
 	is_shown = {
-		this = c:AFG
+		c:AFG ?= this
 		NOT = { has_variable = dod_gate_of_india }
 	}
 	possible = {

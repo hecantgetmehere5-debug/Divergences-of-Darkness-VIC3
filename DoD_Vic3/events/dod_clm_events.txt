@@ -12,7 +12,7 @@ dod_clm.1 = {
 	duration = 3
 
 	trigger = {
-		this = c:CLM
+		c:CLM ?= this
 		is_at_war = yes
 		has_journal_entry = je_dod_colombian_independence
 		NOT = { has_variable = dod_clm_seen_1 }
@@ -268,7 +268,7 @@ dod_clm.20 = {
 	duration = 3
 
 	trigger = {
-		this = c:CLM
+		c:CLM ?= this
 		has_variable = dod_clm_united
 		NOT = { has_law = law_type:law_autocracy }
 		game_date >= 1845.1.1
@@ -306,7 +306,7 @@ dod_clm.21 = {
 	duration = 3
 
 	trigger = {
-		this = c:CLM
+		c:CLM ?= this
 		has_variable = dod_clm_united
 		has_law = law_type:law_autocracy
 		game_date >= 1855.1.1
@@ -344,7 +344,7 @@ dod_clm.22 = {
 	duration = 3
 
 	trigger = {
-		this = c:CLM
+		c:CLM ?= this
 		NOT = { has_law = law_type:law_slavery_banned }
 		game_date >= 1840.1.1
 		NOT = { has_variable = dod_clm_seen_22 }
@@ -390,7 +390,7 @@ dod_clm.23 = {
 	duration = 3
 
 	trigger = {
-		this = c:CLM
+		c:CLM ?= this
 		has_variable = dod_almasi_revolt
 	}
 
@@ -430,8 +430,8 @@ dod_clm.24 = {
 
 	trigger = {
 		OR = {
-			this = c:CLM
-			this = c:MEX
+			c:CLM ?= this
+			c:MEX ?= this
 		}
 		game_date >= 1855.1.1
 		NOT = { exists = c:CMN }
@@ -480,8 +480,8 @@ dod_clm.25 = {
 
 	trigger = {
 		OR = {
-			this = c:CLM
-			this = c:MEX
+			c:CLM ?= this
+			c:MEX ?= this
 		}
 		game_date >= 1860.1.1
 		NOT = { has_variable = dod_clm_seen_25 }
@@ -637,7 +637,7 @@ dod_clm.40 = {
 	duration = 3
 
 	trigger = {
-		this = c:INC
+		c:INC ?= this
 		game_date >= 1840.1.1
 		NOT = { has_variable = dod_clm_seen_40 }
 	}
@@ -665,7 +665,7 @@ dod_clm.41 = {
 	duration = 3
 
 	trigger = {
-		this = c:INC
+		c:INC ?= this
 		has_variable = dod_clm_seen_40
 		NOT = { has_variable = dod_clm_seen_41 }
 	}
@@ -693,7 +693,7 @@ dod_clm.42 = {
 	duration = 3
 
 	trigger = {
-		this = c:INC
+		c:INC ?= this
 		has_variable = dod_clm_seen_40
 		any_state = {
 			state_region = { is_homeland = cu:quechua }
@@ -738,7 +738,7 @@ dod_clm.50 = {
 	duration = 3
 
 	trigger = {
-		this = c:AMA
+		c:AMA ?= this
 		is_at_war = no
 		NOT = { has_variable = dod_clm_seen_50 }
 	}
@@ -781,7 +781,7 @@ dod_clm.16 = {
 
 	trigger = {
 		exists = c:CLM
-		NOT = { this = c:CLM }
+		NOT = { c:CLM ?= this }
 	}
 
 	option = {

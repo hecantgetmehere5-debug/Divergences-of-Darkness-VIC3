@@ -91,55 +91,55 @@ dod_cong.1 = {
 			AND = {
 				exists = c:HLR
 				c:HLR = { has_modifier = dod_imperial_hegemony }
-				NOT = { this = c:HLR }
+				NOT = { c:HLR ?= this }
 			}
 			AND = {
 				exists = c:SGF
-				NOT = { this = c:SGF }
+				NOT = { c:SGF ?= this }
 			}
 			AND = {
 				exists = c:CAE
-				NOT = { this = c:CAE }
+				NOT = { c:CAE ?= this }
 			}
 			AND = {
 				exists = c:ARI
-				NOT = { this = c:ARI }
+				NOT = { c:ARI ?= this }
 			}
 			AND = {
 				exists = c:PLC
 				c:PLC = { has_variable = dod_lublin_renewed }
-				NOT = { this = c:PLC }
+				NOT = { c:PLC ?= this }
 			}
 			AND = {
 				exists = c:RUS
 				c:RUS = { country_rank >= rank_value:great_power }
-				NOT = { this = c:RUS }
+				NOT = { c:RUS ?= this }
 			}
 			AND = {
 				exists = c:SPA
 				c:SPA = { has_variable = dod_iberian_union }
-				NOT = { this = c:SPA }
+				NOT = { c:SPA ?= this }
 			}
 			AND = {
 				exists = c:SCA
 				c:SCA = { country_has_primary_culture = cu:north_german }
-				NOT = { this = c:SCA }
+				NOT = { c:SCA ?= this }
 			}
 			AND = {
 				has_global_variable = dod_valois_italy
 				exists = c:ITA
-				NOT = { this = c:ITA }
+				NOT = { c:ITA ?= this }
 			}
 			AND = {
 				exists = c:DUA
 				c:DUA = { has_variable = dod_anglois_accepted }
-				NOT = { this = c:DUA }
+				NOT = { c:DUA ?= this }
 			}
 			AND = {
 				exists = c:ENL
 				exists = c:DUA
 				c:ENL = { is_at_war = no }
-				NOT = { this = c:ENL }
+				NOT = { c:ENL ?= this }
 			}
 		}
 	}

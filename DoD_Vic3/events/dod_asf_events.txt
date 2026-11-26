@@ -13,11 +13,11 @@ dod_asf.1 = {
 
 	trigger = {
 		OR = {
-			this = c:CHI
-			this = c:MIG
-			this = c:TNG
-			this = c:TAI
-			this = c:MCK
+			c:CHI ?= this
+			c:MIG ?= this
+			c:TNG ?= this
+			c:TAI ?= this
+			c:MCK ?= this
 		}
 		NOT = { has_variable = dod_asf_seen_1 }
 	}
@@ -51,7 +51,7 @@ dod_asf.2 = {
 	duration = 3
 
 	trigger = {
-		this = c:MIG
+		c:MIG ?= this
 		NOT = { has_variable = dod_asf_seen_2 }
 	}
 
@@ -85,7 +85,7 @@ dod_asf.3 = {
 	duration = 3
 
 	trigger = {
-		this = c:TAI
+		c:TAI ?= this
 		NOT = { has_variable = dod_asf_seen_3 }
 	}
 
@@ -120,7 +120,7 @@ dod_asf.4 = {
 	duration = 3
 
 	trigger = {
-		this = c:TNG
+		c:TNG ?= this
 		NOT = { has_variable = dod_asf_seen_4 }
 	}
 
@@ -155,7 +155,7 @@ dod_asf.10 = {
 	duration = 3
 
 	trigger = {
-		this = c:JAP
+		c:JAP ?= this
 		NOT = { has_variable = dod_asf_seen_10 }
 	}
 
@@ -182,7 +182,7 @@ dod_asf.11 = {
 	duration = 3
 
 	trigger = {
-		this = c:JAP
+		c:JAP ?= this
 		any_scope_state = { state_region = { is_homeland = cu:korean } }
 		NOT = { has_variable = dod_asf_seen_11 }
 	}
@@ -217,7 +217,7 @@ dod_asf.12 = {
 	duration = 3
 
 	trigger = {
-		this = c:JAP
+		c:JAP ?= this
 		NOT = { has_variable = dod_asf_seen_12 }
 	}
 
@@ -252,8 +252,8 @@ dod_asf.13 = {
 
 	trigger = {
 		OR = {
-			this = c:JAP
-			this = c:TKG
+			c:JAP ?= this
+			c:TKG ?= this
 		}
 		NOT = { has_variable = dod_asf_seen_13 }
 	}
@@ -289,7 +289,7 @@ dod_asf.20 = {
 	duration = 3
 
 	trigger = {
-		this = c:MUG
+		c:MUG ?= this
 		NOT = { has_variable = dod_asf_seen_20 }
 	}
 
@@ -323,7 +323,7 @@ dod_asf.21 = {
 	duration = 3
 
 	trigger = {
-		this = c:VIJ
+		c:VIJ ?= this
 		NOT = { has_variable = dod_asf_seen_21 }
 	}
 
@@ -350,7 +350,7 @@ dod_asf.22 = {
 	duration = 3
 
 	trigger = {
-		this = c:BEN
+		c:BEN ?= this
 		NOT = { has_variable = dod_asf_seen_22 }
 	}
 
@@ -383,7 +383,7 @@ dod_asf.23 = {
 	duration = 3
 
 	trigger = {
-		this = c:DUA
+		c:DUA ?= this
 		any_scope_state = { state_region = { is_homeland = cu:sinhala } }
 		NOT = { has_variable = dod_asf_seen_23 }
 	}
@@ -418,8 +418,8 @@ dod_asf.30 = {
 
 	trigger = {
 		OR = {
-			this = c:BRG
-			this = c:SCA
+			c:BRG ?= this
+			c:SCA ?= this
 		}
 		any_scope_state = { state_region = { OR = { is_homeland = cu:moluccan is_homeland = cu:javan } } }
 		NOT = { has_variable = dod_asf_seen_30 }
@@ -454,7 +454,7 @@ dod_asf.31 = {
 	duration = 3
 
 	trigger = {
-		this = c:SCA
+		c:SCA ?= this
 		any_scope_state = { state_region = { is_homeland = cu:filipino } }
 		NOT = { has_variable = dod_asf_seen_31 }
 	}
@@ -488,7 +488,7 @@ dod_asf.32 = {
 	duration = 3
 
 	trigger = {
-		this = c:GAN
+		c:GAN ?= this
 		NOT = { has_variable = dod_asf_seen_32 }
 	}
 
@@ -522,7 +522,7 @@ dod_asf.33 = {
 	duration = 3
 
 	trigger = {
-		this = c:LFG
+		c:LFG ?= this
 		NOT = { has_variable = dod_asf_seen_33 }
 	}
 
@@ -550,10 +550,10 @@ dod_asf.34 = {
 
 	trigger = {
 		OR = {
-			this = c:SIA
-			this = c:DAI
-			this = c:CAM
-			this = c:MLY
+			c:SIA ?= this
+			c:DAI ?= this
+			c:CAM ?= this
+			c:MLY ?= this
 		}
 		NOT = { has_global_variable = dod_selon_abolished }
 		NOT = { has_variable = dod_asf_seen_34 }
@@ -582,7 +582,7 @@ dod_asf.40 = {
 	duration = 3
 
 	trigger = {
-		this = c:CHG
+		c:CHG ?= this
 		NOT = { has_variable = dod_asf_seen_40 }
 	}
 
@@ -616,7 +616,7 @@ dod_asf.41 = {
 	duration = 3
 
 	trigger = {
-		this = c:AFG
+		c:AFG ?= this
 		NOT = { has_variable = dod_asf_seen_41 }
 	}
 

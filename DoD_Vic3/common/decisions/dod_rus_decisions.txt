@@ -29,7 +29,7 @@ dod_form_russia = {
 
 dod_rus_west_focus = {
 	is_shown = {
-		this = c:RUS
+		c:RUS ?= this
 		NOT = { has_variable = dod_rus_west_focus }
 	}
 	possible = {
@@ -47,8 +47,8 @@ dod_rus_west_focus = {
 dod_rus_wild_lands = {
 	is_shown = {
 		OR = {
-			this = c:MUS
-			this = c:RUS
+			c:MUS ?= this
+			c:RUS ?= this
 		}
 		NOT = { has_variable = dod_wild_lands }
 	}
@@ -76,7 +76,7 @@ dod_rus_wild_lands = {
 
 dod_rus_siberia = {
 	is_shown = {
-		this = c:RUS
+		c:RUS ?= this
 		NOT = { has_variable = dod_siberia_claimed }
 	}
 	possible = {
@@ -99,7 +99,7 @@ dod_rus_siberia = {
 
 dod_rus_mongolia = {
 	is_shown = {
-		this = c:RUS
+		c:RUS ?= this
 		exists = c:MGL
 		NOT = { has_variable = dod_mongolia_offer }
 	}
@@ -117,7 +117,7 @@ dod_rus_mongolia = {
 
 dod_rus_integrate = {
 	is_shown = {
-		this = c:RUS
+		c:RUS ?= this
 		NOT = { has_variable = dod_rus_integrated }
 	}
 	possible = {
@@ -222,7 +222,7 @@ dod_form_tatarstan = {
 
 dod_tar_sedentarize = {
 	is_shown = {
-		this = c:TAR
+		c:TAR ?= this
 		NOT = { has_variable = dod_sedentarized }
 	}
 	possible = {
@@ -238,8 +238,8 @@ dod_tar_sedentarize = {
 dod_tar_krymchak = {
 	is_shown = {
 		OR = {
-			this = c:TAR
-			this = c:CRI
+			c:TAR ?= this
+			c:CRI ?= this
 		}
 		NOT = { country_has_primary_culture = cu:krymchak }
 	}
@@ -254,7 +254,7 @@ dod_tar_krymchak = {
 
 dod_cir_break_yoke = {
 	is_shown = {
-		this = c:CIR
+		c:CIR ?= this
 		exists = c:ASK
 		is_subject_of = c:ASK
 	}
@@ -272,7 +272,7 @@ dod_cir_break_yoke = {
 
 dod_cir_integrate = {
 	is_shown = {
-		this = c:CIR
+		c:CIR ?= this
 		NOT = { has_variable = dod_cir_integrated }
 	}
 	possible = {
@@ -311,7 +311,7 @@ dod_cir_integrate = {
 
 dod_cir_inal = {
 	is_shown = {
-		this = c:CIR
+		c:CIR ?= this
 		NOT = { has_variable = dod_cir_inal }
 	}
 	possible = {
@@ -379,7 +379,7 @@ dod_form_georgia = {
 
 dod_geo_tamar = {
 	is_shown = {
-		this = c:GEO
+		c:GEO ?= this
 		NOT = { has_variable = dod_geo_tamar }
 	}
 	possible = {
@@ -408,7 +408,7 @@ dod_geo_tamar = {
 
 dod_geo_armenians = {
 	is_shown = {
-		this = c:GEO
+		c:GEO ?= this
 		NOT = { country_has_primary_culture = cu:armenian }
 	}
 	possible = {
@@ -423,9 +423,9 @@ dod_geo_armenians = {
 dod_form_transcaucasia = {
 	is_shown = {
 		OR = {
-			this = c:GEO
-			this = c:ARM
-			this = c:AZB
+			c:GEO ?= this
+			c:ARM ?= this
+			c:AZB ?= this
 		}
 		NOT = { exists = c:TCA }
 	}
@@ -446,7 +446,7 @@ dod_form_transcaucasia = {
 
 dod_tca_north_caucasus = {
 	is_shown = {
-		this = c:TCA
+		c:TCA ?= this
 		NOT = { has_variable = dod_tca_claims }
 	}
 	possible = {
@@ -477,7 +477,7 @@ dod_tca_north_caucasus = {
 
 dod_tca_embrace = {
 	is_shown = {
-		this = c:TCA
+		c:TCA ?= this
 		has_variable = dod_tca_claims
 		NOT = { has_variable = dod_tca_embraced }
 	}

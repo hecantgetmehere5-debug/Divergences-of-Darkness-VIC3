@@ -58,6 +58,10 @@ navadm = collections.defaultdict(collections.Counter)
 t = (MOD / "common/history/buildings/00_dod_buildings.txt").read_text(encoding="utf-8-sig")
 for m in re.finditer(r"s:(STATE_\w+) = \{(.*?)\n\t\}", t, re.S):
     for r in re.finditer(r"region_state:(\w+) = \{(.*?)\n\t\t\}", m.group(2), re.S):
+        # a fleet needs a naval HQ: only count naval administrations in states where the
+        # country also has a port (inland ones, e.g. Byelorussia's, can't host a fleet)
+        if '"building_port"' not in r.group(2):
+            continue
         for lv in re.findall(r'"building_naval_administration"\s*add_ownership = \{ country = \{ country = "c:\w+" levels = (\d+)', r.group(2)):
             navadm[r.group(1)][m.group(1)] += int(lv)
 

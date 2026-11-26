@@ -2,7 +2,7 @@
 
 dod_history_0 = {
 	is_shown = {
-		this = c:DUA
+		c:DUA ?= this
 	}
 	possible = {
 		always = yes
@@ -16,8 +16,8 @@ dod_history_0 = {
 dod_history_1 = {
 	is_shown = {
 		OR = {
-			this = c:BRG
-			this = c:SAF
+			c:BRG ?= this
+			c:SAF ?= this
 		}
 	}
 	possible = {
@@ -31,7 +31,7 @@ dod_history_1 = {
 
 dod_history_2 = {
 	is_shown = {
-		this = c:CLM
+		c:CLM ?= this
 	}
 	possible = {
 		always = yes
@@ -44,7 +44,7 @@ dod_history_2 = {
 
 dod_history_3 = {
 	is_shown = {
-		this = c:DNG
+		c:DNG ?= this
 	}
 	possible = {
 		always = yes
@@ -58,9 +58,9 @@ dod_history_3 = {
 dod_history_4 = {
 	is_shown = {
 		OR = {
-			this = c:BOH
-			this = c:HLR
-			this = c:CAE
+			c:BOH ?= this
+			c:HLR ?= this
+			c:CAE ?= this
 		}
 	}
 	possible = {
@@ -75,8 +75,8 @@ dod_history_4 = {
 dod_history_5 = {
 	is_shown = {
 		OR = {
-			this = c:NBG
-			this = c:ARC
+			c:NBG ?= this
+			c:ARC ?= this
 		}
 	}
 	possible = {
@@ -90,7 +90,7 @@ dod_history_5 = {
 
 dod_history_6 = {
 	is_shown = {
-		this = c:SCA
+		c:SCA ?= this
 	}
 	possible = {
 		always = yes
@@ -104,8 +104,8 @@ dod_history_6 = {
 dod_history_7 = {
 	is_shown = {
 		OR = {
-			this = c:NAN
-			this = c:HBE
+			c:NAN ?= this
+			c:HBE ?= this
 		}
 	}
 	possible = {
@@ -120,8 +120,8 @@ dod_history_7 = {
 dod_history_8 = {
 	is_shown = {
 		OR = {
-			this = c:ARA
-			this = c:ARI
+			c:ARA ?= this
+			c:ARI ?= this
 		}
 	}
 	possible = {
@@ -135,7 +135,7 @@ dod_history_8 = {
 
 dod_history_9 = {
 	is_shown = {
-		this = c:INC
+		c:INC ?= this
 	}
 	possible = {
 		always = yes
@@ -148,7 +148,7 @@ dod_history_9 = {
 
 dod_history_10 = {
 	is_shown = {
-		this = c:PRV
+		c:PRV ?= this
 	}
 	possible = {
 		always = yes
@@ -162,8 +162,8 @@ dod_history_10 = {
 dod_history_11 = {
 	is_shown = {
 		OR = {
-			this = c:PLA
-			this = c:ARC
+			c:PLA ?= this
+			c:ARC ?= this
 		}
 	}
 	possible = {
@@ -178,8 +178,8 @@ dod_history_11 = {
 dod_history_12 = {
 	is_shown = {
 		OR = {
-			this = c:VIN
-			this = c:ARC
+			c:VIN ?= this
+			c:ARC ?= this
 		}
 	}
 	possible = {
@@ -194,8 +194,8 @@ dod_history_12 = {
 dod_history_13 = {
 	is_shown = {
 		OR = {
-			this = c:AMA
-			this = c:AZL
+			c:AMA ?= this
+			c:AZL ?= this
 		}
 	}
 	possible = {

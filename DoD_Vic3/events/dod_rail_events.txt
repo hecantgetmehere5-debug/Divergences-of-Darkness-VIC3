@@ -12,7 +12,7 @@ dod_rail.1 = {
 	duration = 3
 
 	trigger = {
-		this = c:SPA
+		c:SPA ?= this
 		exists = c:CLM
 		game_date < 1837.1.1
 		is_at_war = no
@@ -51,7 +51,7 @@ dod_rail.2 = {
 	duration = 3
 
 	trigger = {
-		this = c:TUR
+		c:TUR ?= this
 		game_date < 1837.1.1
 		is_at_war = no
 		NOT = { has_global_variable = dod_rail_ottoman }
@@ -94,7 +94,7 @@ dod_rail.3 = {
 	duration = 3
 
 	trigger = {
-		this = c:TUR
+		c:TUR ?= this
 		has_variable = dod_rail_ottoman_next
 		is_at_war = no
 		exists = c:EGY
@@ -133,7 +133,7 @@ dod_rail.4 = {
 	duration = 3
 
 	trigger = {
-		this = c:TUR
+		c:TUR ?= this
 		has_variable = dod_rail_egypt
 		is_at_war = no
 		exists = c:ALB
@@ -172,7 +172,7 @@ dod_rail.5 = {
 	duration = 3
 
 	trigger = {
-		this = c:TUN
+		c:TUN ?= this
 		exists = c:EGY
 		game_date < 1837.1.1
 		is_at_war = no
@@ -211,7 +211,7 @@ dod_rail.10 = {
 	duration = 3
 
 	trigger = {
-		this = c:HLR
+		c:HLR ?= this
 		game_date >= 1837.1.1
 		has_journal_entry = je_dod_prague_proclamation
 		NOT = { has_variable = dod_rail_imperial_lands }
@@ -235,8 +235,8 @@ dod_rail.10 = {
 				}
 				owner = {
 					OR = {
-						this = c:SCA
-						this = c:BRG
+						c:SCA ?= this
+						c:BRG ?= this
 					}
 				}
 			}

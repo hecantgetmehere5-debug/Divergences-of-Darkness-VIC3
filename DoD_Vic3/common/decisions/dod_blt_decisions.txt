@@ -2,7 +2,7 @@
 
 dod_abolish_courland = {
 	is_shown = {
-		this = c:SCA
+		c:SCA ?= this
 		exists = c:KRL
 		c:KRL = { is_subject_of = root }
 	}
@@ -17,7 +17,7 @@ dod_abolish_courland = {
 
 dod_annex_kurland = {
 	is_shown = {
-		this = c:SCA
+		c:SCA ?= this
 		exists = c:KRL
 		c:KRL = { NOT = { is_subject_of = root } }
 		NOT = { has_variable = dod_kurland_war }
@@ -38,7 +38,7 @@ dod_annex_kurland = {
 
 dod_dominium_maris_baltici = {
 	is_shown = {
-		this = c:SCA
+		c:SCA ?= this
 		NOT = { has_variable = dod_dominium }
 	}
 	possible = {
@@ -68,7 +68,7 @@ dod_dominium_maris_baltici = {
 
 dod_take_lithuania = {
 	is_shown = {
-		this = c:SCA
+		c:SCA ?= this
 		has_variable = dod_dominium
 		NOT = { has_variable = dod_take_lithuania }
 	}
@@ -106,7 +106,7 @@ dod_take_lithuania = {
 
 dod_nordtyskland = {
 	is_shown = {
-		this = c:SCA
+		c:SCA ?= this
 		NOT = { country_has_primary_culture = cu:north_german }
 	}
 	possible = {
@@ -123,7 +123,7 @@ dod_nordtyskland = {
 
 dod_plc_act_of_union = {
 	is_shown = {
-		this = c:PLC
+		c:PLC ?= this
 		NOT = { has_variable = dod_lublin_renewed }
 	}
 	possible = {
@@ -140,7 +140,7 @@ dod_plc_act_of_union = {
 
 dod_plc_baltic_peoples = {
 	is_shown = {
-		this = c:PLC
+		c:PLC ?= this
 		has_variable = dod_lublin_renewed
 		NOT = { country_has_primary_culture = cu:latvian }
 	}
@@ -163,7 +163,7 @@ dod_plc_baltic_peoples = {
 
 dod_plc_hadiach = {
 	is_shown = {
-		this = c:PLC
+		c:PLC ?= this
 		has_variable = dod_lublin_renewed
 		NOT = { country_has_primary_culture = cu:ruthenian }
 	}
@@ -187,8 +187,8 @@ dod_plc_hadiach = {
 dod_romanian_transnistria = {
 	is_shown = {
 		OR = {
-			this = c:ROM
-			this = c:MOL
+			c:ROM ?= this
+			c:MOL ?= this
 		}
 		NOT = { has_variable = dod_transnistria }
 	}
@@ -216,7 +216,7 @@ dod_romanian_transnistria = {
 
 dod_rus_cossacks = {
 	is_shown = {
-		this = c:RUS
+		c:RUS ?= this
 		exists = c:UKR
 		exists = c:PLC
 		c:UKR = { is_subject_of = c:PLC }
@@ -235,11 +235,11 @@ dod_rus_cossacks = {
 
 dod_rus_annex_ruthenia = {
 	is_shown = {
-		this = c:RUS
+		c:RUS ?= this
 		any_country = {
 			OR = {
-				this = c:UKR
-				this = c:RUT
+				c:UKR ?= this
+				c:RUT ?= this
 			}
 			is_subject_of = root
 		}
@@ -251,8 +251,8 @@ dod_rus_annex_ruthenia = {
 		every_country = {
 			limit = {
 				OR = {
-					this = c:UKR
-					this = c:RUT
+					c:UKR ?= this
+					c:RUT ?= this
 				}
 				is_subject_of = root
 			}
@@ -265,7 +265,7 @@ dod_rus_annex_ruthenia = {
 
 dod_livonian_confederation = {
 	is_shown = {
-		this = c:LAT
+		c:LAT ?= this
 		NOT = { country_has_primary_culture = cu:estonian }
 	}
 	possible = {
@@ -283,7 +283,7 @@ dod_livonian_confederation = {
 
 dod_reform_grand_duchy = {
 	is_shown = {
-		this = c:LIT
+		c:LIT ?= this
 		NOT = { has_variable = dod_grand_duchy }
 	}
 	possible = {

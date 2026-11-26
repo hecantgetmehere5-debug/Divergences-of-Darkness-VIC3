@@ -1,0 +1,10 @@
+﻿# DoD override: the Peru-Bolivian Confederation doesn't exist in DoD. The journal entry vanilla adds at
+# game start closes itself at once, silently.
+je_peru_bolivia = {
+	context = none
+	outcome = {
+		flags = { hidden invalid_outcome }
+		conclusion_desc = je_standard_failure_conclusion_desc
+		trigger = { always = yes }
+	}
+}

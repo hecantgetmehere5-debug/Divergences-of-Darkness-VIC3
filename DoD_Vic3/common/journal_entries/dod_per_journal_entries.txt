@@ -44,7 +44,7 @@ je_dod_timurtash_restoration = {
 		flags = { hidden invalid_outcome }
 		conclusion_desc = je_dod_timurtash_restoration_invalid_desc
 		trigger = {
-				NOT = { this = c:AFS }
+				NOT = { c:AFS ?= this }
 	
 		}
 	}

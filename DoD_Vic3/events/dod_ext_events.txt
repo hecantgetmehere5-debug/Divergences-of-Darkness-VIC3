@@ -200,7 +200,7 @@ dod_ext.10 = {
 	duration = 3
 
 	trigger = {
-		this = c:PLA
+		c:PLA ?= this
 		has_law = law_type:law_monarchy
 		game_date >= 1850.1.1
 		NOT = { has_variable = dod_ext_seen_10 }
@@ -634,7 +634,7 @@ dod_ext.36 = {
 	duration = 3
 
 	trigger = {
-		this = c:NAN
+		c:NAN ?= this
 		exists = c:INC
 		is_at_war = no
 		game_date >= 1845.1.1
@@ -675,7 +675,7 @@ dod_ext.37 = {
 	duration = 3
 
 	trigger = {
-		this = c:LOT
+		c:LOT ?= this
 		exists = c:NAN
 		is_subject_of = c:NAN
 		game_date >= 1870.1.1

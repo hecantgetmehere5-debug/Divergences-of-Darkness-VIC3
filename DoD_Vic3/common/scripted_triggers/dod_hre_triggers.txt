@@ -3,7 +3,7 @@
 # A German prince the Emperor can bring into the Reich
 dod_is_imperial_prince = {
 	exists = c:HLR
-	NOT = { this = c:HLR }
+	NOT = { c:HLR ?= this }
 	country_rank < rank_value:great_power
 	OR = {
 		country_has_primary_culture = cu:north_german
@@ -60,9 +60,9 @@ dod_is_authoritarian = {
 dod_is_baltic_elbian_country = {
 	exists = c:CAE
 	OR = {
-		this = c:KRL
-		this = c:LAT
-		this = c:BLT
+		c:KRL ?= this
+		c:LAT ?= this
+		c:BLT ?= this
 	}
 	NOT = { is_subject_of = c:CAE }
 }

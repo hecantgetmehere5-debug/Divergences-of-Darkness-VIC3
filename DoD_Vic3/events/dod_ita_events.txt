@@ -351,7 +351,7 @@ dod_ita.16 = {
 
 	trigger = {
 		exists = c:ITA
-		NOT = { this = c:ITA }
+		NOT = { c:ITA ?= this }
 	}
 
 	option = {
@@ -417,7 +417,7 @@ dod_ita.20 = {
 	duration = 3
 
 	trigger = {
-		this = c:TUS
+		c:TUS ?= this
 		dod_is_republic = yes
 		game_date >= 1840.1.1
 		NOT = { has_variable = dod_ita_seen_20 }
@@ -483,7 +483,7 @@ dod_ita.22 = {
 	duration = 3
 
 	trigger = {
-		this = c:TUS
+		c:TUS ?= this
 		dod_is_republic = yes
 		exists = c:GEN
 		c:GEN = { NOT = { dod_is_republic = yes } }
@@ -553,7 +553,7 @@ dod_ita.24 = {
 	duration = 3
 
 	trigger = {
-		this = c:TUS
+		c:TUS ?= this
 		dod_is_republic = yes
 		exists = c:ARA
 		c:ARA = { any_scope_state = { dod_is_south_italian_state = yes } }
@@ -608,7 +608,7 @@ dod_ita.26 = {
 	duration = 3
 
 	trigger = {
-		this = c:ARA
+		c:ARA ?= this
 		has_variable = dod_etrurian_threat
 		is_at_war = no
 		exists = c:TUS
@@ -647,7 +647,7 @@ dod_ita.30 = {
 	duration = 3
 
 	trigger = {
-		this = c:ITA
+		c:ITA ?= this
 		NOT = { has_variable = dod_ita_seen_30 }
 	}
 
@@ -676,7 +676,7 @@ dod_ita.31 = {
 	duration = 3
 
 	trigger = {
-		this = c:ITA
+		c:ITA ?= this
 		game_date >= 1865.1.1
 		any_scope_state = { dod_is_south_italian_state = yes }
 		NOT = { has_variable = dod_ita_seen_31 }
@@ -717,7 +717,7 @@ dod_ita.32 = {
 	duration = 3
 
 	trigger = {
-		this = c:ITA
+		c:ITA ?= this
 		game_date >= 1870.1.1
 		NOT = { has_variable = dod_ita_seen_32 }
 	}
@@ -757,7 +757,7 @@ dod_ita.33 = {
 	duration = 3
 
 	trigger = {
-		this = c:ITA
+		c:ITA ?= this
 		NOT = { country_has_primary_culture = cu:venetian }
 		any_scope_state = { dod_is_venetian_state = yes }
 		NOT = { has_variable = dod_ita_seen_33 }
@@ -798,7 +798,7 @@ dod_ita.34 = {
 	duration = 3
 
 	trigger = {
-		this = c:ITA
+		c:ITA ?= this
 		NOT = { exists = c:GRE }
 		any_scope_state = { dod_is_greek_state = yes }
 		NOT = { has_variable = dod_ita_seen_34 }
@@ -843,7 +843,7 @@ dod_ita.35 = {
 	duration = 3
 
 	trigger = {
-		this = c:ITA
+		c:ITA ?= this
 		country_rank >= rank_value:great_power
 		is_at_war = no
 		exists = c:ALB
@@ -950,7 +950,7 @@ dod_ita.41 = {
 	duration = 3
 
 	trigger = {
-		this = c:ARI
+		c:ARI ?= this
 	}
 
 	immediate = {
@@ -998,7 +998,7 @@ dod_ita.42 = {
 	duration = 3
 
 	trigger = {
-		this = c:ARI
+		c:ARI ?= this
 		has_variable = dod_war_over_italy
 		is_at_war = no
 		exists = c:LOM
@@ -1027,7 +1027,7 @@ dod_ita.43 = {
 	duration = 3
 
 	trigger = {
-		this = c:ARI
+		c:ARI ?= this
 		has_variable = dod_war_over_italy
 		is_at_war = no
 		NOT = { exists = c:LOM }
@@ -1075,8 +1075,8 @@ dod_ita.45 = {
 
 	trigger = {
 		OR = {
-			this = c:ARA
-			this = c:ARI
+			c:ARA ?= this
+			c:ARI ?= this
 		}
 		game_date >= 1860.1.1
 		country_rank >= rank_value:great_power
@@ -1166,8 +1166,8 @@ dod_ita.48 = {
 
 	trigger = {
 		OR = {
-			this = c:ARA
-			this = c:ARI
+			c:ARA ?= this
+			c:ARI ?= this
 		}
 		country_rank >= rank_value:great_power
 		is_at_war = no
@@ -1194,7 +1194,7 @@ dod_ita.49 = {
 	duration = 3
 
 	trigger = {
-		this = c:ARA
+		c:ARA ?= this
 		NOT = { any_scope_state = { dod_is_catalan_state = yes } }
 		any_scope_state = { dod_is_south_italian_state = yes }
 		NOT = { has_variable = dod_ita_seen_49 }
@@ -1225,9 +1225,9 @@ dod_ita.50 = {
 
 	trigger = {
 		OR = {
-			this = c:PRV
+			c:PRV ?= this
 			AND = {
-				this = c:ITA
+				c:ITA ?= this
 				has_global_variable = dod_valois_italy
 			}
 		}
@@ -1287,9 +1287,9 @@ dod_ita.51 = {
 		random_country = {
 			limit = {
 				OR = {
-					this = c:PRV
+					c:PRV ?= this
 					AND = {
-						this = c:ITA
+						c:ITA ?= this
 						has_global_variable = dod_valois_italy
 					}
 				}
@@ -1372,7 +1372,7 @@ dod_ita.54 = {
 	duration = 3
 
 	trigger = {
-		this = c:PRV
+		c:PRV ?= this
 		is_at_war = no
 		exists = c:TUS
 		c:TUS = { dod_is_republic = yes }
@@ -1413,8 +1413,8 @@ dod_ita.55 = {
 
 	trigger = {
 		OR = {
-			this = c:ARA
-			this = c:ARI
+			c:ARA ?= this
+			c:ARI ?= this
 		}
 		is_at_war = no
 		exists = c:ITA
@@ -1485,7 +1485,7 @@ dod_ita.60 = {
 	duration = 3
 
 	trigger = {
-		this = c:VEN
+		c:VEN ?= this
 	}
 
 	option = {
@@ -1551,7 +1551,7 @@ dod_ita.62 = {
 	duration = 3
 
 	trigger = {
-		this = c:VEN
+		c:VEN ?= this
 	}
 
 	option = {
@@ -1591,7 +1591,7 @@ dod_ita.63 = {
 	duration = 3
 
 	trigger = {
-		this = c:VEN
+		c:VEN ?= this
 	}
 
 	option = {
@@ -1624,7 +1624,7 @@ dod_ita.64 = {
 	duration = 3
 
 	trigger = {
-		this = c:VEN
+		c:VEN ?= this
 	}
 
 	option = {
@@ -1700,7 +1700,7 @@ dod_ita.67 = {
 	duration = 3
 
 	trigger = {
-		this = c:GRE
+		c:GRE ?= this
 	}
 
 	option = {
@@ -1847,7 +1847,7 @@ dod_ita.73 = {
 	duration = 3
 
 	trigger = {
-		this = c:VEN
+		c:VEN ?= this
 		NOT = { any_scope_state = { dod_is_venetian_state = yes } }
 		any_scope_state = { dod_is_greek_state = yes }
 		NOT = { has_variable = dod_ita_seen_73 }
@@ -1877,7 +1877,7 @@ dod_ita.74 = {
 	duration = 3
 
 	trigger = {
-		this = c:VEN
+		c:VEN ?= this
 		has_variable = dod_lost_greece
 		is_at_war = no
 		NOT = { dod_is_republic = yes }
@@ -1907,7 +1907,7 @@ dod_ita.75 = {
 	duration = 3
 
 	trigger = {
-		this = c:VEN
+		c:VEN ?= this
 		game_date >= 1847.1.1
 		NOT = { dod_is_republic = yes }
 		NOT = { has_variable = dod_ita_seen_75 }
@@ -1985,7 +1985,7 @@ dod_ita.77 = {
 	duration = 3
 
 	trigger = {
-		this = c:VEN
+		c:VEN ?= this
 		game_date >= 1921.1.1
 		NOT = { has_variable = dod_ita_seen_77 }
 	}
@@ -2013,7 +2013,7 @@ dod_ita.78 = {
 	duration = 3
 
 	trigger = {
-		this = c:VEN
+		c:VEN ?= this
 		game_date >= 1841.1.1
 		is_at_war = no
 		NOT = { has_variable = dod_ita_seen_78 }

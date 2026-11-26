@@ -3,8 +3,8 @@
 dod_call_council_of_italy = {
 	is_shown = {
 		OR = {
-			this = c:TUS
-			this = c:VEN
+			c:TUS ?= this
+			c:VEN ?= this
 		}
 		NOT = { exists = c:ITA }
 		NOT = { has_global_variable = dod_council_host }
@@ -14,7 +14,7 @@ dod_call_council_of_italy = {
 		dod_is_republic = yes
 		NOT = { has_modifier = dod_council_failed }
 		trigger_if = {
-			limit = { this = c:VEN }
+			limit = { c:VEN ?= this }
 			game_date >= 1860.1.1
 		}
 	}
@@ -44,7 +44,7 @@ dod_form_italy = {
 
 dod_italia_irredenta = {
 	is_shown = {
-		this = c:ITA
+		c:ITA ?= this
 		NOT = { has_variable = dod_irredenta_claimed }
 	}
 	possible = {
@@ -71,7 +71,7 @@ dod_italia_irredenta = {
 
 dod_proclaim_aragon_italy = {
 	is_shown = {
-		this = c:ARA
+		c:ARA ?= this
 		NOT = { exists = c:ARI }
 		NOT = { exists = c:ITA }
 	}
@@ -102,7 +102,7 @@ dod_proclaim_aragon_italy = {
 
 dod_end_north_italian_autonomy = {
 	is_shown = {
-		this = c:ARI
+		c:ARI ?= this
 		NOT = { country_has_primary_culture = cu:north_italian }
 		NOT = { has_variable = dod_war_over_italy }
 	}
@@ -125,8 +125,8 @@ dod_end_north_italian_autonomy = {
 dod_provencal_catalan_brotherhood = {
 	is_shown = {
 		OR = {
-			this = c:ARA
-			this = c:ARI
+			c:ARA ?= this
+			c:ARI ?= this
 		}
 		NOT = { has_variable = dod_provencal_brotherhood }
 	}
@@ -155,7 +155,7 @@ dod_provencal_catalan_brotherhood = {
 
 dod_valois_restore_italy = {
 	is_shown = {
-		this = c:PRV
+		c:PRV ?= this
 		NOT = { exists = c:ITA }
 		NOT = { exists = c:ARI }
 	}
@@ -178,9 +178,9 @@ dod_valois_restore_italy = {
 dod_valois_challenge_usurpers = {
 	is_shown = {
 		OR = {
-			this = c:PRV
+			c:PRV ?= this
 			AND = {
-				this = c:ITA
+				c:ITA ?= this
 				has_global_variable = dod_valois_italy
 			}
 		}
@@ -210,7 +210,7 @@ dod_valois_challenge_usurpers = {
 
 dod_valois_transalpina = {
 	is_shown = {
-		this = c:ITA
+		c:ITA ?= this
 		has_global_variable = dod_valois_italy
 		has_variable = dod_valois_claims
 		NOT = { exists = c:FRT }
@@ -255,7 +255,7 @@ dod_form_greece = {
 
 dod_megali_idea = {
 	is_shown = {
-		this = c:GRE
+		c:GRE ?= this
 		NOT = { has_variable = dod_megali_idea }
 	}
 	possible = {
@@ -278,7 +278,7 @@ dod_megali_idea = {
 
 dod_enosis_complete = {
 	is_shown = {
-		this = c:GRE
+		c:GRE ?= this
 		has_variable = dod_megali_idea
 		NOT = { has_variable = dod_enosis_done }
 	}

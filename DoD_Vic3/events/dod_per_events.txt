@@ -13,10 +13,10 @@ dod_per.1 = {
 
 	trigger = {
 		OR = {
-			this = c:AFS
-			this = c:ZND
-			this = c:QAJ
-			this = c:AZB
+			c:AFS ?= this
+			c:ZND ?= this
+			c:QAJ ?= this
+			c:AZB ?= this
 		}
 		NOT = { has_variable = dod_per_seen_1 }
 	}
@@ -43,7 +43,7 @@ dod_per.2 = {
 	duration = 3
 
 	trigger = {
-		this = c:AFS
+		c:AFS ?= this
 		has_journal_entry = je_dod_timurtash_restoration
 		NOT = { has_variable = dod_per_seen_2 }
 	}
@@ -78,7 +78,7 @@ dod_per.3 = {
 	duration = 3
 
 	trigger = {
-		this = c:AFS
+		c:AFS ?= this
 		has_journal_entry = je_dod_timurtash_restoration
 		NOT = { has_variable = dod_per_seen_3 }
 	}
@@ -113,7 +113,7 @@ dod_per.4 = {
 	duration = 3
 
 	trigger = {
-		this = c:AFS
+		c:AFS ?= this
 		has_variable = dod_soyurghal_reform
 		NOT = { has_variable = dod_per_seen_4 }
 	}
@@ -147,7 +147,7 @@ dod_per.5 = {
 	duration = 3
 
 	trigger = {
-		this = c:AFS
+		c:AFS ?= this
 		has_journal_entry = je_dod_timurtash_restoration
 		NOT = { has_variable = dod_per_seen_5 }
 	}
@@ -175,7 +175,7 @@ dod_per.6 = {
 	duration = 3
 
 	trigger = {
-		this = c:AFS
+		c:AFS ?= this
 		has_journal_entry = je_dod_timurtash_restoration
 		NOT = { has_variable = dod_per_seen_6 }
 	}
@@ -221,7 +221,7 @@ dod_per.8 = {
 	duration = 3
 
 	trigger = {
-		this = c:AFS
+		c:AFS ?= this
 		game_date >= 1865.1.1
 		NOT = { has_variable = dod_per_seen_8 }
 	}
@@ -249,7 +249,7 @@ dod_per.9 = {
 	duration = 3
 
 	trigger = {
-		this = c:AFS
+		c:AFS ?= this
 		is_at_war = no
 		any_country = { country_has_primary_culture = cu:uighur }
 		NOT = { has_variable = dod_per_seen_9 }
@@ -315,7 +315,7 @@ dod_per.20 = {
 	duration = 3
 
 	trigger = {
-		this = c:QAJ
+		c:QAJ ?= this
 		game_date >= 1850.1.1
 		NOT = { has_variable = dod_per_seen_20 }
 	}
@@ -344,7 +344,7 @@ dod_per.21 = {
 	duration = 3
 
 	trigger = {
-		this = c:QAJ
+		c:QAJ ?= this
 		has_variable = dod_kk_stage
 		game_date >= 1855.1.1
 		NOT = { has_variable = dod_per_seen_21 }
@@ -372,7 +372,7 @@ dod_per.22 = {
 	duration = 3
 
 	trigger = {
-		this = c:QAJ
+		c:QAJ ?= this
 		is_at_war = no
 		has_variable = dod_per_seen_21
 		game_date >= 1858.1.1
@@ -452,7 +452,7 @@ dod_per.24 = {
 	duration = 3
 
 	trigger = {
-		this = c:QAJ
+		c:QAJ ?= this
 		exists = c:RUS
 		c:RUS = { country_rank >= rank_value:great_power }
 		NOT = { has_variable = dod_per_seen_24 }
@@ -487,7 +487,7 @@ dod_per.30 = {
 	duration = 3
 
 	trigger = {
-		this = c:ZND
+		c:ZND ?= this
 		NOT = { has_variable = dod_per_seen_30 }
 	}
 
@@ -520,7 +520,7 @@ dod_per.31 = {
 	duration = 3
 
 	trigger = {
-		this = c:ZND
+		c:ZND ?= this
 		has_variable = dod_zagros_reform
 		game_date >= 1840.1.1
 		NOT = { exists = c:LUR }
@@ -563,7 +563,7 @@ dod_per.32 = {
 	duration = 3
 
 	trigger = {
-		this = c:ZND
+		c:ZND ?= this
 		has_variable = dod_per_seen_31
 		is_at_war = no
 		NOT = { exists = c:LUR }
@@ -593,7 +593,7 @@ dod_per.40 = {
 	duration = 3
 
 	trigger = {
-		this = c:AZB
+		c:AZB ?= this
 		game_date >= 1840.1.1
 		exists = c:ARM
 		c:ARM = { is_subject_of = c:AZB }
@@ -651,7 +651,7 @@ dod_per.42 = {
 	duration = 3
 
 	trigger = {
-		this = c:ARM
+		c:ARM ?= this
 		has_variable = dod_armenian_uprising
 		is_at_war = no
 		NOT = { is_subject_of = c:AZB }
@@ -680,7 +680,7 @@ dod_per.43 = {
 	duration = 3
 
 	trigger = {
-		this = c:KAL
+		c:KAL ?= this
 		game_date >= 1840.1.1
 		exists = c:SIN
 		is_subject_of = c:SIN
@@ -720,7 +720,7 @@ dod_per.50 = {
 	duration = 3
 
 	trigger = {
-		this = c:HDJ
+		c:HDJ ?= this
 		exists = c:TUR
 		is_subject_of = c:TUR
 		is_at_war = no
@@ -759,7 +759,7 @@ dod_per.51 = {
 	duration = 3
 
 	trigger = {
-		this = c:NEJ
+		c:NEJ ?= this
 		is_at_war = no
 		exists = c:HDJ
 		NOT = { c:HDJ = { is_subject_of = c:TUR } }
@@ -856,7 +856,7 @@ dod_per.54 = {
 	duration = 3
 
 	trigger = {
-		this = c:TUR
+		c:TUR ?= this
 		exists = c:NEJ
 	}
 

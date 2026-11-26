@@ -6,7 +6,7 @@
 
 dod_integrate_provencal = {
 	is_shown = {
-		this = c:DUA
+		c:DUA ?= this
 		has_variable = dod_anglois_accepted
 		NOT = { country_has_primary_culture = cu:provencal }
 	}
@@ -23,7 +23,7 @@ dod_integrate_provencal = {
 
 dod_integrate_irish = {
 	is_shown = {
-		this = c:DUA
+		c:DUA ?= this
 		has_variable = dod_anglois_accepted
 		NOT = { country_has_primary_culture = cu:irish }
 	}
@@ -39,7 +39,7 @@ dod_integrate_irish = {
 
 dod_integrate_scottish = {
 	is_shown = {
-		this = c:DUA
+		c:DUA ?= this
 		has_variable = dod_anglois_accepted
 		NOT = { country_has_primary_culture = cu:scottish }
 	}
@@ -60,7 +60,7 @@ dod_integrate_scottish = {
 
 dod_integrate_basque = {
 	is_shown = {
-		this = c:DUA
+		c:DUA ?= this
 		has_variable = dod_anglois_accepted
 		NOT = { country_has_primary_culture = cu:basque }
 	}
@@ -79,7 +79,7 @@ dod_integrate_basque = {
 
 dod_reclaim_england = {
 	is_shown = {
-		this = c:DUA
+		c:DUA ?= this
 		exists = c:ENL
 		NOT = { has_variable = dod_reclaimed_england }
 	}
@@ -104,7 +104,7 @@ dod_reclaim_england = {
 
 dod_reclaim_occitania = {
 	is_shown = {
-		this = c:DUA
+		c:DUA ?= this
 		exists = c:OCC
 		NOT = { has_variable = dod_reclaimed_occitania }
 	}
@@ -129,7 +129,7 @@ dod_reclaim_occitania = {
 
 dod_reclaim_ireland = {
 	is_shown = {
-		this = c:DUA
+		c:DUA ?= this
 		exists = c:IRE
 		NOT = { has_variable = dod_reclaimed_ireland }
 	}
@@ -159,10 +159,10 @@ dod_reclaim_ireland = {
 dod_act_of_union = {
 	is_shown = {
 		OR = {
-			this = c:ENL
-			this = c:SCO
-			this = c:IRE
-			this = c:WLS
+			c:ENL ?= this
+			c:SCO ?= this
+			c:IRE ?= this
+			c:WLS ?= this
 		}
 		NOT = { exists = c:ENG }
 	}
@@ -193,7 +193,7 @@ dod_act_of_union = {
 
 dod_beornia_claim_england = {
 	is_shown = {
-		this = c:NAN
+		c:NAN ?= this
 		NOT = { has_variable = dod_claimed_old_england }
 		NOT = { has_variable = dod_holy_britannia }
 	}
@@ -216,7 +216,7 @@ dod_beornia_claim_england = {
 
 dod_beornia_eternal_england = {
 	is_shown = {
-		this = c:NAN
+		c:NAN ?= this
 		has_variable = dod_claimed_old_england
 	}
 	possible = {
@@ -238,7 +238,7 @@ dod_beornia_eternal_england = {
 
 dod_beornia_holy_britannia = {
 	is_shown = {
-		this = c:NAN
+		c:NAN ?= this
 		NOT = { has_variable = dod_claimed_old_england }
 		NOT = { has_variable = dod_holy_britannia }
 	}
@@ -261,7 +261,7 @@ dod_beornia_holy_britannia = {
 
 dod_batavia_claim_netherlands = {
 	is_shown = {
-		this = c:BTV
+		c:BTV ?= this
 		NOT = { has_variable = dod_claimed_netherlands }
 	}
 	possible = {
@@ -284,7 +284,7 @@ dod_batavia_claim_netherlands = {
 
 dod_batavia_free_state = {
 	is_shown = {
-		this = c:BTV
+		c:BTV ?= this
 		has_variable = dod_claimed_netherlands
 	}
 	possible = {
@@ -310,7 +310,7 @@ dod_batavia_free_state = {
 
 dod_burgundy_rhineland = {
 	is_shown = {
-		this = c:BRG
+		c:BRG ?= this
 		NOT = { country_has_primary_culture = cu:rheinish }
 	}
 	possible = {
@@ -328,7 +328,7 @@ dod_burgundy_rhineland = {
 
 dod_fall_of_burgundy = {
 	is_shown = {
-		this = c:BRG
+		c:BRG ?= this
 		NOT = { exists = c:SAF }
 	}
 	possible = {
@@ -357,9 +357,9 @@ dod_fall_of_burgundy = {
 dod_abolish_selon = {
 	is_shown = {
 		OR = {
-			this = c:SPA
-			this = c:BRG
-			this = c:DUA
+			c:SPA ?= this
+			c:BRG ?= this
+			c:DUA ?= this
 		}
 		NOT = { has_global_variable = dod_selon_abolished }
 	}
@@ -367,7 +367,7 @@ dod_abolish_selon = {
 		is_at_war = no
 		country_rank >= rank_value:great_power
 		OR = {
-			this = c:SPA
+			c:SPA ?= this
 			NOT = { exists = c:SPA }
 			c:SPA = { country_rank < rank_value:great_power }
 		}
@@ -377,10 +377,10 @@ dod_abolish_selon = {
 		every_country = {
 			limit = {
 				OR = {
-					this = c:SPA
-					this = c:BRG
-					this = c:DUA
-					this = c:SCA
+					c:SPA ?= this
+					c:BRG ?= this
+					c:DUA ?= this
+					c:SCA ?= this
 				}
 			}
 			trigger_event = { id = dod_brg.5 }

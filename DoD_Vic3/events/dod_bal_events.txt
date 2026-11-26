@@ -12,7 +12,7 @@ dod_bal.1 = {
 	duration = 3
 
 	trigger = {
-		this = c:TUR
+		c:TUR ?= this
 		has_journal_entry = je_dod_ottoman_civil_war
 		NOT = { has_variable = dod_bal_seen_1 }
 	}
@@ -40,7 +40,7 @@ dod_bal.2 = {
 	duration = 3
 
 	trigger = {
-		this = c:TUR
+		c:TUR ?= this
 		is_at_war = no
 		exists = c:ALB
 		c:ALB = { NOT = { is_subject_of = root } }
@@ -68,7 +68,7 @@ dod_bal.12 = {
 	duration = 3
 
 	trigger = {
-		this = c:TUR
+		c:TUR ?= this
 		NOT = { exists = c:ALB }
 		NOT = { has_variable = dod_regained_alb }
 	}
@@ -93,7 +93,7 @@ dod_bal.3 = {
 	duration = 3
 
 	trigger = {
-		this = c:TUR
+		c:TUR ?= this
 		is_at_war = no
 		exists = c:MAC
 		c:MAC = { NOT = { is_subject_of = root } }
@@ -121,7 +121,7 @@ dod_bal.13 = {
 	duration = 3
 
 	trigger = {
-		this = c:TUR
+		c:TUR ?= this
 		NOT = { exists = c:MAC }
 		NOT = { has_variable = dod_regained_mac }
 	}
@@ -146,7 +146,7 @@ dod_bal.4 = {
 	duration = 3
 
 	trigger = {
-		this = c:TUR
+		c:TUR ?= this
 		is_at_war = no
 		exists = c:EGY
 		c:EGY = { NOT = { is_subject_of = root } }
@@ -174,7 +174,7 @@ dod_bal.14 = {
 	duration = 3
 
 	trigger = {
-		this = c:TUR
+		c:TUR ?= this
 		NOT = { exists = c:EGY }
 		NOT = { has_variable = dod_regained_egy }
 	}
@@ -199,7 +199,7 @@ dod_bal.5 = {
 	duration = 3
 
 	trigger = {
-		this = c:CRO
+		c:CRO ?= this
 		is_at_war = no
 		exists = c:TUR
 		c:TUR = { has_journal_entry = je_dod_ottoman_civil_war }
@@ -246,7 +246,7 @@ dod_bal.6 = {
 	duration = 3
 
 	trigger = {
-		this = c:HUN
+		c:HUN ?= this
 		is_at_war = no
 		exists = c:TUR
 		c:TUR = { has_journal_entry = je_dod_ottoman_civil_war }
@@ -293,7 +293,7 @@ dod_bal.7 = {
 	duration = 3
 
 	trigger = {
-		this = c:MOL
+		c:MOL ?= this
 		is_at_war = no
 		exists = c:TUR
 		c:TUR = { has_journal_entry = je_dod_ottoman_civil_war }
@@ -340,7 +340,7 @@ dod_bal.8 = {
 	duration = 3
 
 	trigger = {
-		this = c:AZB
+		c:AZB ?= this
 		is_at_war = no
 		exists = c:TUR
 		c:TUR = { has_journal_entry = je_dod_ottoman_civil_war }
@@ -417,7 +417,7 @@ dod_bal.21 = {
 	duration = 3
 
 	trigger = {
-		this = c:EGY
+		c:EGY ?= this
 		is_at_war = no
 		NOT = { is_subject_of = c:TUR }
 		NOT = { has_variable = dod_bal_seen_21 }
@@ -446,7 +446,7 @@ dod_bal.22 = {
 	duration = 3
 
 	trigger = {
-		this = c:EGY
+		c:EGY ?= this
 		has_variable = dod_bal_seen_21
 		any_scope_state = { state_region = { is_homeland = cu:mashriqi } }
 		NOT = { has_variable = dod_bal_seen_22 }
@@ -475,7 +475,7 @@ dod_bal.30 = {
 	duration = 3
 
 	trigger = {
-		this = c:MOL
+		c:MOL ?= this
 		is_at_war = no
 		game_date >= 1857.1.1
 		exists = c:WAL
@@ -535,7 +535,7 @@ dod_bal.35 = {
 	duration = 3
 
 	trigger = {
-		this = c:TUR
+		c:TUR ?= this
 		is_at_war = no
 		NOT = { exists = c:HUN }
 		any_scope_state = { state_region = { is_homeland = cu:hungarian } }
@@ -576,7 +576,7 @@ dod_bal.40 = {
 	duration = 3
 
 	trigger = {
-		this = c:CRO
+		c:CRO ?= this
 		exists = c:TUR
 		any_state = {
 			state_region = { is_homeland = cu:serb }
@@ -621,7 +621,7 @@ dod_bal.41 = {
 	duration = 3
 
 	trigger = {
-		this = c:CRO
+		c:CRO ?= this
 		has_variable = dod_bal_seen_40
 		NOT = { exists = c:SER }
 		any_scope_state = { state_region = { is_homeland = cu:serb } }
@@ -662,7 +662,7 @@ dod_bal.42 = {
 	duration = 3
 
 	trigger = {
-		this = c:CRO
+		c:CRO ?= this
 		game_date >= 1870.1.1
 		exists = c:SER
 		c:SER = { is_subject_of = root }
@@ -731,7 +731,7 @@ dod_bal.44 = {
 	duration = 3
 
 	trigger = {
-		this = c:CRO
+		c:CRO ?= this
 		has_variable = dod_serbo_croat_union
 		exists = c:MON
 		NOT = { has_variable = dod_bal_seen_44 }
@@ -791,8 +791,8 @@ dod_bal.45 = {
 		random_country = {
 			limit = {
 				OR = {
-					this = c:ARA
-					this = c:ARI
+					c:ARA ?= this
+					c:ARI ?= this
 				}
 			}
 			trigger_event = { id = dod_bal.46 days = 7 }
@@ -873,7 +873,7 @@ dod_bal.48 = {
 	duration = 3
 
 	trigger = {
-		this = c:CRO
+		c:CRO ?= this
 		game_date >= 1865.1.1
 		exists = c:SER
 		c:SER = { is_subject_of = root }

@@ -12,11 +12,11 @@ je_dod_prague_proclamation = {
 	group = je_group_historical_content
 
 	is_shown_when_inactive = {
-		this = c:HLR
+		c:HLR ?= this
 	}
 
 	possible = {
-		this = c:HLR
+		c:HLR ?= this
 	}
 
 
@@ -353,7 +353,7 @@ je_dod_elbian_unity = {
 		flags = { hidden invalid_outcome }
 		conclusion_desc = je_dod_elbian_unity_invalid_desc
 		trigger = {
-				NOT = { this = c:CAE }
+				NOT = { c:CAE ?= this }
 	
 		}
 	}

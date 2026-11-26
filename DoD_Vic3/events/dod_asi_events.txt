@@ -64,7 +64,7 @@ dod_asi.3 = {
 	duration = 3
 
 	trigger = {
-		this = c:JAP
+		c:JAP ?= this
 		country_rank >= rank_value:great_power
 		NOT = { has_variable = dod_asi_seen_3 }
 	}
@@ -116,7 +116,7 @@ dod_asi.5 = {
 	duration = 3
 
 	trigger = {
-		this = c:JAP
+		c:JAP ?= this
 		NOT = { exists = c:MCH }
 		any_scope_state = {
 			count >= 2
@@ -158,7 +158,7 @@ dod_asi.6 = {
 	duration = 3
 
 	trigger = {
-		this = c:KKN
+		c:KKN ?= this
 		exists = c:JAP
 		is_subject_of = c:JAP
 		game_date >= 1850.1.1
@@ -198,7 +198,7 @@ dod_asi.7 = {
 	duration = 3
 
 	trigger = {
-		this = c:JAP
+		c:JAP ?= this
 		country_rank >= rank_value:major_power
 		is_at_war = no
 		game_date >= 1860.1.1
@@ -336,9 +336,9 @@ dod_asi.12 = {
 
 	trigger = {
 		OR = {
-			this = c:CHI
-			this = c:MIG
-			this = c:TNG
+			c:CHI ?= this
+			c:MIG ?= this
+			c:TNG ?= this
 		}
 		game_date >= 1850.1.1
 		NOT = { has_variable = dod_asi_seen_12 }
@@ -374,9 +374,9 @@ dod_asi.13 = {
 
 	trigger = {
 		OR = {
-			this = c:CHI
-			this = c:MIG
-			this = c:TNG
+			c:CHI ?= this
+			c:MIG ?= this
+			c:TNG ?= this
 		}
 		game_date >= 1860.1.1
 		NOT = { has_variable = dod_asi_seen_13 }
@@ -405,7 +405,7 @@ dod_asi.20 = {
 	duration = 3
 
 	trigger = {
-		this = c:CHG
+		c:CHG ?= this
 		game_date >= 1845.1.1
 		NOT = { has_variable = dod_asi_seen_20 }
 	}
@@ -434,7 +434,7 @@ dod_asi.21 = {
 	duration = 3
 
 	trigger = {
-		this = c:CHG
+		c:CHG ?= this
 		is_at_war = no
 		NOT = { has_variable = dod_asi_seen_21 }
 	}
@@ -508,7 +508,7 @@ dod_asi.22 = {
 	duration = 3
 
 	trigger = {
-		this = c:CHG
+		c:CHG ?= this
 		exists = c:TIB
 		c:TIB = { is_at_war = no }
 		NOT = { has_variable = dod_asi_seen_22 }
@@ -567,7 +567,7 @@ dod_asi.24 = {
 	duration = 3
 
 	trigger = {
-		this = c:CHG
+		c:CHG ?= this
 		game_date >= 1860.1.1
 		NOT = { has_variable = dod_asi_seen_24 }
 	}

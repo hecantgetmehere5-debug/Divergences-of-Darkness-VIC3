@@ -172,7 +172,7 @@ dod_ame.3 = {
 	duration = 3
 
 	trigger = {
-		this = c:ARC
+		c:ARC ?= this
 		has_variable = dod_pan_arcadian
 		NOT = { has_variable = dod_ame_seen_3 }
 	}
@@ -258,7 +258,7 @@ dod_ame.6 = {
 	duration = 3
 
 	trigger = {
-		this = c:NBG
+		c:NBG ?= this
 		is_at_war = no
 		any_scope_state = { state_region = { is_homeland = cu:iroquois } }
 		NOT = { has_variable = dod_ame_seen_6 }
@@ -293,7 +293,7 @@ dod_ame.7 = {
 	duration = 3
 
 	trigger = {
-		this = c:PLA
+		c:PLA ?= this
 		game_date >= 1847.1.1
 		NOT = { has_law = law_type:law_slavery_banned }
 		NOT = { has_variable = dod_ame_seen_7 }
@@ -413,7 +413,7 @@ dod_ame.20 = {
 	duration = 3
 
 	trigger = {
-		this = c:NAN
+		c:NAN ?= this
 		exists = c:LOT
 	}
 
@@ -449,7 +449,7 @@ dod_ame.21 = {
 	duration = 3
 
 	trigger = {
-		this = c:AZL
+		c:AZL ?= this
 		is_at_war = no
 		NOT = { has_variable = dod_ame_seen_21 }
 	}
@@ -578,7 +578,7 @@ dod_ame.24 = {
 	duration = 3
 
 	trigger = {
-		this = c:LOT
+		c:LOT ?= this
 		has_law = law_type:law_autocracy
 		game_date >= 1845.1.1
 		NOT = { has_variable = dod_ame_seen_24 }
@@ -620,7 +620,7 @@ dod_ame.25 = {
 	duration = 3
 
 	trigger = {
-		this = c:NAN
+		c:NAN ?= this
 		exists = c:ENL
 		c:ENL = { is_at_war = yes }
 		NOT = { has_variable = dod_ame_seen_25 }

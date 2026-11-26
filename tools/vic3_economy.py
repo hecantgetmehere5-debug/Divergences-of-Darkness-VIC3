@@ -157,8 +157,9 @@ for f in (V3 / "map_data/state_regions").glob("*.txt"):
 # states vanilla left bare but DoD populated: at least one farm
 for st, tags in dpop.items():
     for tg, n in tags.items():
-        if n > 50000 and not plan[st][tg] and st in arable_res:
-            lv = max(1, min(caps.get(st, {}).get("_arable", 1) or 1, int(n / 150000)))
+        land = caps.get(st, {}).get("_arable", 0)
+        if n > 50000 and not plan[st][tg] and st in arable_res and land > 0:
+            lv = max(1, min(land, int(n / 150000)))
             plan[st][tg][arable_res[st]] = [lv, ("building", "building_manor_house"), None]
 
 for tg, st in capital.items():
@@ -173,6 +174,57 @@ for tg, st in capital.items():
         b["building_barrack"] = cur
     if "building_government_administration" not in b:
         b["building_government_administration"] = [max(1, min(10, int(tag_pop[tg] / 3e6) + 1)), ("country", None), None]
+
+
+# ---------- drop buildings a country can't build with its starting technology ----------
+def blocks_of(text):
+    for m in re.finditer(r"^(\w+)\s*=\s*\{", text, re.M):
+        i, d = m.end(), 1
+        while d:
+            d += {"{": 1, "}": -1}.get(text[i], 0)
+            i += 1
+        yield m.group(1), text[m.start():i]
+
+
+tech_era = {}
+for f in (V3 / "common/technology/technologies").glob("*.txt"):
+    for k, b in blocks_of(f.read_text(encoding="utf-8-sig")):
+        e = re.search(r"era\s*=\s*(era_\d)", b)
+        if e:
+            tech_era[k] = e.group(1)
+tier_techs = {}
+for f in (V3 / "common/scripted_effects").glob("*.txt"):
+    for k, b in blocks_of(f.read_text(encoding="utf-8-sig")):
+        m = re.match(r"effect_starting_technology_tier_(\d)_tech", k)
+        if m:
+            techs = set(re.findall(r"add_technology_researched\s*=\s*(\w+)", b))
+            for era in re.findall(r"add_era_researched\s*=\s*(era_\d)", b):
+                techs |= {t for t, e in tech_era.items() if e <= era}
+            tier_techs[int(m.group(1))] = techs
+needs = {}
+for f in (V3 / "common/buildings").glob("*.txt"):
+    for k, b in blocks_of(f.read_text(encoding="utf-8-sig")):
+        u = re.search(r"unlocking_technologies\s*=\s*\{([^}]*)\}", b)
+        if u:
+            needs[k] = set(u.group(1).split())
+# each country's tier: DoD tech file, else vanilla history (tags that keep it)
+country_tier = {t: int(n) for t, n in re.findall(r"c:(\w+) \?= \{ effect_starting_technology_tier_(\d)",
+                (MOD / "common/history/countries/dod_01_technology.txt").read_text(encoding="utf-8-sig"))}
+for f in (V3 / "common/history/countries").glob("*.txt"):
+    over = MOD / "common/history/countries" / f.name
+    t = (over if over.exists() else f).read_text(encoding="utf-8-sig")
+    for m in re.finditer(r"c:(\w+)\s*\??=\s*\{", t):
+        tm = re.search(r"effect_starting_technology_tier_(\d)_tech", t[m.end():m.end() + 4000])
+        if tm:
+            country_tier.setdefault(m.group(1), int(tm.group(1)))
+dropped = collections.Counter()
+for st in plan:
+    for tg in plan[st]:
+        have = tier_techs.get(country_tier.get(tg, 7), set())
+        for name in list(plan[st][tg]):
+            if needs.get(name) and not needs[name] <= have:
+                dropped[name] += plan[st][tg].pop(name)[0]
+print("levels dropped for missing technology:", sum(dropped.values()), dropped.most_common(6))
 
 
 def ownership(name, st, tg, lv, own):

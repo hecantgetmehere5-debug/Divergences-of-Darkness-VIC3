@@ -2,7 +2,7 @@
 
 dod_tanzimat_1 = {
 	is_shown = {
-		this = c:TUR
+		c:TUR ?= this
 		NOT = { has_variable = dod_tanzimat_1 }
 	}
 	possible = {
@@ -18,7 +18,7 @@ dod_tanzimat_1 = {
 
 dod_tanzimat_2 = {
 	is_shown = {
-		this = c:TUR
+		c:TUR ?= this
 		has_variable = dod_tanzimat_1
 		NOT = { has_variable = dod_tanzimat_2 }
 	}
@@ -36,7 +36,7 @@ dod_tanzimat_2 = {
 
 dod_reclaim_macedonia = {
 	is_shown = {
-		this = c:TUR
+		c:TUR ?= this
 		NOT = { has_variable = dod_reclaimed_macedonia }
 	}
 	possible = {
@@ -65,7 +65,7 @@ dod_reclaim_macedonia = {
 
 dod_reclaim_illyria = {
 	is_shown = {
-		this = c:TUR
+		c:TUR ?= this
 		NOT = { has_variable = dod_reclaimed_illyria }
 	}
 	possible = {
@@ -90,7 +90,7 @@ dod_reclaim_illyria = {
 
 dod_reclaim_madjaristan = {
 	is_shown = {
-		this = c:TUR
+		c:TUR ?= this
 		NOT = { has_variable = dod_reclaimed_madjaristan }
 	}
 	possible = {
@@ -114,7 +114,7 @@ dod_reclaim_madjaristan = {
 
 dod_reclaim_shirvan = {
 	is_shown = {
-		this = c:TUR
+		c:TUR ?= this
 		NOT = { has_variable = dod_reclaimed_shirvan }
 	}
 	possible = {
@@ -139,7 +139,7 @@ dod_reclaim_shirvan = {
 
 dod_egyptian_levant = {
 	is_shown = {
-		this = c:EGY
+		c:EGY ?= this
 		NOT = { has_variable = dod_egyptian_levant }
 	}
 	possible = {
@@ -202,7 +202,7 @@ dod_form_yugoslavia = {
 
 dod_yug_claim_albania = {
 	is_shown = {
-		this = c:YUG
+		c:YUG ?= this
 		NOT = { has_variable = dod_yug_albania }
 	}
 	possible = { is_at_war = no }
@@ -222,7 +222,7 @@ dod_yug_claim_albania = {
 
 dod_yug_claim_bulgaria = {
 	is_shown = {
-		this = c:YUG
+		c:YUG ?= this
 		NOT = { has_variable = dod_yug_bulgaria }
 	}
 	possible = { is_at_war = no }
@@ -243,7 +243,7 @@ dod_yug_claim_bulgaria = {
 
 dod_yug_claim_serbian_empire = {
 	is_shown = {
-		this = c:YUG
+		c:YUG ?= this
 		NOT = { has_variable = dod_yug_serbian_empire }
 	}
 	possible = {
@@ -271,7 +271,7 @@ dod_yug_claim_serbian_empire = {
 
 dod_mac_restore = {
 	is_shown = {
-		this = c:MAC
+		c:MAC ?= this
 		NOT = { has_variable = dod_mac_greek }
 		NOT = { has_variable = dod_mac_slav }
 	}
@@ -298,7 +298,7 @@ dod_mac_restore = {
 
 dod_mac_alexander = {
 	is_shown = {
-		this = c:MAC
+		c:MAC ?= this
 		has_variable = dod_mac_greek
 		NOT = { has_variable = dod_mac_alexander }
 	}
@@ -323,7 +323,7 @@ dod_mac_alexander = {
 
 dod_mac_align_yugoslavia = {
 	is_shown = {
-		this = c:MAC
+		c:MAC ?= this
 		NOT = { has_variable = dod_mac_greek }
 		NOT = { has_variable = dod_mac_slav }
 	}
@@ -350,7 +350,7 @@ dod_mac_align_yugoslavia = {
 
 dod_mac_hegemonia = {
 	is_shown = {
-		this = c:MAC
+		c:MAC ?= this
 		exists = c:GRE
 		NOT = { has_variable = dod_mac_hegemonia }
 	}
@@ -394,7 +394,7 @@ dod_unite_with_romania = {
 	is_shown = {
 		country_has_primary_culture = cu:romanian
 		exists = c:ROM
-		NOT = { this = c:ROM }
+		NOT = { c:ROM ?= this }
 	}
 	possible = {
 		is_at_war = no

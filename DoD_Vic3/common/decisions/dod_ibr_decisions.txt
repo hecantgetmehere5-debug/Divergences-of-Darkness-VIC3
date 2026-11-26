@@ -2,7 +2,7 @@
 
 dod_propose_iberian_union = {
 	is_shown = {
-		this = c:SPA
+		c:SPA ?= this
 		NOT = { has_variable = dod_iberian_union }
 		NOT = { exists = c:SPC }
 	}
@@ -31,7 +31,7 @@ dod_propose_iberian_union = {
 
 dod_integrate_catalans = {
 	is_shown = {
-		this = c:SPA
+		c:SPA ?= this
 		has_variable = dod_iberian_union
 		NOT = { country_has_primary_culture = cu:catalan }
 	}
@@ -47,7 +47,7 @@ dod_integrate_catalans = {
 
 dod_unify_navarra = {
 	is_shown = {
-		this = c:SPA
+		c:SPA ?= this
 		has_variable = dod_iberian_union
 		NOT = { country_has_primary_culture = cu:basque }
 	}
@@ -75,7 +75,7 @@ dod_unify_navarra = {
 
 dod_form_mancomunidad = {
 	is_shown = {
-		this = c:SPA
+		c:SPA ?= this
 		NOT = { exists = c:SPC }
 		NOT = { has_variable = dod_iberian_union }
 	}
@@ -119,7 +119,7 @@ dod_form_mancomunidad = {
 
 dod_iberian_cooperation = {
 	is_shown = {
-		this = c:SPC
+		c:SPC ?= this
 		NOT = { has_variable = dod_iberian_cooperation }
 		OR = {
 			exists = c:ARA
@@ -139,7 +139,7 @@ dod_iberian_cooperation = {
 
 dod_greater_euskadia = {
 	is_shown = {
-		this = c:NAV
+		c:NAV ?= this
 		NOT = { has_variable = dod_greater_euskadia }
 	}
 	possible = {

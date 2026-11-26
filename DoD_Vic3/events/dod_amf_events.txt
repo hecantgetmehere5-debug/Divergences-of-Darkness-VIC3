@@ -13,8 +13,8 @@ dod_amf.1 = {
 
 	trigger = {
 		OR = {
-			this = c:NBG
-			this = c:ARC
+			c:NBG ?= this
+			c:ARC ?= this
 		}
 		NOT = { has_variable = dod_amf_seen_1 }
 	}
@@ -50,7 +50,7 @@ dod_amf.2 = {
 	duration = 3
 
 	trigger = {
-		this = c:NBG
+		c:NBG ?= this
 		NOT = { has_variable = dod_amf_seen_2 }
 	}
 
@@ -77,7 +77,7 @@ dod_amf.3 = {
 	duration = 3
 
 	trigger = {
-		this = c:VIN
+		c:VIN ?= this
 		exists = c:PLA
 		NOT = { has_variable = dod_amf_seen_3 }
 	}
@@ -113,7 +113,7 @@ dod_amf.4 = {
 	duration = 3
 
 	trigger = {
-		this = c:PLA
+		c:PLA ?= this
 		NOT = { has_variable = dod_amf_seen_4 }
 	}
 
@@ -141,10 +141,10 @@ dod_amf.5 = {
 
 	trigger = {
 		OR = {
-			this = c:VIN
-			this = c:NBG
-			this = c:PLA
-			this = c:ARC
+			c:VIN ?= this
+			c:NBG ?= this
+			c:PLA ?= this
+			c:ARC ?= this
 		}
 		game_date >= 1840.1.1
 		NOT = { has_variable = dod_amf_seen_5 }
@@ -181,7 +181,7 @@ dod_amf.6 = {
 	duration = 3
 
 	trigger = {
-		this = c:DNG
+		c:DNG ?= this
 		NOT = { has_variable = dod_amf_seen_6 }
 	}
 
@@ -208,7 +208,7 @@ dod_amf.7 = {
 	duration = 3
 
 	trigger = {
-		this = c:DNG
+		c:DNG ?= this
 		game_date >= 1837.1.1
 		NOT = { has_variable = dod_amf_seen_7 }
 	}
@@ -243,7 +243,7 @@ dod_amf.8 = {
 	duration = 3
 
 	trigger = {
-		this = c:KKN
+		c:KKN ?= this
 		NOT = { has_variable = dod_amf_seen_8 }
 	}
 
@@ -271,7 +271,7 @@ dod_amf.9 = {
 
 	trigger = {
 		OR = {
-			this = c:ATS
+			c:ATS ?= this
 			any_scope_state = { state_region = { is_homeland = cu:athesian } }
 		}
 		NOT = { has_variable = dod_amf_seen_9 }
@@ -308,8 +308,8 @@ dod_amf.20 = {
 
 	trigger = {
 		OR = {
-			this = c:CLM
-			this = c:GRA
+			c:CLM ?= this
+			c:GRA ?= this
 		}
 		NOT = { has_variable = dod_amf_seen_20 }
 	}
@@ -344,7 +344,7 @@ dod_amf.21 = {
 	duration = 3
 
 	trigger = {
-		this = c:CLM
+		c:CLM ?= this
 		NOT = { has_variable = dod_amf_seen_21 }
 	}
 
@@ -378,7 +378,7 @@ dod_amf.22 = {
 	duration = 3
 
 	trigger = {
-		this = c:INC
+		c:INC ?= this
 		NOT = { has_variable = dod_amf_seen_22 }
 	}
 
@@ -413,7 +413,7 @@ dod_amf.23 = {
 	duration = 3
 
 	trigger = {
-		this = c:INC
+		c:INC ?= this
 		game_date < 1845.1.1
 		NOT = { has_variable = dod_amf_seen_23 }
 	}
@@ -449,8 +449,8 @@ dod_amf.24 = {
 
 	trigger = {
 		OR = {
-			this = c:NAN
-			this = c:INC
+			c:NAN ?= this
+			c:INC ?= this
 		}
 		NOT = { has_variable = dod_amf_seen_24 }
 	}
@@ -485,7 +485,7 @@ dod_amf.30 = {
 	duration = 3
 
 	trigger = {
-		this = c:NAN
+		c:NAN ?= this
 		NOT = { has_variable = dod_amf_seen_30 }
 	}
 
@@ -512,7 +512,7 @@ dod_amf.31 = {
 	duration = 3
 
 	trigger = {
-		this = c:NAN
+		c:NAN ?= this
 		exists = c:LOT
 		NOT = { has_variable = dod_amf_seen_31 }
 	}
@@ -549,7 +549,7 @@ dod_amf.32 = {
 	duration = 3
 
 	trigger = {
-		this = c:LOT
+		c:LOT ?= this
 		exists = c:NAN
 		NOT = { has_variable = dod_amf_seen_32 }
 	}
@@ -578,7 +578,7 @@ dod_amf.33 = {
 	duration = 3
 
 	trigger = {
-		this = c:LOT
+		c:LOT ?= this
 		NOT = { has_variable = dod_amf_seen_33 }
 	}
 
@@ -605,7 +605,7 @@ dod_amf.34 = {
 	duration = 3
 
 	trigger = {
-		this = c:AMA
+		c:AMA ?= this
 		NOT = { has_variable = dod_amf_seen_34 }
 	}
 
@@ -640,7 +640,7 @@ dod_amf.35 = {
 	duration = 3
 
 	trigger = {
-		this = c:SCA
+		c:SCA ?= this
 		any_scope_state = { state_region = { is_homeland = cu:ayitian } }
 		NOT = { has_variable = dod_amf_seen_35 }
 	}

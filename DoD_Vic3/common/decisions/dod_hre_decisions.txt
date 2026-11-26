@@ -3,8 +3,8 @@
 dod_form_elbian_confederation = {
 	is_shown = {
 		OR = {
-			this = c:HLR
-			this = c:BOH
+			c:HLR ?= this
+			c:BOH ?= this
 		}
 		country_has_primary_culture = cu:czech
 		NOT = { exists = c:CAE }

@@ -32,8 +32,8 @@ dod_boer_unification = {
 dod_form_south_africa = {
 	is_shown = {
 		OR = {
-			this = c:BTV
-			this = c:BRG
+			c:BTV ?= this
+			c:BRG ?= this
 		}
 		NOT = { exists = c:SAF }
 	}
@@ -68,9 +68,9 @@ dod_form_south_africa = {
 dod_bastaard_question = {
 	is_shown = {
 		OR = {
-			this = c:BTV
-			this = c:SAF
-			this = c:BRG
+			c:BTV ?= this
+			c:SAF ?= this
+			c:BRG ?= this
 		}
 		NOT = { country_has_primary_culture = cu:afro_south_african }
 	}
@@ -85,7 +85,7 @@ dod_bastaard_question = {
 
 dod_greater_griqualand = {
 	is_shown = {
-		this = c:GRQ
+		c:GRQ ?= this
 		NOT = { has_variable = dod_griqualand }
 	}
 	possible = {
@@ -112,7 +112,7 @@ dod_greater_griqualand = {
 
 dod_kongo_missionaries = {
 	is_shown = {
-		this = c:KON
+		c:KON ?= this
 		NOT = { has_variable = dod_kongo_missions }
 	}
 	possible = {
@@ -127,7 +127,7 @@ dod_kongo_missionaries = {
 
 dod_kongo_empire = {
 	is_shown = {
-		this = c:KON
+		c:KON ?= this
 		NOT = { has_variable = dod_kongo_empire }
 	}
 	possible = {
@@ -161,7 +161,7 @@ dod_kongo_empire = {
 
 dod_kongo_integrate = {
 	is_shown = {
-		this = c:KON
+		c:KON ?= this
 		NOT = { has_variable = dod_kongo_integrated }
 	}
 	possible = {
@@ -192,7 +192,7 @@ dod_kongo_integrate = {
 
 dod_dahomey_independence = {
 	is_shown = {
-		this = c:DHY
+		c:DHY ?= this
 		any_country = { root = { is_subject_of = prev } }
 	}
 	possible = {
@@ -213,7 +213,7 @@ dod_dahomey_independence = {
 
 dod_dahomey_expansion = {
 	is_shown = {
-		this = c:DHY
+		c:DHY ?= this
 		NOT = { has_variable = dod_dhy_expansion }
 	}
 	possible = {
@@ -242,7 +242,7 @@ dod_dahomey_expansion = {
 
 dod_dahomey_schools = {
 	is_shown = {
-		this = c:DHY
+		c:DHY ?= this
 		NOT = { has_variable = dod_dhy_schools }
 	}
 	possible = {
@@ -334,7 +334,7 @@ dod_restore_solomonic = {
 
 dod_ethiopia_imperial_lands = {
 	is_shown = {
-		this = c:ETH
+		c:ETH ?= this
 		NOT = { has_variable = dod_eth_lands }
 	}
 	possible = {
@@ -366,7 +366,7 @@ dod_ethiopia_imperial_lands = {
 
 dod_liberate_nubia = {
 	is_shown = {
-		this = c:ETH
+		c:ETH ?= this
 		NOT = { has_variable = dod_nubia }
 	}
 	possible = {
@@ -392,8 +392,8 @@ dod_liberate_nubia = {
 dod_greater_adal = {
 	is_shown = {
 		OR = {
-			this = c:ADA
-			this = c:ABS
+			c:ADA ?= this
+			c:ABS ?= this
 		}
 		NOT = { has_variable = dod_greater_adal }
 	}
@@ -426,8 +426,8 @@ dod_greater_adal = {
 dod_proclaim_abyssinia = {
 	is_shown = {
 		OR = {
-			this = c:ETH
-			this = c:ADA
+			c:ETH ?= this
+			c:ADA ?= this
 		}
 		NOT = { exists = c:ABS }
 	}
@@ -531,7 +531,7 @@ dod_form_polynesia = {
 
 dod_polynesia_micronesians = {
 	is_shown = {
-		this = c:PLY
+		c:PLY ?= this
 		NOT = { has_variable = dod_ply_claims }
 	}
 	possible = {

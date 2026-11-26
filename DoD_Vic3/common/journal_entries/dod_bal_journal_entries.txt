@@ -42,7 +42,7 @@ je_dod_ottoman_civil_war = {
 		flags = { hidden invalid_outcome }
 		conclusion_desc = je_dod_ottoman_civil_war_invalid_desc
 		trigger = {
-				NOT = { this = c:TUR }
+				NOT = { c:TUR ?= this }
 	
 		}
 	}

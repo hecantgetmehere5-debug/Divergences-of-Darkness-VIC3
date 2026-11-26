@@ -12,7 +12,7 @@ dod_eur.1 = {
 	duration = 3
 
 	trigger = {
-		this = c:DUA
+		c:DUA ?= this
 		game_date >= 1838.1.1
 		NOT = { has_variable = dod_eur_seen_1 }
 	}
@@ -55,7 +55,7 @@ dod_eur.2 = {
 	duration = 3
 
 	trigger = {
-		this = c:DUA
+		c:DUA ?= this
 		NOT = { has_variable = dod_eur_seen_2 }
 	}
 
@@ -95,7 +95,7 @@ dod_eur.3 = {
 	duration = 3
 
 	trigger = {
-		this = c:DUA
+		c:DUA ?= this
 		game_date >= 1870.1.1
 		NOT = { has_variable = dod_eur_seen_3 }
 	}
@@ -133,7 +133,7 @@ dod_eur.4 = {
 	duration = 3
 
 	trigger = {
-		this = c:DUA
+		c:DUA ?= this
 		game_date >= 1840.1.1
 		NOT = { has_variable = dod_eur_seen_4 }
 	}
@@ -170,7 +170,7 @@ dod_eur.10 = {
 	duration = 3
 
 	trigger = {
-		this = c:BRG
+		c:BRG ?= this
 		NOT = { has_variable = dod_eur_seen_10 }
 	}
 
@@ -205,7 +205,7 @@ dod_eur.11 = {
 	duration = 3
 
 	trigger = {
-		this = c:BRG
+		c:BRG ?= this
 		NOT = { has_variable = dod_eur_seen_11 }
 	}
 
@@ -239,7 +239,7 @@ dod_eur.12 = {
 	duration = 3
 
 	trigger = {
-		this = c:BRG
+		c:BRG ?= this
 		any_country = { country_has_primary_culture = cu:rheinish }
 		NOT = { has_variable = dod_eur_seen_12 }
 	}
@@ -276,7 +276,7 @@ dod_eur.20 = {
 	duration = 3
 
 	trigger = {
-		this = c:SCA
+		c:SCA ?= this
 		game_date >= 1845.1.1
 		NOT = { has_variable = dod_eur_seen_20 }
 	}
@@ -312,7 +312,7 @@ dod_eur.21 = {
 	duration = 3
 
 	trigger = {
-		this = c:SCA
+		c:SCA ?= this
 		any_scope_state = { state_region = { is_homeland = cu:scottish } }
 		NOT = { has_variable = dod_eur_seen_21 }
 	}
@@ -347,7 +347,7 @@ dod_eur.22 = {
 	duration = 3
 
 	trigger = {
-		this = c:SCA
+		c:SCA ?= this
 		NOT = { has_variable = dod_eur_seen_22 }
 	}
 
@@ -382,8 +382,8 @@ dod_eur.30 = {
 
 	trigger = {
 		OR = {
-			this = c:HLR
-			this = c:BOH
+			c:HLR ?= this
+			c:BOH ?= this
 		}
 		NOT = { has_variable = dod_eur_seen_30 }
 	}
@@ -418,8 +418,8 @@ dod_eur.31 = {
 
 	trigger = {
 		OR = {
-			this = c:HLR
-			this = c:BOH
+			c:HLR ?= this
+			c:BOH ?= this
 		}
 		game_date >= 1840.1.1
 		NOT = { has_variable = dod_eur_seen_31 }
@@ -456,8 +456,8 @@ dod_eur.32 = {
 
 	trigger = {
 		OR = {
-			this = c:HLR
-			this = c:BOH
+			c:HLR ?= this
+			c:BOH ?= this
 		}
 		NOT = { has_variable = dod_eur_seen_32 }
 	}
@@ -494,8 +494,8 @@ dod_eur.33 = {
 
 	trigger = {
 		OR = {
-			this = c:AUS
-			this = c:BAV
+			c:AUS ?= this
+			c:BAV ?= this
 		}
 		game_date >= 1840.1.1
 		NOT = { has_variable = dod_eur_seen_33 }
@@ -514,12 +514,12 @@ dod_eur.33 = {
 
 	option = {
 		name = dod_eur.33.b
-		trigger = { this = c:AUS }
+		trigger = { c:AUS ?= this }
 		every_state = {
 			limit = {
 				state_region = { is_homeland = cu:south_german }
 				NOT = { owner = root }
-				owner = { NOT = { this = c:BAV } }
+				owner = { NOT = { c:BAV ?= this } }
 			}
 			state_region = { add_claim = root }
 		}
@@ -539,7 +539,7 @@ dod_eur.40 = {
 	duration = 3
 
 	trigger = {
-		this = c:PLC
+		c:PLC ?= this
 		NOT = { has_variable = dod_lublin_renewed }
 		NOT = { has_variable = dod_eur_seen_40 }
 	}
@@ -575,7 +575,7 @@ dod_eur.41 = {
 	duration = 3
 
 	trigger = {
-		this = c:NOV
+		c:NOV ?= this
 		NOT = { has_variable = dod_eur_seen_41 }
 	}
 
@@ -603,8 +603,8 @@ dod_eur.50 = {
 
 	trigger = {
 		OR = {
-			this = c:ARA
-			this = c:ARI
+			c:ARA ?= this
+			c:ARI ?= this
 		}
 		NOT = { has_variable = dod_eur_seen_50 }
 	}
@@ -638,7 +638,7 @@ dod_eur.51 = {
 	duration = 3
 
 	trigger = {
-		this = c:SAR
+		c:SAR ?= this
 		game_date >= 1845.1.1
 		NOT = { has_variable = dod_eur_seen_51 }
 	}
@@ -674,7 +674,7 @@ dod_eur.52 = {
 	duration = 3
 
 	trigger = {
-		this = c:TUS
+		c:TUS ?= this
 		NOT = { has_variable = dod_eur_seen_52 }
 	}
 
@@ -701,7 +701,7 @@ dod_eur.53 = {
 	duration = 3
 
 	trigger = {
-		this = c:PAP
+		c:PAP ?= this
 		NOT = { has_variable = dod_eur_seen_53 }
 	}
 
@@ -728,7 +728,7 @@ dod_eur.54 = {
 	duration = 3
 
 	trigger = {
-		this = c:NAV
+		c:NAV ?= this
 		NOT = { has_variable = dod_eur_seen_54 }
 	}
 
@@ -755,7 +755,7 @@ dod_eur.60 = {
 	duration = 3
 
 	trigger = {
-		this = c:HUN
+		c:HUN ?= this
 		NOT = { has_variable = dod_eur_seen_60 }
 	}
 
@@ -788,7 +788,7 @@ dod_eur.61 = {
 	duration = 3
 
 	trigger = {
-		this = c:SWI
+		c:SWI ?= this
 		NOT = { has_variable = dod_eur_seen_61 }
 	}
 

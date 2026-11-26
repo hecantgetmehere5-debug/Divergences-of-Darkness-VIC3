@@ -523,8 +523,8 @@ dod_hre.54 = {
 		every_country = {
 			limit = {
 				OR = {
-					this = c:SCA
-					this = c:BRG
+					c:SCA ?= this
+					c:BRG ?= this
 				}
 				is_at_war = no
 			}
@@ -678,8 +678,8 @@ dod_hre.70 = {
 
 	trigger = {
 		OR = {
-			this = c:HLR
-			this = c:BOH
+			c:HLR ?= this
+			c:BOH ?= this
 		}
 		game_date >= 1860.1.1
 		any_scope_state = { dod_is_bohemian_state = yes }
@@ -710,7 +710,7 @@ dod_hre.71 = {
 	duration = 3
 
 	trigger = {
-		this = c:HLR
+		c:HLR ?= this
 		game_date >= 1900.1.1
 		game_date < 1901.1.1
 		NOT = { has_global_variable = dod_imperial_jubilee }

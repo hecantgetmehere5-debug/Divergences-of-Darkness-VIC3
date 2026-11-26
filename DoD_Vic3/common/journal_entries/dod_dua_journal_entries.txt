@@ -132,7 +132,7 @@ je_dod_anglois_dilemma = {
 		flags = { hidden invalid_outcome }
 		conclusion_desc = je_dod_anglois_dilemma_invalid_desc
 		trigger = {
-				NOT = { this = c:DUA }
+				NOT = { c:DUA ?= this }
 	
 		}
 	}

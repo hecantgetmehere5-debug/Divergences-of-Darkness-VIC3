@@ -12,7 +12,7 @@ dod_ibr.2 = {
 	duration = 3
 
 	trigger = {
-		this = c:CAT
+		c:CAT ?= this
 	}
 
 	option = {
@@ -75,7 +75,7 @@ dod_ibr.4 = {
 	duration = 3
 
 	trigger = {
-		this = c:SPA
+		c:SPA ?= this
 		has_variable = dod_iberian_union
 		NOT = { exists = c:NAV }
 		any_state = {
@@ -133,7 +133,7 @@ dod_ibr.6 = {
 	duration = 3
 
 	trigger = {
-		this = c:SPC
+		c:SPC ?= this
 		game_date >= 1910.1.1
 		is_at_war = no
 		NOT = { exists = c:CUB }
@@ -213,8 +213,8 @@ dod_ibr.8 = {
 		random_country = {
 			limit = {
 				OR = {
-					this = c:ARA
-					this = c:ARI
+					c:ARA ?= this
+					c:ARI ?= this
 				}
 			}
 			save_scope_as = dod_aragon
@@ -247,12 +247,12 @@ dod_ibr.10 = {
 	duration = 3
 
 	trigger = {
-		this = c:NAV
+		c:NAV ?= this
 		is_at_war = no
 		any_country = {
 			OR = {
-				this = c:ARA
-				this = c:ARI
+				c:ARA ?= this
+				c:ARI ?= this
 			}
 			root = { is_subject_of = prev }
 			country_rank < rank_value:great_power
@@ -351,8 +351,8 @@ dod_ibr.12 = {
 		random_country = {
 			limit = {
 				OR = {
-					this = c:ARA
-					this = c:ARI
+					c:ARA ?= this
+					c:ARI ?= this
 				}
 				root = { is_subject_of = prev }
 			}
@@ -411,7 +411,7 @@ dod_ibr.15 = {
 	duration = 3
 
 	trigger = {
-		this = c:NAV
+		c:NAV ?= this
 		is_at_war = no
 		game_date >= 1850.1.1
 		has_law = law_type:law_monarchy
@@ -434,16 +434,16 @@ dod_ibr.15 = {
 		name = dod_ibr.15.b
 		trigger = { any_country = {
 	OR = {
-		this = c:ARA
-		this = c:ARI
+		c:ARA ?= this
+		c:ARI ?= this
 	}
 } }
 		set_global_variable = dod_end_bourbon
 		random_country = {
 			limit = {
 				OR = {
-					this = c:ARA
-					this = c:ARI
+					c:ARA ?= this
+					c:ARI ?= this
 				}
 			}
 			annex = root
@@ -477,8 +477,8 @@ dod_ibr.16 = {
 		random_country = {
 			limit = {
 				OR = {
-					this = c:ARA
-					this = c:ARI
+					c:ARA ?= this
+					c:ARI ?= this
 				}
 			}
 			trigger_event = { id = dod_ibr.18 days = 14 }
@@ -559,8 +559,8 @@ dod_ibr.19 = {
 		random_country = {
 			limit = {
 				OR = {
-					this = c:ARA
-					this = c:ARI
+					c:ARA ?= this
+					c:ARI ?= this
 				}
 			}
 			trigger_event = { id = dod_ibr.20 days = 14 }
@@ -591,9 +591,9 @@ dod_ibr.20 = {
 		random_country = {
 			limit = {
 				OR = {
-					this = c:DUA
-					this = c:ARA
-					this = c:ARI
+					c:DUA ?= this
+					c:ARA ?= this
+					c:ARI ?= this
 				}
 				NOT = { this = root }
 				any_state = {

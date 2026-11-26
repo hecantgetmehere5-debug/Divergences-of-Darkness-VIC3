@@ -2,7 +2,7 @@
 
 dod_beornian_lotharian_union = {
 	is_shown = {
-		this = c:NAN
+		c:NAN ?= this
 		exists = c:LOT
 		NOT = { has_variable = dod_bl_union }
 	}
@@ -24,7 +24,7 @@ dod_beornian_lotharian_union = {
 
 dod_crown_amedeo = {
 	is_shown = {
-		this = c:SAR
+		c:SAR ?= this
 		has_journal_entry = je_dod_savoyard_succession
 	}
 	possible = {
@@ -40,7 +40,7 @@ dod_crown_amedeo = {
 
 dod_italian_confederation = {
 	is_shown = {
-		this = c:SAR
+		c:SAR ?= this
 		NOT = { has_variable = dod_confederation_proposed }
 		NOT = { exists = c:ITA }
 	}
@@ -68,7 +68,7 @@ dod_italian_confederation = {
 
 dod_unite_confederation = {
 	is_shown = {
-		this = c:SAR
+		c:SAR ?= this
 		has_variable = dod_confederation_proposed
 		NOT = { exists = c:ITA }
 	}
@@ -98,9 +98,9 @@ dod_unite_confederation = {
 dod_new_italian_wars = {
 	is_shown = {
 		OR = {
-			this = c:SAR
+			c:SAR ?= this
 			AND = {
-				this = c:ITA
+				c:ITA ?= this
 				has_variable = dod_confederation_proposed
 			}
 		}
@@ -124,9 +124,9 @@ dod_new_italian_wars = {
 				}
 				owner = {
 					OR = {
-						this = c:ARA
-						this = c:ARI
-						this = c:DUA
+						c:ARA ?= this
+						c:ARI ?= this
+						c:DUA ?= this
 					}
 				}
 			}

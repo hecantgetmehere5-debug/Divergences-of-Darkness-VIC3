@@ -3,9 +3,9 @@
 dod_form_arcadia = {
 	is_shown = {
 		OR = {
-			this = c:VIN
-			this = c:NBG
-			this = c:PLA
+			c:VIN ?= this
+			c:NBG ?= this
+			c:PLA ?= this
 		}
 		NOT = { exists = c:ARC }
 	}
@@ -32,7 +32,7 @@ dod_form_arcadia = {
 
 dod_arcadian_conference = {
 	is_shown = {
-		this = c:ARC
+		c:ARC ?= this
 		has_journal_entry = je_dod_arcadian_union
 	}
 	possible = {
@@ -104,7 +104,7 @@ dod_arcadian_conference = {
 
 dod_continental_congress = {
 	is_shown = {
-		this = c:ARC
+		c:ARC ?= this
 		has_journal_entry = je_dod_arcadian_union
 		NOT = { has_variable = dod_congress_held }
 	}
@@ -121,7 +121,7 @@ dod_continental_congress = {
 
 dod_arcadia_manifest_destiny_vin = {
 	is_shown = {
-		this = c:VIN
+		c:VIN ?= this
 		NOT = { has_variable = dod_manifest_destiny }
 	}
 	possible = {
@@ -149,7 +149,7 @@ dod_arcadia_manifest_destiny_vin = {
 
 dod_arcadia_manifest_destiny_nbg = {
 	is_shown = {
-		this = c:NBG
+		c:NBG ?= this
 		NOT = { has_variable = dod_manifest_destiny }
 	}
 	possible = {
@@ -177,7 +177,7 @@ dod_arcadia_manifest_destiny_nbg = {
 
 dod_arcadia_manifest_destiny_pla = {
 	is_shown = {
-		this = c:PLA
+		c:PLA ?= this
 		NOT = { has_variable = dod_manifest_destiny }
 	}
 	possible = {
@@ -205,7 +205,7 @@ dod_arcadia_manifest_destiny_pla = {
 
 dod_arcadia_manifest_destiny_dng = {
 	is_shown = {
-		this = c:DNG
+		c:DNG ?= this
 		NOT = { has_variable = dod_manifest_destiny }
 	}
 	possible = {
@@ -233,7 +233,7 @@ dod_arcadia_manifest_destiny_dng = {
 
 dod_push_west = {
 	is_shown = {
-		this = c:ARC
+		c:ARC ?= this
 		exists = c:DNG
 		NOT = { has_variable = dod_push_west }
 	}
@@ -251,10 +251,10 @@ dod_push_west = {
 dod_arcadia_integrate = {
 	is_shown = {
 		OR = {
-			this = c:ARC
-			this = c:VIN
-			this = c:NBG
-			this = c:PLA
+			c:ARC ?= this
+			c:VIN ?= this
+			c:NBG ?= this
+			c:PLA ?= this
 		}
 		NOT = { has_variable = dod_arcadia_integrated }
 	}
@@ -291,10 +291,10 @@ dod_arcadia_integrate = {
 dod_purchase_athesia = {
 	is_shown = {
 		OR = {
-			this = c:ARC
-			this = c:PLA
-			this = c:NBG
-			this = c:VIN
+			c:ARC ?= this
+			c:PLA ?= this
+			c:NBG ?= this
+			c:VIN ?= this
 		}
 		NOT = { has_variable = dod_purchase_athesia }
 		any_state = {
@@ -326,11 +326,11 @@ dod_purchase_athesia = {
 dod_purchase_habana = {
 	is_shown = {
 		OR = {
-			this = c:ARC
-			this = c:PLA
-			this = c:NBG
-			this = c:KRL
-			this = c:AZL
+			c:ARC ?= this
+			c:PLA ?= this
+			c:NBG ?= this
+			c:KRL ?= this
+			c:AZL ?= this
 		}
 		NOT = { has_variable = dod_purchase_habana }
 		any_state = {
@@ -362,11 +362,11 @@ dod_purchase_habana = {
 dod_purchase_ayiti = {
 	is_shown = {
 		OR = {
-			this = c:ARC
-			this = c:PLA
-			this = c:NBG
-			this = c:KRL
-			this = c:AZL
+			c:ARC ?= this
+			c:PLA ?= this
+			c:NBG ?= this
+			c:KRL ?= this
+			c:AZL ?= this
 		}
 		NOT = { has_variable = dod_purchase_ayiti }
 		any_state = {
@@ -397,7 +397,7 @@ dod_purchase_ayiti = {
 
 dod_lot_statue = {
 	is_shown = {
-		this = c:LOT
+		c:LOT ?= this
 		exists = c:NAN
 		NOT = { has_variable = dod_lot_statue }
 	}
@@ -414,8 +414,8 @@ dod_lot_statue = {
 dod_form_ameriga = {
 	is_shown = {
 		OR = {
-			this = c:AMA
-			this = c:LOT
+			c:AMA ?= this
+			c:LOT ?= this
 		}
 		NOT = { exists = c:AZL }
 	}
@@ -446,7 +446,7 @@ dod_form_ameriga = {
 
 dod_federation_invite = {
 	is_shown = {
-		this = c:AZL
+		c:AZL ?= this
 		NOT = { has_variable = dod_federation_invited }
 	}
 	possible = {
@@ -457,9 +457,9 @@ dod_federation_invite = {
 		every_country = {
 			limit = {
 				OR = {
-					this = c:NAN
-					this = c:EQN
-					this = c:ATL
+					c:NAN ?= this
+					c:EQN ?= this
+					c:ATL ?= this
 				}
 				NOT = { is_subject_of = root }
 			}
@@ -471,7 +471,7 @@ dod_federation_invite = {
 
 dod_ameriga_integrate = {
 	is_shown = {
-		this = c:AZL
+		c:AZL ?= this
 		NOT = { has_variable = dod_ameriga_integrated }
 	}
 	possible = {
@@ -501,7 +501,7 @@ dod_ameriga_integrate = {
 
 dod_beornia_inca_treaty = {
 	is_shown = {
-		this = c:NAN
+		c:NAN ?= this
 		exists = c:INC
 		NOT = { has_variable = dod_inca_treaty }
 	}
@@ -517,7 +517,7 @@ dod_beornia_inca_treaty = {
 
 dod_dine_claims = {
 	is_shown = {
-		this = c:DIN
+		c:DIN ?= this
 		NOT = { has_variable = dod_dine_claims }
 	}
 	possible = {
