@@ -97,11 +97,8 @@ storyline,vic2_file,kind,vic2_id,title
 1. Holy Roman Empire & Central Europe,Hungary.txt,dec,form_transcarpathia,The Hungarian-Romanian Union
 1. Holy Roman Empire & Central Europe,Hungary.txt,dec,dominate_south_slavs,Dominate the South Slavs
 1. Holy Roman Empire & Central Europe,Hungary.txt,dec,albanian_protectorate,The Albanian Protectorate
-1. Holy Roman Empire & Central Europe,FRA-CZH - 598XXX.txt,ev,598000,Bridge over Salzach
-1. Holy Roman Empire & Central Europe,FRA-CZH - 598XXX.txt,ev,598001,Partition of Venice
 1. Holy Roman Empire & Central Europe,FRA-CZH - 598XXX.txt,ev,598002,EVTNAME598002
 1. Holy Roman Empire & Central Europe,FRA-CZH - 598XXX.txt,ev,598004,Last Breath
-1. Holy Roman Empire & Central Europe,FRA-CZH - 598XXX.txt,ev,598005,The Question of Italy
 1. Holy Roman Empire & Central Europe,FRA-CZH - 598XXX.txt,ev,598006,The Savoyard Anschluss
 1. Holy Roman Empire & Central Europe,FRA-CZH - 598XXX.txt,ev,650300,The United Republic
 1. Holy Roman Empire & Central Europe,FRA-CZH - 598XXX.txt,ev,650301,The Republic is united!
@@ -121,10 +118,7 @@ storyline,vic2_file,kind,vic2_id,title
 1. Holy Roman Empire & Central Europe,FRA-CZH - 598XXX.txt,ev,650323,Dissolution of the United Republic
 1. Holy Roman Empire & Central Europe,FRA-CZH - 598XXX.txt,ev,650324,Dissolution of the United Republic
 1. Holy Roman Empire & Central Europe,FRA-CZH - 598XXX.txt,ev,650330,Anglois education
-1. Holy Roman Empire & Central Europe,FRA-CZH.txt,dec,bridge_over_salzach,Bridge over Salzach
-1. Holy Roman Empire & Central Europe,FRA-CZH.txt,dec,partition_of_venice,Partition of Venice
 1. Holy Roman Empire & Central Europe,FRA-CZH.txt,dec,meddle_in_italy,Announce our interest in Italia
-1. Holy Roman Empire & Central Europe,FRA-CZH.txt,dec,the_question_of_italy,The Question of Italy
 1. Holy Roman Empire & Central Europe,Liberal Kingdom of Germany-1231XX.txt,ev,123100,First German Council in $CAPITAL$
 1. Holy Roman Empire & Central Europe,Liberal Kingdom of Germany-1231XX.txt,ev,123102,Council for Independence
 1. Holy Roman Empire & Central Europe,Liberal Kingdom of Germany-1231XX.txt,ev,123107,Council for Independence
@@ -152,35 +146,20 @@ storyline,vic2_file,kind,vic2_id,title
 1. Holy Roman Empire & Central Europe,Liberal Kingdom of Germany-1231XX.txt,ev,123137,The Compromise of Berlin
 1. Holy Roman Empire & Central Europe,Liberal Kingdom of Germany-1231XX.txt,ev,123138,The Old States
 1. Holy Roman Empire & Central Europe,Liberal Kingdom of Germany-1231XX.txt,ev,123139,German unification
-1. Holy Roman Empire & Central Europe,Grossdeutschland.txt,dec,form_grossdeutschland,Let the German Eagle rise!
 1. Holy Roman Empire & Central Europe,Grossdeutschland.txt,dec,centralize_hre,The Thousand Years' Reich
-1. Holy Roman Empire & Central Europe,Grossdeutschland.txt,dec,move_to_frankfurt,Move the capital to Frankfurt
 1. Holy Roman Empire & Central Europe,Grossdeutschland.txt,dec,form_elbian_confederation,Form the Confederation at the Elbe
-1. Holy Roman Empire & Central Europe,Grossdeutschland.txt,dec,integrate_prussia,Integration of Prussia
-1. Holy Roman Empire & Central Europe,Grossdeutschland.txt,dec,integrate_elsass,Integration of Elsass
-1. Holy Roman Empire & Central Europe,Grossdeutschland.txt,dec,integrate_rhineland,Integration of the Rhine
-1. Holy Roman Empire & Central Europe,Grossdeutschland.txt,dec,integrate_elbe,Integration of the North
-1. Holy Roman Empire & Central Europe,Grossdeutschland.txt,dec,integrate_south,Integration of the South
 1. Holy Roman Empire & Central Europe,Grossdeutschland.txt,dec,reclaim_bradenburg,Reclaim Trans-Krusné
 1. Holy Roman Empire & Central Europe,Grossdeutschland.txt,dec,invite_courland,Propose the Integration of Kurland in the Confederation
 1. Holy Roman Empire & Central Europe,Grossdeutschland.txt,dec,invite_latvia,Propose the Integration of Livonia in the Confederation
 1. Holy Roman Empire & Central Europe,Grossdeutschland.txt,dec,invite_baltenland,Propose the Integration of the Baltenland in the Confederation
-1. Holy Roman Empire & Central Europe,Grossdeutschland.txt,dec,nee_oostkolonisatie,The New Oostkolonisatie
 1. Holy Roman Empire & Central Europe,Grossdeutschland.txt,dec,form_baltenland,Baltic Destiny
 1. Holy Roman Empire & Central Europe,Grossdeutschland.txt,dec,latvia_rename,Rename Latvia
 1. Holy Roman Empire & Central Europe,Grossdeutschland.txt,dec,estonia_rename,Rename Estonia
 1. Holy Roman Empire & Central Europe,Grossdeutschland.txt,dec,lithuania_rename,Rename Lithuania
 1. Holy Roman Empire & Central Europe,Grossdeutschland.txt,dec,integrate_baltenland,Integrate Baltenland into the Confederation
 1. Holy Roman Empire & Central Europe,Grossdeutschland.txt,dec,reclaim_brandenburg_anhalt,Reclaim Brandenburg-Anhalt
-1. Holy Roman Empire & Central Europe,North Germany.txt,dec,kingdom_of_hanover,Proclaim the Kingdom of Hanover
-1. Holy Roman Empire & Central Europe,North Germany.txt,dec,united_frisia,The Frisian unity
-1. Holy Roman Empire & Central Europe,North Germany.txt,dec,form_westphalia,Become Westphalia
-1. Holy Roman Empire & Central Europe,North Germany.txt,dec,form_rhineland_BEG,Become Rhineland
 1. Holy Roman Empire & Central Europe,North Germany.txt,dec,join_rhineland_BEG,Join Rhineland
-1. Holy Roman Empire & Central Europe,North Germany.txt,dec,greater_rhineland,The Greater Rhineland
 1. Holy Roman Empire & Central Europe,North Germany.txt,dec,join_rhineland_BEG_AI,Join Rhineland
-1. Holy Roman Empire & Central Europe,NGF.txt,dec,form_north_german_league,Create the North German League
-1. Holy Roman Empire & Central Europe,SGF.txt,dec,form_lesser_germany,Form the Danubian Confederation
 1. Holy Roman Empire & Central Europe,Irredentism.txt,dec,greater_finland,Greater Finland
 1. Holy Roman Empire & Central Europe,Irredentism.txt,dec,greater_nepal,Claim Greater Nepal
 1. Holy Roman Empire & Central Europe,Irredentism.txt,dec,greater_serbia,Claim Greater Serbia
@@ -281,8 +260,6 @@ storyline,vic2_file,kind,vic2_id,title
 "2. Dual Monarchy, Burgundy, Valois & Britain",BRGdecisions.txt,dec,burgundian_flanders,Renaming the Flanders
 "2. Dual Monarchy, Burgundy, Valois & Britain",BRGdecisions.txt,dec,accept_rhenish_BRG,Integration of the Rheinland
 "2. Dual Monarchy, Burgundy, Valois & Britain",BRGdecisions.txt,dec,rhenish_lands_BRG,Assimilation of the Rheinland
-"2. Dual Monarchy, Burgundy, Valois & Britain",BRGAnversControl - 324XX.txt,ev,32402,Anvers Lost!
-"2. Dual Monarchy, Burgundy, Valois & Britain",BRGAnversControl - 324XX.txt,ev,32403,Anvers Reconquered
 "2. Dual Monarchy, Burgundy, Valois & Britain",England.txt,dec,ENL_recognized,English independence
 "2. Dual Monarchy, Burgundy, Valois & Britain",England.txt,dec,OCC_recognized,Occitan independence
 "2. Dual Monarchy, Burgundy, Valois & Britain",England.txt,dec,IRE_recognized,Irish independence
@@ -304,8 +281,6 @@ storyline,vic2_file,kind,vic2_id,title
 "2. Dual Monarchy, Burgundy, Valois & Britain",European_revolutions - 482XX.txt,ev,48217,Declaration of War
 "2. Dual Monarchy, Burgundy, Valois & Britain",European_revolutions - 482XX.txt,ev,36720,The political situation in Etruria
 "2. Dual Monarchy, Burgundy, Valois & Britain",SelonTreaty.txt,dec,selon_treaty,Proclaim the Selon Treaty null and void
-"2. Dual Monarchy, Burgundy, Valois & Britain",FRAFlavor.txt,ev,32450,Iron Mines in Normandie
-"2. Dual Monarchy, Burgundy, Valois & Britain",FRAFlavor.txt,ev,32451,Iron Mines in Burgundy
 "3. Italy, Aragon-Italy & Venice-Greece",Italy - 1242XX.txt,ev,36733,Etrurian agitation spreads
 "3. Italy, Aragon-Italy & Venice-Greece",Italy - 1242XX.txt,ev,36734,Sending an embassy to Florence
 "3. Italy, Aragon-Italy & Venice-Greece",Italy - 1242XX.txt,ev,36735,$FROMCOUNTRY_ADJ$ Embassy
@@ -484,7 +459,6 @@ storyline,vic2_file,kind,vic2_id,title
 4. Iberia,Navarra.txt,ev,987413,Aragonese claims
 4. Iberia,Navarra.txt,ev,987414,The Anglois Ultimatum
 4. Iberia,Navarra.txt,ev,987417,Anglois claims
-4. Iberia,Greater Euskadia.txt,dec,greater_euskadia,Greater Euskadia
 5. Balkans & the Ottoman Fall,Ottoman Fall - 1251XX.txt,ev,125104,Illyrian vultures
 5. Balkans & the Ottoman Fall,Ottoman Fall - 1251XX.txt,ev,125106,Illyrian victory
 5. Balkans & the Ottoman Fall,Ottoman Fall - 1251XX.txt,ev,125107,Hungarian Victory
@@ -657,12 +631,9 @@ storyline,vic2_file,kind,vic2_id,title
 "7. Russia, the Steppe & the Caucasus",RUS.txt,dec,integrate_estonian_culture,Integrate the Estonians
 "7. Russia, the Steppe & the Caucasus",RUS.txt,dec,integrate_latvian_culture,Integrate the Latvians
 "7. Russia, the Steppe & the Caucasus",RUS.txt,dec,integrate_finnish_culture,Integrate Finland
-"7. Russia, the Steppe & the Caucasus",Russian Borderlands - 20210X.txt,ev,202101,Our Claim to Sibir
-"7. Russia, the Steppe & the Caucasus",Russian Borderlands - 20210X.txt,ev,202102,Our Claim to Sibir
 "7. Russia, the Steppe & the Caucasus",Russian Borderlands - 20210X.txt,ev,202103,Russian Borderlands
 "7. Russia, the Steppe & the Caucasus",Russian Borderlands - 20210X.txt,ev,202104,Russian Borderlands
 "7. Russia, the Steppe & the Caucasus",Russian Borderlands - 20210X.txt,ev,202105,Russian Borderlands
-"7. Russia, the Steppe & the Caucasus",Russian Borderlands - 20210X.txt,ev,202106,News from Distant Shores
 "7. Russia, the Steppe & the Caucasus",Russian Borderlands - 20210X.txt,ev,202107,Collapse of Curonia
 "7. Russia, the Steppe & the Caucasus",Russian Borderlands - 20210X.txt,ev,202108,Collapse of Curonia
 "7. Russia, the Steppe & the Caucasus",Russian Borderlands - 20210X.txt,ev,80115,The $FROMCOUNTRY_ADJ$ Protectorate
@@ -816,7 +787,6 @@ storyline,vic2_file,kind,vic2_id,title
 8. Persia & the Middle East,Arabia.txt,dec,the_holy_city,The Holy City
 8. Persia & the Middle East,Arabia.txt,dec,found_dar_es_salaam,Build Dar Es Salaam
 8. Persia & the Middle East,Arabia.txt,dec,integrate_zanj,Integrate the Zanj
-8. Persia & the Middle East,ArabiaUnite.txt,dec,unite_arabia,Establish the Greater Arabian Caliphate
 8. Persia & the Middle East,ALH.txt,dec,restore_rashids,Restore the House of Rasheed to the Arabian throne
 8. Persia & the Middle East,UAR.txt,dec,claim_ethiopia,Project our Influence in Abyssinian Lands
 8. Persia & the Middle East,UAR.txt,dec,move_capital_to_cairo,To Cairo!
@@ -849,13 +819,9 @@ storyline,vic2_file,kind,vic2_id,title
 8. Persia & the Middle East,caliphate.txt,ev,90671,Jihad Declared
 8. Persia & the Middle East,caliphate.txt,ev,90673,Jihad Won
 8. Persia & the Middle East,caliphate.txt,ev,90674,Reconsidering our Government
-8. Persia & the Middle East,caliphate.txt,dec,declare_permanent_jihad,Declare Permanent Jihad
 8. Persia & the Middle East,oman.txt,ev,126200,Seized Territory
 8. Persia & the Middle East,oman.txt,dec,oman_collapse,The Collapse of Oman
-8. Persia & the Middle East,Druze.txt,ev,167000,Druze Revolt
 8. Persia & the Middle East,Druze.txt,ev,167030,Hauran Druze Rebellion
-8. Persia & the Middle East,Levant.txt,ev,168020,Ancient Ruins in Baalbeck
-8. Persia & the Middle East,Levant.txt,ev,168030,Missionaries in Beirut
 9. Arcadia & Ameriga (North America),Arcadia - 3334XX.txt,ev,333441,Vinlanders accept!
 9. Arcadia & Ameriga (North America),Arcadia - 3334XX.txt,ev,333442,Vinlanders demand further concessions
 9. Arcadia & Ameriga (North America),Arcadia - 3334XX.txt,ev,333443,Vinlanders oppose the idea of Pan-Arcadianism
@@ -962,35 +928,8 @@ storyline,vic2_file,kind,vic2_id,title
 9. Arcadia & Ameriga (North America),ManifestDestiny.txt,dec,odensmark,The Great White North
 9. Arcadia & Ameriga (North America),ManifestDestiny.txt,dec,Takikawa,Advancing into Arcadia
 9. Arcadia & Ameriga (North America),ManifestDestiny.txt,dec,Takikawa_2,The Great North
-9. Arcadia & Ameriga (North America),Divergences colonization.txt,dec,PLA_upper_messipi,Claim the Upper Messipi
-9. Arcadia & Ameriga (North America),Divergences colonization.txt,dec,PLA_messipi_basin,Claim the Sioux Hinterland
-9. Arcadia & Ameriga (North America),Divergences colonization.txt,dec,VIN_gylhenvik,Claim Gylhenvik
-9. Arcadia & Ameriga (North America),Divergences colonization.txt,dec,VIN_tjorin,Claim Tjorin
-9. Arcadia & Ameriga (North America),Divergences colonization.txt,dec,VIN_northern_lakes,Claim the Northern Lakes
-9. Arcadia & Ameriga (North America),Divergences colonization.txt,dec,AMA_amazonian_basin,Claim the Amazonian Basin
-9. Arcadia & Ameriga (North America),Divergences colonization.txt,dec,AMA_amazonie_profonde,Claim Amazonie Profonde
-9. Arcadia & Ameriga (North America),Divergences colonization.txt,dec,LOT_grand_chaco,Claim the Grand Chaco
-9. Arcadia & Ameriga (North America),Divergences colonization.txt,dec,GAN_wencheng,Claim Wencheng
-9. Arcadia & Ameriga (North America),Divergences colonization.txt,dec,GAN_oodnatta,Claim Oodnatta
-9. Arcadia & Ameriga (North America),Divergences colonization.txt,dec,GAN_noongar,Claim Noongar
-9. Arcadia & Ameriga (North America),Divergences colonization.txt,dec,GAN_coomalong,Claim Coomalong
-9. Arcadia & Ameriga (North America),Divergences colonization.txt,dec,GAN_yolngu,Claim Yolngu
-9. Arcadia & Ameriga (North America),Divergences colonization.txt,dec,GAN_pitja,Claim Pitjantjatjara
-9. Arcadia & Ameriga (North America),Divergences colonization.txt,dec,AOT_motu_timu,Claim Motu Timu
-9. Arcadia & Ameriga (North America),Divergences colonization.txt,dec,DNG_yicheng,Claim Yicheng
-9. Arcadia & Ameriga (North America),Divergences colonization.txt,dec,DNG_haikou,Claim Haikou
-9. Arcadia & Ameriga (North America),Divergences colonization.txt,dec,DNG_yulin,Claim Yulin
-9. Arcadia & Ameriga (North America),Divergences colonization.txt,dec,DNG_baizehu,Claim Baizehu
-9. Arcadia & Ameriga (North America),Divergences colonization.txt,dec,DNG_tangwan,Claim Tangwan
-9. Arcadia & Ameriga (North America),Divergences colonization.txt,dec,HHR_baizehu,Claim Baizehu
-9. Arcadia & Ameriga (North America),Divergences colonization.txt,dec,HHR_tjorin,Claim Tjorin
-9. Arcadia & Ameriga (North America),Divergences colonization.txt,dec,HHR_torsmark,Claim Torsmark
-9. Arcadia & Ameriga (North America),Divergences colonization.txt,dec,sahara_1807,Claim the Tessalit Oasis
-9. Arcadia & Ameriga (North America),Divergences colonization.txt,dec,sahara_1813,Claim Agadés
-9. Arcadia & Ameriga (North America),Divergences colonization.txt,dec,sahara_1825,Claim Zouar
 9. Arcadia & Ameriga (North America),Rohnnst.txt,dec,rohnnst_question1,Rohnnst Indians
 9. Arcadia & Ameriga (North America),Rohnnst.txt,dec,rohnnst_question2,Rohnnst Indians
-9. Arcadia & Ameriga (North America),SPA.txt,dec,purchase_spanish_pacific,Purchase the Spanish Pacific
 9. Arcadia & Ameriga (North America),ColonialNation-1356XX.txt,ev,135601,Crusade for the Promised Land
 9. Arcadia & Ameriga (North America),ColonialNation-1356XX.txt,ev,135602,$FROMCOUNTRY$'s Offer
 9. Arcadia & Ameriga (North America),ColonialNation-1356XX.txt,ev,135603,Venice Accepts!
@@ -1177,7 +1116,6 @@ storyline,vic2_file,kind,vic2_id,title
 "10. Gran Colombia, Mexico & the Andes",Amazonia.txt,ev,98405,Amazonian Response
 "10. Gran Colombia, Mexico & the Andes",Amazonia.txt,ev,98406,Amazonian Response
 "10. Gran Colombia, Mexico & the Andes",Amazonia.txt,ev,98407,Second payment
-"10. Gran Colombia, Mexico & the Andes",Amazonia.txt,ev,98408,Reparations for Para
 "10. Gran Colombia, Mexico & the Andes",Amazonia.txt,ev,98409,Third payment
 "10. Gran Colombia, Mexico & the Andes",Amazonia.txt,ev,98410,Last payment
 "10. Gran Colombia, Mexico & the Andes",Amazonia.txt,ev,98411,Last payment
@@ -1189,25 +1127,19 @@ storyline,vic2_file,kind,vic2_id,title
 "10. Gran Colombia, Mexico & the Andes",Amazonia.txt,ev,98417,Amazonian Response
 "10. Gran Colombia, Mexico & the Andes",Amazonia.txt,ev,98418,Amazonian Response
 "10. Gran Colombia, Mexico & the Andes",Amazonia.txt,ev,98419,Second payment
-"10. Gran Colombia, Mexico & the Andes",Amazonia.txt,ev,98420,Reparations for Para
 "10. Gran Colombia, Mexico & the Andes",Amazonia.txt,ev,98421,Third payment
 "10. Gran Colombia, Mexico & the Andes",Amazonia.txt,ev,98422,Last payment
 "10. Gran Colombia, Mexico & the Andes",Amazonia.txt,ev,98423,Last payment
 "10. Gran Colombia, Mexico & the Andes",Amazonia.txt,ev,98424,Colombian Demands
 "10. Gran Colombia, Mexico & the Andes",Amazonia.txt,ev,98425,Para regained
-"10. Gran Colombia, Mexico & the Andes",Amazonia.txt,ev,98426,Chaos in the Federation
-"10. Gran Colombia, Mexico & the Andes",Amazonia.txt,ev,98427,Talks of secession in Equinoxia
 "10. Gran Colombia, Mexico & the Andes",Amazonia.txt,ev,98428,The Cappadocian Revolution!
 "10. Gran Colombia, Mexico & the Andes",Amazonia.txt,ev,98429,Seizure of Port-Liberté
 "10. Gran Colombia, Mexico & the Andes",Amazonia.txt,ev,98430,End of the Civil War
-"10. Gran Colombia, Mexico & the Andes",Amazonia.txt,ev,98431,The return of the king?
 "10. Gran Colombia, Mexico & the Andes",Amazonia.txt,ev,98432,Homeland or New World?
 "10. Gran Colombia, Mexico & the Andes",Amazonia.txt,ev,98433,The Constitution
 "10. Gran Colombia, Mexico & the Andes",Amazonia.txt,ev,98434,The Cytère Ferriferous Basin
-"10. Gran Colombia, Mexico & the Andes",Council of Granada.txt,ev,46413,Council of Granada - Success
 "10. Gran Colombia, Mexico & the Andes",Council of Granada.txt,ev,46414,Council of Granada - Partial Success
 "10. Gran Colombia, Mexico & the Andes",Council of Granada.txt,ev,46415,Council of Granada - Partial Success
-"10. Gran Colombia, Mexico & the Andes",Council of Granada.txt,ev,46416,Council of Granada - Failure
 11. East & Southeast Asia,Japanese_events - 3343XX.txt,ev,334301,Qing Refusal
 11. East & Southeast Asia,Japanese_events - 3343XX.txt,ev,334302,The Man in the High Castle
 11. East & Southeast Asia,Japanese_events - 3343XX.txt,ev,334304,Hawaii Refuses!
@@ -1251,7 +1183,6 @@ storyline,vic2_file,kind,vic2_id,title
 11. East & Southeast Asia,Japanese_events - 3343XX.txt,ev,334352,$FROMCOUNTRY_ADJ$ refusal
 11. East & Southeast Asia,Japanese_events - 3343XX.txt,ev,334353,Integration of Qingqiu
 11. East & Southeast Asia,Japanese_events - 3343XX.txt,ev,334354,New Territories
-11. East & Southeast Asia,Japanese_events - 3343XX.txt,ev,33025,The Spanish Pacific
 11. East & Southeast Asia,Japanese_events - 3343XX.txt,ev,33026,The $COUNTRY_ADJ$-$FROMCOUNTRY_ADJ$ Treaty of $YEAR$
 11. East & Southeast Asia,Japanese_events - 3343XX.txt,ev,33027,The Spanish Have Refused!
 11. East & Southeast Asia,japanese_decisions.txt,dec,japanese_korea,Restore the order in Korea
@@ -1289,39 +1220,20 @@ storyline,vic2_file,kind,vic2_id,title
 11. East & Southeast Asia,China.txt,ev,48908,Coming back from the West.
 11. East & Southeast Asia,China.txt,ev,48943,The Preseverance of the Weisuo System
 11. East & Southeast Asia,China.txt,dec,form_china_chagatai,Reclaim the Yuan Empire
-11. East & Southeast Asia,China.txt,dec,form_china_mongol,Resurrect the Yuan Empire
-11. East & Southeast Asia,China.txt,dec,form_china_manchu,Complete the Conquest
-11. East & Southeast Asia,China.txt,dec,form_china_claimant,Claim the Mandate of Heaven
-11. East & Southeast Asia,China.txt,dec,form_china_return,Return Home
-11. East & Southeast Asia,China.txt,dec,form_china_tibet,Become the Lord of Heaven
 11. East & Southeast Asia,china2.txt,dec,jiangsu_control,Destroy Jiangsu
 11. East & Southeast Asia,china2.txt,dec,korea_control,Destroy Korea
-11. East & Southeast Asia,Treaty Ports.txt,dec,ifni_treaty_port,The Ifni Treaty Port
-11. East & Southeast Asia,Treaty Ports.txt,dec,qeshm_treaty_port,The Qeshm Treaty Port
 11. East & Southeast Asia,Treaty Ports.txt,dec,macao_treaty_port,The Macao Treaty Port
 11. East & Southeast Asia,Treaty Ports.txt,dec,hong_kong_treaty_port,The Hong Kong Treaty Port
-11. East & Southeast Asia,Treaty Ports.txt,dec,shanghai_treaty_port,The Shanghai Treaty Port
 11. East & Southeast Asia,Treaty Ports.txt,dec,qingdao_treaty_port,The Qingdao Treaty Port
 11. East & Southeast Asia,Treaty Ports.txt,dec,lushun_treaty_port,The Lüshun Treaty Port
 11. East & Southeast Asia,Treaty Ports.txt,dec,weihaiwei_treaty_port,The Weihaiwei Treaty Port
 11. East & Southeast Asia,Treaty Ports.txt,dec,jiaxing_treaty_port,The Jiaxing Treaty Port
-11. East & Southeast Asia,Treaty Ports.txt,dec,taipei_treaty_port,The Taiwan Concession
 11. East & Southeast Asia,Treaty Ports.txt,dec,hainan_treaty_port,The Hainan Treaty Port
 11. East & Southeast Asia,Treaty Ports.txt,dec,kwangchowan_treaty_port,The Kwangchowan Treaty Port
 11. East & Southeast Asia,Treaty Ports.txt,dec,ningbo_treaty_port,The Ningbo Treaty Port
-11. East & Southeast Asia,Treaty Ports.txt,dec,gwadar_treaty_port,The Gwadar Treaty Port
-11. East & Southeast Asia,Treaty Ports.txt,dec,socotra_treaty_port,The Socotra Island Concession
-11. East & Southeast Asia,Treaty Ports.txt,dec,zanzibar_treaty_port,The Zanzibar Island Concession
-11. East & Southeast Asia,Treaty Ports.txt,dec,cheju_treaty_port,The Cheju Island Concession
-11. East & Southeast Asia,Treaty Ports.txt,dec,tsushima_treaty_port,The Tsushima Treaty Port
 11. East & Southeast Asia,Treaty Ports.txt,dec,sado_treaty_port,The Sado Treaty Port
-11. East & Southeast Asia,Treaty Ports.txt,dec,fredensborg_treaty_port,The Fredensborg Treaty Port
 11. East & Southeast Asia,Zhourao.txt,dec,poni_subjugation,Subjugation of Po-Ni
 11. East & Southeast Asia,Zhourao.txt,dec,dayak_integration,Integration of the Borneans
-11. East & Southeast Asia,Nusantara.txt,ev,98250,Batavia is Lost
-11. East & Southeast Asia,Nusantara.txt,ev,98251,The Treaty of Batavia
-11. East & Southeast Asia,Nusantara_flavor.txt,dec,treaty_of_batavia,Treaty of Batavia
-11. East & Southeast Asia,India.txt,ev,78901,Punjab in open revolt!
 11. East & Southeast Asia,India.txt,dec,form_india,Form India
 11. East & Southeast Asia,India.txt,dec,seize_bengal,Retake Bengal
 11. East & Southeast Asia,Goa_patnam.txt,dec,goa_treaty,Treaty with Spain
@@ -1381,8 +1293,6 @@ storyline,vic2_file,kind,vic2_id,title
 12. Africa & Oceania,Colonial Cores - 33333X.txt,ev,333333,Our Lands in Central Africa
 12. Africa & Oceania,Colonial Cores - 33333X.txt,ev,333334,Our Lands in Central Africa
 12. Africa & Oceania,Colonial Cores - 33333X.txt,ev,333335,The South Ngaoundere Protectorate
-12. Africa & Oceania,civilising.txt,dec,letatcestmoi,L'etat c'est moi!
-12. Africa & Oceania,civilising.txt,dec,sedentarize_khanate,Sedentarise the Khanate
 12. Africa & Oceania,Arabia event.txt,ev,22239,Unrest in the northern mountains!
 12. Africa & Oceania,Arabia event.txt,ev,22241,The Arab tribes invaded our colony!
 12. Africa & Oceania,Arabia event.txt,ev,22244,We gained new land!
@@ -1435,7 +1345,6 @@ storyline,vic2_file,kind,vic2_id,title
 13. Archaeology (unique flavour),archaeology.txt,ev,1904412,Great Palace discovered!
 13. Archaeology (unique flavour),archaeology.txt,ev,1904612,The Labyrinth
 13. Archaeology (unique flavour),archaeology.txt,dec,search_for_aegean_civilizations,The Search for the Aegean Civilizations
-13. Archaeology (unique flavour),TURFlavor.txt,ev,31100,The Discovery of Troy
 13. Archaeology (unique flavour),TURFlavor.txt,ev,31102,EVTNAME31102
 14. World history (lore),Short Stories.txt,ev,145110,Frequently Asked Questions
 14. World history (lore),Short Stories.txt,ev,145111,Frequently Asked Questions
@@ -1682,9 +1591,6 @@ storyline,vic2_file,kind,vic2_id,title
 15. World flavour (adapted to Vic3),AssimilationTroubles.txt,ev,2120,Immigrant Deported
 15. World flavour (adapted to Vic3),Segregation.txt,dec,native_integration_status_on,The Natives' Status
 15. World flavour (adapted to Vic3),Segregation.txt,dec,native_integration_status_off,Close the Natives Status Options
-15. World flavour (adapted to Vic3),Segregation.txt,dec,native_protection_act,The Natives' Status: The Protection Act
-15. World flavour (adapted to Vic3),Segregation.txt,dec,native_assimilation_act,The Natives' Status: The Integration Act
-15. World flavour (adapted to Vic3),Segregation.txt,dec,native_removal_act,The Natives' Status: The Suppression Act
 15. World flavour (adapted to Vic3),Diseases.txt,ev,21010,Famine Strikes State!
 15. World flavour (adapted to Vic3),Diseases.txt,ev,21020,Typhoid Fever!
 15. World flavour (adapted to Vic3),Diseases.txt,ev,10240,Cholera Spreads!

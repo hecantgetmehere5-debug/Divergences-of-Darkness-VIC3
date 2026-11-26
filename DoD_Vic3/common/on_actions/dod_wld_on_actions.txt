@@ -3,6 +3,7 @@
 on_yearly_pulse_country = {
 	on_actions = {
 		dod_flavour_pulse
+		dod_missing_pulse  # storylines ported later (common/on_actions/dod_missing_on_actions.txt)
 	}
 }
 

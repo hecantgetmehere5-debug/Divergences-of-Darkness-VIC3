@@ -1,0 +1,17 @@
+﻿# A state changes hands for money. Scopes: dod_buy_buyer, dod_buy_seller (countries).
+# The buyer pays in instalments (an expense modifier), the seller receives them.
+dod_buy_payment = {
+	scope:dod_buy_buyer = { add_modifier = { name = dod_buy_instalments months = 60 } }
+	scope:dod_buy_seller = { add_modifier = { name = dod_buy_proceeds months = 60 } }
+	scope:dod_buy_seller = { change_relations = { country = scope:dod_buy_buyer value = 20 } }
+}
+
+# Ask the owner of a state region to sell it: $STATE$ = state region, $SELLER$ = tag
+dod_buy_offer = {
+	save_scope_as = dod_buy_buyer
+	c:$SELLER$ = {
+		save_scope_as = dod_buy_seller
+		set_variable = { name = dod_buy_region value = s:$STATE$ }
+		trigger_event = { id = dod_buy.1 days = 14 }
+	}
+}
