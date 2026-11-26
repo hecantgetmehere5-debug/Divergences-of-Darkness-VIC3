@@ -16,6 +16,14 @@ dod_hre.1 = {
 	icon = "gfx/interface/icons/event_icons/event_scales.dds"
 	duration = 3
 
+	# The Proclamation turns the Bohemian crown into the Holy Roman Empire
+	immediate = {
+		if = {
+			limit = { c:BOH ?= this }
+			change_tag = HLR
+		}
+	}
+
 	option = {
 		name = dod_hre.1.a
 		default_option = yes

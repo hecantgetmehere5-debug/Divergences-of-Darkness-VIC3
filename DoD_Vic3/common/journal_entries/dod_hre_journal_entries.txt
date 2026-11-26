@@ -11,15 +11,14 @@ je_dod_prague_proclamation = {
 	icon = "gfx/interface/icons/event_icons/event_scales.dds"
 	group = je_group_historical_content
 
+	# Bohemia plays this storyline and becomes the Holy Roman Empire through the Proclamation
 	is_shown_when_inactive = {
-		c:HLR ?= this
+		dod_is_emperor = yes
 	}
 
 	possible = {
-		c:HLR ?= this
+		dod_is_emperor = yes
 	}
-
-
 
 	# Wiki: the window to form the Empire closes in the late 1840s.
 

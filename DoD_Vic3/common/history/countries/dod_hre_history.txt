@@ -1,5 +1,5 @@
 ﻿COUNTRIES = {
-	c:HLR ?= {
+	c:BOH ?= {  # Bohemia plays the HRE storyline and becomes HLR through the Prague Proclamation
 		add_journal_entry = { type = je_dod_prague_proclamation }
 	}
 	c:CAE ?= {

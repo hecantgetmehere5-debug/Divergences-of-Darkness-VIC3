@@ -1,9 +1,21 @@
 ﻿# Holy Roman Empire storyline: scripted triggers
 
+# The would-be Emperor: Bohemia until it issues the Prague Proclamation and becomes the
+# Holy Roman Empire (HLR), then HLR
+dod_is_emperor = {
+	OR = {
+		c:HLR ?= this
+		AND = {
+			c:BOH ?= this
+			NOT = { exists = c:HLR }
+		}
+	}
+}
+
 # A German prince the Emperor can bring into the Reich
 dod_is_imperial_prince = {
-	exists = c:HLR
 	NOT = { c:HLR ?= this }
+	NOT = { c:BOH ?= this }
 	country_rank < rank_value:great_power
 	OR = {
 		country_has_primary_culture = cu:north_german
@@ -30,7 +42,10 @@ dod_is_danubian_prince = {
 # Prince still outside the Emperor's control
 dod_is_free_prince = {
 	dod_is_imperial_prince = yes
-	NOT = { is_subject_of = c:HLR }
+	OR = {
+		NOT = { exists = c:HLR }
+		NOT = { is_subject_of = c:HLR }
+	}
 }
 
 dod_is_bohemian_state = {

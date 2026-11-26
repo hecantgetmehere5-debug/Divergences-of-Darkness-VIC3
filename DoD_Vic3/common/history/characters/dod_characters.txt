@@ -22,7 +22,7 @@ CHARACTERS = {
 			interest_group = ig_landowners
 		}
 	}
-	c:HLR ?= {  # Sigismund V, King of the Germans, son of the Stone Emperor
+	c:BOH ?= {  # Sigismund V, King of the Germans, son of the Stone Emperor (Bohemia until the Proclamation)
 		create_character = {
 			first_name = "Zsigmond"
 			last_name = "Jagiellon"

@@ -211,7 +211,7 @@ dod_rail.10 = {
 	duration = 3
 
 	trigger = {
-		c:HLR ?= this
+		dod_is_emperor = yes
 		game_date >= 1837.1.1
 		has_journal_entry = je_dod_prague_proclamation
 		NOT = { has_variable = dod_rail_imperial_lands }
