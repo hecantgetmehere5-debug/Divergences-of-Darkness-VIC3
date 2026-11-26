@@ -1,14 +1,31 @@
 {
-  "name": "Divergences of Darkness",
-  "id": "divergences_of_darkness",
-  "version": "0.1.0",
-  "supported_game_version": "",
-  "short_description": "Port of the Victoria 2 mod Divergences of Darkness.",
-  "tags": [
-    "Alternative History"
-  ],
-  "relationships": [],
-  "game_custom_data": {
-    "multiplayer_synchronized": true
-  }
+    "name":  "Divergences of Darkness",
+    "id":  "divergences_of_darkness",
+    "version":  "0.1.0",
+    "supported_game_version":  "1.13.*",
+    "short_description":  "Port of the Victoria 2 mod Divergences of Darkness.",
+    "tags":  [
+                 "Alternative History"
+             ],
+    "relationships":  [
+
+                      ],
+    "game_custom_data":  {
+                             "multiplayer_synchronized":  true,
+                             "replace_paths":  [
+                                                   "common/history/states",
+                                                   "common/history/pops",
+                                                   "common/history/buildings",
+                                                   "common/history/military_formations",
+                                                   "common/history/military_deployments",
+                                                   "common/history/diplomacy",
+                                                   "common/history/diplomatic_plays",
+                                                   "common/history/power_blocs",
+                                                   "common/history/trade",
+                                                   "common/history/treaties",
+                                                   "common/history/production_methods",
+                                                   "common/history/lobbies",
+                                                   "common/history/conscription"
+                                               ]
+                         }
 }

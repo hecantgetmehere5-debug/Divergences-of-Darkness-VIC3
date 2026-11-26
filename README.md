@@ -148,7 +148,8 @@ images/             Pictures for this page
 - [x] World, regional and lore flavour; 1836 railroading
 - [x] Cultures, religions, starting laws, subjects and rulers
 - [x] Vic2 start data extracted (owners, pops, place names)
-- [ ] **Map layer:** Vic3 states, populations, capitals and buildings *(needs the Vic3 game files)*
+- [x] **Map layer (first pass):** Vic3 states, populations, capitals, basic buildings and armies, generated from the Vic2 1836 start
+- [ ] Starting wars, full economy, navies
 - [ ] First in-game load and bug fixing
 - [ ] Political movements (drafted in `_unverified/`)
 - [ ] Custom art for events written new for Vic3

@@ -40,7 +40,7 @@ NAV = {  # Navarra
 	tier = kingdom
 	cultures = { basque }  # TODO verify Vic3 culture name
 	religion = catholic  # TODO verify Vic3 religion name
-	# capital = STATE_TODO  # Vic2 capital: BIlbao (province 492)
+	capital = STATE_BASQUE_COUNTRY  # Vic2 capital: BIlbao (province 492)
 }
 
 ARI = {  # Aragon-Italy
@@ -58,7 +58,7 @@ FRR = {  # Ferrara
 	tier = kingdom
 	cultures = { north_italian }  # TODO verify Vic3 culture name
 	religion = catholic  # TODO verify Vic3 religion name
-	# capital = STATE_TODO  # Vic2 capital: Ferrara (province 742)
+	capital = STATE_VENETIA  # Vic2 capital: Ferrara (province 742)
 }
 
 GEN = {  # Genoa
@@ -67,7 +67,7 @@ GEN = {  # Genoa
 	tier = kingdom
 	cultures = { north_italian }  # TODO verify Vic3 culture name
 	religion = catholic  # TODO verify Vic3 religion name
-	# capital = STATE_TODO  # Vic2 capital: Genoa (province 724)
+	capital = STATE_PIEDMONT  # Vic2 capital: Genoa (province 724)
 }
 
 FRT = {  # Transalpina
@@ -85,7 +85,7 @@ BRG = {  # Burgundy
 	tier = kingdom
 	cultures = { burgundian }  # TODO verify Vic3 culture name
 	religion = protestant  # TODO verify Vic3 religion name
-	# capital = STATE_TODO  # Vic2 capital: Antwerp (province 390)
+	capital = STATE_FLANDERS  # Vic2 capital: Antwerp (province 390)
 }
 
 PRV = {  # Provence
@@ -94,7 +94,7 @@ PRV = {  # Provence
 	tier = kingdom
 	cultures = { provencal }  # TODO verify Vic3 culture name
 	religion = catholic  # TODO verify Vic3 religion name
-	# capital = STATE_TODO  # Vic2 capital: Toulon (province 470)
+	capital = STATE_PROVENCE  # Vic2 capital: Toulon (province 470)
 }
 
 SLA = {  # Slavonia
@@ -130,7 +130,7 @@ NOV = {  # Novgorod
 	tier = kingdom
 	cultures = { russian }  # TODO verify Vic3 culture name
 	religion = orthodox  # TODO verify Vic3 religion name
-	# capital = STATE_TODO  # Vic2 capital: Novgorod (province 1003)
+	capital = STATE_NOVGOROD  # Vic2 capital: Novgorod (province 1003)
 }
 
 MUS = {  # Muscovy
@@ -139,7 +139,7 @@ MUS = {  # Muscovy
 	tier = kingdom
 	cultures = { russian }  # TODO verify Vic3 culture name
 	religion = orthodox  # TODO verify Vic3 religion name
-	# capital = STATE_TODO  # Vic2 capital: Moscow (province 1008)
+	capital = STATE_MOSCOW  # Vic2 capital: Moscow (province 1008)
 }
 
 BLR = {  # Byelorussia
@@ -148,7 +148,7 @@ BLR = {  # Byelorussia
 	tier = kingdom
 	cultures = { ruthenian }  # TODO verify Vic3 culture name
 	religion = orthodox  # TODO verify Vic3 religion name
-	# capital = STATE_TODO  # Vic2 capital: Minsk (province 718)
+	capital = STATE_MINSK  # Vic2 capital: Minsk (province 718)
 }
 
 PSV = {  # Pskov
@@ -157,7 +157,7 @@ PSV = {  # Pskov
 	tier = kingdom
 	cultures = { russian }  # TODO verify Vic3 culture name
 	religion = orthodox  # TODO verify Vic3 religion name
-	# capital = STATE_TODO  # Vic2 capital: Pskov (province 1006)
+	capital = STATE_PSKOV  # Vic2 capital: Pskov (province 1006)
 }
 
 KRL = {  # Courland
@@ -166,7 +166,7 @@ KRL = {  # Courland
 	tier = kingdom
 	cultures = { north_german }  # TODO verify Vic3 culture name
 	religion = protestant  # TODO verify Vic3 religion name
-	# capital = STATE_TODO  # Vic2 capital: Jelgava (province 357)
+	capital = STATE_COURLAND  # Vic2 capital: Jelgava (province 357)
 }
 
 BLT = {  # Baltenland
@@ -184,7 +184,7 @@ ASK = {  # Xacitarxan
 	tier = kingdom
 	cultures = { astrakhani }  # TODO verify Vic3 culture name
 	religion = sunni  # TODO verify Vic3 religion name
-	# capital = STATE_TODO  # Vic2 capital: Astrakhan (province 1036)
+	capital = STATE_ASTRAKHAN  # Vic2 capital: Astrakhan (province 1036)
 }
 
 BEG = {  # Berg
@@ -193,7 +193,7 @@ BEG = {  # Berg
 	tier = kingdom
 	cultures = { rheinish }  # TODO verify Vic3 culture name
 	religion = catholic  # TODO verify Vic3 religion name
-	# capital = STATE_TODO  # Vic2 capital: Dusseldorf (province 578)
+	capital = STATE_RUHR  # Vic2 capital: Dusseldorf (province 578)
 }
 
 BRN = {  # Brandenburg
@@ -220,7 +220,7 @@ FRI = {  # East Frisia
 	tier = kingdom
 	cultures = { north_german }  # TODO verify Vic3 culture name
 	religion = protestant  # TODO verify Vic3 religion name
-	# capital = STATE_TODO  # Vic2 capital: Emden (province 543)
+	capital = STATE_HANNOVER  # Vic2 capital: Emden (province 543)
 }
 
 MNR = {  # Munster
@@ -229,7 +229,7 @@ MNR = {  # Munster
 	tier = kingdom
 	cultures = { rheinish }  # TODO verify Vic3 culture name
 	religion = protestant  # TODO verify Vic3 religion name
-	# capital = STATE_TODO  # Vic2 capital: Munster (province 581)
+	capital = STATE_WESTPHALIA  # Vic2 capital: Munster (province 581)
 }
 
 THU = {  # Thuringia
@@ -238,7 +238,7 @@ THU = {  # Thuringia
 	tier = kingdom
 	cultures = { north_german }  # TODO verify Vic3 culture name
 	religion = catholic  # TODO verify Vic3 religion name
-	# capital = STATE_TODO  # Vic2 capital: Weimar (province 561)
+	capital = STATE_SAXONY  # Vic2 capital: Weimar (province 561)
 }
 
 TIR = {  # Tyrol
@@ -265,7 +265,7 @@ SAL = {  # Salzburg
 	tier = kingdom
 	cultures = { south_german }  # TODO verify Vic3 culture name
 	religion = catholic  # TODO verify Vic3 religion name
-	# capital = STATE_TODO  # Vic2 capital: Salzburg (province 613)
+	capital = STATE_TYROL  # Vic2 capital: Salzburg (province 613)
 }
 
 SIB = {  # Sibir
@@ -274,7 +274,7 @@ SIB = {  # Sibir
 	tier = kingdom
 	cultures = { tatar }  # TODO verify Vic3 culture name
 	religion = sunni  # TODO verify Vic3 religion name
-	# capital = STATE_TODO  # Vic2 capital: Tobolsk (province 1066)
+	capital = STATE_SURGUT  # Vic2 capital: Tobolsk (province 1066)
 }
 
 TSS = {  # Trans-Siberia
@@ -301,7 +301,7 @@ ALH = {  # Al Haasa
 	tier = kingdom
 	cultures = { bedouin }  # TODO verify Vic3 culture name
 	religion = shiite  # TODO verify Vic3 religion name
-	# capital = STATE_TODO  # Vic2 capital: Qatif (province 1163)
+	capital = STATE_HAIL  # Vic2 capital: Qatif (province 1163)
 }
 
 UAR = {  # The United Arab Republic
@@ -355,7 +355,7 @@ CHG = {  # The Dzungar Khanate
 	tier = principality
 	cultures = { oirat }  # TODO verify Vic3 culture name
 	religion = sunni  # TODO verify Vic3 religion name
-	# capital = STATE_TODO  # Vic2 capital: Urumqi (province 1600)
+	capital = STATE_DZUNGARIA  # Vic2 capital: Urumqi (province 1600)
 }
 
 NOG = {  # Nogai
@@ -364,7 +364,7 @@ NOG = {  # Nogai
 	tier = kingdom
 	cultures = { tatar }  # TODO verify Vic3 culture name
 	religion = sunni  # TODO verify Vic3 religion name
-	# capital = STATE_TODO  # Vic2 capital: Guryev (province 1182)
+	capital = STATE_URALSK  # Vic2 capital: Guryev (province 1182)
 }
 
 QAJ = {  # Kar-Kiya
@@ -373,7 +373,7 @@ QAJ = {  # Kar-Kiya
 	tier = kingdom
 	cultures = { persian }  # TODO verify Vic3 culture name
 	religion = shiite  # TODO verify Vic3 religion name
-	# capital = STATE_TODO  # Vic2 capital: Lahijan (province 3332)
+	capital = STATE_MAZANDARAN  # Vic2 capital: Lahijan (province 3332)
 }
 
 ZND = {  # Shekhbizin Empire
@@ -382,7 +382,7 @@ ZND = {  # Shekhbizin Empire
 	tier = empire
 	cultures = { persian }  # TODO verify Vic3 culture name
 	religion = sunni  # TODO verify Vic3 religion name
-	# capital = STATE_TODO  # Vic2 capital: Shiraz (province 1135)
+	capital = STATE_FARS  # Vic2 capital: Shiraz (province 1135)
 }
 
 AFS = {  # Iran
@@ -391,7 +391,7 @@ AFS = {  # Iran
 	tier = empire
 	cultures = { persian }  # TODO verify Vic3 culture name
 	religion = sunni  # TODO verify Vic3 religion name
-	# capital = STATE_TODO  # Vic2 capital: Herat (province 1212)
+	capital = STATE_HERAT  # Vic2 capital: Herat (province 1212)
 }
 
 LUR = {  # Luristan
@@ -490,7 +490,7 @@ AIN = {  # Ainu
 	tier = kingdom
 	cultures = { ainu }  # TODO verify Vic3 culture name
 	religion = animist  # TODO verify Vic3 religion name
-	# capital = STATE_TODO  # Vic2 capital: Gizhiga (province 1073)
+	capital = STATE_KAMCHATKA  # Vic2 capital: Gizhiga (province 1073)
 }
 
 MIG = {  # Nanjing
@@ -499,7 +499,7 @@ MIG = {  # Nanjing
 	tier = kingdom
 	cultures = { beifaren }  # TODO verify Vic3 culture name
 	religion = mahayana  # TODO verify Vic3 religion name
-	# capital = STATE_TODO  # Vic2 capital: Nanjing (province 2221)
+	capital = STATE_NANJING  # Vic2 capital: Nanjing (province 2221)
 }
 
 TNG = {  # Tungning
@@ -508,7 +508,7 @@ TNG = {  # Tungning
 	tier = kingdom
 	cultures = { nanfaren }  # TODO verify Vic3 culture name
 	religion = mahayana  # TODO verify Vic3 religion name
-	# capital = STATE_TODO  # Vic2 capital: Taibei (province 1485)
+	capital = STATE_FORMOSA  # Vic2 capital: Taibei (province 1485)
 }
 
 TAI = {  # The Taiping Heavenly Kingdom
@@ -517,7 +517,7 @@ TAI = {  # The Taiping Heavenly Kingdom
 	tier = kingdom
 	cultures = { nanfaren }  # TODO verify Vic3 culture name
 	religion = taiping  # TODO verify Vic3 religion name
-	# capital = STATE_TODO  # Vic2 capital: Ganzhou (province 1550)
+	capital = STATE_JIANGXI  # Vic2 capital: Ganzhou (province 1550)
 }
 
 MDR = {  # Madurai
@@ -526,7 +526,7 @@ MDR = {  # Madurai
 	tier = kingdom
 	cultures = { tamil }  # TODO verify Vic3 culture name
 	religion = hindu  # TODO verify Vic3 religion name
-	# capital = STATE_TODO  # Vic2 capital: Madurai (province 1310)
+	capital = STATE_MADRAS  # Vic2 capital: Madurai (province 1310)
 }
 
 VIJ = {  # Vijayanagar
@@ -535,7 +535,7 @@ VIJ = {  # Vijayanagar
 	tier = kingdom
 	cultures = { kannada }  # TODO verify Vic3 culture name
 	religion = hindu  # TODO verify Vic3 religion name
-	# capital = STATE_TODO  # Vic2 capital: Belgaum (province 1302)
+	capital = STATE_BOMBAY  # Vic2 capital: Belgaum (province 1302)
 }
 
 NRI = {  # Nri
@@ -544,7 +544,7 @@ NRI = {  # Nri
 	tier = kingdom
 	cultures = { ibo }  # TODO verify Vic3 culture name
 	religion = animist  # TODO verify Vic3 religion name
-	# capital = STATE_TODO  # Vic2 capital: Awka (province 1933)
+	capital = STATE_NIGER_DELTA  # Vic2 capital: Awka (province 1933)
 }
 
 ZIM = {  # Mutapa
@@ -562,7 +562,7 @@ ADW = {  # Nganha
 	tier = kingdom
 	cultures = { fulbe }  # TODO verify Vic3 culture name
 	religion = animist  # TODO verify Vic3 religion name
-	# capital = STATE_TODO  # Vic2 capital: Yola (province 1950)
+	capital = STATE_NIGERIA  # Vic2 capital: Yola (province 1950)
 }
 
 KNO = {  # Kano
@@ -571,7 +571,7 @@ KNO = {  # Kano
 	tier = kingdom
 	cultures = { hausa }  # TODO verify Vic3 culture name
 	religion = sunni  # TODO verify Vic3 religion name
-	# capital = STATE_TODO  # Vic2 capital: Kano (province 1945)
+	capital = STATE_EAST_HAUSALAND  # Vic2 capital: Kano (province 1945)
 }
 
 ILO = {  # Timbuktu Emirate
@@ -580,7 +580,7 @@ ILO = {  # Timbuktu Emirate
 	tier = principality
 	cultures = { fulbe }  # TODO verify Vic3 culture name
 	religion = sunni  # TODO verify Vic3 religion name
-	# capital = STATE_TODO  # Vic2 capital: Ilorin (province 1927)
+	capital = STATE_TIMBUKTU  # Vic2 capital: Ilorin (province 1927)
 }
 
 DHY = {  # Dahomey
@@ -589,7 +589,7 @@ DHY = {  # Dahomey
 	tier = kingdom
 	cultures = { fon }  # TODO verify Vic3 culture name
 	religion = animist  # TODO verify Vic3 religion name
-	# capital = STATE_TODO  # Vic2 capital: Cotonou (province 1919)
+	capital = STATE_DAHOMEY  # Vic2 capital: Cotonou (province 1919)
 }
 
 WTT = {  # Wattara
@@ -607,7 +607,7 @@ AMT = {  # Amatsa
 	tier = kingdom
 	cultures = { tigray }  # TODO verify Vic3 culture name
 	religion = oriental_orthodox  # TODO verify Vic3 religion name
-	# capital = STATE_TODO  # Vic2 capital: Asmara (province 1848)
+	capital = STATE_ERITREA  # Vic2 capital: Asmara (province 1848)
 }
 
 ADA = {  # Adal
@@ -616,7 +616,7 @@ ADA = {  # Adal
 	tier = kingdom
 	cultures = { somali }  # TODO verify Vic3 culture name
 	religion = sunni  # TODO verify Vic3 religion name
-	# capital = STATE_TODO  # Vic2 capital: Werder (province 1867)
+	capital = STATE_OROMIA  # Vic2 capital: Werder (province 1867)
 }
 
 ABS = {  # Abyssinia
@@ -643,7 +643,7 @@ DAR = {  # Darfur
 	tier = kingdom
 	cultures = { fur }  # TODO verify Vic3 culture name
 	religion = sunni  # TODO verify Vic3 religion name
-	# capital = STATE_TODO  # Vic2 capital: Fasher (province 1841)
+	capital = STATE_DARFUR  # Vic2 capital: Fasher (province 1841)
 }
 
 AJU = {  # Ajuuraan State
@@ -652,7 +652,7 @@ AJU = {  # Ajuuraan State
 	tier = kingdom
 	cultures = { somali }  # TODO verify Vic3 culture name
 	religion = sunni  # TODO verify Vic3 religion name
-	# capital = STATE_TODO  # Vic2 capital: Mogadishu (province 1868)
+	capital = STATE_SOMALILAND  # Vic2 capital: Mogadishu (province 1868)
 }
 
 ARY = {  # Iranshahr
@@ -697,7 +697,7 @@ LFG = {  # Lanfang
 	tier = kingdom
 	cultures = { tionghoa }  # TODO verify Vic3 culture name
 	religion = mahayana  # TODO verify Vic3 religion name
-	# capital = STATE_TODO  # Vic2 capital: Pontianak (province 1426)
+	capital = STATE_WEST_BORNEO  # Vic2 capital: Pontianak (province 1426)
 }
 
 MKS = {  # Makassar
@@ -706,7 +706,7 @@ MKS = {  # Makassar
 	tier = kingdom
 	cultures = { moluccan }  # TODO verify Vic3 culture name
 	religion = sunni  # TODO verify Vic3 religion name
-	# capital = STATE_TODO  # Vic2 capital: Makassar (province 1430)
+	capital = STATE_CELEBES  # Vic2 capital: Makassar (province 1430)
 }
 
 TON = {  # Christianias
@@ -715,7 +715,7 @@ TON = {  # Christianias
 	tier = kingdom
 	cultures = { filipino }  # TODO verify Vic3 culture name
 	religion = mahayana  # TODO verify Vic3 religion name
-	# capital = STATE_TODO  # Vic2 capital: Iloilo (province 1460)
+	capital = STATE_VISAYAS  # Vic2 capital: Iloilo (province 1460)
 }
 
 PAT = {  # Pattani
@@ -733,7 +733,7 @@ PLM = {  # Palembang
 	tier = kingdom
 	cultures = { malay }  # TODO verify Vic3 culture name
 	religion = sunni  # TODO verify Vic3 religion name
-	# capital = STATE_TODO  # Vic2 capital: Palembang (province 1399)
+	capital = STATE_SOUTH_SUMATRA  # Vic2 capital: Palembang (province 1399)
 }
 
 CHR = {  # Christiania
@@ -805,7 +805,7 @@ DNG = {  # Qingqiu
 	tier = kingdom
 	cultures = { qingqiuan }  # TODO verify Vic3 culture name
 	religion = mahayana  # TODO verify Vic3 religion name
-	# capital = STATE_TODO  # Vic2 capital: San Francisco (province 84)
+	capital = STATE_CALIFORNIA  # Vic2 capital: San Francisco (province 84)
 }
 
 HHR = {  # Rohnnst
@@ -814,7 +814,7 @@ HHR = {  # Rohnnst
 	tier = kingdom
 	cultures = { rohnnst }  # TODO verify Vic3 culture name
 	religion = animist  # TODO verify Vic3 religion name
-	# capital = STATE_TODO  # Vic2 capital: Regina (province 30)
+	capital = STATE_SASKATCHEWAN  # Vic2 capital: Regina (province 30)
 }
 
 IRO = {  # Haudenosaunee
@@ -850,7 +850,7 @@ NBG = {  # The Belgian Confederacy
 	tier = kingdom
 	cultures = { septiman }  # TODO verify Vic3 culture name
 	religion = protestant  # TODO verify Vic3 religion name
-	# capital = STATE_TODO  # Vic2 capital: Long Island (province 233)
+	capital = STATE_NEW_YORK  # Vic2 capital: Long Island (province 233)
 }
 
 NUN = {  # Nunavut
@@ -877,7 +877,7 @@ PLA = {  # Plantagenia
 	tier = kingdom
 	cultures = { plantagenian }  # TODO verify Vic3 culture name
 	religion = catholic  # TODO verify Vic3 religion name
-	# capital = STATE_TODO  # Vic2 capital: New Orleans (province 139)
+	capital = STATE_LOUISIANA  # Vic2 capital: New Orleans (province 139)
 }
 
 PUR = {  # Purepecha
@@ -904,7 +904,7 @@ VIN = {  # Vinland
 	tier = kingdom
 	cultures = { vinlander }  # TODO verify Vic3 culture name
 	religion = protestant  # TODO verify Vic3 religion name
-	# capital = STATE_TODO  # Vic2 capital: Quebec City (province 65)
+	capital = STATE_QUEBEC  # Vic2 capital: Quebec City (province 65)
 }
 
 ZAP = {  # Lulaa
@@ -931,7 +931,7 @@ AMA = {  # Amazonie
 	tier = kingdom
 	cultures = { amazonian }  # TODO verify Vic3 culture name
 	religion = catholic  # TODO verify Vic3 religion name
-	# capital = STATE_TODO  # Vic2 capital: Salvador de Bahia (province 2436)
+	capital = STATE_PERNAMBUCO  # Vic2 capital: Salvador de Bahia (province 2436)
 }
 
 ARE = {  # Arequipa
@@ -1003,7 +1003,7 @@ INC = {  # Tawantinsuyu
 	tier = empire
 	cultures = { quechua }  # TODO verify Vic3 culture name
 	religion = inti  # TODO verify Vic3 religion name
-	# capital = STATE_TODO  # Vic2 capital: Chuquisaca (province 2313)
+	capital = STATE_SANTA_CRUZ  # Vic2 capital: Chuquisaca (province 2313)
 }
 
 LOT = {  # Lotharingia
@@ -1012,7 +1012,7 @@ LOT = {  # Lotharingia
 	tier = kingdom
 	cultures = { lotharian }  # TODO verify Vic3 culture name
 	religion = protestant  # TODO verify Vic3 religion name
-	# capital = STATE_TODO  # Vic2 capital: Porto Alegre (province 2463)
+	capital = STATE_RIO_GRANDE_DO_SUL  # Vic2 capital: Porto Alegre (province 2463)
 }
 
 NAN = {  # Beornia
@@ -1021,7 +1021,7 @@ NAN = {  # Beornia
 	tier = kingdom
 	cultures = { beornian }  # TODO verify Vic3 culture name
 	religion = protestant  # TODO verify Vic3 religion name
-	# capital = STATE_TODO  # Vic2 capital: Buenos Aires (province 2348)
+	capital = STATE_BUENOS_AIRES  # Vic2 capital: Buenos Aires (province 2348)
 }
 
 HBE = {  # The Holy Britannian Empire
@@ -1066,7 +1066,7 @@ GAN = {  # Zhourao
 	tier = kingdom
 	cultures = { ganguan }  # TODO verify Vic3 culture name
 	religion = mahayana  # TODO verify Vic3 religion name
-	# capital = STATE_TODO  # Vic2 capital: Sydney (province 2468)
+	capital = STATE_NEW_SOUTH_WALES  # Vic2 capital: Sydney (province 2468)
 }
 
 TUI = {  # The Tonga Federation
@@ -1075,7 +1075,7 @@ TUI = {  # The Tonga Federation
 	tier = kingdom
 	cultures = { polynesian }  # TODO verify Vic3 culture name
 	religion = animist  # TODO verify Vic3 religion name
-	# capital = STATE_TODO  # Vic2 capital: Tonga (province 2540)
+	capital = STATE_FIJI  # Vic2 capital: Tonga (province 2540)
 }
 
 PPU = {  # Papua
@@ -1093,7 +1093,7 @@ MAC = {  # Macedonia
 	tier = kingdom
 	cultures = { greek }  # TODO verify Vic3 culture name
 	religion = orthodox  # TODO verify Vic3 religion name
-	# capital = STATE_TODO  # Vic2 capital: Salonika (province 805)
+	capital = STATE_MACEDONIA  # Vic2 capital: Salonika (province 805)
 }
 
 SIL = {  # Silesia
@@ -1264,7 +1264,7 @@ BTL = {  # Bitlis
 	tier = kingdom
 	cultures = { kurdish }  # TODO verify Vic3 culture name
 	religion = sunni  # TODO verify Vic3 religion name
-	# capital = STATE_TODO  # Vic2 capital: Bitlis (province 891)
+	capital = STATE_ERZURUM  # Vic2 capital: Bitlis (province 891)
 }
 
 BDN = {  # Hakkari
@@ -1273,7 +1273,7 @@ BDN = {  # Hakkari
 	tier = kingdom
 	cultures = { kurdish }  # TODO verify Vic3 culture name
 	religion = sunni  # TODO verify Vic3 religion name
-	# capital = STATE_TODO  # Vic2 capital: Hakkari (province 892)
+	capital = STATE_DIYARBAKIR  # Vic2 capital: Hakkari (province 892)
 }
 
 BNB = {  # Baban
@@ -1300,7 +1300,7 @@ BHT = {  # Bohtan
 	tier = kingdom
 	cultures = { kurdish }  # TODO verify Vic3 culture name
 	religion = sunni  # TODO verify Vic3 religion name
-	# capital = STATE_TODO  # Vic2 capital: Amapa (province 2414)
+	capital = STATE_DIYARBAKIR  # Vic2 capital: Amapa (province 2414)
 }
 
 SRN = {  # Soran
@@ -1309,7 +1309,7 @@ SRN = {  # Soran
 	tier = kingdom
 	cultures = { kurdish }  # TODO verify Vic3 culture name
 	religion = sunni  # TODO verify Vic3 religion name
-	# capital = STATE_TODO  # Vic2 capital: Arbil (province 924)
+	capital = STATE_MOSUL  # Vic2 capital: Arbil (province 924)
 }
 
 FIU = {  # Fiume
@@ -1444,7 +1444,7 @@ MGH = {  # Maghreb
 	tier = kingdom
 	cultures = { maghrebi }  # TODO verify Vic3 culture name
 	religion = sunni  # TODO verify Vic3 religion name
-	# capital = STATE_TODO  # Vic2 capital: Fez (province 1680)
+	capital = STATE_CONSTANTINE  # Vic2 capital: Fez (province 1680)
 }
 
 BKF = {  # Haut-Volta
@@ -1741,7 +1741,7 @@ CHP = {  # Champa
 	tier = kingdom
 	cultures = { champa }  # TODO verify Vic3 culture name
 	religion = hindu  # TODO verify Vic3 religion name
-	# capital = STATE_TODO  # Vic2 capital: Saigon (province 1380)
+	capital = STATE_MEKONG  # Vic2 capital: Saigon (province 1380)
 }
 
 GUY = {  # Essequibo
@@ -2110,7 +2110,7 @@ CIR = {  # Circassia
 	tier = kingdom
 	cultures = { north_caucasian }  # TODO verify Vic3 culture name
 	religion = sunni  # TODO verify Vic3 religion name
-	# capital = STATE_TODO  # Vic2 capital: Pyatigorsk (province 1056)
+	capital = STATE_STAVROPOL  # Vic2 capital: Pyatigorsk (province 1056)
 }
 
 CLC = {  # Cilicia
@@ -2137,7 +2137,7 @@ KMY = {  # Kumykia
 	tier = kingdom
 	cultures = { kumyk }  # TODO verify Vic3 culture name
 	religion = sunni  # TODO verify Vic3 religion name
-	# capital = STATE_TODO  # Vic2 capital: Tarki (province 3322)
+	capital = STATE_DAGESTAN  # Vic2 capital: Tarki (province 3322)
 }
 
 KRI = {  # Karachay
@@ -2200,7 +2200,7 @@ IME = {  # Imereti
 	tier = kingdom
 	cultures = { georgian }  # TODO verify Vic3 culture name
 	religion = orthodox  # TODO verify Vic3 religion name
-	# capital = STATE_TODO  # Vic2 capital: Poti (province 1094)
+	capital = STATE_GREATER_CAUCASUS  # Vic2 capital: Poti (province 1094)
 }
 
 SAM = {  # Samtskhe
@@ -2209,7 +2209,7 @@ SAM = {  # Samtskhe
 	tier = kingdom
 	cultures = { georgian }  # TODO verify Vic3 culture name
 	religion = orthodox  # TODO verify Vic3 religion name
-	# capital = STATE_TODO  # Vic2 capital: Ardahan (province 886)
+	capital = STATE_KARS  # Vic2 capital: Ardahan (province 886)
 }
 
 KRT = {  # Kartli
@@ -2506,7 +2506,7 @@ BEN = {  # Bengal
 	tier = kingdom
 	cultures = { bengali }  # TODO verify Vic3 culture name
 	religion = sunni  # TODO verify Vic3 religion name
-	# capital = STATE_TODO  # Vic2 capital: Calcutta (province 1251)
+	capital = STATE_WEST_BENGAL  # Vic2 capital: Calcutta (province 1251)
 }
 
 KRN = {  # Karnatak
@@ -2569,7 +2569,7 @@ ASH = {  # Ashanti
 	tier = kingdom
 	cultures = { akan }  # TODO verify Vic3 culture name
 	religion = animist  # TODO verify Vic3 religion name
-	# capital = STATE_TODO  # Vic2 capital: Kintampo (province 1911)
+	capital = STATE_GOLD_COAST  # Vic2 capital: Kintampo (province 1911)
 }
 
 AWS = {  # Aussa
@@ -2587,7 +2587,7 @@ AZA = {  # Azande
 	tier = kingdom
 	cultures = { azande }  # TODO verify Vic3 culture name
 	religion = animist  # TODO verify Vic3 religion name
-	# capital = STATE_TODO  # Vic2 capital: Baramo (province 1998)
+	capital = STATE_CONGO_ORIENTALE  # Vic2 capital: Baramo (province 1998)
 }
 
 BRD = {  # Burundi
@@ -2596,7 +2596,7 @@ BRD = {  # Burundi
 	tier = kingdom
 	cultures = { ruanda }  # TODO verify Vic3 culture name
 	religion = animist  # TODO verify Vic3 religion name
-	# capital = STATE_TODO  # Vic2 capital: Usumbura (province 2035)
+	capital = STATE_TANGANYIKA  # Vic2 capital: Usumbura (province 2035)
 }
 
 BSH = {  # Lesotho
@@ -2605,7 +2605,7 @@ BSH = {  # Lesotho
 	tier = kingdom
 	cultures = { sotho }  # TODO verify Vic3 culture name
 	religion = animist  # TODO verify Vic3 religion name
-	# capital = STATE_TODO  # Vic2 capital: Thaba Bosiu (province 2104)
+	capital = STATE_ZULULAND  # Vic2 capital: Thaba Bosiu (province 2104)
 }
 
 BUG = {  # Uganda
@@ -2614,7 +2614,7 @@ BUG = {  # Uganda
 	tier = kingdom
 	cultures = { baganda }  # TODO verify Vic3 culture name
 	religion = animist  # TODO verify Vic3 religion name
-	# capital = STATE_TODO  # Vic2 capital: Entebbe (province 2019)
+	capital = STATE_UGANDA  # Vic2 capital: Entebbe (province 2019)
 }
 
 CLA = {  # Calabar
@@ -2749,7 +2749,7 @@ KAN = {  # Bornu Empire
 	tier = empire
 	cultures = { fulbe }  # TODO verify Vic3 culture name
 	religion = sunni  # TODO verify Vic3 religion name
-	# capital = STATE_TODO  # Vic2 capital: Kufe (province 1816)
+	capital = STATE_OUTER_HAUSALAND  # Vic2 capital: Kufe (province 1816)
 }
 
 KNG = {  # Wattara
@@ -2767,7 +2767,7 @@ KON = {  # Kongo
 	tier = kingdom
 	cultures = { bakongo }  # TODO verify Vic3 culture name
 	religion = catholic  # TODO verify Vic3 religion name
-	# capital = STATE_TODO  # Vic2 capital: Mbanza (province 2001)
+	capital = STATE_NORTH_ANGOLA  # Vic2 capital: Mbanza (province 2001)
 }
 
 KUB = {  # Kuba
@@ -2776,7 +2776,7 @@ KUB = {  # Kuba
 	tier = kingdom
 	cultures = { kuba }  # TODO verify Vic3 culture name
 	religion = animist  # TODO verify Vic3 religion name
-	# capital = STATE_TODO  # Vic2 capital: Kananga (province 1984)
+	capital = STATE_KASAI  # Vic2 capital: Kananga (province 1984)
 }
 
 KZB = {  # Kazembe
@@ -2785,7 +2785,7 @@ KZB = {  # Kazembe
 	tier = kingdom
 	cultures = { lunda }  # TODO verify Vic3 culture name
 	religion = animist  # TODO verify Vic3 religion name
-	# capital = STATE_TODO  # Vic2 capital: Kazembe (province 2016)
+	capital = STATE_KAZEMBE  # Vic2 capital: Kazembe (province 2016)
 }
 
 LBA = {  # Luba
@@ -2794,7 +2794,7 @@ LBA = {  # Luba
 	tier = kingdom
 	cultures = { luba }  # TODO verify Vic3 culture name
 	religion = animist  # TODO verify Vic3 religion name
-	# capital = STATE_TODO  # Vic2 capital: Lusambo (province 1986)
+	capital = STATE_KASAI  # Vic2 capital: Lusambo (province 1986)
 }
 
 LBY = {  # Libya
@@ -2812,7 +2812,7 @@ LOA = {  # Loango
 	tier = kingdom
 	cultures = { bakongo }  # TODO verify Vic3 culture name
 	religion = animist  # TODO verify Vic3 religion name
-	# capital = STATE_TODO  # Vic2 capital: Loango (province 2624)
+	capital = STATE_CONGO  # Vic2 capital: Loango (province 2624)
 }
 
 LUN = {  # Lunda
@@ -2821,7 +2821,7 @@ LUN = {  # Lunda
 	tier = kingdom
 	cultures = { lunda }  # TODO verify Vic3 culture name
 	religion = animist  # TODO verify Vic3 religion name
-	# capital = STATE_TODO  # Vic2 capital: Mussumba (province 1988)
+	capital = STATE_EAST_ANGOLA  # Vic2 capital: Mussumba (province 1988)
 }
 
 MAJ = {  # Majeerteen
@@ -2848,7 +2848,7 @@ MAT = {  # Matabele
 	tier = kingdom
 	cultures = { nguni }  # TODO verify Vic3 culture name
 	religion = animist  # TODO verify Vic3 religion name
-	# capital = STATE_TODO  # Vic2 capital: Mosega (province 2108)
+	capital = STATE_TRANSVAAL  # Vic2 capital: Mosega (province 2108)
 }
 
 MLW = {  # Malawi
@@ -2866,7 +2866,7 @@ MNG = {  # Mongo
 	tier = kingdom
 	cultures = { mongo }  # TODO verify Vic3 culture name
 	religion = animist  # TODO verify Vic3 religion name
-	# capital = STATE_TODO  # Vic2 capital: Basoko (province 1992)
+	capital = STATE_EQUATEUR  # Vic2 capital: Basoko (province 1992)
 }
 
 MOS = {  # Mossi
@@ -2884,7 +2884,7 @@ OYO = {  # Oyo
 	tier = kingdom
 	cultures = { yoruba }  # TODO verify Vic3 culture name
 	religion = animist  # TODO verify Vic3 religion name
-	# capital = STATE_TODO  # Vic2 capital: Ife (province 1926)
+	capital = STATE_YORUBA_STATES  # Vic2 capital: Ife (province 1926)
 }
 
 RWA = {  # Rwanda
@@ -2893,7 +2893,7 @@ RWA = {  # Rwanda
 	tier = kingdom
 	cultures = { ruanda }  # TODO verify Vic3 culture name
 	religion = animist  # TODO verify Vic3 religion name
-	# capital = STATE_TODO  # Vic2 capital: Kigali (province 2034)
+	capital = STATE_TANGANYIKA  # Vic2 capital: Kigali (province 2034)
 }
 
 SHO = {  # Shonaland
@@ -2902,7 +2902,7 @@ SHO = {  # Shonaland
 	tier = kingdom
 	cultures = { shona }  # TODO verify Vic3 culture name
 	religion = animist  # TODO verify Vic3 religion name
-	# capital = STATE_TODO  # Vic2 capital: Mutare (province 2070)
+	capital = STATE_ZAMBEZI  # Vic2 capital: Mutare (province 2070)
 }
 
 SHW = {  # Shewa
@@ -2956,7 +2956,7 @@ SUA = {  # Suazi
 	tier = kingdom
 	cultures = { nguni }  # TODO verify Vic3 culture name
 	religion = animist  # TODO verify Vic3 religion name
-	# capital = STATE_TODO  # Vic2 capital: Mbabane (province 2114)
+	capital = STATE_TRANSVAAL  # Vic2 capital: Mbabane (province 2114)
 }
 
 TIG = {  # Tigray
@@ -3037,7 +3037,7 @@ XHO = {  # Xhosa
 	tier = kingdom
 	cultures = { xhosa }  # TODO verify Vic3 culture name
 	religion = animist  # TODO verify Vic3 religion name
-	# capital = STATE_TODO  # Vic2 capital: Umtata (province 2100)
+	capital = STATE_EASTERN_CAPE  # Vic2 capital: Umtata (province 2100)
 }
 
 GRQ = {  # Vryland
@@ -3046,7 +3046,7 @@ GRQ = {  # Vryland
 	tier = kingdom
 	cultures = { afro_south_african }  # TODO verify Vic3 culture name
 	religion = protestant  # TODO verify Vic3 religion name
-	# capital = STATE_TODO  # Vic2 capital: Mochudi (province 2574)
+	capital = STATE_BOTSWANA  # Vic2 capital: Mochudi (province 2574)
 }
 
 LWE = {  # Leeuwin
@@ -3055,7 +3055,7 @@ LWE = {  # Leeuwin
 	tier = kingdom
 	cultures = { boer }  # TODO verify Vic3 culture name
 	religion = protestant  # TODO verify Vic3 religion name
-	# capital = STATE_TODO  # Vic2 capital: Port Elizabeth (province 2096)
+	capital = STATE_EASTERN_CAPE  # Vic2 capital: Port Elizabeth (province 2096)
 }
 
 NFL = {  # Nuweflander
@@ -3064,7 +3064,7 @@ NFL = {  # Nuweflander
 	tier = kingdom
 	cultures = { boer }  # TODO verify Vic3 culture name
 	religion = protestant  # TODO verify Vic3 religion name
-	# capital = STATE_TODO  # Vic2 capital: Maputo (province 2049)
+	capital = STATE_LOURENCO_MARQUES  # Vic2 capital: Maputo (province 2049)
 }
 
 BTV = {  # Batavia
@@ -3082,7 +3082,7 @@ FJA = {  # Fulbe Emirate
 	tier = principality
 	cultures = { fulbe }  # TODO verify Vic3 culture name
 	religion = sunni  # TODO verify Vic3 religion name
-	# capital = STATE_TODO  # Vic2 capital: Ziguinchor (province 1792)
+	capital = STATE_GUINEA  # Vic2 capital: Ziguinchor (province 1792)
 }
 
 FUN = {  # Soudan
@@ -3091,7 +3091,7 @@ FUN = {  # Soudan
 	tier = kingdom
 	cultures = { sudanese }  # TODO verify Vic3 culture name
 	religion = sunni  # TODO verify Vic3 religion name
-	# capital = STATE_TODO  # Vic2 capital: Sennar (province 1830)
+	capital = STATE_BLUE_NILE  # Vic2 capital: Sennar (province 1830)
 }
 
 DJA = {  # Jambi
@@ -3172,7 +3172,7 @@ KLM = {  # Kalimantan
 	tier = kingdom
 	cultures = { malay }  # TODO verify Vic3 culture name
 	religion = sunni  # TODO verify Vic3 religion name
-	# capital = STATE_TODO  # Vic2 capital: Banjarmasin (province 1423)
+	capital = STATE_EAST_BORNEO  # Vic2 capital: Banjarmasin (province 1423)
 }
 
 KTI = {  # Kutai
@@ -3181,7 +3181,7 @@ KTI = {  # Kutai
 	tier = kingdom
 	cultures = { malay }  # TODO verify Vic3 culture name
 	religion = sunni  # TODO verify Vic3 religion name
-	# capital = STATE_TODO  # Vic2 capital: Samarinda (province 1429)
+	capital = STATE_EAST_BORNEO  # Vic2 capital: Samarinda (province 1429)
 }
 
 LXA = {  # Laos
@@ -3199,7 +3199,7 @@ MAL = {  # The Mossi Empire
 	tier = empire
 	cultures = { mossi }  # TODO verify Vic3 culture name
 	religion = sunni  # TODO verify Vic3 religion name
-	# capital = STATE_TODO  # Vic2 capital: Wahiguya (province 1902)
+	capital = STATE_VOLTA  # Vic2 capital: Wahiguya (province 1902)
 }
 
 MLY = {  # Malaysia
@@ -3244,7 +3244,7 @@ SUL = {  # Sulu
 	tier = kingdom
 	cultures = { malay }  # TODO verify Vic3 culture name
 	religion = sunni  # TODO verify Vic3 religion name
-	# capital = STATE_TODO  # Vic2 capital: Sulu (province 1464)
+	capital = STATE_NORTH_BORNEO  # Vic2 capital: Sulu (province 1464)
 }
 
 SWK = {  # Sarawak
@@ -3334,7 +3334,7 @@ AOT = {  # Aotearoa
 	tier = kingdom
 	cultures = { maori }  # TODO verify Vic3 culture name
 	religion = animist  # TODO verify Vic3 religion name
-	# capital = STATE_TODO  # Vic2 capital: Tauranga (province 2571)
+	capital = STATE_NORTH_ISLAND  # Vic2 capital: Tauranga (province 2571)
 }
 
 FIJ = {  # Fiji
@@ -3361,7 +3361,7 @@ ARA = {  # Aragon
 	tier = kingdom
 	cultures = { catalan }  # TODO verify Vic3 culture name
 	religion = catholic  # TODO verify Vic3 religion name
-	# capital = STATE_TODO  # Vic2 capital: Barcelona (province 498)
+	capital = STATE_CATALONIA  # Vic2 capital: Barcelona (province 498)
 }
 
 BYE = {  # BYE
@@ -3379,7 +3379,7 @@ PLC = {  # Polish-Lithuanian Commonwealth
 	tier = empire
 	cultures = { polish }  # TODO verify Vic3 culture name
 	religion = catholic  # TODO verify Vic3 religion name
-	# capital = STATE_TODO  # Vic2 capital: Warsaw (province 706)
+	capital = STATE_GREATER_POLAND  # Vic2 capital: Warsaw (province 706)
 }
 
 UBD = {  # New Courland
@@ -3424,7 +3424,7 @@ SCA = {  # Scandinavia
 	tier = kingdom
 	cultures = { scandinavian }  # TODO verify Vic3 culture name
 	religion = protestant  # TODO verify Vic3 religion name
-	# capital = STATE_TODO  # Vic2 capital: Copenhagen (province 372)
+	capital = STATE_ZEALAND  # Vic2 capital: Copenhagen (province 372)
 }
 
 SWE = {  # SWE
@@ -3496,7 +3496,7 @@ SPA = {  # Spain
 	tier = kingdom
 	cultures = { castilian }  # TODO verify Vic3 culture name
 	religion = catholic  # TODO verify Vic3 religion name
-	# capital = STATE_TODO  # Vic2 capital: Madrid (province 487)
+	capital = STATE_NEW_CASTILE  # Vic2 capital: Madrid (province 487)
 }
 
 WLL = {  # WLL
@@ -3523,7 +3523,7 @@ BAD = {  # Baden
 	tier = kingdom
 	cultures = { rheinish }  # TODO verify Vic3 culture name
 	religion = catholic  # TODO verify Vic3 religion name
-	# capital = STATE_TODO  # Vic2 capital: Karlsruhe (province 586)
+	capital = STATE_BADEN  # Vic2 capital: Karlsruhe (province 586)
 }
 
 BAV = {  # Bavaria
@@ -3532,7 +3532,7 @@ BAV = {  # Bavaria
 	tier = kingdom
 	cultures = { south_german }  # TODO verify Vic3 culture name
 	religion = catholic  # TODO verify Vic3 religion name
-	# capital = STATE_TODO  # Vic2 capital: Munich (province 599)
+	capital = STATE_BAVARIA  # Vic2 capital: Munich (province 599)
 }
 
 BRA = {  # Braunschweig
@@ -3541,7 +3541,7 @@ BRA = {  # Braunschweig
 	tier = kingdom
 	cultures = { north_german }  # TODO verify Vic3 culture name
 	religion = protestant  # TODO verify Vic3 religion name
-	# capital = STATE_TODO  # Vic2 capital: Brunswick (province 536)
+	capital = STATE_BRUNSWICK  # Vic2 capital: Brunswick (province 536)
 }
 
 BRE = {  # Bremen
@@ -3550,7 +3550,7 @@ BRE = {  # Bremen
 	tier = kingdom
 	cultures = { north_german }  # TODO verify Vic3 culture name
 	religion = protestant  # TODO verify Vic3 religion name
-	# capital = STATE_TODO  # Vic2 capital: Bremen (province 539)
+	capital = STATE_ELBE  # Vic2 capital: Bremen (province 539)
 }
 
 COB = {  # COB
@@ -3577,7 +3577,7 @@ FRM = {  # Frankfurt am Main
 	tier = kingdom
 	cultures = { rheinish }  # TODO verify Vic3 culture name
 	religion = protestant  # TODO verify Vic3 religion name
-	# capital = STATE_TODO  # Vic2 capital: Frankfurt (province 564)
+	capital = STATE_HESSE  # Vic2 capital: Frankfurt (province 564)
 }
 
 HAM = {  # HAM
@@ -3595,7 +3595,7 @@ HAN = {  # Lüneburg
 	tier = kingdom
 	cultures = { north_german }  # TODO verify Vic3 culture name
 	religion = protestant  # TODO verify Vic3 religion name
-	# capital = STATE_TODO  # Vic2 capital: Luneburg (province 532)
+	capital = STATE_ELBE  # Vic2 capital: Luneburg (province 532)
 }
 
 HES = {  # Hesse-Darmstadt
@@ -3604,7 +3604,7 @@ HES = {  # Hesse-Darmstadt
 	tier = kingdom
 	cultures = { rheinish }  # TODO verify Vic3 culture name
 	religion = protestant  # TODO verify Vic3 religion name
-	# capital = STATE_TODO  # Vic2 capital: Darmstadt (province 2560)
+	capital = STATE_HESSE  # Vic2 capital: Darmstadt (province 2560)
 }
 
 HEK = {  # Hesse-Kassel
@@ -3613,7 +3613,7 @@ HEK = {  # Hesse-Kassel
 	tier = kingdom
 	cultures = { rheinish }  # TODO verify Vic3 culture name
 	religion = protestant  # TODO verify Vic3 religion name
-	# capital = STATE_TODO  # Vic2 capital: Kassel (province 566)
+	capital = STATE_HESSE  # Vic2 capital: Kassel (province 566)
 }
 
 HOL = {  # Holstein
@@ -3631,7 +3631,7 @@ LIP = {  # Lippe-Detmold
 	tier = kingdom
 	cultures = { north_german }  # TODO verify Vic3 culture name
 	religion = protestant  # TODO verify Vic3 religion name
-	# capital = STATE_TODO  # Vic2 capital: Detmold (province 585)
+	capital = STATE_WESTPHALIA  # Vic2 capital: Detmold (province 585)
 }
 
 LUB = {  # LUB
@@ -3676,7 +3676,7 @@ NAS = {  # Nassau
 	tier = kingdom
 	cultures = { rheinish }  # TODO verify Vic3 culture name
 	religion = protestant  # TODO verify Vic3 religion name
-	# capital = STATE_TODO  # Vic2 capital: Darmstadt (province 2560)
+	capital = STATE_HESSE  # Vic2 capital: Darmstadt (province 2560)
 }
 
 NGF = {  # The League of Berlin
@@ -3739,7 +3739,7 @@ WUR = {  # WUR
 	tier = kingdom
 	cultures = { south_german }  # TODO verify Vic3 culture name
 	religion = catholic  # TODO verify Vic3 religion name
-	# capital = STATE_TODO  # Vic2 capital: Stuttgart (province 589)
+	capital = STATE_WURTTEMBERG  # Vic2 capital: Stuttgart (province 589)
 }
 
 ANB = {  # Ansbach
@@ -3757,7 +3757,7 @@ BMB = {  # Bamberg
 	tier = kingdom
 	cultures = { south_german }  # TODO verify Vic3 culture name
 	religion = catholic  # TODO verify Vic3 religion name
-	# capital = STATE_TODO  # Vic2 capital: Bamberg (province 3407)
+	capital = STATE_FRANCONIA  # Vic2 capital: Bamberg (province 3407)
 }
 
 ERF = {  # Erfurt
@@ -3775,7 +3775,7 @@ FRB = {  # Freiburg
 	tier = kingdom
 	cultures = { rheinish }  # TODO verify Vic3 culture name
 	religion = catholic  # TODO verify Vic3 religion name
-	# capital = STATE_TODO  # Vic2 capital: Freiburg (province 587)
+	capital = STATE_BADEN  # Vic2 capital: Freiburg (province 587)
 }
 
 FTB = {  # Fürstenberg
@@ -3784,7 +3784,7 @@ FTB = {  # Fürstenberg
 	tier = kingdom
 	cultures = { rheinish }  # TODO verify Vic3 culture name
 	religion = catholic  # TODO verify Vic3 religion name
-	# capital = STATE_TODO  # Vic2 capital: Konstanz (province 588)
+	capital = STATE_BADEN  # Vic2 capital: Konstanz (province 588)
 }
 
 FUL = {  # Fulda
@@ -3793,7 +3793,7 @@ FUL = {  # Fulda
 	tier = kingdom
 	cultures = { south_german }  # TODO verify Vic3 culture name
 	religion = protestant  # TODO verify Vic3 religion name
-	# capital = STATE_TODO  # Vic2 capital: Fulda (province 568)
+	capital = STATE_HESSE  # Vic2 capital: Fulda (province 568)
 }
 
 HIL = {  # Hildesheim
@@ -3802,7 +3802,7 @@ HIL = {  # Hildesheim
 	tier = kingdom
 	cultures = { rheinish }  # TODO verify Vic3 culture name
 	religion = protestant  # TODO verify Vic3 religion name
-	# capital = STATE_TODO  # Vic2 capital: Hidelsheim (province 3406)
+	capital = STATE_HANNOVER  # Vic2 capital: Hidelsheim (province 3406)
 }
 
 MRK = {  # Mark
@@ -3811,7 +3811,7 @@ MRK = {  # Mark
 	tier = kingdom
 	cultures = { rheinish }  # TODO verify Vic3 culture name
 	religion = protestant  # TODO verify Vic3 religion name
-	# capital = STATE_TODO  # Vic2 capital: Siegen (province 583)
+	capital = STATE_WESTPHALIA  # Vic2 capital: Siegen (province 583)
 }
 
 WZB = {  # Würzburg
@@ -3820,7 +3820,7 @@ WZB = {  # Würzburg
 	tier = kingdom
 	cultures = { south_german }  # TODO verify Vic3 culture name
 	religion = catholic  # TODO verify Vic3 religion name
-	# capital = STATE_TODO  # Vic2 capital: Wurzburg (province 597)
+	capital = STATE_FRANCONIA  # Vic2 capital: Wurzburg (province 597)
 }
 
 LOM = {  # Lombardia
@@ -3829,7 +3829,7 @@ LOM = {  # Lombardia
 	tier = kingdom
 	cultures = { north_italian }  # TODO verify Vic3 culture name
 	religion = catholic  # TODO verify Vic3 religion name
-	# capital = STATE_TODO  # Vic2 capital: Milan (province 726)
+	capital = STATE_LOMBARDY  # Vic2 capital: Milan (province 726)
 }
 
 LUC = {  # Lucca
@@ -3838,7 +3838,7 @@ LUC = {  # Lucca
 	tier = kingdom
 	cultures = { north_italian }  # TODO verify Vic3 culture name
 	religion = catholic  # TODO verify Vic3 religion name
-	# capital = STATE_TODO  # Vic2 capital: Lucca (province 746)
+	capital = STATE_EMILIA  # Vic2 capital: Lucca (province 746)
 }
 
 MOD = {  # Modena
@@ -3847,7 +3847,7 @@ MOD = {  # Modena
 	tier = kingdom
 	cultures = { north_italian }  # TODO verify Vic3 culture name
 	religion = catholic  # TODO verify Vic3 religion name
-	# capital = STATE_TODO  # Vic2 capital: Modena (province 739)
+	capital = STATE_EMILIA  # Vic2 capital: Modena (province 739)
 }
 
 PAP = {  # Papal States
@@ -3856,7 +3856,7 @@ PAP = {  # Papal States
 	tier = kingdom
 	cultures = { south_italian }  # TODO verify Vic3 culture name
 	religion = catholic  # TODO verify Vic3 religion name
-	# capital = STATE_TODO  # Vic2 capital: Rome (province 749)
+	capital = STATE_LAZIO  # Vic2 capital: Rome (province 749)
 }
 
 PAR = {  # Parma
@@ -3865,7 +3865,7 @@ PAR = {  # Parma
 	tier = kingdom
 	cultures = { north_italian }  # TODO verify Vic3 culture name
 	religion = catholic  # TODO verify Vic3 religion name
-	# capital = STATE_TODO  # Vic2 capital: Parma (province 738)
+	capital = STATE_EMILIA  # Vic2 capital: Parma (province 738)
 }
 
 SAR = {  # Savoy
@@ -3874,7 +3874,7 @@ SAR = {  # Savoy
 	tier = kingdom
 	cultures = { north_italian }  # TODO verify Vic3 culture name
 	religion = catholic  # TODO verify Vic3 religion name
-	# capital = STATE_TODO  # Vic2 capital: Turin (province 720)
+	capital = STATE_PIEDMONT  # Vic2 capital: Turin (province 720)
 }
 
 SIC = {  # Two Sicilies
@@ -3892,7 +3892,7 @@ TUS = {  # Etruria
 	tier = kingdom
 	cultures = { north_italian }  # TODO verify Vic3 culture name
 	religion = catholic  # TODO verify Vic3 religion name
-	# capital = STATE_TODO  # Vic2 capital: Florence (province 744)
+	capital = STATE_TUSCANY  # Vic2 capital: Florence (province 744)
 }
 
 VEN = {  # Venice
@@ -3901,7 +3901,7 @@ VEN = {  # Venice
 	tier = kingdom
 	cultures = { venetian }  # TODO verify Vic3 culture name
 	religion = catholic  # TODO verify Vic3 religion name
-	# capital = STATE_TODO  # Vic2 capital: Venice (province 729)
+	capital = STATE_VENETIA  # Vic2 capital: Venice (province 729)
 }
 
 BOH = {  # Bohemia
@@ -3910,7 +3910,7 @@ BOH = {  # Bohemia
 	tier = kingdom
 	cultures = { czech }  # TODO verify Vic3 culture name
 	religion = catholic  # TODO verify Vic3 religion name
-	# capital = STATE_TODO  # Vic2 capital: Prague (province 625)
+	capital = STATE_BOHEMIA  # Vic2 capital: Prague (province 625)
 }
 
 CRI = {  # Crimea
@@ -3919,7 +3919,7 @@ CRI = {  # Crimea
 	tier = kingdom
 	cultures = { crimean }  # TODO verify Vic3 culture name
 	religion = sunni  # TODO verify Vic3 religion name
-	# capital = STATE_TODO  # Vic2 capital: Sevastopol (province 967)
+	capital = STATE_CRIMEA  # Vic2 capital: Sevastopol (province 967)
 }
 
 EST = {  # Estland
@@ -3937,7 +3937,7 @@ HUN = {  # Hungary
 	tier = kingdom
 	cultures = { hungarian }  # TODO verify Vic3 culture name
 	religion = catholic  # TODO verify Vic3 religion name
-	# capital = STATE_TODO  # Vic2 capital: Budapest (province 641)
+	capital = STATE_CENTRAL_HUNGARY  # Vic2 capital: Budapest (province 641)
 }
 
 KUN = {  # Kunsag
@@ -3955,7 +3955,7 @@ LIT = {  # Lithuania
 	tier = kingdom
 	cultures = { lithuanian }  # TODO verify Vic3 culture name
 	religion = catholic  # TODO verify Vic3 religion name
-	# capital = STATE_TODO  # Vic2 capital: Vilnius (province 360)
+	capital = STATE_LITHUANIA  # Vic2 capital: Vilnius (province 360)
 }
 
 LAT = {  # Livonia
@@ -3991,7 +3991,7 @@ SWI = {  # Switzerland
 	tier = kingdom
 	cultures = { south_german }  # TODO verify Vic3 culture name
 	religion = protestant  # TODO verify Vic3 religion name
-	# capital = STATE_TODO  # Vic2 capital: Bern (province 605)
+	capital = STATE_WEST_SWITZERLAND  # Vic2 capital: Bern (province 605)
 }
 
 RUT = {  # Ruthenia
@@ -4036,7 +4036,7 @@ UKR = {  # Kiev
 	tier = kingdom
 	cultures = { ruthenian }  # TODO verify Vic3 culture name
 	religion = orthodox  # TODO verify Vic3 religion name
-	# capital = STATE_TODO  # Vic2 capital: Kiev (province 958)
+	capital = STATE_KIEV  # Vic2 capital: Kiev (province 958)
 }
 
 CZH = {  # CZH
@@ -4054,7 +4054,7 @@ ALB = {  # Albania
 	tier = kingdom
 	cultures = { albanian }  # TODO verify Vic3 culture name
 	religion = sunni  # TODO verify Vic3 religion name
-	# capital = STATE_TODO  # Vic2 capital: Tirana (province 849)
+	capital = STATE_ALBANIA  # Vic2 capital: Tirana (province 849)
 }
 
 BOS = {  # Bosnia-Herzegovina
@@ -4090,7 +4090,7 @@ CRO = {  # Illyria
 	tier = kingdom
 	cultures = { croat }  # TODO verify Vic3 culture name
 	religion = catholic  # TODO verify Vic3 religion name
-	# capital = STATE_TODO  # Vic2 capital: Zagreb (province 771)
+	capital = STATE_CROATIA  # Vic2 capital: Zagreb (province 771)
 }
 
 CYP = {  # Cyprus
@@ -4126,7 +4126,7 @@ MOL = {  # Moldavia
 	tier = kingdom
 	cultures = { romanian }  # TODO verify Vic3 culture name
 	religion = orthodox  # TODO verify Vic3 religion name
-	# capital = STATE_TODO  # Vic2 capital: Iasi (province 670)
+	capital = STATE_MOLDAVIA  # Vic2 capital: Iasi (province 670)
 }
 
 MON = {  # Montenegro
@@ -4135,7 +4135,7 @@ MON = {  # Montenegro
 	tier = kingdom
 	cultures = { serb }  # TODO verify Vic3 culture name
 	religion = orthodox  # TODO verify Vic3 religion name
-	# capital = STATE_TODO  # Vic2 capital: Cetinje (province 2583)
+	capital = STATE_MONTENEGRO  # Vic2 capital: Cetinje (province 2583)
 }
 
 ROM = {  # Romania
@@ -4171,7 +4171,7 @@ TUR = {  # Ottoman Empire
 	tier = empire
 	cultures = { turkish }  # TODO verify Vic3 culture name
 	religion = sunni  # TODO verify Vic3 religion name
-	# capital = STATE_TODO  # Vic2 capital: Istanbul (province 860)
+	capital = STATE_EASTERN_THRACE  # Vic2 capital: Istanbul (province 860)
 }
 
 WAL = {  # Wallachia
@@ -4180,7 +4180,7 @@ WAL = {  # Wallachia
 	tier = kingdom
 	cultures = { romanian }  # TODO verify Vic3 culture name
 	religion = orthodox  # TODO verify Vic3 religion name
-	# capital = STATE_TODO  # Vic2 capital: Bucharest (province 664)
+	capital = STATE_WALLACHIA  # Vic2 capital: Bucharest (province 664)
 }
 
 YUG = {  # Yugoslavia
@@ -4207,7 +4207,7 @@ EGY = {  # Egypt
 	tier = kingdom
 	cultures = { misri }  # TODO verify Vic3 culture name
 	religion = sunni  # TODO verify Vic3 religion name
-	# capital = STATE_TODO  # Vic2 capital: Cairo (province 1745)
+	capital = STATE_LOWER_EGYPT  # Vic2 capital: Cairo (province 1745)
 }
 
 ETH = {  # Ethiopia
@@ -4216,7 +4216,7 @@ ETH = {  # Ethiopia
 	tier = kingdom
 	cultures = { amhara }  # TODO verify Vic3 culture name
 	religion = oriental_orthodox  # TODO verify Vic3 religion name
-	# capital = STATE_TODO  # Vic2 capital: Ankober (province 1859)
+	capital = STATE_OROMIA  # Vic2 capital: Ankober (province 1859)
 }
 
 MAD = {  # Merina
@@ -4225,7 +4225,7 @@ MAD = {  # Merina
 	tier = kingdom
 	cultures = { malagasy }  # TODO verify Vic3 culture name
 	religion = animist  # TODO verify Vic3 religion name
-	# capital = STATE_TODO  # Vic2 capital: Tananarive (province 2115)
+	capital = STATE_NORTH_MADAGASCAR  # Vic2 capital: Tananarive (province 2115)
 }
 
 MOR = {  # Mauretania
@@ -4288,7 +4288,7 @@ TRN = {  # Opstalia
 	tier = kingdom
 	cultures = { boer }  # TODO verify Vic3 culture name
 	religion = protestant  # TODO verify Vic3 religion name
-	# capital = STATE_TODO  # Vic2 capital: Pretoria (province 2105)
+	capital = STATE_TRANSVAAL  # Vic2 capital: Pretoria (province 2105)
 }
 
 TUN = {  # Tunisia
@@ -4297,7 +4297,7 @@ TUN = {  # Tunisia
 	tier = kingdom
 	cultures = { maghrebi }  # TODO verify Vic3 culture name
 	religion = sunni  # TODO verify Vic3 religion name
-	# capital = STATE_TODO  # Vic2 capital: Gabes (province 1730)
+	capital = STATE_TUNISIA  # Vic2 capital: Gabes (province 1730)
 }
 
 ZAN = {  # Zanzibar
@@ -4315,7 +4315,7 @@ ZUL = {  # Zulu
 	tier = kingdom
 	cultures = { zulu }  # TODO verify Vic3 culture name
 	religion = animist  # TODO verify Vic3 religion name
-	# capital = STATE_TODO  # Vic2 capital: Ulundi (province 2113)
+	capital = STATE_ZULULAND  # Vic2 capital: Ulundi (province 2113)
 }
 
 ABU = {  # Abu Dhabi
@@ -4324,7 +4324,7 @@ ABU = {  # Abu Dhabi
 	tier = kingdom
 	cultures = { bedouin }  # TODO verify Vic3 culture name
 	religion = sunni  # TODO verify Vic3 religion name
-	# capital = STATE_TODO  # Vic2 capital: Abu Dhabi (province 1167)
+	capital = STATE_ABU_DHABI  # Vic2 capital: Abu Dhabi (province 1167)
 }
 
 AFG = {  # Afghanistan
@@ -4333,7 +4333,7 @@ AFG = {  # Afghanistan
 	tier = kingdom
 	cultures = { pashtun }  # TODO verify Vic3 culture name
 	religion = sunni  # TODO verify Vic3 religion name
-	# capital = STATE_TODO  # Vic2 capital: Kabul (province 1209)
+	capital = STATE_KABUL  # Vic2 capital: Kabul (province 1209)
 }
 
 ARM = {  # Armenia
@@ -4351,7 +4351,7 @@ AZB = {  # Azerbaijan
 	tier = kingdom
 	cultures = { azerbaijani }  # TODO verify Vic3 culture name
 	religion = shiite  # TODO verify Vic3 religion name
-	# capital = STATE_TODO  # Vic2 capital: Sheki (province 1104)
+	capital = STATE_AZERBAIJAN  # Vic2 capital: Sheki (province 1104)
 }
 
 BUK = {  # BUK
@@ -4387,7 +4387,7 @@ HDJ = {  # Hedjaz
 	tier = kingdom
 	cultures = { khaliji }  # TODO verify Vic3 culture name
 	religion = sunni  # TODO verify Vic3 religion name
-	# capital = STATE_TODO  # Vic2 capital: Mecca (province 1151)
+	capital = STATE_HEDJAZ  # Vic2 capital: Mecca (province 1151)
 }
 
 IRQ = {  # Iraq
@@ -4396,7 +4396,7 @@ IRQ = {  # Iraq
 	tier = kingdom
 	cultures = { mashriqi }  # TODO verify Vic3 culture name
 	religion = sunni  # TODO verify Vic3 religion name
-	# capital = STATE_TODO  # Vic2 capital: Baghdad (province 926)
+	capital = STATE_BAGHDAD  # Vic2 capital: Baghdad (province 926)
 }
 
 KHI = {  # Khiva
@@ -4423,7 +4423,7 @@ MUG = {  # Mughal Empire
 	tier = empire
 	cultures = { avadhi }  # TODO verify Vic3 culture name
 	religion = sunni  # TODO verify Vic3 religion name
-	# capital = STATE_TODO  # Vic2 capital: Delhi (province 1236)
+	capital = STATE_DELHI  # Vic2 capital: Delhi (province 1236)
 }
 
 MFQ = {  # Montafeq Emirate
@@ -4441,7 +4441,7 @@ NEJ = {  # Nejd
 	tier = kingdom
 	cultures = { bedouin }  # TODO verify Vic3 culture name
 	religion = sunni  # TODO verify Vic3 religion name
-	# capital = STATE_TODO  # Vic2 capital: Riyadh (province 1157)
+	capital = STATE_NEJD  # Vic2 capital: Riyadh (province 1157)
 }
 
 OMA = {  # Oman
@@ -4450,7 +4450,7 @@ OMA = {  # Oman
 	tier = kingdom
 	cultures = { khaliji }  # TODO verify Vic3 culture name
 	religion = ibadi  # TODO verify Vic3 religion name
-	# capital = STATE_TODO  # Vic2 capital: Muscat (province 1166)
+	capital = STATE_OMAN  # Vic2 capital: Muscat (province 1166)
 }
 
 PER = {  # Iran
@@ -4468,7 +4468,7 @@ YEM = {  # Yemen
 	tier = kingdom
 	cultures = { khaliji }  # TODO verify Vic3 culture name
 	religion = sunni  # TODO verify Vic3 religion name
-	# capital = STATE_TODO  # Vic2 capital: Sana (province 1178)
+	capital = STATE_YEMEN  # Vic2 capital: Sana (province 1178)
 }
 
 HND = {  # Hindustan
@@ -4504,7 +4504,7 @@ BER = {  # Beroda
 	tier = kingdom
 	cultures = { gujarati }  # TODO verify Vic3 culture name
 	religion = hindu  # TODO verify Vic3 religion name
-	# capital = STATE_TODO  # Vic2 capital: Baroda (province 1295)
+	capital = STATE_GUJARAT  # Vic2 capital: Baroda (province 1295)
 }
 
 BHO = {  # Maharashtra
@@ -4522,7 +4522,7 @@ BIK = {  # Bikaner
 	tier = kingdom
 	cultures = { rajput }  # TODO verify Vic3 culture name
 	religion = hindu  # TODO verify Vic3 religion name
-	# capital = STATE_TODO  # Vic2 capital: Bikaner (province 1267)
+	capital = STATE_RAJPUTANA  # Vic2 capital: Bikaner (province 1267)
 }
 
 BUN = {  # Bundelkhand
@@ -4549,7 +4549,7 @@ HYD = {  # Hyderabad
 	tier = kingdom
 	cultures = { telegu }  # TODO verify Vic3 culture name
 	religion = sunni  # TODO verify Vic3 religion name
-	# capital = STATE_TODO  # Vic2 capital: Hyderabad (province 1283)
+	capital = STATE_HYDERABAD  # Vic2 capital: Hyderabad (province 1283)
 }
 
 JAI = {  # Jaipur
@@ -4558,7 +4558,7 @@ JAI = {  # Jaipur
 	tier = kingdom
 	cultures = { rajput }  # TODO verify Vic3 culture name
 	religion = hindu  # TODO verify Vic3 religion name
-	# capital = STATE_TODO  # Vic2 capital: Jaipur (province 1268)
+	capital = STATE_RAJPUTANA  # Vic2 capital: Jaipur (province 1268)
 }
 
 JAS = {  # Jaisalmer
@@ -4567,7 +4567,7 @@ JAS = {  # Jaisalmer
 	tier = kingdom
 	cultures = { rajput }  # TODO verify Vic3 culture name
 	religion = hindu  # TODO verify Vic3 religion name
-	# capital = STATE_TODO  # Vic2 capital: Jaisalmer (province 1265)
+	capital = STATE_RAJPUTANA  # Vic2 capital: Jaisalmer (province 1265)
 }
 
 JOD = {  # Jodhpur
@@ -4576,7 +4576,7 @@ JOD = {  # Jodhpur
 	tier = kingdom
 	cultures = { rajput }  # TODO verify Vic3 culture name
 	religion = hindu  # TODO verify Vic3 religion name
-	# capital = STATE_TODO  # Vic2 capital: Jodhpur (province 1266)
+	capital = STATE_RAJPUTANA  # Vic2 capital: Jodhpur (province 1266)
 }
 
 KAL = {  # Baluchistan
@@ -4585,7 +4585,7 @@ KAL = {  # Baluchistan
 	tier = kingdom
 	cultures = { baluchi }  # TODO verify Vic3 culture name
 	religion = sunni  # TODO verify Vic3 religion name
-	# capital = STATE_TODO  # Vic2 capital: Kalat (province 1221)
+	capital = STATE_BALUCHISTAN  # Vic2 capital: Kalat (province 1221)
 }
 
 KAS = {  # Kashmir
@@ -4594,7 +4594,7 @@ KAS = {  # Kashmir
 	tier = kingdom
 	cultures = { kashmiri }  # TODO verify Vic3 culture name
 	religion = hindu  # TODO verify Vic3 religion name
-	# capital = STATE_TODO  # Vic2 capital: Gilgit (province 1225)
+	capital = STATE_KASHMIR  # Vic2 capital: Gilgit (province 1225)
 }
 
 KUT = {  # KUT
@@ -4630,7 +4630,7 @@ MEW = {  # Mewar
 	tier = kingdom
 	cultures = { rajput }  # TODO verify Vic3 culture name
 	religion = hindu  # TODO verify Vic3 religion name
-	# capital = STATE_TODO  # Vic2 capital: Udaipur (province 1269)
+	capital = STATE_RAJPUTANA  # Vic2 capital: Udaipur (province 1269)
 }
 
 MYS = {  # Mysore
@@ -4648,7 +4648,7 @@ NAG = {  # Nagpur
 	tier = kingdom
 	cultures = { marathi }  # TODO verify Vic3 culture name
 	religion = hindu  # TODO verify Vic3 religion name
-	# capital = STATE_TODO  # Vic2 capital: Nagpur (province 1277)
+	capital = STATE_CENTRAL_PROVINCES  # Vic2 capital: Nagpur (province 1277)
 }
 
 NEP = {  # Nepal
@@ -4657,7 +4657,7 @@ NEP = {  # Nepal
 	tier = kingdom
 	cultures = { nepali }  # TODO verify Vic3 culture name
 	religion = mahayana  # TODO verify Vic3 religion name
-	# capital = STATE_TODO  # Vic2 capital: Katmandu (province 1326)
+	capital = STATE_HIMALAYAS  # Vic2 capital: Katmandu (province 1326)
 }
 
 ORI = {  # Orissa
@@ -4693,7 +4693,7 @@ SIK = {  # Sikkim
 	tier = kingdom
 	cultures = { tibetan }  # TODO verify Vic3 culture name
 	religion = gelugpa  # TODO verify Vic3 religion name
-	# capital = STATE_TODO  # Vic2 capital: Tumlong (province 1328)
+	capital = STATE_EASTERN_HIMALAYAS  # Vic2 capital: Tumlong (province 1328)
 }
 
 SIN = {  # Sindh
@@ -4702,7 +4702,7 @@ SIN = {  # Sindh
 	tier = kingdom
 	cultures = { sindi }  # TODO verify Vic3 culture name
 	religion = sunni  # TODO verify Vic3 religion name
-	# capital = STATE_TODO  # Vic2 capital: Karachi (province 1288)
+	capital = STATE_SINDH  # Vic2 capital: Karachi (province 1288)
 }
 
 TRA = {  # Travancore
@@ -4711,7 +4711,7 @@ TRA = {  # Travancore
 	tier = kingdom
 	cultures = { malayalam }  # TODO verify Vic3 culture name
 	religion = hindu  # TODO verify Vic3 religion name
-	# capital = STATE_TODO  # Vic2 capital: Trivandrum (province 1319)
+	capital = STATE_TRAVANCORE  # Vic2 capital: Trivandrum (province 1319)
 }
 
 ATJ = {  # Aceh
@@ -4720,7 +4720,7 @@ ATJ = {  # Aceh
 	tier = kingdom
 	cultures = { acehnese }  # TODO verify Vic3 culture name
 	religion = sunni  # TODO verify Vic3 religion name
-	# capital = STATE_TODO  # Vic2 capital: Banda Aceh (province 1405)
+	capital = STATE_ACEH  # Vic2 capital: Banda Aceh (province 1405)
 }
 
 BAL = {  # Bali
@@ -4729,7 +4729,7 @@ BAL = {  # Bali
 	tier = kingdom
 	cultures = { balinese }  # TODO verify Vic3 culture name
 	religion = hindu  # TODO verify Vic3 religion name
-	# capital = STATE_TODO  # Vic2 capital: Bali (province 1438)
+	capital = STATE_SUNDA_ISLANDS  # Vic2 capital: Bali (province 1438)
 }
 
 BHU = {  # Bhutan
@@ -4738,7 +4738,7 @@ BHU = {  # Bhutan
 	tier = kingdom
 	cultures = { tibetan }  # TODO verify Vic3 culture name
 	religion = gelugpa  # TODO verify Vic3 religion name
-	# capital = STATE_TODO  # Vic2 capital: Thimpu (province 1329)
+	capital = STATE_EASTERN_HIMALAYAS  # Vic2 capital: Thimpu (province 1329)
 }
 
 BRU = {  # Brunei
@@ -4747,7 +4747,7 @@ BRU = {  # Brunei
 	tier = kingdom
 	cultures = { malay }  # TODO verify Vic3 culture name
 	religion = sunni  # TODO verify Vic3 religion name
-	# capital = STATE_TODO  # Vic2 capital: Brunei (province 1393)
+	capital = STATE_NORTH_BORNEO  # Vic2 capital: Brunei (province 1393)
 }
 
 BUR = {  # Taungu
@@ -4756,7 +4756,7 @@ BUR = {  # Taungu
 	tier = kingdom
 	cultures = { burmese }  # TODO verify Vic3 culture name
 	religion = theravada  # TODO verify Vic3 religion name
-	# capital = STATE_TODO  # Vic2 capital: Ava (province 1334)
+	capital = STATE_KACHIN  # Vic2 capital: Ava (province 1334)
 }
 
 CAM = {  # The Khmer Empire
@@ -4765,7 +4765,7 @@ CAM = {  # The Khmer Empire
 	tier = empire
 	cultures = { khmer }  # TODO verify Vic3 culture name
 	religion = theravada  # TODO verify Vic3 religion name
-	# capital = STATE_TODO  # Vic2 capital: Battambang (province 1366)
+	capital = STATE_CAMBODIA  # Vic2 capital: Battambang (province 1366)
 }
 
 CHI = {  # China
@@ -4783,7 +4783,7 @@ DAI = {  # Vietnam
 	tier = kingdom
 	cultures = { vietnamese }  # TODO verify Vic3 culture name
 	religion = mahayana  # TODO verify Vic3 religion name
-	# capital = STATE_TODO  # Vic2 capital: Hanoi (province 1369)
+	capital = STATE_TONKIN  # Vic2 capital: Hanoi (province 1369)
 }
 
 JAV = {  # Java
@@ -4792,7 +4792,7 @@ JAV = {  # Java
 	tier = kingdom
 	cultures = { javan }  # TODO verify Vic3 culture name
 	religion = sunni  # TODO verify Vic3 religion name
-	# capital = STATE_TODO  # Vic2 capital: Yogyakarta (province 1416)
+	capital = STATE_CENTRAL_JAVA  # Vic2 capital: Yogyakarta (province 1416)
 }
 
 KOR = {  # Korea
@@ -4801,7 +4801,7 @@ KOR = {  # Korea
 	tier = kingdom
 	cultures = { korean }  # TODO verify Vic3 culture name
 	religion = mahayana  # TODO verify Vic3 religion name
-	# capital = STATE_TODO  # Vic2 capital: Seoul (province 1624)
+	capital = STATE_SEOUL  # Vic2 capital: Seoul (province 1624)
 }
 
 LUA = {  # Lan Xang
@@ -4819,7 +4819,7 @@ JOH = {  # Malacca
 	tier = kingdom
 	cultures = { malay }  # TODO verify Vic3 culture name
 	religion = sunni  # TODO verify Vic3 religion name
-	# capital = STATE_TODO  # Vic2 capital: Johor Bahru (province 1385)
+	capital = STATE_MALAYA  # Vic2 capital: Johor Bahru (province 1385)
 }
 
 SIA = {  # Thonburi
@@ -4828,7 +4828,7 @@ SIA = {  # Thonburi
 	tier = kingdom
 	cultures = { thai }  # TODO verify Vic3 culture name
 	religion = theravada  # TODO verify Vic3 religion name
-	# capital = STATE_TODO  # Vic2 capital: Bangkok (province 1346)
+	capital = STATE_BANGKOK  # Vic2 capital: Bangkok (province 1346)
 }
 
 TIB = {  # Tibet
@@ -4837,7 +4837,7 @@ TIB = {  # Tibet
 	tier = kingdom
 	cultures = { tibetan }  # TODO verify Vic3 culture name
 	religion = gelugpa  # TODO verify Vic3 religion name
-	# capital = STATE_TODO  # Vic2 capital: Lhasa (province 1587)
+	capital = STATE_LHASA  # Vic2 capital: Lhasa (province 1587)
 }
 
 MGL = {  # Mongolia
@@ -4873,7 +4873,7 @@ MCK = {  # Manchuria
 	tier = kingdom
 	cultures = { manchu }  # TODO verify Vic3 culture name
 	religion = mahayana  # TODO verify Vic3 religion name
-	# capital = STATE_TODO  # Vic2 capital: Jilin (province 1555)
+	capital = STATE_SOUTHERN_MANCHURIA  # Vic2 capital: Jilin (province 1555)
 }
 
 GXI = {  # GXI
@@ -5044,7 +5044,7 @@ CLM = {  # Gran Colombia
 	tier = kingdom
 	cultures = { mexican }  # TODO verify Vic3 culture name
 	religion = catholic  # TODO verify Vic3 religion name
-	# capital = STATE_TODO  # Vic2 capital: Mexico City (province 2172)
+	capital = STATE_MEXICO  # Vic2 capital: Mexico City (province 2172)
 }
 
 GCR = {  # Junta Provisional Gubernativa
@@ -5116,7 +5116,7 @@ PRU = {  # Prussia
 	tier = kingdom
 	cultures = { north_german }  # TODO verify Vic3 culture name
 	religion = protestant  # TODO verify Vic3 religion name
-	# capital = STATE_TODO  # Vic2 capital: Konigsburg (province 695)
+	capital = STATE_EAST_PRUSSIA  # Vic2 capital: Konigsburg (province 695)
 }
 
 GER = {  # Germany
@@ -5134,7 +5134,7 @@ AUS = {  # Austria
 	tier = kingdom
 	cultures = { south_german }  # TODO verify Vic3 culture name
 	religion = catholic  # TODO verify Vic3 religion name
-	# capital = STATE_TODO  # Vic2 capital: Vienna (province 619)
+	capital = STATE_AUSTRIA  # Vic2 capital: Vienna (province 619)
 }
 
 JAP = {  # Japan
@@ -5143,7 +5143,7 @@ JAP = {  # Japan
 	tier = empire
 	cultures = { japanese }  # TODO verify Vic3 culture name
 	religion = shinto  # TODO verify Vic3 religion name
-	# capital = STATE_TODO  # Vic2 capital: Kyoto (province 1657)
+	capital = STATE_KYOTO  # Vic2 capital: Kyoto (province 1657)
 }
 
 ITA = {  # Italy
@@ -5161,7 +5161,7 @@ DUA = {  # The Dual Monarchy
 	tier = empire
 	cultures = { anglois }  # TODO verify Vic3 culture name
 	religion = catholic  # TODO verify Vic3 religion name
-	# capital = STATE_TODO  # Vic2 capital: Paris (province 425)
+	capital = STATE_ILE_DE_FRANCE  # Vic2 capital: Paris (province 425)
 }
 
 ISR = {  # ISR

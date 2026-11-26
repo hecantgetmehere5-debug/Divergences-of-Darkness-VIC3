@@ -1,0 +1,29 @@
+{
+  "note": "Vic2 cultures with no Vic3 culture or DoD culture of the same name -> closest Vic3 culture. Used by tools/vic3_start_setup.py.",
+  "vic2_to_vic3_culture": {
+    "ruthenian": "ukrainian", "castilian": "spanish", "kanauji": "avadhi", "english": "british",
+    "asian_minor": "han", "afro_frankish": "afro_caribbean", "hui": "han", "venetian": "north_italian",
+    "north_caucasian": "circassian", "kingwana": "swahili", "crimean": "crimean_tatar", "iroquois": "iroquoian",
+    "kuba": "luba", "forest_bantu": "equatorial_bantu", "astrakhani": "tatar", "shilluk": "nilotic",
+    "western_nigritic": "mande", "itsekari": "edo", "east_kwa": "ewe", "oirat": "kalmyk", "lendu": "lacustrine_bantu",
+    "caspian": "azerbaijani", "wolayta": "sidama", "gur": "mossi", "nubian": "nuba",
+    "south_forest_bantu": "equatorial_bantu", "chokwe": "lunda", "quiche": "mayan", "fahlavi": "persian",
+    "native_american_minor": "athabaskan", "coptic": "misri", "otomi": "nahua", "parsi": "gujarati",
+    "tat": "azerbaijani", "acehnese": "sumatran", "siebenburger": "south_german", "lurish": "luri",
+    "nyasa": "chewa", "zanj": "swahili", "kavango": "kavango_bantu", "chol": "mayan", "unyamwezi": "nyamwezi",
+    "ubangian": "azande", "kilombero": "sukuma", "syriac": "assyrian", "ingush": "chechen", "kumyk": "dagestani",
+    "lezgin": "dagestani", "cushitic": "somali", "huastec": "mayan", "qashqai": "caucasian_turk",
+    "totonac": "nahua", "karachai": "circassian", "arvanite": "albanian", "avar": "dagestani", "maures": "bidan",
+    "kefficho": "sidama", "zoque": "mixtec", "mixe": "mixtec", "pamiri": "tajik", "abkhaz": "abkhazian",
+    "gypsy": "hindustani", "krymchak": "ashkenazi", "khalaj": "caucasian_turk", "southern_bantu": "sotho",
+    "harari": "amhara", "mazatec": "mixtec", "siberian": "evenki", "sioux": "dakota", "druze": "mashriqi",
+    "chinantec": "zapotec", "amuzgo": "mixtec", "algonquin": "algonquian", "nuristani": "pashtun",
+    "tlapanec": "mixtec", "kreol": "afro_caribbean", "kalash": "pashtun", "komi": "udmurt", "lak": "dagestani",
+    "popoluca": "mixtec", "african_minor": "mande"
+  },
+  "vic2_to_vic3_religion": {
+    "coptic": "oriental_orthodox", "assyrian": "oriental_orthodox", "fetishist": "animist",
+    "ismaili": "shiite", "zaydi": "shiite", "druze": "shiite", "yazidi": "sunni",
+    "jain": "hindu", "zoroastrian": "hindu"
+  }
+}
