@@ -132,6 +132,11 @@ images/             Pictures for this page
 | `tools/vic3_military.py` | Starting technology, armies and fleets |
 | `tools/vic3_economy.py` | Starting buildings, rescaled from vanilla's 1836 economy |
 | `tools/vic3_characters.py` | Rulers and commanders |
+| `tools/vic3_deployments.py` | Starts the attackers of the 1836 wars mobilised on their fronts |
+| `tools/vic3_movements.py` | DoD political movements, built on the closest vanilla movement |
+| `tools/pick_event_pictures.py` | Matches a vanilla picture to each event written new for Vic3 |
+| `tools/fix_tag_collisions.py` | Makes the DoD name, definition and flag win where vanilla uses the same tag |
+| `tools/fix_cultures.py`, `tools/fix_journal_entries.py` | Bring cultures and journal entries to the Vic3 1.13 layout |
 | `tools/audit.py` | Static audit: undefined tags, cultures, variables and scopes, duplicate keys, broken text |
 
 ---

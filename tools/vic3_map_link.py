@@ -9,7 +9,7 @@ Usage: py tools/vic3_map_link.py <vic3_game_dir> <vic2_mod_dir> <out_csv>
 Output columns: vic3_province,state,vic2_province,dist  (dist = 0 when the mapped
 point fell inside a Vic2 land province, else the pixel distance searched)
 """
-import csv, re, sys, unicodedata
+import collections, csv, re, sys, unicodedata
 from pathlib import Path
 import numpy as np
 from PIL import Image
@@ -98,8 +98,24 @@ for key, nm in hubname.items():
     pid = by_name2[k][0]
     i = idx3[h]
     pairs.append((cx3[i], cy3[i], c2x[pid], c2y[pid]))
+# Hand-picked pairs where the two maps share few names (the map edge around the Bering Strait):
+# (Vic3 state, hub, Vic2 province id). Always kept as inliers.
+MANUAL = [
+    ("STATE_ALASKA", "city", 3), ("STATE_ALASKA", "farm", 1), ("STATE_ALASKA", "mine", 2630),
+    ("STATE_YUKON_TERRITORY", "farm", 6), ("STATE_YUKON_TERRITORY", "mine", 7),
+    ("STATE_CHUKOTKA", "port", 2637), ("STATE_KAMCHATKA", "city", 1074),
+    ("STATE_OKHOTSK", "port", 1072), ("STATE_OKHOTSK", "wood", 1073), ("STATE_YAKUTSK", "city", 1069),
+    ("STATE_KOLYMA", "mine", 2643),
+]
+manual = []
+for st, kind, pid in MANUAL:
+    h = hubs.get((st, kind))
+    if h in idx3 and c2n[pid]:
+        i = idx3[h]
+        manual.append((cx3[i], cy3[i], c2x[pid], c2y[pid]))
 P = np.array(pairs)
-print("name matches:", len(P))
+M = np.array(manual).reshape(-1, 4)
+print("name matches:", len(P), "manual:", len(M))
 
 
 def feats(x, y):
@@ -121,7 +137,8 @@ for it in range(8):
     thr = max(15.0, 3 * np.median(err[keep]))
     keep = err < thr
 print("inliers:", keep.sum(), "median err px:", round(float(np.median(err[keep])), 1))
-Pi = P[keep]
+# manual pairs only feed the local correction, so they can't bend the global fit elsewhere
+Pi = np.vstack([P[keep], M])
 res = np.stack([Pi[:, 2] - feats(Pi[:, 0], Pi[:, 1]) @ cx, Pi[:, 3] - feats(Pi[:, 0], Pi[:, 1]) @ cy], 1)
 
 
@@ -146,7 +163,9 @@ for s in range(0, len(ii), 2000):
     b = ii[s:s + 2000]
     gx, gy = to_v2(cx3[b], cy3[b])
     for j, (x, y) in enumerate(zip(gx, gy)):
-        x, y = int(round(x)) % W2, int(np.clip(round(y), 0, H2 - 1))
+        # clamp, don't wrap: the two maps cut the Bering Strait at different places, so a
+        # point past one edge belongs to the land at that edge, not the far side of the map
+        x, y = int(np.clip(round(x), 0, W2 - 1)), int(np.clip(round(y), 0, H2 - 1))
         best, dist = 0, 0
         if landmask[y, x]:
             best = int(pid2[y, x])
@@ -160,6 +179,26 @@ for s in range(0, len(ii), 2000):
                     best, dist = int(pid2[wy[q] + y0, wx[q] + x0]), r
                     break
         out.append((land3[s + j], prov_state[land3[s + j]], best, dist))
+
+# Vic3 draws the tip of Chukotka at the far left of its map, beside Alaska, so those provinces
+# land on Vic2 Alaska. Any province of an Asian state that lands in the Americas (west half of
+# the Vic2 map) takes the most common link of its own state instead.
+asian = set()
+for f in ("14_siberia.txt", "15_russia.txt", "11_east_asia.txt"):
+    p = V3 / "map_data/state_regions" / f
+    if p.exists():
+        asian |= set(re.findall(r"^(STATE_\w+)\s*=", p.read_text(encoding="utf-8-sig"), re.M))
+majority = {}
+for st in asian:
+    c = collections.Counter(o[2] for o in out if o[1] == st and o[2] and c2x[o[2]] > W2 / 2)
+    if c:
+        majority[st] = c.most_common(1)[0][0]
+fixed = 0
+for k, o in enumerate(out):
+    if o[1] in majority and o[2] and c2x[o[2]] < W2 / 2:
+        out[k] = (o[0], o[1], majority[o[1]], o[3])
+        fixed += 1
+print("Asian provinces pulled back from the Americas:", fixed)
 
 with open(OUT, "w", newline="", encoding="utf-8") as fh:
     w = csv.writer(fh)

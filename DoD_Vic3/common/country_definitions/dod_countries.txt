@@ -490,7 +490,7 @@ AIN = {  # Ainu
 	tier = kingdom
 	cultures = { ainu }  # TODO verify Vic3 culture name
 	religion = animist  # TODO verify Vic3 religion name
-	capital = STATE_KAMCHATKA  # Vic2 capital: Gizhiga (province 1073)
+	capital = STATE_OKHOTSK  # Vic2 capital: Gizhiga (province 1073)
 }
 
 MIG = {  # Nanjing

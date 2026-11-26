@@ -10,6 +10,22 @@ DIPLOMATIC_PLAYS = {
 			target_state = c:CLM.capital
 			war = yes
 			type = dp_annex_war
+			# Gran Colombia fights to throw the Spanish landings back into the sea
+			add_war_goal = {
+				holder = c:CLM
+				type = conquer_state
+				target_state = s:STATE_ZULIA.region_state:SPA
+			}
+			add_war_goal = {
+				holder = c:CLM
+				type = conquer_state
+				target_state = s:STATE_MIRANDA.region_state:SPA
+			}
+			add_war_goal = {
+				holder = c:CLM
+				type = conquer_state
+				target_state = s:STATE_TEXAS.region_state:SPA
+			}
 		}
 	}
 
@@ -105,6 +121,12 @@ DIPLOMATIC_PLAYS = {
 			target_state = c:KOR.capital
 			war = yes
 			type = dp_annex_war
+			# Korea fights to take Busan back from the Japanese
+			add_war_goal = {
+				holder = c:KOR
+				type = conquer_state
+				target_state = s:STATE_BUSAN.region_state:JAP
+			}
 		}
 		random_diplomatic_play = {
 			limit = { any_scope_play_involved = { c:KOR ?= this } }

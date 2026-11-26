@@ -84,6 +84,27 @@ for st, by in frag.items():
         if t != main and len(by[t]) <= 2 and len(by[t]) / n < 0.2 and total_by_tag[t] > len(by[t]):
             by[main] += by.pop(t)
 
+# ---------- footholds for the starting wars ----------
+# Wars with no shared border would have no front, so the attacker starts on the defender's
+# coast where its Vic2 troops stand: (state, "all" or "port", tag)
+FOOTHOLDS = [
+    ("STATE_BUSAN", "all", "JAP"),       # Joseon Fight for Freedom
+    ("STATE_TEXAS", "port", "SPA"),      # Colombian War of Independence: Galveston
+    ("STATE_ZULIA", "port", "SPA"),      # Maracaibo
+    ("STATE_MIRANDA", "port", "SPA"),    # Barcelona
+]
+for st, what, tag in FOOTHOLDS:
+    by = frag.get(st)
+    if not by:
+        continue
+    take = [h for ps in by.values() for h in ps] if what == "all" else [sinfo[st]["port"]]
+    for t in list(by):
+        by[t] = [h for h in by[t] if h not in take]
+        if not by[t]:
+            del by[t]
+    by.setdefault(tag, [])
+    by[tag] += take
+
 # ---------- pops per state fragment ----------
 owner_of = {h: t for by in frag.values() for t, ps in by.items() for h in ps}
 fpops = collections.defaultdict(collections.Counter)  # (state, tag) -> (cul, rel) -> size
@@ -233,9 +254,12 @@ cd = MOD / "common/country_definitions/dod_countries.txt"
 text = cd.read_text(encoding="utf-8-sig")
 def fill(m):
     tag, body = m.group(1), m.group(2)
-    body = re.sub(r"^\s*capital\s*=\s*STATE_\w+[^\n]*\n", "", body, flags=re.M)
     if tag in capital:
+        # first run: fill the commented TODO line; later runs: update the existing capital line
         body = re.sub(r"^(\s*)#\s*capital\s*=\s*STATE_TODO\s*(#[^\n]*)?", lambda k: f"{k.group(1)}capital = {capital[tag]}  {k.group(2) or ''}".rstrip(), body, flags=re.M)
+        body = re.sub(r"^(\s*)capital\s*=\s*STATE_\w+", lambda k: f"{k.group(1)}capital = {capital[tag]}", body, flags=re.M)
+    else:
+        body = re.sub(r"^(\s*)capital\s*=\s*(STATE_\w+)", r"\1# capital = STATE_TODO  # was \2, no land after the map link", body, flags=re.M)
     return f"{tag} = {{{body}}}"
 text = re.sub(r"^(\w{3}) = \{(.*?)^\}", fill, text, flags=re.S | re.M)
 cd.write_text(text, encoding="utf-8-sig")

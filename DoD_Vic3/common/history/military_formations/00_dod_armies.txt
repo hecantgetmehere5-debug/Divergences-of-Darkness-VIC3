@@ -66,7 +66,7 @@ MILITARY_FORMATIONS = {
 			hq_region = sr:region_northeast_asia
 			combat_unit = {
 				type = unit_type:combat_unit_type_irregular_infantry
-				state_region = s:STATE_KAMCHATKA
+				state_region = s:STATE_OKHOTSK
 				count = 1
 			}
 		}
@@ -1046,17 +1046,17 @@ MILITARY_FORMATIONS = {
 			combat_unit = {
 				type = unit_type:combat_unit_type_irregular_infantry
 				state_region = s:STATE_KYOTO
-				count = 16
+				count = 15
 			}
 			combat_unit = {
 				type = unit_type:combat_unit_type_hussars
 				state_region = s:STATE_KYOTO
-				count = 2
+				count = 3
 			}
 			combat_unit = {
 				type = unit_type:combat_unit_type_cannon_artillery
 				state_region = s:STATE_KYOTO
-				count = 1
+				count = 2
 			}
 		}
 	}
@@ -1196,7 +1196,7 @@ MILITARY_FORMATIONS = {
 			combat_unit = {
 				type = unit_type:combat_unit_type_irregular_infantry
 				state_region = s:STATE_SEOUL
-				count = 6
+				count = 5
 			}
 		}
 	}
